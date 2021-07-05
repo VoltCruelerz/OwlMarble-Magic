@@ -43,7 +43,7 @@ const printSpells = (spells) => {
  * @returns {[{}]} Array of spell objects.
  */
 const parseFile = (content, level) => {
-    const lines = content.split(/\r?\n/).filter((line) => !line.startsWith('<div') && line);
+    const lines = content.split(/\r?\n/).filter((line) => line && !line.startsWith('<div') && line !== '```');
     const spellText = [];
     let readingSpellsYet = false;
     for (let i = 0; i < lines.length; i++) {
@@ -103,18 +103,73 @@ const parseSpellText = (lines, level) => {
     const range = parseSpellTrait('Range', lines[3]);
     const components = parseSpellTrait('Components', lines[4]).split(', ');
     const duration = parseSpellTrait('Duration', lines[5]);
-    const classes = parseSpellTrait('Classes', lines[6]).split(', ');
+    const classes = parseSpellTrait('Classes', lines[6]).split(', ');// This is not actually used.
     const description = parseDescription(lines.splice(7));
+
+    // Build the config.
     const spell = {
-        level,
+        _id: generateUUID(),
         name,
-        school,
-        castTime,
-        range,
-        components,
-        duration,
-        classes,
-        description
+        permission: {
+            default: 0
+        },
+        type: 'spell',
+        data: {
+            description: {
+                value: description,
+                chat: '',
+                unidentified: ''
+            },
+            source: 'OMM',
+            activation: getActivation(castTime),
+            duration: getDuration(duration),
+            target: getTarget(range, description),
+            range: getRange(range),
+            uses: {
+                value: 0,
+                max: 0,
+                per: ''
+            },
+            consume: {
+                type: '',
+                target: '',
+                amount: null
+            },
+            ability: '',
+            actionType: getActionType(description),
+            attackBonus: 0,
+            chatFlavor: '',
+            critical: null,
+            damage: {
+                parts: getDamage(description),
+                versatile: ''
+            },
+            formula: '',
+            save: getSave(description),
+            level,
+            school: getSchoolCode(school),
+            components: getComponents(components),
+            materials: getMaterials(components),
+            preparation: {
+                mode: 'prepared',
+                prepared: false
+            },
+            scaling: getScaling(level, description),
+            attributes: {
+                spelldc: 10
+            }
+        },
+        sort: '0',
+        flags: {
+            exportSource: {
+                world: 'none',
+                system: 'dnd5e',
+                coreVersion: '0.8.8',
+                systemVersion: '1.3.6'
+            }
+        },
+        img: getImage(school),
+        'effects': []
     };
     return spell;
 };
@@ -244,6 +299,101 @@ const lineIsList = (line) => {
     return line.match(/- .+/);
 }
 //#endregion
+
+//#region Config Field Generators
+//#region UUID
+const generateUUID = () => {
+    const options = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const chars = [];
+    const uuidLength = 16;
+    for (let i = 0; i < uuidLength; i++) {
+        chars.push(options.charAt(getRandomInt(options.length)));
+    }
+    return chars.join('');
+}
+
+/**
+ * Generates a random int from 0 (inclusive) to the max (exclusive).
+ * @param {number} max The number of faces on the die.
+ * @returns {number} a random number.
+ */
+const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+}
+//#endregion
+
+const getActivation = (castTime) => {
+    return 'TODO';
+}
+
+const getDuration = (duration) => {
+    return 'TODO';
+}
+
+const getTarget = (range, description) => {
+    return 'TODO';
+}
+
+const getRange = (range) => {
+    return 'TODO';
+}
+
+const getActionType = (description) => {
+    return 'TODO';
+}
+
+const getDamage = (description) => {
+    return 'TODO';
+}
+
+const getSave = (description) => {
+    return 'TODO';
+}
+
+const getSchoolCode = (school) => {
+    switch (school) {
+        case 'Abjuration':
+            return 'abj';
+        case 'Conjuration':
+            return 'con';
+        case 'Divination':
+            return 'div';
+        case 'Enchantment':
+            return 'enc';
+        case 'Evocation':
+            return 'evo';
+        case 'Illusion':
+            return 'ill';
+        case 'Necromancy':
+            return 'nec';
+        case 'Transmutation':
+            return 'trs';
+        default:
+            throw new Error('Unrecognized School ' + school);
+    }
+}
+
+const getComponents = (components) => {
+    return 'TODO';
+}
+
+const getMaterials = (components) => {
+    return 'TODO';
+}
+
+const getScaling = (level, description) => {
+    return 'TODO';
+}
+//#endregion
+
+/**
+ * Gets the image for the provided school.
+ * @param {string} school The school of magic.
+ * @returns {string} path to the image
+ */
+const getImage = (school) => {
+    return 'modules/owl-magic/icons/' + school.toLowerCase() + '.png';
+}
 
 
 //#region Main
