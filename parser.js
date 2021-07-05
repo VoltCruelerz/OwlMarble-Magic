@@ -478,8 +478,27 @@ const getRange = (range) => {
     }
 };
 
+/**
+ * Returns the action type.
+ * @param {string} description 
+ * @returns {string}
+ */
 const getActionType = (description) => {
-    return 'TODO';
+    description = description.toLowerCase();
+
+    if (description.includes('ranged spell attack')) {
+        return 'rsak';
+    } else if (description.includes('ranged spell attack')) {
+        return 'msak';
+    } else if (description.includes('melee attack with a weapon')) {
+        return 'mwak';
+    } else if (description.includes('ranged attack with a weapon')) {
+        return 'rwak';
+    } else if (description.includes('saving throw') || description.includes('save')) {
+        return 'save';
+    } else {
+        return 'util';
+    }
 };
 
 const getDamage = (description) => {
