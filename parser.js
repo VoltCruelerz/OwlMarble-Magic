@@ -1,4 +1,5 @@
 console.log('Starting...');
+const { match } = require('assert/strict');
 const fs = require('fs');
 
 //#region IO
@@ -623,8 +624,43 @@ const getComponents = (castTime, duration, components) => {
     };
 };
 
+/**
+ * Generates the material consumption object.
+ * @param {string} components 
+ * @returns {{value: string, consumed: boolean, cost: number, supply: number}}
+ */
 const getMaterials = (components) => {
-    return 'TODO';
+    components = components.toLowerCase();
+    const consumed = components.includes('consume');
+    const valuableRegex = /.*\(.*?(\d+) ?[gp|gold].*\)/g;
+    const flavorRegex = /.*\((.*?)\)/g;
+    const valuableMatches = components.matchAll(valuableRegex);
+    const flavorMatches = components.matchAll(flavorRegex);
+    if (valuableMatches) {
+        const text = valuableMatches[1];
+        const val = parseInt(valuableMatches[2]);
+        return {
+            value: text,
+            consumed: consumed,
+            cost: val,
+            supply: 0
+        };
+    } else if (flavorMatches) {
+        const text = flavorMatches[1];
+        return {
+            value: text,
+            consumed: false,
+            cost: 0,
+            supply: 0
+        };
+    } else {
+        return {
+            value: '',
+            consumed: false,
+            cost: 0,
+            supply: 0
+        };
+    }
 };
 
 const getScaling = (level, description) => {
