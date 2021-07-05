@@ -98,80 +98,85 @@ const parseFile = (content, level) => {
  */
 const parseSpellText = (lines, level) => {
     const name = lines[0];
-    const school = parseSpellTrait('School', lines[1]);
-    const castTime = parseSpellTrait('Casting Time', lines[2]);
-    const range = parseSpellTrait('Range', lines[3]);
-    const components = parseSpellTrait('Components', lines[4]).split(', ');
-    const duration = parseSpellTrait('Duration', lines[5]);
-    const classes = parseSpellTrait('Classes', lines[6]).split(', ');// This is not actually used.
-    const description = parseDescription(lines.splice(7));
-
-    // Build the config.
-    const spell = {
-        _id: generateUUID(),
-        name,
-        permission: {
-            default: 0
-        },
-        type: 'spell',
-        data: {
-            description: {
-                value: description,
-                chat: '',
-                unidentified: ''
+    try {
+        const school = parseSpellTrait('School', lines[1]);
+        const castTime = parseSpellTrait('Casting Time', lines[2]);
+        const range = parseSpellTrait('Range', lines[3]);
+        const components = parseSpellTrait('Components', lines[4]).split(', ');
+        const duration = parseSpellTrait('Duration', lines[5]);
+        const classes = parseSpellTrait('Classes', lines[6]).split(', ');// This is not actually used.
+        const description = parseDescription(lines.splice(7));
+    
+        // Build the config.
+        const spell = {
+            _id: generateUUID(),
+            name,
+            permission: {
+                default: 0
             },
-            source: 'OMM',
-            activation: getActivation(castTime),
-            duration: getDuration(duration),
-            target: getTarget(range, description),
-            range: getRange(range),
-            uses: {
-                value: 0,
-                max: 0,
-                per: ''
+            type: 'spell',
+            data: {
+                description: {
+                    value: description,
+                    chat: '',
+                    unidentified: ''
+                },
+                source: 'OMM',
+                activation: getActivation(castTime),
+                duration: getDuration(duration),
+                target: getTarget(range, description),
+                range: getRange(range),
+                uses: {
+                    value: 0,
+                    max: 0,
+                    per: ''
+                },
+                consume: {
+                    type: '',
+                    target: '',
+                    amount: null
+                },
+                ability: '',
+                actionType: getActionType(description),
+                attackBonus: 0,
+                chatFlavor: '',
+                critical: null,
+                damage: {
+                    parts: getDamage(description),
+                    versatile: ''
+                },
+                formula: '',
+                save: getSave(description),
+                level,
+                school: getSchoolCode(school),
+                components: getComponents(castTime, duration, components),
+                materials: getMaterials(components),
+                preparation: {
+                    mode: 'prepared',
+                    prepared: false
+                },
+                scaling: getScaling(level, description),
+                attributes: {
+                    spelldc: 10
+                }
             },
-            consume: {
-                type: '',
-                target: '',
-                amount: null
+            sort: '0',
+            flags: {
+                exportSource: {
+                    world: 'none',
+                    system: 'dnd5e',
+                    coreVersion: '0.8.8',
+                    systemVersion: '1.3.6'
+                }
             },
-            ability: '',
-            actionType: getActionType(description),
-            attackBonus: 0,
-            chatFlavor: '',
-            critical: null,
-            damage: {
-                parts: getDamage(description),
-                versatile: ''
-            },
-            formula: '',
-            save: getSave(description),
-            level,
-            school: getSchoolCode(school),
-            components: getComponents(components),
-            materials: getMaterials(components),
-            preparation: {
-                mode: 'prepared',
-                prepared: false
-            },
-            scaling: getScaling(level, description),
-            attributes: {
-                spelldc: 10
-            }
-        },
-        sort: '0',
-        flags: {
-            exportSource: {
-                world: 'none',
-                system: 'dnd5e',
-                coreVersion: '0.8.8',
-                systemVersion: '1.3.6'
-            }
-        },
-        img: getImage(school),
-        'effects': []
-    };
-    return spell;
+            img: getImage(school),
+            'effects': []
+        };
+        return spell;
+    } catch (e) {
+        console.error('Failed to Parse ' + level + ' - ' + name);
+        throw e;
+    }
 };
 //#endregion
 
@@ -310,7 +315,7 @@ const generateUUID = () => {
         chars.push(options.charAt(getRandomInt(options.length)));
     }
     return chars.join('');
-}
+};
 
 /**
  * Generates a random int from 0 (inclusive) to the max (exclusive).
@@ -319,36 +324,118 @@ const generateUUID = () => {
  */
 const getRandomInt = (max) => {
     return Math.floor(Math.random() * max);
-}
+};
 //#endregion
 
+/**
+ * Gets the activation object.
+ * @param {string} castTime 
+ * @return {{type: string, cost: number, condition: string}}
+ */
 const getActivation = (castTime) => {
-    return 'TODO';
-}
+    castTime = castTime.toLowerCase().replace(' ritual', '');
+
+    if (castTime === '1 action') {
+        return {
+            type: 'action',
+            cost: 1,
+            condition: ''
+        };
+    } else if (castTime === '1 bonus action') {
+        return {
+            type: 'bonus',
+            cost: 1,
+            condition: ''
+        };
+    } else if (castTime === '1 reaction') {
+        const conditionIndex = castTime.indexOf(',');
+        const condition = conditionIndex > -1 ? castTime.substr(conditionIndex + 1) : '';
+        return {
+            type: 'reaction',
+            cost: 1,
+            condition
+        };
+    } else if (castTime === '1 minute') {
+        return {
+            type: 'minute',
+            cost: 1,
+            condition: ''
+        };
+    } else if (castTime === '10 minutes') {
+        return {
+            type: 'minute',
+            cost: 10,
+            condition: ''
+        };
+    } else {
+        throw new Error('Unrecognized cast time: ' + castTime);
+    }
+};
 
 const getDuration = (duration) => {
-    return 'TODO';
-}
+    duration = duration.toLowerCase()
+    .replace('concentration, ', '')
+    .replace('up to ', '');
+
+    if (duration === 'instantaneous') {
+        return {
+            value: null,
+            units: 'inst'
+        };
+    } else if (duration === '1 round') {
+        return {
+            value: 1,
+            units: 'round'
+        };
+    } else if (duration === '1 minute') {
+        return {
+            value: 1,
+            units: 'minute'
+        };
+    } else if (duration === '10 minutes') {
+        return {
+            value: 10,
+            units: 'minute'
+        };
+    } else if (duration === '1 hour') {
+        return {
+            value: 1,
+            units: 'hour'
+        };
+    } else if (duration === '8 hours') {
+        return {
+            value: 8,
+            units: 'hour'
+        };
+    } else if (duration === 'permanent' || duration === 'until dispelled') {
+        return {
+            value: null,
+            units: 'perm'
+        };
+    } else {
+        throw new Error('Unrecognized duration: ' + duration);
+    }
+};
 
 const getTarget = (range, description) => {
     return 'TODO';
-}
+};
 
 const getRange = (range) => {
     return 'TODO';
-}
+};
 
 const getActionType = (description) => {
     return 'TODO';
-}
+};
 
 const getDamage = (description) => {
     return 'TODO';
-}
+};
 
 const getSave = (description) => {
     return 'TODO';
-}
+};
 
 const getSchoolCode = (school) => {
     switch (school) {
@@ -371,19 +458,19 @@ const getSchoolCode = (school) => {
         default:
             throw new Error('Unrecognized School ' + school);
     }
-}
+};
 
-const getComponents = (components) => {
+const getComponents = (castTime, duration, components) => {
     return 'TODO';
-}
+};
 
 const getMaterials = (components) => {
     return 'TODO';
-}
+};
 
 const getScaling = (level, description) => {
     return 'TODO';
-}
+};
 //#endregion
 
 /**
