@@ -600,6 +600,7 @@ const getSchoolCode = (school) => {
  * @param {string} castTime 
  * @param {string} duration 
  * @param {string} components 
+ * @returns {{value: string, vocal: boolean, somatic: boolean, material: boolean, ritual: boolean, concentration: boolean}}
  */
 const getComponents = (castTime, duration, components) => {
     castTime = castTime.toLowerCase();
