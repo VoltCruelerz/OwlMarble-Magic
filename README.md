@@ -5,7 +5,7 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 ## Links
 
 - [Cantrips](https://homebrewery.naturalcrit.com/share/1ltPxgU-C2STduTMBDt_IWu0QoDUCus5QQ5DkBbbTdDxT)
-- Level 1 Spells
+- [Level 1 Spells](https://homebrewery.naturalcrit.com/share/1HMoGqgDxjEjV0BM82CFdoTM4Mnxc_RV2ZHTwk8l-cmra)
 - Level 2 Spells
 - Level 3 Spells
 - Level 4 Spells
