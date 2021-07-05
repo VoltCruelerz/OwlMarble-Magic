@@ -102,7 +102,7 @@ const parseSpellText = (lines, level) => {
         const school = parseSpellTrait('School', lines[1]);
         const castTime = parseSpellTrait('Casting Time', lines[2]);
         const range = parseSpellTrait('Range', lines[3]);
-        const components = parseSpellTrait('Components', lines[4]).split(', ');
+        const components = parseSpellTrait('Components', lines[4]);
         const duration = parseSpellTrait('Duration', lines[5]);
         const classes = parseSpellTrait('Classes', lines[6]).split(', ');// This is not actually used.
         const description = parseDescription(lines.splice(7));
@@ -567,6 +567,11 @@ const getSave = (description) => {
     return 'TODO';
 };
 
+/**
+ * Gets the 3-character school code.
+ * @param {string} school 
+ * @returns {string}
+ */
 const getSchoolCode = (school) => {
     switch (school) {
         case 'Abjuration':
@@ -590,8 +595,31 @@ const getSchoolCode = (school) => {
     }
 };
 
+/**
+ * Gets the components object.
+ * @param {string} castTime 
+ * @param {string} duration 
+ * @param {string} components 
+ */
 const getComponents = (castTime, duration, components) => {
-    return 'TODO';
+    castTime = castTime.toLowerCase();
+    duration = duration.toLowerCase();
+    components = components.toLowerCase();
+
+    const isRitual = castTime.endsWith('ritual');
+    const isConc = duration.startsWith('concentration');
+    
+    const openIndex = components.indexOf('(');
+    const componentTerms = (openIndex > -1 ? components.substr(0, openIndex) : components).split(', ');
+
+    return {
+        value: '',
+        vocal: componentTerms.includes('v'),
+        somatic: componentTerms.includes('s'),
+        material: componentTerms.includes('m'),
+        ritual: isRitual,
+        concentration: isConc
+    };
 };
 
 const getMaterials = (components) => {
