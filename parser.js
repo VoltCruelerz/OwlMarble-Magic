@@ -121,7 +121,7 @@ const parseSpellText = (lines, level) => {
                     chat: '',
                     unidentified: ''
                 },
-                source: 'OMM',
+                source: 'OMM - ' + level,
                 activation: getActivation(castTime),
                 duration: getDuration(duration),
                 target: getTarget(range, description),
