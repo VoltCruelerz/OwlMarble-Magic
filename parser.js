@@ -422,8 +422,66 @@ const getDuration = (duration) => {
     }
 };
 
+/**
+ * Generates the target object.
+ * @param {string} range 
+ * @param {string} description 
+ * @returns {{value: number, units: string, type: string}}
+ */
 const getTarget = (range, description) => {
-    return 'TODO';
+    range = range.toLowerCase();
+    description = description.toLowerCase();
+    const targetRegex = /(\d+)[-| ](.+) (cone|radius|cube|cylinder|line|radius|sphere|square|wall)/g;
+
+    if (range === 'self') {
+        return {
+            value: null,
+            units: '',
+            type: 'self'
+        };
+    } else if (range.match(targetRegex)) {
+        const matches = range.matchAll(targetRegex);
+        const val = parseInt(matches[1]);
+        let units = matches[2];
+        units = units === 'foot' || units === 'feet' ? 'ft' : 'mi';
+        const shape = matches[3];
+        return {
+            value: val,
+            units: units,
+            type: shape
+        };
+    } else if (description.match(targetRegex)) {
+        const matches = description.matchAll(targetRegex);
+        const val = parseInt(matches[1]);
+        let units = matches[2];
+        units = units === 'foot' || units === 'feet' ? 'ft' : 'mi';
+        const shape = matches[3];
+        return {
+            value: val,
+            units: units,
+            type: shape
+        };
+    } else if (description.includes('creature')) {
+        return {
+            value: 1,
+            units: '',
+            type: 'creature'
+        };
+    } else if (description.includes('object') || description.includes('club')) {
+        return {
+            value: 1,
+            units: '',
+            type: 'object'
+        };
+    } else if (description.includes('point') || description.includes('spot')) {
+        return {
+            value: null,
+            units: 'any',
+            type: 'space'
+        };
+    } else {
+        throw new Error('Unrecognized target type: \nRANGE: ' + range + '\nDESC: ' + description);
+    }
 };
 
 /**

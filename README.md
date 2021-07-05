@@ -15,3 +15,7 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 - Level 8 Spells
 - Level 9 Spells
 - Level 10 Spells
+
+## Execution
+
+All execututable code is in `parser.js`.
