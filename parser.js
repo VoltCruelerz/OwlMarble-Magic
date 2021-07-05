@@ -106,7 +106,7 @@ const parseSpellText = (lines, level) => {
         const duration = parseSpellTrait('Duration', lines[5]);
         const classes = parseSpellTrait('Classes', lines[6]).split(', ');// This is not actually used.
         const description = parseDescription(lines.splice(7));
-    
+
         // Build the config.
         const spell = {
             _id: generateUUID(),
@@ -372,6 +372,11 @@ const getActivation = (castTime) => {
     }
 };
 
+/**
+ * Generates the duration object.
+ * @param {string} duration 
+ * @returns {{value: number, units: string}}
+ */
 const getDuration = (duration) => {
     duration = duration.toLowerCase()
     .replace('concentration, ', '')
@@ -421,8 +426,56 @@ const getTarget = (range, description) => {
     return 'TODO';
 };
 
+/**
+ * Generates the range object.
+ * @param {string} range 
+ * @returns {{value: number, long: number, units: string}}
+ */
 const getRange = (range) => {
-    return 'TODO';
+    range = range.toLowerCase();
+    if (range === 'touch') {
+        return {
+            value: null,
+            long: null,
+            units: 'touch'
+        };
+    } else if (range.match(/\d+ feet/)) {
+        const feetIndex = range.indexOf(' feet');
+        const num = parseInt(range.substr(0, feetIndex));
+        return {
+            value: num,
+            long: null,
+            units: 'ft'
+        };
+    } else if (range.match(/\d+ miles/)) {
+        const feetIndex = range.indexOf(' feet');
+        const num = parseInt(range.substr(0, feetIndex));
+        return {
+            value: num,
+            long: null,
+            units: 'mi'
+        };
+    } else if (range === '1 mile') {
+        return {
+            value: 1,
+            long: null,
+            units: 'mi'
+        }
+    } else if (range.startsWith('self')) {
+        return {
+            value: null,
+            long: null,
+            units: 'self'
+        }
+    } else if (range === 'sight') {
+        return {
+            value: null,
+            long: null,
+            units: 'spec'
+        }
+    } else {
+        throw new Error('Unrecognized range: ' + range);
+    }
 };
 
 const getActionType = (description) => {
