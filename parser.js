@@ -947,7 +947,7 @@ const tagify = (tag, string) => {
 
 /**
  * Unwraps text, such as {@spell blah blah|actual spell name}
- * @param {string} text 
+ * @param {string|{*}} raw 
  * @returns {string}
  */
 const unwrap = (raw) => {
