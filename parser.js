@@ -823,8 +823,12 @@ const parseImportedFile = (contents) => {
                     unidentified: ''
                 },
                 source: spell.source + ' - ' + spell.page,
-                activation: 'TODO',
-                duration: 'TODO',
+                activation: {
+                    type: spell.time[0].unit,
+                    cost: spell.time[0].number,
+                    condition: spell.time[0].condition
+                },
+                duration: getImportedDuration(spell),
                 target: 'TODO',
                 range: 'TODO',
                 uses: {
@@ -962,6 +966,37 @@ const unwrap = (raw) => {
         throw new Error('Failed to Unwrap: ' + raw);
     }
 }
+
+/**
+ * Generates the duration object for an imported spell.
+ * @param {{*}} spell 
+ */
+const getImportedDuration = (spell) => {
+    const dur = spell.duration[0];
+    if (dur.type === 'timed') {
+        return {
+            value: dur.duration.amount,
+            units: dur.duration.type
+        };
+    } else if (dur.type === 'instant') {
+        return {
+            value: null,
+            units: 'inst'
+        };
+    } else if (dur.type === 'permanent') {
+        return {
+            value: null,
+            units: 'perm'
+        };
+    } else if (dur.type === 'special') {
+        return {
+            value: null,
+            units: 'spec'
+        };
+    } else {
+        throw new Error('Unrecognized Imported Duration: ' + JSON.stringify(spell.duration));
+    }
+};
 //#endregion
 
 /**
