@@ -19,20 +19,27 @@ const readAndParseInputFiles = () => {
     });
 
     // Sort first by name, then by level so we're sanely organized, not that the db really cares.
-    allSpells.sort((a, b) => (a.name > b.name) ? 1 : -1);
-    allSpells.sort((a, b) => (a.level >= b.level) ? 1 : -1);
-    console.log('All Spells:\n' + JSON.stringify(allSpells));
+    sortSpellList(allSpells);
+    // console.log('All Spells:\n' + JSON.stringify(allSpells));
     return allSpells;
 };
 
+const readSpellDB = (path) => {
+    const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
+    const lines = contents.split('\n');
+    const dbSpells = lines.filter((line) => line).map((line) => JSON.parse(line));
+    return dbSpells;
+}
+
 /**
  * Prints the spells to the output folder in a db file.
- * @param {[{}]} spells 
+ * @param {[{}]} spells
+ * @param {string} path
  */
-const printSpells = (spells) => {
+const printSpells = (spells, path) => {
     const spellLines = spells.map((spell) => JSON.stringify(spell));
     const db = spellLines.join('\n') + '\n';
-    fs.writeFileSync('output/owlmagic.db', db);
+    fs.writeFileSync(path, db);
 }
 //#endregion
 
@@ -593,8 +600,28 @@ const getDamage = (description) => {
     };
 };
 
+/**
+ * Generates the saving throw object.
+ * @param {string} description
+ * @returns {{ability: string, dc: number, value: string}}
+ */
 const getSave = (description) => {
-    return 'TODO';
+    description = description.toLowerCase();
+    const saveRegex = /(strength|dexterity|constitution|intelligence|wisdom|charisma) (save|saving throw)/;
+    const saveMatch = description.match(saveRegex);
+    if (saveMatch) {
+        const stat = saveMatch[1];
+        return {
+            ability: stat.substr(0,3),
+            dc: 0,
+            scaling: 'spell'
+        };
+    }
+    return {
+        ability: '',
+        dc: null,
+        value: ''
+    };
 };
 
 /**
@@ -695,7 +722,8 @@ const getMaterials = (components) => {
 /**
  * Generates the scaling object.
  * @param {number} level 
- * @param {string} description 
+ * @param {string} description
+ * @returns {{mode: string, formula: string}}
  */
 const getScaling = (level, description) => {
     description = description.toLowerCase();
@@ -713,9 +741,9 @@ const getScaling = (level, description) => {
         };
     }
     const upcastDesc = upcastIndex > -1 ? description.substr(upcastIndex + upcastTag.length) : '';
-    const scalingRegex = /((\d+d\d+)(\W|\.))|modifier/g;
-    const matches = upcastDesc.matchAll(scalingRegex);
-    for (const match of matches) {
+    const scalingRegex = /((\d+d\d+)(\W|\.))|modifier/;
+    const match = upcastDesc.match(scalingRegex);
+    if (match) {
         let formula = match[0];
         formula = formula === 'modifier' ? '@mod' : formula;
         return {
@@ -728,7 +756,6 @@ const getScaling = (level, description) => {
         formula: ''
     };
 };
-//#endregion
 
 /**
  * Gets the image for the provided school.
@@ -738,10 +765,51 @@ const getScaling = (level, description) => {
 const getImage = (school) => {
     return 'modules/owl-magic/icons/' + school.toLowerCase() + '.png';
 }
-
-
-//#region Main
-// Do work.
-printSpells(readAndParseInputFiles());
 //#endregion
+
+/**
+ * Generates a lookup table for a list of spells, keyed by name.
+ * @param {[{}]} spellList 
+ * @returns 
+ */
+const getSpellLookup = (spellList) => {
+    return spellList.reduce((acc, val) => {
+        acc[val.name] = val;
+        return acc;
+    }, {});
+};
+
+const getSpellListFromLookup = (lookup) => {
+    return Object.keys(lookup).reduce((acc, val) => {
+        acc.push(lookup[val]);
+        return acc;
+    }, []);
+};
+
+/**
+ * Sorts a list of spells in-place based on level and name.
+ * @param {[{}]} spells 
+ */
+const sortSpellList = (spells) => {
+    spells.sort((a, b) => (a.name > b.name) ? 1 : -1);
+    spells.sort((a, b) => (a.data.level >= b.data.level) ? 1 : -1);
+};
+
+const run = () => {
+    // Homebrew Only
+    const homebrew = readAndParseInputFiles();
+    printSpells(homebrew, 'output/owlmagic-homebrew.db');
+
+    // SRD + Homebrew
+    const srd = readSpellDB('srd/srd.db');
+    const srd_homebrew_lookup = getSpellLookup(srd);
+    homebrew.forEach((spell) => {
+        srd_homebrew_lookup[spell.name] = spell;
+    });
+    const srd_homebrew = getSpellListFromLookup(srd_homebrew_lookup);
+    sortSpellList(srd_homebrew);
+    printSpells(srd_homebrew, 'output/owlmagic-srd-homebrew.db');
+    console.log('SRD + HOMEBREW:\n' + JSON.stringify(srd_homebrew));
+};
+run();
 console.log('Done.');

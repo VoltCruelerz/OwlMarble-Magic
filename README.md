@@ -19,3 +19,8 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 ## Execution
 
 All execututable code is in `parser.js`.
+
+## TODO/Known Issues
+
+- Healing Parsing: healing does not always autoparse correctly
+- Spell Renames: not yet supported
