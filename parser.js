@@ -7,13 +7,13 @@ const fs = require('fs');
  * Reads all input files and parses them.
  */
 const readAndParseInputFiles = () => {
-    console.log('Reading input files...');
+    console.log('===================\nReading input files...');
     const dirName = 'input/';
     const fileNames =fs.readdirSync(dirName);
     const allSpells = [];
     fileNames.forEach((fileName) => {
         const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
-        console.log('Detected ' + fileName);
+        console.log('- Detected ' + fileName);
         const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
         allSpells.push(...parseOwlMarbleFile(contents, level));
     });
@@ -29,7 +29,7 @@ const readAndParseInputFiles = () => {
  * @returns 
  */
 const readSpellDB = (path) => {
-    console.log('Reading db file ' + path);
+    console.log('===================\nReading db file...\n- Path: ' + path);
     const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
     const lines = contents.split('\n');
     const dbSpells = lines.filter((line) => line).map((line) => JSON.parse(line));
@@ -41,14 +41,14 @@ const readSpellDB = (path) => {
  * @returns [{}]
  */
 const readAndParseImportedSpells = () => {
-    console.log('Reading imported files...');
+    console.log('===================\nReading imported files...');
     const dirName = 'import/';
     const fileNames =fs.readdirSync(dirName);
     fileNames.sort();
     const allSpells = [];
     fileNames.forEach((fileName) => {
         const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
-        console.log('Detected ' + fileName);
+        console.log('- Detected ' + fileName);
         const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
         allSpells.push(...parseImportedFile(contents));
     });
@@ -860,22 +860,25 @@ const parseImportedFile = (contents) => {
                         amount: null
                     },
                     ability: '',
-                    actionType: 'TODO',
+                    actionType: getActionType(description),
                     attackBonus: 0,
                     chatFlavor: '',
                     critical: null,
-                    damage: 'TODO',
+                    damage: {
+                        parts: getDamage(description),
+                        versatile: ''
+                    },
                     formula: '',
-                    save: 'TODO',
+                    save: getSave(description),
                     level: spell.level,
                     school: school,
-                    components: 'TODO',
-                    materials: '',
+                    components: getImportedComponents(spell),
+                    materials: 'TODO',
                     preparation: {
                         mode: 'prepared',
                         prepared: false
                     },
-                    scaling: 'TODO',
+                    scaling: getScaling(spell.level, description),
                     attributes: {
                         spelldc: 10
                     }
@@ -1047,6 +1050,24 @@ const getImportedRange = (spell) => {
     }
     return range;
 };
+
+/**
+ * Gets the components object.
+ * @param {{*}} spell 
+ * @returns {{value: string, vocal: boolean, somatic: boolean, material: boolean, ritual: boolean, concentration: boolean}}
+ */
+const getImportedComponents = (spell) => {
+    const isRitual = spell.meta?.ritual;
+    const isConcentration = !!spell.duration[0].concentration;
+    return {
+        value: '',
+        vocal: !!spell.components.v,
+        somatic: !!spell.components.v,
+        material: !!spell.components.v,
+        ritual: isRitual,
+        concentration: isConcentration
+    };
+}
 //#endregion
 
 /**
