@@ -53,10 +53,8 @@ const parseFile = (content, level) => {
         // Detect the end of the preamble.
         if (line === '## Spells') {
             readingSpellsYet = true;
-            console.log('Reached spells section...');
             continue;
         } else if (line === '## Appendix') {
-            console.log('Reached spell end.');
             break;
         }
 
@@ -560,8 +558,40 @@ const getActionType = (description) => {
     }
 };
 
+/**
+ * Generates the damage object.
+ * @param {string} description 
+ * @returns {{parts: [[string]], versatile: string}}
+ */
 const getDamage = (description) => {
-    return 'TODO';
+    description = description.toLowerCase();
+    const upcastTag = '<strong>higher levels</strong>: ';
+    const upcastIndex = description.indexOf(upcastTag);
+    const baseDesc = upcastIndex > -1 ? description.substr(0, upcastIndex) : description;
+    const upcastDesc = upcastIndex > -1 ? description.substr(upcastIndex + upcastTag.length) : '';
+    const damageRegex = /(?<die>\d+(d\d+)?) ?(?<operator>\+|-|plus|minus)?([^\.]*?(?<shifter>\d+|modifier))?[^\.]*?(?<element>acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|healing|temphp)/g;
+    const parts = [];
+
+    const damageMatches = baseDesc.matchAll(damageRegex);
+    for (const match of damageMatches) {
+        const full = match[0];
+        const dice = match[1];
+        const dieSize = match[2];
+        const op = match[3];
+        const longTag = match[4];
+        const shifter = match[5] === 'modifier' ? '@mod' : match[5];
+        const element = match[6];
+
+        const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
+        parts.push([
+            damageLine,
+            element
+        ]);
+    }
+    return {
+        parts,
+        versatile: ''
+    };
 };
 
 const getSave = (description) => {
