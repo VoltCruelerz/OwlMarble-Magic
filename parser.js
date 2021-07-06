@@ -466,6 +466,9 @@ const getTarget = (range, description) => {
     range = range.toLowerCase();
     description = description.toLowerCase();
     const targetRegex = /(\d+)[-| ](.+) (cone|radius|cube|cylinder|line|radius|sphere|square|wall)/g;
+    const creatureRegex = /creature|aberration|beast|celestial|construct|dragon|elemental|fey|fiend|giant|humanoid|monstrosity|monster|ooze|plant|undead/;
+    const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest/;
+    const spaceRegex = /point|spot|space|part of the sky/;
 
     if (range === 'self') {
         return {
@@ -495,23 +498,29 @@ const getTarget = (range, description) => {
             units: units,
             type: shape
         };
-    } else if (description.includes('creature')) {
+    } else if (description.match(creatureRegex)) {
         return {
             value: 1,
             units: '',
             type: 'creature'
         };
-    } else if (description.includes('object') || description.includes('club')) {
+    } else if (description.match(objectRegex)) {
         return {
             value: 1,
             units: '',
             type: 'object'
         };
-    } else if (description.includes('point') || description.includes('spot')) {
+    } else if (description.match(spaceRegex)) {
         return {
             value: null,
             units: 'any',
             type: 'space'
+        };
+    } else if (description.includes('target')) {
+        return {
+            value: null,
+            units: 'any',
+            type: ''
         };
     } else {
         throw new Error('Unrecognized target type: \nRANGE: ' + range + '\nDESC: ' + description);
@@ -559,11 +568,17 @@ const getRange = (range) => {
             long: null,
             units: 'self'
         }
-    } else if (range === 'sight') {
+    } else if (range === 'sight' || range === 'special') {
         return {
             value: null,
             long: null,
             units: 'spec'
+        }
+    } else if (range === 'unlimited') {
+        return {
+            value: null,
+            long: null,
+            units: 'any'
         }
     } else {
         throw new Error('Unrecognized range: ' + range);
@@ -807,73 +822,80 @@ const parseImportedFile = (contents) => {
     const parsed = [];
     for (let i = 0; i < spells.length; i++) {
         const spell = spells[i];
-        const school = deimportSchool(spell.school);
-
-        parsed.push({
-            _id: generateUUID(),
-            name: spell.name,
-            permission: {
-                default: 0
-            },
-            type: 'spell',
-            data: {
-                description: {
-                    value: parseImportedEntries(spell.entries) + parseImportedEntries(spell.entriesHigherLevel),
-                    chat: '',
-                    unidentified: ''
+        try {
+            const school = deimportSchool(spell.school);
+            const description = parseImportedEntries(spell.entries) + parseImportedEntries(spell.entriesHigherLevel);
+            const importedRange = getImportedRange(spell);
+            const range = getRange(importedRange);
+            parsed.push({
+                _id: generateUUID(),
+                name: spell.name,
+                permission: {
+                    default: 0
                 },
-                source: spell.source + ' - ' + spell.page,
-                activation: {
-                    type: spell.time[0].unit,
-                    cost: spell.time[0].number,
-                    condition: spell.time[0].condition
+                type: 'spell',
+                data: {
+                    description: {
+                        value: description,
+                        chat: '',
+                        unidentified: ''
+                    },
+                    source: spell.source + ' - ' + spell.page,
+                    activation: {
+                        type: spell.time[0].unit,
+                        cost: spell.time[0].number,
+                        condition: spell.time[0].condition
+                    },
+                    duration: getImportedDuration(spell),
+                    range: range,
+                    target: getTarget(importedRange, description),
+                    uses: {
+                        value: 0,
+                        max: 0,
+                        per: ''
+                    },
+                    consume: {
+                        type: '',
+                        target: '',
+                        amount: null
+                    },
+                    ability: '',
+                    actionType: 'TODO',
+                    attackBonus: 0,
+                    chatFlavor: '',
+                    critical: null,
+                    damage: 'TODO',
+                    formula: '',
+                    save: 'TODO',
+                    level: spell.level,
+                    school: school,
+                    components: 'TODO',
+                    materials: '',
+                    preparation: {
+                        mode: 'prepared',
+                        prepared: false
+                    },
+                    scaling: 'TODO',
+                    attributes: {
+                        spelldc: 10
+                    }
                 },
-                duration: getImportedDuration(spell),
-                target: 'TODO',
-                range: 'TODO',
-                uses: {
-                    value: 0,
-                    max: 0,
-                    per: ''
-                },
-                consume: {
-                    type: '',
-                    target: '',
-                    amount: null
-                },
-                ability: '',
-                actionType: 'TODO',
-                attackBonus: 0,
-                chatFlavor: '',
-                critical: null,
-                damage: 'TODO',
-                formula: '',
-                save: 'TODO',
-                level: spell.level,
-                school: school,
-                components: 'TODO',
-                materials: '',
-                preparation: {
-                    mode: 'prepared',
-                    prepared: false
-                },
-                scaling: 'TODO',
-                attributes: {
-                    spelldc: 10
+                sort: 0,
+                flags: {
+                exportSource: {
+                    world: 'none',
+                    system: 'dnd5e',
+                    coreVersion: '0.8.8',
+                    systemVersion: '1.3.6'
                 }
-            },
-            sort: 0,
-            flags: {
-              exportSource: {
-                world: 'none',
-                system: 'dnd5e',
-                coreVersion: '0.8.8',
-                systemVersion: '1.3.6'
-              }
-            },
-            img: getImage(school),
-            effects: []
-        });
+                },
+                img: getImage(school),
+                effects: []
+            });
+        } catch (e) {
+            console.error('============================\nFailure on ' + spell.name);
+            throw e;
+        }
     }
     return parsed;
 };
@@ -917,9 +939,9 @@ const parseImportedEntries = (entries) => {
     }
     return entries.map((entry) => {
         if (typeof entry === 'string') {
-            return '<p>' + entry + '</p>';
+            return '<p>' + unwrap(entry) + '</p>';
         } else if (entry.type === 'list') {
-            const items = entry.items.map((item) => '<li>' + item + '</li>').join('');
+            const items = entry.items.map((item) => '<li>' + unwrap(item) + '</li>').join('');
             return '<ul>' + items + '</ul>';
         } else if (entry.type === 'entries') {
             const boldName = tagify('strong', entry.name);
@@ -959,7 +981,7 @@ const tagify = (tag, string) => {
  */
 const unwrap = (raw) => {
     if (typeof raw === 'string') {
-        return raw.replaceAll(/{@\w+ .*?([^\|]+?)}/g, (match, p, offset, prime) => p);
+        return raw.replaceAll(/{@\w+ (\w+)\|?.*?}/g, (match, p, offset, prime) => p);
     } else if (raw.type === 'cell') {
         return JSON.stringify(raw.roll);
     } else {
@@ -969,7 +991,7 @@ const unwrap = (raw) => {
 
 /**
  * Generates the duration object for an imported spell.
- * @param {{*}} spell 
+ * @param {{value: number, units: string}} spell 
  */
 const getImportedDuration = (spell) => {
     const dur = spell.duration[0];
@@ -996,6 +1018,34 @@ const getImportedDuration = (spell) => {
     } else {
         throw new Error('Unrecognized Imported Duration: ' + JSON.stringify(spell.duration));
     }
+};
+
+const getImportedRange = (spell) => {
+    let range;
+    const selfShapeRegex = /radius|sphere|line|cone|square|cube|cylinder|wall/;
+    if (spell.range.type === 'point') {
+        const dist = spell.range.distance;
+        if (dist.type === 'touch' || dist.type === 'self') {
+            range = dist.type;
+        } else if (dist.type === 'feet' || dist.type === 'miles') {
+            range = dist.amount + ' ' + dist.type;
+        } else if (dist.type === 'sight' || dist.type === 'unlimited') {
+            range = dist.type;
+        }
+    } else if (spell.range.type.match(selfShapeRegex)) {
+        const dist = spell.range.distance;
+        if (dist.type === 'feet' || dist.type === 'miles') {
+            range = `Self (${dist.amount}-${dist.type} ${spell.range.type})`
+        }
+    } else if (spell.range.type === 'special') {
+        range = 'Special';
+    } else if (spell.range.type === 'sight') {
+        range = 'Sight';
+    }
+    if (!range) {
+        throw new Error('Unrecognized Range Type: ' + JSON.stringify(spell.range));
+    }
+    return range;
 };
 //#endregion
 
