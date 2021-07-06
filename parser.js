@@ -818,7 +818,7 @@ const parseImportedFile = (contents) => {
             type: 'spell',
             data: {
                 description: {
-                    value: parseImportedEntries(spell.entries),
+                    value: parseImportedEntries(spell.entries) + parseImportedEntries(spell.entriesHigherLevel),
                     chat: '',
                     unidentified: ''
                 },
@@ -908,6 +908,9 @@ const deimportSchool = (abbreviation) => {
  * @returns {string}
  */
 const parseImportedEntries = (entries) => {
+    if (!entries) {
+        return '';
+    }
     return entries.map((entry) => {
         if (typeof entry === 'string') {
             return '<p>' + entry + '</p>';
