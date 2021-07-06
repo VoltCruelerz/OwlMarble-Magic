@@ -1127,7 +1127,7 @@ const sortSpellList = (spells) => {
 const run = () => {
     // Homebrew Only
     const homebrew = readAndParseInputFiles();
-    printSpells(homebrew, 'output/owlmagic-homebrew.db');
+    printSpells(homebrew, 'output/owlmagic-only.db');
 
     // SRD + Homebrew
     const srd = readSpellDB('srd/srd.db');
@@ -1137,7 +1137,7 @@ const run = () => {
     });
     const srd_homebrew = getSpellListFromLookup(srd_homebrew_lookup);
     sortSpellList(srd_homebrew);
-    printSpells(srd_homebrew, 'output/owlmagic-srd-homebrew.db');
+    printSpells(srd_homebrew, 'output/owlmagic-srd.db');
 
     // Imported
     const imported = readAndParseImportedSpells();
@@ -1151,7 +1151,7 @@ const run = () => {
     });
     const imported_homebrew = getSpellListFromLookup(imported_homebrew_lookup);
     sortSpellList(imported_homebrew);
-    printSpells(imported_homebrew, 'output/owlmagic-imported-homebrew.db');
+    printSpells(imported_homebrew, 'output/all.db');
 };
 run();
 console.log('===================\nDone.');
