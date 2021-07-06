@@ -15,20 +15,47 @@ const readAndParseInputFiles = () => {
         const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
         console.log('Detected ' + fileName);
         const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
-        allSpells.push(...parseFile(contents, level));
+        allSpells.push(...parseOwlMarbleFile(contents, level));
     });
 
     // Sort first by name, then by level so we're sanely organized, not that the db really cares.
     sortSpellList(allSpells);
-    // console.log('All Spells:\n' + JSON.stringify(allSpells));
     return allSpells;
 };
 
+/**
+ * Reads the spells from the specified db.
+ * @param {string} path 
+ * @returns 
+ */
 const readSpellDB = (path) => {
+    console.log('Reading db file ' + path);
     const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
     const lines = contents.split('\n');
     const dbSpells = lines.filter((line) => line).map((line) => JSON.parse(line));
     return dbSpells;
+}
+
+/**
+ * Reads and parses all imported spell files.
+ * @returns [{}]
+ */
+const readAndParseImportedSpells = () => {
+    console.log('Reading imported files...');
+    const dirName = 'import/';
+    const fileNames =fs.readdirSync(dirName);
+    fileNames.sort();
+    const allSpells = [];
+    fileNames.forEach((fileName) => {
+        const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
+        console.log('Detected ' + fileName);
+        const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
+        allSpells.push(...parseImportedFile(contents));
+    });
+
+    // Sort first by name, then by level so we're sanely organized, not that the db really cares.
+    sortSpellList(allSpells);
+    return allSpells;
 }
 
 /**
@@ -43,6 +70,7 @@ const printSpells = (spells, path) => {
 }
 //#endregion
 
+//#region Parse OwlMagic
 //#region High-Level Parsing
 /**
  * Parses the string content from a file into spells.
@@ -50,7 +78,7 @@ const printSpells = (spells, path) => {
  * @param {number} level The current level.
  * @returns {[{}]} Array of spell objects.
  */
-const parseFile = (content, level) => {
+const parseOwlMarbleFile = (content, level) => {
     const lines = content.split(/\r?\n/).filter((line) => line && !line.startsWith('<div') && line !== '```');
     const spellText = [];
     let readingSpellsYet = false;
@@ -766,6 +794,172 @@ const getImage = (school) => {
     return 'modules/owl-magic/icons/' + school.toLowerCase() + '.png';
 }
 //#endregion
+//#endregion
+
+//#region Parse Imported Spell
+/**
+ * Parses the spells in an imported file.
+ * @param {string} contents 
+ * @returns [{}]
+ */
+const parseImportedFile = (contents) => {
+    const spells = JSON.parse(contents).spell;
+    const parsed = [];
+    for (let i = 0; i < spells.length; i++) {
+        const spell = spells[i];
+        const school = deimportSchool(spell.school);
+
+        parsed.push({
+            _id: generateUUID(),
+            name: spell.name,
+            permission: {
+                default: 0
+            },
+            type: 'spell',
+            data: {
+                description: {
+                    value: parseImportedEntries(spell.entries),
+                    chat: '',
+                    unidentified: ''
+                },
+                source: spell.source + ' - ' + spell.page,
+                activation: 'TODO',
+                duration: 'TODO',
+                target: 'TODO',
+                range: 'TODO',
+                uses: {
+                    value: 0,
+                    max: 0,
+                    per: ''
+                },
+                consume: {
+                    type: '',
+                    target: '',
+                    amount: null
+                },
+                ability: '',
+                actionType: 'TODO',
+                attackBonus: 0,
+                chatFlavor: '',
+                critical: null,
+                damage: 'TODO',
+                formula: '',
+                save: 'TODO',
+                level: spell.level,
+                school: school,
+                components: 'TODO',
+                materials: '',
+                preparation: {
+                    mode: 'prepared',
+                    prepared: false
+                },
+                scaling: 'TODO',
+                attributes: {
+                    spelldc: 10
+                }
+            },
+            sort: 0,
+            flags: {
+              exportSource: {
+                world: 'none',
+                system: 'dnd5e',
+                coreVersion: '0.8.8',
+                systemVersion: '1.3.6'
+              }
+            },
+            img: getImage(school),
+            effects: []
+        });
+    }
+    return parsed;
+};
+
+/**
+ * Get the full spell name from the abbreviation.
+ * @param {string} abbreviation 
+ * @returns {string}
+ */
+const deimportSchool = (abbreviation) => {
+    switch (abbreviation) {
+        case 'A':
+            return 'abjuration';
+        case 'C':
+            return 'conjuration';
+        case 'D':
+            return 'divination';
+        case 'E':
+            return 'enchantment';
+        case 'I':
+            return 'illusion';
+        case 'N':
+            return 'necromancy';
+        case 'T':
+            return 'transmutation';
+        case 'V':
+            return 'evocation';
+        default:
+            throw new Error('Unrecognized Imported School ' + abbreviation);
+    }
+};
+
+/**
+ * Parses the imported entries recursively for the description field.
+ * @param {[string]} entries 
+ * @returns {string}
+ */
+const parseImportedEntries = (entries) => {
+    return entries.map((entry) => {
+        if (typeof entry === 'string') {
+            return '<p>' + entry + '</p>';
+        } else if (entry.type === 'list') {
+            const items = entry.items.map((item) => '<li>' + item + '</li>').join('');
+            return '<ul>' + items + '</ul>';
+        } else if (entry.type === 'entries') {
+            const boldName = tagify('strong', entry.name);
+            return boldName + parseImportedEntries(entry.entries);
+        } else if (entry.type === 'table') {
+            const tableLines = [
+                tagify('h3', entry.caption),
+                '<table border="1">',
+                tagify('tbody', [
+                    tagify('tr', [
+                        ...entry.colLabels.map((label) => `<td style="text-align: center;"><strong>${label}</strong></td>`)
+                    ].join('')),
+                    ...entry.rows.map((row) => tagify('tr', row.map((item) => tagify('td', unwrap(item))).join('')))
+                ].join('')),
+                '</table>'
+            ]
+            return tableLines.join('');
+        } else if (entry.type === 'quote') {
+            return '';
+        } else {
+            throw new Error('Unrecognized Entry: ' + JSON.stringify(entry));
+        }
+    }).join('');
+}
+
+const tagify = (tag, string) => {
+    if (!string) {
+        return '';
+    }
+    return `<${tag}>${string}</${tag}>`;
+}
+
+/**
+ * Unwraps text, such as {@spell blah blah|actual spell name}
+ * @param {string} text 
+ * @returns {string}
+ */
+const unwrap = (raw) => {
+    if (typeof raw === 'string') {
+        return raw.replaceAll(/{@\w+ .*?([^\|]+?)}/g, (match, p, offset, prime) => p);
+    } else if (raw.type === 'cell') {
+        return JSON.stringify(raw.roll);
+    } else {
+        throw new Error('Failed to Unwrap: ' + raw);
+    }
+}
+//#endregion
 
 /**
  * Generates a lookup table for a list of spells, keyed by name.
@@ -809,7 +1003,11 @@ const run = () => {
     const srd_homebrew = getSpellListFromLookup(srd_homebrew_lookup);
     sortSpellList(srd_homebrew);
     printSpells(srd_homebrew, 'output/owlmagic-srd-homebrew.db');
-    console.log('SRD + HOMEBREW:\n' + JSON.stringify(srd_homebrew));
+
+    // Imported
+    const imported = readAndParseImportedSpells();
+    sortSpellList(imported);
+    printSpells(imported, 'output/imported.db');
 };
 run();
 console.log('Done.');
