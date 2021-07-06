@@ -64,6 +64,7 @@ const readAndParseImportedSpells = () => {
  * @param {string} path
  */
 const printSpells = (spells, path) => {
+    console.log('===================\nPrinting to: ' + path + '\n===================\n');
     const spellLines = spells.map((spell) => JSON.stringify(spell));
     const db = spellLines.join('\n') + '\n';
     fs.writeFileSync(path, db);
@@ -873,7 +874,7 @@ const parseImportedFile = (contents) => {
                     level: spell.level,
                     school: school,
                     components: getImportedComponents(spell),
-                    materials: 'TODO',
+                    materials: getImportedMaterials(spell),
                     preparation: {
                         mode: 'prepared',
                         prepared: false
@@ -1068,6 +1069,28 @@ const getImportedComponents = (spell) => {
         concentration: isConcentration
     };
 }
+
+/**
+ * Generates the material consumption object for imported spells.
+ * @param {{*}} spell 
+ * @returns {{value: string, consumed: boolean, cost: number, supply: number}}
+ */
+const getImportedMaterials = (spell) => {
+    if (!spell.components.m) {
+        return {
+            value: '',
+            consumed: false,
+            cost: 0,
+            supply: 0
+        };
+    }
+    return {
+        value: spell.components.m.text,
+        consumed: spell.components.m.consume,
+        cost: 1,
+        supply: 0
+    };
+};
 //#endregion
 
 /**
@@ -1098,6 +1121,9 @@ const sortSpellList = (spells) => {
     spells.sort((a, b) => (a.data.level >= b.data.level) ? 1 : -1);
 };
 
+/**
+ * Main method.
+ */
 const run = () => {
     // Homebrew Only
     const homebrew = readAndParseInputFiles();
@@ -1117,6 +1143,15 @@ const run = () => {
     const imported = readAndParseImportedSpells();
     sortSpellList(imported);
     printSpells(imported, 'output/imported.db');
+
+    // Homebrew + Imported
+    const imported_homebrew_lookup = getSpellLookup(imported);
+    homebrew.forEach((spell) => {
+        imported_homebrew_lookup[spell.name] = spell;
+    });
+    const imported_homebrew = getSpellListFromLookup(imported_homebrew_lookup);
+    sortSpellList(imported_homebrew);
+    printSpells(imported_homebrew, 'output/owlmagic-imported-homebrew.db');
 };
 run();
-console.log('Done.');
+console.log('===================\nDone.');
