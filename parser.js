@@ -568,7 +568,6 @@ const getDamage = (description) => {
     const upcastTag = '<strong>higher levels</strong>: ';
     const upcastIndex = description.indexOf(upcastTag);
     const baseDesc = upcastIndex > -1 ? description.substr(0, upcastIndex) : description;
-    const upcastDesc = upcastIndex > -1 ? description.substr(upcastIndex + upcastTag.length) : '';
     const damageRegex = /(?<die>\d+(d\d+)?) ?(?<operator>\+|-|plus|minus)?([^\.]*?(?<shifter>\d+|modifier))?[^\.]*?(?<element>acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|healing|temphp)/g;
     const parts = [];
 
@@ -693,8 +692,41 @@ const getMaterials = (components) => {
     }
 };
 
+/**
+ * Generates the scaling object.
+ * @param {number} level 
+ * @param {string} description 
+ */
 const getScaling = (level, description) => {
-    return 'TODO';
+    description = description.toLowerCase();
+    const upcastTag = '<strong>higher levels</strong>: ';
+    const upcastIndex = description.indexOf(upcastTag);
+    if (upcastIndex === -1) {
+        return {
+            mode: 'none',
+            formula: ''
+        };
+    } else if (level === 0) {
+        return {
+            mode: 'cantrip',
+            formula: ''
+        };
+    }
+    const upcastDesc = upcastIndex > -1 ? description.substr(upcastIndex + upcastTag.length) : '';
+    const scalingRegex = /((\d+d\d+)(\W|\.))|modifier/g;
+    const matches = upcastDesc.matchAll(scalingRegex);
+    for (const match of matches) {
+        let formula = match[0];
+        formula = formula === 'modifier' ? '@mod' : formula;
+        return {
+            mode: 'level',
+            formula
+        };
+    }
+    return {
+        mode: 'level',
+        formula: ''
+    };
 };
 //#endregion
 
