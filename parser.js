@@ -1,13 +1,14 @@
 console.log('Starting...');
 const { match } = require('assert/strict');
 const fs = require('fs');
+const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round)s?(, (.*))?/g;
 
 //#region IO
 /**
  * Reads all input files and parses them.
  */
 const readAndParseInputFiles = () => {
-    console.log('===================\nReading input files...');
+    console.log('======================================\nReading input files...');
     const dirName = 'input/';
     const fileNames =fs.readdirSync(dirName);
     const allSpells = [];
@@ -29,7 +30,7 @@ const readAndParseInputFiles = () => {
  * @returns 
  */
 const readSpellDB = (path) => {
-    console.log('===================\nReading db file...\n- Path: ' + path);
+    console.log('======================================\nReading db file...\n- Path: ' + path);
     const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
     const lines = contents.split('\n');
     const dbSpells = lines.filter((line) => line).map((line) => JSON.parse(line));
@@ -41,7 +42,7 @@ const readSpellDB = (path) => {
  * @returns [{}]
  */
 const readAndParseImportedSpells = () => {
-    console.log('===================\nReading imported files...');
+    console.log('======================================\nReading imported files...');
     const dirName = 'import/';
     const fileNames =fs.readdirSync(dirName);
     fileNames.sort();
@@ -64,7 +65,7 @@ const readAndParseImportedSpells = () => {
  * @param {string} path
  */
 const printSpells = (spells, path) => {
-    console.log('===================\nPrinting to: ' + path + '\n===================\n');
+    console.log('======================================\nPrinting to: ' + path + '\n======================================\n');
     const spellLines = spells.map((spell) => JSON.stringify(spell));
     const db = spellLines.join('\n') + '\n';
     fs.writeFileSync(path, db);
@@ -90,7 +91,7 @@ const parseOwlMarbleFile = (content, level) => {
         if (line === '## Spells') {
             readingSpellsYet = true;
             continue;
-        } else if (line === '## Appendix') {
+        } else if (line.startsWith('## Appendix')) {
             break;
         }
 
@@ -116,7 +117,7 @@ const parseOwlMarbleFile = (content, level) => {
                     i = j - 1;
                     break;
                 }
-            } else if (foundStart && jLine && !jLine.match(/_+/)) {
+            } else if (foundStart && jLine && !jLine.match(/___+/)) {
                 spellLines.push(jLine);
             }
         }
@@ -134,6 +135,15 @@ const parseOwlMarbleFile = (content, level) => {
 const parseSpellText = (lines, level) => {
     const name = lines[0];
     try {
+        let oldName = undefined;
+        const replacementMatch = lines[1].match(/_replaces (.*?)_/);
+        if (replacementMatch) {
+            oldName = replacementMatch[1];
+            lines = [
+                lines[0],
+                ...lines.splice(2)
+            ];
+        }
         const school = parseSpellTrait('School', lines[1]);
         const castTime = parseSpellTrait('Casting Time', lines[2]);
         const range = parseSpellTrait('Range', lines[3]);
@@ -146,6 +156,7 @@ const parseSpellText = (lines, level) => {
         const spell = {
             _id: generateUUID(),
             name,
+            oldName,
             permission: {
                 default: 0
             },
@@ -303,10 +314,10 @@ const italicize = (line) => {
     while (line.includes('_')) {
         if (line.lastIndexOf('<em>') < line.lastIndexOf('</em>')) {
             // This means that we have closed the latest italics tag, so start a new one.
-            line = line.replace('**', '<strong>');
+            line = line.replace('_', '<em>');
         } else {
             // We have a hanging open tag, so close it.
-            line = line.replace('**', '</strong>');
+            line = line.replace('_', '</em>');
         }
     }
     return line;
@@ -369,42 +380,16 @@ const getRandomInt = (max) => {
  */
 const getActivation = (castTime) => {
     castTime = castTime.toLowerCase().replace(' ritual', '');
-
-    if (castTime === '1 action') {
+    const match = castTime.match(timeRegex);
+    if (match) {
         return {
-            type: 'action',
-            cost: 1,
-            condition: ''
+            cost: parseInt(match[1]),
+            type: match[2],
+            condition: match[4]
         };
-    } else if (castTime === '1 bonus action') {
-        return {
-            type: 'bonus',
-            cost: 1,
-            condition: ''
-        };
-    } else if (castTime === '1 reaction') {
-        const conditionIndex = castTime.indexOf(',');
-        const condition = conditionIndex > -1 ? castTime.substr(conditionIndex + 1) : '';
-        return {
-            type: 'reaction',
-            cost: 1,
-            condition
-        };
-    } else if (castTime === '1 minute') {
-        return {
-            type: 'minute',
-            cost: 1,
-            condition: ''
-        };
-    } else if (castTime === '10 minutes') {
-        return {
-            type: 'minute',
-            cost: 10,
-            condition: ''
-        };
-    } else {
-        throw new Error('Unrecognized cast time: ' + castTime);
     }
+
+    throw new Error('Unrecognized cast time: ' + castTime);
 };
 
 /**
@@ -417,40 +402,26 @@ const getDuration = (duration) => {
     .replace('concentration, ', '')
     .replace('up to ', '');
 
-    if (duration === 'instantaneous') {
+    const match = duration.match(timeRegex);
+    if (match) {
+        return {
+            value: match[1],
+            units: match[2]
+        };
+    } else if (duration === 'instantaneous') {
         return {
             value: null,
             units: 'inst'
-        };
-    } else if (duration === '1 round') {
-        return {
-            value: 1,
-            units: 'round'
-        };
-    } else if (duration === '1 minute') {
-        return {
-            value: 1,
-            units: 'minute'
-        };
-    } else if (duration === '10 minutes') {
-        return {
-            value: 10,
-            units: 'minute'
-        };
-    } else if (duration === '1 hour') {
-        return {
-            value: 1,
-            units: 'hour'
-        };
-    } else if (duration === '8 hours') {
-        return {
-            value: 8,
-            units: 'hour'
         };
     } else if (duration === 'permanent' || duration === 'until dispelled') {
         return {
             value: null,
             units: 'perm'
+        };
+    } else if (duration === 'special') {
+        return {
+            value: null,
+            units: 'spec'
         };
     } else {
         throw new Error('Unrecognized duration: ' + duration);
@@ -468,7 +439,7 @@ const getTarget = (range, description) => {
     description = description.toLowerCase();
     const targetRegex = /(\d+)[-| ](.+) (cone|radius|cube|cylinder|line|radius|sphere|square|wall)/g;
     const creatureRegex = /creature|aberration|beast|celestial|construct|dragon|elemental|fey|fiend|giant|humanoid|monstrosity|monster|ooze|plant|undead/;
-    const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest/;
+    const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest|a weapon you touch|triggering attack/;
     const spaceRegex = /point|spot|space|part of the sky/;
 
     if (range === 'self') {
@@ -897,7 +868,7 @@ const parseImportedFile = (contents) => {
                 effects: []
             });
         } catch (e) {
-            console.error('============================\nFailure on ' + spell.name);
+            console.error('===============================================\nFailure on ' + spell.name);
             throw e;
         }
     }
@@ -1094,31 +1065,34 @@ const getImportedMaterials = (spell) => {
 //#endregion
 
 /**
- * Generates a lookup table for a list of spells, keyed by name.
- * @param {[{}]} spellList 
- * @returns 
- */
-const getSpellLookup = (spellList) => {
-    return spellList.reduce((acc, val) => {
-        acc[val.name] = val;
-        return acc;
-    }, {});
-};
-
-const getSpellListFromLookup = (lookup) => {
-    return Object.keys(lookup).reduce((acc, val) => {
-        acc.push(lookup[val]);
-        return acc;
-    }, []);
-};
-
-/**
  * Sorts a list of spells in-place based on level and name.
  * @param {[{}]} spells 
  */
 const sortSpellList = (spells) => {
     spells.sort((a, b) => (a.name > b.name) ? 1 : -1);
     spells.sort((a, b) => (a.data.level >= b.data.level) ? 1 : -1);
+};
+
+/**
+ * Merges two spell lists together.  If a spell in trump has a matching name or oldName with a spell in offSuit, it is overwritten.
+ * @param {[{*}]} offSuit 
+ * @param {[{}]} trump 
+ * @returns {[{}]} merged list.
+ */
+const mergeSpellLists = (offSuit, trump) => {
+    const lookup = trump.reduce((acc, val) => {
+        acc[val.name] = val;
+        if (val.oldName) {
+            acc[val.oldName] = val;
+        }
+        return acc;
+    }, {});
+    const merged = [
+        ...offSuit.filter((offSuitSpell) => !lookup[offSuitSpell.name]),
+        ...trump
+    ];
+    sortSpellList(merged);
+    return merged;
 };
 
 /**
@@ -1131,13 +1105,7 @@ const run = () => {
 
     // SRD + Homebrew
     const srd = readSpellDB('srd/srd.db');
-    const srd_homebrew_lookup = getSpellLookup(srd);
-    homebrew.forEach((spell) => {
-        srd_homebrew_lookup[spell.name] = spell;
-    });
-    const srd_homebrew = getSpellListFromLookup(srd_homebrew_lookup);
-    sortSpellList(srd_homebrew);
-    printSpells(srd_homebrew, 'output/owlmagic-srd.db');
+    printSpells(mergeSpellLists(srd, homebrew), 'output/owlmagic-srd.db');
 
     // Imported
     const imported = readAndParseImportedSpells();
@@ -1145,13 +1113,7 @@ const run = () => {
     printSpells(imported, 'output/imported.db');
 
     // Homebrew + Imported
-    const imported_homebrew_lookup = getSpellLookup(imported);
-    homebrew.forEach((spell) => {
-        imported_homebrew_lookup[spell.name] = spell;
-    });
-    const imported_homebrew = getSpellListFromLookup(imported_homebrew_lookup);
-    sortSpellList(imported_homebrew);
-    printSpells(imported_homebrew, 'output/all.db');
+    printSpells(mergeSpellLists(imported, homebrew), 'output/all.db');
 };
 run();
-console.log('===================\nDone.');
+console.log('======================================\nDone.');
