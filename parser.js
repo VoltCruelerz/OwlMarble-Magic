@@ -1,7 +1,8 @@
 console.log('Starting...');
-const { match } = require('assert/strict');
-const { table } = require('console');
 const fs = require('fs');
+const seedrandom = require('seedrandom');
+
+
 const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/g;
 
 //#region IO
@@ -119,7 +120,7 @@ const parseSpellText = (lines, level) => {
 
         // Build the config.
         const spell = {
-            _id: generateUUID(),
+            _id: generateUUID(name),
             name,
             oldName,
             permission: {
@@ -422,12 +423,18 @@ const lineIsTable = (line) => {
 
 //#region Config Field Generators
 //#region UUID
-const generateUUID = () => {
+/**
+ * Generates a UUID from a PRNG seeded on the spell's name.
+ * @param {string} seed The seed for the RNG.
+ * @returns {string} The UUID.
+ */
+const generateUUID = (seed) => {
+    const rng = seedrandom(seed);
     const options = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const chars = [];
     const uuidLength = 16;
     for (let i = 0; i < uuidLength; i++) {
-        chars.push(options.charAt(getRandomInt(options.length)));
+        chars.push(options.charAt(getRandomInt(options.length, rng)));
     }
     return chars.join('');
 };
@@ -435,10 +442,11 @@ const generateUUID = () => {
 /**
  * Generates a random int from 0 (inclusive) to the max (exclusive).
  * @param {number} max The number of faces on the die.
+ * @param {{*}} rng The random number generator.
  * @returns {number} a random number.
  */
-const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max);
+const getRandomInt = (max, rng) => {
+    return Math.floor(rng() * max);
 };
 //#endregion
 
@@ -869,7 +877,7 @@ const parseImportedFile = (contents) => {
             const importedRange = getImportedRange(spell);
             const range = getRange(importedRange);
             parsed.push({
-                _id: generateUUID(),
+                _id: generateUUID(spell.name + ' (Imported)'),
                 name: spell.name,
                 permission: {
                     default: 0
