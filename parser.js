@@ -10,12 +10,12 @@ const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|ro
  */
 const readAndParseInputFiles = () => {
     console.log('======================================\nReading input files...');
-    const dirName = 'spells/input/';
+    const dirName = 'spells/levels/';
     const fileNames =fs.readdirSync(dirName);
     const allSpells = [];
     fileNames.forEach((fileName) => {
         const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
-        console.log('- Detected ' + fileName);
+        console.log('- Detected: ' + fileName);
         const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
         allSpells.push(...parseOwlMarbleFile(contents, level));
     });
@@ -1168,6 +1168,9 @@ const run = () => {
     // SRD + Homebrew
     const srd = readSpellDB('srd/srd.db');
     printSpells(mergeSpellLists(srd, homebrew), 'output/owlmagic-srd.db');
+
+    // Publish
+    printSpells(mergeSpellLists(srd, homebrew), 'foundry/packs/spells.db');
 
     // Imported
     const imported = readAndParseImportedSpells();
