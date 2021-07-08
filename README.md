@@ -22,4 +22,4 @@ All execututable code is in `parser.js`.
 
 ## TODO/Known Issues
 
-- Healing Parsing: healing does not always autoparse correctly
+- **Healing Parsing**: healing does not always autoparse correctly

@@ -1,7 +1,8 @@
 console.log('Starting...');
 const { match } = require('assert/strict');
+const { table } = require('console');
 const fs = require('fs');
-const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round)s?(, (.*))?/g;
+const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/g;
 
 //#region IO
 /**
@@ -81,33 +82,13 @@ const printSpells = (spells, path) => {
  * @returns {[{}]} Array of spell objects.
  */
 const parseOwlMarbleFile = (content, level) => {
-    const lines = content.split(/\r?\n/).filter((line) => line && !line.startsWith('# '));
-    const spellText = [];
-    for (let i = 0; i < lines.length; i++) {
-        // We're parsing a spell now, so find the next ## and the following one, and snip out that section.
-        const spellLines = [];
-        let foundStart = false;
-        for (let j = i; j < lines.length; j++) {
-            const jLine = lines[j];
-            if (jLine.startsWith('## ') || j === lines.length - 1) {
-                if (!foundStart) {
-                    // This is the start.
-                    foundStart = true;
-                    // Get the spell's name.
-                    spellLines.push(jLine.substr('## '.length));
-                } else {
-                    // This is the termination, so advance i.
-                    spellText.push(spellLines);
-                    i = j - 1;
-                    break;
-                }
-            } else if (foundStart && jLine && !jLine.match(/___+/)) {
-                spellLines.push(jLine);
-            }
-        }
-    }
-
-    return spellText.map((text) => parseSpellText(text, level));
+    const spellTexts = content.replaceAll('\r', '')
+        .split(/\n## /)
+        .filter((spellText) => spellText)
+        .map((spellText) => spellText.split('\n').filter((line) => line));
+    return spellTexts
+        .filter((text, index) => index > 0)
+        .map((text) => parseSpellText(text, level));
 };
 
 /**
@@ -231,36 +212,55 @@ const parseSpellTrait = (trait, line) => {
  */
 const parseDescription = (detailLines) => {
     const parsedLines = [];
-    detailLines.forEach((line, i) => {
+    for (let i = 0; i < detailLines.length; i++) {
+        let line = detailLines[i];
         const prevLine = i - 1 > -1 ? detailLines[i - 1] : '';
         const nextLine = i + 1 < detailLines.length ? detailLines[i + 1] : '';
         let nextLineInjection = undefined;
 
         // If we're in a list.
-        if (lineIsList(line)) {
-            if (!lineIsList(prevLine)) {
+        const curDepth = listDepth(line);
+        if (curDepth) {
+            const prevDepth = prevLine ? listDepth(prevLine) : 0;
+            const nextDepth = nextLine ? listDepth(nextLine) : 0;
+            if (prevDepth < curDepth) {
                 // This is the start of the list, so prefix this.
                 parsedLines.push('<ul>');
             }
-            if (!lineIsList(nextLine)) {
-                nextLineInjection = '</ul>';
+            if (nextDepth < curDepth) {
+                nextLineInjection = '</ul>'.repeat(curDepth - nextDepth);
             }
             line = listify(line);
+        } else if (lineIsHeader(line)) {
+            line = headerify(line);
+        } else if (lineIsTable(line)) {
+            if (!lineIsTable(prevLine)) {
+                // This is the start of the table.
+                parsedLines.push('<table border="1"><tbody>');
+                line = tableify(line, true);
+                i++;// skip the |-----|--------|--------| line.
+            } else if (!lineIsTable(nextLine)) {
+                // This is the table, so close it.
+                line = tableify(line, false);
+                nextLineInjection = '</tbody></table>';
+            } else {
+                line = tableify(line, false);
+            }
         } else {
             line = paragraphify(line);
         }
         
-        line = italicize(boldify(line));
+        line = preify(italicize(boldify(line)));
         parsedLines.push(line);
         if (nextLineInjection) {
             parsedLines.push(nextLineInjection);
         }
-    });
+    };
     return parsedLines.join('');
 };
 
 /**
- * HTML-ifies the bolding.
+ * HTML-ifies the bolding by converting from ** to <strong>.
  * @param {string} line 
  * @returns {string}
  */
@@ -284,7 +284,7 @@ const boldify = (line) => {
 };
 
 /**
- * HTML-ifies the italicizing.
+ * HTML-ifies the italicizing by converting from _ to <em>.
  * @param {string} line 
  * @returns {string}
  */
@@ -296,7 +296,7 @@ const italicize = (line) => {
         return line;
     }
     while (line.includes('_')) {
-        if (line.lastIndexOf('<em>') < line.lastIndexOf('</em>')) {
+        if (line.lastIndexOf('<em>') <= line.lastIndexOf('</em>')) {
             // This means that we have closed the latest italics tag, so start a new one.
             line = line.replace('_', '<em>');
         } else {
@@ -305,6 +305,54 @@ const italicize = (line) => {
         }
     }
     return line;
+};
+
+/**
+ * Replaces backtick blocks with <pre>.
+ * @param {string} line 
+ */
+const preify = (line) => {
+    const count = (line.match(/`/g) || []).length;
+    if (count % 2 != 0) {
+        // We have an odd number, so don't even try to format this.  It would just get weird.
+        console.log('Weird line found during preformatted code parsing: ' + line);
+        return line;
+    }
+    while (line.includes('`')) {
+        if (line.lastIndexOf('<pre>') <= line.lastIndexOf('</pre>')) {
+            // This means that we have closed the latest preformatted tag, so start a new one.
+            line = line.replace('`', '<pre>');
+        } else {
+            // We have a hanging open tag, so close it.
+            line = line.replace('`', '</pre>');
+        }
+    }
+    return line;
+};
+
+/**
+ * Converts a line with a number of #'s at the start into the appropriate html header, eg <h3>.
+ * @param {string} line 
+ * @returns {string}
+ */
+const headerify = (line) => {
+    const heading = line.substr(line.indexOf(' ') + 1);
+    const depth = (line.match(/#/g) || []).length;
+    return tagify('h' + depth, heading);
+};
+
+/**
+ * Converts a markdown table row into an html <tr>.
+ * @param {string} line 
+ * @param {boolean} isHeader 
+ * @returns {string}
+ */
+const tableify = (line, isHeader) => {
+    const tds = line.split('|').map((td) => td.trim()).filter((td) => td);
+    const rowData = isHeader
+        ? tds.map((td) => tagify('td', tagify('strong', td)))
+        : tds.map((td) => tagify('td', td));
+    return tagify('tr', rowData.join(''));
 };
 
 /**
@@ -322,17 +370,54 @@ const paragraphify = (line) => {
  * @returns {string}
  */
 const listify = (line) => {
-    return '<li>' + line.substr('- '.length) + '</li>';
-}
+    const content = line.match(/^\W*- (.*)/);
+    return '<li>' + content[1] + '</li>';
+};
 
 /**
- * Checks if the provided line is a list line or not.
+ * Wraps the string in the specified tag.  For example, 'h3' and 'blah' gives '<h3>blah</h3>'.
+ * @param {string} tag 
+ * @param {string} string 
+ * @returns {string}
+ */
+const tagify = (tag, string) => {
+    if (!string) {
+        return '';
+    }
+    return `<${tag}>${string}</${tag}>`;
+};
+
+/**
+ * Gets the current list depth, assuming two spaces per level.
+ * @param {string} line 
+ * @returns {number} the depth of the list
+ */
+const listDepth = (line) => {
+    const lineMatch = line.match(/^(\W*)- .+/);
+    if (lineMatch) { 
+        return lineMatch[1].length / 2 + 1;
+    }
+    return 0;
+};
+
+/**
+ * Checks if the current line starts with some number of #'s.
  * @param {string} line 
  * @returns {boolean}
  */
-const lineIsList = (line) => {
-    return line.match(/- .+/);
-}
+const lineIsHeader = (line) => {
+    const depth = (line.match(/#/g) || []).length;
+    return depth > 0;
+};
+
+/**
+ * Checks if we're in a table by looking for pipes at the start and end of the line.
+ * @param {string} line 
+ * @returns {boolean}
+ */
+const lineIsTable = (line) => {
+    return line.startsWith('|') && line.endsWith('|');
+};
 //#endregion
 
 //#region Config Field Generators
@@ -490,7 +575,7 @@ const getTarget = (range, description) => {
  */
 const getRange = (range) => {
     range = range.toLowerCase();
-    if (range === 'touch') {
+    if (range.startsWith('touch')) {
         return {
             value: null,
             long: null,
@@ -524,7 +609,7 @@ const getRange = (range) => {
             long: null,
             units: 'self'
         }
-    } else if (range === 'sight' || range === 'special') {
+    } else if (range.startsWith('sight') || range === 'special') {
         return {
             value: null,
             long: null,
@@ -924,13 +1009,6 @@ const parseImportedEntries = (entries) => {
             throw new Error('Unrecognized Entry: ' + JSON.stringify(entry));
         }
     }).join('');
-}
-
-const tagify = (tag, string) => {
-    if (!string) {
-        return '';
-    }
-    return `<${tag}>${string}</${tag}>`;
 }
 
 /**
