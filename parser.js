@@ -120,7 +120,7 @@ const parseSpellText = (lines, level) => {
 
         // Build the config.
         const spell = {
-            _id: generateUUID(name),
+            _id: generateUUID(name + ' (OwlMarble Magic)'),
             name,
             oldName,
             permission: {
