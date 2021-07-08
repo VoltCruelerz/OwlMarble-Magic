@@ -9,7 +9,7 @@ const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|ro
  */
 const readAndParseInputFiles = () => {
     console.log('======================================\nReading input files...');
-    const dirName = 'input/';
+    const dirName = 'spells/input/';
     const fileNames =fs.readdirSync(dirName);
     const allSpells = [];
     fileNames.forEach((fileName) => {
@@ -81,36 +81,20 @@ const printSpells = (spells, path) => {
  * @returns {[{}]} Array of spell objects.
  */
 const parseOwlMarbleFile = (content, level) => {
-    const lines = content.split(/\r?\n/).filter((line) => line && !line.startsWith('<div') && line !== '```');
+    const lines = content.split(/\r?\n/).filter((line) => line && !line.startsWith('# '));
     const spellText = [];
-    let readingSpellsYet = false;
     for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
-
-        // Detect the end of the preamble.
-        if (line === '## Spells') {
-            readingSpellsYet = true;
-            continue;
-        } else if (line.startsWith('## Appendix')) {
-            break;
-        }
-
-        // If we're still in the preamble, ignore things.
-        if (!readingSpellsYet) {
-            continue;
-        }
-
-        // We're parsing a spell now, so find the next ### and the following one, and snip out that section.
+        // We're parsing a spell now, so find the next ## and the following one, and snip out that section.
         const spellLines = [];
         let foundStart = false;
-
         for (let j = i; j < lines.length; j++) {
             const jLine = lines[j];
-            if (jLine.startsWith('### ') || jLine.startsWith('## ')) {
+            if (jLine.startsWith('## ') || j === lines.length - 1) {
                 if (!foundStart) {
                     // This is the start.
                     foundStart = true;
-                    spellLines.push(jLine.substr('### '.length));
+                    // Get the spell's name.
+                    spellLines.push(jLine.substr('## '.length));
                 } else {
                     // This is the termination, so advance i.
                     spellText.push(spellLines);
@@ -284,7 +268,7 @@ const boldify = (line) => {
     const count = (line.match(/\*\*/g) || []).length;
     if (count % 2 != 0) {
         // We have an odd number, so don't even try to format this.  It would just get weird.
-        console.log('Weird Line Found: ' + line);
+        console.log('Weird line found during boldification: ' + line);
         return line;
     }
     while (line.includes('**')) {
@@ -308,7 +292,7 @@ const italicize = (line) => {
     const count = (line.match(/_/g) || []).length;
     if (count % 2 != 0) {
         // We have an odd number, so don't even try to format this.  It would just get weird.
-        console.log('Weird Line Found: ' + line);
+        console.log('Weird line found during italicization: ' + line);
         return line;
     }
     while (line.includes('_')) {
