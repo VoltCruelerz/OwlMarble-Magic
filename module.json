@@ -4,7 +4,7 @@
     "description": "Contains the spells from OwlMarble Magic",
     "version": "0.0.1",
     "author": "@voltcruelerz",
-      "systems": ["dnd5e"],
+    "systems": ["dnd5e"],
     "scripts": [],
     "esmodules": [],
     "styles": [],
