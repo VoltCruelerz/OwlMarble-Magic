@@ -2,7 +2,7 @@ console.log('Starting...');
 const { match } = require('assert/strict');
 const { table } = require('console');
 const fs = require('fs');
-const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round)s?(, (.*))?/g;
+const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/g;
 
 //#region IO
 /**
@@ -219,13 +219,16 @@ const parseDescription = (detailLines) => {
         let nextLineInjection = undefined;
 
         // If we're in a list.
-        if (lineIsList(line)) {
-            if (!lineIsList(prevLine)) {
+        const curDepth = listDepth(line);
+        if (curDepth) {
+            const prevDepth = prevLine ? listDepth(prevLine) : 0;
+            const nextDepth = nextLine ? listDepth(nextLine) : 0;
+            if (prevDepth < curDepth) {
                 // This is the start of the list, so prefix this.
                 parsedLines.push('<ul>');
             }
-            if (!lineIsList(nextLine)) {
-                nextLineInjection = '</ul>';
+            if (nextDepth < curDepth) {
+                nextLineInjection = '</ul>'.repeat(curDepth - nextDepth);
             }
             line = listify(line);
         } else if (lineIsHeader(line)) {
@@ -247,7 +250,7 @@ const parseDescription = (detailLines) => {
             line = paragraphify(line);
         }
         
-        line = italicize(boldify(line));
+        line = preify(italicize(boldify(line)));
         parsedLines.push(line);
         if (nextLineInjection) {
             parsedLines.push(nextLineInjection);
@@ -293,12 +296,35 @@ const italicize = (line) => {
         return line;
     }
     while (line.includes('_')) {
-        if (line.lastIndexOf('<em>') < line.lastIndexOf('</em>')) {
+        if (line.lastIndexOf('<em>') <= line.lastIndexOf('</em>')) {
             // This means that we have closed the latest italics tag, so start a new one.
             line = line.replace('_', '<em>');
         } else {
             // We have a hanging open tag, so close it.
             line = line.replace('_', '</em>');
+        }
+    }
+    return line;
+};
+
+/**
+ * Replaces backtick blocks with <pre>.
+ * @param {string} line 
+ */
+const preify = (line) => {
+    const count = (line.match(/`/g) || []).length;
+    if (count % 2 != 0) {
+        // We have an odd number, so don't even try to format this.  It would just get weird.
+        console.log('Weird line found during preformatted code parsing: ' + line);
+        return line;
+    }
+    while (line.includes('`')) {
+        if (line.lastIndexOf('<pre>') <= line.lastIndexOf('</pre>')) {
+            // This means that we have closed the latest preformatted tag, so start a new one.
+            line = line.replace('`', '<pre>');
+        } else {
+            // We have a hanging open tag, so close it.
+            line = line.replace('`', '</pre>');
         }
     }
     return line;
@@ -344,7 +370,8 @@ const paragraphify = (line) => {
  * @returns {string}
  */
 const listify = (line) => {
-    return '<li>' + line.substr('- '.length) + '</li>';
+    const content = line.match(/^\W*- (.*)/);
+    return '<li>' + content[1] + '</li>';
 };
 
 /**
@@ -361,12 +388,16 @@ const tagify = (tag, string) => {
 };
 
 /**
- * Checks if the provided line is a list line or not.
+ * Gets the current list depth, assuming two spaces per level.
  * @param {string} line 
- * @returns {boolean}
+ * @returns {number} the depth of the list
  */
-const lineIsList = (line) => {
-    return line.match(/- .+/);
+const listDepth = (line) => {
+    const lineMatch = line.match(/^(\W*)- .+/);
+    if (lineMatch) { 
+        return lineMatch[1].length / 2 + 1;
+    }
+    return 0;
 };
 
 /**
@@ -544,7 +575,7 @@ const getTarget = (range, description) => {
  */
 const getRange = (range) => {
     range = range.toLowerCase();
-    if (range === 'touch') {
+    if (range.startsWith('touch')) {
         return {
             value: null,
             long: null,
@@ -578,7 +609,7 @@ const getRange = (range) => {
             long: null,
             units: 'self'
         }
-    } else if (range === 'sight' || range === 'special') {
+    } else if (range.startsWith('sight') || range === 'special') {
         return {
             value: null,
             long: null,
