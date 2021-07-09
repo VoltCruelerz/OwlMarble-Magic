@@ -4,8 +4,8 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 
 ## Links
 
-- Cantrips
-- Level 1 Spells
+- [Cantrips](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md)
+- [Level 1 Spells](./spells/levels/01.md)
 - Level 2 Spells
 - Level 3 Spells
 - Level 4 Spells
