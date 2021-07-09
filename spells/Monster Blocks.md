@@ -1,34 +1,5 @@
 # Monster Blocks
 
-> ## Opulent Ooze
->
->*Medium ooze, unaligned*
->
-> - **Armor Class** 10
-> - **Hit Points** 10
-> - **Speed** 35ft.
->
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|20 (+5)|10 (+0)|10 (+0)|3 (-4)|8 (-1)|1 (-5)|
->
-> - **Condition Immunities** poisoned, prone, stunned
-> - **Resistances** cold, fire, lightning
-> - **Immunities** acid, poison, psychic
-> - **Senses** passive Perception 8
->
-> ### Traits
->
-> ***Amorphous Form.*** The ooze can move through gaps as small as 6 inches in diameter without squeezing, but cannot end its turn there.
->
-> ***Tame.*** The ooze cannot take actions other than dodge.
->
-> ***Telepathic Control.*** The ooze is loyal to one creature and follows its telepathic instructions, which can be provided to the ooze while the creature is in contact with it.  In the absence of of orders, it follows the creature it is loyal to and takes the dodge action.
->
-> ***Powerful Build.*** The ooze counts as one size class larger when determining its carrying capacity.
-
-___
-
 > ## Ancestral Spirit
 >
 >*Medium humanoid, any alignment*
@@ -64,7 +35,8 @@ ___
 >
 > ***Bow (Archer only).*** *Ranged Weapon Attack:* your spell attack modifier to hit, range 150/600 ft., one target.  *Hit:* 1d8 + the spell's level piercing damage.
 
-___
+```
+```
 
 > ## Herbal Spirit
 >
@@ -93,3 +65,34 @@ ___
 > ***Parasitic Mycelium (Fungus only).*** *Melee Spell Attack:* your spell attack modifier to hit, range 5 ft., one target.  *Hit:* 1d4+3 plus the spell's level necrotic damage.  The spirit heals for half the damage dealt.
 >
 > ***Vine Lash (Vine only).*** *Melee Spell Attack:* your spell attack modifier to hit, range 10 ft., one target.  *Hit:* 1d10+3 plus the spell's level bludgeoning damage.  On a hit, the target is grappled and pulled up to 5 feet toward the spirit.  The escape DC is equal to your spell save DC.
+
+
+```
+```
+
+> ## Opulent Ooze
+>
+>*Medium ooze, unaligned*
+>
+> - **Armor Class** 10
+> - **Hit Points** 10
+> - **Speed** 35ft.
+>
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|20 (+5)|10 (+0)|10 (+0)|3 (-4)|8 (-1)|1 (-5)|
+>
+> - **Condition Immunities** poisoned, prone, stunned
+> - **Resistances** cold, fire, lightning
+> - **Immunities** acid, poison, psychic
+> - **Senses** passive Perception 8
+>
+> ### Traits
+>
+> ***Amorphous Form.*** The ooze can move through gaps as small as 6 inches in diameter without squeezing, but cannot end its turn there.
+>
+> ***Tame.*** The ooze cannot take actions other than dodge.
+>
+> ***Telepathic Control.*** The ooze is loyal to one creature and follows its telepathic instructions, which can be provided to the ooze while the creature is in contact with it.  In the absence of of orders, it follows the creature it is loyal to and takes the dodge action.
+>
+> ***Powerful Build.*** The ooze counts as one size class larger when determining its carrying capacity.
