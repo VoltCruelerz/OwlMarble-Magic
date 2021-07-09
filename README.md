@@ -52,8 +52,9 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 
 ### Parser Execution
 
-1. run `npm install`
-2. execute the code within `parser.js`.
+1. deposit any spell input files you wish to parse into `import/` and `srd/`.
+2. run `npm install`
+3. execute the code within `parser.js`.
 
 ### TODO/Known Issues
 
