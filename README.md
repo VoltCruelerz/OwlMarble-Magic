@@ -20,12 +20,12 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 
 ### Appendices
 
-- [General Rules](./spells/General%20Rules.md)
-- [Monster Stat Blocks](./spells/Monster%20Blocks.md)
-- [Spells by Level](./spells/Spells%20by%20Level.md)
-- [OGL](./spells/OGL.license)
+- [General Rules](./spells/General%20Rules.md): overall spellcasting rules.
+- [Monster Stat Blocks](./spells/Monster%20Blocks.md): stat blocks of homebrew monsters that are referenced by spells.
+- [Spells by Level](./spells/Spells%20by%20Level.md): a list of all spells for each class once OMM is accounted for.
+- [OGL](./spells/OGL.license): This is all just fan content, so here's Wizards' OGL.
 
-## Execution
+## Parser Execution
 
 1. run `npm install`
 2. execute the code within `parser.js`.
