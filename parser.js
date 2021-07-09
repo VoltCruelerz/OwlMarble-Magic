@@ -829,6 +829,34 @@ const getSchoolCode = (school) => {
 };
 
 /**
+ * Decodes the school code back into the school.  eg 'abj' => 'Abjuration'
+ * @param {string} schoolCode 
+ * @returns {string}
+ */
+const decodeSchool = (schoolCode) => {
+    switch (schoolCode) {
+        case 'abj':
+            return 'Abjuration';
+        case 'con':
+            return 'Conjuration';
+        case 'div':
+            return 'Divination';
+        case 'enc':
+            return 'Enchantment';
+        case 'evo':
+            return 'Evocation';
+        case 'ill':
+            return 'Illusion';
+        case 'nec':
+            return 'Necromancy';
+        case 'trs':
+            return 'Transmutation';
+        default:
+            throw new Error('Unrecognized School Code ' + schoolCode);
+    }
+};
+
+/**
  * Gets the components object.
  * @param {string} castTime 
  * @param {string} duration 
@@ -1259,11 +1287,12 @@ const run = () => {
 
     // Homebrew Only
     const homebrew = readAndParseInputFiles();
-    printSpells(homebrew, 'output/owlmagic-only.db');
+    printSpells(homebrew, 'output/owlmagic-only/spells.db');
 
     // SRD + Homebrew
     const srd = readSpellDB('srd/srd.db');
-    printSpells(mergeSpellLists(srd, homebrew), 'output/owlmagic-srd.db');
+    srd.forEach((srdSpell) => { srdSpell.img = getImage(decodeSchool(srdSpell.data.school)); });
+    printSpells(mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
 
     // Publish
     printSpells(mergeSpellLists(srd, homebrew), 'packs/spells.db');
@@ -1271,10 +1300,10 @@ const run = () => {
     // Imported
     const imported = readAndParseImportedSpells();
     sortSpellList(imported);
-    printSpells(imported, 'output/imported.db');
+    printSpells(imported, 'output/imported/spells.db');
 
     // Homebrew + Imported
-    printSpells(mergeSpellLists(imported, homebrew), 'output/all.db');
+    printSpells(mergeSpellLists(imported, homebrew), 'output/all/spells.db');
 };
 run();
 console.log('======================================\nDone.');
