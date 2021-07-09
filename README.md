@@ -22,7 +22,9 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 
 - [General Rules](./spells/General%20Rules.md)
 - [Monster Stat Blocks](./spells/Monster%20Blocks.md)
+- [Spells by Level](./spells/Spells%20by%20Level.md)
 - [OGL](./spells/OGL.license)
+
 ## Execution
 
 1. run `npm install`

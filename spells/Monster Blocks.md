@@ -38,6 +38,34 @@
 ```
 ```
 
+> ## Animated Object
+>
+>*Tiny|Small|Medium|large|Huge construct, unaligned*
+> ___
+>
+> - **Armor Class** 18/17/16/14/12
+> - **Hit Points** 15/25/50/90/120
+> - **Speed** 30ft. or fly 30 ft. (hover)
+>
+> ___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>| N (+n) | M (+m) |10 (+0)|3 (-4)|3 (-4)|1 (-5)|
+> ___
+>
+> - **Damage Immunities** poison, psychic
+> - **Condition Immunities** poisoned
+> - **Senses** blindsight 30 feet (blind beyond this range)
+> - **Challenge** 1/1/2/3/5
+>
+>
+> ### Actions
+>
+> ***Slam.*** *Melee Weapon Attack:* variable to-hit, range 5 ft., one target.  *Hit:* variable physical damage.
+
+```
+```
+
 > ## Herbal Spirit
 >
 >*Small plant, unaligned*

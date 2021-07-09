@@ -1,7 +1,7 @@
 console.log('Starting...');
 const fs = require('fs');
 const seedrandom = require('seedrandom');
-
+const { detailedDiff } = require('deep-object-diff');
 
 const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/;
 
@@ -27,7 +27,7 @@ const indexSpellsAndMonsters = () => {
             .filter((line) => line.startsWith(spellNameTag))
             .map((spellLine) => spellLine.match(spellNameRegex)[1]);
         spellNames.forEach((spellName) => {
-            const linkableName = spellName.replace(' ','-').toLowerCase();
+            const linkableName = spellName.replaceAll(' ','-').toLowerCase();
             indices[spellName] = `${github}/levels/${fileName}#${linkableName}`;
         });
     });
@@ -195,11 +195,11 @@ const parseSpellText = (lines, level) => {
         const spell = {
             _id: generateUUID(name + ' (OwlMarble Magic)'),
             name,
-            oldName,
             permission: {
                 default: 0
             },
             type: 'spell',
+            img: getImage(school),
             data: {
                 description: {
                     value: description,
@@ -240,7 +240,8 @@ const parseSpellText = (lines, level) => {
                 scaling: getScaling(level, description),
                 attributes: {
                     spelldc: 10
-                }
+                },
+                classes: classes
             },
             sort: '0',
             flags: {
@@ -251,9 +252,11 @@ const parseSpellText = (lines, level) => {
                     systemVersion: '1.3.6'
                 }
             },
-            img: getImage(school),
             'effects': []
         };
+        if (oldName) {
+            spell.oldName = oldName;
+        }
         return spell;
     } catch (e) {
         console.error('Failed to Parse ' + level + ' - ' + name);
@@ -590,6 +593,49 @@ const getDuration = (duration) => {
 };
 
 /**
+ * Generates an object for AoEs.
+ * @param {[*]} match 
+ * @returns {{value: number, units: string, shape: string}}
+ */
+const getAoE = (match) => {
+    let val = parseInt(match[1]);
+    let units = match[2];
+    if (units.startsWith('foot') || units.startsWith('feet')) {
+        units = 'ft';
+    } else if (units.startsWith('mile') || units.startsWith('miles')) {
+        units = 'mi';
+    }
+    
+    let shape = match[3];
+    shape = shape.replaceAll('-', ' ');
+    const terms = shape.split(' ');
+    if (terms.length === 2) {
+        const isRound = terms[1] === 'sphere' || terms[1] === 'cylinder';
+        if (terms[0] === 'radius' && isRound) {
+            shape = terms[1];
+        } else if (terms[0] === 'diameter' && isRound) {
+            val /= 2;
+            shape = terms[1];
+        } else {
+            throw new Error('Unrecognized AoE: ' + match[0]);
+        }
+    } else if (terms.length === 1) {
+        if (shape === 'sphere' || shape === 'cylinder') {
+            // If someone decided to measure a sphere without a term, assume they meant diameter.
+            val /= 2;
+        }
+    } else {
+        throw new Error('Unrecognized AoE: ' + match[0]);
+    }
+
+    return {
+        value: val,
+        units: units,
+        type: shape
+    };
+}
+
+/**
  * Generates the target object.
  * @param {string} range 
  * @param {string} description 
@@ -598,10 +644,10 @@ const getDuration = (duration) => {
 const getTarget = (range, description) => {
     range = range.toLowerCase();
     description = description.toLowerCase();
-    const targetRegex = /(\d+)[-| ](.+) (cone|radius|cube|cylinder|line|radius|sphere|square|wall)/;
+    const targetRegex = /(\d+)\W(.+?)\W(cone|cube|radius\Wcylinder|diameter\Wcylinder|radius\Wsphere|diameter\Wsphere|radius|square|wall|line)/;
     const creatureRegex = /creature|aberration|beast|celestial|construct|dragon|elemental|fey|fiend|giant|humanoid|monstrosity|monster|ooze|plant|undead/;
-    const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest|a weapon you touch|triggering attack/;
-    const spaceRegex = /point|spot|space|part of the sky/;
+    const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest|a weapon you touch|triggering attack|figment/;
+    const spaceRegex = /point|spot|space|part of the sky|within range/;
 
     if (range === 'self') {
         return {
@@ -609,29 +655,23 @@ const getTarget = (range, description) => {
             units: '',
             type: 'self'
         };
-    } else if (range.match(targetRegex)) {
-        const matches = range.match(targetRegex);
-        const val = parseInt(matches[1]);
-        let units = matches[2];
-        units = units === 'foot' || units === 'feet' ? 'ft' : 'mi';
-        const shape = matches[3];
-        return {
-            value: val,
-            units: units,
-            type: shape
-        };
-    } else if (description.match(targetRegex)) {
-        const matches = description.match(targetRegex);
-        const val = parseInt(matches[1]);
-        let units = matches[2];
-        units = units === 'foot' || units === 'feet' ? 'ft' : 'mi';
-        const shape = matches[3];
-        return {
-            value: val,
-            units: units,
-            type: shape
-        };
-    } else if (description.match(creatureRegex)) {
+    } 
+    if (range.match(targetRegex)) {
+        const match = range.match(targetRegex);
+        const aoe = getAoE(match);
+        if (aoe.units === 'ft' || aoe.units === 'mi') {
+            return aoe;
+        }
+    } 
+    if (description.match(targetRegex)) {
+        const match = description.match(targetRegex);
+        const aoe = getAoE(match);
+        if (aoe.units === 'ft' || aoe.units === 'mi') {
+            return aoe;
+        }
+    } 
+    
+    if (description.match(creatureRegex)) {
         return {
             value: 1,
             units: '',
@@ -763,6 +803,11 @@ const getDamage = (description) => {
         const longTag = match[4];
         const shifter = match[5] === 'modifier' ? '@mod' : match[5];
         const element = match[6];
+
+        // Ignore wordings like "5-foot radius".
+        if (op && !shifter) {
+            continue;
+        }
 
         const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
         parts.push([
@@ -897,13 +942,13 @@ const getMaterials = (components) => {
     const flavorRegex = /.*\((.*?)\)/;
     const valuableMatches = components.match(valuableRegex);
     const flavorMatches = components.match(flavorRegex);
-    if (valuableMatches) {
-        const text = valuableMatches[1];
-        const val = parseInt(valuableMatches[2]);
+    if (valuableMatches && flavorMatches) {
+        const cost = parseInt(valuableMatches[1]);
+        const flavor = flavorMatches[1];
         return {
-            value: text,
+            value: flavor,
             consumed: consumed,
-            cost: val,
+            cost: cost,
             supply: 0
         };
     } else if (flavorMatches) {
@@ -996,6 +1041,7 @@ const parseImportedFile = (contents) => {
                     default: 0
                 },
                 type: 'spell',
+                img: getImage(school),
                 data: {
                     description: {
                         value: description,
@@ -1040,18 +1086,18 @@ const parseImportedFile = (contents) => {
                     scaling: getScaling(spell.level, description),
                     attributes: {
                         spelldc: 10
-                    }
+                    },
+                    classes: getImportedClasses(spell)
                 },
                 sort: 0,
                 flags: {
-                exportSource: {
-                    world: 'none',
-                    system: 'dnd5e',
-                    coreVersion: '0.8.8',
-                    systemVersion: '1.3.6'
-                }
+                    exportSource: {
+                        world: 'none',
+                        system: 'dnd5e',
+                        coreVersion: '0.8.8',
+                        systemVersion: '1.3.6'
+                    }
                 },
-                img: getImage(school),
                 effects: []
             });
         } catch (e) {
@@ -1136,7 +1182,9 @@ const parseImportedEntries = (entries) => {
  */
 const unwrap = (raw) => {
     if (typeof raw === 'string') {
-        return raw.replaceAll(/{@\w+ (\w+)\|?.*?}/g, (match, p, offset, prime) => p);
+        return raw
+            .replaceAll(/{@\w+ (\w+)\|?.*?}/g, (match, p, offset, prime) => p)
+            .replaceAll('}','');// Clean up termination of nested wrappers.
     } else if (raw.type === 'cell') {
         return JSON.stringify(raw.roll);
     } else {
@@ -1214,8 +1262,8 @@ const getImportedComponents = (spell) => {
     return {
         value: '',
         vocal: !!spell.components.v,
-        somatic: !!spell.components.v,
-        material: !!spell.components.v,
+        somatic: !!spell.components.s,
+        material: !!spell.components.m,
         ritual: isRitual,
         concentration: isConcentration
     };
@@ -1238,10 +1286,34 @@ const getImportedMaterials = (spell) => {
     return {
         value: spell.components.m.text,
         consumed: spell.components.m.consume,
-        cost: 1,
+        cost: spell.components.m.cost / 100,
         supply: 0
     };
 };
+
+/**
+ * Parses the classes for the imported spells.
+ * @param {{*}} spell 
+ */
+const getImportedClasses = (spell) => {
+    const classLookup = {};
+    try {
+        spell?.classes?.fromClassList?.forEach((classEntry) => {
+            if (classEntry.source === 'PHB' || classEntry.source === 'TCE') {
+                classLookup[classEntry.name] = true;
+            }
+        });
+        spell?.classes?.fromClassListVariant?.forEach((varEntry) => {
+            if (varEntry.definedInSource === 'UAClassFeatureVariants') {
+                classLookup[varEntry.name];
+            }
+        });
+    } catch (e) {
+        console.log('Failure on importing classes list: ' + spell.classes);
+        throw e;
+    }
+    return Object.keys(classLookup);
+}
 //#endregion
 
 /**
@@ -1251,6 +1323,85 @@ const getImportedMaterials = (spell) => {
 const sortSpellList = (spells) => {
     spells.sort((a, b) => (a.name > b.name) ? 1 : -1);
     spells.sort((a, b) => (a.data.level >= b.data.level) ? 1 : -1);
+};
+
+/**
+ * Exports the spell lists for each class.
+ * @param {[{*}]} spells 
+ * @param {{*}} indices
+ */
+const exportSpellLists = (spells, indices) => {
+    const wall = ('======================================');
+    console.log(wall + '\nExporting Class Spell Lists...');
+    const classes = Object.keys(spells.reduce((acc, spell) => {
+        spell.data.classes.forEach((casterClass) => {
+            acc[casterClass] = true;
+        });
+        return acc;
+    }, {}));
+    classes.sort();
+
+    console.log('Classes: ' + classes);
+
+    const outputLines = [
+        '# Spells by Class', '',
+        '**Note**: this file is autogenerated.', '',
+        'Spells names link to the appropriate local file if it was altered by OwlMarble Magic.  Otherwise, they link to D&D Beyond.', ''
+    ];
+    const dndbeyond = 'https://www.dndbeyond.com/spells/';
+    classes.forEach((clazz) => {
+        outputLines.push('## ' + clazz);
+        outputLines.push('');
+        for (let i = 0; i <= 10; i++) {
+            const level = i === 0 ? 'Cantrip' : `Level ${i}`;
+            const currentSpells = spells.filter((spell) => spell.data.classes.includes(clazz) && spell.data.level === i);
+            if (currentSpells.length === 0) {
+                continue;
+            }
+            outputLines.push(`### ${level} - _${clazz}_`);
+            outputLines.push('');
+            currentSpells.forEach((spell) => {
+                const tags = [];
+                const components = [];
+                if (spell.data.components.vocal) {
+                    components.push('V');
+                }
+                if (spell.data.components.somatic) {
+                    components.push('S');
+                }
+                if (spell.data.components.material) {
+                    let materialTerm = 'M';
+                    if (spell.data.materials.cost) {
+                        materialTerm += '$';
+                        if (spell.data.materials.consumed) {
+                            materialTerm += 'X';
+                        }
+                    }
+                    components.push(materialTerm);
+                }
+                tags.push(components.join('/'));
+
+                if (spell.data.components.ritual) {
+                    tags.push('[R]');
+                }
+                if (spell.data.components.concentration) {
+                    tags.push('[C]');
+                }
+
+                const tagString = tags.length > 0 ? ' - ' + tags.join(' ') + ' - ' : ' - ';
+
+                // Link locally if it's homebrew, but otherwise, just point to D&D beyond.
+                const link = indices[spell.name]
+                    ? `[${spell.name}](${indices[spell.name]})`
+                    : `[${spell.name}](${dndbeyond + spell.name.toLowerCase().replaceAll(' ','-')})`;
+                outputLines.push(`- ${link}${tagString}(${spell.data.source})`)
+            });
+            outputLines.push('');
+        }
+    });
+    const output = outputLines.join('\r\n');// It burns us, precious!  (windows line breaks)
+
+    fs.writeFileSync('spells/Spells by Level.md', output);
 };
 
 /**
@@ -1276,6 +1427,64 @@ const mergeSpellLists = (offSuit, trump) => {
 };
 
 /**
+ * Generates a diff report for the old spells vs the new spells.
+ * @param {[{*}]} oldSpells 
+ * @param {[{*}]} newSpells 
+ */
+const logDiff = (oldSpells, newSpells) => {
+    const wall = ('======================================');
+    console.log(wall + '\nChecking for diffs...');
+
+    const oldLookup = oldSpells.reduce((acc, spell) => {
+        acc[spell.name] = spell;
+        return acc;
+    }, {});
+
+    const newLookup = newSpells.reduce((acc, spell) => {
+        acc[spell.name] = spell;
+        return acc;
+    }, {});
+
+    const addedSpells = newSpells.filter((newSpell) => !oldLookup[newSpell.name]);
+    if (addedSpells.length) {
+        console.log(wall + '\nADDED ' + addedSpells.length + ' SPELLS!');
+        addedSpells.forEach((spell) => console.log('- ' + spell.name));
+    }
+
+    const removedSpells = oldSpells.filter((oldSpell) => !newLookup[oldSpell.name]);
+    if (removedSpells.length) {
+        console.log(wall + '\nREMOVED ' + removedSpells.length + ' SPELLS!');
+        removedSpells.forEach((spell) => console.log('- ' + spell.name));
+    }
+
+    const updatedSpells = newSpells.map((newSpell) => {
+        const oldSpell = oldLookup[newSpell.name];
+        if (!oldSpell) {
+            return;
+        }
+
+        const oldString = JSON.stringify(oldSpell);
+        const newString = JSON.stringify(newSpell);
+        if (oldString === newString) {
+            return;
+        }
+
+        return {
+            name: newSpell.name,
+            oldSpell,
+            newSpell 
+        };
+    }).filter((mapping) => mapping);
+    if (updatedSpells.length) {
+        console.log(wall + '\nUPDATED ' + updatedSpells.length + ' SPELLS!');
+        updatedSpells.forEach((mapping) => {
+            console.log('- Updated ' + mapping.name);
+            console.log(detailedDiff(mapping.oldSpell, mapping.newSpell));
+        });
+    }
+};
+
+/**
  * Main method.
  */
 const run = () => {
@@ -1292,16 +1501,27 @@ const run = () => {
     srd.forEach((srdSpell) => { srdSpell.img = getImage(decodeSchool(srdSpell.data.school)); });
     printSpells(mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
 
-    // Publish
+    // Publishable
     printSpells(mergeSpellLists(srd, homebrew), 'packs/spells.db');
 
-    // Imported
+    // Imported only
     const imported = readAndParseImportedSpells();
     sortSpellList(imported);
     printSpells(imported, 'output/imported/spells.db');
 
     // Homebrew + Imported
-    printSpells(mergeSpellLists(imported, homebrew), 'output/all/spells.db');
+    const allSpells = mergeSpellLists(imported, homebrew);
+    const oldSpells = readSpellDB('output/all/spells.db');
+    printSpells(allSpells, 'output/all/spells.db');
+
+    // Export the spell lists for all included classes.
+    exportSpellLists(allSpells, indices);
+
+    // Export all to current foundry deployment.
+    printSpells(allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db');
+
+    // Log differences to spells.
+    logDiff(oldSpells, allSpells);
 };
 run();
 console.log('======================================\nDone.');
