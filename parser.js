@@ -844,7 +844,7 @@ const getComponents = (castTime, duration, components) => {
     const isConc = duration.startsWith('concentration');
     
     const openIndex = components.indexOf('(');
-    const componentTerms = (openIndex > -1 ? components.substr(0, openIndex) : components).split(', ');
+    const componentTerms = (openIndex > -1 ? components.substr(0, openIndex) : components).split(', ').map((term) => term.trim());
 
     return {
         value: '',
@@ -864,10 +864,10 @@ const getComponents = (castTime, duration, components) => {
 const getMaterials = (components) => {
     components = components.toLowerCase();
     const consumed = components.includes('consume');
-    const valuableRegex = /.*\(.*?(\d+) ?[gp|gold].*\)/g;
-    const flavorRegex = /.*\((.*?)\)/g;
-    const valuableMatches = components.matchAll(valuableRegex);
-    const flavorMatches = components.matchAll(flavorRegex);
+    const valuableRegex = /.*\(.*?(\d+) ?[gp|gold].*\)/;
+    const flavorRegex = /.*\((.*?)\)/;
+    const valuableMatches = components.match(valuableRegex);
+    const flavorMatches = components.match(flavorRegex);
     if (valuableMatches) {
         const text = valuableMatches[1];
         const val = parseInt(valuableMatches[2]);
