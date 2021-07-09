@@ -4,17 +4,17 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 
 ## Links
 
-- [Cantrips](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md)
+- [Cantrips](./spells/levels/00.md)
 - [Level 1 Spells](./spells/levels/01.md)
-- Level 2 Spells
-- Level 3 Spells
-- Level 4 Spells
-- Level 5 Spells
-- Level 6 Spells
-- Level 7 Spells
-- Level 8 Spells
-- Level 9 Spells
-- Level 10 Spells
+- [Level 2 Spells](./spells/levels/02.md)
+- [Level 3 Spells](./spells/levels/03.md)
+- [Level 4 Spells](./spells/levels/04.md)
+- [Level 5 Spells](./spells/levels/05.md)
+- [Level 6 Spells](./spells/levels/06.md)
+- [Level 7 Spells](./spells/levels/07.md)
+- [Level 8 Spells](./spells/levels/08.md)
+- [Level 9 Spells](./spells/levels/09.md)
+- [Level 10 Spells](./spells/levels/10.md)
 
 ## Execution
 
