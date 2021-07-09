@@ -1517,7 +1517,8 @@ const run = () => {
     // Export the spell lists for all included classes.
     exportSpellLists(allSpells, indices);
 
-    // Export all to current foundry deployment.
+    // Export all to current foundry install.
+    console.log('======================================\nExporting spells to foundry install...');
     printSpells(allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db');
 
     // Log differences to spells.
