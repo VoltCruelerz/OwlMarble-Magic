@@ -544,9 +544,9 @@ const getActivation = (castTime) => {
     const match = castTime.match(timeRegex);
     if (match) {
         return {
-            cost: parseInt(match[1]),
             type: match[2],
-            condition: match[4]
+            cost: parseInt(match[1]),
+            condition: match[4] || ''
         };
     }
 
