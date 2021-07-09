@@ -1,8 +1,10 @@
 # OwlMarble Magic
 
-Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their spell lists into FoundryVTT.
+Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their spell list into FoundryVTT.
 
-## Links
+## Spells
+
+### Spells by Level
 
 - [Cantrips](./spells/levels/00.md)
 - [Level 1 Spells](./spells/levels/01.md)
@@ -16,6 +18,11 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 - [Level 9 Spells](./spells/levels/09.md)
 - [Level 10 Spells](./spells/levels/10.md)
 
+### Appendices
+
+- [General Rules](./spells/General%20Rules.md)
+- [Monster Stat Blocks](./spells/Monster%20Blocks.md)
+- [OGL](./spells/OGL.license)
 ## Execution
 
 1. run `npm install`
