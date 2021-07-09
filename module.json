@@ -13,7 +13,7 @@
           "label": "Spells",
           "system": "dnd5e",
           "module": "owlmarble",
-          "path": "foundry/packs/spells.db",
+          "path": "packs/spells.db",
           "entity": "Item"
       }],
     "languages": [],

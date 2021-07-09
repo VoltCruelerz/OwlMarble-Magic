@@ -1,10 +1,9 @@
 console.log('Starting...');
 const fs = require('fs');
-const { off } = require('process');
 const seedrandom = require('seedrandom');
 
 
-const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/g;
+const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/;
 
 //#region IO
 /**
@@ -227,10 +226,7 @@ const parseSpellText = (lines, level) => {
                 attackBonus: 0,
                 chatFlavor: '',
                 critical: null,
-                damage: {
-                    parts: getDamage(description),
-                    versatile: ''
-                },
+                damage: getDamage(description),
                 formula: '',
                 save: getSave(description),
                 level,
@@ -602,7 +598,7 @@ const getDuration = (duration) => {
 const getTarget = (range, description) => {
     range = range.toLowerCase();
     description = description.toLowerCase();
-    const targetRegex = /(\d+)[-| ](.+) (cone|radius|cube|cylinder|line|radius|sphere|square|wall)/g;
+    const targetRegex = /(\d+)[-| ](.+) (cone|radius|cube|cylinder|line|radius|sphere|square|wall)/;
     const creatureRegex = /creature|aberration|beast|celestial|construct|dragon|elemental|fey|fiend|giant|humanoid|monstrosity|monster|ooze|plant|undead/;
     const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest|a weapon you touch|triggering attack/;
     const spaceRegex = /point|spot|space|part of the sky/;
@@ -614,7 +610,7 @@ const getTarget = (range, description) => {
             type: 'self'
         };
     } else if (range.match(targetRegex)) {
-        const matches = range.matchAll(targetRegex);
+        const matches = range.match(targetRegex);
         const val = parseInt(matches[1]);
         let units = matches[2];
         units = units === 'foot' || units === 'feet' ? 'ft' : 'mi';
@@ -625,7 +621,7 @@ const getTarget = (range, description) => {
             type: shape
         };
     } else if (description.match(targetRegex)) {
-        const matches = description.matchAll(targetRegex);
+        const matches = description.match(targetRegex);
         const val = parseInt(matches[1]);
         let units = matches[2];
         units = units === 'foot' || units === 'feet' ? 'ft' : 'mi';
@@ -943,7 +939,7 @@ const getScaling = (level, description) => {
  * @returns {string} path to the image
  */
 const getImage = (school) => {
-    return 'modules/owl-magic/foundry/icons/' + school.toLowerCase() + '.png';
+    return 'modules/owlmarble-magic/icons/' + school.toLowerCase() + '.png';
 }
 //#endregion
 //#endregion
@@ -1270,7 +1266,7 @@ const run = () => {
     printSpells(mergeSpellLists(srd, homebrew), 'output/owlmagic-srd.db');
 
     // Publish
-    printSpells(mergeSpellLists(srd, homebrew), 'foundry/packs/spells.db');
+    printSpells(mergeSpellLists(srd, homebrew), 'packs/spells.db');
 
     // Imported
     const imported = readAndParseImportedSpells();
