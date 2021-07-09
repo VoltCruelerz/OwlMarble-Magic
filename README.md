@@ -25,7 +25,6 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 - [Spells by Level](./spells/Spells%20by%20Level.md): a list of all spells for each class once OMM is accounted for.
 - [OGL](./spells/OGL.license): This is all just fan content, so here's Wizards' OGL.
 
-
 ## Features
 
 ### Player-Facing Features
