@@ -1,11 +1,87 @@
 console.log('Starting...');
 const fs = require('fs');
+const { off } = require('process');
 const seedrandom = require('seedrandom');
 
 
 const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/g;
 
 //#region IO
+/**
+ * Indexes the spells and monsters.
+ * @returns {{*}} A dictionary containing spell and creature names to the github permalink.
+ */
+const indexSpellsAndMonsters = () => {
+    console.log('======================================\nIndexing files...');
+    const indices = {};
+    const github = 'https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells';
+
+    // Load all the spells.
+    const spellNameTag = '## ';
+    const spellNameRegex = /## (.*)/;
+    const dirName = 'spells/levels/';
+    const fileNames = fs.readdirSync(dirName);
+    fileNames.forEach((fileName) => {
+        const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
+        const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
+        const spellNames = contents.split('\r\n')
+            .filter((line) => line.startsWith(spellNameTag))
+            .map((spellLine) => spellLine.match(spellNameRegex)[1]);
+        spellNames.forEach((spellName) => {
+            const linkableName = spellName.replace(' ','-').toLowerCase();
+            indices[spellName] = `${github}/levels/${fileName}#${linkableName}`;
+        });
+    });
+
+    // Load the monsters.
+    const monsterNameTag = '> ## ';
+    const monsterNameRegex = /> ## (.*)/;
+    const monsterNames = fs.readFileSync('spells/Monster Blocks.md', { encoding: 'utf-8', flag: 'r' })
+        .split('\r\n')
+        .filter((line) => line.startsWith(monsterNameTag))
+        .map((monsterNameLine) => monsterNameLine.match(monsterNameRegex)[1]);
+    monsterNames.forEach((monsterName) => {
+        const linkableName = monsterName.replace(' ', '-').toLowerCase();
+        indices[monsterName] = `${github}/Monster%20Blocks.md#${linkableName}`;
+    });
+
+    return indices;
+};
+
+/**
+ * Updates all references (proper names wrapped by underscores) in the spell source files.
+ * @param {{*}} indices 
+ */
+const updateReferences = (indices) => {
+    const dirName = 'spells/levels/';
+    const fileNames = fs.readdirSync(dirName);
+    fileNames.forEach((fileName) => {
+        const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
+        const updated = contents.replaceAll(/(^|\W)_(\w.*?\w)_(\W|$)/g, (match, g1, g2, g3, offset, prime) => {
+            if (match.startsWith('_replaces ') || !indices[g2]) {
+                return match;
+            }
+            const replacement = `${g1}[${g2}](${indices[g2]})${g3}`;
+            console.log('Replacing with Index...');
+            console.log(' - From: ' + match);
+            console.log(' - To: ' + replacement);
+            return replacement;
+        });
+
+        // Don't rewrite the file if nothing changed.
+        if (updated === contents) {
+            return;
+        }
+
+        // Rewrite the file with the new content.
+        try {
+            fs.writeFileSync(dirName + fileName, updated, { encoding: 'utf-8', flag: 'w' });
+        } catch (e) {
+            console.error(e);
+        }
+    });
+}
+
 /**
  * Reads all input files and parses them.
  */
@@ -16,7 +92,6 @@ const readAndParseInputFiles = () => {
     const allSpells = [];
     fileNames.forEach((fileName) => {
         const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
-        console.log('- Detected: ' + fileName);
         const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
         allSpells.push(...parseOwlMarbleFile(contents, level));
     });
@@ -51,7 +126,6 @@ const readAndParseImportedSpells = () => {
     const allSpells = [];
     fileNames.forEach((fileName) => {
         const level = parseInt(fileName.substr(0, fileName.indexOf('.')));
-        console.log('- Detected ' + fileName);
         const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
         allSpells.push(...parseImportedFile(contents));
     });
@@ -67,7 +141,7 @@ const readAndParseImportedSpells = () => {
  * @param {string} path
  */
 const printSpells = (spells, path) => {
-    console.log('======================================\nPrinting to: ' + path + '\n======================================\n');
+    console.log('Printing to: ' + path);
     const spellLines = spells.map((spell) => JSON.stringify(spell));
     const db = spellLines.join('\n') + '\n';
     fs.writeFileSync(path, db);
@@ -251,7 +325,7 @@ const parseDescription = (detailLines) => {
             line = paragraphify(line);
         }
         
-        line = preify(italicize(boldify(line)));
+        line = linkify(preify(italicize(boldify(line))));
         parsedLines.push(line);
         if (nextLineInjection) {
             parsedLines.push(nextLineInjection);
@@ -376,6 +450,21 @@ const listify = (line) => {
 };
 
 /**
+ * Replaces markdown links with html links.
+ * @param {string} line 
+ * @returns {string}
+ */
+const linkify = (line) => {
+    return line.replaceAll(/(^|\W)\[(\w.*?\w)\]\((https:\/\/.*?)\)(\W|$)/g, (match, g1, g2, g3, g4, offset, prime) => {
+        const pre = g1;
+        const name = g2;
+        const url = g3;
+        const post = g4;
+        return `${pre}<a href="${url}">${name}</a>${post}`;
+    });
+}
+
+/**
  * Wraps the string in the specified tag.  For example, 'h3' and 'blah' gives '<h3>blah</h3>'.
  * @param {string} tag 
  * @param {string} string 
@@ -407,8 +496,7 @@ const listDepth = (line) => {
  * @returns {boolean}
  */
 const lineIsHeader = (line) => {
-    const depth = (line.match(/#/g) || []).length;
-    return depth > 0;
+    return !!line.match(/>? ?#+ /);
 };
 
 /**
@@ -1169,6 +1257,10 @@ const mergeSpellLists = (offSuit, trump) => {
  * Main method.
  */
 const run = () => {
+    // Index the spells and synchronize any links.
+    const indices = indexSpellsAndMonsters();
+    updateReferences(indices);
+
     // Homebrew Only
     const homebrew = readAndParseInputFiles();
     printSpells(homebrew, 'output/owlmagic-only.db');
