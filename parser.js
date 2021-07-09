@@ -943,7 +943,7 @@ const getScaling = (level, description) => {
  * @returns {string} path to the image
  */
 const getImage = (school) => {
-    return 'modules/owl-magic/icons/' + school.toLowerCase() + '.png';
+    return 'modules/owl-magic/foundry/icons/' + school.toLowerCase() + '.png';
 }
 //#endregion
 //#endregion
