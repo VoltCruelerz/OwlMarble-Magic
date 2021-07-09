@@ -9,21 +9,21 @@ An object is controlled if it is worn or carried.  Otherwise, it is considered u
 A translocation effect is any effect that instantaneously (or at least instantaneously as far as combat is concerned) transports you to a different location.  Translocation effects can be divided into 3 categories: _Portals_, _Teleports_, and _Conveyances_.  A few examples are provided for each.
 
 - **Portals**: any effect where a gateway is created that allows for rapid travel between two points.
-  - Arcane Gate
-  - Gate
-  - Transport via Plants
+  - _Arcane Gate_
+  - _Gate_
+  - _Transport via Plants_
 - **Teleports**: any effect that instantaneously alters a target’s location, as if someone had pulled up the universe’s dev console and done JohnDoe.setLocation(x,y,altitude,plane).
-  - Dimension Door
-  - Teleport
-  - Plane Shift
-  - Word of Recall
-  - Blink
+  - _Dimension Door_
+  - _Teleport_
+  - _Plane Shift_
+  - _Word of Recall_
+  - _Blink_
 - **Conveyances**: any effect that causes the target to physically travel to a location at extremely high speed such that it is nearly instant, usually involving some manner of temporary discorporation.
-  - Warp Strike
-  - Misty Step
-  - Blessing of the Raven Queen
-  - Tree Stride
-  - Fiery Conveyance
+  - _Warp Strike_
+  - _Misty Step_
+  - _Blessing of the Raven Queen_
+  - _Tree Stride_
+  - _Fiery Conveyance_
 
 ## Illusion Rules
 
