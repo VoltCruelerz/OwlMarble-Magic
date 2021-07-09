@@ -1401,7 +1401,7 @@ const exportSpellLists = (spells, indices) => {
     });
     const output = outputLines.join('\r\n');// It burns us, precious!  (windows line breaks)
 
-    fs.writeFileSync('spells/Spells by Level.md', output);
+    fs.writeFileSync('spells/Spells by Class.md', output);
 };
 
 /**
