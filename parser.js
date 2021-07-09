@@ -806,22 +806,23 @@ const getSave = (description) => {
  * @returns {string}
  */
 const getSchoolCode = (school) => {
+    school = school.toLowerCase();
     switch (school) {
-        case 'Abjuration':
+        case 'abjuration':
             return 'abj';
-        case 'Conjuration':
+        case 'conjuration':
             return 'con';
-        case 'Divination':
+        case 'divination':
             return 'div';
-        case 'Enchantment':
+        case 'enchantment':
             return 'enc';
-        case 'Evocation':
+        case 'evocation':
             return 'evo';
-        case 'Illusion':
+        case 'illusion':
             return 'ill';
-        case 'Necromancy':
+        case 'necromancy':
             return 'nec';
-        case 'Transmutation':
+        case 'transmutation':
             return 'trs';
         default:
             throw new Error('Unrecognized School ' + school);
@@ -1008,8 +1009,8 @@ const parseImportedFile = (contents) => {
                         condition: spell.time[0].condition
                     },
                     duration: getImportedDuration(spell),
-                    range: range,
                     target: getTarget(importedRange, description),
+                    range: range,
                     uses: {
                         value: 0,
                         max: 0,
@@ -1025,14 +1026,11 @@ const parseImportedFile = (contents) => {
                     attackBonus: 0,
                     chatFlavor: '',
                     critical: null,
-                    damage: {
-                        parts: getDamage(description),
-                        versatile: ''
-                    },
+                    damage: getDamage(description),
                     formula: '',
                     save: getSave(description),
                     level: spell.level,
-                    school: school,
+                    school: getSchoolCode(school),
                     components: getImportedComponents(spell),
                     materials: getImportedMaterials(spell),
                     preparation: {
