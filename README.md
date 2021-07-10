@@ -55,5 +55,4 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 1. deposit any spell input files you wish to parse into `import/` and `srd/`.
 2. run `npm install`
 3. execute the code within `main.js`.
-
-### TODO/Known Issues
+4. review `test.log` for any issues.
