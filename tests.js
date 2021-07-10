@@ -1,27 +1,35 @@
 const assert = require('assert/strict');
 const fs = require('fs');
 
-// Animate Objects (table formatting)
+/**
+ * Handles a field.
+ * @param {{*}} expected
+ * @param {{*}} expected
+ */
+const defaultHandler = (expected, actual) => {
+    assert.deepStrictEqual(
+        JSON.stringify(expected).toLowerCase(),
+        JSON.stringify(actual).toLowerCase());
+};
 
+/**
+ * Handles target field.
+ * @param {{value: number, units: string, type: object }} expected
+ * @param {{value: number, units: string, type: object }} actual
+ */
+ const targetHandler = (expected, actual) => {
+    const unitEquivalency = {};
+    unitEquivalency[''] = '';
+    unitEquivalency['spec'] = '';
 
-// Booming Blade (damage, scaling)
-
-// Fire Bolt (damage, scaling)
-
-// Cone of Cold (AoE, damage, scaling)
-
-// Cure Wounds (healing, scaling)
-
-// Fireball (AoE, damage, scaling, components)
-
-// Find Familiar (ritual, cast time)
-
-// Magic Missile (damage, scaling)
-
-// Shocking Grasp (msak)
-
-//
-
+    if (expected.value !== actual.value) {
+        defaultHandler(expected, actual);
+    } else if (expected.type !== actual.type) {
+        defaultHandler(expected, actual);
+    } else if (unitEquivalency[expected.units] !== unitEquivalency[actual.units]) {
+        defaultHandler(expected, actual);
+    }
+};
 
 /**
  * Run tests.
@@ -65,8 +73,13 @@ module.exports = (omm, srd) => {
 
         verbatimFields.forEach((field) => {
             try {
-                const message = `\n- SPELL: ${ommSpell.name}\n- FIELD: ${field}\n\n- OMM ================\n${JSON.stringify(ommSpell)}\n\n- SRD ================\n${JSON.stringify(srdSpell)}`;
-                assert.deepStrictEqual(JSON.stringify(srdData[field]).toLowerCase(), JSON.stringify(ommData[field]).toLowerCase(), message);
+                const expected = srdData[field];
+                const actual = ommData[field];
+                if (field === 'target') {
+                    targetHandler(expected, actual);
+                } else {
+                    defaultHandler(expected, actual);
+                }
             } catch (e) {
                 totalErrors++;
                 const error = {
@@ -93,21 +106,22 @@ module.exports = (omm, srd) => {
     errorReport.sort((a,b) => (a.errors.length <= b.errors.length) ? 1 : -1 );
 
     const lines = [];
+    const header = `${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SPELLS\n${wall}`;
+    console.log(header);
     if (errorReport.length > 0) {
-        lines.push(`${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SPELLS\n${wall}`);
+        lines.push(header);
         errorReport.forEach((line) => {
-            lines.push(`- ${line.spell}: ${line.errors.length}/${verbatimFields.length}`);
+            lines.push(`${wall}\n- ${line.spell}: ${line.errors.length}/${verbatimFields.length}\n${wall}`);
             line.errors.forEach((error, i) => {
                 const pipe = i < line.errors.length - 1 ? '|' : ' ';
                 lines.push(`L - [${i}/${line.errors.length}] - ${error.field}`);
                 lines.push(pipe + ' L - SRD: ' + JSON.stringify(error.expected));
                 lines.push(pipe + ' L - OMM: ' + JSON.stringify(error.actual));
             });
-            console.log('');
+            lines.push('');
         });
     }
 
-    const content = lines.join('\r\n');
+    const content = lines.join('\n');
     fs.writeFileSync('test.log', content);
-    console.log(content);
 };
