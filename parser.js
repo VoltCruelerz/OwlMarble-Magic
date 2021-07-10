@@ -4,6 +4,7 @@ const seedrandom = require('seedrandom');
 const { detailedDiff } = require('deep-object-diff');
 
 const timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/;
+const healingRegex = /heal|((restore|regain).*hit points)/;
 
 //#region IO
 /**
@@ -238,12 +239,10 @@ const parseSpellText = (lines, level) => {
                     prepared: false
                 },
                 scaling: getScaling(level, description),
-                attributes: {
-                    spelldc: 10
-                },
                 classes: classes
             },
-            sort: '0',
+            effects: [],
+            sort: 0,
             flags: {
                 exportSource: {
                     world: 'none',
@@ -251,8 +250,7 @@ const parseSpellText = (lines, level) => {
                     coreVersion: '0.8.8',
                     systemVersion: '1.3.6'
                 }
-            },
-            'effects': []
+            }
         };
         if (oldName) {
             spell.oldName = oldName;
@@ -776,6 +774,8 @@ const getActionType = (description) => {
         return 'rwak';
     } else if (description.includes('saving throw') || description.includes('save')) {
         return 'save';
+    } else if (description.match(healingRegex)) {
+        return 'heal';
     } else {
         return 'util';
     }
@@ -788,21 +788,38 @@ const getActionType = (description) => {
  */
 const getDamage = (description) => {
     description = description.toLowerCase();
-    const upcastTag = '<strong>higher levels</strong>: ';
+    const upcastTag = '<strong>higher levels</strong>';
     const upcastIndex = description.indexOf(upcastTag);
     const baseDesc = upcastIndex > -1 ? description.substr(0, upcastIndex) : description;
-    const damageRegex = /(?<die>\d+(d\d+)?) ?(?<operator>\+|-|plus|minus)?([^\.]*?(?<shifter>\d+|modifier))?[^\.]*?(?<element>acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|healing|temphp)/g;
     const parts = [];
+
+    // Normally, people write damage like "deal 8d6 fire damage" or "deal 1d8 plus your spellcasting ability modifier".
+    const damageRegex = /(?<die>\d+(d\d+)?) ?(?<operator>\+|-|plus|minus)?([^\.]*?(?<shifter>\d+|modifier))?[^\.]*?(?<element>acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)/g;
+    
+    // but sometimes, healing is written the opposite way
+    const invertedHealingRegex = /(heal|regain|restore).*?(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?/g;
 
     const damageMatches = baseDesc.matchAll(damageRegex);
     for (const match of damageMatches) {
         const full = match[0];
         const dice = match[1];
         const dieSize = match[2];
-        const op = match[3];
+        let op = match[3];
         const longTag = match[4];
         const shifter = match[5] === 'modifier' ? '@mod' : match[5];
-        const element = match[6];
+        let element = match[6];
+
+        if (op === 'plus') {
+            op = '+';
+        } else if (op === 'minus') {
+            op = '-';
+        }
+
+        if (element === 'heal') {
+            element = 'healing';
+        } else if (element === 'temporary hit point') {
+            element = 'temphp';
+        }
 
         // Ignore wordings like "5-foot radius".
         if (op && !shifter) {
@@ -813,6 +830,28 @@ const getDamage = (description) => {
         parts.push([
             damageLine,
             element
+        ]);
+    }
+    const healingMatches = baseDesc.matchAll(invertedHealingRegex);
+    for (const match of healingMatches) {
+        const full = match[0];
+        const operation = match[1];
+        const dice = match[2];
+        const dieSize = match[3];
+        let op = match[4];
+        const longTag = match[5];
+        const shifter = match[6] === 'modifier' ? '@mod' : match[6];
+
+        if (op === 'plus') {
+            op = '+';
+        } else if (op === 'minus') {
+            op = '-';
+        }
+
+        const healLine = op ? `${dice} ${op} ${shifter}` : dice;
+        parts.push([
+            healLine,
+            'healing'
         ]);
     }
     return {
@@ -1031,7 +1070,7 @@ const parseImportedFile = (contents) => {
         const spell = spells[i];
         try {
             const school = deimportSchool(spell.school);
-            const description = parseImportedEntries(spell.entries) + parseImportedEntries(spell.entriesHigherLevel);
+            const description = parseImportedEntries(spell.entries) + parseImportedEntries(spell.entriesHigherLevel).replace('<strong>At Higher Levels</strong>', '<strong>Higher Levels</strong>');
             const importedRange = getImportedRange(spell);
             const range = getRange(importedRange);
             parsed.push({
@@ -1052,7 +1091,7 @@ const parseImportedFile = (contents) => {
                     activation: {
                         type: spell.time[0].unit,
                         cost: spell.time[0].number,
-                        condition: spell.time[0].condition
+                        condition: spell.time[0].condition || ''
                     },
                     duration: getImportedDuration(spell),
                     target: getTarget(importedRange, description),
@@ -1084,11 +1123,9 @@ const parseImportedFile = (contents) => {
                         prepared: false
                     },
                     scaling: getScaling(spell.level, description),
-                    attributes: {
-                        spelldc: 10
-                    },
                     classes: getImportedClasses(spell)
                 },
+                effects: [],
                 sort: 0,
                 flags: {
                     exportSource: {
@@ -1097,8 +1134,7 @@ const parseImportedFile = (contents) => {
                         coreVersion: '0.8.8',
                         systemVersion: '1.3.6'
                     }
-                },
-                effects: []
+                }
             });
         } catch (e) {
             console.error('===============================================\nFailure on ' + spell.name);
@@ -1264,7 +1300,7 @@ const getImportedComponents = (spell) => {
         vocal: !!spell.components.v,
         somatic: !!spell.components.s,
         material: !!spell.components.m,
-        ritual: isRitual,
+        ritual: !!isRitual,
         concentration: isConcentration
     };
 }
@@ -1278,6 +1314,14 @@ const getImportedMaterials = (spell) => {
     if (!spell.components.m) {
         return {
             value: '',
+            consumed: false,
+            cost: 0,
+            supply: 0
+        };
+    }
+    if (typeof spell.components.m === 'string') {
+        return {
+            value: spell.components.m,
             consumed: false,
             cost: 0,
             supply: 0

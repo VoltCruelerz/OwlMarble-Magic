@@ -59,3 +59,4 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 ### TODO/Known Issues
 
 - **Healing Parsing**: healing does not always autoparse correctly
+- **Scaling**: upcast scaling is currently turned off
