@@ -45,6 +45,7 @@ const targetHandler = (expected, actual) => {
     const unitEquivalency = {};
     unitEquivalency[''] = '';
     unitEquivalency['spec'] = '';
+    unitEquivalency[null] = '';
 
     if (expected.value !== actual.value) {
         defaultHandler(expected, actual);
