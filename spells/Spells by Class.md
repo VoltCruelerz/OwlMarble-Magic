@@ -711,7 +711,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 6 - _Druid_
 
-- [Alter Landscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#alter-landscape) - V/S/M - (OMM - 6)
+- [Alter Landscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#alter-landscape) - V/S/M [C] - (OMM - 6)
 - [Bones of the Earth](https://www.dndbeyond.com/spells/bones-of-the-earth) - V/S - (XGE - 150)
 - [Conjure Fey](https://www.dndbeyond.com/spells/conjure-fey) - V/S [C] - (PHB - 226)
 - [Druid Grove](https://www.dndbeyond.com/spells/druid-grove) - V/S/M - (XGE - 154)
@@ -1154,7 +1154,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 6 - _Sorcerer_
 
-- [Alter Landscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#alter-landscape) - V/S/M - (OMM - 6)
+- [Alter Landscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#alter-landscape) - V/S/M [C] - (OMM - 6)
 - [Arcane Artillery](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#arcane-artillery) - V/S/M$ - (OMM - 6)
 - [Arcane Gate](https://www.dndbeyond.com/spells/arcane-gate) - V/S [C] - (PHB - 214)
 - [Chain Lightning](https://www.dndbeyond.com/spells/chain-lightning) - V/S/M - (PHB - 221)
@@ -1784,7 +1784,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 6 - _Wizard_
 
-- [Alter Landscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#alter-landscape) - V/S/M - (OMM - 6)
+- [Alter Landscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#alter-landscape) - V/S/M [C] - (OMM - 6)
 - [Arcane Artillery](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#arcane-artillery) - V/S/M$ - (OMM - 6)
 - [Arcane Gate](https://www.dndbeyond.com/spells/arcane-gate) - V/S [C] - (PHB - 214)
 - [Chain Lightning](https://www.dndbeyond.com/spells/chain-lightning) - V/S/M - (PHB - 221)

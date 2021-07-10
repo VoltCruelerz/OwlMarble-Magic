@@ -145,7 +145,15 @@ const approvedSpells = [
     'Heroes\' Feast',
     'Teleportation Circle',
     'Mirage Arcane',
-    'Project Image'
+    'Project Image',
+    'Simulacrum',
+    'Holy Aura',
+    'Weird',
+    'Dancing Lights',
+    'Mage Hand',
+    'Spare the Dying',
+    'Thaumaturgy',
+    'True Strike'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;
