@@ -107,7 +107,10 @@ const materialsHandler = (expected, actual) => {
  * @param {{ability: string, dc: number, value: string, scaling: spell }} expected
  */
 const saveHandler = (expected, actual) => {
-    if (expected.ability !== actual.ability || expected.dc !== actual.dc || expected.value !== actual.value) {
+    const dcEqual = {};
+    dcEqual[null] = 0;
+
+    if (expected.ability !== actual.ability || !isEquivalent(dcEqual, expected.dc, actual.dc) || expected.value !== actual.value) {
         defaultHandler(expected, actual);
     }
 };
@@ -146,6 +149,7 @@ const damageHandler = (expected, actual) => {
 };
 //#endregion
 
+// This is the list of manually validated spells that are not meaningfully different from their SRD counterparts.
 const approvedSpells = [
     'Druidcraft',
     'Prestidigitation',
@@ -279,7 +283,31 @@ const approvedSpells = [
     'Divine Favor',
     'Expeditious Retreat',
     'Faerie Fire',
-    'Fog Cloud'
+    'Fog Cloud',
+    'Shillelagh',
+    'Hunter\'s Mark',
+    'Illusory Script',
+    'Longstrider',
+    'Purify Food and Drink',
+    'Sanctuary',
+    'Animate Dead',
+    'Conjure Animals',
+    'Sleet Storm',
+    'Speak with Death',
+    'Spirit Guardians',
+    'Water Breathing',
+    'Water Walk',
+    'Confusion',
+    'Conjure Minor Elementals',
+    'Conjure Woodland Beings',
+    'Locate Creature',
+    'Dispel Evil and Good',
+    'Animal Shapes',
+    'Demiplane',
+    'Glibness',
+    'Maze',
+    'Mass Heal',
+    'True Resurrection'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;
