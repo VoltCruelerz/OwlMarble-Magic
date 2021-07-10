@@ -1,0 +1,250 @@
+===================================================
+ERROR REPORT - 44 ERRORS ACROSS 29/320 SPELLS
+===================================================
+===================================================
+- Wall of Fire: 3/11
+===================================================
+L - [1/3] - target
+| L - SRD: {"value":60,"units":"ft","type":"wall"}
+| L - OMM: {"value":1,"units":"ft","type":"wall"}
+L - [2/3] - damage
+| L - SRD: {"parts":[["5d8","fire"]],"versatile":""}
+| L - OMM: {"parts":[["5d8","fire"],["5d8","fire"]],"versatile":"","value":""}
+L - [3/3] - materials
+  L - SRD: {"value":"A small piece of phosphorous","consumed":false,"cost":0,"supply":0}
+  L - OMM: {"value":"a small piece of phosphorus","consumed":false,"cost":0,"supply":0}
+
+===================================================
+- Flame Strike: 3/11
+===================================================
+L - [1/3] - target
+| L - SRD: {"value":10,"units":"ft","type":"cylinder"}
+| L - OMM: {"value":10,"units":"ft","type":"radius"}
+L - [2/3] - damage
+| L - SRD: {"parts":[["4d6","radiant"],["4d6","fire"]],"versatile":""}
+| L - OMM: {"parts":[["4d6","radiant"]],"versatile":"","value":""}
+L - [3/3] - materials
+  L - SRD: {"value":"A pinch of sulfur","consumed":false,"cost":0,"supply":0}
+  L - OMM: {"value":"pinch of sulfur","consumed":false,"cost":0,"supply":0}
+
+===================================================
+- Color Spray: 2/11
+===================================================
+L - [1/2] - damage
+| L - SRD: {"parts":[["",""]],"versatile":""}
+| L - OMM: {"parts":[],"versatile":"","value":""}
+L - [2/2] - scaling
+  L - SRD: {"mode":"level","formula":"2d10"}
+  L - OMM: {"mode":"level","formula":"6d10"}
+
+===================================================
+- Detect Poison and Disease: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":30,"units":"ft","type":"radius"}
+| L - OMM: {"value":null,"units":"","type":"self"}
+L - [2/2] - components
+  L - SRD: {"value":"","vocal":true,"somatic":true,"material":true,"ritual":false,"concentration":true}
+  L - OMM: {"value":"","vocal":true,"somatic":true,"material":true,"ritual":true,"concentration":true}
+
+===================================================
+- Entangle: 2/11
+===================================================
+L - [1/2] - actionType
+| L - SRD: "util"
+| L - OMM: "save"
+L - [2/2] - save
+  L - SRD: {"ability":"","dc":null,"scaling":"spell"}
+  L - OMM: {"ability":"str","dc":0,"scaling":"spell"}
+
+===================================================
+- Spiritual Weapon: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":5,"units":"ft","type":"square"}
+| L - OMM: {"value":1,"units":"","type":"creature"}
+L - [2/2] - damage
+  L - SRD: {"parts":[["1d8 + @mod","force"]],"versatile":""}
+  L - OMM: {"parts":[],"versatile":"","value":""}
+
+===================================================
+- Ice Storm: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":20,"units":"ft","type":"cylinder"}
+| L - OMM: {"value":20,"units":"ft","type":"radius"}
+L - [2/2] - damage
+  L - SRD: {"parts":[["2d8","bludgeoning"],["4d6","cold"]],"versatile":""}
+  L - OMM: {"parts":[["2d8","cold"]],"versatile":"","value":""}
+
+===================================================
+- Stone Shape: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":1,"units":"","type":"object"}
+| L - OMM: {"value":5,"units":"ft","type":"wall"}
+L - [2/2] - materials
+  L - SRD: {"value":"Soft clay, which must be worked into roughly the desired shape of the stone object","consumed":false,"cost":0,"supply":0}
+  L - OMM: {"value":"","consumed":false,"cost":0,"supply":0}
+
+===================================================
+- Alter Landscape: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":40,"units":"ft","type":"square"}
+| L - OMM: {"value":1,"units":"","type":"creature"}
+L - [2/2] - materials
+  L - SRD: {"value":"An iron blade and a small bag containing a mixture of soils- clay, loam, and sand","consumed":false,"cost":0,"supply":0}
+  L - OMM: {"value":"","consumed":false,"cost":0,"supply":0}
+
+===================================================
+- Wall of Ice: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":100,"units":"ft","type":"wall"}
+| L - OMM: {"value":10,"units":"ft","type":"square"}
+L - [2/2] - damage
+  L - SRD: {"parts":[["10d6","cold"]],"versatile":"5d6"}
+  L - OMM: {"parts":[["10d6","cold"],["12","fire"],["5d6","cold"]],"versatile":"","value":""}
+
+===================================================
+- Forcecage: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":20,"units":"ft","type":"cube"}
+| L - OMM: {"value":1,"units":"","type":"creature"}
+L - [2/2] - materials
+  L - SRD: {"value":"Ruby dust worth 1500gp","consumed":false,"cost":1500,"supply":0}
+  L - OMM: {"value":"ruby dust worth 1,500 gp","consumed":false,"cost":1500,"supply":0}
+
+===================================================
+- Antipathy/Sympathy: 2/11
+===================================================
+L - [1/2] - target
+| L - SRD: {"value":1,"units":"","type":"creature"}
+| L - OMM: {"value":200,"units":"ft","type":"cube"}
+L - [2/2] - damage
+  L - SRD: {"parts":[],"versatile":"","value":""}
+  L - OMM: {"parts":[["60","healing"]],"versatile":"","value":""}
+
+===================================================
+- Earthquake: 2/11
+===================================================
+L - [1/2] - damage
+| L - SRD: {"parts":[],"versatile":"","value":""}
+| L - OMM: {"parts":[["50","bludgeoning"],["5d6","bludgeoning"]],"versatile":"","value":""}
+L - [2/2] - save
+  L - SRD: {"ability":"dex","dc":0,"scaling":"spell"}
+  L - OMM: {"ability":"con","dc":0,"scaling":"spell"}
+
+===================================================
+- Bane: 1/11
+===================================================
+L - [1/1] - uses
+  L - SRD: {"value":0,"max":"0","per":""}
+  L - OMM: {"value":0,"max":0,"per":""}
+
+===================================================
+- Command: 1/11
+===================================================
+L - [1/1] - scaling
+  L - SRD: {"mode":"none","formula":""}
+  L - OMM: {"mode":"level","formula":""}
+
+===================================================
+- Detect Evil and Good: 1/11
+===================================================
+L - [1/1] - target
+  L - SRD: {"value":30,"units":"ft","type":"radius"}
+  L - OMM: {"value":null,"units":"","type":"self"}
+
+===================================================
+- Thunderwave: 1/11
+===================================================
+L - [1/1] - damage
+  L - SRD: {"parts":[["2d8","thunder"]],"versatile":""}
+  L - OMM: {"parts":[["2d8","thunder"],["10","thunder"]],"versatile":"","value":""}
+
+===================================================
+- Prayer of Healing: 1/11
+===================================================
+L - [1/1] - scaling
+  L - SRD: {"mode":"level","formula":"1d8"}
+  L - OMM: {"mode":"level","formula":"2d8"}
+
+===================================================
+- Web: 1/11
+===================================================
+L - [1/1] - damage
+  L - SRD: {"parts":[["2d4","fire"]],"versatile":"","value":""}
+  L - OMM: {"parts":[["5 - 1","fire"]],"versatile":"","value":""}
+
+===================================================
+- Speak with Dead: 1/11
+===================================================
+L - [1/1] - target
+  L - SRD: {"value":0,"units":"","type":""}
+  L - OMM: {"value":1,"units":"","type":"creature"}
+
+===================================================
+- Wind Wall: 1/11
+===================================================
+L - [1/1] - target
+  L - SRD: {"value":50,"units":"ft","type":"wall"}
+  L - OMM: {"value":1,"units":"ft","type":"wall"}
+
+===================================================
+- Contact Other Plane: 1/11
+===================================================
+L - [1/1] - save
+  L - SRD: {"ability":"int","dc":15,"scaling":"flat"}
+  L - OMM: {"ability":"int","dc":0,"scaling":"spell"}
+
+===================================================
+- Mass Cure Wounds: 1/11
+===================================================
+L - [1/1] - scaling
+  L - SRD: {"mode":"level","formula":"1d8"}
+  L - OMM: {"mode":"level","formula":"3d8"}
+
+===================================================
+- Wall of Stone: 1/11
+===================================================
+L - [1/1] - target
+  L - SRD: {"value":100,"units":"ft","type":"wall"}
+  L - OMM: {"value":1,"units":"","type":"creature"}
+
+===================================================
+- Blade Barrier: 1/11
+===================================================
+L - [1/1] - target
+  L - SRD: {"value":100,"units":"ft","type":"wall"}
+  L - OMM: {"value":5,"units":"ft","type":"wall"}
+
+===================================================
+- Delayed Blast Fireball: 1/11
+===================================================
+L - [1/1] - damage
+  L - SRD: {"parts":[["12d6","fire"]],"versatile":"1d6"}
+  L - OMM: {"parts":[],"versatile":"","value":""}
+
+===================================================
+- Prismatic Spray: 1/11
+===================================================
+L - [1/1] - damage
+  L - SRD: {"parts":[["10d6",""]],"versatile":"","value":""}
+  L - OMM: {"parts":[["1 - 10","fire"],["2 - 10","acid"],["3 - 10","lightning"],["4 - 10","poison"],["5 - 10","cold"]],"versatile":"","value":""}
+
+===================================================
+- Control Weather: 1/11
+===================================================
+L - [1/1] - damage
+  L - SRD: {"parts":[],"versatile":"","value":""}
+  L - OMM: {"parts":[["3","cold"],["6","cold"]],"versatile":"","value":""}
+
+===================================================
+- Meteor Swarm: 1/11
+===================================================
+L - [1/1] - damage
+  L - SRD: {"parts":[["20d6","bludgeoning"],["20d6","fire"]],"versatile":""}
+  L - OMM: {"parts":[["20d6","bludgeoning"]],"versatile":"","value":""}
