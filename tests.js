@@ -90,7 +90,7 @@ const materialsHandler = (expected, actual) => {
         : actual.value;
     
 
-    if (flavorExpected.toLowerCase() !== flavorActual.toLowerCase()) {
+    if (flavorExpected.replaceAll(' ', '').toLowerCase() !== flavorActual.replaceAll(' ', '').toLowerCase()) {
         defaultHandler(expected, actual);
     } else if (expected.consumed !== actual.consumed) {
         defaultHandler(expected, actual);
