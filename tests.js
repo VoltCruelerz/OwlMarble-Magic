@@ -307,7 +307,21 @@ const approvedSpells = [
     'Glibness',
     'Maze',
     'Mass Heal',
-    'True Resurrection'
+    'True Resurrection',
+    'Augury',
+    'Detect Thoughts',
+    'Enhance Ability',
+    'Find Traps',
+    'Locate Animals or Plants',
+    'Locate Object',
+    'Moonbeam',
+    'Pass without Trace',
+    'Protection from Poison',
+    'Mislead',
+    'Conjure Fey',
+    'Guards and Wards',
+    'Mass Suggestion',
+    'Conjure Celestial'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;
