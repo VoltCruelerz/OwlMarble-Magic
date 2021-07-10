@@ -808,10 +808,10 @@ module.exports = class OwlMarbleParser {
         const parts = [];
 
         // Normally, people write damage like "deal 8d6 fire damage" or "deal 1d8 plus your spellcasting ability modifier".
-        const damageRegex = /(?<die>\d+(d\d+)?) ?(?<operator>\+|-|plus|minus)?([^\.]*?(?<shifter>\d+|modifier))?[^\.]*?(?<element>acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)/g;
+        const damageRegex = /(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?[^\.]*?(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)/g;
         
         // but sometimes, healing is written the opposite way
-        const invertedHealingRegex = /(heal|regain|restore|hit point maximum).*?(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?/g;
+        const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?/g;
 
         const damageMatches = baseDesc.matchAll(damageRegex);
         for (const match of damageMatches) {
@@ -1006,7 +1006,7 @@ module.exports = class OwlMarbleParser {
             }
             return {
                 value: flavor,
-                consumed: consumed,
+                consumed: !!consumed,
                 cost: cost,
                 supply: 0
             };
@@ -1041,7 +1041,7 @@ module.exports = class OwlMarbleParser {
         description = description.toLowerCase();
         const upcastTag = '<strong>higher levels</strong>';
         const upcastIndex = description.indexOf(upcastTag);
-        if (upcastIndex === -1) {
+        if (upcastIndex === -1 && !description.includes('this spell\'s damage increases by')) {
             return {
                 mode: 'none',
                 formula: ''
@@ -1058,6 +1058,15 @@ module.exports = class OwlMarbleParser {
         if (match) {
             let formula = match[1];
             formula = formula === 'modifier' ? '@mod' : formula;
+            return {
+                mode: 'level',
+                formula
+            };
+        }
+        const healingScaleRegex = /(healing|hit point).+?(\d+)/;
+        const healingMatch = upcastDesc.match(healingScaleRegex);
+        if (healingMatch) {
+            const formula = healingMatch[2];
             return {
                 mode: 'level',
                 formula
@@ -1237,6 +1246,8 @@ module.exports = class OwlMarbleParser {
     unwrap (raw) {
         if (typeof raw === 'string') {
             return raw
+                .replaceAll('{@dice ', '')
+                .replaceAll('{@creature ', '')
                 .replaceAll(/{@damage ((\d+(d\d+)) ?(\+|-)? ?(\d+?)?)}/g, (g0, g1) => g1)
                 .replaceAll(/{@scaledamage \|?.*?\|?(\w+)}/g, (g0, g1) => g1)
                 .replaceAll(/{@\w+ (\w+)\|?.*?}/g, (g0, g1) => g1)
@@ -1349,7 +1360,7 @@ module.exports = class OwlMarbleParser {
         }
         return {
             value: spell.components.m.text,
-            consumed: spell.components.m.consume,
+            consumed: !!spell.components.m.consume,
             cost: spell.components.m.cost / 100,
             supply: 0
         };
