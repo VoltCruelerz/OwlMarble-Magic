@@ -56,3 +56,7 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 2. run `npm install`
 3. execute the code within `main.js`.
 4. review `test.log` for any issues.
+
+### Known Issues
+
+See [test.log](./test.log) to see any automatically detected issues.
