@@ -102,6 +102,17 @@ const materialsHandler = (expected, actual) => {
 };
 
 /**
+ * Handles save field.
+ * @param {{ability: string, dc: number, value: string, scaling: spell }} expected
+ * @param {{ability: string, dc: number, value: string, scaling: spell }} expected
+ */
+const saveHandler = (expected, actual) => {
+    if (expected.ability !== actual.ability || expected.dc !== actual.dc || expected.value !== actual.value) {
+        defaultHandler(expected, actual);
+    }
+};
+
+/**
  * Handles range field.
  * @param {{value: number, long: number, units: string }} expected
  * @param {{value: number, long: number, units: string }} actual
@@ -253,7 +264,22 @@ const approvedSpells = [
     'Antimagic Field',
     'Clone',
     'Astral Projection',
-    'Produce Flame'
+    'Produce Flame',
+    'Poison Spray',
+    'Foresight',
+    'Imprisonment',
+    'Power Word Kill',
+    'Shapechange',
+    'Time Stop',
+    'True Polymorph',
+    'Alarm',
+    'Bless',
+    'Detect Magic',
+    'Disguise Self',
+    'Divine Favor',
+    'Expeditious Retreat',
+    'Faerie Fire',
+    'Fog Cloud'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;
@@ -313,6 +339,8 @@ module.exports = (omm, srd) => {
                     materialsHandler(expected, actual);
                 } else if (field === 'damage') {
                     damageHandler(expected, actual);
+                } else if (field === 'save') {
+                    saveHandler(expected, actual);
                 } else {
                     defaultHandler(expected, actual);
                 }

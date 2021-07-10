@@ -1041,7 +1041,7 @@ module.exports = class OwlMarbleParser {
         description = description.toLowerCase();
         const upcastTag = '<strong>higher levels</strong>';
         const upcastIndex = description.indexOf(upcastTag);
-        if (upcastIndex === -1 && !description.includes('this spell\'s damage increases by')) {
+        if (upcastIndex === -1 && !description.includes(' spell\'s damage increases by')) {
             return {
                 mode: 'none',
                 formula: ''
