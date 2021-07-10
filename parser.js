@@ -544,7 +544,7 @@ module.exports = class OwlMarbleParser {
         const match = castTime.match(this.timeRegex);
         if (match) {
             return {
-                type: match[2],
+                type: match[2].split(' ')[0],
                 cost: parseInt(match[1]),
                 condition: match[4] || ''
             };
@@ -566,7 +566,7 @@ module.exports = class OwlMarbleParser {
         const match = duration.match(this.timeRegex);
         if (match) {
             return {
-                value: match[1],
+                value: parseInt(match[1]),
                 units: match[2]
             };
         } else if (duration === 'instantaneous') {

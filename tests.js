@@ -29,7 +29,7 @@ const fs = require('fs');
  * @param {[{*}]} srd
  */
 module.exports = (omm, srd) => {
-    const wall = '======================================';
+    const wall = '===================================================';
     console.log('OMM Size: ' + omm.length);
     console.log('SRD Size: ' + srd.length);
 
@@ -54,7 +54,8 @@ module.exports = (omm, srd) => {
     ];
 
     console.log('Checking SRD Verbatim Fields...');
-    omm.forEach((ommSpell, i) => {
+    let totalErrors = 0;
+    omm.forEach((ommSpell) => {
         const srdSpell = srdLookup[ommSpell.name] || srdLookup[ommSpell.oldName];
         if (!srdSpell) {
             return;
@@ -67,6 +68,7 @@ module.exports = (omm, srd) => {
                 const message = `\n- SPELL: ${ommSpell.name}\n- FIELD: ${field}\n\n- OMM ================\n${JSON.stringify(ommSpell)}\n\n- SRD ================\n${JSON.stringify(srdSpell)}`;
                 assert.deepStrictEqual(JSON.stringify(srdData[field]).toLowerCase(), JSON.stringify(ommData[field]).toLowerCase(), message);
             } catch (e) {
+                totalErrors++;
                 const error = {
                     field: field,
                     actual: ommData[field],
@@ -92,7 +94,7 @@ module.exports = (omm, srd) => {
 
     const lines = [];
     if (errorReport.length > 0) {
-        lines.push(wall + '\nERROR REPORT\n' + wall);
+        lines.push(`${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SPELLS\n${wall}`);
         errorReport.forEach((line) => {
             lines.push(`- ${line.spell}: ${line.errors.length}/${verbatimFields.length}`);
             line.errors.forEach((error, i) => {
