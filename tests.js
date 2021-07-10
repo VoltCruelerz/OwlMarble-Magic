@@ -22,6 +22,12 @@ const getEquivalency = (lookup, val) => {
  * @returns {boolean}
  */
 const isEquivalent = (lookup, a, b) => {
+    if (a === undefined) {
+        a = 'undefined';
+    }
+    if (b === undefined) {
+        b = 'undefined';
+    }
     return getEquivalency(lookup, a) === getEquivalency(lookup, b);
 };
 
@@ -71,7 +77,7 @@ const actionTypeHandler = (expected, actual) => {
 };
 
 /**
- * Handles target field.
+ * Handles materials field.
  * @param {{value: string, consumed: boolean, cost: number, supply: number }} expected
  * @param {{value: string, consumed: boolean, cost: number, supply: number }} actual
  */
@@ -96,7 +102,7 @@ const materialsHandler = (expected, actual) => {
 };
 
 /**
- * Handles target field.
+ * Handles range field.
  * @param {{value: number, long: number, units: string }} expected
  * @param {{value: number, long: number, units: string }} actual
  */
@@ -108,6 +114,24 @@ const rangeHandler = (expected, actual) => {
         return;
     }
     defaultHandler(expected, actual);
+};
+
+/**
+ * Handler for the damage field.
+ * @param {{parts:[[string]], versatile: string, value: string}} expected 
+ * @param {{parts:[[string]], versatile: string, value: string}} actual 
+ */
+const damageHandler = (expected, actual) => {
+    const valueEquiv = {};
+    valueEquiv['undefined'] = '';
+
+    if (JSON.stringify(expected.parts) !== JSON.stringify(actual.parts)) {
+        defaultHandler(expected, actual);
+    } else if (expected.versatile !== actual.versatile) {
+        defaultHandler(expected, actual);
+    } else if (!isEquivalent(valueEquiv, expected.value, actual.value)) {
+        defaultHandler(expected, actual);
+    }
 };
 //#endregion
 
@@ -174,6 +198,8 @@ module.exports = (omm, srd) => {
                     rangeHandler(expected, actual);
                 } else if (field === 'materials') {
                     materialsHandler(expected, actual);
+                } else if (field === 'damage') {
+                    damageHandler(expected, actual);
                 } else {
                     defaultHandler(expected, actual);
                 }
