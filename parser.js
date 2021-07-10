@@ -640,9 +640,20 @@ module.exports = class OwlMarbleParser {
      */
     getTarget (range, description) {
         range = range.toLowerCase();
-        description = description.toLowerCase();
-        const targetRegex = /(\d+)\W(.+?)\W(cone|cube|radius\Wcylinder|diameter\Wcylinder|radius\Wsphere|diameter\Wsphere|radius|square|wall|line)/;
-        const creatureRegex = /creature|aberration|beast|celestial|construct|dragon|elemental|fey|fiend|giant|humanoid|monstrosity|monster|ooze|plant|undead/;
+        description = description.toLowerCase()
+            .replaceAll('zero', '0')
+            .replaceAll('one', '1')
+            .replaceAll('two', '2')
+            .replaceAll('three', '3')
+            .replaceAll('four', '4')
+            .replaceAll('five', '5')
+            .replaceAll('six', '6')
+            .replaceAll('seven', '7')
+            .replaceAll('eight', '8')
+            .replaceAll('nine', '9')
+            .replaceAll('ten', '10');
+        const targetRegex = /(\d+)\W(\D+?)\W(cone|cube|radius\Wcylinder|diameter\Wcylinder|radius\Wsphere|diameter\Wsphere|radius|square|wall|line)/;
+        const creatureRegex = /((\d+) )?(creature|aberration|beast|celestial|construct|dragon|elemental|fey|fiend|giant|humanoid|monstrosity|monster|ooze|plant|undead)s?/;
         const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest|a weapon you touch|triggering attack|figment/;
         const spaceRegex = /point|spot|space|part of the sky|within range/;
 
@@ -669,8 +680,10 @@ module.exports = class OwlMarbleParser {
         } 
         
         if (description.match(creatureRegex)) {
+            const match = description.match(creatureRegex);
+            const count = parseInt(match[2] || '1');
             return {
-                value: 1,
+                value: count,
                 units: '',
                 type: 'creature'
             };
@@ -857,7 +870,8 @@ module.exports = class OwlMarbleParser {
         }
         return {
             parts,
-            versatile: ''
+            versatile: '',
+            value: ''
         };
     }
 
@@ -986,7 +1000,10 @@ module.exports = class OwlMarbleParser {
         const flavorMatches = components.match(flavorRegex);
         if (valuableMatches && flavorMatches) {
             const cost = parseInt(valuableMatches[1]);
-            const flavor = flavorMatches[1];
+            let flavor = flavorMatches[1];
+            if (flavor.endsWith('.')) {
+                flavor = flavor.substring(0, flavor.length - 1);
+            }
             return {
                 value: flavor,
                 consumed: consumed,
@@ -994,9 +1011,12 @@ module.exports = class OwlMarbleParser {
                 supply: 0
             };
         } else if (flavorMatches) {
-            const text = flavorMatches[1];
+            let flavor = flavorMatches[1];
+            if (flavor.endsWith('.')) {
+                flavor = flavor.substring(0, flavor.length - 1);
+            }
             return {
-                value: text,
+                value: flavor,
                 consumed: false,
                 cost: 0,
                 supply: 0
@@ -1360,6 +1380,7 @@ module.exports = class OwlMarbleParser {
     }
     //#endregion
 
+    //#region Spell Lists
     /**
      * Sorts a list of spells in-place based on level and name.
      * @param {[{}]} spells 
@@ -1527,6 +1548,7 @@ module.exports = class OwlMarbleParser {
             });
         }
     }
+    //#endregion
 
     /**
      * Parse.

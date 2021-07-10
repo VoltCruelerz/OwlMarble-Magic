@@ -1,6 +1,30 @@
 const assert = require('assert/strict');
 const fs = require('fs');
 
+//#region Handlers
+/**
+ * Provides a lookup for equivalency tables
+ * @param {{*}} lookup 
+ * @param {*} val 
+ */
+const getEquivalency = (lookup, val) => {
+    if (lookup[val] !== undefined) {
+        return lookup[val];
+    }
+    return val;
+};
+
+/**
+ * Checks if two values are the same, accounting for equivalency.
+ * @param {{*}} lookup 
+ * @param {*} a 
+ * @param {*} b 
+ * @returns {boolean}
+ */
+const isEquivalent = (lookup, a, b) => {
+    return getEquivalency(lookup, a) === getEquivalency(lookup, b);
+};
+
 /**
  * Handles a field.
  * @param {{*}} expected
@@ -17,7 +41,7 @@ const defaultHandler = (expected, actual) => {
  * @param {{value: number, units: string, type: object }} expected
  * @param {{value: number, units: string, type: object }} actual
  */
- const targetHandler = (expected, actual) => {
+const targetHandler = (expected, actual) => {
     const unitEquivalency = {};
     unitEquivalency[''] = '';
     unitEquivalency['spec'] = '';
@@ -26,10 +50,76 @@ const defaultHandler = (expected, actual) => {
         defaultHandler(expected, actual);
     } else if (expected.type !== actual.type) {
         defaultHandler(expected, actual);
-    } else if (unitEquivalency[expected.units] !== unitEquivalency[actual.units]) {
+    } else if (getEquivalency(unitEquivalency, expected.units) !== getEquivalency(unitEquivalency, actual.units)) {
         defaultHandler(expected, actual);
     }
 };
+
+/**
+ * Handles actionType field.
+ * @param {string} expected
+ * @param {string} actual
+ */
+const actionTypeHandler = (expected, actual) => {
+    const actionEquivalency = {};
+    actionEquivalency['util'] = 'other';
+
+    if (getEquivalency(actionEquivalency, expected) !== getEquivalency(actionEquivalency, actual)) {
+        defaultHandler(expected, actual);
+    }
+};
+
+/**
+ * Handles target field.
+ * @param {{value: string, consumed: boolean, cost: number, supply: number }} expected
+ * @param {{value: string, consumed: boolean, cost: number, supply: number }} actual
+ */
+const materialsHandler = (expected, actual) => {
+    const flavorExpected = expected.value.endsWith('.')
+        ? expected.value.substring(0, expected.value.length - 1)
+        : expected.value;
+    const flavorActual = actual.value.endsWith('.')
+        ? actual.value.substring(0, actual.value.length - 1)
+        : actual.value;
+    
+
+    if (flavorExpected.toLowerCase() !== flavorActual.toLowerCase()) {
+        defaultHandler(expected, actual);
+    } else if (expected.consumed !== actual.consumed) {
+        defaultHandler(expected, actual);
+    } else if (expected.cost !== actual.cost) {
+        defaultHandler(expected, actual);
+    } else if (expected.supply !== actual.supply) {
+        defaultHandler(expected, actual);
+    }
+};
+
+/**
+ * Handles target field.
+ * @param {{value: number, long: number, units: string }} expected
+ * @param {{value: number, long: number, units: string }} actual
+ */
+const rangeHandler = (expected, actual) => {
+    const nullEquiv = {};
+    nullEquiv[null] = 0;
+
+    if (isEquivalent(nullEquiv, expected.long, actual.long)) {
+        return;
+    }
+    defaultHandler(expected, actual);
+};
+//#endregion
+
+const approvedSpells = [
+    'Druidcraft',
+    'Prestidigitation',
+    'Goodberry',
+    'Sleep',
+    'Resistance'
+].reduce((acc, val) => {
+    acc[val] = true;
+    return acc;
+}, {});
 
 /**
  * Run tests.
@@ -65,7 +155,7 @@ module.exports = (omm, srd) => {
     let totalErrors = 0;
     omm.forEach((ommSpell) => {
         const srdSpell = srdLookup[ommSpell.name] || srdLookup[ommSpell.oldName];
-        if (!srdSpell) {
+        if (!srdSpell || approvedSpells[ommSpell.name]) {
             return;
         }
         const srdData = srdSpell.data;
@@ -77,6 +167,12 @@ module.exports = (omm, srd) => {
                 const actual = ommData[field];
                 if (field === 'target') {
                     targetHandler(expected, actual);
+                } else if (field === 'actionType') {
+                    actionTypeHandler(expected, actual);
+                } else if (field === 'range') {
+                    rangeHandler(expected, actual);
+                } else if (field === 'materials') {
+                    materialsHandler(expected, actual);
                 } else {
                     defaultHandler(expected, actual);
                 }
