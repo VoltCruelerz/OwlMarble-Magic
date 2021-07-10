@@ -140,7 +140,12 @@ const approvedSpells = [
     'Prestidigitation',
     'Goodberry',
     'Sleep',
-    'Resistance'
+    'Resistance',
+    'Revivify',
+    'Heroes\' Feast',
+    'Teleportation Circle',
+    'Mirage Arcane',
+    'Project Image'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;

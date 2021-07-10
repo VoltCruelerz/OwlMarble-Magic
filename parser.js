@@ -811,7 +811,7 @@ module.exports = class OwlMarbleParser {
         const damageRegex = /(?<die>\d+(d\d+)?) ?(?<operator>\+|-|plus|minus)?([^\.]*?(?<shifter>\d+|modifier))?[^\.]*?(?<element>acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)/g;
         
         // but sometimes, healing is written the opposite way
-        const invertedHealingRegex = /(heal|regain|restore).*?(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?/g;
+        const invertedHealingRegex = /(heal|regain|restore|hit point maximum).*?(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?/g;
 
         const damageMatches = baseDesc.matchAll(damageRegex);
         for (const match of damageMatches) {

@@ -726,7 +726,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Primordial Ward](https://www.dndbeyond.com/spells/primordial-ward) - V/S [C] - (XGE - 163)
 - [Sunbeam](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#sunbeam) - V/S/M [C] - (OMM - 6)
 - [Superior Invisibility](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#superior-invisibility) - V/S/M [C] - (OMM - 6)
-- [Transport via Plants](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#transport-via-plants) - V/S/M - (OMM - 6)
+- [Transport via Plants](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#transport-via-plants) - V/S - (OMM - 6)
 - [Wall of Thorns](https://www.dndbeyond.com/spells/wall-of-thorns) - V/S/M [C] - (PHB - 287)
 - [Wind Walk](https://www.dndbeyond.com/spells/wind-walk) - V/S/M - (PHB - 288)
 
