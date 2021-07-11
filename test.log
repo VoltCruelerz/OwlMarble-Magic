@@ -1,5 +1,5 @@
 ===================================================
-ERROR REPORT - 19 ERRORS ACROSS 14/320 SRD SPELLS
+ERROR REPORT - 17 ERRORS ACROSS 13/320 SRD SPELLS
 ===================================================
 ===================================================
 - Color Spray: 2/11
@@ -10,16 +10,6 @@ L - [1/2] - damage
 L - [2/2] - scaling
   L - SRD: {"mode":"level","formula":"2d10"}
   L - OMM: {"mode":"level","formula":"6d10"}
-
-===================================================
-- Alter Landscape: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":40,"units":"ft","type":"square"}
-| L - OMM: {"value":1,"units":"","type":"creature"}
-L - [2/2] - materials
-  L - SRD: {"value":"An iron blade and a small bag containing a mixture of soils- clay, loam, and sand","consumed":false,"cost":0,"supply":0}
-  L - OMM: {"value":"","consumed":false,"cost":0,"supply":0}
 
 ===================================================
 - Wall of Ice: 2/11
