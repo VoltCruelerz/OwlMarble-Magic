@@ -47,6 +47,8 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 - **Triple Import**: Supports importing from Markdown, Foundry's database files, and json.
 - **Autoparsing**: Parses and generates outputs, even for complex fields like areas of effect.
 - **Diff Notification**: When a change is made to the parser that causes the generated spells to differ, upon the next execution of the parser, a report is generated for the user reporting which fields changed.
+- **SRD Comparison Testing**: Autogeneration is compared to the SRD spells for validation.
+- **Versioned Manual Override**: For particularly odd spells, it _is_ possible to override default value generated for a field, but you must specify what you're changing it from so if it becomes desynced, it will alert you.
 
 ## Development
 
