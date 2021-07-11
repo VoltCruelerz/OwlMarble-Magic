@@ -1,0 +1,119 @@
+{
+    "Bane": {
+        "uses": {"value":0,"max":0,"per":""}
+    },
+    "Bless": {
+        "actionType": "save"
+    },
+    "Color Spray": {
+        "damage": {"parts":[],"versatile":"","value":""}
+    },
+    "Command": {
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Dancing Lights": {
+        "target": {"value":10,"units":"ft","type":"radius"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Detect Evil and Good": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Detect Magic": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Detect Poison and Disease": {
+        "target": {"value":null,"units":"","type":"self"},
+        "components": {"value":"","vocal":true,"somatic":true,"material":true,"ritual":true,"concentration":true}
+    },
+    "Druidcraft": {
+        "target": {"value":5,"units":"ft","type":"cube"},
+        "actionType": "heal",
+        "damage": {"parts":[["0","healing"]],"versatile":"","value":""},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Entangle": {
+        "actionType": "save",
+        "save": {"ability":"str","dc":0,"scaling":"spell"}
+    },
+    "Faerie Fire": {
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Feather Fall": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "materials": {"value":"a small feather or a piece of down","consumed":false,"cost":0,"supply":0}
+    },
+    "Guidance": {
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Heroes' Feast": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "actionType": "save",
+        "damage": {"parts":[["2d10","healing"]],"versatile":"","value":""},
+        "save": {"ability":"wis","dc":0,"scaling":"spell"}
+    },
+    "Light": {
+        "target": {"value":20,"units":"ft","type":"radius"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Mage Hand": {
+        "target": {"value":null,"units":"any","type":"space"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Mending": {
+        "target": {"value":1,"units":"ft","type":"cube"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Message": {
+        "materials": {"value":"a short copper wire","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Minor Figment": {
+        "save": {"ability":"","dc":null,"value":""},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Prestidigitation": {
+        "duration": {"value":null,"units":"inst"},
+        "target": {"value":1,"units":"","type":"creature"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Produce Flame": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Resistance": {
+        "actionType": "save",
+        "materials": {"value":"a miniature shield","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Shillelagh": {
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Sleep": {
+        "actionType": "other",
+        "scaling": {"mode":"level","formula":"5d4"}
+    },
+    "Spare the Dying": {
+        "actionType": "other",
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Thaumaturgy": {
+        "duration": {"value":null,"units":"inst"},
+        "target": {"value":5,"units":"ft","type":"radius"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "True Strike": {
+        "target": {"value":null,"units":"any","type":"space"},
+        "actionType": "save",
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Goodberry": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "actionType": "util",
+        "materials": {"value":"a sprig of mistletoe","consumed":false,"cost":0,"supply":0}
+    },
+    "Weird": {
+        "duration": {"value":null,"units":"inst"},
+        "target": {"value":30,"units":"ft","type":"radius"},
+        "save": {"ability":"con","dc":0,"scaling":"spell"},
+        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
+    }
+}

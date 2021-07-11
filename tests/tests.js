@@ -1,5 +1,6 @@
 const assert = require('assert/strict');
 const fs = require('fs');
+const approvedErrors = require('./approvedErrors.json');
 
 //#region Handlers
 /**
@@ -82,16 +83,20 @@ const actionTypeHandler = (expected, actual) => {
  * @param {{value: string, consumed: boolean, cost: number, supply: number }} actual
  */
 const materialsHandler = (expected, actual) => {
-    let flavorExpected = expected.value.endsWith('.')
-        ? expected.value.substring(0, expected.value.length - 1)
-        : expected.value;
-    flavorExpected = flavorExpected.replaceAll(' ', '').replace(',', '').toLowerCase();
-    let flavorActual = actual.value.endsWith('.')
-        ? actual.value.substring(0, actual.value.length - 1)
-        : actual.value;
-    flavorActual = flavorActual.replaceAll(' ', '').replace(',', '').toLowerCase();
+    const simplify = (str) => {
+        str = str.endsWith('.')
+            ? str.substring(0, str.length - 1)
+            : str;
+        str = str
+            .replaceAll(' ', '')
+            .replaceAll(',', '')
+            .replaceAll('’','\'')
+            .toLowerCase();
+        return str;
+    };
+    let flavorExpected = simplify(expected.value);
+    let flavorActual = simplify(actual.value);
     
-
     if (flavorExpected !== flavorActual) {
         defaultHandler(expected, actual);
     } else if (expected.consumed !== actual.consumed) {
@@ -151,202 +156,6 @@ const damageHandler = (expected, actual) => {
 };
 //#endregion
 
-// This is the list of manually validated spells that are not meaningfully different from their SRD counterparts.
-const approvedSpells = [
-    'Druidcraft',
-    'Prestidigitation',
-    'Goodberry',
-    'Sleep',
-    'Resistance',
-    'Revivify',
-    'Heroes\' Feast',
-    'Teleportation Circle',
-    'Mirage Arcane',
-    'Project Image',
-    'Simulacrum',
-    'Holy Aura',
-    'Weird',
-    'Dancing Lights',
-    'Mage Hand',
-    'Spare the Dying',
-    'Thaumaturgy',
-    'True Strike',
-    'Identify',
-    'Shield',
-    'Feather Fall',
-    'Unseen Servant',
-    'Aid',
-    'Slick',
-    'Alter Self',
-    'Find Steed',
-    'Magic Weapon',
-    'Warding Bond',
-    'Beacon of Hope',
-    'Bestow Curse',
-    'Call Lightning',
-    'Counterspell',
-    'Glyph of Warding',
-    'Meld into Stone',
-    'Sending',
-    'Animate Objects',
-    'Hallow',
-    'Raise Dead',
-    'Tree Stride',
-    'Wall of Force',
-    'Forbiddance',
-    'Divine Word',
-    'Reverse Gravity',
-    'Teleport',
-    'Gate',
-    'Prismatic Wall',
-    'Storm of Vengeance',
-    'Wish',
-    'Guidance',
-    'Light',
-    'Mending',
-    'Message',
-    'Minor Figment',
-    'False Life',
-    'Find Familiar',
-    'Heroism',
-    'Protection from Evil and Good',
-    'Arcane Lock',
-    'Enlarge/Reduce',
-    'Enthrall',
-    'Flaming Sphere',
-    'Heat Metal',
-    'Magic Mouth',
-    'Mirror Image',
-    'Misty Step',
-    'Rope Trick',
-    'Scorching Ray',
-    'See Invisibility',
-    'Spike Growth',
-    'Zone of Truth',
-    'Clairvoyance',
-    'Create Food and Water',
-    'Gaseous Form',
-    'Haste',
-    'Magic Circle',
-    'Phantom Steed',
-    'Vampiric Touch',
-    'Arcane Eye',
-    'Banishment',
-    'Compulsion',
-    'Control Water',
-    'Dimension Door',
-    'Divination',
-    'Fire Shield',
-    'Giant Insect',
-    'Guardian of Faith',
-    'Hallucinatory Terrain',
-    'Cloudkill',
-    'Conjure Elemental',
-    'Creation',
-    'Dream',
-    'Hold Monster',
-    'Legend Lore',
-    'Passwall',
-    'Reincarnate',
-    'Scrying',
-    'Seeming',
-    'Create Undead',
-    'Disintegrate',
-    'Find the Path',
-    'Globe of Invulnerability',
-    'Harm',
-    'Magic Jar',
-    'Planar Ally',
-    'Sunbeam',
-    'Wall of Thorns',
-    'Wind Walk',
-    'Word of Recall',
-    'Transport via Plants',
-    'Etherealness',
-    'Plane Shift',
-    'Regenerate',
-    'Resurrection',
-    'Symbol',
-    'Antimagic Field',
-    'Clone',
-    'Astral Projection',
-    'Produce Flame',
-    'Poison Spray',
-    'Foresight',
-    'Imprisonment',
-    'Power Word Kill',
-    'Shapechange',
-    'Time Stop',
-    'True Polymorph',
-    'Alarm',
-    'Bless',
-    'Detect Magic',
-    'Disguise Self',
-    'Divine Favor',
-    'Expeditious Retreat',
-    'Faerie Fire',
-    'Fog Cloud',
-    'Shillelagh',
-    'Hunter\'s Mark',
-    'Illusory Script',
-    'Longstrider',
-    'Purify Food and Drink',
-    'Sanctuary',
-    'Animate Dead',
-    'Conjure Animals',
-    'Sleet Storm',
-    'Speak with Death',
-    'Spirit Guardians',
-    'Water Breathing',
-    'Water Walk',
-    'Confusion',
-    'Conjure Minor Elementals',
-    'Conjure Woodland Beings',
-    'Locate Creature',
-    'Dispel Evil and Good',
-    'Animal Shapes',
-    'Demiplane',
-    'Glibness',
-    'Maze',
-    'Mass Heal',
-    'True Resurrection',
-    'Augury',
-    'Detect Thoughts',
-    'Enhance Ability',
-    'Find Traps',
-    'Locate Animals or Plants',
-    'Locate Object',
-    'Moonbeam',
-    'Pass without Trace',
-    'Protection from Poison',
-    'Mislead',
-    'Conjure Fey',
-    'Guards and Wards',
-    'Mass Suggestion',
-    'Conjure Celestial',
-    'Entangle',
-    'Flame Strike',
-    'Meteor Swarm',
-    'Spiritual Weapon',
-    'Speak with Dead',
-    'Ice Storm',
-    'Delayed Blast Fireball',
-    'Detect Poison and Disease',
-    'Bane',
-    'Command',
-    'Detect Evil and Good',
-    'Stone Shape',
-    'Wall of Ice',
-    'Forcecage',
-    'Antipathy/Sympathy',
-    'Color Spray',
-    'Earthquake',
-    'Prismatic Spray'
-].reduce((acc, val) => {
-    acc[val] = true;
-    return acc;
-}, {});
-
 /**
  * Run tests.
  * @param {[{*}]} omm
@@ -354,6 +163,8 @@ const approvedSpells = [
  */
 module.exports = (omm, srd) => {
     const wall = '===================================================';
+    const thinWall = '---------------------------------------------------';
+    const tab = '    ';
     console.log('OMM Size: ' + omm.length);
     console.log('SRD Size: ' + srd.length);
 
@@ -381,7 +192,7 @@ module.exports = (omm, srd) => {
     let totalErrors = 0;
     omm.forEach((ommSpell) => {
         const srdSpell = srdLookup[ommSpell.name] || srdLookup[ommSpell.oldName];
-        if (!srdSpell || approvedSpells[ommSpell.name]) {
+        if (!srdSpell) {
             return;
         }
         const srdData = srdSpell.data;
@@ -389,7 +200,9 @@ module.exports = (omm, srd) => {
 
         verbatimFields.forEach((field) => {
             try {
-                const expected = srdData[field];
+                const expected = approvedErrors[ommSpell.name] && approvedErrors[ommSpell.name][field] 
+                    ? approvedErrors[ommSpell.name][field]
+                    : srdData[field];
                 const actual = ommData[field];
                 if (field === 'target') {
                     targetHandler(expected, actual);
@@ -429,7 +242,8 @@ module.exports = (omm, srd) => {
         });
         return arr;
     }, []);
-    errorReport.sort((a,b) => (a.errors.length <= b.errors.length) ? 1 : -1 );
+    
+    // errorReport.sort((a,b) => (a.errors.length <= b.errors.length) ? 1 : -1 );
 
     const lines = [];
     const header = `${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SRD SPELLS\n${wall}`;
@@ -437,7 +251,16 @@ module.exports = (omm, srd) => {
     if (errorReport.length > 0) {
         lines.push(header);
         errorReport.forEach((line) => {
-            lines.push(`${wall}\n- ${line.spell}: ${line.errors.length}/${verbatimFields.length}\n${wall}`);
+            lines.push(`${wall}\n- ${line.spell}: ${line.errors.length}/${verbatimFields.length}\n${thinWall}`);
+            lines.push(`${tab}"${line.spell}": {`);
+            line.errors.forEach((error, i) => {
+                const comma = i < line.errors.length - 1
+                    ? ','
+                    : '';
+                lines.push(`${tab + tab}"${error.field}": ${JSON.stringify(error.actual)}${comma}`);
+            });
+            lines.push(`${tab}}`);
+            lines.push(thinWall);
             line.errors.forEach((error, i) => {
                 const pipe = i < line.errors.length - 1 ? '|' : ' ';
                 lines.push(`L - [${i + 1}/${line.errors.length}] - ${error.field}`);
@@ -449,5 +272,5 @@ module.exports = (omm, srd) => {
     }
 
     const content = lines.join('\n');
-    fs.writeFileSync('test.log', content);
+    fs.writeFileSync('tests/test.log', content);
 };
