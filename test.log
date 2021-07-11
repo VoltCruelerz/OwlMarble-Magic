@@ -1,19 +1,6 @@
 ===================================================
-ERROR REPORT - 32 ERRORS ACROSS 22/320 SPELLS
+ERROR REPORT - 23 ERRORS ACROSS 17/320 SPELLS
 ===================================================
-===================================================
-- Wall of Fire: 3/11
-===================================================
-L - [1/3] - target
-| L - SRD: {"value":60,"units":"ft","type":"wall"}
-| L - OMM: {"value":1,"units":"ft","type":"wall"}
-L - [2/3] - damage
-| L - SRD: {"parts":[["5d8","fire"]],"versatile":""}
-| L - OMM: {"parts":[["5d8","fire"],["5d8","fire"]],"versatile":"","value":""}
-L - [3/3] - materials
-  L - SRD: {"value":"A small piece of phosphorous","consumed":false,"cost":0,"supply":0}
-  L - OMM: {"value":"a small piece of phosphorus","consumed":false,"cost":0,"supply":0}
-
 ===================================================
 - Color Spray: 2/11
 ===================================================
@@ -25,24 +12,14 @@ L - [2/2] - scaling
   L - OMM: {"mode":"level","formula":"6d10"}
 
 ===================================================
-- Detect Poison and Disease: 2/11
+- Wall of Fire: 2/11
 ===================================================
 L - [1/2] - target
-| L - SRD: {"value":30,"units":"ft","type":"radius"}
-| L - OMM: {"value":null,"units":"","type":"self"}
-L - [2/2] - components
-  L - SRD: {"value":"","vocal":true,"somatic":true,"material":true,"ritual":false,"concentration":true}
-  L - OMM: {"value":"","vocal":true,"somatic":true,"material":true,"ritual":true,"concentration":true}
-
-===================================================
-- Stone Shape: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":1,"units":"","type":"object"}
-| L - OMM: {"value":5,"units":"ft","type":"wall"}
-L - [2/2] - materials
-  L - SRD: {"value":"Soft clay, which must be worked into roughly the desired shape of the stone object","consumed":false,"cost":0,"supply":0}
-  L - OMM: {"value":"","consumed":false,"cost":0,"supply":0}
+| L - SRD: {"value":60,"units":"ft","type":"wall"}
+| L - OMM: {"value":1,"units":"ft","type":"wall"}
+L - [2/2] - damage
+  L - SRD: {"parts":[["5d8","fire"]],"versatile":""}
+  L - OMM: {"parts":[["5d8","fire"],["5d8","fire"]],"versatile":"","value":""}
 
 ===================================================
 - Alter Landscape: 2/11
@@ -65,16 +42,6 @@ L - [2/2] - damage
   L - OMM: {"parts":[["10d6","cold"],["12","fire"],["5d6","cold"]],"versatile":"","value":""}
 
 ===================================================
-- Forcecage: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":20,"units":"ft","type":"cube"}
-| L - OMM: {"value":1,"units":"","type":"creature"}
-L - [2/2] - materials
-  L - SRD: {"value":"Ruby dust worth 1500gp","consumed":false,"cost":1500,"supply":0}
-  L - OMM: {"value":"ruby dust worth 1,500 gp","consumed":false,"cost":1500,"supply":0}
-
-===================================================
 - Antipathy/Sympathy: 2/11
 ===================================================
 L - [1/2] - target
@@ -93,27 +60,6 @@ L - [1/2] - damage
 L - [2/2] - save
   L - SRD: {"ability":"dex","dc":0,"scaling":"spell"}
   L - OMM: {"ability":"con","dc":0,"scaling":"spell"}
-
-===================================================
-- Bane: 1/11
-===================================================
-L - [1/1] - uses
-  L - SRD: {"value":0,"max":"0","per":""}
-  L - OMM: {"value":0,"max":0,"per":""}
-
-===================================================
-- Command: 1/11
-===================================================
-L - [1/1] - scaling
-  L - SRD: {"mode":"none","formula":""}
-  L - OMM: {"mode":"level","formula":""}
-
-===================================================
-- Detect Evil and Good: 1/11
-===================================================
-L - [1/1] - target
-  L - SRD: {"value":30,"units":"ft","type":"radius"}
-  L - OMM: {"value":null,"units":"","type":"self"}
 
 ===================================================
 - Thunderwave: 1/11
@@ -170,6 +116,13 @@ L - [1/1] - target
 L - [1/1] - target
   L - SRD: {"value":100,"units":"ft","type":"wall"}
   L - OMM: {"value":5,"units":"ft","type":"wall"}
+
+===================================================
+- Forcecage: 1/11
+===================================================
+L - [1/1] - target
+  L - SRD: {"value":20,"units":"ft","type":"cube"}
+  L - OMM: {"value":1,"units":"","type":"creature"}
 
 ===================================================
 - Prismatic Spray: 1/11

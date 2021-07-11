@@ -82,15 +82,17 @@ const actionTypeHandler = (expected, actual) => {
  * @param {{value: string, consumed: boolean, cost: number, supply: number }} actual
  */
 const materialsHandler = (expected, actual) => {
-    const flavorExpected = expected.value.endsWith('.')
+    let flavorExpected = expected.value.endsWith('.')
         ? expected.value.substring(0, expected.value.length - 1)
         : expected.value;
-    const flavorActual = actual.value.endsWith('.')
+    flavorExpected = flavorExpected.replaceAll(' ', '').replace(',', '').toLowerCase();
+    let flavorActual = actual.value.endsWith('.')
         ? actual.value.substring(0, actual.value.length - 1)
         : actual.value;
+    flavorActual = flavorActual.replaceAll(' ', '').replace(',', '').toLowerCase();
     
 
-    if (flavorExpected.replaceAll(' ', '').toLowerCase() !== flavorActual.replaceAll(' ', '').toLowerCase()) {
+    if (flavorExpected !== flavorActual) {
         defaultHandler(expected, actual);
     } else if (expected.consumed !== actual.consumed) {
         defaultHandler(expected, actual);
@@ -328,7 +330,12 @@ const approvedSpells = [
     'Spiritual Weapon',
     'Speak with Dead',
     'Ice Storm',
-    'Delayed Blast Fireball'
+    'Delayed Blast Fireball',
+    'Detect Poison and Disease',
+    'Bane',
+    'Command',
+    'Detect Evil and Good',
+    'Stone Shape'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;
