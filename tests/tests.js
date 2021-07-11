@@ -199,11 +199,11 @@ module.exports = (omm, srd) => {
         const ommData = ommSpell.data;
 
         verbatimFields.forEach((field) => {
+            const expected = approvedErrors[ommSpell.name] && approvedErrors[ommSpell.name][field] 
+                ? approvedErrors[ommSpell.name][field]
+                : srdData[field];
+            const actual = ommData[field];
             try {
-                const expected = approvedErrors[ommSpell.name] && approvedErrors[ommSpell.name][field] 
-                    ? approvedErrors[ommSpell.name][field]
-                    : srdData[field];
-                const actual = ommData[field];
                 if (field === 'target') {
                     targetHandler(expected, actual);
                 } else if (field === 'actionType') {
@@ -223,8 +223,9 @@ module.exports = (omm, srd) => {
                 totalErrors++;
                 const error = {
                     field: field,
-                    actual: ommData[field],
-                    expected: srdData[field]
+                    actual: actual,
+                    expected: srdData[field],
+                    override: expected != srdData[field] ? expected : undefined
                 };
                 if (spellErrors[ommSpell.name]) {
                     spellErrors[ommSpell.name].push(error);
@@ -265,6 +266,9 @@ module.exports = (omm, srd) => {
                 const pipe = i < line.errors.length - 1 ? '|' : ' ';
                 lines.push(`L - [${i + 1}/${line.errors.length}] - ${error.field}`);
                 lines.push(pipe + ' L - SRD: ' + JSON.stringify(error.expected));
+                if (error.override) {
+                    lines.push(pipe + ' L - OVR: ' + JSON.stringify(error.override));
+                }
                 lines.push(pipe + ' L - OMM: ' + JSON.stringify(error.actual));
             });
             lines.push('');
