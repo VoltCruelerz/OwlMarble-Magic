@@ -60,7 +60,3 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 ### Known Issues
 
 See [test.log](./tests/test.log) to see any automatically detected issues.
-
-### Future Development
-
-- **Manual Output Overrides**: The fact is, some spells are just *weird*.  I want to make manual overrides that bound to a particular configurations so that if changes are made in the future, it will throw a warning saying the manual approval has expired.
