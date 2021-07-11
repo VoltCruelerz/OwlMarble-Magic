@@ -1285,7 +1285,7 @@ module.exports = class OwlMarbleParser {
                 .replaceAll('{@dice ', '')
                 .replaceAll('{@creature ', '')
                 .replaceAll(/{@damage ((\d+(d\d+)) ?(\+|-)? ?(\d+?)?)}/g, (g0, g1) => g1)
-                .replaceAll(/{@scaledamage \|?.*?\|?(\w+)}/g, (g0, g1) => g1)
+                .replaceAll(/{@scale(dice|damage) \|?.*?\|?(\w+)}/g, (g0, g1, g2) => g2)
                 .replaceAll(/{@\w+ (\w+)\|?.*?}/g, (g0, g1) => g1)
                 .replaceAll('}','');// Clean up termination of nested wrappers.
         } else if (raw.type === 'cell') {

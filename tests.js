@@ -337,7 +337,10 @@ const approvedSpells = [
     'Detect Evil and Good',
     'Stone Shape',
     'Wall of Ice',
-    'Forcecage'
+    'Forcecage',
+    'Antipathy/Sympathy',
+    'Color Spray',
+    'Earthquake'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;

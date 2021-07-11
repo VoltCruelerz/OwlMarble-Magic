@@ -1,49 +1,12 @@
 ===================================================
-ERROR REPORT - 13 ERRORS ACROSS 10/320 SRD SPELLS
+ERROR REPORT - 5 ERRORS ACROSS 5/320 SRD SPELLS
 ===================================================
-===================================================
-- Color Spray: 2/11
-===================================================
-L - [1/2] - damage
-| L - SRD: {"parts":[["",""]],"versatile":""}
-| L - OMM: {"parts":[],"versatile":"","value":""}
-L - [2/2] - scaling
-  L - SRD: {"mode":"level","formula":"2d10"}
-  L - OMM: {"mode":"level","formula":"6d10"}
-
-===================================================
-- Antipathy/Sympathy: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":1,"units":"","type":"creature"}
-| L - OMM: {"value":200,"units":"ft","type":"cube"}
-L - [2/2] - damage
-  L - SRD: {"parts":[],"versatile":"","value":""}
-  L - OMM: {"parts":[["60","healing"]],"versatile":"","value":""}
-
-===================================================
-- Earthquake: 2/11
-===================================================
-L - [1/2] - damage
-| L - SRD: {"parts":[],"versatile":"","value":""}
-| L - OMM: {"parts":[["50","bludgeoning"],["5d6","bludgeoning"]],"versatile":"","value":""}
-L - [2/2] - save
-  L - SRD: {"ability":"dex","dc":0,"scaling":"spell"}
-  L - OMM: {"ability":"con","dc":0,"scaling":"spell"}
-
 ===================================================
 - Thunderwave: 1/11
 ===================================================
 L - [1/1] - damage
   L - SRD: {"parts":[["2d8","thunder"]],"versatile":""}
   L - OMM: {"parts":[["2d8","thunder"],["10","thunder"]],"versatile":"","value":""}
-
-===================================================
-- Prayer of Healing: 1/11
-===================================================
-L - [1/1] - scaling
-  L - SRD: {"mode":"level","formula":"1d8"}
-  L - OMM: {"mode":"level","formula":"2d8"}
 
 ===================================================
 - Web: 1/11
@@ -58,13 +21,6 @@ L - [1/1] - damage
 L - [1/1] - save
   L - SRD: {"ability":"int","dc":15,"scaling":"flat"}
   L - OMM: {"ability":"int","dc":0,"scaling":"spell"}
-
-===================================================
-- Mass Cure Wounds: 1/11
-===================================================
-L - [1/1] - scaling
-  L - SRD: {"mode":"level","formula":"1d8"}
-  L - OMM: {"mode":"level","formula":"3d8"}
 
 ===================================================
 - Prismatic Spray: 1/11
