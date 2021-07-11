@@ -834,7 +834,7 @@ module.exports = class OwlMarbleParser {
         const parts = [];
 
         // Normally, people write damage like "deal 8d6 fire damage" or "deal 1d8 plus your spellcasting ability modifier".
-        const damageRegex = /(\d+(d\d+)?) ?(\+|-)?(\W*?(\d+|modifier))?[^\.]*?(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)\W/g;
+        const damageRegex = /(\d+(d\d+)?) ?(\+|-)?(\W*?(\d+|(?:your spellcasting ability )?(modifier)))?[^\.]*?(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)s?\W/g;
         
         // but sometimes, things are written the opposite way
         const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-)?([^\.]*?(\d+|modifier))?/g;
@@ -849,8 +849,8 @@ module.exports = class OwlMarbleParser {
                 // const dieSize = match[2];
                 let op = match[3];
                 // const longTag = match[4];
-                const shifter = match[5] === 'modifier' ? '@mod' : match[5];
-                let element = match[6];
+                const shifter = match[6] === 'modifier' ? '@mod' : match[5];
+                let element = match[7];
     
                 if (element === 'heal') {
                     element = 'healing';

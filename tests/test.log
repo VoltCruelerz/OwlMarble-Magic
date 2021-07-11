@@ -1,33 +1,18 @@
 ===================================================
-ERROR REPORT - 12 ERRORS ACROSS 7/320 SRD SPELLS
+ERROR REPORT - 9 ERRORS ACROSS 6/320 SRD SPELLS
 ===================================================
 ===================================================
-- Shillelagh: 1/11
----------------------------------------------------
-    "Shillelagh": {
-        "damage": {"parts":[],"versatile":"","value":""}
-    }
----------------------------------------------------
-L - [1/1] - damage
-  L - SRD: {"parts":[["1d8 + @mod","bludgeoning"]],"versatile":"","value":""}
-  L - OMM: {"parts":[],"versatile":"","value":""}
-
-===================================================
-- False Life: 3/11
+- False Life: 2/11
 ---------------------------------------------------
     "False Life": {
         "actionType": "util",
-        "damage": {"parts":[],"versatile":"","value":""},
         "scaling": {"mode":"level","formula":"1"}
     }
 ---------------------------------------------------
-L - [1/3] - actionType
+L - [1/2] - actionType
 | L - SRD: "heal"
 | L - OMM: "util"
-L - [2/3] - damage
-| L - SRD: {"parts":[["1d4 + 4","temphp"]],"versatile":""}
-| L - OMM: {"parts":[],"versatile":"","value":""}
-L - [3/3] - scaling
+L - [2/2] - scaling
   L - SRD: {"mode":"none","formula":""}
   L - OMM: {"mode":"level","formula":"1"}
 
@@ -58,19 +43,15 @@ L - [1/1] - damage
   L - OMM: {"parts":[],"versatile":"","value":""}
 
 ===================================================
-- Enhance Ability: 2/11
+- Enhance Ability: 1/11
 ---------------------------------------------------
     "Enhance Ability": {
-        "actionType": "other",
-        "damage": {"parts":[],"versatile":"","value":""}
+        "actionType": "other"
     }
 ---------------------------------------------------
-L - [1/2] - actionType
-| L - SRD: "heal"
-| L - OMM: "other"
-L - [2/2] - damage
-  L - SRD: {"parts":[["2d6","temphp"]],"versatile":"","value":""}
-  L - OMM: {"parts":[],"versatile":"","value":""}
+L - [1/1] - actionType
+  L - SRD: "heal"
+  L - OMM: "other"
 
 ===================================================
 - Globe of Invulnerability: 1/11
