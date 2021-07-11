@@ -321,7 +321,14 @@ const approvedSpells = [
     'Conjure Fey',
     'Guards and Wards',
     'Mass Suggestion',
-    'Conjure Celestial'
+    'Conjure Celestial',
+    'Entangle',
+    'Flame Strike',
+    'Meteor Swarm',
+    'Spiritual Weapon',
+    'Speak with Dead',
+    'Ice Storm',
+    'Delayed Blast Fireball'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;

@@ -1,5 +1,5 @@
 ===================================================
-ERROR REPORT - 44 ERRORS ACROSS 29/320 SPELLS
+ERROR REPORT - 32 ERRORS ACROSS 22/320 SPELLS
 ===================================================
 ===================================================
 - Wall of Fire: 3/11
@@ -13,19 +13,6 @@ L - [2/3] - damage
 L - [3/3] - materials
   L - SRD: {"value":"A small piece of phosphorous","consumed":false,"cost":0,"supply":0}
   L - OMM: {"value":"a small piece of phosphorus","consumed":false,"cost":0,"supply":0}
-
-===================================================
-- Flame Strike: 3/11
-===================================================
-L - [1/3] - target
-| L - SRD: {"value":10,"units":"ft","type":"cylinder"}
-| L - OMM: {"value":10,"units":"ft","type":"radius"}
-L - [2/3] - damage
-| L - SRD: {"parts":[["4d6","radiant"],["4d6","fire"]],"versatile":""}
-| L - OMM: {"parts":[["4d6","radiant"]],"versatile":"","value":""}
-L - [3/3] - materials
-  L - SRD: {"value":"A pinch of sulfur","consumed":false,"cost":0,"supply":0}
-  L - OMM: {"value":"pinch of sulfur","consumed":false,"cost":0,"supply":0}
 
 ===================================================
 - Color Spray: 2/11
@@ -46,36 +33,6 @@ L - [1/2] - target
 L - [2/2] - components
   L - SRD: {"value":"","vocal":true,"somatic":true,"material":true,"ritual":false,"concentration":true}
   L - OMM: {"value":"","vocal":true,"somatic":true,"material":true,"ritual":true,"concentration":true}
-
-===================================================
-- Entangle: 2/11
-===================================================
-L - [1/2] - actionType
-| L - SRD: "util"
-| L - OMM: "save"
-L - [2/2] - save
-  L - SRD: {"ability":"","dc":null,"scaling":"spell"}
-  L - OMM: {"ability":"str","dc":0,"scaling":"spell"}
-
-===================================================
-- Spiritual Weapon: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":5,"units":"ft","type":"square"}
-| L - OMM: {"value":1,"units":"","type":"creature"}
-L - [2/2] - damage
-  L - SRD: {"parts":[["1d8 + @mod","force"]],"versatile":""}
-  L - OMM: {"parts":[],"versatile":"","value":""}
-
-===================================================
-- Ice Storm: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":20,"units":"ft","type":"cylinder"}
-| L - OMM: {"value":20,"units":"ft","type":"radius"}
-L - [2/2] - damage
-  L - SRD: {"parts":[["2d8","bludgeoning"],["4d6","cold"]],"versatile":""}
-  L - OMM: {"parts":[["2d8","cold"]],"versatile":"","value":""}
 
 ===================================================
 - Stone Shape: 2/11
@@ -177,14 +134,7 @@ L - [1/1] - scaling
 ===================================================
 L - [1/1] - damage
   L - SRD: {"parts":[["2d4","fire"]],"versatile":"","value":""}
-  L - OMM: {"parts":[["5 - 1","fire"]],"versatile":"","value":""}
-
-===================================================
-- Speak with Dead: 1/11
-===================================================
-L - [1/1] - target
-  L - SRD: {"value":0,"units":"","type":""}
-  L - OMM: {"value":1,"units":"","type":"creature"}
+  L - OMM: {"parts":[["1","fire"]],"versatile":"","value":""}
 
 ===================================================
 - Wind Wall: 1/11
@@ -222,18 +172,11 @@ L - [1/1] - target
   L - OMM: {"value":5,"units":"ft","type":"wall"}
 
 ===================================================
-- Delayed Blast Fireball: 1/11
-===================================================
-L - [1/1] - damage
-  L - SRD: {"parts":[["12d6","fire"]],"versatile":"1d6"}
-  L - OMM: {"parts":[],"versatile":"","value":""}
-
-===================================================
 - Prismatic Spray: 1/11
 ===================================================
 L - [1/1] - damage
   L - SRD: {"parts":[["10d6",""]],"versatile":"","value":""}
-  L - OMM: {"parts":[["1 - 10","fire"],["2 - 10","acid"],["3 - 10","lightning"],["4 - 10","poison"],["5 - 10","cold"]],"versatile":"","value":""}
+  L - OMM: {"parts":[["10d6 - 10","fire"],["10d6 - 10","lightning"]],"versatile":"","value":""}
 
 ===================================================
 - Control Weather: 1/11
@@ -241,10 +184,3 @@ L - [1/1] - damage
 L - [1/1] - damage
   L - SRD: {"parts":[],"versatile":"","value":""}
   L - OMM: {"parts":[["3","cold"],["6","cold"]],"versatile":"","value":""}
-
-===================================================
-- Meteor Swarm: 1/11
-===================================================
-L - [1/1] - damage
-  L - SRD: {"parts":[["20d6","bludgeoning"],["20d6","fire"]],"versatile":""}
-  L - OMM: {"parts":[["20d6","bludgeoning"]],"versatile":"","value":""}

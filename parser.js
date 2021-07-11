@@ -801,17 +801,20 @@ module.exports = class OwlMarbleParser {
      * @returns {{parts: [[string]], versatile: string}}
      */
     getDamage (description) {
-        description = description.toLowerCase();
+        description = description.toLowerCase()
+            .replaceAll('plus', '+')
+            .replaceAll('minus', '-');
         const upcastTag = '<strong>higher levels</strong>';
         const upcastIndex = description.indexOf(upcastTag);
         const baseDesc = upcastIndex > -1 ? description.substr(0, upcastIndex) : description;
         const parts = [];
 
         // Normally, people write damage like "deal 8d6 fire damage" or "deal 1d8 plus your spellcasting ability modifier".
-        const damageRegex = /(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?[^\.]*?(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)/g;
+        const damageRegex = /(\d+(d\d+)?) ?(\+|-)?(\W*?(\d+|modifier))?[^\.]*?(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)/g;
         
-        // but sometimes, healing is written the opposite way
-        const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-|plus|minus)?([^\.]*?(\d+|modifier))?/g;
+        // but sometimes, things are written the opposite way
+        const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-)?([^\.]*?(\d+|modifier))?/g;
+        const invertedDamageRegex = /(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder).*?(\d+(d\d+))(.*?(\+|-).*?(\d+|modifier))?/g;
 
         const damageMatches = baseDesc.matchAll(damageRegex);
         for (const match of damageMatches) {
@@ -822,12 +825,6 @@ module.exports = class OwlMarbleParser {
             // const longTag = match[4];
             const shifter = match[5] === 'modifier' ? '@mod' : match[5];
             let element = match[6];
-
-            if (op === 'plus') {
-                op = '+';
-            } else if (op === 'minus') {
-                op = '-';
-            }
 
             if (element === 'heal') {
                 element = 'healing';
@@ -856,17 +853,33 @@ module.exports = class OwlMarbleParser {
             // const longTag = match[5];
             const shifter = match[6] === 'modifier' ? '@mod' : match[6];
 
-            if (op === 'plus') {
-                op = '+';
-            } else if (op === 'minus') {
-                op = '-';
-            }
-
             const healLine = op ? `${dice} ${op} ${shifter}` : dice;
             parts.push([
                 healLine,
                 'healing'
             ]);
+        }
+        // If we still haven't found anything, try inverting the order.
+        if (parts.length === 0) {
+            const invertedDamageMatches = baseDesc.matchAll(invertedDamageRegex);
+            for (const match of invertedDamageMatches) {
+                const element = match[1];
+                const dice = match[2];
+                let op = match[5];
+                const shifter = match[6] === 'modifier' ? '@mod' : match[6];
+    
+                // Ignore wordings like "5-foot radius".
+                if (op && !shifter) {
+                    continue;
+                }
+    
+                const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
+
+                parts.push([
+                    damageLine,
+                    element
+                ]);
+            }
         }
         return {
             parts,
