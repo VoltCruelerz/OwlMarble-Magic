@@ -335,7 +335,9 @@ const approvedSpells = [
     'Bane',
     'Command',
     'Detect Evil and Good',
-    'Stone Shape'
+    'Stone Shape',
+    'Wall of Ice',
+    'Forcecage'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;

@@ -132,7 +132,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Greater Restoration](https://www.dndbeyond.com/spells/greater-restoration) - V/S/M$X - (PHB - 246)
 - [Skill Empowerment](https://www.dndbeyond.com/spells/skill-empowerment) - V/S [C] - (XGE - 165)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
-- [Wall of Stone](https://www.dndbeyond.com/spells/wall-of-stone) - V/S/M [C] - (PHB - 287)
+- [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 
 ## Bard
 
@@ -706,7 +706,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Transmute Rock](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#transmute-rock) - V/S/M - (OMM - 5)
 - [Tree Stride](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#tree-stride) - V/S [C] - (OMM - 5)
 - [Twilight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#twilight) - V/S/M - (OMM - 5)
-- [Wall of Stone](https://www.dndbeyond.com/spells/wall-of-stone) - V/S/M [C] - (PHB - 287)
+- [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Wrath of Nature](https://www.dndbeyond.com/spells/wrath-of-nature) - V/S [C] - (XGE - 171)
 
 ### Level 6 - _Druid_
@@ -1149,7 +1149,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
 - [Wall of Light](https://www.dndbeyond.com/spells/wall-of-light) - V/S/M [C] - (XGE - 170)
-- [Wall of Stone](https://www.dndbeyond.com/spells/wall-of-stone) - V/S/M [C] - (PHB - 287)
+- [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Zenith's Hellstream](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#zenith's-hellstream) - V/S/M [C] - (OMM - 5)
 
 ### Level 6 - _Sorcerer_
@@ -1779,7 +1779,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
 - [Wall of Force](https://www.dndbeyond.com/spells/wall-of-force) - V/S/M [C] - (PHB - 285)
 - [Wall of Light](https://www.dndbeyond.com/spells/wall-of-light) - V/S/M [C] - (XGE - 170)
-- [Wall of Stone](https://www.dndbeyond.com/spells/wall-of-stone) - V/S/M [C] - (PHB - 287)
+- [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Zenith's Hellstream](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#zenith's-hellstream) - V/S/M [C] - (OMM - 5)
 
 ### Level 6 - _Wizard_
@@ -1820,7 +1820,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Superior Invisibility](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#superior-invisibility) - V/S/M [C] - (OMM - 6)
 - [Tenser's Transformation](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#tenser's-transformation) - V/S/M - (OMM - 6)
 - [True Seeing](https://www.dndbeyond.com/spells/true-seeing) - V/S/M$X - (PHB - 284)
-- [Wall of Ice](https://www.dndbeyond.com/spells/wall-of-ice) - V/S/M [C] - (PHB - 285)
+- [Wall of Ice](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#wall-of-ice) - V/S/M [C] - (OMM - 6)
 
 ### Level 7 - _Wizard_
 

@@ -1,5 +1,5 @@
 ===================================================
-ERROR REPORT - 17 ERRORS ACROSS 13/320 SRD SPELLS
+ERROR REPORT - 13 ERRORS ACROSS 10/320 SRD SPELLS
 ===================================================
 ===================================================
 - Color Spray: 2/11
@@ -10,16 +10,6 @@ L - [1/2] - damage
 L - [2/2] - scaling
   L - SRD: {"mode":"level","formula":"2d10"}
   L - OMM: {"mode":"level","formula":"6d10"}
-
-===================================================
-- Wall of Ice: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":100,"units":"ft","type":"wall"}
-| L - OMM: {"value":10,"units":"ft","type":"square"}
-L - [2/2] - damage
-  L - SRD: {"parts":[["10d6","cold"]],"versatile":"5d6"}
-  L - OMM: {"parts":[["10d6","cold"],["12","fire"],["5d6","cold"]],"versatile":"","value":""}
 
 ===================================================
 - Antipathy/Sympathy: 2/11
@@ -75,20 +65,6 @@ L - [1/1] - save
 L - [1/1] - scaling
   L - SRD: {"mode":"level","formula":"1d8"}
   L - OMM: {"mode":"level","formula":"3d8"}
-
-===================================================
-- Wall of Stone: 1/11
-===================================================
-L - [1/1] - target
-  L - SRD: {"value":100,"units":"ft","type":"wall"}
-  L - OMM: {"value":1,"units":"","type":"creature"}
-
-===================================================
-- Forcecage: 1/11
-===================================================
-L - [1/1] - target
-  L - SRD: {"value":20,"units":"ft","type":"cube"}
-  L - OMM: {"value":1,"units":"","type":"creature"}
 
 ===================================================
 - Prismatic Spray: 1/11

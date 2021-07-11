@@ -46,7 +46,7 @@ module.exports = class OwlMarbleParser {
             .filter((line) => line.startsWith(monsterNameTag))
             .map((monsterNameLine) => monsterNameLine.match(monsterNameRegex)[1]);
         monsterNames.forEach((monsterName) => {
-            const linkableName = monsterName.replace(' ', '-').toLowerCase();
+            const linkableName = monsterName.replaceAll(' ', '-').toLowerCase();
             indices[monsterName] = `${github}/Monster%20Blocks.md#${linkableName}`;
         });
 
@@ -62,7 +62,7 @@ module.exports = class OwlMarbleParser {
         const fileNames = fs.readdirSync(dirName);
         fileNames.forEach((fileName) => {
             const contents = fs.readFileSync(dirName + fileName, { encoding: 'utf-8', flag: 'r' });
-            const updated = contents.replaceAll(/(^|\W)_(\w.*?\w)_(\W|$)/g, (match, g1, g2, g3) => {
+            const updated = contents.replaceAll(/(^|\W)_(\w.*?\w)_(s\W|\W|$)/g, (match, g1, g2, g3) => {
                 if (match.startsWith('_replaces ') || !indices[g2]) {
                     return match;
                 }

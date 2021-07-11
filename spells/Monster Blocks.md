@@ -124,3 +124,49 @@
 > ***Telepathic Control.*** The ooze is loyal to one creature and follows its telepathic instructions, which can be provided to the ooze while the creature is in contact with it.  In the absence of of orders, it follows the creature it is loyal to and takes the dodge action.
 >
 > ***Powerful Build.*** The ooze counts as one size class larger when determining its carrying capacity.
+
+```
+```
+
+> ## Wall of Ice Panel
+>
+>*Large spell effect, unaligned*
+>
+> - **Armor Class** 12
+> - **Hit Points** 30
+> - **Speed** 0ft.
+>
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|
+>
+> - **Condition Immunities** all
+> - **Vulnerabilities** fire
+> - **Immunities** cold, poison, psychic
+>
+> ### Traits
+>
+> ***Panel.*** This spell effect takes the form of a 10 foot square that is 1 foot thick.
+>
+> ***Frigid Remnants.*** When this panel is destroyed, it leaves behind a sheet of frigid air in its space for the spell's duration. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one.  When the spell is cast at higher levels, the damage increases by 1d6 for each spell level above 6th.
+
+```
+```
+
+> ## Wall of Stone Panel
+>
+>*Large construct, unaligned*
+>
+> - **Armor Class** 15
+> - **Hit Points** 30 per inch
+> - **Speed** 0ft.
+>
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|
+>
+> - **Condition Immunities** all
+>
+> ### Traits
+>
+> ***Panel.*** This spell effect takes the form of either a 10 foot square that is 6 inches thick or a 10x20 foot rectangle that is 3 inches thick.
