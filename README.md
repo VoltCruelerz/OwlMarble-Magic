@@ -20,10 +20,10 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 
 ### Appendices
 
-- [General Rules](./spells/General%20Rules.md): overall spellcasting rules.
-- [Monster Stat Blocks](./spells/Monster%20Blocks.md): stat blocks of homebrew monsters that are referenced by spells.
-- [Spells by Class](./spells/Spells%20by%20Class.md): a list of all spells for each class once OMM is accounted for.
-- [OGL](./spells/OGL.license): This is all just fan content, so here's Wizards' OGL.
+- [**General Rules**](./spells/General%20Rules.md): overall spellcasting rules.
+- [**Monster Stat Blocks**](./spells/Monster%20Blocks.md): stat blocks of homebrew monsters that are referenced by spells.
+- [**Spells by Class**](./spells/Spells%20by%20Class.md): a list of all spells for each class once OMM is accounted for.
+- [**OGL**](./spells/OGL.license): This is all just fan content, so here's Wizards' OGL.
 
 ## Features
 
