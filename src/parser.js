@@ -134,7 +134,7 @@ module.exports = class OwlMarbleParser {
      * @returns 
      */
     readSpellDB (path) {
-        console.log('======================================\nReading db file...\n- Path: ' + path);
+        console.log('======================================\nReading db file: ' + path);
         const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
         const lines = contents.split('\n');
         const dbSpells = lines.filter((line) => line).map((line) => JSON.parse(line));
@@ -1484,8 +1484,6 @@ module.exports = class OwlMarbleParser {
             return acc;
         }, {}));
         classes.sort();
-
-        console.log('Classes: ' + classes);
 
         const outputLines = [
             '# Spells by Class', '',

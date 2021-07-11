@@ -165,8 +165,6 @@ module.exports = (omm, srd) => {
     const wall = '===================================================';
     const thinWall = '---------------------------------------------------';
     const tab = '    ';
-    console.log('OMM Size: ' + omm.length);
-    console.log('SRD Size: ' + srd.length);
 
     const srdLookup = srd.reduce((acc, spell) => {
         acc[spell.name] = spell;
@@ -248,8 +246,8 @@ module.exports = (omm, srd) => {
 
     const lines = [];
     const header = `${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SRD SPELLS\n${wall}`;
-    console.log(header);
     if (errorReport.length > 0) {
+        console.log(header);
         lines.push(header);
         errorReport.forEach((line) => {
             lines.push(`${wall}\n- ${line.spell}: ${line.errors.length}/${verbatimFields.length}\n${thinWall}`);
