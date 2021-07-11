@@ -592,9 +592,10 @@ module.exports = class OwlMarbleParser {
     /**
      * Generates an object for AoEs.
      * @param {[*]} match 
+     * @param {{*}} description
      * @returns {{value: number, units: string, shape: string}}
      */
-    getAoE (match) {
+    getAoE (match, description) {
         let val = parseInt(match[1]);
         let units = match[2];
         if (units.startsWith('foot') || units.startsWith('feet')) {
@@ -604,6 +605,28 @@ module.exports = class OwlMarbleParser {
         }
         
         let shape = match[3];
+
+        // Walls are defined by three traits: length, height, and width.
+        if (shape === 'wall') {
+            const longRegex = /(\d+) (foot|feet|mile|miles) (long|in length)/;
+            const tallRegex = /(\d+) (foot|feet|mile|miles) (tall|in height|high)/;
+            const widthRegex = /(\d+) (foot|feet|mile|miles) (thick|deep)/;
+            const longMatch = description.match(longRegex);
+            const tallMatch = description.match(tallRegex);
+            const widthMatch = description.match(widthRegex);
+            if (longMatch && tallMatch && widthMatch) {
+                const length = parseInt(longMatch[1]);
+                const width = parseInt(widthMatch[1]);
+                return {
+                    value: length,
+                    units: units,
+                    width: width,
+                    type: shape
+                };
+            }
+        }
+
+        // Normal shapes are defined by shape and one dimension.
         shape = shape.replaceAll('-', ' ');
         const terms = shape.split(' ');
         if (terms.length === 2) {
@@ -663,17 +686,17 @@ module.exports = class OwlMarbleParser {
                 units: '',
                 type: 'self'
             };
-        } 
+        }
         if (range.match(targetRegex)) {
             const match = range.match(targetRegex);
-            const aoe = this.getAoE(match);
+            const aoe = this.getAoE(match, description);
             if (aoe.units === 'ft' || aoe.units === 'mi') {
                 return aoe;
             }
-        } 
+        }
         if (description.match(targetRegex)) {
             const match = description.match(targetRegex);
-            const aoe = this.getAoE(match);
+            const aoe = this.getAoE(match, description);
             if (aoe.units === 'ft' || aoe.units === 'mi') {
                 return aoe;
             }
