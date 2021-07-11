@@ -826,7 +826,8 @@ module.exports = class OwlMarbleParser {
     getDamage (description) {
         description = description.toLowerCase()
             .replaceAll('plus', '+')
-            .replaceAll('minus', '-');
+            .replaceAll('minus', '-')
+            .replaceAll(/\d+ (?:action|bonus action|minute|hour|day|year|reaction|round|week)/g, () => '');
         const upcastTag = '<strong>higher levels</strong>';
         const upcastIndex = description.indexOf(upcastTag);
         const baseDesc = upcastIndex > -1 ? description.substr(0, upcastIndex) : description;
@@ -839,7 +840,7 @@ module.exports = class OwlMarbleParser {
         const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-)?([^\.]*?(\d+|modifier))?/g;
         const invertedDamageRegex = /(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder).*?(\d+(d\d+))(.*?(\+|-).*?(\d+|modifier))?/g;
 
-        const lines = baseDesc.split(/<p>|<td>/);
+        const lines = baseDesc.split(/<p>|<td>|<li>|<h3>|<h4>|<h5>|<br>|<br\/>/);
         lines.forEach((line) => {
             const damageMatches = line.matchAll(damageRegex);
             for (const match of damageMatches) {
