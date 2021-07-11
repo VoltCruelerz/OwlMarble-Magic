@@ -146,9 +146,34 @@ const damageHandler = (expected, actual) => {
     const valueEquiv = {};
     valueEquiv['undefined'] = '';
 
-    if (JSON.stringify(expected.parts) !== JSON.stringify(actual.parts)) {
-        defaultHandler(expected, actual);
-    } else if (expected.versatile !== actual.versatile) {
+    const expectedLookup = expected.parts.reduce((acc, val) => {
+        acc[val[0] + val[1]] = true;
+        return acc;
+    }, {});
+    const actualLookup = expected.parts.reduce((acc, val) => {
+        acc[val[0] + val[1]] = true;
+        return acc;
+    }, {});
+
+    // Check that all the expectations are in actuals.
+    for (let i = 0; i < expected.parts.length; i++) {
+        const expectedPart = expected.parts[i];
+        const expectedTerm = expectedPart[0] + expectedPart[1];
+        if (!actualLookup[expectedTerm]) {
+            defaultHandler(expected, actual);
+        }
+    }
+
+    // Check that all actuals were in expected
+    for (let i = 0; i < actual.parts.length; i++) {
+        const actualPart = actual.parts[i];
+        const actualTerm = actualPart[0] + actualPart[1];
+        if (!expectedLookup[actualTerm]) {
+            defaultHandler(expected, actual);
+        }
+    }
+
+    if (expected.versatile !== actual.versatile) {
         defaultHandler(expected, actual);
     } else if (!isEquivalent(valueEquiv, expected.value, actual.value)) {
         defaultHandler(expected, actual);

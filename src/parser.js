@@ -673,6 +673,10 @@ module.exports = class OwlMarbleParser {
             throw new Error('Unrecognized AoE: ' + match[0]);
         }
 
+        if (shape === 'radius' && (description.includes('cylinder') || description.includes('pillar') || description.includes('column'))) {
+            shape = 'cylinder';
+        }
+
         return {
             value: val,
             units: units,

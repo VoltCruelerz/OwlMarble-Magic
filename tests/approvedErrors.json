@@ -56,7 +56,6 @@
         "actionType": "save"
     },
     "Call Lightning": {
-        "target": {"value":60,"units":"ft","type":"radius"},
         "damage": {"parts":[["3d10","lightning"]],"versatile":"","value":""}
     },
     "Clairvoyance": {
@@ -216,8 +215,6 @@
         "damage": {"parts":[["2d8","fire"],["2d8","cold"]],"versatile":"","value":""}
     },
     "Flame Strike": {
-        "target": {"value":10,"units":"ft","type":"radius"},
-        "damage": {"parts":[["4d6","fire"],["4d6","radiant"]],"versatile":"","value":""},
         "materials": {"value":"pinch of sulfur","consumed":false,"cost":0,"supply":0}
     },
     "Flaming Sphere": {
@@ -298,9 +295,6 @@
     "Hunter's Mark": {
         "damage": {"parts":[],"versatile":"","value":""}
     },
-    "Ice Storm": {
-        "target": {"value":20,"units":"ft","type":"radius"}
-    },
     "Identify": {
         "target": {"value":1,"units":"","type":"creature"}
     },
@@ -334,7 +328,6 @@
         "scaling": {"mode":"cantrip","formula":""}
     },
     "Magic Circle": {
-        "target": {"value":10,"units":"ft","type":"radius"},
         "save": {"ability":"cha","dc":0,"scaling":"spell"}
     },
     "Magic Jar": {
@@ -369,9 +362,6 @@
         "materials": {"value":"a short copper wire","consumed":false,"cost":0,"supply":0},
         "scaling": {"mode":"cantrip","formula":""}
     },
-    "Meteor Swarm": {
-        "damage": {"parts":[["20d6","fire"],["20d6","bludgeoning"]],"versatile":"","value":""}
-    },
     "Minor Figment": {
         "save": {"ability":"","dc":null,"value":""},
         "scaling": {"mode":"cantrip","formula":""}
@@ -390,9 +380,6 @@
     "Misty Step": {
         "target": {"value":null,"units":"","type":"self"},
         "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
-    },
-    "Moonbeam": {
-        "target": {"value":5,"units":"ft","type":"radius"}
     },
     "Passwall": {
         "target": {"value":1,"units":"","type":"creature"}
@@ -459,7 +446,6 @@
         "actionType": "save"
     },
     "Reverse Gravity": {
-        "target": {"value":50,"units":"ft","type":"radius"},
         "save": {"ability":"dex","dc":0,"scaling":"spell"},
         "materials": {"value":"a lodestone and iron filings","consumed":false,"cost":0,"supply":0}
     },
@@ -507,9 +493,6 @@
         "actionType": "other",
         "damage": {"parts":[["8d4",""]],"versatile":"","value":""},
         "scaling": {"mode":"level","formula":"5d4"}
-    },
-    "Sleet Storm": {
-        "target": {"value":40,"units":"ft","type":"radius"}
     },
     "Slick": {
         "materials": {"value":"a bit of butter or ice","consumed":false,"cost":0,"supply":0},
