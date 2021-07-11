@@ -192,6 +192,9 @@
     "Faerie Fire": {
         "scaling": {"mode":"level","formula":""}
     },
+    "False Life": {
+        "scaling": {"mode":"level","formula":""}
+    },
     "Feather Fall": {
         "target": {"value":1,"units":"","type":"creature"},
         "materials": {"value":"a small feather or a piece of down","consumed":false,"cost":0,"supply":0}
@@ -502,6 +505,7 @@
     },
     "Sleep": {
         "actionType": "other",
+        "damage": {"parts":[["8d4",""]],"versatile":"","value":""},
         "scaling": {"mode":"level","formula":"5d4"}
     },
     "Sleet Storm": {

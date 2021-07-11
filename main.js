@@ -1,4 +1,4 @@
-const OwlMarbleParser = require('./parser.js');
+const OwlMarbleParser = require('./src/parser.js');
 const test = require('./tests/tests.js');
 const wall = '======================================';
 

@@ -1,6 +1,7 @@
 const fs = require('fs');
 const seedrandom = require('seedrandom');
 const { detailedDiff } = require('deep-object-diff');
+const overrides = require('./parseOverrides');
 
 /**
  * Sets up a parser for OwlMarble Magic.
@@ -10,6 +11,27 @@ module.exports = class OwlMarbleParser {
     constructor () {
         this.timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/;
         this.healingRegex = /heal|((restore|regain).*hit points?)/;
+    }
+
+    /**
+     * If the spell has overriden fields in `parseOverrides.json`, replace them here.  If the override is outdated, warn the user.
+     * @param {{*}} spell 
+     */
+    overrideSpell (spell) {
+        const softWall = '------------------------------------------------';
+        // Handle manual override substitutions.
+        if (overrides[spell.name]) {
+            const overData = overrides[spell.name];
+            const spellData = spell.data;
+            const fields = Object.keys(overData);
+            fields.forEach((field) => {
+                const overField = overData[field];
+                if (JSON.stringify(overField.old) !== JSON.stringify(spellData[field])) {
+                    console.error(`${softWall}\nWARNING - Outdated Override for ${spell.name}'s ${field}\n- Expected: ${JSON.stringify(overField.old)}\n-    Found: ${JSON.stringify(spellData[field])}\n${softWall}`);
+                }
+                spellData[field] = overField.new;
+            });
+        }
     }
 
     //#region IO
@@ -254,6 +276,9 @@ module.exports = class OwlMarbleParser {
             if (oldName) {
                 spell.oldName = oldName;
             }
+
+            this.overrideSpell(spell);
+
             return spell;
         } catch (e) {
             console.error('Failed to Parse ' + level + ' - ' + name);
@@ -1146,7 +1171,7 @@ module.exports = class OwlMarbleParser {
                 const description = this.parseImportedEntries(spell.entries) + this.parseImportedEntries(spell.entriesHigherLevel).replace('<strong>At Higher Levels</strong>', '<strong>Higher Levels</strong>');
                 const importedRange = this.getImportedRange(spell);
                 const range = this.getRange(importedRange);
-                parsed.push({
+                const importedSpell = {
                     _id: this.generateUUID(spell.name + ' (Imported)'),
                     name: spell.name,
                     permission: {
@@ -1203,7 +1228,9 @@ module.exports = class OwlMarbleParser {
                             systemVersion: '1.3.6'
                         }
                     }
-                });
+                };                
+                this.overrideSpell(importedSpell);
+                parsed.push(importedSpell);
             } catch (e) {
                 console.error('===============================================\nFailure on ' + spell.name);
                 throw e;
