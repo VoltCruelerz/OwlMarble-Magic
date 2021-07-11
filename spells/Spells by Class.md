@@ -675,7 +675,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Stone Shape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#stone-shape) - V/S/M - (OMM - 4)
 - [Stoneskin](https://www.dndbeyond.com/spells/stoneskin) - V/S/M$X [C] - (PHB - 278)
 - [Synara's Frozen Grasp](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#synara's-frozen-grasp) - V/S/M [C] - (OMM - 4)
-- [Wall of Fire](https://www.dndbeyond.com/spells/wall-of-fire) - V/S/M [C] - (PHB - 285)
+- [Wall of Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#wall-of-fire) - V/S/M [C] - (OMM - 4)
 - [Watery Sphere](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#watery-sphere) - V/M [C] - (OMM - 4)
 - [Widogast's Web of Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#widogast's-web-of-fire) - V/S - (OMM - 4)
 
@@ -1113,7 +1113,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Storm Sphere](https://www.dndbeyond.com/spells/storm-sphere) - V/S [C] - (XGE - 166)
 - [Synara's Frozen Grasp](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#synara's-frozen-grasp) - V/S/M [C] - (OMM - 4)
 - [Vitriolic Sphere](https://www.dndbeyond.com/spells/vitriolic-sphere) - V/S/M - (XGE - 170)
-- [Wall of Fire](https://www.dndbeyond.com/spells/wall-of-fire) - V/S/M [C] - (PHB - 285)
+- [Wall of Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#wall-of-fire) - V/S/M [C] - (OMM - 4)
 - [Watery Sphere](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#watery-sphere) - V/M [C] - (OMM - 4)
 - [Widogast's Web of Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#widogast's-web-of-fire) - V/S - (OMM - 4)
 
@@ -1722,7 +1722,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Summon Greater Demon](https://www.dndbeyond.com/spells/summon-greater-demon) - V/S/M [C] - (XGE - 166)
 - [Synara's Frozen Grasp](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#synara's-frozen-grasp) - V/S/M [C] - (OMM - 4)
 - [Vitriolic Sphere](https://www.dndbeyond.com/spells/vitriolic-sphere) - V/S/M - (XGE - 170)
-- [Wall of Fire](https://www.dndbeyond.com/spells/wall-of-fire) - V/S/M [C] - (PHB - 285)
+- [Wall of Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#wall-of-fire) - V/S/M [C] - (OMM - 4)
 - [Watery Sphere](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#watery-sphere) - V/M [C] - (OMM - 4)
 - [Widogast's Web of Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#widogast's-web-of-fire) - V/S - (OMM - 4)
 

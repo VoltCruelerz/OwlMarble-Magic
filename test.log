@@ -1,5 +1,5 @@
 ===================================================
-ERROR REPORT - 23 ERRORS ACROSS 17/320 SRD SPELLS
+ERROR REPORT - 22 ERRORS ACROSS 17/320 SRD SPELLS
 ===================================================
 ===================================================
 - Color Spray: 2/11
@@ -10,16 +10,6 @@ L - [1/2] - damage
 L - [2/2] - scaling
   L - SRD: {"mode":"level","formula":"2d10"}
   L - OMM: {"mode":"level","formula":"6d10"}
-
-===================================================
-- Wall of Fire: 2/11
-===================================================
-L - [1/2] - target
-| L - SRD: {"value":60,"units":"ft","type":"wall"}
-| L - OMM: {"value":1,"units":"ft","type":"wall"}
-L - [2/2] - damage
-  L - SRD: {"parts":[["5d8","fire"]],"versatile":""}
-  L - OMM: {"parts":[["5d8","fire"],["5d8","fire"]],"versatile":"","value":""}
 
 ===================================================
 - Alter Landscape: 2/11
@@ -87,6 +77,13 @@ L - [1/1] - damage
 ===================================================
 L - [1/1] - target
   L - SRD: {"value":50,"units":"ft","type":"wall"}
+  L - OMM: {"value":1,"units":"ft","type":"wall"}
+
+===================================================
+- Wall of Fire: 1/11
+===================================================
+L - [1/1] - target
+  L - SRD: {"value":60,"units":"ft","type":"wall"}
   L - OMM: {"value":1,"units":"ft","type":"wall"}
 
 ===================================================
