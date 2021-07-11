@@ -1,0 +1,631 @@
+{
+    "Aid": {
+        "actionType": "util"
+    },
+    "Alter Self": {
+        "damage": {"parts":[["1d6","bludgeoning"]],"versatile":"","value":""}
+    },
+    "Animal Shapes": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Animate Dead": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Animate Objects": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "damage": {"parts":[["1d6 + 4","bludgeoning"]],"versatile":"","value":""},
+        "components": {"value":"","vocal":false,"somatic":true,"material":false,"ritual":false,"concentration":true}
+    },
+    "Antimagic Field": {
+        "target": {"value":10,"units":"ft","type":"radius"}
+    },
+    "Antipathy/Sympathy": {
+        "target": {"value":200,"units":"ft","type":"cube"},
+        "damage": {"parts":[["60","healing"]],"versatile":"","value":""}
+    },
+    "Arcane Eye": {
+        "target": {"value":1,"units":"","type":"object"}
+    },
+    "Arcane Lock": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Astral Projection": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Augury": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Bane": {
+        "uses": {"value":0,"max":0,"per":""}
+    },
+    "Banishment": {
+        "save": {"ability":"cha","dc":0,"scaling":"spell"},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Beacon of Hope": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "actionType": "save",
+        "save": {"ability":"wis","dc":0,"scaling":"spell"}
+    },
+    "Bestow Curse": {
+        "uses": {"value":0,"max":0,"per":""},
+        "damage": {"parts":[["1d10","necrotic"],["1d8","necrotic"],["1","psychic"]],"versatile":"","value":""},
+        "save": {"ability":"wis","dc":0,"scaling":"spell"}
+    },
+    "Bless": {
+        "actionType": "save"
+    },
+    "Call Lightning": {
+        "target": {"value":60,"units":"ft","type":"radius"},
+        "damage": {"parts":[["3d10","lightning"]],"versatile":"","value":""}
+    },
+    "Clairvoyance": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Clone": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "materials": {"value":"a diamond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes, and a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold a Medium creature, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water","consumed":true,"cost":1000,"supply":0}
+    },
+    "Cloudkill": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Color Spray": {
+        "damage": {"parts":[],"versatile":"","value":""}
+    },
+    "Command": {
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Compulsion": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Conjure Fey": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Confusion": {
+        "materials": {"value":"three nut shells","consumed":false,"cost":0,"supply":0}
+    },
+    "Conjure Animals": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Conjure Celestial": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Conjure Elemental": {
+        "activation": {"type":"minute","cost":1,"condition":""},
+        "target": {"value":10,"units":"ft","type":"cube"}
+    },
+    "Conjure Minor Elementals": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Conjure Woodland Beings": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Control Water": {
+        "target": {"value":50,"units":"ft","type":"square"},
+        "damage": {"parts":[["2d8","bludgeoning"],["2d8","bludgeoning"]],"versatile":"","value":""}
+    },
+    "Counterspell": {
+        "activation": {"type":"reaction","cost":1,"condition":"which you take when you observe a creature you can see casting a spell"},
+        "target": {"value":null,"units":"any","type":""},
+        "scaling": {"mode":"none","formula":""}
+    },
+    "Create Food and Water": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Create Undead": {
+        "activation": {"type":"minute","cost":1,"condition":""},
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Creation": {
+        "materials": {"value":"","consumed":false,"cost":0,"supply":0}
+    },
+    "Dancing Lights": {
+        "target": {"value":10,"units":"ft","type":"radius"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Delayed Blast Fireball": {
+        "damage": {"parts":[["12d6","fire"]],"versatile":"","value":""}
+    },
+    "Demiplane": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Detect Evil and Good": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Detect Magic": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Detect Poison and Disease": {
+        "target": {"value":null,"units":"","type":"self"},
+        "components": {"value":"","vocal":true,"somatic":true,"material":true,"ritual":true,"concentration":true}
+    },
+    "Detect Thoughts": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Dimension Door": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Disintegrate": {
+        "target": {"value":10,"units":"ft","type":"cube"}
+    },
+    "Dispel Evil and Good": {
+        "save": {"ability":"cha","dc":0,"scaling":"spell"}
+    },
+    "Divination": {
+        "materials": {"value":"incense and a sacrificial offering appropriate to your religion, together worth at least 25 gp, which the spell consumes","consumed":true,"cost":25,"supply":0}
+    },
+    "Divine Word": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "save": {"ability":"cha","dc":0,"scaling":"spell"}
+    },
+    "Dream": {
+        "save": {"ability":"wis","dc":0,"scaling":"spell"},
+        "materials": {"value":"a handful of sand, a dab of ink, and a quill plucked from a sleeping bird","consumed":false,"cost":0,"supply":0}
+    },
+    "Druidcraft": {
+        "target": {"value":5,"units":"ft","type":"cube"},
+        "actionType": "heal",
+        "damage": {"parts":[["0","healing"]],"versatile":"","value":""},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Earthquake": {
+        "damage": {"parts":[["50","bludgeoning"],["5d6","bludgeoning"]],"versatile":"","value":""},
+        "save": {"ability":"con","dc":0,"scaling":"spell"}
+    },
+    "Enlarge/Reduce": {
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Entangle": {
+        "actionType": "save",
+        "save": {"ability":"str","dc":0,"scaling":"spell"}
+    },
+    "Etherealness": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Enhance Ability": {
+        "actionType": "other"
+    },
+    "Enthrall": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Faerie Fire": {
+        "scaling": {"mode":"level","formula":""}
+    },
+    "False Life": {
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Feather Fall": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "materials": {"value":"a small feather or a piece of down","consumed":false,"cost":0,"supply":0}
+    },
+    "Find Familiar": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Find Steed": {
+        "actionType": "heal",
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Find the Path": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Find Traps": {
+        "target": {"value":1,"units":"","type":"object"}
+    },
+    "Fire Shield": {
+        "damage": {"parts":[["2d8","fire"],["2d8","cold"]],"versatile":"","value":""}
+    },
+    "Flame Strike": {
+        "target": {"value":10,"units":"ft","type":"radius"},
+        "damage": {"parts":[["4d6","fire"],["4d6","radiant"]],"versatile":"","value":""},
+        "materials": {"value":"pinch of sulfur","consumed":false,"cost":0,"supply":0}
+    },
+    "Flaming Sphere": {
+        "target": {"value":2.5,"units":"ft","type":"sphere"}
+    },
+    "Forbiddance": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "damage": {"parts":[["5d10","radiant"]],"versatile":"","value":""},
+        "materials": {"value":"a sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp","consumed":false,"cost":1000,"supply":0}
+    },
+    "Forcecage": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Foresight": {
+        "actionType": "save"
+    },
+    "Gate": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "materials": {"value":"a diamond worth at least 5000gp","consumed":false,"cost":5000,"supply":0}
+    },
+    "Gaseous Form": {
+        "actionType": "save",
+        "save": {"ability":"con","dc":0,"scaling":"spell"}
+    },
+    "Giant Insect": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Glibness": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Glyph of Warding": {
+        "target": {"value":20,"units":"ft","type":"sphere"},
+        "damage": {"parts":[["5d8","acid"]],"versatile":"","value":""},
+        "save": {"ability":"dex","dc":0,"scaling":"spell"}
+    },
+    "Goodberry": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "materials": {"value":"a sprig of mistletoe","consumed":false,"cost":0,"supply":0}
+    },
+    "Guardian of Faith": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "save": {"ability":"dex","dc":0,"scaling":"spell"}
+    },
+    "Guards and Wards": {
+        "target": {"value":50,"units":"ft","type":"square"}
+    },
+    "Guidance": {
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Hallow": {
+        "actionType": "save",
+        "save": {"ability":"cha","dc":0,"scaling":"spell"}
+    },
+    "Hallucinatory Terrain": {
+        "actionType": "save"
+    },
+    "Haste": {
+        "actionType": "save",
+        "save": {"ability":"dex","dc":0,"scaling":"spell"}
+    },
+    "Heat Metal": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Heroes' Feast": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "actionType": "save",
+        "damage": {"parts":[["2d10","healing"]],"versatile":"","value":""},
+        "save": {"ability":"wis","dc":0,"scaling":"spell"}
+    },
+    "Hold Monster": {
+        "materials": {"value":"a small, straight piece of iron","consumed":false,"cost":0,"supply":0}
+    },
+    "Holy Aura": {
+        "target": {"value":null,"units":"","type":"self"},
+        "actionType": "save",
+        "save": {"ability":"con","dc":0,"scaling":"spell"}
+    },
+    "Hunter's Mark": {
+        "damage": {"parts":[],"versatile":"","value":""}
+    },
+    "Ice Storm": {
+        "target": {"value":20,"units":"ft","type":"radius"}
+    },
+    "Identify": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Illusory Script": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Imprisonment": {
+        "materials": {"value":"a vellum depiction or a carved statuette in the likeness of the target, and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target","consumed":false,"cost":500,"supply":0}
+    },
+    "Legend Lore": {
+        "materials": {"value":"incense worth at least 250 gp, which the spell consumes, and four ivory strips worth at least 50 gp each","consumed":true,"cost":250,"supply":0}
+    },
+    "Light": {
+        "target": {"value":20,"units":"ft","type":"radius"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Locate Animals or Plants": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Locate Creature": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Locate Object": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Longstrider": {
+        "materials": {"value":"a bone from a cheetah","consumed":false,"cost":0,"supply":0}
+    },
+    "Mage Hand": {
+        "target": {"value":null,"units":"any","type":"space"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Magic Circle": {
+        "target": {"value":10,"units":"ft","type":"radius"},
+        "save": {"ability":"cha","dc":0,"scaling":"spell"}
+    },
+    "Magic Jar": {
+        "actionType": "save",
+        "save": {"ability":"cha","dc":0,"scaling":"spell"}
+    },
+    "Magic Mouth": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Magic Weapon": {
+        "target": {"value":1,"units":"","type":"object"},
+        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
+    },
+    "Mass Heal": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Mass Suggestion": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Maze": {
+        "save": {"ability":"","dc":null,"value":""}
+    },
+    "Meld into Stone": {
+        "target": {"value":1,"units":"","type":"object"},
+        "damage": {"parts":[["6d6","bludgeoning"],["50","bludgeoning"]],"versatile":"","value":""}
+    },
+    "Mending": {
+        "target": {"value":1,"units":"ft","type":"cube"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Message": {
+        "materials": {"value":"a short copper wire","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Meteor Swarm": {
+        "damage": {"parts":[["20d6","fire"],["20d6","bludgeoning"]],"versatile":"","value":""}
+    },
+    "Minor Figment": {
+        "save": {"ability":"","dc":null,"value":""},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Mirage Arcane": {
+        "activation": {"type":"hour","cost":1,"condition":""},
+        "damage": {"parts":[["18d10","fire"]],"versatile":"","value":""},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Mirror Image": {
+        "uses": {"value":0,"max":0,"per":""}
+    },
+    "Mislead": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Misty Step": {
+        "target": {"value":null,"units":"","type":"self"},
+        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
+    },
+    "Moonbeam": {
+        "target": {"value":5,"units":"ft","type":"radius"}
+    },
+    "Passwall": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Pass without Trace": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Phantom Steed": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Planar Ally": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Plane Shift": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Power Word Kill": {
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Prestidigitation": {
+        "duration": {"value":null,"units":"inst"},
+        "target": {"value":1,"units":"","type":"creature"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Prismatic Spray": {
+        "damage": {"parts":[["10d6","fire"],["10d6","acid"],["10d6","lightning"],["10d6","poison"],["10d6","cold"]],"versatile":"","value":""}
+    },
+    "Prismatic Wall": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "damage": {"parts":[["10d6","fire"],["25","cold"],["10d6","acid"],["10d6","lightning"],["60","force"],["10d6","poison"],["10d6","cold"],["25","fire"]],"versatile":"","value":""},
+        "save": {"ability":"con","dc":0,"scaling":"spell"}
+    },
+    "Produce Flame": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Project Image": {
+        "target": {"value":1,"units":"","type":"object"},
+        "damage": {"parts":[["3d6","psychic"]],"versatile":"","value":""},
+        "materials": {"value":"a small replica of you worth at least 5gp","consumed":false,"cost":5,"supply":0}
+    },
+    "Protection from Evil and Good": {
+        "actionType": "save",
+        "materials": {"value":"holy water or powdered silver and iron, which the spell consumes","consumed":true,"cost":null,"supply":0}
+    },
+    "Protection from Poison": {
+        "actionType": "save"
+    },
+    "Purify Food and Drink": {
+        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":true,"concentration":false}
+    },
+    "Raise Dead": {
+        "actionType": "save",
+        "damage": {"parts":[],"versatile":"","value":""}
+    },
+    "Regenerate": {
+        "damage": {"parts":[["4d8 + 15","healing"],["1","healing"]],"versatile":"","value":""}
+    },
+    "Resistance": {
+        "actionType": "save",
+        "materials": {"value":"a miniature shield","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Resurrection": {
+        "actionType": "save"
+    },
+    "Reverse Gravity": {
+        "target": {"value":50,"units":"ft","type":"radius"},
+        "save": {"ability":"dex","dc":0,"scaling":"spell"},
+        "materials": {"value":"a lodestone and iron filings","consumed":false,"cost":0,"supply":0}
+    },
+    "Revivify": {
+        "actionType": "util",
+        "damage": {"parts":[],"versatile":"","value":""},
+        "materials": {"value":"diamonds worth 300 gp, which the spell consumes","consumed":true,"cost":300,"supply":0}
+    },
+    "Rope Trick": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Scorching Ray": {
+        "target": {"value":null,"units":"any","type":"space"},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Scrying": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "See Invisibility": {
+        "materials": {"value":"a pinch of Talc and a small sprinkling of powdered silver","consumed":false,"cost":0,"supply":0}
+    },
+    "Seeming": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Sending": {
+        "duration": {"value":null,"units":"inst"},
+        "materials": {"value":"a short copper wire","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Shapechange": {
+        "target": {"value":null,"units":"","type":"self"},
+        "actionType": "save"
+    },
+    "Shield": {
+        "activation": {"type":"reaction","cost":1,"condition":"which you take when you are hit by an attack or targeted by the {@spell magic missile} spell"},
+        "uses": {"value":0,"max":0,"per":""}
+    },
+    "Shillelagh": {
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Simulacrum": {
+        "materials": {"value":"snow or ice in quantities sufficient to make a life-sized copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature’s body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell","consumed":true,"cost":500,"supply":0}
+    },
+    "Sleep": {
+        "actionType": "other",
+        "damage": {"parts":[["8d4",""]],"versatile":"","value":""},
+        "scaling": {"mode":"level","formula":"5d4"}
+    },
+    "Sleet Storm": {
+        "target": {"value":40,"units":"ft","type":"radius"}
+    },
+    "Slick": {
+        "materials": {"value":"a bit of butter or ice","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Spare the Dying": {
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Speak with Dead": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Spike Growth": {
+        "actionType": "save"
+    },
+    "Spiritual Weapon": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Spirit Guardians": {
+        "damage": {"parts":[["3d8","radiant"],["3d8","necrotic"]],"versatile":"","value":""}
+    },
+    "Stone Shape": {
+        "target": {"value":5,"units":"ft","type":"wall"}
+    },
+    "Storm of Vengeance": {
+        "target": {"value":1,"units":"","type":"creature"},
+        "damage": {"parts":[["2d6","thunder"],["1d6","acid"],["10d6","lightning"],["2d6","bludgeoning"],["1d6","cold"]],"versatile":"","value":""}
+    },
+    "Sunbeam": {
+        "scaling": {"mode":"level","formula":"1d8"}
+    },
+    "Symbol": {
+        "target": {"value":60,"units":"ft","type":"sphere"},
+        "save": {"ability":"con","dc":0,"scaling":"spell"}
+    },
+    "Teleport": {
+        "target": {"value":10,"units":"ft","type":"cube"},
+        "damage": {"parts":[["3d10","force"]],"versatile":"","value":""}
+    },
+    "Teleportation Circle": {
+        "target": {"value":8,"units":"","type":"creature"},
+        "components": {"value":"","vocal":true,"somatic":true,"material":true,"ritual":false,"concentration":false},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Thaumaturgy": {
+        "duration": {"value":null,"units":"inst"},
+        "target": {"value":5,"units":"ft","type":"radius"},
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Time Stop": {
+        "duration": {"value":1,"units":"minute"},
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Transport via Plants": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Tree Stride": {
+        "target": {"value":null,"units":"","type":"self"},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "True Polymorph": {
+        "materials": {"value":"","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "True Resurrection": {
+        "actionType": "heal"
+    },
+    "True Strike": {
+        "target": {"value":null,"units":"any","type":"space"},
+        "actionType": "save",
+        "scaling": {"mode":"cantrip","formula":""}
+    },
+    "Unseen Servant": {
+        "target": {"value":1,"units":"","type":"object"},
+        "materials": {"value":"a piece of string and a bit of wood","consumed":false,"cost":0,"supply":0}
+    },
+    "Warding Bond": {
+        "actionType": "save",
+        "materials": {"value":"a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration","consumed":false,"cost":50,"supply":0}
+    },
+    "Vampiric Touch": {
+        "target": {"value":null,"units":"","type":"self"}
+    },
+    "Wall of Force": {
+        "target": {"value":10,"units":"ft","type":"wall"},
+        "materials": {"value":"a pinch of powder made by crushing a clear gemstone","consumed":false,"cost":0,"supply":0}
+    },
+    "Wall of Ice": {
+        "damage": {"parts":[["10d6","cold"],["5d6","cold"]],"versatile":"","value":""}
+    },
+    "Wall of Thorns": {
+        "damage": {"parts":[["7d8","piercing"],["7d8","slashing"]],"versatile":"","value":""}
+    },
+    "Water Breathing": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Water Walk": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Weird": {
+        "duration": {"value":null,"units":"inst"},
+        "target": {"value":30,"units":"ft","type":"radius"},
+        "save": {"ability":"con","dc":0,"scaling":"spell"},
+        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
+    },
+    "Wind Walk": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Wish": {
+        "actionType": "save",
+        "damage": {"parts":[["5d10","necrotic"]],"versatile":"","value":""},
+        "scaling": {"mode":"level","formula":""}
+    },
+    "Word of Recall": {
+        "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Zone of Truth": {
+        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
+    }
+}

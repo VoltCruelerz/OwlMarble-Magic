@@ -1,0 +1,38 @@
+{
+    "False Life": {
+        "actionType": {
+            "old": "util",
+            "new": "heal"
+        },
+        "scaling": {
+            "old": {"mode":"level","formula":"1"},
+            "new": {"mode":"level","formula":""}
+        }
+    },
+    "Heroism": {
+        "actionType": {
+            "old": "util",
+            "new": "heal"
+        },
+        "damage": {
+            "old": {"parts":[],"versatile":"","value":""},
+            "new": {"parts":[["@mod","temphp"]],"versatile":""}
+        }
+    },
+    "Sleep": {
+        "damage": {
+            "old": {"parts":[],"versatile":"","value":""},
+            "new": {"parts":[["8d4",""]],"versatile":"","value":""}
+        }
+    },
+    "Simulacrum": {
+        "actionType": {
+            "old": "heal",
+            "new": "util"
+        },
+        "damage": {
+            "old": {"parts":[["0","healing"]],"versatile":"","value":""},
+            "new": {"parts":[],"versatile":"","value":""}
+        }
+    }
+}

@@ -59,27 +59,4 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 
 ### Known Issues
 
-See [test.log](./test.log) to see any automatically detected issues.
-
-### Future Development
-
-- **Manual Output Overrides**: The fact is, some spells are just *weird*.  I want to make manual overrides that bound to a particular configurations so that if changes are made in the future, it will throw a warning saying the manual approval has expired.
-- **Manual Test Overrides**: Similarly, I want a manual override for a given change on a given spell to grant approval to the tester to work only so long as the spell continues to be what it expected.
-
-For both of these, I will likely have a JSON file with a format roughly like this...
-
-```json
-[
-  {
-    spell: {...},
-    fieldOverrides: [
-      {
-        field: 'components',
-        value: {...}
-      },
-      {...},
-      {...}
-    ]
-  }
-]
-```
+See [test.log](./tests/test.log) to see any automatically detected issues.
