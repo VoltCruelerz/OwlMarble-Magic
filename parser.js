@@ -9,7 +9,7 @@ const { detailedDiff } = require('deep-object-diff');
 module.exports = class OwlMarbleParser {
     constructor () {
         this.timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/;
-        this.healingRegex = /heal|((restore|regain).*hit points)/;
+        this.healingRegex = /heal|((restore|regain).*hit points?)/;
     }
 
     //#region IO
@@ -1394,7 +1394,7 @@ module.exports = class OwlMarbleParser {
         if (typeof spell.components.m === 'string') {
             return {
                 value: spell.components.m,
-                consumed: false,
+                consumed: !!spell.components.m.match(/\W(?:shatter(s)?|break|destroy(ed)?|consume(s|d)?)\W/),
                 cost: 0,
                 supply: 0
             };

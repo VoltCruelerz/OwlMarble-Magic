@@ -1,5 +1,5 @@
 ===================================================
-ERROR REPORT - 9 ERRORS ACROSS 6/320 SRD SPELLS
+ERROR REPORT - 7 ERRORS ACROSS 4/320 SRD SPELLS
 ===================================================
 ===================================================
 - False Life: 2/11
@@ -41,28 +41,6 @@ L - [2/2] - damage
 L - [1/1] - damage
   L - SRD: {"parts":[["5d8",""]],"versatile":"","value":""}
   L - OMM: {"parts":[],"versatile":"","value":""}
-
-===================================================
-- Enhance Ability: 1/11
----------------------------------------------------
-    "Enhance Ability": {
-        "actionType": "other"
-    }
----------------------------------------------------
-L - [1/1] - actionType
-  L - SRD: "heal"
-  L - OMM: "other"
-
-===================================================
-- Globe of Invulnerability: 1/11
----------------------------------------------------
-    "Globe of Invulnerability": {
-        "materials": {"value":"a glass or crystal bead that shatters when the spell ends","consumed":false,"cost":0,"supply":0}
-    }
----------------------------------------------------
-L - [1/1] - materials
-  L - SRD: {"value":"A glass or crystal bead that shatters when the spell ends","consumed":true,"cost":0,"supply":0}
-  L - OMM: {"value":"a glass or crystal bead that shatters when the spell ends","consumed":false,"cost":0,"supply":0}
 
 ===================================================
 - Simulacrum: 2/11
