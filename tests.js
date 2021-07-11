@@ -426,7 +426,7 @@ module.exports = (omm, srd) => {
     errorReport.sort((a,b) => (a.errors.length <= b.errors.length) ? 1 : -1 );
 
     const lines = [];
-    const header = `${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SPELLS\n${wall}`;
+    const header = `${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SRD SPELLS\n${wall}`;
     console.log(header);
     if (errorReport.length > 0) {
         lines.push(header);
