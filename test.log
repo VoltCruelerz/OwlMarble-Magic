@@ -1,5 +1,5 @@
 ===================================================
-ERROR REPORT - 4 ERRORS ACROSS 4/320 SRD SPELLS
+ERROR REPORT - 1 ERRORS ACROSS 1/320 SRD SPELLS
 ===================================================
 ===================================================
 - Web: 1/11
@@ -7,24 +7,3 @@ ERROR REPORT - 4 ERRORS ACROSS 4/320 SRD SPELLS
 L - [1/1] - damage
   L - SRD: {"parts":[["2d4","fire"]],"versatile":"","value":""}
   L - OMM: {"parts":[["1","fire"]],"versatile":"","value":""}
-
-===================================================
-- Contact Other Plane: 1/11
-===================================================
-L - [1/1] - save
-  L - SRD: {"ability":"int","dc":15,"scaling":"flat"}
-  L - OMM: {"ability":"int","dc":0,"scaling":"spell"}
-
-===================================================
-- Prismatic Spray: 1/11
-===================================================
-L - [1/1] - damage
-  L - SRD: {"parts":[["10d6",""]],"versatile":"","value":""}
-  L - OMM: {"parts":[["10d6 - 10","fire"],["10d6 - 10","lightning"]],"versatile":"","value":""}
-
-===================================================
-- Control Weather: 1/11
-===================================================
-L - [1/1] - damage
-  L - SRD: {"parts":[],"versatile":"","value":""}
-  L - OMM: {"parts":[["3","cold"],["6","cold"]],"versatile":"","value":""}

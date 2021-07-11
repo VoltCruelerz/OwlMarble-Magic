@@ -340,7 +340,8 @@ const approvedSpells = [
     'Forcecage',
     'Antipathy/Sympathy',
     'Color Spray',
-    'Earthquake'
+    'Earthquake',
+    'Prismatic Spray'
 ].reduce((acc, val) => {
     acc[val] = true;
     return acc;

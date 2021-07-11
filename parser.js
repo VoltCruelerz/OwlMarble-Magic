@@ -839,49 +839,52 @@ module.exports = class OwlMarbleParser {
         const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-)?([^\.]*?(\d+|modifier))?/g;
         const invertedDamageRegex = /(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder).*?(\d+(d\d+))(.*?(\+|-).*?(\d+|modifier))?/g;
 
-        const damageMatches = baseDesc.matchAll(damageRegex);
-        for (const match of damageMatches) {
-            // const full = match[0];
-            const dice = match[1];
-            // const dieSize = match[2];
-            let op = match[3];
-            // const longTag = match[4];
-            const shifter = match[5] === 'modifier' ? '@mod' : match[5];
-            let element = match[6];
-
-            if (element === 'heal') {
-                element = 'healing';
-            } else if (element === 'temporary hit point') {
-                element = 'temphp';
+        const lines = baseDesc.split(/<p>|<td>/);
+        lines.forEach((line) => {
+            const damageMatches = line.matchAll(damageRegex);
+            for (const match of damageMatches) {
+                // const full = match[0];
+                const dice = match[1];
+                // const dieSize = match[2];
+                let op = match[3];
+                // const longTag = match[4];
+                const shifter = match[5] === 'modifier' ? '@mod' : match[5];
+                let element = match[6];
+    
+                if (element === 'heal') {
+                    element = 'healing';
+                } else if (element === 'temporary hit point') {
+                    element = 'temphp';
+                }
+    
+                // Ignore wordings like "5-foot radius".
+                if (op && !shifter) {
+                    continue;
+                }
+    
+                const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
+                parts.push([
+                    damageLine,
+                    element
+                ]);
             }
-
-            // Ignore wordings like "5-foot radius".
-            if (op && !shifter) {
-                continue;
+            const healingMatches = line.matchAll(invertedHealingRegex);
+            for (const match of healingMatches) {
+                // const full = match[0];
+                // const operation = match[1];
+                const dice = match[2];
+                // const dieSize = match[3];
+                let op = match[4];
+                // const longTag = match[5];
+                const shifter = match[6] === 'modifier' ? '@mod' : match[6];
+    
+                const healLine = op ? `${dice} ${op} ${shifter}` : dice;
+                parts.push([
+                    healLine,
+                    'healing'
+                ]);
             }
-
-            const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
-            parts.push([
-                damageLine,
-                element
-            ]);
-        }
-        const healingMatches = baseDesc.matchAll(invertedHealingRegex);
-        for (const match of healingMatches) {
-            // const full = match[0];
-            // const operation = match[1];
-            const dice = match[2];
-            // const dieSize = match[3];
-            let op = match[4];
-            // const longTag = match[5];
-            const shifter = match[6] === 'modifier' ? '@mod' : match[6];
-
-            const healLine = op ? `${dice} ${op} ${shifter}` : dice;
-            parts.push([
-                healLine,
-                'healing'
-            ]);
-        }
+        });
         // If we still haven't found anything, try inverting the order.
         if (parts.length === 0) {
             const invertedDamageMatches = baseDesc.matchAll(invertedDamageRegex);
@@ -919,13 +922,14 @@ module.exports = class OwlMarbleParser {
      */
     getSave (level, description) {
         description = description.toLowerCase();
-        const saveRegex = /(strength|dexterity|constitution|intelligence|wisdom|charisma) (save|saving throw)/;
+        const saveRegex = /(?:dc (\d+) )?(strength|dexterity|constitution|intelligence|wisdom|charisma) (save|saving throw)/;
         const saveMatch = description.match(saveRegex);
         if (saveMatch) {
-            const stat = saveMatch[1];
+            const dc = saveMatch[1] ? parseInt(saveMatch[1]) : 0;
+            const stat = saveMatch[2];
             return {
                 ability: stat.substr(0,3),
-                dc: 0,
+                dc: dc,
                 scaling: 'spell'
             };
         }
