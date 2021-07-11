@@ -68,8 +68,8 @@ See [test.log](./test.log) to see any automatically detected issues.
 
 For both of these, I will likely have a JSON file with a format roughly like this...
 
-```js
-module.exports = [
+```json
+[
   {
     spell: {...},
     fieldOverrides: [
@@ -81,5 +81,5 @@ module.exports = [
       {...}
     ]
   }
-];
+]
 ```
