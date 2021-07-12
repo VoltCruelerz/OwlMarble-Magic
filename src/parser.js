@@ -706,7 +706,7 @@ module.exports = class OwlMarbleParser {
             .replaceAll('ten', '10');
         const targetRegex = /(\d+)\W(\D+?)\W(cone|cube|radius\Wcylinder|diameter\Wcylinder|radius\Wsphere|diameter\Wsphere|radius|square|wall|line)/;
         const creatureRegex = /((\d+) )?(creature|aberration|beast|celestial|construct|dragon|elemental|fey|fiend|giant|humanoid|monstrosity|monster|ooze|plant|undead)s?/;
-        const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest|a weapon you touch|triggering attack|figment/;
+        const objectRegex = /object|club|magical eye|a nonmagical weapon|transmute your quiver|any trap|a chest|a steel weapon you touch|triggering attack|figment/;
         const spaceRegex = /point|spot|space|part of the sky|within range/;
 
         if (range === 'self') {
