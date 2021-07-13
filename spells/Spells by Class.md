@@ -670,7 +670,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Hallucinatory Terrain](https://www.dndbeyond.com/spells/hallucinatory-terrain) - V/S/M - (PHB - 249)
 - [Ice Storm](https://www.dndbeyond.com/spells/ice-storm) - V/S/M - (PHB - 252)
 - [Locate Creature](https://www.dndbeyond.com/spells/locate-creature) - V/S/M [C] - (PHB - 256)
-- [Overgrow](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#overgrow) - V [C] - (OMM - 4)
+- [Overgrow](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#overgrow) - V/M [C] - (OMM - 4)
 - [Polymorph](https://www.dndbeyond.com/spells/polymorph) - V/S/M [C] - (PHB - 266)
 - [Stone Shape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#stone-shape) - V/S/M - (OMM - 4)
 - [Stoneskin](https://www.dndbeyond.com/spells/stoneskin) - V/S/M$X [C] - (PHB - 278)

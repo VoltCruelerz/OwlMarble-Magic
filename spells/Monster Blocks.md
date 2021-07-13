@@ -125,6 +125,30 @@
 >
 > ***Powerful Build.*** The ooze counts as one size class larger when determining its carrying capacity.
 
+
+```
+```
+
+> ## Overgrowth
+>
+>*Medium plant, unaligned*
+>
+> - **Armor Class** 12
+> - **Hit Points** 30
+> - **Speed** 0ft.
+>
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|10 (+0)|10 (+0)|10 (+0)|0 (-5)|0 (-5)|0 (-5)|
+>
+> - **Condition Immunities** all
+> - **Vulnerabilities** fire
+> - **Immunities** poison, psychic, bludgeoning
+>
+> ### Traits
+>
+> ***Inherited Form.*** This plant inherits any particular traits of its species, such as vulnerabilities or resistances.
+
 ```
 ```
 
