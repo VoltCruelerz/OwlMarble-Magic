@@ -49,7 +49,7 @@
     },
     "Bestow Curse": {
         "uses": {"value":0,"max":0,"per":""},
-        "damage": {"parts":[["1d10","necrotic"],["1d8","necrotic"],["1","psychic"]],"versatile":"","value":""},
+        "damage": {"parts":[["1","necrotic"],["1d8","necrotic"],["1","psychic"]],"versatile":"","value":""},
         "save": {"ability":"wis","dc":0,"scaling":"spell"}
     },
     "Bless": {
