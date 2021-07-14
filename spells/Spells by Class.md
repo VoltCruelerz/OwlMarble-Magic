@@ -264,7 +264,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Level 5 - _Bard_
 
 - [Animate Objects](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#animate-objects) - S [C] - (OMM - 5)
-- [Armistice](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#armistice) - V - (OMM - 5)
+- [Arbitration](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#arbitration) - V - (OMM - 5)
 - [Awaken](https://www.dndbeyond.com/spells/awaken) - V/S/M$X - (PHB - 216)
 - [Dominate Person](https://www.dndbeyond.com/spells/dominate-person) - V/S [C] - (PHB - 235)
 - [Dream](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#dream) - V/S/M - (OMM - 5)
@@ -461,7 +461,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Level 5 - _Cleric_
 
 - [Altered Appearance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#altered-appearance) - V/S/M$X - (OMM - 5)
-- [Armistice](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#armistice) - V - (OMM - 5)
+- [Arbitration](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#arbitration) - V - (OMM - 5)
 - [Commune](https://www.dndbeyond.com/spells/commune) - V/S/M [R] - (PHB - 223)
 - [Contagion](https://www.dndbeyond.com/spells/contagion) - V/S - (PHB - 227)
 - [Dawn](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#dawn) - V/S/M$ [C] - (OMM - 5)
@@ -705,7 +705,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Summon Draconic Spirit](https://www.dndbeyond.com/spells/summon-draconic-spirit) - V/S/M$ [C] - (UA2021DraconicOptions - 7)
 - [Transmute Rock](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#transmute-rock) - V/S/M - (OMM - 5)
 - [Tree Stride](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#tree-stride) - V/S [C] - (OMM - 5)
-- [Twilight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#twilight) - V/S/M - (OMM - 5)
+- [Twilight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#twilight) - V/S/M [C] - (OMM - 5)
 - [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Wrath of Nature](https://www.dndbeyond.com/spells/wrath-of-nature) - V/S [C] - (XGE - 171)
 
@@ -1731,7 +1731,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Altered Appearance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#altered-appearance) - V/S/M$X - (OMM - 5)
 - [Alton's Spirit Swarm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#alton's-spirit-swarm) - V/S/M - (OMM - 5)
 - [Animate Objects](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#animate-objects) - S [C] - (OMM - 5)
-- [Armistice](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#armistice) - V - (OMM - 5)
+- [Arbitration](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#arbitration) - V - (OMM - 5)
 - [Banish Air](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#banish-air) - V/S/M [C] - (OMM - 5)
 - [Bigby's Hand](https://www.dndbeyond.com/spells/bigby's-hand) - V/S/M [C] - (PHB - 218)
 - [Blizzard](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#blizzard) - V/S/M [C] - (OMM - 5)
@@ -1835,7 +1835,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mirage Arcane](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#mirage-arcane) - V/S - (OMM - 7)
 - [Mordenkainen's Magnificent Mansion](https://www.dndbeyond.com/spells/mordenkainen's-magnificent-mansion) - V/S/M$ - (PHB - 261)
 - [Mordenkainen's Sword](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#mordenkainen's-sword) - V/S/M$ - (OMM - 7)
-- [Phase Shift](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#phase-shift) - V/S/M - (OMM - 7)
 - [Plane Shift](https://www.dndbeyond.com/spells/plane-shift) - V/S/M$ - (PHB - 266)
 - [Power Word Pain](https://www.dndbeyond.com/spells/power-word-pain) - V - (XGE - 163)
 - [Prismatic Spray](https://www.dndbeyond.com/spells/prismatic-spray) - V/S - (PHB - 267)
