@@ -263,6 +263,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 5 - _Bard_
 
+- [Accord](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#accord) - S/M$X - (OMM - 5)
 - [Animate Objects](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#animate-objects) - S [C] - (OMM - 5)
 - [Arbitration](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#arbitration) - V - (OMM - 5)
 - [Awaken](https://www.dndbeyond.com/spells/awaken) - V/S/M$X - (PHB - 216)
@@ -529,7 +530,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 10 - _Cleric_
 
-- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M$X - (OMM - 10)
+- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M - (OMM - 10)
 - [Soul Recall](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#soul-recall) - V/S/M - (OMM - 10)
 
 ## Druid
@@ -1232,7 +1233,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 10 - _Sorcerer_
 
-- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M$X - (OMM - 10)
+- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M - (OMM - 10)
 - [Tharizdun's Oblivion](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#tharizdun's-oblivion) - V/S/M - (OMM - 10)
 - [Undead Army](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#undead-army) - V/S/M$X - (OMM - 10)
 - [Unmake](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#unmake) - V/S/M - (OMM - 10)
@@ -1364,6 +1365,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 5 - _Warlock_
 
+- [Accord](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#accord) - S/M$X - (OMM - 5)
 - [Altered Appearance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#altered-appearance) - V/S/M$X - (OMM - 5)
 - [Alton's Spirit Swarm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#alton's-spirit-swarm) - V/S/M - (OMM - 5)
 - [Command Vessel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#command-vessel) - V/S [C] - (OMM - 5)
@@ -1425,7 +1427,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Greater Telekinesis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/08.md#greater-telekinesis) - S [C] - (OMM - 8)
 - [Maddening Darkness](https://www.dndbeyond.com/spells/maddening-darkness) - V/M [C] - (XGE - 160)
 - [Power Word Stun](https://www.dndbeyond.com/spells/power-word-stun) - V - (PHB - 267)
-- [Soul Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/08.md#soul-fire) - V/S/M [R] - (OMM - 8)
 
 ### Level 9 - _Warlock_
 
@@ -1444,7 +1445,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 10 - _Warlock_
 
-- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M$X - (OMM - 10)
+- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M - (OMM - 10)
 - [Dreamscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#dreamscape) - V/S/M [C] - (OMM - 10)
 - [Tharizdun's Oblivion](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#tharizdun's-oblivion) - V/S/M - (OMM - 10)
 - [Undead Army](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#undead-army) - V/S/M$X - (OMM - 10)
@@ -1728,6 +1729,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 5 - _Wizard_
 
+- [Accord](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#accord) - S/M$X - (OMM - 5)
 - [Altered Appearance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#altered-appearance) - V/S/M$X - (OMM - 5)
 - [Alton's Spirit Swarm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#alton's-spirit-swarm) - V/S/M - (OMM - 5)
 - [Animate Objects](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#animate-objects) - S [C] - (OMM - 5)
@@ -1872,7 +1874,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mighty Fortress](https://www.dndbeyond.com/spells/mighty-fortress) - V/S/M$X - (XGE - 161)
 - [Mind Blank](https://www.dndbeyond.com/spells/mind-blank) - V/S - (PHB - 259)
 - [Power Word Stun](https://www.dndbeyond.com/spells/power-word-stun) - V - (PHB - 267)
-- [Soul Fire](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/08.md#soul-fire) - V/S/M [R] - (OMM - 8)
 - [Sunburst](https://www.dndbeyond.com/spells/sunburst) - V/S/M - (PHB - 279)
 - [Telepathy](https://www.dndbeyond.com/spells/telepathy) - V/S/M - (PHB - 281)
 
@@ -1911,7 +1912,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 10 - _Wizard_
 
-- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M$X - (OMM - 10)
+- [Apotheosis](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#apotheosis) - V/S/M - (OMM - 10)
 - [Dreamscape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#dreamscape) - V/S/M [C] - (OMM - 10)
 - [Tharizdun's Oblivion](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#tharizdun's-oblivion) - V/S/M - (OMM - 10)
 - [Undead Army](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/10.md#undead-army) - V/S/M$X - (OMM - 10)
