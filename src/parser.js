@@ -1538,8 +1538,8 @@ module.exports = class OwlMarbleParser {
                 }
             });
             spell?.classes?.fromClassListVariant?.forEach((varEntry) => {
-                if (varEntry.definedInSource === 'UAClassFeatureVariants') {
-                    classLookup[varEntry.name];
+                if (varEntry.definedInSource === 'TCE') {
+                    classLookup[varEntry.name] = true;
                 }
             });
         } catch (e) {
