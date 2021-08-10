@@ -507,7 +507,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Create Undead](https://www.dndbeyond.com/spells/create-undead) - V/S/M$ - (PHB - 229)
 - [Find the Path](https://www.dndbeyond.com/spells/find-the-path) - V/S/M$ [C] - (PHB - 240)
 - [Forbiddance](https://www.dndbeyond.com/spells/forbiddance) - V/S/M$ [R] - (PHB - 243)
-- [Harm](https://www.dndbeyond.com/spells/harm) - V/S - (PHB - 249)
+- [Harm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#harm) - V/S - (OMM - 6)
 - [Heal](https://www.dndbeyond.com/spells/heal) - V/S - (PHB - 250)
 - [Heroes' Feast](https://www.dndbeyond.com/spells/heroes'-feast) - V/S/M$X - (PHB - 250)
 - [Isabelle's Entailment](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#isabelles-entailment) - V - (OMM - 6)

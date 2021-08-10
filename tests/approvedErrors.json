@@ -274,6 +274,9 @@
     "Hallucinatory Terrain": {
         "actionType": "save"
     },
+    "Harm": {
+        "scaling": {"mode":"level","formula":"2d6"}
+    },
     "Haste": {
         "actionType": "save",
         "save": {"ability":"dex","dc":0,"scaling":"spell"}
