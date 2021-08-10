@@ -55,6 +55,9 @@
     "Bless": {
         "actionType": "save"
     },
+    "Blight": {
+        "damage": {"parts":[["9d8","necrotic"]],"versatile":"","value":""}
+    },
     "Call Lightning": {
         "damage": {"parts":[["3d10","lightning"]],"versatile":"","value":""}
     },
@@ -294,6 +297,11 @@
     },
     "Hunter's Mark": {
         "damage": {"parts":[],"versatile":"","value":""}
+    },
+    "Ice Storm": {
+        "duration": {"value":1,"units":"round"},
+        "damage": {"parts":[["6d8","cold"]],"versatile":"","value":""},
+        "save": {"ability":"con","dc":0,"scaling":"spell"}
     },
     "Identify": {
         "target": {"value":1,"units":"","type":"creature"}

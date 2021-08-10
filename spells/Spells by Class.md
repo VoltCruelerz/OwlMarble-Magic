@@ -683,7 +683,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 4 - _Druid_
 
-- [Blight](https://www.dndbeyond.com/spells/blight) - V/S - (PHB - 219)
+- [Blight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#blight) - V/S - (OMM - 4)
 - [Charm Monster](https://www.dndbeyond.com/spells/charm-monster) - V/S - (XGE - 151)
 - [Confusion](https://www.dndbeyond.com/spells/confusion) - V/S/M [C] - (PHB - 224)
 - [Conjure Minor Elementals](https://www.dndbeyond.com/spells/conjure-minor-elementals) - V/S [C] - (PHB - 226)
@@ -700,8 +700,9 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Gravel Vortex](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#gravel-vortex) - V/S/M - (OMM - 4)
 - [Guardian of Nature](https://www.dndbeyond.com/spells/guardian-of-nature) - V [C] - (XGE - 157)
 - [Hallucinatory Terrain](https://www.dndbeyond.com/spells/hallucinatory-terrain) - V/S/M - (PHB - 249)
-- [Ice Storm](https://www.dndbeyond.com/spells/ice-storm) - V/S/M - (PHB - 252)
+- [Ice Storm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#ice-storm) - V/S/M - (OMM - 4)
 - [Locate Creature](https://www.dndbeyond.com/spells/locate-creature) - V/S/M [C] - (PHB - 256)
+- [Orbital Stones](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#orbital-stones) - V/S [C] - (OMM - 4)
 - [Overgrow](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#overgrow) - V/M [C] - (OMM - 4)
 - [Polymorph](https://www.dndbeyond.com/spells/polymorph) - V/S/M [C] - (PHB - 266)
 - [Stone Shape](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#stone-shape) - V/S/M - (OMM - 4)
@@ -893,6 +894,24 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Raise Dead](https://www.dndbeyond.com/spells/raise-dead) - V/S/M$X - (PHB - 270)
 - [Summon Celestial](https://www.dndbeyond.com/spells/summon-celestial) - V/S/M$ [C] - (TCE - 110)
 
+## Psion
+
+### Level 1 - _Psion_
+
+- [Unlocked Potential](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#unlocked-potential) - S [C] - (OMM - 1)
+
+### Level 2 - _Psion_
+
+- [Fling](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#fling) - V/S - (OMM - 2)
+
+### Level 3 - _Psion_
+
+- [Vortex Blast](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#vortex-blast) - V/S - (OMM - 3)
+
+### Level 5 - _Psion_
+
+- [Shockwave](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#shockwave) - S - (OMM - 5)
+
 ## Ranger
 
 ### Level 1 - _Ranger_
@@ -1077,6 +1096,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Enlarge/Reduce](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#enlarge/reduce) - V/S/M [C] - (OMM - 2)
 - [Flame Blade](https://www.dndbeyond.com/spells/flame-blade) - V/S/M [C] - (PHB - 242)
 - [Flaming Sphere](https://www.dndbeyond.com/spells/flaming-sphere) - V/S/M [C] - (PHB - 242)
+- [Fling](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#fling) - V/S - (OMM - 2)
 - [Glamor Trap](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#glamor-trap) - V/S [C] - (OMM - 2)
 - [Gust of Wind](https://www.dndbeyond.com/spells/gust-of-wind) - V/S/M [C] - (PHB - 248)
 - [Hold Person](https://www.dndbeyond.com/spells/hold-person) - V/S/M [C] - (PHB - 251)
@@ -1134,6 +1154,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mindburn](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#mindburn) - V/S/M - (OMM - 3)
 - [Protection from Energy](https://www.dndbeyond.com/spells/protection-from-energy) - V/S [C] - (PHB - 270)
 - [Pulse](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#pulse) - V/S [C] - (OMM - 3)
+- [Radiant Barrage](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#radiant-barrage) - V/S - (OMM - 3)
 - [Rebound](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#rebound) - V/S - (OMM - 3)
 - [Sending](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#sending) - V/S/M - (OMM - 3)
 - [Sleet Storm](https://www.dndbeyond.com/spells/sleet-storm) - V/S/M [C] - (PHB - 276)
@@ -1145,6 +1166,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Tidal Wave](https://www.dndbeyond.com/spells/tidal-wave) - V/S/M - (XGE - 168)
 - [Tongues](https://www.dndbeyond.com/spells/tongues) - V/M - (PHB - 283)
 - [Vampiric Touch](https://www.dndbeyond.com/spells/vampiric-touch) - V/S [C] - (PHB - 285)
+- [Vortex Blast](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#vortex-blast) - V/S - (OMM - 3)
 - [Wall of Water](https://www.dndbeyond.com/spells/wall-of-water) - V/S/M [C] - (XGE - 170)
 - [Water Breathing](https://www.dndbeyond.com/spells/water-breathing) - V/S/M [R] - (PHB - 287)
 - [Water Walk](https://www.dndbeyond.com/spells/water-walk) - V/S/M [R] - (PHB - 287)
@@ -1154,7 +1176,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Augmenting Wall](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#augmenting-wall) - V/S [C] - (OMM - 4)
 - [Azdregath's Creeping Concoction](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#azdregath's-creeping-concoction) - V/S [C] - (OMM - 4)
 - [Banishment](https://www.dndbeyond.com/spells/banishment) - V/S/M [C] - (PHB - 217)
-- [Blight](https://www.dndbeyond.com/spells/blight) - V/S - (PHB - 219)
+- [Blight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#blight) - V/S - (OMM - 4)
 - [Charm Monster](https://www.dndbeyond.com/spells/charm-monster) - V/S - (XGE - 151)
 - [Confusion](https://www.dndbeyond.com/spells/confusion) - V/S/M [C] - (PHB - 224)
 - [Dimension Door](https://www.dndbeyond.com/spells/dimension-door) - V - (PHB - 233)
@@ -1164,8 +1186,9 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Gravel Vortex](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#gravel-vortex) - V/S/M - (OMM - 4)
 - [Gravity Well](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#gravity-well) - V/S/M [C] - (OMM - 4)
 - [Greater Invisibility](https://www.dndbeyond.com/spells/greater-invisibility) - V/S [C] - (PHB - 246)
-- [Ice Storm](https://www.dndbeyond.com/spells/ice-storm) - V/S/M - (PHB - 252)
+- [Ice Storm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#ice-storm) - V/S/M - (OMM - 4)
 - [Kieron's Barricade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#kieron's-barricade) - S - (OMM - 4)
+- [Orbital Stones](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#orbital-stones) - V/S [C] - (OMM - 4)
 - [Polymorph](https://www.dndbeyond.com/spells/polymorph) - V/S/M [C] - (PHB - 266)
 - [Raulothim's Psychic Lance](https://www.dndbeyond.com/spells/raulothim's-psychic-lance) - V - (UA2021DraconicOptions - 6)
 - [Sickening Radiance](https://www.dndbeyond.com/spells/sickening-radiance) - V/S [C] - (XGE - 164)
@@ -1420,7 +1443,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Azdregath's Creeping Concoction](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#azdregath's-creeping-concoction) - V/S [C] - (OMM - 4)
 - [Banishment](https://www.dndbeyond.com/spells/banishment) - V/S/M [C] - (PHB - 217)
-- [Blight](https://www.dndbeyond.com/spells/blight) - V/S - (PHB - 219)
+- [Blight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#blight) - V/S - (OMM - 4)
 - [Breed True](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#breed-true) - V/S/M [C] - (OMM - 4)
 - [Charm Monster](https://www.dndbeyond.com/spells/charm-monster) - V/S - (XGE - 151)
 - [Dimension Door](https://www.dndbeyond.com/spells/dimension-door) - V - (PHB - 233)
@@ -1653,6 +1676,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Enhance Ability](https://www.dndbeyond.com/spells/enhance-ability) - V/S/M [C] - (PHB - 237)
 - [Enlarge/Reduce](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#enlarge/reduce) - V/S/M [C] - (OMM - 2)
 - [Flaming Sphere](https://www.dndbeyond.com/spells/flaming-sphere) - V/S/M [C] - (PHB - 242)
+- [Fling](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#fling) - V/S - (OMM - 2)
 - [Flock of Familiars](https://www.dndbeyond.com/spells/flock-of-familiars) - V/S [C] - (LLK - 57)
 - [Gentle Repose](https://www.dndbeyond.com/spells/gentle-repose) - V/S/M [R] - (PHB - 245)
 - [Gift of Gab](https://www.dndbeyond.com/spells/gift-of-gab) - V/S - (AI - 76)
@@ -1742,6 +1766,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Phantom Steed](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#phantom-steed) - V/S [R] - (OMM - 3)
 - [Protection from Energy](https://www.dndbeyond.com/spells/protection-from-energy) - V/S [C] - (PHB - 270)
 - [Pulse](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#pulse) - V/S [C] - (OMM - 3)
+- [Radiant Barrage](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#radiant-barrage) - V/S - (OMM - 3)
 - [Rebound](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#rebound) - V/S - (OMM - 3)
 - [Remove Curse](https://www.dndbeyond.com/spells/remove-curse) - V/S - (PHB - 271)
 - [Sending](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#sending) - V/S/M - (OMM - 3)
@@ -1764,6 +1789,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Tiny Servant](https://www.dndbeyond.com/spells/tiny-servant) - V/S - (XGE - 168)
 - [Tongues](https://www.dndbeyond.com/spells/tongues) - V/M - (PHB - 283)
 - [Vampiric Touch](https://www.dndbeyond.com/spells/vampiric-touch) - V/S [C] - (PHB - 285)
+- [Vortex Blast](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#vortex-blast) - V/S - (OMM - 3)
 - [Wall of Sand](https://www.dndbeyond.com/spells/wall-of-sand) - V/S/M [C] - (XGE - 170)
 - [Wall of Water](https://www.dndbeyond.com/spells/wall-of-water) - V/S/M [C] - (XGE - 170)
 - [Water Breathing](https://www.dndbeyond.com/spells/water-breathing) - V/S/M [R] - (PHB - 287)
@@ -1775,7 +1801,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Augmenting Wall](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#augmenting-wall) - V/S [C] - (OMM - 4)
 - [Azdregath's Creeping Concoction](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#azdregath's-creeping-concoction) - V/S [C] - (OMM - 4)
 - [Banishment](https://www.dndbeyond.com/spells/banishment) - V/S/M [C] - (PHB - 217)
-- [Blight](https://www.dndbeyond.com/spells/blight) - V/S - (PHB - 219)
+- [Blight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#blight) - V/S - (OMM - 4)
 - [Breed True](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#breed-true) - V/S/M [C] - (OMM - 4)
 - [Charm Monster](https://www.dndbeyond.com/spells/charm-monster) - V/S - (XGE - 151)
 - [Confusion](https://www.dndbeyond.com/spells/confusion) - V/S/M [C] - (PHB - 224)
@@ -1794,12 +1820,13 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Gravity Well](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#gravity-well) - V/S/M [C] - (OMM - 4)
 - [Greater Invisibility](https://www.dndbeyond.com/spells/greater-invisibility) - V/S [C] - (PHB - 246)
 - [Hallucinatory Terrain](https://www.dndbeyond.com/spells/hallucinatory-terrain) - V/S/M - (PHB - 249)
-- [Ice Storm](https://www.dndbeyond.com/spells/ice-storm) - V/S/M - (PHB - 252)
+- [Ice Storm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#ice-storm) - V/S/M - (OMM - 4)
 - [Kieron's Barricade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#kieron's-barricade) - S - (OMM - 4)
 - [Leomund's Secret Chest](https://www.dndbeyond.com/spells/leomund's-secret-chest) - V/S/M$ - (PHB - 254)
 - [Locate Creature](https://www.dndbeyond.com/spells/locate-creature) - V/S/M [C] - (PHB - 256)
 - [Mordenkainen's Faithful Hound](https://www.dndbeyond.com/spells/mordenkainen's-faithful-hound) - V/S/M - (PHB - 261)
 - [Mordenkainen's Private Sanctum](https://www.dndbeyond.com/spells/mordenkainen's-private-sanctum) - V/S/M - (PHB - 262)
+- [Orbital Stones](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/04.md#orbital-stones) - V/S [C] - (OMM - 4)
 - [Otiluke's Resilient Sphere](https://www.dndbeyond.com/spells/otiluke's-resilient-sphere) - V/S/M [C] - (PHB - 264)
 - [Phantasmal Killer](https://www.dndbeyond.com/spells/phantasmal-killer) - V/S [C] - (PHB - 265)
 - [Polymorph](https://www.dndbeyond.com/spells/polymorph) - V/S/M [C] - (PHB - 266)
