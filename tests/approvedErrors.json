@@ -275,7 +275,7 @@
         "actionType": "save"
     },
     "Harm": {
-        "scaling": {"mode":"level","formula":"2d6"}
+        "scaling": {"mode":"level","formula":"3d6"}
     },
     "Haste": {
         "actionType": "save",
