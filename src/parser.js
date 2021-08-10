@@ -172,6 +172,29 @@ module.exports = class OwlMarbleParser {
         const db = spellLines.join('\n') + '\n';
         fs.writeFileSync(path, db);
     }
+
+    /**
+     * Prints the spells' class ownership for the Compendium Browser module.
+     * @param {[{}]} spells
+     * @param {string} path
+     */
+    exportCompendiumBrowser (spells, path) {
+        console.log('Exporting Compendium Browser Ownership to: ' + path);
+        const ownership = {};
+        spells.forEach((spell) => {
+            const name = spell.name.toLowerCase().replaceAll(/\W/g,'');
+            ownership[name] = spell.data.classes.join(',').toLowerCase();
+        });
+
+        const ordered = Object.keys(ownership).sort().reduce(
+            (obj, key) => { 
+                obj[key] = ownership[key]; 
+                return obj;
+            }, 
+            {}
+        );
+        fs.writeFileSync(path, JSON.stringify(ordered, null, 2));
+    }
     //#endregion
 
     //#region Parse OwlMagic
@@ -1825,6 +1848,8 @@ module.exports = class OwlMarbleParser {
 
         // Export the spell lists for all included classes.
         this.exportSpellLists(allSpells, indices);
+        this.exportCompendiumBrowser(allSpells, 'output/spell-classes.json');
+        this.exportCompendiumBrowser(allSpells, 'E:/Foundry VTT/Data/modules/compendium-browser/spell-classes.json');
 
         // Export all to current foundry install.
         console.log('======================================\nExporting spells to foundry install...');
