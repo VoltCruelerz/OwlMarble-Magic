@@ -55,7 +55,10 @@ module.exports = class OwlMarbleParser {
                 .filter((line) => line.startsWith(spellNameTag))
                 .map((spellLine) => spellLine.match(spellNameRegex)[1]);
             spellNames.forEach((spellName) => {
-                const linkableName = spellName.replaceAll(' ','-').toLowerCase();
+                const linkableName = spellName
+                    .replaceAll(' ','-')
+                    .replaceAll('\'','')
+                    .toLowerCase();
                 indices[spellName] = `${github}/levels/${fileName}#${linkableName}`;
             });
         });
