@@ -315,6 +315,9 @@
     "Imprisonment": {
         "materials": {"value":"a vellum depiction or a carved statuette in the likeness of the target, and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target","consumed":false,"cost":500,"supply":0}
     },
+    "Incendiary Cloud": {
+        "scaling": {"mode":"level","formula":"1d8"}
+    },
     "Legend Lore": {
         "materials": {"value":"incense worth at least 250 gp, which the spell consumes, and four ivory strips worth at least 50 gp each","consumed":true,"cost":250,"supply":0}
     },
