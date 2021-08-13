@@ -292,7 +292,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Scrying](https://www.dndbeyond.com/spells/scrying) - V/S/M$ [C] - (PHB - 273)
 - [Seeming](https://www.dndbeyond.com/spells/seeming) - V/S - (PHB - 274)
 - [Skill Empowerment](https://www.dndbeyond.com/spells/skill-empowerment) - V/S [C] - (XGE - 165)
-- [Synaptic Static](https://www.dndbeyond.com/spells/synaptic-static) - V/S - (XGE - 167)
+- [Synaptic Static](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#synaptic-static) - V/S - (OMM - 5)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 
 ### Level 6 - _Bard_
@@ -1123,6 +1123,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Tasha's Mind Whip](https://www.dndbeyond.com/spells/tasha's-mind-whip) - V - (TCE - 115)
 - [Warding Wind](https://www.dndbeyond.com/spells/warding-wind) - V [C] - (XGE - 170)
 - [Web](https://www.dndbeyond.com/spells/web) - V/S/M [C] - (PHB - 287)
+- [Whirlpool Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#whirlpool-blade) - V/S - (OMM - 2)
 - [Wings of Glass](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#wings-of-glass) - V/S - (OMM - 2)
 - [Withering Gaze](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#withering-gaze) - V - (OMM - 2)
 
@@ -1230,7 +1231,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Sinkhole](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#sinkhole) - V/S - (OMM - 5)
 - [Skill Empowerment](https://www.dndbeyond.com/spells/skill-empowerment) - V/S [C] - (XGE - 165)
 - [Summon Draconic Spirit](https://www.dndbeyond.com/spells/summon-draconic-spirit) - V/S/M$ [C] - (UA2021DraconicOptions - 7)
-- [Synaptic Static](https://www.dndbeyond.com/spells/synaptic-static) - V/S - (XGE - 167)
+- [Synaptic Static](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#synaptic-static) - V/S - (OMM - 5)
 - [Telekinesis](https://www.dndbeyond.com/spells/telekinesis) - V/S [C] - (PHB - 280)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
@@ -1258,6 +1259,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mental Prison](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#mental-prison) - S [C] - (OMM - 6)
 - [Nightmare](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#nightmare) - V/S/M - (OMM - 6)
 - [Otiluke's Freezing Sphere](https://www.dndbeyond.com/spells/otiluke's-freezing-sphere) - V/S/M - (PHB - 263)
+- [Psychic Wind](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#psychic-wind) - V/S - (OMM - 6)
 - [Raogon's Hierarchy](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#raogons-hierarchy) - V/S/M - (OMM - 6)
 - [Scatter](https://www.dndbeyond.com/spells/scatter) - V - (XGE - 164)
 - [Sunbeam](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#sunbeam) - V/S/M [C] - (OMM - 6)
@@ -1297,6 +1299,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Hijack](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/08.md#hijack) - S - (OMM - 8)
 - [Incendiary Cloud](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/08.md#incendiary-cloud) - V/S [C] - (OMM - 8)
 - [Power Word Stun](https://www.dndbeyond.com/spells/power-word-stun) - V - (PHB - 267)
+- [Prominence Orb](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/08.md#prominence-orb) - V/S - (OMM - 8)
 - [Sunburst](https://www.dndbeyond.com/spells/sunburst) - V/S/M - (PHB - 279)
 
 ### Level 9 - _Sorcerer_
@@ -1478,7 +1481,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Planar Binding](https://www.dndbeyond.com/spells/planar-binding) - V/S/M$X - (PHB - 265)
 - [Requiem](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#requiem) - V/S - (OMM - 5)
 - [Scrying](https://www.dndbeyond.com/spells/scrying) - V/S/M$ [C] - (PHB - 273)
-- [Synaptic Static](https://www.dndbeyond.com/spells/synaptic-static) - V/S - (XGE - 167)
+- [Synaptic Static](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#synaptic-static) - V/S - (OMM - 5)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
 - [Wall of Light](https://www.dndbeyond.com/spells/wall-of-light) - V/S/M [C] - (XGE - 170)
@@ -1723,6 +1726,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Vylja's Airbolt](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#vyljas-airbolt) - V/S/M - (OMM - 2)
 - [Warding Wind](https://www.dndbeyond.com/spells/warding-wind) - V [C] - (XGE - 170)
 - [Web](https://www.dndbeyond.com/spells/web) - V/S/M [C] - (PHB - 287)
+- [Whirlpool Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#whirlpool-blade) - V/S - (OMM - 2)
 - [Wings of Glass](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#wings-of-glass) - V/S - (OMM - 2)
 - [Withering Gaze](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#withering-gaze) - V - (OMM - 2)
 
@@ -1896,7 +1900,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Steel Wind Strike](https://www.dndbeyond.com/spells/steel-wind-strike) - S/M - (XGE - 166)
 - [Sterilize](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#sterilize) - V/S/M - (OMM - 5)
 - [Summon Draconic Spirit](https://www.dndbeyond.com/spells/summon-draconic-spirit) - V/S/M$ [C] - (UA2021DraconicOptions - 7)
-- [Synaptic Static](https://www.dndbeyond.com/spells/synaptic-static) - V/S - (XGE - 167)
+- [Synaptic Static](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#synaptic-static) - V/S - (OMM - 5)
 - [Telekinesis](https://www.dndbeyond.com/spells/telekinesis) - V/S [C] - (PHB - 280)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 - [Transmute Rock](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#transmute-rock) - V/S/M - (OMM - 5)
@@ -1937,6 +1941,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Otiluke's Freezing Sphere](https://www.dndbeyond.com/spells/otiluke's-freezing-sphere) - V/S/M - (PHB - 263)
 - [Otto's Irresistible Dance](https://www.dndbeyond.com/spells/otto's-irresistible-dance) - V [C] - (PHB - 264)
 - [Programmed Illusion](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#programmed-illusion) - V/S/M$ - (OMM - 6)
+- [Psychic Wind](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#psychic-wind) - V/S - (OMM - 6)
 - [Raogon's Hierarchy](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#raogons-hierarchy) - V/S/M - (OMM - 6)
 - [Scatter](https://www.dndbeyond.com/spells/scatter) - V - (XGE - 164)
 - [Soul Cage](https://www.dndbeyond.com/spells/soul-cage) - V/S/M$ - (XGE - 165)
@@ -2000,6 +2005,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mighty Fortress](https://www.dndbeyond.com/spells/mighty-fortress) - V/S/M$X - (XGE - 161)
 - [Mind Blank](https://www.dndbeyond.com/spells/mind-blank) - V/S - (PHB - 259)
 - [Power Word Stun](https://www.dndbeyond.com/spells/power-word-stun) - V - (PHB - 267)
+- [Prominence Orb](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/08.md#prominence-orb) - V/S - (OMM - 8)
 - [Sunburst](https://www.dndbeyond.com/spells/sunburst) - V/S/M - (PHB - 279)
 - [Telepathy](https://www.dndbeyond.com/spells/telepathy) - V/S/M - (PHB - 281)
 
