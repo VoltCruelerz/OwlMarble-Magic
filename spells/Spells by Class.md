@@ -1538,6 +1538,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Astral Projection](https://www.dndbeyond.com/spells/astral-projection) - V/S/M$X - (PHB - 215)
 - [Blade of Disaster](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/09.md#blade-of-disaster) - V/S [C] - (OMM - 9)
+- [Dark Dilemma](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/09.md#dark-dilemma) - V/S/M - (OMM - 9)
 - [False Identity](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/09.md#false-identity) - V/S/M [C] - (OMM - 9)
 - [Foresight](https://www.dndbeyond.com/spells/foresight) - V/S/M - (PHB - 244)
 - [Gate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/09.md#gate) - V/S/M$ [C] - (OMM - 9)
