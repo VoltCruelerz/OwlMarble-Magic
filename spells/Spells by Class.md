@@ -892,6 +892,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Geas](https://www.dndbeyond.com/spells/geas) - V - (PHB - 244)
 - [Holy Weapon](https://www.dndbeyond.com/spells/holy-weapon) - V/S [C] - (XGE - 157)
 - [Raise Dead](https://www.dndbeyond.com/spells/raise-dead) - V/S/M$X - (PHB - 270)
+- [Raulizan's Blessing](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#raulizans-blessing) - V/M$ [C] - (OMM - 5)
 - [Summon Celestial](https://www.dndbeyond.com/spells/summon-celestial) - V/S/M$ [C] - (TCE - 110)
 
 ## Psion
