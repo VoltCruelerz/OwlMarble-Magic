@@ -1431,12 +1431,26 @@ module.exports = class OwlMarbleParser {
     unwrap (raw) {
         if (typeof raw === 'string') {
             return raw
-                .replaceAll(/{@dice (\d*d\d+( ?(\+|-) ?\d+)?)}/g, (g0, g1) => '[[/r ' + g1 + ']]')
-                .replaceAll(/{@creature (.*?)\|.*?}/g, (g0, g1) => g1)
+                .replaceAll(/{@(?:dice|damage) (.+?)(?:\|\d+)?}/g, (g0, g1) => '[[/r ' + g1.replaceAll('x', '*') + ']]')
+                .replaceAll(/{@creature (.+?)\|.*?}/g, (g0, g1) => g1)
                 .replaceAll(/{@filter (.+?)\|.+}/g, (g0, g1) => g1)
-                .replaceAll(/{@damage ((\d+(d\d+)) ?(\+|-)? ?(\d+?)?)}/g, (g0, g1) => g1)
-                .replaceAll(/{@scale(dice|damage) \|?.*?\|?(\w+)}/g, (g0, g1, g2) => g2)
-                .replaceAll(/{@\w+ (\w+)\|?.*?}/g, (g0, g1) => g1)
+                .replaceAll(/{@b (.+?)}/g, (g0, g1) => this.tagify('strong', g1))
+                .replaceAll(/{@i (.+?)}/g, (g0, g1) => this.tagify('em', g1))
+                .replaceAll(/{@scale(?:dice|damage) \|?.*?\|?(\w+)}/g, (g0, g1) => g1)
+                .replaceAll(/{@(?:condition|action|sense|skill|race) (.*?)}/g, (g0, g1) => g1)
+                .replaceAll(/{@d20 (.*?)}/g, (g0, g1) => '[[/r 1d20+' + g1 + ']]')
+                .replaceAll(/{@(?:item|book|classFeature) (\w+)\|?.*?}/g, (g0, g1) => g1)
+                .replaceAll(/{@creature (.*?)}/g, (g0, g1) => g1)
+                .replaceAll(/{@spell (.*?)}/g, (g0, g1) => {
+                    const words = g1.split(' ').map((word) => this.capFirst(word));
+                    const formatted = this.tagify('em', words.join(' '));
+                    return formatted;
+                })
+                .replaceAll(/{@chance (\d+)\|?.*?}/g, (g0, g1) => g1 + '% [[1d100]]')
+                .replaceAll(/{@\w+ (\w+)\|?.*?}/g, (g0, g1) => {
+                    console.log('- Missing Handler for Tag: ' + g0);
+                    return g1;
+                })
                 .replaceAll('}','');// Clean up termination of nested wrappers.
         } else if (raw.type === 'cell') {
             if (raw.roll.min || raw.roll.max) {

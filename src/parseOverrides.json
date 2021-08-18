@@ -5,6 +5,12 @@
             "new": {"parts":[["1d8 + @mod","healing"]],"versatile":""}
         }
     },
+    "Chaos Bolt": {
+        "damage": {
+            "old": {"parts":[],"versatile":"","value":""},
+            "new": {"parts":[["2d8 + 1d6",""]],"versatile":""}
+        }
+    },
     "False Life": {
         "actionType": {
             "old": "util",
