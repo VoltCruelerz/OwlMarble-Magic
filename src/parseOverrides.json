@@ -1,4 +1,10 @@
 {
+    "Cure Wounds": {
+        "damage": {
+            "old": {"parts":[["1d8","healing"]],"versatile":"","value":""},
+            "new": {"parts":[["1d8 + @mod","healing"]],"versatile":""}
+        }
+    },
     "False Life": {
         "actionType": {
             "old": "util",
@@ -9,6 +15,12 @@
             "new": {"mode":"level","formula":""}
         }
     },
+    "Healing Word": {
+        "damage": {
+            "old": {"parts":[["1d4","healing"]],"versatile":"","value":""},
+            "new": {"parts":[["1d4 + @mod","healing"]],"versatile":""}
+        }
+    },
     "Heroism": {
         "actionType": {
             "old": "util",
@@ -17,6 +29,24 @@
         "damage": {
             "old": {"parts":[],"versatile":"","value":""},
             "new": {"parts":[["@mod","temphp"]],"versatile":""}
+        }
+    },
+    "Mass Healing Word": {
+        "damage": {
+            "old": {"parts":[["1d4","healing"]],"versatile":"","value":""},
+            "new": {"parts":[["1d4 + @mod","healing"]],"versatile":""}
+        }
+    },
+    "Mass Cure Wounds": {
+        "damage": {
+            "old": {"parts":[["3d8","healing"]],"versatile":"","value":""},
+            "new": {"parts":[["3d8 + @mod","healing"]],"versatile":""}
+        }
+    },
+    "Prayer of Healing": {
+        "damage": {
+            "old": {"parts":[["2d8","healing"]],"versatile":"","value":""},
+            "new": {"parts":[["2d8 + @mod","healing"]],"versatile":""}
         }
     },
     "Sleep": {

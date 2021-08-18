@@ -1408,7 +1408,7 @@ module.exports = class OwlMarbleParser {
                     '<table border="1">',
                     this.tagify('tbody', [
                         this.tagify('tr', [
-                            ...entry.colLabels.map((label) => `<td style="text-align: center;"><strong>${label}</strong></td>`)
+                            ...entry.colLabels.map((label) => `<td style="text-align: center;"><strong>${this.unwrap(label)}</strong></td>`)
                         ].join('')),
                         ...entry.rows.map((row) => this.tagify('tr', row.map((item) => this.tagify('td', this.unwrap(item))).join('')))
                     ].join('')),
@@ -1431,13 +1431,19 @@ module.exports = class OwlMarbleParser {
     unwrap (raw) {
         if (typeof raw === 'string') {
             return raw
-                .replaceAll('{@dice ', '')
-                .replaceAll('{@creature ', '')
+                .replaceAll(/{@dice (\d*d\d+( ?(\+|-) ?\d+)?)}/g, (g0, g1) => '[[/r ' + g1 + ']]')
+                .replaceAll(/{@creature (.*?)\|.*?}/g, (g0, g1) => g1)
+                .replaceAll(/{@filter (.+?)\|.+}/g, (g0, g1) => g1)
                 .replaceAll(/{@damage ((\d+(d\d+)) ?(\+|-)? ?(\d+?)?)}/g, (g0, g1) => g1)
                 .replaceAll(/{@scale(dice|damage) \|?.*?\|?(\w+)}/g, (g0, g1, g2) => g2)
                 .replaceAll(/{@\w+ (\w+)\|?.*?}/g, (g0, g1) => g1)
                 .replaceAll('}','');// Clean up termination of nested wrappers.
         } else if (raw.type === 'cell') {
+            if (raw.roll.min || raw.roll.max) {
+                return raw.roll.min + ' - ' + raw.roll.max;
+            } else if (raw.roll.exact) {
+                return raw.roll.exact + '';
+            }
             return JSON.stringify(raw.roll);
         } else {
             throw new Error('Failed to unwrap: ' + raw);
