@@ -1459,8 +1459,10 @@ module.exports = class OwlMarbleParser {
                 return raw.roll.exact + '';
             }
             return JSON.stringify(raw.roll);
+        } else if (raw.type === 'item') {
+            return this.tagify('b', raw.name) + ' ' + raw.entries.map((entry) => this.unwrap(entry)).join('\n');
         } else {
-            throw new Error('Failed to unwrap: ' + raw);
+            throw new Error('Failed to unwrap: ' + raw + '\n' + JSON.stringify(raw));
         }
     }
 
