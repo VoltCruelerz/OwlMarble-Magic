@@ -185,6 +185,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Image](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#image) - V/S/M [C] - (OMM - 1)
 - [Longstrider](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#longstrider) - V/S/M - (OMM - 1)
 - [Parallax Room](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#parallax-room) - V/S - (OMM - 1)
+- [Silvery Barbs](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#silvery-barbs) - V - (OMM - 1)
 - [Sleep](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#sleep) - V/S/M - (OMM - 1)
 - [Snapshot](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#snapshot) - S/M [R] - (OMM - 1)
 - [Speak with Animals](https://www.dndbeyond.com/spells/speak-with-animals) - V/S [R] - (PHB - 277)

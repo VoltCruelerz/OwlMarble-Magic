@@ -24,6 +24,14 @@
         "module": "owlmarble-magic",
         "path": "packs/spells.db",
         "entity": "Item"
+      },
+      {
+        "name": "feats",
+        "label": "OwlMarble Feats",
+        "system": "dnd5e",
+        "module": "owlmarble-magic",
+        "path": "packs/feats.db",
+        "entity": "Item"
       }
     ],
     "languages": [],

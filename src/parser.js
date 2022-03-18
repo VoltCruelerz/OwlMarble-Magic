@@ -4,10 +4,10 @@ const { detailedDiff } = require('deep-object-diff');
 const overrides = require('./parseOverrides');
 
 /**
- * Sets up a parser for OwlMarble Magic.
+ * Sets up a spell parser for OwlMarble Magic.
  * @class
  */
-module.exports = class OwlMarbleParser {
+module.exports = class SpellParser {
     constructor () {
         this.timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/;
         this.healingRegex = /heal|((restore|regain).*hit points?)/;

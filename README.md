@@ -1,6 +1,6 @@
 # OwlMarble Magic
 
-Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew spell list into FoundryVTT.
+Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew spell and feat lists into FoundryVTT.
 
 ## Spells
 
@@ -24,6 +24,10 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 - [**Monster Stat Blocks**](./spells/Monster%20Blocks.md): stat blocks of homebrew monsters that are referenced by spells.
 - [**Spells by Class**](./spells/Spells%20by%20Class.md): a list of all spells for each class once OMM is accounted for.
 - [**OGL**](./spells/OGL.license): This is all just fan content, so here's Wizards' OGL.
+
+## Feats
+
+See dedicated [page](./feats/feats.md).
 
 ## Features
 
