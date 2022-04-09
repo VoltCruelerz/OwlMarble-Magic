@@ -10,6 +10,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
 - [Alert](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#alert) - V - (OMM - 0)
+- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
 - [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#control-flames) - S - (OMM - 0)
@@ -40,6 +41,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Azdregath's Opulent Ooze](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#azdregaths-opulent-ooze) - V/S/M [R] - (OMM - 1)
 - [Catapult](https://www.dndbeyond.com/spells/catapult) - S - (XGE - 150)
 - [Cauterize](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#cauterize) - V/S/M - (OMM - 1)
+- [Chromatic Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#chromatic-blade) - V/S [C] - (OMM - 1)
 - [Cure Wounds](https://www.dndbeyond.com/spells/cure-wounds) - V/S - (PHB - 230)
 - [Detect Magic](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#detect-magic) - V/S [R] [C] - (OMM - 1)
 - [Dye](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#dye) - S [R] - (OMM - 1)
@@ -577,6 +579,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mold Earth](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#mold-earth) - S - (OMM - 0)
 - [Origami](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#origami) - S - (OMM - 0)
 - [Poison Spray](https://www.dndbeyond.com/spells/poison-spray) - V/S - (PHB - 266)
+- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#poisoned-blade) - V/S/M - (OMM - 0)
 - [Primal Savagery](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#primal-savagery) - S - (OMM - 0)
 - [Produce Flame](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#produce-flame) - V/S - (OMM - 0)
 - [Refrigerate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#refrigerate) - S/M - (OMM - 0)
@@ -832,6 +835,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Bless](https://www.dndbeyond.com/spells/bless) - V/S/M [C] - (PHB - 219)
 - [Ceremony](https://www.dndbeyond.com/spells/ceremony) - V/S/M$X [R] - (XGE - 151)
+- [Chromatic Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#chromatic-blade) - V/S [C] - (OMM - 1)
 - [Command](https://www.dndbeyond.com/spells/command) - V - (PHB - 223)
 - [Compelled Duel](https://www.dndbeyond.com/spells/compelled-duel) - V [C] - (PHB - 224)
 - [Cure Wounds](https://www.dndbeyond.com/spells/cure-wounds) - V/S - (PHB - 230)
@@ -1013,6 +1017,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Cantrip - _Sorcerer_
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
+- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
 - [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) - V/S - (PHB - 221)
@@ -1055,6 +1060,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Catapult](https://www.dndbeyond.com/spells/catapult) - S - (XGE - 150)
 - [Chaos Bolt](https://www.dndbeyond.com/spells/chaos-bolt) - V/S - (XGE - 151)
 - [Charm Person](https://www.dndbeyond.com/spells/charm-person) - V/S - (PHB - 221)
+- [Chromatic Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#chromatic-blade) - V/S [C] - (OMM - 1)
 - [Chromatic Orb](https://www.dndbeyond.com/spells/chromatic-orb) - V/S/M$ - (PHB - 221)
 - [Color Spray](https://www.dndbeyond.com/spells/color-spray) - V/S/M - (PHB - 222)
 - [Comprehend Languages](https://www.dndbeyond.com/spells/comprehend-languages) - V/S/M [R] - (PHB - 224)
@@ -1346,6 +1352,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Cantrip - _Warlock_
 
+- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
@@ -1363,6 +1370,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mind Sliver](https://www.dndbeyond.com/spells/mind-sliver) - V - (TCE - 108)
 - [Minor Figment](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#minor-figment) - S/M - (OMM - 0)
 - [Poison Spray](https://www.dndbeyond.com/spells/poison-spray) - V/S - (PHB - 266)
+- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#poisoned-blade) - V/S/M - (OMM - 0)
 - [Prestidigitation](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#prestidigitation) - V/S - (OMM - 0)
 - [Shadowstaff](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#shadowstaff) - S [C] - (OMM - 0)
 - [Sword Burst](https://www.dndbeyond.com/spells/sword-burst) - V - (TCE - 115)
@@ -1378,6 +1386,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Arms of Hadar](https://www.dndbeyond.com/spells/arms-of-hadar) - V/S - (PHB - 215)
 - [Cause Fear](https://www.dndbeyond.com/spells/cause-fear) - V [C] - (XGE - 151)
 - [Charm Person](https://www.dndbeyond.com/spells/charm-person) - V/S - (PHB - 221)
+- [Chromatic Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#chromatic-blade) - V/S [C] - (OMM - 1)
 - [Comprehend Languages](https://www.dndbeyond.com/spells/comprehend-languages) - V/S/M [R] - (PHB - 224)
 - [Detect Magic](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#detect-magic) - V/S [R] [C] - (OMM - 1)
 - [Distort Value](https://www.dndbeyond.com/spells/distort-value) - V - (AI - 75)
@@ -1572,6 +1581,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
 - [Alert](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#alert) - V - (OMM - 0)
+- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
 - [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
@@ -1596,6 +1606,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mold Earth](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#mold-earth) - S - (OMM - 0)
 - [Origami](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#origami) - S - (OMM - 0)
 - [Poison Spray](https://www.dndbeyond.com/spells/poison-spray) - V/S - (PHB - 266)
+- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#poisoned-blade) - V/S/M - (OMM - 0)
 - [Prestidigitation](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#prestidigitation) - V/S - (OMM - 0)
 - [Ray of Frost](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#ray-of-frost) - V/S - (OMM - 0)
 - [Refrigerate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#refrigerate) - S/M - (OMM - 0)
@@ -1620,6 +1631,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Cause Fear](https://www.dndbeyond.com/spells/cause-fear) - V [C] - (XGE - 151)
 - [Cauterize](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#cauterize) - V/S/M - (OMM - 1)
 - [Charm Person](https://www.dndbeyond.com/spells/charm-person) - V/S - (PHB - 221)
+- [Chromatic Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#chromatic-blade) - V/S [C] - (OMM - 1)
 - [Chromatic Orb](https://www.dndbeyond.com/spells/chromatic-orb) - V/S/M$ - (PHB - 221)
 - [Color Spray](https://www.dndbeyond.com/spells/color-spray) - V/S/M - (PHB - 222)
 - [Comprehend Languages](https://www.dndbeyond.com/spells/comprehend-languages) - V/S/M [R] - (PHB - 224)
