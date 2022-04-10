@@ -10,7 +10,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
 - [Alert](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#alert) - V - (OMM - 0)
-- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
+- [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
 - [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#control-flames) - S - (OMM - 0)
@@ -1017,7 +1017,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Cantrip - _Sorcerer_
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
-- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
+- [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
 - [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) - V/S - (PHB - 221)
@@ -1352,7 +1352,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Cantrip - _Warlock_
 
-- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
+- [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
@@ -1581,7 +1581,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
 - [Alert](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#alert) - V - (OMM - 0)
-- [Backlash Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-strike) - V/S/M - (OMM - 0)
+- [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
 - [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
