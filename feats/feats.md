@@ -284,6 +284,16 @@ You’ve become incredibly adept at protecting yourself with magical forces.  Wh
 - Your AC increases by 1.
 - If you fail a Concentration check, you can choose to end the spell to automatically succeed on the check.
 
+## Mechanical Expert [Kingslayer059]
+
+_Requirement: Warforged_
+
+You've learned to embrace your mechanical origins, and are now more construct than humanoid. You gain the following benefits:
+
+- Increase your Constitution or Intelligence by 1, to a maximum of 20.
+- You learn *Mending*. When you cast it, the spell has a casting time of 1 action, and you can cast it without material components. If you already know *Mending*, you instead learn one cantrip of your choice from the Artificer spell list. Intelligence is your spellcasting ability for the cantrip.
+- You can cast *Mending* on yourself. When you do so, you regain hit points equal to your level plus your Intelligence modifier. Once you regain hit points in this way, you cannot do so again until you complete a short or long rest.
+
 ## Mobile [Updated]
 
 - Your speed increases by 5 times your proficiency bonus.
