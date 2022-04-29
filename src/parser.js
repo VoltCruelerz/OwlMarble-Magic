@@ -600,7 +600,13 @@ module.exports = class SpellParser {
                 condition: match[4] || ''
             };
         }
-
+        if (castTime === 'special') {
+            return {
+                'type': 'special',
+                'cost': null,
+                'condition': ''
+            };
+        }
         throw new Error('Unrecognized cast time: ' + castTime);
     }
 

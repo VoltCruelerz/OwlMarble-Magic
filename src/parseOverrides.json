@@ -11,6 +11,12 @@
             "new": {"parts":[["2d8 + 1d6",""]],"versatile":""}
         }
     },
+    "Endless Sword": {
+        "damage": {
+            "old": {"parts":[["10","slashing"]],"versatile":"","value":""},
+            "new": {"parts":[],"versatile":"","value":""}
+        }
+    },
     "False Life": {
         "actionType": {
             "old": "util",
