@@ -10,6 +10,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
 - [Alert](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#alert) - V - (OMM - 0)
+- [Anchor](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#anchor) - V/S/M [C] - (OMM - 0)
 - [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
 - [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
@@ -142,6 +143,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Cantrip - _Bard_
 
+- [Anchor](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#anchor) - V/S/M [C] - (OMM - 0)
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
@@ -365,6 +367,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Cantrip - _Cleric_
 
+- [Anchor](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#anchor) - V/S/M [C] - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
 - [Guidance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#guidance) - V/S [C] - (OMM - 0)
 - [Hold Portal](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#hold-portal) - V - (OMM - 0)
@@ -417,6 +420,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Calm Emotions](https://www.dndbeyond.com/spells/calm-emotions) - V/S [C] - (PHB - 221)
 - [Continual Flame](https://www.dndbeyond.com/spells/continual-flame) - V/S/M$X - (PHB - 227)
 - [Detect Vitals](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#detect-vitals) - S [C] - (OMM - 2)
+- [Endurance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#endurance) - S/M [C] - (OMM - 2)
 - [Enhance Ability](https://www.dndbeyond.com/spells/enhance-ability) - V/S/M [C] - (PHB - 237)
 - [Find Traps](https://www.dndbeyond.com/spells/find-traps) - V/S - (PHB - 241)
 - [Gentle Repose](https://www.dndbeyond.com/spells/gentle-repose) - V/S/M [R] - (PHB - 245)
@@ -631,6 +635,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Dig](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#dig) - V/S/M$ [C] - (OMM - 2)
 - [Dust Devil](https://www.dndbeyond.com/spells/dust-devil) - V/S/M [C] - (XGE - 154)
 - [Earthbind](https://www.dndbeyond.com/spells/earthbind) - V [C] - (XGE - 154)
+- [Endurance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#endurance) - S/M [C] - (OMM - 2)
 - [Enhance Ability](https://www.dndbeyond.com/spells/enhance-ability) - V/S/M [C] - (PHB - 237)
 - [Find Traps](https://www.dndbeyond.com/spells/find-traps) - V/S - (PHB - 241)
 - [Flame Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#flame-blade) - V/S/M [C] - (OMM - 2)
@@ -1167,7 +1172,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Haste](https://www.dndbeyond.com/spells/haste) - V/S/M [C] - (PHB - 250)
 - [Hypnotic Pattern](https://www.dndbeyond.com/spells/hypnotic-pattern) - S/M [C] - (PHB - 252)
 - [Intellect Fortress](https://www.dndbeyond.com/spells/intellect-fortress) - V [C] - (TCE - 107)
-- [Lightning Bolt](https://www.dndbeyond.com/spells/lightning-bolt) - V/S/M - (PHB - 255)
+- [Lightning Bolt](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#lightning-bolt) - V/S/M - (OMM - 3)
 - [Major Figment](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#major-figment) - V/S/M [C] - (OMM - 3)
 - [Melf's Minute Meteors](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#melfs-minute-meteors) - V/S/M [C] - (OMM - 3)
 - [Mindburn](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#mindburn) - V/S/M - (OMM - 3)
@@ -1184,7 +1189,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Thunder Step](https://www.dndbeyond.com/spells/thunder-step) - V - (XGE - 168)
 - [Tidal Wave](https://www.dndbeyond.com/spells/tidal-wave) - V/S/M - (XGE - 168)
 - [Tongues](https://www.dndbeyond.com/spells/tongues) - V/M - (PHB - 283)
-- [Vampiric Touch](https://www.dndbeyond.com/spells/vampiric-touch) - V/S [C] - (PHB - 285)
 - [Vortex Blast](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#vortex-blast) - V/S - (OMM - 3)
 - [Wall of Water](https://www.dndbeyond.com/spells/wall-of-water) - V/S/M [C] - (XGE - 170)
 - [Water Breathing](https://www.dndbeyond.com/spells/water-breathing) - V/S/M [R] - (PHB - 287)
@@ -1414,6 +1418,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Detect Vitals](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#detect-vitals) - S [C] - (OMM - 2)
 - [Earthbind](https://www.dndbeyond.com/spells/earthbind) - V [C] - (XGE - 154)
 - [Endless Sword](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#endless-sword) - M [C] - (OMM - 2)
+- [Endurance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#endurance) - S/M [C] - (OMM - 2)
 - [Enthrall](https://www.dndbeyond.com/spells/enthrall) - V/S - (PHB - 238)
 - [Flock of Familiars](https://www.dndbeyond.com/spells/flock-of-familiars) - V/S [C] - (LLK - 57)
 - [Glamor Trap](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/02.md#glamor-trap) - V/S [C] - (OMM - 2)
@@ -1464,7 +1469,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Summon Undead](https://www.dndbeyond.com/spells/summon-undead) - V/S/M$ [C] - (TCE - 114)
 - [Thunder Step](https://www.dndbeyond.com/spells/thunder-step) - V - (XGE - 168)
 - [Tongues](https://www.dndbeyond.com/spells/tongues) - V/M - (PHB - 283)
-- [Vampiric Touch](https://www.dndbeyond.com/spells/vampiric-touch) - V/S [C] - (PHB - 285)
+- [Vampiric Touch](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#vampiric-touch) - V/S [C] - (OMM - 3)
 
 ### Level 4 - _Warlock_
 
@@ -1585,6 +1590,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
 - [Alert](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#alert) - V - (OMM - 0)
+- [Anchor](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#anchor) - V/S/M [C] - (OMM - 0)
 - [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
@@ -1796,7 +1802,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Intellect Fortress](https://www.dndbeyond.com/spells/intellect-fortress) - V [C] - (TCE - 107)
 - [Leomund's Tiny Hut](https://www.dndbeyond.com/spells/leomund's-tiny-hut) - V/S/M [R] - (PHB - 255)
 - [Life Transference](https://www.dndbeyond.com/spells/life-transference) - V/S - (XGE - 160)
-- [Lightning Bolt](https://www.dndbeyond.com/spells/lightning-bolt) - V/S/M - (PHB - 255)
+- [Lightning Bolt](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#lightning-bolt) - V/S/M - (OMM - 3)
 - [Magic Circle](https://www.dndbeyond.com/spells/magic-circle) - V/S/M$X - (PHB - 256)
 - [Major Figment](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#major-figment) - V/S/M [C] - (OMM - 3)
 - [Melf's Minute Meteors](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#melfs-minute-meteors) - V/S/M [C] - (OMM - 3)
@@ -1827,7 +1833,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Tidal Wave](https://www.dndbeyond.com/spells/tidal-wave) - V/S/M - (XGE - 168)
 - [Tiny Servant](https://www.dndbeyond.com/spells/tiny-servant) - V/S - (XGE - 168)
 - [Tongues](https://www.dndbeyond.com/spells/tongues) - V/M - (PHB - 283)
-- [Vampiric Touch](https://www.dndbeyond.com/spells/vampiric-touch) - V/S [C] - (PHB - 285)
+- [Vampiric Touch](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#vampiric-touch) - V/S [C] - (OMM - 3)
 - [Vortex Blast](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/03.md#vortex-blast) - V/S - (OMM - 3)
 - [Wall of Sand](https://www.dndbeyond.com/spells/wall-of-sand) - V/S/M [C] - (XGE - 170)
 - [Wall of Water](https://www.dndbeyond.com/spells/wall-of-water) - V/S/M [C] - (XGE - 170)

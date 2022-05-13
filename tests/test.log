@@ -1,0 +1,17 @@
+===================================================
+ERROR REPORT - 2 ERRORS ACROSS 1/320 SRD SPELLS
+===================================================
+===================================================
+- Vampiric Touch: 2/11
+---------------------------------------------------
+    "Vampiric Touch": {
+        "damage": {"parts":[["3d8","necrotic"]],"versatile":"","value":""},
+        "scaling": {"mode":"level","formula":"1d8"}
+    }
+---------------------------------------------------
+L - [1/2] - damage
+| L - SRD: {"parts":[["3d6","necrotic"]],"versatile":""}
+| L - OMM: {"parts":[["3d8","necrotic"]],"versatile":"","value":""}
+L - [2/2] - scaling
+  L - SRD: {"mode":"level","formula":"1d6"}
+  L - OMM: {"mode":"level","formula":"1d8"}
