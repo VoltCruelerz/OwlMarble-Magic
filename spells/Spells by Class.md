@@ -757,7 +757,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Tree Stride](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#tree-stride) - V/S [C] - (OMM - 5)
 - [Twilight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#twilight) - V/S/M [C] - (OMM - 5)
 - [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
-- [Wrath of Nature](https://www.dndbeyond.com/spells/wrath-of-nature) - V/S [C] - (XGE - 171)
+- [Wrath of Nature](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wrath-of-nature) - V/S [C] - (OMM - 5)
 
 ### Level 6 - _Druid_
 
@@ -1016,7 +1016,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Steel Wind Strike](https://www.dndbeyond.com/spells/steel-wind-strike) - S/M - (XGE - 166)
 - [Swift Quiver](https://www.dndbeyond.com/spells/swift-quiver) - V/S/M [C] - (PHB - 279)
 - [Tree Stride](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#tree-stride) - V/S [C] - (OMM - 5)
-- [Wrath of Nature](https://www.dndbeyond.com/spells/wrath-of-nature) - V/S [C] - (XGE - 171)
+- [Wrath of Nature](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#wrath-of-nature) - V/S [C] - (OMM - 5)
 
 ## Sorcerer
 
@@ -1291,7 +1291,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Level 7 - _Sorcerer_
 
 - [Blood to Water](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#blood-to-water) - V/S - (OMM - 7)
-- [Crown of Stars](https://www.dndbeyond.com/spells/crown-of-stars) - V/S - (XGE - 152)
+- [Crown of Stars](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#crown-of-stars) - V/S - (OMM - 7)
 - [Delayed Blast Fireball](https://www.dndbeyond.com/spells/delayed-blast-fireball) - V/S/M [C] - (PHB - 230)
 - [Draconic Transformation](https://www.dndbeyond.com/spells/draconic-transformation) - V/S/M$ [C] - (FTD - 19)
 - [Dream of the Blue Veil](https://www.dndbeyond.com/spells/dream-of-the-blue-veil) - V/S/M - (TCE - 106)
@@ -1539,7 +1539,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Level 7 - _Warlock_
 
 - [Blood to Water](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#blood-to-water) - V/S - (OMM - 7)
-- [Crown of Stars](https://www.dndbeyond.com/spells/crown-of-stars) - V/S - (XGE - 152)
+- [Crown of Stars](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#crown-of-stars) - V/S - (OMM - 7)
 - [Dream of the Blue Veil](https://www.dndbeyond.com/spells/dream-of-the-blue-veil) - V/S/M - (TCE - 106)
 - [Etherealness](https://www.dndbeyond.com/spells/etherealness) - V/S - (PHB - 238)
 - [Finger of Death](https://www.dndbeyond.com/spells/finger-of-death) - V/S - (PHB - 241)
@@ -1979,7 +1979,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Otiluke's Freezing Sphere](https://www.dndbeyond.com/spells/otiluke's-freezing-sphere) - V/S/M - (PHB - 263)
 - [Otto's Irresistible Dance](https://www.dndbeyond.com/spells/otto's-irresistible-dance) - V [C] - (PHB - 264)
 - [Programmed Illusion](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#programmed-illusion) - V/S/M$ - (OMM - 6)
-- [Psychic Wind](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#psychic-wind) - V/S - (OMM - 6)
 - [Raogon's Hierarchy](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/06.md#raogons-hierarchy) - V/S/M - (OMM - 6)
 - [Scatter](https://www.dndbeyond.com/spells/scatter) - V - (XGE - 164)
 - [Soul Cage](https://www.dndbeyond.com/spells/soul-cage) - V/S/M$ - (XGE - 165)
@@ -1995,7 +1994,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Blood to Water](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#blood-to-water) - V/S - (OMM - 7)
 - [Create Magen](https://www.dndbeyond.com/spells/create-magen) - V/S/M$X - (IDRotF - 318)
-- [Crown of Stars](https://www.dndbeyond.com/spells/crown-of-stars) - V/S - (XGE - 152)
+- [Crown of Stars](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/07.md#crown-of-stars) - V/S - (OMM - 7)
 - [Delayed Blast Fireball](https://www.dndbeyond.com/spells/delayed-blast-fireball) - V/S/M [C] - (PHB - 230)
 - [Draconic Transformation](https://www.dndbeyond.com/spells/draconic-transformation) - V/S/M$ [C] - (FTD - 19)
 - [Dream of the Blue Veil](https://www.dndbeyond.com/spells/dream-of-the-blue-veil) - V/S/M - (TCE - 106)
