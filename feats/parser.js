@@ -9,6 +9,19 @@ const { detailedDiff } = require('deep-object-diff');
  */
 module.exports = class SpellParser {
     /**
+     * Wraps the string in the specified tag.  For example, 'h3' and 'blah' gives '<h3>blah</h3>'.
+     * @param {string} tag 
+     * @param {string} string 
+     * @returns {string}
+     */
+    tagify (tag, string) {
+        if (!string) {
+            return '';
+        }
+        return `<${tag}>${string}</${tag}>`;
+    }
+    
+    /**
      * HTML-ifies the bolding by converting from ** to <strong>.
      * @param {string} line 
      * @returns {string}
@@ -75,6 +88,31 @@ module.exports = class SpellParser {
     }
 
     /**
+     * Converts a line with a number of #'s at the start into the appropriate html header, eg <h3>.
+     * @param {string} line 
+     * @returns {string}
+     */
+    headerify (line) {
+        const heading = line.substr(line.indexOf(' ') + 1);
+        const depth = (line.match(/#/g) || []).length;
+        return this.tagify('h' + depth, heading);
+    }
+
+    /**
+     * Converts a markdown table row into an html <tr>.
+     * @param {string} line 
+     * @param {boolean} isHeader 
+     * @returns {string}
+     */
+    tableify (line, isHeader) {
+        const tds = line.split('|').map((td) => td.trim()).filter((td) => td);
+        const rowData = isHeader
+            ? tds.map((td) => this.tagify('td', this.tagify('strong', td)))
+            : tds.map((td) => this.tagify('td', td));
+        return this.tagify('tr', rowData.join(''));
+    }
+
+    /**
      * Gets the current list depth, assuming two spaces per level.
      * @param {string} line 
      * @returns {number} the depth of the list
@@ -85,6 +123,24 @@ module.exports = class SpellParser {
             return lineMatch[1].length / 2 + 1;
         }
         return 0;
+    }
+
+    /**
+     * Checks if the current line starts with some number of #'s.
+     * @param {string} line 
+     * @returns {boolean}
+     */
+    lineIsHeader (line) {
+        return !!line.match(/>? ?#+ /);
+    }
+
+    /**
+     * Checks if we're in a table by looking for pipes at the start and end of the line.
+     * @param {string} line 
+     * @returns {boolean}
+     */
+    lineIsTable (line) {
+        return line.startsWith('|') && line.endsWith('|');
     }
 
     /**
@@ -183,6 +239,21 @@ module.exports = class SpellParser {
                     requirements = line
                         .replaceAll('_','')
                         .replaceAll('Requirement: ', '');
+                } else if (this.lineIsHeader(line)) {
+                    line = this.headerify(line);
+                } else if (this.lineIsTable(line)) {
+                    if (!this.lineIsTable(prevLine)) {
+                        // This is the start of the table.
+                        featLines.push('<table border="1"><tbody>');
+                        line = this.tableify(line, true);
+                        i++;// skip the |-----|--------|--------| line.
+                    } else if (!this.lineIsTable(nextLine)) {
+                        // This is the table, so close it.
+                        line = this.tableify(line, false);
+                        nextLineInjection = '</tbody></table>';
+                    } else {
+                        line = this.tableify(line, false);
+                    }
                 } else { // All others are assumed to be normal text.
                     line = this.paragraphify(line);
                 }

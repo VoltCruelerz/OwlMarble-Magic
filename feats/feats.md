@@ -14,9 +14,10 @@ Your extensive practice with your spells has led to unparalleled accuracy.  When
 
 _Requirement: Dexterity or Strength score of 15 or higher, Level 4_
 
-Your mastery with ranged weapons is legendary.
-When you take the attack action on your turn and fire or throw a projectile, you may make one additional attack with disadvantage.
-You can attempt to intercept an opponent’s projectile with your own.  When an opponent fires a Tiny nonmagical projectile that passes through the range of your weapon, you may make an attack roll against it as a reaction.  The projectile has an AC of 25.  On a hit, their attack misses, and your reaction is restored.
+Your mastery with ranged weapons is legendary. You gain the following benefits:
+
+- When you take the attack action on your turn and fire or throw a projectile, you may make one additional attack with disadvantage.
+- You can attempt to intercept an opponent’s projectile with your own.  When an opponent fires a Tiny nonmagical projectile that passes through the range of your weapon, you may make an attack roll against it as a reaction.  The projectile has an AC of 25.  On a hit, their attack misses, and your reaction is restored.
 
 ## Astral-Touched [New]
 
@@ -24,6 +25,22 @@ Your exposure to magic from the plane of thought has changed you, allowing you t
 
 - You gain one point in Intelligence, Wisdom, or Charisma, to a maximum of 20.
 - You learn the _Vortex Warp_ spell and one 1st level spell of your choice.  The 1st level spell must be from the conjuration or transmutation school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+
+## Athlete [KibblesTasty]
+
+_Requirement: 4th level_
+
+You can accomplish mythical feats of physical prowess. You gain the following benefits:
+
+- Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.
+- Gain your choice of a climbing or swimming speed equal to your walking speed.
+- You can perform outrageous athletic feats on your turn such as the following options, or possibly others with your DM's approval. Once you have performed such a feat, you cannot perform another until you complete a short or long rest or take a level of exhaustion.
+  - Jump a distance equal to your movement speed.
+  - Double your normal lifting capacity until the end of your turn.
+  - Move at a normal speed while carrying or dragging another creature until the end of your turn.
+  - Make a free Strength or Dexterity saving throw or ability check to end an ongoing effect that would normally require an action or only occur at the beginning or end of your turn.
+  - Take the dash action as a bonus action.
+  - Ignore the effects of exhaustion until the beginning of your next turn.
 
 ## Battlewise [New]
 
@@ -72,6 +89,26 @@ You’ve mastered the technique of blocking incoming blows with your shield and 
 - Increase your Strength or Constitution by 1, to a maximum of 20.
 - When a creature attacks you with a melee attack and misses, you can use your reaction to make an attack against them with your shield.  The damage die for your shield is a d4, and you are considered proficient with it.
 - When you take the Dodge action, your shield adds +4 to your AC instead of +2.
+
+## Bodyguard [KibblesTasty]
+
+_Requirement: A reaction ability that protects an ally_
+
+Your reflexes and techniques safeguard your allies. You gain the following benefits:
+
+- Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.
+- After using a reaction ability (such as the Interception Fighting Style, Ancestral Barbarian's _Spirit Shield_, or _Kieron's Barricade_) to protect an ally within 5 feet of you, after the triggering effect takes effect, you can swap places with the ally if the ally is still within 5 feet of you as long as neither of you have a movement speed of 0. This movement does not provoke opportunity attacks.
+
+## Born of the Elements [New]
+
+You've been exposed to the primordial magic of the Elemental Planes, granting you a measure of control over the natural world around you. You gain the following benefits:
+
+- Increase an ability score of your choice by 1, to a maximum of 20.
+- Whenever you finish a short rest, you can attune yourself to a one of the elemental planes. Depending on your choice, you gain access to an ability you can use your bonus action to activate. You can use this bonus action a number of times equal to your proficiency bonus, and regain all uses when you finish a long rest.
+  - **Air**: until the end of your turn, you gain a fly speed equal to your walking speed.
+  - **Earth**: you cause the ground within 30 feet of you when you use this ability to tremble and become difficult terrain for 1 minute or until use this bonus action again. During that time, you can move across ground that is difficult terrain without spending extra movement.
+  - **Fire**: you surround yourself in a cloud of ash and smoke. Until the end of your turn, your movement does not provoke opportunity attacks.
+  - **Water**: you create a forceful blast of water directed at a creature of your choice within 15 feet of you that you can see. The creature must succeed on a Strength saving throw (which it can choose to fail) against your spell save DC or be pushed 10 feet away from you. The water vanishes immediately after use.
 
 ## Brutal Killer [New]
 
@@ -336,6 +373,63 @@ _Requirement: Aasimar_
 - The range of your darkvision increases by 60 feet.
 - You can see 10 feet into magical darkness.
 
+## Rune Carver Apprentice [UA-GO-Updated]
+
+You've begun studying the art of runecraft, which allows you to temporarily mark objects to imbue them with magic.
+
+Whenever you finish a long rest, you can mark one nonmagical object with a rune of your choice, which fades when you complete another long rest. While touching the rune, you can cast the spell corresponding to the rune, with the rune fulfilling the component requirements of the spell. The first time you cast the spell in this way, you can do so without expending a spell slot. Your spellcasting ability for this feat must be Intelligence, Wisdom, or Charisma (which you choose when you gain this feat).
+
+### Runes
+
+| Rune    | Spell |
+|:-------:|:-----:|
+| Blood   | _False Life_ |
+| Cloud   | _Fog Cloud_ |
+| Death   | _Ray of Sickness_ |
+| Dragon  | _Chromatic Orb_ |
+| Enemy   | _Bane_ |
+| Friend  | _Bless_ |
+| Frost   | _Armor of Agathys_ |
+| Hill    | _Goodberry_ |
+| Journey | _Longstrider_ |
+| King    | _Command_ |
+| Light   | _Guiding Bolt_ |
+| Life    | _Cure Wounds_ |
+| Mountain | _Jump_ |
+| Shield  | _Shield_ |
+| Stone   | _Sanctuary_ |
+| Storm   | _Thunderwave_ |
+| War     | _Heroism_ |
+| Wind    | _Feather Fall_ |
+
+## Rune Carver Journeyman [UA-GO-Updated]
+
+_Requirement: Rune Carver Apprentice_
+
+Your skill with runecraft has increased by leaps and bounds. Instead of just one rune, you are now able to mark a number of runes equal to your proficiency bonus.
+
+If an item is marked multiple times with the same rune, when you cast the spell from it, you can consume any number of duplicate runes on the object to upcast the spell by 1 level for each consumed rune.
+
+## Rune Carver Master [UA-GO-Updated]
+
+_Requirement: Rune Carver Master_
+
+Your skill with runecraft has increased by leaps and bounds once again, making you a master of the ancient practice. The list of runes you know increases.
+
+### Advanced Runes
+
+| Rune    | Spell |
+|:-------:|:-----:|
+| Heart   | _Aid_ |
+| Hood    | _Alter Self_ |
+| Spear   | _Call of Arms_ |
+| Mind    | _Detect Thoughts_ |
+| Sword   | _Endless Sword_ |
+| Chain   | _Hold Person_ |
+| Hammer  | _Magic Weapon_ |
+| Bear    | _Summon Beast_ |
+| Scales  | _Zone of Truth_ |
+
 ## Savage Attacker [Updated]
 
 Once per turn when you roll damage for a melee weapon attack, you can reroll the damage and use either total.
@@ -402,7 +496,17 @@ Some from the deep choose to make _friends_ with the topsiders. You? Not so much
 - Your Strength or Dexterity increases by 1, to a maximum of 20.
 - You lose the Sunlight Sensitivity trait.
 - You gain proficiency in Athletics, Nature, Stealth, or Survival.
- 
+
+## Striker [KibblesTasty]
+
+_Requirement: 4th level_
+
+You move like the wind, striking faster than your foes can see. You gain the following benefits:
+
+- Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.
+- If you attack and hit a creature with a melee weapon attack, you can pass through its space until the end of your turn as if it were difficult terrain.
+- When you take the attack action on your turn, you can replace one of your attacks with a rapid burst of movement, moving up to 30 feet along any surface in a straight line. You can move along vertical or horizontal surfaces with this movement, can pass through creatures, and do not provoke attacks of opportunity, but cannot pass through objects or terrain. A creature you move through in this way must make a Dexterity saving throw or take damage equal to 2d6 + your Strength or Dexterity modifier (your choice). The damage's type is that of your weapon. On a success, a creature receives half as much damage.
+
 ## Tabaxi Curiosity [Sarguro]
 
 _Requirement: Tabaxi_
