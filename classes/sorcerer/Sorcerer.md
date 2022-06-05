@@ -370,11 +370,11 @@ Drawing on the power within your soul, you can develop the skills necessary to c
 
 | Spell Level | Spells                                  |
 |:-----------:|:----------------------------------------|
-| 1st         | *Summon Servant*                        |
-| 2nd         | *Summon Beast*                          |
-| 3rd         | *Summon Shadowspawn*, *Summon Undead*   |
-| 4th         | *Summon Aberration*, *Summon Elemental* |
-| 6th         | *Summon Fiend*                          |
+| 1st         | _Summon Servant_                        |
+| 2nd         | _Summon Beast_                          |
+| 3rd         | _Summon Shadowspawn_, _Summon Undead_   |
+| 4th         | _Summon Aberration_, _Summon Elemental_ |
+| 6th         | _Summon Fiend_                          |
 
 #### Summoned Servant
 

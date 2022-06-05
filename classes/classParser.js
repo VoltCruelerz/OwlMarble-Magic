@@ -92,9 +92,9 @@ module.exports = class ClassPraser {
      * @param {string} line 
      * @returns {string}
      */
-    headerify (line) {
+    headerify (line, offset = 0) {
         const heading = line.substr(line.indexOf(' ') + 1);
-        const depth = (line.match(/#/g) || []).length;
+        const depth = (line.match(/#/g) || []).length - offset;
         return this.tagify('h' + depth, heading);
     }
 
@@ -140,7 +140,7 @@ module.exports = class ClassPraser {
      * @returns {boolean}
      */
     lineIsTable (line) {
-        return line.startsWith('|') && line.endsWith('|');
+        return line.match(/^(?:> )?\|(?:.*?\|)+$/);
     }
     //#endregion
 
@@ -185,7 +185,7 @@ module.exports = class ClassPraser {
     /**
      * Gets the title depth of a given line based on the number of #'s in it.
      * @param {string} line The line to evaluate.
-     * @returns The number.
+     * @returns {number} The number.
      */
     getTitleDepth (line) {
         const trackedTitleRegexGetDepth = /((?<depth>#+) (?:.*?))/;
@@ -193,7 +193,7 @@ module.exports = class ClassPraser {
         if (!result) {
             return 0;
         }
-        return result.groups.depth;
+        return parseInt(result.groups.depth.length);
     }
 
     /**
@@ -214,28 +214,28 @@ module.exports = class ClassPraser {
         const folders = classes.filter((p) => !p.includes('.'));
         console.log('Folders: ' + folders);
 
+        // Parse classes and their features
         let features = [];
         for (let i = 0; i < folders.length; i++) {
             const folder = folders[i];
             const classFileName = folder.charAt(0).toUpperCase() + folder.slice(1);
             const raw = fs.readFileSync(`./classes/${folder}/${classFileName}.md`, { encoding: 'utf-8', flag: 'r'});
 
-            const trackedFeatures = raw.split(trackedTitleRegex);
-
-            // Every other element in tracked features will be a feature title.
+            // After splitting, every other element in tracked features will be a feature title.
             // The following element is their description plus whatever else until the next tracked title.
             // For each title, we need to splice out anything that has a lower title depth.
+            const trackedFeatures = raw.split(trackedTitleRegex);
 
-            // Discard the first element because that's just going to be boilerplate.
             const rawFeatures = [];
+            // Discard the first element because that's just going to be boilerplate.
             for (let j = 1; j < trackedFeatures.length; j++) {
                 const current = trackedFeatures[j];
 
                 if (current.match(trackedTitleRegex)) {
-                    const rawFeatureLines = [trackedTitleRegexGetName.exec(current).groups.name];
+                    const rawFeatureLines = [current];
                     const depth = this.getTitleDepth(current);
                     const next = j + 1 < trackedFeatures.length ? trackedFeatures[j + 1] : '';
-                    const descLineOptions = next.split('\r\n').filter((line) => line);
+                    const descLineOptions = next.split('\r\n').filter((line) => line && line !== '>');
                     for (let k = 0; k < descLineOptions.length; k++) {
                         const consideredLine = descLineOptions[k];
                         const consideredDepth = this.getTitleDepth(consideredLine);
@@ -253,10 +253,14 @@ module.exports = class ClassPraser {
                 }
             }
 
+            // Process features.
             rawFeatures.forEach((rawFeatureLines) => {
-                
-                // Parse name and origin
-                const featureName = rawFeatureLines[0];
+                // Parse name
+                const featureName = trackedTitleRegexGetName.exec(rawFeatureLines[0]).groups.name;
+
+                // Parse depth for the offset.
+                // For example, if the header is ###, and it has a subheading ####, that should be ultimately rendered as h1, not h4.
+                const depth = this.getTitleDepth(rawFeatureLines[0]);
     
                 // Parse content
                 const featureLines = [];
@@ -266,6 +270,14 @@ module.exports = class ClassPraser {
                     let line = rawFeatureLines[i];
                     let nextLineInjection = undefined;
     
+                    // Handle quotes first because they can encapsulate other formatting.
+                    const isQuote = line.startsWith('> ');
+                    if (isQuote) {
+                        line = line.slice(2);
+                        featureLines.push('<blockquote>');
+                    }
+
+                    // Handle other formatting.
                     const curDepth = this.listDepth(line);
                     if (curDepth) { // Check for lists.
                         const prevDepth = prevLine ? this.listDepth(prevLine) : 0;
@@ -279,7 +291,7 @@ module.exports = class ClassPraser {
                         }
                         line = this.listify(line);
                     } else if (this.lineIsHeader(line)) {
-                        line = this.headerify(line);
+                        line = this.headerify(line, depth);
                     } else if (this.lineIsTable(line)) {
                         if (!this.lineIsTable(prevLine)) {
                             // This is the start of the table.
@@ -296,17 +308,29 @@ module.exports = class ClassPraser {
                     } else { // All others are assumed to be normal text.
                         line = this.paragraphify(line);
                     }
-                    featureLines.push(this.boldify(this.italilink(line, spellDict)));
+                    
+                    // Handle final formatting
+                    let formattedLine = this.boldify(this.italilink(line, spellDict));
+
+                    // Add the line.
+                    featureLines.push(formattedLine);
     
-                    // Insert list terminations.
+                    // Insert table/list terminations.
                     if (nextLineInjection) {
                         featureLines.push(nextLineInjection);
                     }
+
+                    // If in a quote, close it out.
+                    if (isQuote) {
+                        featureLines.push('</blockquote>');
+                    }
                 }
-                const featureString = featureLines.join('');
-    
+                const featureString = featureLines
+                    .join('')// Merge lines.
+                    .replaceAll('</blockquote><blockquote>', '');// Merge adjacent block quotes.
+
                 features.push({
-                    _id: this.generateUUID(featureName + ' (OwlMarble Magic)'),
+                    _id: this.generateUUID(`${featureName} - ${classFileName} (OwlMarble Magic - Features)`),
                     name: featureName,
                     type: 'feat',
                     img: 'modules/owlmarble-magic/icons/classes/' + classFileName + '.svg',
@@ -377,6 +401,24 @@ module.exports = class ClassPraser {
             });
         }
 
+        // Check for name collisions.
+        features.reduce((acc, feature) => {
+            if (!acc[feature.name]) {
+                acc[feature.name] = feature;
+            } else {
+                const existing = acc[feature.name];
+                console.log(`- Disambiguating Name Collision for "${feature.name}" between ${existing.data.requirements} and ${feature.data.requirements}`);
+                // Check that we haven't already updated the other one.
+                if (feature.name === existing.name) {
+                    // Update the existing feature.
+                    existing.name = `${existing.name} (${existing.data.requirements})`;
+                }
+
+                // Update the current one.
+                feature.name = `${feature.name} (${feature.data.requirements})`;
+            }
+            return acc;
+        }, {});
 
         this.printDb(features, 'packs/features.db');
         this.printDb(features, 'output/all/features.db');

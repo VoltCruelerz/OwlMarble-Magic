@@ -2,28 +2,28 @@
 
 ## Tireless Monk [Updated]
 
-| Level | Proficiency Bonus | Features | Ki Points | Unarmored Movement | Techniques Known |
-|:-----:|:-----------:|:-----------------------------------------------------------|:--------:|:---------:|:-------------:|
-|  1st  | +2          | Unarmored Defense, Martial Arts                            | ---      | ---       | ---           |
-|  2nd  | +2          | Step of the Wind, Ki, Dedicated Weapon, Unarmored Movement | 1        | +10ft.    | 1             |
-|  3rd  | +2          | Deflect Missiles, Monastic Tradition, Ki-Fueled Attack     | 2        | +10ft.    | 1             |
-|  4th  | +2          | Ability Score Improvement, Slow Fall                       | 2        | +10ft.    | 2             |
-|  5th  | +3          | Extra Attack                                               | 3        | +10ft.    | 2             |
-|  6th  | +3          | Ki-Empowered Strikes, Monastic Tradition Feature           | 3        | +15ft.    | 3             |
-|  7th  | +3          | Evasion, Stillness of Mind                                 | 4        | +15ft.    | 3             |
-|  8th  | +3          | Ability Score Improvement                                  | 4        | +15ft.    | 3             |
-|  9th  | +4          | Unarmored Movement Improvement                             | 5        | +15ft.    | 4             |
-| 10th  | +4          | Purity of Body                                             | 5        | +20ft.    | 4             |
-| 11th  | +4          | Monastic Tradition Feature                                 | 6        | +20ft.    | 4             |
-| 12th  | +4          | Ability Score Improvement                                  | 6        | +20ft.    | 4             |
-| 13th  | +5          | Tongue of the Sun and Moon                                 | 7        | +20ft.    | 5             |
-| 14th  | +5          | Diamond Soul                                               | 7        | +25ft.    | 5             |
-| 15th  | +5          | Timeless Body                                              | 8        | +25ft.    | 5             |
-| 16th  | +5          | Ability Score Improvement                                  | 8        | +25ft.    | 5             |
-| 17th  | +6          | Monastic Tradition Feature                                 | 9        | +25ft.    | 6             |
-| 18th  | +6          | Empty Body                                                 | 9        | +30ft.    | 6             |
-| 19th  | +6          | Absility Score Improvement                                 | 10       | +30ft.    | 6             |
-| 20th  | +6          | Perfect Self                                               | 10       | +30ft.    | 6             |
+| Level | Proficiency Bonus | Features                                                   | Ki Points | Unarmored Movement | Techniques Known |
+|:-----:|:-----------------:|:-----------------------------------------------------------|:---------:|:------------------:|:----------------:|
+|  1st  | +2                | Unarmored Defense, Martial Arts                            | ---       | ---                | ---              |
+|  2nd  | +2                | Step of the Wind, Ki, Dedicated Weapon, Unarmored Movement | 1         | +10ft.             | 1             |
+|  3rd  | +2                | Deflect Missiles, Monastic Tradition, Ki-Fueled Attack     | 2         | +10ft.             | 1             |
+|  4th  | +2                | Ability Score Improvement, Slow Fall                       | 2         | +10ft.             | 2             |
+|  5th  | +3                | Extra Attack                                               | 3         | +10ft.             | 2             |
+|  6th  | +3                | Ki-Empowered Strikes, Monastic Tradition Feature           | 3         | +15ft.             | 3             |
+|  7th  | +3                | Evasion, Stillness of Mind                                 | 4         | +15ft.             | 3             |
+|  8th  | +3                | Ability Score Improvement                                  | 4         | +15ft.             | 3             |
+|  9th  | +4                | Unarmored Movement Improvement                             | 5         | +15ft.             | 4             |
+| 10th  | +4                | Purity of Body                                             | 5         | +20ft.             | 4             |
+| 11th  | +4                | Monastic Tradition Feature                                 | 6         | +20ft.             | 4             |
+| 12th  | +4                | Ability Score Improvement                                  | 6         | +20ft.             | 4             |
+| 13th  | +5                | Tongue of the Sun and Moon                                 | 7         | +20ft.             | 5             |
+| 14th  | +5                | Diamond Soul                                               | 7         | +25ft.             | 5             |
+| 15th  | +5                | Timeless Body                                              | 8         | +25ft.             | 5             |
+| 16th  | +5                | Ability Score Improvement                                  | 8         | +25ft.             | 5             |
+| 17th  | +6                | Monastic Tradition Feature                                 | 9         | +25ft.             | 6             |
+| 18th  | +6                | Empty Body                                                 | 9         | +30ft.             | 6             |
+| 19th  | +6                | Absility Score Improvement                                 | 10        | +30ft.             | 6             |
+| 20th  | +6                | Perfect Self                                               | 10        | +30ft.             | 6             |
 
 ## Part 1 - Monk Revisions
 

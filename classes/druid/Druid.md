@@ -18,15 +18,15 @@ While you are transformed, the following rules apply:
 - You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.
 - You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.
 
-**Source:** Treantmonk
+**Source:** [Treantmonk](https://www.youtube.com/watch?v=RSjJ25RDUV4)
 
 #### Beast Forms
 
 | Druid Level | New Forms Available |
 |:-----------:|:---------------:|
-| 2nd         | [Scout](./Beast%20Forms.md#Scout), [Hunter](./Beast%20Forms.md#Hunter) |
-| 4th         | [Stalker](./Beast%20Forms.md#Stalker) |
-| 8th         | [Titan](./Beast%20Forms.md#Titan) |
+| 2nd         | [Scout](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#scout), [Hunter](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#hunter) |
+| 4th         | [Stalker](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#stalker) |
+| 8th         | [Titan](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#titan) |
 
 ## Subclasses
 
@@ -38,4 +38,4 @@ The rites of your circle grant you the ability to transform into more dangerous 
 
 #### Elemental Form [New]
 
-At 10th level, you can expend two uses of Wild Shape at the same time to transform into an Air, Earth, Fire, or Water elemental, using the [Elemental]((./Beast%20Forms.md#Elemental) template.
+At 10th level, you can expend two uses of Wild Shape at the same time to transform into an Air, Earth, Fire, or Water elemental, using the [Elemental](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#elemental) template.
