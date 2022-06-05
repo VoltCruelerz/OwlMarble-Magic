@@ -66,7 +66,7 @@ module.exports = class SpellParser {
         // Load the monsters.
         const monsterNameTag = '> ## ';
         const monsterNameRegex = /> ## (.*)/;
-        const monsterNames = fs.readFileSync('spells/Monster Blocks.md', { encoding: 'utf-8', flag: 'r' })
+        const monsterNames = fs.readFileSync('monsters/Monster Blocks.md', { encoding: 'utf-8', flag: 'r' })
             .split('\r\n')
             .filter((line) => line.startsWith(monsterNameTag))
             .map((monsterNameLine) => monsterNameLine.match(monsterNameRegex)[1]);
@@ -412,7 +412,7 @@ module.exports = class SpellParser {
      */
     italicize (line) {
         const count = (line.match(/_/g) || []).length;
-        if (count % 2 != 0) {
+        if (count % 2 !== 0) {
             // We have an odd number, so don't even try to format this.  It would just get weird.
             console.log('Weird line found during italicization: ' + line);
             return line;

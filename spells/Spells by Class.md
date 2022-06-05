@@ -619,6 +619,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Purify Food and Drink](https://www.dndbeyond.com/spells/purify-food-and-drink) - V/S [R] - (PHB - 270)
 - [Snare](https://www.dndbeyond.com/spells/snare) - S/M - (XGE - 165)
 - [Speak with Animals](https://www.dndbeyond.com/spells/speak-with-animals) - V/S [R] - (PHB - 277)
+- [Summon Servant](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#summon-servant) - V/S [C] - (OMM - 1)
 - [Thunderwave](https://www.dndbeyond.com/spells/thunderwave) - V/S - (PHB - 282)
 
 ### Level 2 - _Druid_
@@ -1682,6 +1683,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Slick](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#slick) - V/S/M - (OMM - 1)
 - [Snapshot](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#snapshot) - S/M [R] - (OMM - 1)
 - [Snare](https://www.dndbeyond.com/spells/snare) - S/M - (XGE - 165)
+- [Summon Servant](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/01.md#summon-servant) - V/S [C] - (OMM - 1)
 - [Tasha's Caustic Brew](https://www.dndbeyond.com/spells/tasha's-caustic-brew) - V/S/M [C] - (TCE - 115)
 - [Tasha's Hideous Laughter](https://www.dndbeyond.com/spells/tasha's-hideous-laughter) - V/S/M [C] - (PHB - 280)
 - [Tenser's Floating Disk](https://www.dndbeyond.com/spells/tenser's-floating-disk) - V/S/M [R] - (PHB - 282)

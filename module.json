@@ -1,7 +1,7 @@
 {
     "name": "owlmarble-magic",
     "title": "OwlMarble Magic",
-    "description": "Contains the spells from OwlMarble Magic",
+    "description": "Contains the content from OwlMarble Magic",
     "version": "0.0.1",
     "author": "@voltcruelerz",
     "systems": ["dnd5e"],
@@ -32,13 +32,21 @@
         "module": "owlmarble-magic",
         "path": "packs/feats.db",
         "entity": "Item"
+      },
+      {
+        "name": "features",
+        "label": "OwlMarble Class Features",
+        "system": "dnd5e",
+        "module": "owlmarble-magic",
+        "path": "packs/features.db",
+        "entity": "Item"
       }
     ],
     "languages": [],
     "minimumCoreVersion": "0.8.8",
     "compatibleCoreVersion": "0.8.8",
     "socket": true,
-    "url": "https://github.com/VoltCruelerz/OwlMarble-Magic/tree/master/spells",
+    "url": "https://github.com/VoltCruelerz/OwlMarble-Magic/",
     "manifest": "https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/module.json",
     "download": "https://github.com/VoltCruelerz/OwlMarble-Magic/archive/refs/tags/0.0.1.zip"
   }

@@ -2,9 +2,10 @@
 
 Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew spell and feat lists into FoundryVTT.
 
-## Spells
+## Packs
+### Spells
 
-### Spells by Level
+#### Spells by Level
 
 - [Cantrips](./spells/levels/00.md)
 - [Level 1 Spells](./spells/levels/01.md)
@@ -18,18 +19,22 @@ Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddi
 - [Level 9 Spells](./spells/levels/09.md)
 - [Level 10 Spells](./spells/levels/10.md)
 
-### Appendices
+#### Appendices
 
 - [**General Rules**](./spells/General%20Rules.md): overall spellcasting rules.
 - [**Monster Stat Blocks**](./spells/Monster%20Blocks.md): stat blocks of homebrew monsters that are referenced by spells.
 - [**Spells by Class**](./spells/Spells%20by%20Class.md): a list of all spells for each class once OMM is accounted for.
-- [**OGL**](./spells/OGL.license): This is all just fan content, so here's Wizards' OGL.
+- [**OGL**](./OGL.license): This is all just fan content, so here's Wizards' OGL.
 
-## Feats
+### Feats
 
 See dedicated [page](./feats/feats.md).
 
-## Features
+### Class Features
+
+- [Druid](./classes/druid/Druid.md)
+
+## Script Features
 
 ### Player-Facing Features
 
