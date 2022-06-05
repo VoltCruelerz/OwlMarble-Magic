@@ -7,6 +7,7 @@ const seedrandom = require('seedrandom');
  * @class
  */
 module.exports = class FeatParser {
+    //#region Formatting
     /**
      * Wraps the string in the specified tag.  For example, 'h3' and 'blah' gives '<h3>blah</h3>'.
      * @param {string} tag 
@@ -141,6 +142,7 @@ module.exports = class FeatParser {
     lineIsTable (line) {
         return line.startsWith('|') && line.endsWith('|');
     }
+    //#endregion
 
     /**
      * Generates a UUID from a PRNG seeded on the spell's name.
@@ -166,6 +168,45 @@ module.exports = class FeatParser {
      */
     getRandomInt (max, rng) {
         return Math.floor(rng() * max);
+    }
+
+    /**
+     * Retrieves a DB file and parses it to a string -> entry dictionary.
+     * @param {string} path 
+     * @returns {{*}} dictionary
+     */
+    getDbDict (path) {
+        console.log('======================================\nReading db file: ' + path);
+        const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
+        const lines = contents.split('\n');
+        const entries = lines.filter((line) => line).map((line) => JSON.parse(line));
+        console.log('Entries: ' + entries.length);
+        return entries.reduce((acc, entry) => {
+            acc[entry.name] = entry;
+            return acc;
+        }, {});
+    }
+
+    /**
+     * If the new item and old item are the same except for the date, use the old timestamp.
+     * @param {[{}]} oldItems
+     * @param {[{}]} newItems
+     * @param {string} path
+     */
+    synchronizeDates (oldItemDict, newItems) {
+        return newItems.map((newItem) => {
+            const oldItem = oldItemDict[newItem.name];
+            if (oldItem) {
+                const oldTimeless = JSON.parse(JSON.stringify(oldItem));
+                const newTimeless = JSON.parse(JSON.stringify(newItem));
+                oldTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+                newTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+                if (JSON.stringify(oldTimeless) === JSON.stringify(newTimeless)) {
+                    newItem.flags['owlmarble-magic'].exportTime = oldItem.flags['owlmarble-magic'].exportTime;
+                }
+            }
+            return newItem;
+        });
     }
 
     /**
@@ -197,7 +238,7 @@ module.exports = class FeatParser {
             .filter((p, i) => i > 0);// Trim title line.
         console.log('Found ' + featsRaw.length + ' feats');
 
-        const feats = featsRaw.map((raw) => {
+        let feats = featsRaw.map((raw) => {
             const featRawLines = raw.split('\r\n').filter((line) => line.length > 0);
 
             // Parse name and origin
@@ -336,9 +377,15 @@ module.exports = class FeatParser {
                     ]
                 },
                 effects: [],
-                flags: {}
+                flags: {
+                    'owlmarble-magic': {
+                        exportTime: (new Date()).toString()
+                    }
+                }
             };
         });
+
+        feats = this.synchronizeDates(this.getDbDict('packs/feats.db'), feats);
 
         this.printDb(feats, 'packs/feats.db');
         this.printDb(feats, 'output/all/feats.db');

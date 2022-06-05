@@ -169,9 +169,52 @@ module.exports = class SpellParser {
      * @param {[{}]} spells
      * @param {string} path
      */
-    printSpells (spells, path) {
+    printSpells (oldSpells, newSpells, path) {
         console.log('Printing to: ' + path);
-        const spellLines = spells.map((spell) => JSON.stringify(spell));
+
+        // Build dictionary.
+        const oldLookup = oldSpells.reduce((acc, spell) => {
+            acc[spell.name] = spell;
+            return acc;
+        }, {});
+
+        // Create deep copy so we can add a timestamp without gumming up the diff checker.
+        newSpells = JSON.parse(JSON.stringify(newSpells));
+        newSpells.forEach((newSpell) => {
+            const oldSpell = oldLookup[newSpell.name];
+
+            // Create timeless versions for comparison.
+            const timelessOld = JSON.parse(JSON.stringify(oldSpell || {}));
+            const timelessNew = JSON.parse(JSON.stringify(newSpell));
+            if (!timelessOld.flags) {
+                timelessOld.flags = {
+                    ['owlmarble-magic']: {
+                        exportTime: 'IGNORE ME'
+                    }
+                };
+            }
+            timelessOld.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+            if (!timelessNew.flags['owlmarble-magic']) {
+                timelessNew.flags['owlmarble-magic'] = {
+                    exportTime: 'IGNORE ME'
+                };
+            }
+            timelessNew.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+
+            // Only update the export time if it's actually changed somehow.
+            if (!oldSpell || JSON.stringify(timelessOld) !== JSON.stringify(timelessNew)) {
+                newSpell.flags['owlmarble-magic'] = {
+                    exportTime: (new Date()).toString()
+                };
+            } else {
+                newSpell.flags['owlmarble-magic'] = {
+                    exportTime: oldSpell.flags['owlmarble-magic'].exportTime
+                };
+            }
+        });
+        
+        // Print.
+        const spellLines = newSpells.map((spell) => JSON.stringify(spell));
         const db = spellLines.join('\n') + '\n';
         fs.writeFileSync(path, db);
     }
@@ -296,7 +339,8 @@ module.exports = class SpellParser {
                         system: 'dnd5e',
                         coreVersion: '0.8.8',
                         systemVersion: '1.3.6'
-                    }
+                    },
+                    'owlmarble-magic': {}
                 }
             };
             if (oldName) {
@@ -1349,7 +1393,8 @@ module.exports = class SpellParser {
                             system: 'dnd5e',
                             coreVersion: '0.8.8',
                             systemVersion: '1.3.6'
-                        }
+                        },
+                        'owlmarble-magic': {}
                     }
                 };                
                 this.overrideSpell(importedSpell);
@@ -1796,6 +1841,17 @@ module.exports = class SpellParser {
         const wall = ('======================================');
         console.log(wall + '\nChecking for diffs...');
 
+        // Ignore the export timestamps
+        oldSpells = JSON.parse(JSON.stringify(oldSpells));
+        oldSpells.forEach((spell) => {
+            spell.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+        });
+        newSpells = JSON.parse(JSON.stringify(newSpells));
+        newSpells.forEach((spell) => {
+            spell.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+        });
+
+        // Build dictionaries.
         const oldLookup = oldSpells.reduce((acc, spell) => {
             acc[spell.name] = spell;
             return acc;
@@ -1857,25 +1913,25 @@ module.exports = class SpellParser {
 
         // Homebrew Only
         const homebrew = this.readAndParseInputFiles();
-        this.printSpells(homebrew, 'output/owlmagic-only/spells.db');
+        this.printSpells(this.readSpellDB('output/owlmagic-only/spells.db'), homebrew, 'output/owlmagic-only/spells.db');
 
         // SRD + Homebrew
         const srd = this.readSpellDB('srd/srd.db');
         srd.forEach((srdSpell) => { srdSpell.img = this.getImage(this.decodeSchool(srdSpell.data.school)); });
-        this.printSpells(this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
+        this.printSpells(this.readSpellDB('output/owlmagic-srd/spells.db'), this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
 
         // Publishable
-        this.printSpells(this.mergeSpellLists(srd, homebrew), 'packs/spells.db');
+        this.printSpells(this.readSpellDB('packs/spells.db'), this.mergeSpellLists(srd, homebrew), 'packs/spells.db');
 
         // Imported only
         const imported = this.readAndParseImportedSpells();
         this.sortSpellList(imported);
-        this.printSpells(imported, 'output/imported/spells.db');
+        this.printSpells(this.readSpellDB('output/imported/spells.db'), imported, 'output/imported/spells.db');
 
         // Homebrew + Imported
         const allSpells = this.mergeSpellLists(imported, homebrew);
         const oldSpells = this.readSpellDB('output/all/spells.db');
-        this.printSpells(allSpells, 'output/all/spells.db');
+        this.printSpells(oldSpells, allSpells, 'output/all/spells.db');
 
         // Export the spell lists for all included classes.
         this.exportSpellLists(allSpells, indices);
@@ -1884,7 +1940,7 @@ module.exports = class SpellParser {
 
         // Export all to current foundry install.
         console.log('======================================\nExporting spells to foundry install...');
-        this.printSpells(allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db');
+        this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db');
 
         // Log differences to spells.
         this.logDiff(oldSpells, allSpells);

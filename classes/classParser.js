@@ -183,6 +183,45 @@ module.exports = class ClassPraser {
     }
 
     /**
+     * Retrieves a DB file and parses it to a string -> entry dictionary.
+     * @param {string} path 
+     * @returns {{*}} dictionary
+     */
+    getDbDict (path) {
+        console.log('======================================\nReading db file: ' + path);
+        const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
+        const lines = contents.split('\n');
+        const entries = lines.filter((line) => line).map((line) => JSON.parse(line));
+        console.log('Entries: ' + entries.length);
+        return entries.reduce((acc, entry) => {
+            acc[entry.name] = entry;
+            return acc;
+        }, {});
+    }
+
+    /**
+     * If the new item and old item are the same except for the date, use the old timestamp.
+     * @param {[{}]} oldItems
+     * @param {[{}]} newItems
+     * @param {string} path
+     */
+    synchronizeDates (oldItemDict, newItems) {
+        return newItems.map((newItem) => {
+            const oldItem = oldItemDict[newItem.name];
+            if (oldItem) {
+                const oldTimeless = JSON.parse(JSON.stringify(oldItem));
+                const newTimeless = JSON.parse(JSON.stringify(newItem));
+                oldTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+                newTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+                if (JSON.stringify(oldTimeless) === JSON.stringify(newTimeless)) {
+                    newItem.flags['owlmarble-magic'].exportTime = oldItem.flags['owlmarble-magic'].exportTime;
+                }
+            }
+            return newItem;
+        });
+    }
+
+    /**
      * Gets the title depth of a given line based on the number of #'s in it.
      * @param {string} line The line to evaluate.
      * @returns {number} The number.
@@ -396,7 +435,11 @@ module.exports = class ClassPraser {
                         }
                     },
                     effects: [],
-                    flags: {}
+                    flags: {
+                        'owlmarble-magic': {
+                            exportTime: (new Date()).toString()
+                        }
+                    }
                 });
             });
         }
@@ -419,6 +462,7 @@ module.exports = class ClassPraser {
             }
             return acc;
         }, {});
+        features = this.synchronizeDates(this.getDbDict('packs/features.db'), features);
 
         this.printDb(features, 'packs/features.db');
         this.printDb(features, 'output/all/features.db');
