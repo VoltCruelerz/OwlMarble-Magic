@@ -174,14 +174,12 @@ module.exports = class RuleParser {
     getAllMarkdown (rootPath) {
         const files = [];
         const getFilesRecursively = (directory) => {
-            console.log('Check Dir: ' + directory);
             const filesInDirectory = fs.readdirSync(directory);
             for (const file of filesInDirectory) {
                 const absolute = path.join(directory, file);
                 if (fs.statSync(absolute).isDirectory()) {
                     getFilesRecursively(absolute);
                 } else {
-                    console.log('- File: ' + absolute);
                     files.push(absolute);
                 }
             }
@@ -268,11 +266,13 @@ module.exports = class RuleParser {
 
         // Compile all rule paths.
         const markdownPaths = [
-            ...this.getAllMarkdown('./rules/')
+            ...this.getAllMarkdown('./rules/'),
+            ...this.getAllMarkdown('./classes/'),
+            ...this.getAllMarkdown('./spells/')
         ];
 
+        // Actually parse.
         let journalFiles = markdownPaths.map((path) => {
-            console.log('Path: ' + path);
             const soloName = /.*\\(?<file>.*?)\.md/.exec(path).groups.file;
             const markdownLines = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' }).split('\r\n').filter((line) => line);
 
@@ -359,8 +359,10 @@ module.exports = class RuleParser {
             };
         });
 
+        // Synchronize dates.
         journalFiles = this.synchronizeDates(this.getDbDict('packs/rules.db'), journalFiles);
 
+        // Export.
         this.printDb(journalFiles, 'packs/rules.db');
         this.printDb(journalFiles, 'output/all/rules.db');
         this.printDb(journalFiles, 'output/owlmagic-only/rules.db');
