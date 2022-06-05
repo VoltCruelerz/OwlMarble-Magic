@@ -336,7 +336,11 @@ module.exports = class FeatParser {
                     ]
                 },
                 effects: [],
-                flags: {}
+                flags: {
+                    'owlmarble-magic': {
+                        exportTime: (new Date()).toString()
+                    }
+                }
             };
         });
 

@@ -396,7 +396,11 @@ module.exports = class ClassPraser {
                         }
                     },
                     effects: [],
-                    flags: {}
+                    flags: {
+                        'owlmarble-magic': {
+                            exportTime: (new Date()).toString()
+                        }
+                    }
                 });
             });
         }
