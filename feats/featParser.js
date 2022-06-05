@@ -201,10 +201,6 @@ module.exports = class FeatParser {
                 const newTimeless = JSON.parse(JSON.stringify(newItem));
                 oldTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
                 newTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
-                if (newItem.name === 'Ancestral Radiance ') {
-                    console.log('\nOLD:\n' + JSON.stringify(oldTimeless));
-                    console.log('\NEW:\n' + JSON.stringify(newTimeless));
-                }
                 if (JSON.stringify(oldTimeless) === JSON.stringify(newTimeless)) {
                     newItem.flags['owlmarble-magic'].exportTime = oldItem.flags['owlmarble-magic'].exportTime;
                 }
