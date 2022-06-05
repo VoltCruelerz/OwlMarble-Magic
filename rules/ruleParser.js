@@ -344,7 +344,7 @@ module.exports = class RuleParser {
                 .replaceAll('</blockquote><blockquote>', '');// Merge adjacent block quotes.
 
             return {
-                _id: this.generateUUID(),
+                _id: this.generateUUID(`${path} (OwlMarble Magic - Rules)`),
                 name: soloName,
                 permission: {
                     default: 2
