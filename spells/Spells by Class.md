@@ -754,6 +754,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Shifting Seasons](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#shifting-seasons) - V/S [C] - (OMM - 5)
 - [Sinkhole](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#sinkhole) - V/S - (OMM - 5)
 - [Summon Draconic Spirit](https://www.dndbeyond.com/spells/summon-draconic-spirit) - V/S/M$ [C] - (FTD - 21)
+- [The Forest Hungers](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#the-forest-hungers) - V/S/M [C] - (OMM - 5)
 - [Transmute Rock](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#transmute-rock) - V/S/M - (OMM - 5)
 - [Tree Stride](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#tree-stride) - V/S [C] - (OMM - 5)
 - [Twilight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells/levels/05.md#twilight) - V/S/M [C] - (OMM - 5)

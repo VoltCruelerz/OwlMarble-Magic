@@ -110,6 +110,16 @@ _Credits to u/NotTheSmoooze_
 
 Whenever you summon your pact weapon, you can create a shadow figment in your other hand, provided it doesn’t have the two-handed property.  The copy doesn’t gain the benefit of any of your pact weapon’s magical properties, but you can engage in two-weapon fighting with both weapons, even if they aren’t light, and you can perform somatic components of spells while holding both weapons.
 
+##### Dreadful Edge [New]
+
+_Prerequisite: Level 7_
+
+If you roll initiative without having your pact weapon summoned or drawn, when you first summon or draw it, creatures of your choice within a number of feet equal to 10 times your proficiency bonus must succeed on a Wisdom saving throw or be frightened of you until the end of their next turns.
+
+Additionally, you have advantage on saving throws to avoid being frightened or charmed while you hold your pact weapon.
+
+**Inspiration:** [u/Ascended_Bebop](https://www.reddit.com/r/UnearthedArcana/comments/v4dhfj/additional_warlock_invocations_tap_into_forbidden/)
+
 ##### Blade’s Guard [Updated]
 
 _Credits to u/NotTheSmoooze_
@@ -203,6 +213,31 @@ When you complete a long rest, you can select an entirely new body from your pat
 _Prerequisite: 18th level_
 
 At the start of each of your turns, unless you have taken fire or acid damage since the end of your last turn, you regain hit points equal to your Constitution modifier.  If your body had been obliterated, such as by the Disintegrate spell, your body reforms standing up with one hit point.  Once you have reformed your body in this way, you cannot do so again until you complete a long rest.
+
+#### Pact of the Talisman
+
+##### Talisman of Manifold Forms [New]
+
+As an action while your talisman is within 30 feet of you, you can transform it into an object of your choosing. The talisman takes the form of a piece of adventuring gear, set of artisan's tools, weapon, or musical instrument. The resulting form's gold value cannot exceed 20 times your proficiency bonus.
+
+**Inspiration:** [u/Ascended_Bebop](https://www.reddit.com/r/UnearthedArcana/comments/v4dhfj/additional_warlock_invocations_tap_into_forbidden/)
+
+#### Pact of the Tome
+
+##### Eldritch Bestiary [New]
+
+As part of a short or long rest, you can spend 1 hour searching your Book of Shadows for knowledge of any specific type of Aberration, Celestial, Fey, Fiend, Elemental, or Undead that you have heard of or seen before, such as vampires or imps.
+
+At the end of this time, you learn one piece of information of your choice about the creature from the below list. Once you have learned two pieces of information about a specific type of creature, you find no more information on that creature in the book.
+
+- Resistances
+- Damage Immunities
+- Condition Immunities
+- Vulnerabilities
+- Special Senses
+- Usual Behaviors
+
+**Source:** [u/Ascended_Bebop](https://www.reddit.com/r/UnearthedArcana/comments/v4dhfj/additional_warlock_invocations_tap_into_forbidden/)
 
 ### Cantrip Invocations
 
