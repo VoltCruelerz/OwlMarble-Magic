@@ -7,6 +7,7 @@ const seedrandom = require('seedrandom');
  * @class
  */
 module.exports = class FeatParser {
+    //#region Formatting
     /**
      * Wraps the string in the specified tag.  For example, 'h3' and 'blah' gives '<h3>blah</h3>'.
      * @param {string} tag 
@@ -141,6 +142,7 @@ module.exports = class FeatParser {
     lineIsTable (line) {
         return line.startsWith('|') && line.endsWith('|');
     }
+    //#endregion
 
     /**
      * Generates a UUID from a PRNG seeded on the spell's name.
@@ -169,6 +171,41 @@ module.exports = class FeatParser {
     }
 
     /**
+     * Retrieves a DB file and parses it to a string -> entry dictionary.
+     * @param {string} path 
+     * @returns {{*}} dictionary
+     */
+    getDbDict (path) {
+        console.log('======================================\nReading db file: ' + path);
+        const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
+        const lines = contents.split('\n');
+        const entries = lines.filter((line) => line).map((line) => JSON.parse(line));
+        return entries.reduce((acc, entry) => {
+            acc[entry.name] = entry;
+            return acc;
+        }, {});
+    }
+
+    /**
+     * If the new item and old item are the same except for the date, use the old timestamp.
+     * @param {[{}]} oldItems
+     * @param {[{}]} newItems
+     * @param {string} path
+     */
+    synchronizeDates (oldItemDict, newItems) {
+        return newItems.map((newItem) => {
+            const oldItem = oldItemDict[newItem.name] || {};
+            const oldTimeless = JSON.parse(JSON.stringify(oldItem));
+            const newTimeless = JSON.parse(JSON.stringify(newItem));
+            oldTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+            newTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+            if (oldItem && JSON.stringify(oldTimeless) === JSON.stringify(newTimeless)) {
+                newItem.flags['owlmarble-magic'].exportTime = oldItem.flags['owlmarble-magic'].exportTime;
+            }
+        });
+    }
+
+    /**
      * Prints the json objects to a Foundry db.
      * @param {[{}]} items
      * @param {string} path
@@ -191,13 +228,15 @@ module.exports = class FeatParser {
             return acc;
         }, {});
 
+        const oldFeats = this.getDbDict('packs/feats.db');
+
         // Read Feats
         const featsRaw = fs.readFileSync('feats/feats.md', { encoding: 'utf-8', flag: 'r' })
             .split('\r\n## ')
             .filter((p, i) => i > 0);// Trim title line.
         console.log('Found ' + featsRaw.length + ' feats');
 
-        const feats = featsRaw.map((raw) => {
+        let feats = featsRaw.map((raw) => {
             const featRawLines = raw.split('\r\n').filter((line) => line.length > 0);
 
             // Parse name and origin
@@ -343,6 +382,8 @@ module.exports = class FeatParser {
                 }
             };
         });
+
+        feats = this.synchronizeDates(oldFeats, feats);
 
         this.printDb(feats, 'packs/feats.db');
         this.printDb(feats, 'output/all/feats.db');
