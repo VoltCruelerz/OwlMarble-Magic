@@ -40,6 +40,14 @@
         "module": "owlmarble-magic",
         "path": "packs/features.db",
         "entity": "Item"
+      },
+      {
+        "name": "rules",
+        "label": "OwlMarble Rules",
+        "system": "dnd5e",
+        "module": "owlmarble-magic",
+        "path": "packs/rules.db",
+        "entity": "JournalEntry"
       }
     ],
     "languages": [],

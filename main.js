@@ -2,6 +2,7 @@ const SpellParser = require('./src/spellParser.js');
 const test = require('./tests/tests.js');
 const FeatParser = require('./feats/featParser.js');
 const ClassParser = require('./classes/classParser.js');
+const RuleParser = require('./rules/ruleParser.js');
 const wall = '======================================';
 
 console.log('Starting Spell Parser...');
@@ -20,3 +21,8 @@ console.log(wall + '\n\n' + wall + '\nParsing Classes...');
 const classParser = new ClassParser();
 classParser.run(omm);
 console.log(wall + '\nClass Parsing Done.');
+
+console.log(wall + '\n\n' + wall + '\nParsing Rules...');
+const ruleParser = new RuleParser();
+ruleParser.run(omm);
+console.log(wall + '\nRule Parsing Done.');
