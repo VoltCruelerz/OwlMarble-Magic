@@ -1,8 +1,9 @@
 # OwlMarble Magic
 
-Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew spell and feat lists into FoundryVTT.
+Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew rules into FoundryVTT to function as the single source of truth.
 
 ## Packs
+
 ### Spells
 
 #### Spells by Level
@@ -32,7 +33,14 @@ See dedicated [page](./feats/feats.md).
 
 ### Class Features
 
+- [Artificer](./classes/artificer/Artificer.md)
 - [Druid](./classes/druid/Druid.md)
+- [Fighter](./classes/fighter/Fighter.md)
+- [Monk](./classes/monk/Monk.md)
+- [Ranger](./classes/ranger/Ranger.md)
+- [Rogue](./classes/rogue/Rogue.md)
+- [Sorcerer](./classes/sorcerer/Sorcerer.md)
+- [Warlock](./classes/warlock/Warlock.md)
 
 ## Script Features
 
@@ -64,9 +72,11 @@ See dedicated [page](./feats/feats.md).
 ### Parser Execution
 
 1. deposit any spell input files you wish to parse into `import/` and `srd/`.
-2. run `npm install`
-3. run `node main.js`.
-4. review `test.log` for any issues.
+2. deposit any features into `feats/feats.md`
+3. deposit any classes into `classes/myclass/Myclass.md`
+4. run `npm install`
+5. run `node main.js`.
+6. review `test.log` for any issues.
 
 ### Known Issues
 
