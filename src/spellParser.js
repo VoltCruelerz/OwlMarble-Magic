@@ -182,7 +182,23 @@ module.exports = class SpellParser {
         newSpells = JSON.parse(JSON.stringify(newSpells));
         newSpells.forEach((newSpell) => {
             const oldSpell = oldLookup[newSpell.name];
-            if (!oldSpell || JSON.stringify(oldSpell) !== JSON.stringify(newSpell)) {
+
+            // Create timeless versions for comparison.
+            const timelessOld = JSON.parse(JSON.stringify(oldSpell || {}));
+            const timelessNew = JSON.parse(JSON.stringify(newSpell));
+            if (!timelessOld.flags) {
+                timelessOld.flags = {
+                    ['owlmarble-magic']: {}
+                };
+            }
+            timelessOld.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+            if (!timelessNew.flags['owlmarble-magic']) {
+                timelessNew.flags['owlmarble-magic'] = {};
+            }
+            timelessNew.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+
+            // Only update the export time if it's actually changed somehow.
+            if (!oldSpell || JSON.stringify(timelessOld) !== JSON.stringify(timelessNew)) {
                 newSpell.flags['owlmarble-magic'] = {
                     exportTime: (new Date()).toString()
                 };
