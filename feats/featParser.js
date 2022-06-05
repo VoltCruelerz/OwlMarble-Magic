@@ -180,6 +180,7 @@ module.exports = class FeatParser {
         const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
         const lines = contents.split('\n');
         const entries = lines.filter((line) => line).map((line) => JSON.parse(line));
+        console.log('Entries: ' + entries.length);
         return entries.reduce((acc, entry) => {
             acc[entry.name] = entry;
             return acc;
@@ -194,14 +195,21 @@ module.exports = class FeatParser {
      */
     synchronizeDates (oldItemDict, newItems) {
         return newItems.map((newItem) => {
-            const oldItem = oldItemDict[newItem.name] || {};
-            const oldTimeless = JSON.parse(JSON.stringify(oldItem));
-            const newTimeless = JSON.parse(JSON.stringify(newItem));
-            oldTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
-            newTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
-            if (oldItem && JSON.stringify(oldTimeless) === JSON.stringify(newTimeless)) {
-                newItem.flags['owlmarble-magic'].exportTime = oldItem.flags['owlmarble-magic'].exportTime;
+            const oldItem = oldItemDict[newItem.name];
+            if (oldItem) {
+                const oldTimeless = JSON.parse(JSON.stringify(oldItem));
+                const newTimeless = JSON.parse(JSON.stringify(newItem));
+                oldTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+                newTimeless.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
+                if (newItem.name === 'Ancestral Radiance ') {
+                    console.log('\nOLD:\n' + JSON.stringify(oldTimeless));
+                    console.log('\NEW:\n' + JSON.stringify(newTimeless));
+                }
+                if (JSON.stringify(oldTimeless) === JSON.stringify(newTimeless)) {
+                    newItem.flags['owlmarble-magic'].exportTime = oldItem.flags['owlmarble-magic'].exportTime;
+                }
             }
+            return newItem;
         });
     }
 
@@ -227,8 +235,6 @@ module.exports = class FeatParser {
             acc[spell.name] = spell;
             return acc;
         }, {});
-
-        const oldFeats = this.getDbDict('packs/feats.db');
 
         // Read Feats
         const featsRaw = fs.readFileSync('feats/feats.md', { encoding: 'utf-8', flag: 'r' })
@@ -383,7 +389,7 @@ module.exports = class FeatParser {
             };
         });
 
-        feats = this.synchronizeDates(oldFeats, feats);
+        feats = this.synchronizeDates(this.getDbDict('packs/feats.db'), feats);
 
         this.printDb(feats, 'packs/feats.db');
         this.printDb(feats, 'output/all/feats.db');

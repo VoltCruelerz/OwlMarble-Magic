@@ -4,7 +4,7 @@
 
 _Requirement: Aasimar_
 
-You regain the use of your Radiant Soul, Radiant Consumption, or Necrotic Shroud on a short rest, and when you use it, you gain temporary hit points equal to your level that last for the effect’s duration.
+You regain the use of your Radiant Soul, Radiant Consumption, or Necrotic Shroud on a short rest, and when you use it, you gain temporary hit points equal to your level that last for the effect’s duration. SDF
 
 ## Arcane Accuracy [New]
 
