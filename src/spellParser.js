@@ -203,15 +203,6 @@ module.exports = class SpellParser {
 
             // Only update the export time if it's actually changed somehow.
             if (!oldSpell || JSON.stringify(timelessOld) !== JSON.stringify(timelessNew)) {
-                if (newSpell.name === 'Acid Splash') {
-                    console.log('\nACID TIME for ' + path);
-                    console.log('- Old Spell? ' + oldSpell);
-                    console.log('- Otherwise Match? ' + (JSON.stringify(timelessOld) === JSON.stringify(timelessNew)));
-                    // console.log('Old:\n' + JSON.stringify(oldSpell));
-                    // console.log('New:\n' + JSON.stringify(newSpell));
-                    // console.log(detailedDiff(timelessOld, timelessNew));
-                    // console.log('Old Time: ' + oldSpell?.flags['owlmarble-magic'].exportTime);
-                }
                 newSpell.flags['owlmarble-magic'] = {
                     exportTime: (new Date()).toString()
                 };
@@ -1919,27 +1910,27 @@ module.exports = class SpellParser {
         // Index the spells and synchronize any links.
         const indices = this.indexSpellsAndMonsters();
         this.updateReferences(indices);
-        const oldSpells = this.readSpellDB('output/all/spells.db');
 
         // Homebrew Only
         const homebrew = this.readAndParseInputFiles();
-        //this.printSpells(oldSpells, homebrew, 'output/owlmagic-only/spells.db');
+        this.printSpells(this.readSpellDB('output/owlmagic-only/spells.db'), homebrew, 'output/owlmagic-only/spells.db');
 
         // SRD + Homebrew
         const srd = this.readSpellDB('srd/srd.db');
         srd.forEach((srdSpell) => { srdSpell.img = this.getImage(this.decodeSchool(srdSpell.data.school)); });
-        //this.printSpells(oldSpells, this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
+        this.printSpells(this.readSpellDB('output/owlmagic-srd/spells.db'), this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
 
         // Publishable
-        //this.printSpells(oldSpells, this.mergeSpellLists(srd, homebrew), 'packs/spells.db');
+        this.printSpells(this.readSpellDB('packs/spells.db'), this.mergeSpellLists(srd, homebrew), 'packs/spells.db');
 
         // Imported only
         const imported = this.readAndParseImportedSpells();
         this.sortSpellList(imported);
-        //this.printSpells(oldSpells, imported, 'output/imported/spells.db');
+        this.printSpells(this.readSpellDB('output/imported/spells.db'), imported, 'output/imported/spells.db');
 
         // Homebrew + Imported
         const allSpells = this.mergeSpellLists(imported, homebrew);
+        const oldSpells = this.readSpellDB('output/all/spells.db');
         this.printSpells(oldSpells, allSpells, 'output/all/spells.db');
 
         // Export the spell lists for all included classes.
