@@ -1,13 +1,12 @@
 const fs = require('fs');
 const seedrandom = require('seedrandom');
-const { detailedDiff } = require('deep-object-diff');
 
 
 /**
  * Sets up a feat parser for OwlMarble Magic.
  * @class
  */
-module.exports = class SpellParser {
+module.exports = class FeatParser {
     /**
      * Wraps the string in the specified tag.  For example, 'h3' and 'blah' gives '<h3>blah</h3>'.
      * @param {string} tag 
@@ -341,6 +340,7 @@ module.exports = class SpellParser {
             };
         });
 
+        this.printDb(feats, 'packs/feats.db');
         this.printDb(feats, 'output/all/feats.db');
         this.printDb(feats, 'output/owlmagic-only/feats.db');
         this.printDb(feats, 'output/owlmagic-srd/feats.db');
