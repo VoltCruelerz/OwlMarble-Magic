@@ -188,17 +188,30 @@ module.exports = class SpellParser {
             const timelessNew = JSON.parse(JSON.stringify(newSpell));
             if (!timelessOld.flags) {
                 timelessOld.flags = {
-                    ['owlmarble-magic']: {}
+                    ['owlmarble-magic']: {
+                        exportTime: 'IGNORE ME'
+                    }
                 };
             }
             timelessOld.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
             if (!timelessNew.flags['owlmarble-magic']) {
-                timelessNew.flags['owlmarble-magic'] = {};
+                timelessNew.flags['owlmarble-magic'] = {
+                    exportTime: 'IGNORE ME'
+                };
             }
             timelessNew.flags['owlmarble-magic'].exportTime = 'IGNORE ME';
 
             // Only update the export time if it's actually changed somehow.
             if (!oldSpell || JSON.stringify(timelessOld) !== JSON.stringify(timelessNew)) {
+                if (newSpell.name === 'Acid Splash') {
+                    console.log('\nACID TIME for ' + path);
+                    console.log('- Old Spell? ' + oldSpell);
+                    console.log('- Otherwise Match? ' + (JSON.stringify(timelessOld) === JSON.stringify(timelessNew)));
+                    // console.log('Old:\n' + JSON.stringify(oldSpell));
+                    // console.log('New:\n' + JSON.stringify(newSpell));
+                    // console.log(detailedDiff(timelessOld, timelessNew));
+                    // console.log('Old Time: ' + oldSpell?.flags['owlmarble-magic'].exportTime);
+                }
                 newSpell.flags['owlmarble-magic'] = {
                     exportTime: (new Date()).toString()
                 };
@@ -1910,20 +1923,20 @@ module.exports = class SpellParser {
 
         // Homebrew Only
         const homebrew = this.readAndParseInputFiles();
-        this.printSpells(oldSpells, homebrew, 'output/owlmagic-only/spells.db');
+        //this.printSpells(oldSpells, homebrew, 'output/owlmagic-only/spells.db');
 
         // SRD + Homebrew
         const srd = this.readSpellDB('srd/srd.db');
         srd.forEach((srdSpell) => { srdSpell.img = this.getImage(this.decodeSchool(srdSpell.data.school)); });
-        this.printSpells(oldSpells, this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
+        //this.printSpells(oldSpells, this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
 
         // Publishable
-        this.printSpells(oldSpells, this.mergeSpellLists(srd, homebrew), 'packs/spells.db');
+        //this.printSpells(oldSpells, this.mergeSpellLists(srd, homebrew), 'packs/spells.db');
 
         // Imported only
         const imported = this.readAndParseImportedSpells();
         this.sortSpellList(imported);
-        this.printSpells(oldSpells, imported, 'output/imported/spells.db');
+        //this.printSpells(oldSpells, imported, 'output/imported/spells.db');
 
         // Homebrew + Imported
         const allSpells = this.mergeSpellLists(imported, homebrew);
