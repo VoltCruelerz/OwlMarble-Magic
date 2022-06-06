@@ -118,29 +118,29 @@ _**Note**: all inanimate objects are immune to Psychic and Poison damage, so the
 | **Substance** | **AC** | **DT** | **RT** | **Vulnerabilities** | **Immunities** | **Special Effects** |
 |:---------:|:--:|:--:|:--:|:---------------:|:----------:|:---------------:|
 | **Cloth** | 10 | -  | - | Fire, Piercing, Slashing | Bludgeoning, Cold | - |
-| **Paper** | 8 | - | - | Fire | Cold | -
-| **Hemp** | 11 | - | - | - | Cold | -
-| **Silk** | 10 | - | - | - | Bludgeoning, Cold | -
-| **Crystal** | 13 | - | - | Bludgeoning | Necrotic | -
-| **Glass** | 12 | - | - | Bludgeoning | Necrotic | -
-| **Inert Glass** | 15 | - | - | - | Acid, Cold, Fire, Necrotic | -
+| **Paper** | 8 | - | - | Fire | Cold | - |
+| **Hemp** | 11 | - | - | - | Cold | - |
+| **Silk** | 10 | - | - | - | Bludgeoning, Cold | - |
+| **Crystal** | 13 | - | - | Bludgeoning | Necrotic | - |
+| **Glass** | 12 | - | - | Bludgeoning | Necrotic | - |
+| **Inert Glass** | 15 | - | - | - | Acid, Cold, Fire, Necrotic | - |
 | **Ice** | 13 | - | - | - | - | - |
-| **Dark Ice** | 14 | - | - | - | - | Cold Heals
-| **Wood** | 15 | 2 | - | Fire | Cold | -
-| **Faeleaf** | 16 | 2 | - | - | - | -
-| **Dry Bone** | 15 | - | - | Bludgeoning | - | -
-| **Stone** | 17 | 4 | - | - | - | -
-| **Bronze** | 18 | 3 | - | - | - | -
-| **Steel** | 19 | 5 | - | - | - | - 
-| **Mithral** | 21 | 5 | - | - | - | -
-| **Adamantine** | 23 | - | 10 | - | - | -
+| **Dark Ice** | 14 | - | - | - | - | Cold Heals |
+| **Wood** | 15 | 2 | - | Fire | Cold | - |
+| **Faeleaf** | 16 | 2 | - | - | - | - |
+| **Dry Bone** | 15 | - | - | Bludgeoning | - | - |
+| **Stone** | 17 | 4 | - | - | - | - |
+| **Bronze** | 18 | 3 | - | - | - | - |
+| **Steel** | 19 | 5 | - | - | - | -  |
+| **Mithral** | 21 | 5 | - | - | - | - |
+| **Adamantine** | 23 | - | 10 | - | - | - |
 | **Orichalcum** | 25 | - | 15 | - | - | - |
 
 ### Sizes
 
 |   | Fragile | Resilient |
 |:-:|:-------:|:---------:|
-| **Tiny** | 1d4 | 2d4
-| **Small** | 1d6 | 3d6
-| **Medium** | 1d8 | 4d8
-| **Large** | 1d10 | 5d10
+| **Tiny** | 1d4 | 2d4 |
+| **Small** | 1d6 | 3d6 |
+| **Medium** | 1d8 | 4d8 |
+| **Large** | 1d10 | 5d10 |
