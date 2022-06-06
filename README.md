@@ -42,6 +42,25 @@ See dedicated [page](./feats/feats.md).
 - [Sorcerer](./classes/sorcerer/Sorcerer.md)
 - [Warlock](./classes/warlock/Warlock.md)
 
+### Rules
+
+- [Actions in Combat](./rules/Actions%20in%20Combat.md)
+- [Spells](./spells/General%20Rules.md): overall spellcasting rules.
+- [Combat Situations](./rules/Combat%20Situations.md)
+- [Critical Hits](./rules/Critical%20Hits.md)
+- [Health and Death](./rules/Health%20and%20Death.md)
+- [Lifting and Carrying](./rules/Lifting%20and%20Carrying.md)
+- [Nature of Magic](./rules/Nature%20of%20Magic.md)
+- [Priority Initiative](./rules/Priority%20Initiative.md)
+- [Statuses](./rules/Statuses.md)
+- [Structures & Strongholds](./rules/Structures%20and%20Strongholds.md)
+- [Training NPCs](./rules/Training%20NPCs.md)
+- [Travel and Wilderness](./rules/Travel%20and%20Wilderness.md)
+- [Two-Weapon Fighting](./rules/Two-Weapon%20Fighting.md)
+- Items
+  - [Mundane Items](./rules/items/Mundane%20Items.md)
+  - [Magic Item Crafting](./rules/items/Magic%20Item%20Crafting.md)
+
 ## Script Features
 
 ### Player-Facing Features
@@ -71,12 +90,14 @@ See dedicated [page](./feats/feats.md).
 
 ### Parser Execution
 
-1. deposit any spell input files you wish to parse into `import/` and `srd/`.
-2. deposit any features into `feats/feats.md`
-3. deposit any classes into `classes/myclass/Myclass.md`
-4. run `npm install`
-5. run `node main.js`.
-6. review `test.log` for any issues.
+1. deposit any input files you wish to parse into the relevant folders.
+  A. spells: `import/` and `srd/`
+  B. features: `feats/feats.md`
+  C. classes:  `classes/myclass/Myclass.md`
+  D. rules:  `rules/MyRule.md`
+2. run `npm install`
+3. run `node main.js`.
+4. review `test.log` and the console for any issues.
 
 ### Known Issues
 
