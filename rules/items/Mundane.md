@@ -1,6 +1,7 @@
 # Mundane Items
 
 These rules are for describing assorted items and equipment that is nonmagical.
+
 ## Equipment
 
 ### Weapons
