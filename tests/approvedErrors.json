@@ -142,7 +142,8 @@
         "components": {"value":"","vocal":true,"somatic":true,"material":true,"ritual":true,"concentration":true}
     },
     "Detect Thoughts": {
-        "target": {"value":null,"units":"","type":"self"}
+        "target": {"value":null,"units":"","type":"self"},
+        "scaling": {"mode":"level","formula":""}
     },
     "Dimension Door": {
         "target": {"value":1,"units":"","type":"creature"}
@@ -610,6 +611,9 @@
     },
     "Water Walk": {
         "target": {"value":1,"units":"","type":"creature"}
+    },
+    "Web": {
+        "scaling": {"mode":"level","formula":""}
     },
     "Weird": {
         "duration": {"value":null,"units":"inst"},

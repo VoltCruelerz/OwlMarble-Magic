@@ -49,14 +49,17 @@ module.exports = class RuleParser {
     /**
      * Italicizes or links anything enclosed in underscores.
      * @param {string} line The line to parse for italics and spell links.
+     * @param {string} filename The name of the file.
+     * @param {number} lineNumber The line in the file.
      * @param {{}} spellDict The spell dictionary.
      * @returns A html-ified variant with compendium links.
      */
-    italilink (line, spellDict) {
-        const count = (line.match(/_/g) || []).length;
+    italilink (line, filename, lineNumber, spellDict) {
+        const noUrlLine = line.replaceAll(/\[.+]\(.+?\)/g, '');
+        const count = (noUrlLine.match(/_/g) || []).length;
         if (count % 2 != 0) {
             // We have an odd number, so don't even try to format this.  It would just get weird.
-            console.log('Weird line found during italilinking: ' + line);
+            console.log(`${filename}[${lineNumber}]: Weird line will be ignored by italilink: ${line}`);
             return line;
         }
         return line.replaceAll(/_(.*?)_/gm, (match, g1) => {
@@ -86,6 +89,30 @@ module.exports = class RuleParser {
     listify (line) {
         const content = line.match(/^\W*- (.*)/);
         return '<li>' + content[1] + '</li>';
+    }
+
+    /**
+     * Replaces markdown links with html links.
+     * @param {string} line 
+     * @returns {string}
+     */
+    linkify (line) {
+        // Convert reddit users into proper urls.
+        line = line.replaceAll(/(\W+)u\/([\w|\-|_]+)/g, (match, g1, g2) => {
+            const pre = g1;
+            const username = g2;
+            const url = 'https://www.reddit.com/user/' + username;
+            return `${pre}<a href="${url}">u/${username}</a>`;
+        });
+
+        // General markdown link to html link.
+        return line.replaceAll(/(^|\W)\[(\w.*?\w)\]\((https:\/\/.*?)\)(\W|$)/g, (match, g1, g2, g3, g4) => {
+            const pre = g1;
+            const name = g2;
+            const url = g3;
+            const post = g4;
+            return `${pre}<a href="${url}">${name}</a>${post}`;
+        });
     }
 
     /**
@@ -143,6 +170,15 @@ module.exports = class RuleParser {
     lineIsTable (line) {
         return line.match(/^(?:> )?\|(?:.*?\|)+$/);
     }
+
+    /**
+     * Checks to see if the line is purely hyphens or underscores
+     * @param {Input line} line 
+     * @returns 
+     */
+    lineIsHR (line) {
+        return line.match(/^(?:> )?[_|-]+$/);
+    }
     //#endregion
 
     /**
@@ -191,13 +227,15 @@ module.exports = class RuleParser {
     /**
      * Prints the json objects to a Foundry db.
      * @param {[{}]} items
-     * @param {string} path
+     * @param {string[]} path
      */
-    printDb (items, path) {
-        console.log('Printing to: ' + path);
-        const lines = items.map((item) => JSON.stringify(item));
-        const db = lines.join('\n') + '\n';
-        fs.writeFileSync(path, db);
+    printDb (items, paths) {
+        console.log(`Printing to ${paths.length} files`);
+        paths.forEach((path) => {
+            const lines = items.map((item) => JSON.stringify(item));
+            const db = lines.join('\n') + '\n';
+            fs.writeFileSync(path, db);
+        });
     }
 
     /**
@@ -306,6 +344,8 @@ module.exports = class RuleParser {
                     line = this.listify(line);
                 } else if (this.lineIsHeader(line)) {
                     line = this.headerify(line);
+                } else if (this.lineIsHR(line)) {
+                    line = '<hr />';
                 } else if (this.lineIsTable(line)) {
                     if (!this.lineIsTable(prevLine)) {
                         // This is the start of the table.
@@ -324,7 +364,7 @@ module.exports = class RuleParser {
                 }
                 
                 // Handle final formatting
-                let formattedLine = this.boldify(this.italilink(line, spellDict));
+                let formattedLine = this.linkify(this.boldify(this.italilink(line, soloName, i, spellDict)));
 
                 // Add the line.
                 journalLines.push(formattedLine);
@@ -363,10 +403,12 @@ module.exports = class RuleParser {
         journalFiles = this.synchronizeDates(this.getDbDict('packs/rules.db'), journalFiles);
 
         // Export.
-        this.printDb(journalFiles, 'packs/rules.db');
-        this.printDb(journalFiles, 'output/all/rules.db');
-        this.printDb(journalFiles, 'output/owlmagic-only/rules.db');
-        this.printDb(journalFiles, 'output/owlmagic-srd/rules.db');
-        this.printDb(journalFiles, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/rules.db');
+        this.printDb(journalFiles, [
+            'packs/rules.db',
+            'output/all/rules.db',
+            'output/owlmagic-only/rules.db',
+            'output/owlmagic-srd/rules.db',
+            'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/rules.db'
+        ]);
     }
 };

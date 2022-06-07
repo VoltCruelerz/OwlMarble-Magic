@@ -4,7 +4,7 @@
 
 ### Debilitations [u/nomiddlename303]
 
-See document.
+See [document](https://www.reddit.com/r/UnearthedArcana/comments/rjwq0u/rogue_optiona_feature_debilitate_v11_spend_your/).
 
 ### Cunning Action [Updated]
 

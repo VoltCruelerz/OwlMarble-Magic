@@ -113,6 +113,21 @@ module.exports = class ClassPraser {
     }
 
     /**
+     * Replaces markdown links with html links.
+     * @param {string} line 
+     * @returns {string}
+     */
+    linkify (line) {
+        return line.replaceAll(/(^|\W)\[(\w.*?\w)\]\((https:\/\/.*?)\)(\W|$)/g, (match, g1, g2, g3, g4) => {
+            const pre = g1;
+            const name = g2;
+            const url = g3;
+            const post = g4;
+            return `${pre}<a href="${url}">${name}</a>${post}`;
+        });
+    }
+
+    /**
      * Gets the current list depth, assuming two spaces per level.
      * @param {string} line 
      * @returns {number} the depth of the list
@@ -141,6 +156,15 @@ module.exports = class ClassPraser {
      */
     lineIsTable (line) {
         return line.match(/^(?:> )?\|(?:.*?\|)+$/);
+    }
+
+    /**
+     * Checks to see if the line is purely hyphens or underscores
+     * @param {Input line} line 
+     * @returns 
+     */
+    lineIsHR (line) {
+        return line.match(/^(?:> )?[_|-]+$/);
     }
     //#endregion
 
@@ -173,13 +197,15 @@ module.exports = class ClassPraser {
     /**
      * Prints the json objects to a Foundry db.
      * @param {[{}]} items
-     * @param {string} path
+     * @param {string[]} path
      */
-    printDb (items, path) {
-        console.log('Printing to: ' + path);
-        const lines = items.map((item) => JSON.stringify(item));
-        const db = lines.join('\n') + '\n';
-        fs.writeFileSync(path, db);
+    printDb (items, paths) {
+        console.log(`Printing to ${paths.length} files`);
+        paths.forEach((path) => {
+            const lines = items.map((item) => JSON.stringify(item));
+            const db = lines.join('\n') + '\n';
+            fs.writeFileSync(path, db);
+        });
     }
 
     /**
@@ -331,6 +357,8 @@ module.exports = class ClassPraser {
                         line = this.listify(line);
                     } else if (this.lineIsHeader(line)) {
                         line = this.headerify(line, depth);
+                    } else if (this.lineIsHR(line)) {
+                        line = '<hr />';
                     } else if (this.lineIsTable(line)) {
                         if (!this.lineIsTable(prevLine)) {
                             // This is the start of the table.
@@ -349,7 +377,7 @@ module.exports = class ClassPraser {
                     }
                     
                     // Handle final formatting
-                    let formattedLine = this.boldify(this.italilink(line, spellDict));
+                    let formattedLine = this.linkify(this.boldify(this.italilink(line, spellDict)));
 
                     // Add the line.
                     featureLines.push(formattedLine);
@@ -464,11 +492,13 @@ module.exports = class ClassPraser {
         }, {});
         features = this.synchronizeDates(this.getDbDict('packs/features.db'), features);
 
-        this.printDb(features, 'packs/features.db');
-        this.printDb(features, 'output/all/features.db');
-        this.printDb(features, 'output/owlmagic-only/features.db');
-        this.printDb(features, 'output/owlmagic-srd/features.db');
-        this.printDb(features, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/features.db');
+        this.printDb(features, [
+            'packs/features.db',
+            'output/all/features.db',
+            'output/owlmagic-only/features.db',
+            'output/owlmagic-srd/features.db',
+            'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/features.db'
+        ]);
 
         return features;
     }

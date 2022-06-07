@@ -212,13 +212,15 @@ module.exports = class FeatParser {
     /**
      * Prints the json objects to a Foundry db.
      * @param {[{}]} items
-     * @param {string} path
+     * @param {string[]} path
      */
-    printDb (items, path) {
-        console.log('Printing to: ' + path);
-        const lines = items.map((item) => JSON.stringify(item));
-        const db = lines.join('\n') + '\n';
-        fs.writeFileSync(path, db);
+    printDb (items, paths) {
+        console.log(`Printing to ${paths.length} files`);
+        paths.forEach((path) => {
+            const lines = items.map((item) => JSON.stringify(item));
+            const db = lines.join('\n') + '\n';
+            fs.writeFileSync(path, db);
+        });
     }
 
     /**
@@ -387,11 +389,13 @@ module.exports = class FeatParser {
 
         feats = this.synchronizeDates(this.getDbDict('packs/feats.db'), feats);
 
-        this.printDb(feats, 'packs/feats.db');
-        this.printDb(feats, 'output/all/feats.db');
-        this.printDb(feats, 'output/owlmagic-only/feats.db');
-        this.printDb(feats, 'output/owlmagic-srd/feats.db');
-        this.printDb(feats, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/feats.db');
+        this.printDb(feats, [
+            'packs/feats.db',
+            'output/all/feats.db',
+            'output/owlmagic-only/feats.db',
+            'output/owlmagic-srd/feats.db',
+            'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/feats.db',
+        ]);
 
         return feats;
     }
