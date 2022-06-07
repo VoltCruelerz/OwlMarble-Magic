@@ -26,3 +26,5 @@ console.log(wall + '\n\n' + wall + '\nParsing Rules...');
 const ruleParser = new RuleParser();
 ruleParser.run(omm);
 console.log(wall + '\nRule Parsing Done.');
+
+console.log(wall + '\n' + wall + '\nPROCESSING COMPLETE AT: ' + (new Date()).toString() + '\n' + wall);
