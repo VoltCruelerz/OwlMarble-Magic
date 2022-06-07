@@ -2,6 +2,8 @@ const fs = require('fs');
 const seedrandom = require('seedrandom');
 const { detailedDiff } = require('deep-object-diff');
 const overrides = require('./parseOverrides');
+const thickWall = '======================================';
+const thinWall = '--------------------------------------';
 
 /**
  * Sets up a spell parser for OwlMarble Magic.
@@ -40,7 +42,7 @@ module.exports = class SpellParser {
      * @returns {{*}} A dictionary containing spell and creature names to the github permalink.
      */
     indexSpellsAndMonsters () {
-        console.log('======================================\nIndexing files...');
+        console.log(thinWall + '\nIndexing files...');
         const indices = {};
         const github = 'https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells';
 
@@ -116,7 +118,7 @@ module.exports = class SpellParser {
      * Reads all input files and parses them.
      */
     readAndParseInputFiles () {
-        console.log('======================================\nReading input files...');
+        console.log(thinWall + '\nReading input files...');
         const dirName = 'spells/levels/';
         const fileNames =fs.readdirSync(dirName);
         const allSpells = [];
@@ -137,7 +139,7 @@ module.exports = class SpellParser {
      * @returns 
      */
     readSpellDB (path) {
-        console.log('======================================\nReading db file: ' + path);
+        console.log(thinWall + '\nReading db file: ' + path);
         const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
         const lines = contents.split('\n');
         const dbSpells = lines.filter((line) => line).map((line) => JSON.parse(line));
@@ -149,7 +151,7 @@ module.exports = class SpellParser {
      * @returns [{}]
      */
     readAndParseImportedSpells () {
-        console.log('======================================\nReading imported files...');
+        console.log(thinWall + '\nReading imported files...');
         const dirName = 'import/';
         const fileNames =fs.readdirSync(dirName);
         fileNames.sort();
@@ -1400,7 +1402,7 @@ module.exports = class SpellParser {
                 this.overrideSpell(importedSpell);
                 parsed.push(importedSpell);
             } catch (e) {
-                console.error('===============================================\nFailure on ' + spell.name);
+                console.error(thinWall + '=========\nFailure on ' + spell.name);
                 throw e;
             }
         }
@@ -1665,7 +1667,7 @@ module.exports = class SpellParser {
      * @param {{*}} indices
      */
     exportSpellLists (spells, indices) {
-        const wall = ('======================================');
+        const wall = (thinWall + '');
         console.log(wall + '\nExporting Class Spell Lists...');
         const classes = Object.keys(spells.reduce((acc, spell) => {
             spell.data.classes.forEach((casterClass) => {
@@ -1838,7 +1840,7 @@ module.exports = class SpellParser {
      * @param {[{*}]} newSpells 
      */
     logDiff (oldSpells, newSpells) {
-        const wall = ('======================================');
+        const wall = (thinWall + '');
         console.log(wall + '\nChecking for diffs...');
 
         // Ignore the export timestamps
@@ -1939,7 +1941,7 @@ module.exports = class SpellParser {
         this.exportCompendiumBrowser(allSpells, 'E:/Foundry VTT/Data/modules/compendium-browser/spell-classes.json');
 
         // Export all to current foundry install.
-        console.log('======================================\nExporting spells to foundry install...');
+        console.log(thinWall + '\nExporting spells to foundry install...');
         this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db');
 
         // Log differences to spells.

@@ -15,12 +15,3 @@ Starting at 13th level, you can succeed on two saving throws using this feature 
 ## Perfected Form [New]
 
 At 20th level, your skill with your weapons becomes unparalleled.  When you make an attack with a weapon and roll less than a 10 on the d20, you can treat it as a 10.
-
-## Test Table [New]
-
-SDF SDF
-
-> Howdy
-> | SDF | XCV |
-> |:---:|:---:|
-> | 123 | 456 |

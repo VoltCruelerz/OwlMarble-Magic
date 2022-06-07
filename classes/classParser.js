@@ -1,5 +1,7 @@
 const fs = require('fs');
 const seedrandom = require('seedrandom');
+const thickWall = '======================================';
+const thinWall = '--------------------------------------';
 
 
 /**
@@ -164,7 +166,7 @@ module.exports = class ClassPraser {
      * @returns 
      */
     lineIsHR (line) {
-        return line.match(/^(?:> )?[_|-]+$/);
+        return line.match(/^(?:> )?[_|-]+$/) || line === '```';
     }
     //#endregion
 
@@ -214,11 +216,10 @@ module.exports = class ClassPraser {
      * @returns {{*}} dictionary
      */
     getDbDict (path) {
-        console.log('======================================\nReading db file: ' + path);
+        console.log(thinWall + '\nReading db file: ' + path);
         const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
         const lines = contents.split('\n');
         const entries = lines.filter((line) => line).map((line) => JSON.parse(line));
-        console.log('Entries: ' + entries.length);
         return entries.reduce((acc, entry) => {
             acc[entry.name] = entry;
             return acc;
@@ -275,7 +276,8 @@ module.exports = class ClassPraser {
         const trackedTitleRegexGetName = /((?:#+) (?<name>.*?) \[(?:\w+)])/;
 
         // Read Classes
-        const classes = fs.readdirSync('classes');
+        const classFolder = 'classes';
+        const classes = fs.readdirSync(classFolder);
         const folders = classes.filter((p) => !p.includes('.'));
         console.log('Folders: ' + folders);
 
@@ -284,7 +286,7 @@ module.exports = class ClassPraser {
         for (let i = 0; i < folders.length; i++) {
             const folder = folders[i];
             const classFileName = folder.charAt(0).toUpperCase() + folder.slice(1);
-            const raw = fs.readFileSync(`./classes/${folder}/${classFileName}.md`, { encoding: 'utf-8', flag: 'r'});
+            const raw = fs.readFileSync(`./${classFolder}/${folder}/${classFileName}.md`, { encoding: 'utf-8', flag: 'r'});
 
             // After splitting, every other element in tracked features will be a feature title.
             // The following element is their description plus whatever else until the next tracked title.
@@ -300,7 +302,9 @@ module.exports = class ClassPraser {
                     const rawFeatureLines = [current];
                     const depth = this.getTitleDepth(current);
                     const next = j + 1 < trackedFeatures.length ? trackedFeatures[j + 1] : '';
-                    const descLineOptions = next.split('\r\n').filter((line) => line && line !== '>');
+                    const descLineOptions = next
+                        .split('\r\n')
+                        .filter((line) => line && line !== '>');
                     for (let k = 0; k < descLineOptions.length; k++) {
                         const consideredLine = descLineOptions[k];
                         const consideredDepth = this.getTitleDepth(consideredLine);
@@ -336,9 +340,9 @@ module.exports = class ClassPraser {
                     let nextLineInjection = undefined;
     
                     // Handle quotes first because they can encapsulate other formatting.
-                    const isQuote = line.startsWith('> ');
+                    const isQuote = line.startsWith('>');
                     if (isQuote) {
-                        line = line.slice(2);
+                        line = /> ?(?<content>.*)/.exec(line).groups.content;
                         featureLines.push('<blockquote>');
                     }
 

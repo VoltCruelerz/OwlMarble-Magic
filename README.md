@@ -44,22 +44,7 @@ See dedicated [page](./feats/feats.md).
 
 ### Rules
 
-- [Actions in Combat](./rules/Actions%20in%20Combat.md)
-- [Spells](./spells/General%20Rules.md): overall spellcasting rules.
-- [Combat Situations](./rules/Combat%20Situations.md)
-- [Critical Hits](./rules/Critical%20Hits.md)
-- [Health and Death](./rules/Health%20and%20Death.md)
-- [Lifting and Carrying](./rules/Lifting%20and%20Carrying.md)
-- [Nature of Magic](./rules/Nature%20of%20Magic.md)
-- [Priority Initiative](./rules/Priority%20Initiative.md)
-- [Statuses](./rules/Statuses.md)
-- [Structures & Strongholds](./rules/Structures%20and%20Strongholds.md)
-- [Training NPCs](./rules/Training%20NPCs.md)
-- [Travel and Wilderness](./rules/Travel%20and%20Wilderness.md)
-- [Two-Weapon Fighting](./rules/Two-Weapon%20Fighting.md)
-- Items
-  - [Mundane Items](./rules/items/Mundane%20Items.md)
-  - [Magic Item Crafting](./rules/items/Magic%20Item%20Crafting.md)
+See dedicated [page](./rules/Rules.md)
 
 ## Script Features
 

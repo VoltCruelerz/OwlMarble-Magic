@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const seedrandom = require('seedrandom');
+const thickWall = '======================================';
+const thinWall = '--------------------------------------';
 
 
 /**
@@ -177,7 +179,7 @@ module.exports = class RuleParser {
      * @returns 
      */
     lineIsHR (line) {
-        return line.match(/^(?:> )?[_|-]+$/);
+        return line.match(/^(?:> )?[_|-]+$/) || line === '```';
     }
     //#endregion
 
@@ -244,11 +246,10 @@ module.exports = class RuleParser {
      * @returns {{*}} dictionary
      */
     getDbDict (path) {
-        console.log('======================================\nReading db file: ' + path);
+        console.log('Reading db file: ' + path);
         const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
         const lines = contents.split('\n');
         const entries = lines.filter((line) => line).map((line) => JSON.parse(line));
-        console.log('Entries: ' + entries.length);
         return entries.reduce((acc, entry) => {
             acc[entry.name] = entry;
             return acc;
@@ -306,13 +307,17 @@ module.exports = class RuleParser {
         const markdownPaths = [
             ...this.getAllMarkdown('./rules/'),
             ...this.getAllMarkdown('./classes/'),
+            ...this.getAllMarkdown('./monsters/'),
             ...this.getAllMarkdown('./spells/')
         ];
+        console.log('Markdown Paths: ' + markdownPaths.length);
 
         // Actually parse.
         let journalFiles = markdownPaths.map((path) => {
             const soloName = /.*\\(?<file>.*?)\.md/.exec(path).groups.file;
-            const markdownLines = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' }).split('\r\n').filter((line) => line);
+            const markdownLines = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' })
+                .split('\r\n')
+                .filter((line) => line && line !== '>');
 
             // Parse content
             const journalLines = [];
@@ -323,9 +328,9 @@ module.exports = class RuleParser {
                 let nextLineInjection = undefined;
 
                 // Handle quotes first because they can encapsulate other formatting.
-                const isQuote = line.startsWith('> ');
+                const isQuote = line.startsWith('>');
                 if (isQuote) {
-                    line = line.slice(2);
+                    line = /> ?(?<content>.*)/.exec(line).groups.content;
                     journalLines.push('<blockquote>');
                 }
 

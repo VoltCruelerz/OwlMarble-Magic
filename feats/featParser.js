@@ -1,5 +1,7 @@
 const fs = require('fs');
 const seedrandom = require('seedrandom');
+const thickWall = '======================================';
+const thinWall = '--------------------------------------';
 
 
 /**
@@ -176,7 +178,7 @@ module.exports = class FeatParser {
      * @returns {{*}} dictionary
      */
     getDbDict (path) {
-        console.log('======================================\nReading db file: ' + path);
+        console.log(thinWall + '\nReading db file: ' + path);
         const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
         const lines = contents.split('\n');
         const entries = lines.filter((line) => line).map((line) => JSON.parse(line));

@@ -1,5 +1,7 @@
 # Monster Blocks
 
+The following covers assorted NPC stat blocks for creatures references in spells and other sources.
+
 > ## Ancestral Spirit
 >
 >*Medium humanoid, any alignment*
@@ -10,9 +12,9 @@
 > - **Speed** 30ft.
 >
 > ___
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|10 (+0)|10 (+0)|10 (+0)|10 (+0)|10 (+0)|10 (+0)|
+> |STR|DEX|CON|INT|WIS|CHA|
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> |10 (+0)|10 (+0)|10 (+0)|10 (+0)|10 (+0)|10 (+0)|
 > ___
 >
 > - **Senses** passive Perception 10
@@ -48,9 +50,9 @@
 > - **Speed** 30ft. or fly 30 ft. (hover)
 >
 > ___
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->| N (+n) | M (+m) |10 (+0)|3 (-4)|3 (-4)|1 (-5)|
+> |STR|DEX|CON|INT|WIS|CHA|
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> | N (+n) | M (+m) |10 (+0)|3 (-4)|3 (-4)|1 (-5)|
 > ___
 >
 > - **Damage Immunities** poison, psychic
@@ -74,9 +76,9 @@
 > - **Hit Points** 4 + your spellcasting ability modifier + 10x the level of the spell
 > - **Speed** 30ft., fly 30 ft. (spore only)
 >
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|16 (+3)|10 (+0)|18 (+4)|4 (-3)|10 (+0)|10 (+0)|
+> |STR|DEX|CON|INT|WIS|CHA|
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> |16 (+3)|10 (+0)|18 (+4)|4 (-3)|10 (+0)|10 (+0)|
 >
 > - **Senses** darkvision 60 ft., passive Perception 10
 > - **Languages** understands the languages of the caster
@@ -106,9 +108,9 @@
 > - **Hit Points** 10
 > - **Speed** 35ft.
 >
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|20 (+5)|10 (+0)|10 (+0)|3 (-4)|8 (-1)|1 (-5)|
+> |STR|DEX|CON|INT|WIS|CHA|
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> |20 (+5)|10 (+0)|10 (+0)|3 (-4)|8 (-1)|1 (-5)|
 >
 > - **Condition Immunities** poisoned, prone, stunned
 > - **Resistances** cold, fire, lightning
@@ -137,9 +139,9 @@
 > - **Hit Points** 30
 > - **Speed** 0ft.
 >
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|10 (+0)|10 (+0)|10 (+0)|0 (-5)|0 (-5)|0 (-5)|
+> |STR|DEX|CON|INT|WIS|CHA|
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> |10 (+0)|10 (+0)|10 (+0)|0 (-5)|0 (-5)|0 (-5)|
 >
 > - **Condition Immunities** all
 > - **Vulnerabilities** fire
@@ -159,9 +161,9 @@
 > - **Hit Points** 3
 > - **Speed** 5 ft. & 60 ft. (**celestial only**), 40 ft. & 30 ft. climb (**fiend only**), 20 ft. & 60 ft. swim (**sea only**)
 >
->| STR    | DEX     | CON    | INT    | WIS     | CHA    |
->|:------:|:-------:|:------:|:------:|:-------:|:------:|
->| 3 (-4) | 13 (+1) | 8 (-1) | 6 (-2) | 12 (+1) | 6 (-2) |
+> | STR    | DEX     | CON    | INT    | WIS     | CHA    |
+> |:------:|:-------:|:------:|:------:|:-------:|:------:|
+> | 3 (-4) | 13 (+1) | 8 (-1) | 6 (-2) | 12 (+1) | 6 (-2) |
 >
 > - **Skills** Perception +3, Stealth +3
 > - **Senses** passive Perception 13
@@ -187,9 +189,9 @@
 > - **Hit Points** 30
 > - **Speed** 0ft.
 >
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|
+> |STR|DEX|CON|INT|WIS|CHA|
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> |0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|
 >
 > - **Condition Immunities** all
 > - **Vulnerabilities** fire
@@ -212,9 +214,9 @@
 > - **Hit Points** 30 per inch
 > - **Speed** 0ft.
 >
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|
+> |STR|DEX|CON|INT|WIS|CHA|
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> |0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|0 (-5)|
 >
 > - **Condition Immunities** all
 >
