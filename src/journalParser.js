@@ -1,12 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const seedrandom = require('seedrandom');
-const thickWall = '======================================';
-const thinWall = '--------------------------------------';
 
 
 /**
- * Sets up a feat parser for OwlMarble Magic.
+ * Sets up a journal parser for OwlMarble Magic.
  * @class
  */
 module.exports = class RuleParser {
@@ -295,21 +293,21 @@ module.exports = class RuleParser {
     /**
      * Executes the parsing of the feats.
      * @param {[{}]} spells 
+     * @param {string[]} inputFolders
+     * @param {string[]} outputPaths
      * @returns 
      */
-    run (spells) {
+    run (spells, inputFolders, outputName) {
         const spellDict = spells.reduce((acc, spell) => {
             acc[spell.name] = spell;
             return acc;
         }, {});
 
         // Compile all rule paths.
-        const markdownPaths = [
-            ...this.getAllMarkdown('./rules/'),
-            ...this.getAllMarkdown('./classes/'),
-            ...this.getAllMarkdown('./monsters/'),
-            ...this.getAllMarkdown('./spells/')
-        ];
+        let markdownPaths = [];
+        inputFolders.forEach((folder) => {
+            markdownPaths = markdownPaths.concat(this.getAllMarkdown(folder));
+        });
         console.log('Markdown Paths: ' + markdownPaths.length);
 
         // Actually parse.
@@ -405,15 +403,15 @@ module.exports = class RuleParser {
         });
 
         // Synchronize dates.
-        journalFiles = this.synchronizeDates(this.getDbDict('packs/rules.db'), journalFiles);
+        journalFiles = this.synchronizeDates(this.getDbDict(`packs/${outputName}.db`), journalFiles);
 
         // Export.
         this.printDb(journalFiles, [
-            'packs/rules.db',
-            'output/all/rules.db',
-            'output/owlmagic-only/rules.db',
-            'output/owlmagic-srd/rules.db',
-            'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/rules.db'
+            `packs/${outputName}.db`,
+            `output/all/${outputName}.db`,
+            `output/owlmagic-only/${outputName}.db`,
+            `output/owlmagic-srd/${outputName}.db`,
+            `E:/Foundry VTT/Data/modules/owlmarble-magic/packs/${outputName}.db`
         ]);
     }
 };

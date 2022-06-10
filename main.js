@@ -1,8 +1,8 @@
 const SpellParser = require('./src/spellParser.js');
 const test = require('./tests/tests.js');
-const FeatParser = require('./feats/featParser.js');
-const ClassParser = require('./classes/classParser.js');
-const RuleParser = require('./rules/ruleParser.js');
+const FeatParser = require('./src/featParser.js');
+const ClassParser = require('./src/classParser.js');
+const JournalParser = require('./src/journalParser.js');
 const thickWall = '======================================';
 const thinWall = '--------------------------------------';
 
@@ -34,9 +34,23 @@ const classParser = new ClassParser();
 classParser.run(omm);
 blockStop('Class');
 
-blockStart('Rules');
-const ruleParser = new RuleParser();
-ruleParser.run(omm);
-blockStop('Rule');
+blockStart('Journals');
+const journalParser = new JournalParser();
+journalParser.run(
+    omm,
+    [
+        './rules/',
+        './classes/',
+        './monsters/',
+        './spells/'
+    ],
+    'rules');
+journalParser.run(
+    omm,
+    [
+        './setting/'
+    ],
+    'journals');
+blockStop('Journal');
 
 console.log('\n' + thickWall + '\nPROCESSING COMPLETE AT: ' + (new Date()).toString() + '\n' + thickWall);

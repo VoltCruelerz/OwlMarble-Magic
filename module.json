@@ -48,6 +48,14 @@
         "module": "owlmarble-magic",
         "path": "packs/rules.db",
         "entity": "JournalEntry"
+      },
+      {
+        "name": "journals",
+        "label": "OwlMarble Journals",
+        "system": "dnd5e",
+        "module": "owlmarble-magic",
+        "path": "packs/journals.db",
+        "entity": "JournalEntry"
       }
     ],
     "languages": [],
