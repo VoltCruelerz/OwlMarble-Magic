@@ -260,7 +260,7 @@ You gain the following benefits:
 After strenuous training, you have mastered finding chinks in the armor of your foes, allowing you to strike critical organs.  You gain the following benefits:
 
 - Your critical hit range with finesse, ranged, and thrown weapons is increased by 2.
-- Your bonus to hit is increased by 1.
+- Your bonus to hit with those weapons is increased by 1.
 
 ## Heavily Armored [Updated]
 
@@ -542,11 +542,20 @@ Your frame has been updated to fulfill a particular function.  You gain the foll
 
 - Increase one ability score of your choice by 1, to a maximum of 20.
 - Choose one of the following upgrades:
-  - __Crafter__: You gain proficiency with one tool of your choice.  Additionally, choose one tool you are proficient with.  This tool is integrated into your body, and you have expertise in it.  You must have at least one free hand to use the integrated tool.
-  - __Juggernaut__: You may double your Strength bonus when you make a Strength-based attack roll, ability check, or saving throw.  Once you have done so, you cannot do so again until you complete a short or long rest.  Additionally, you count as one size class larger when determining your carrying capacity.
-  - __Skirmisher__: Your walking speed increases by 5 feet.  Additionally, as a bonus action, you can take the Disengage action.  Once you have used this bonus action a number of times equal to your proficiency bonus, you cannot do so again until you complete a long rest.
+  - **Crafter**: You gain proficiency with one tool of your choice.  Additionally, choose one tool you are proficient with.  This tool is integrated into your body, and you have expertise in it.  You must have at least one free hand to use the integrated tool.
+  - **Juggernaut**: You may double your Strength bonus when you make a Strength-based attack roll, ability check, or saving throw.  Once you have done so, you cannot do so again until you complete a short or long rest.  Additionally, you count as one size class larger when determining your carrying capacity.
+  - **Skirmisher**: Your walking speed increases by 5 feet.  Additionally, as a bonus action, you can take the Disengage action.  Once you have used this bonus action a number of times equal to your proficiency bonus, you cannot do so again until you complete a long rest.
 
-## Weapon Master [Updated]
+## Versatile Weapon Master [New]
+
+You have mastered the use of versatile weapons and gain the following the benefits:
+
+- When you make a one-handed attack with a versatile weapon, you gain a +2 bonus to hit.
+- When you make a two-handed attack with a versatile weapon, you gain a +2 bonus to damage.
+
+**Note**: See the updated [Versatile](../rules/items/Weapon%20Properties.md#Versatile) rules.
+
+## Weapon Expert [Updated]
 
 Your expertise with weapons is legendary.  You can select this feat more than once, but you cannot select the same benefit for the same weapon twice.
 
