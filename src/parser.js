@@ -61,7 +61,7 @@ module.exports = class Parser {
         const noUrlLine = line.replaceAll(/\[.+\]\(.+?\)/g, '');
         const count = (noUrlLine.match(/_/g) || []).length;
         if (count === 0) {
-            // Ignore URLs.
+            // Ignore URLs or empty lines.
             return line;
         }
         if (count % 2 !== 0) {
