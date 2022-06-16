@@ -34,7 +34,7 @@ Attacks made by this weapon against targets this distance away or closer have di
 
 ## Light
 
-A light weapon is small and easy to handle, making it ideal for use when [fighting with two weapons](../Two-Weapon%20Fighting.md).
+This weapon can be used for [two-weapon fighting](../Two-Weapon%20Fighting.md).
 
 ## Loading
 

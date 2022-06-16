@@ -126,9 +126,10 @@ module.exports = class Parser {
     /**
      * Replaces markdown links with html links.
      * @param {string} line 
+     * @param {string} activePath - The path from the root directory to the currently processed file.
      * @returns {string}
      */
-    linkify (line) {
+    linkify (line, activePath = '') {
         // Convert reddit users into proper urls.
         line = line.replaceAll(/(\W+)u\/([\w\-]+)(\]\(http)?/g, (match, g1, g2, g3) => {
             const pre = g1;
@@ -143,6 +144,48 @@ module.exports = class Parser {
 
             const url = 'https://www.reddit.com/user/' + username;
             return `${pre}<a href="${url}">u/${username}</a>`;
+        });
+
+        // Fix any stupid windows path slashes.
+        activePath = activePath
+            .replaceAll('\\', '/')
+            .replaceAll(' ', '%20');
+        // Local markdown link to html link to Github page.
+        line = line.replaceAll(/(^|\W)\[(\w.*?\w)\]\((\..*?)\)(\W|$)/g, (match, g1, g2, g3, g4) => {
+            const pre = g1;
+            const name = g2;
+            const localPath = g3;
+            const post = g4;
+            if (!line) {
+                console.log('WARNING: no active path provided for ' + activePath);
+            }
+            
+            // Now we have to navigate locally, so split things based on levels.
+            const activeParts = activePath.split('/');
+            const localParts = localPath.split('/');
+            let activeRegressionLevels = 0;
+            const localRegressionLevels = localParts.reduce((total, term, index) => {
+                if (term === '.') {
+                    activeRegressionLevels++;
+                    total++;
+                } else if (index === 0 && term === '..') {
+                    activeRegressionLevels += 2;
+                    total++;
+                } else if (term === '..') {
+                    activeRegressionLevels++;
+                    total++;
+                }
+
+                return total;
+            }, 0);
+
+            const mergedPath = activeParts
+                .slice(0, activeParts.length - activeRegressionLevels)
+                .concat(localParts.slice(localRegressionLevels))
+                .join('/');
+            const url = `<a href="https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/${mergedPath}">${name}</a>`;
+            console.log('Create Absolute Github Link: ' + url + ' from\n- Active: ' + activePath + '\n- Local: ' + localPath);
+            return `${pre}${url}${post}`;
         });
 
         // General markdown link to html link.

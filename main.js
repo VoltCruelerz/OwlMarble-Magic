@@ -24,33 +24,33 @@ test(omm, srd);
 console.log(thinWall + '\nTests Done.');
 blockStop('Spell');
 
-// blockStart('Feats');
-// const featParser = new FeatParser();
-// featParser.run(omm);
-// blockStop('Feat');
+blockStart('Feats');
+const featParser = new FeatParser();
+featParser.run(omm);
+blockStop('Feat');
 
 blockStart('Classes');
 const classParser = new ClassParser();
 classParser.run(omm);
 blockStop('Class');
 
-// blockStart('Journals');
-// const journalParser = new JournalParser();
-// journalParser.run(
-//     omm,
-//     [
-//         './rules/',
-//         './classes/',
-//         './monsters/',
-//         './spells/'
-//     ],
-//     'rules');
-// journalParser.run(
-//     omm,
-//     [
-//         './setting/'
-//     ],
-//     'journals');
-// blockStop('Journal');
+blockStart('Journals');
+const journalParser = new JournalParser();
+journalParser.run(
+    omm,
+    [
+        './rules/',
+        './classes/',
+        './monsters/',
+        './spells/'
+    ],
+    'rules');
+journalParser.run(
+    omm,
+    [
+        './setting/'
+    ],
+    'journals');
+blockStop('Journal');
 
 console.log('\n' + thickWall + '\nPROCESSING COMPLETE AT: ' + (new Date()).toString() + '\n' + thickWall);

@@ -6,7 +6,6 @@ const Parser = require('./parser');
  * @class
  */
 module.exports = class RuleParser extends Parser {
-
     /**
      * Executes the parsing of the feats.
      * @param {[{}]} spells 
@@ -84,7 +83,9 @@ module.exports = class RuleParser extends Parser {
                 }
                 
                 // Handle final formatting
-                let formattedLine = this.linkify(this.boldify(this.italilink(line, soloName, i, spellDict)));
+                let formattedLine = this.linkify(
+                    this.boldify(this.italilink(line, soloName, i, spellDict)),
+                    path);
 
                 // Add the line.
                 journalLines.push(formattedLine);
