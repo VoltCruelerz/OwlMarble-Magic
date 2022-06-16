@@ -63,5 +63,3 @@ This weapon requires two hands when you Attack with it.
 ## Versatile [Updated]
 
 This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee Attack.
-
-During combat, each time you hit with an attack while wielding the weapon with one hand, the next two-handed attack gains a stacking +1 bonus to its damage, and each time you hit with an attack while wielding the weapon with two hands, the next one-handed attack gains a stacking +1 bonus to hit. Both of these bonuses expire when initiative ends.

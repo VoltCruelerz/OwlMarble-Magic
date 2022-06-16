@@ -184,7 +184,6 @@ module.exports = class Parser {
                 .concat(localParts.slice(localRegressionLevels))
                 .join('/');
             const url = `<a href="https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/${mergedPath}">${name}</a>`;
-            console.log('Create Absolute Github Link: ' + url + ' from\n- Active: ' + activePath + '\n- Local: ' + localPath);
             return `${pre}${url}${post}`;
         });
 
