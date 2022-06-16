@@ -45,7 +45,7 @@ Mundane (non-magical) items come in varying qualities.
 
 ## Mundane Items
 
-Please see the [dedicated document](./Mundane.md) for more information.
+Please see the [dedicated document](./Mundane%20Items.md) for more information.
 
 ## Magic Items
 

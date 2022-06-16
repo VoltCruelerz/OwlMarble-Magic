@@ -34,7 +34,7 @@ Attacks made by this weapon against targets this distance away or closer have di
 
 ## Light
 
-A light weapon is small and easy to handle, making it ideal for use when [fighting with two weapons](../Two-Weapon%20Fighting.md).
+This weapon can be used for [two-weapon fighting](../Two-Weapon%20Fighting.md).
 
 ## Loading
 
@@ -46,7 +46,7 @@ When you take the Attack action and attack with a melee weapon in one hand and a
 
 ## Range
 
-A weapon that can be used to make a ranged Attack has a range in parentheses after the Ammunition or thrown property. The range lists two numbers. The first is the weapon’s normal range in feet, and the second indicates the weapon’s Long Range. When Attacking a target beyond normal range, you have disadvantage on the Attack roll. You can’t Attack a target beyond the weapon’s Long Range.
+A weapon that can be used to make a ranged Attack has a range in parentheses after the Ammunition or thrown property. The range lists two numbers. The first is the weapon’s normal range in feet, and the second indicates the weapon’s long range. When Attacking a target beyond normal range, you have disadvantage on the Attack roll. You can’t Attack a target beyond the weapon’s long range.
 
 ## Reach
 
@@ -54,14 +54,12 @@ This weapon adds 5 feet to your reach when you Attack with it, as well as when d
 
 ## Thrown
 
-You can throw this weapon to make a ranged Attack. If this weapon is a melee weapon, you use the same ability modifier for that Attack roll and damage roll that you would use for a melee Attack with the weapon. For example, if you throw a Handaxe, you use your Strength, but if you throw a Dagger, you can use either your Strength or your Dexterity, since the Dagger has the finesse property.
+You can throw this weapon to make a ranged Attack. If this weapon is a melee weapon, you use the same ability modifier for that Attack roll and damage roll that you would use for a melee Attack with the weapon. For example, if you throw a _Handaxe_, you use your Strength, but if you throw a _Dagger_, you can use either your Strength or your Dexterity, since the _Dagger_ has the _Finesse_ property.
 
 ## Two-Handed
 
 This weapon requires two hands when you Attack with it.
 
-## Versatile [Updated]
+## Versatile
 
 This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee Attack.
-
-During combat, each time you hit with an attack while wielding the weapon with one hand, the next two-handed attack gains a stacking +1 bonus to its damage, and each time you hit with an attack while wielding the weapon with two hands, the next one-handed attack gains a stacking +1 bonus to hit. Both of these bonuses expire when initiative ends.

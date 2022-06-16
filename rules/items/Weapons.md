@@ -14,7 +14,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 
 | **Name** | **Price** (gp) | **Weight** (lbs) | **Damage** | **Properties** |
 |:---------|:--------------:|:----------------:|:----------:|:---------------|
-| **Improvised Weapon** | - | X | 1d4 | _Thrown (20/60)_ |
+| **Improvised Weapon** | - | - | 1d4 bludgeoning, piercing, or slashing | _Thrown (20/60)_ |
 
 ## Melee Weapons
 
@@ -41,11 +41,12 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Billhook** | 6 | 6 | 1d8 slashing or piercing | _Two-Handed, Reach, Dismounting_|
 | **Claws** | 2 | 1/2 | 1d4 slashing | _Finesse, Handy, Light_|
 | **Flail** | 10 | 2 | 1d8 bludgeoning | - |
+| **Glaive** | 20 | 6 | 1d10 slashing | _Heavy, Reach, Two-Handed_ |
 | **Greataxe** | 30 | 7 | 1d12 slashing | _Heavy, Two-Handed_ |
 | **Greatsword** | 50 | 6 | 2d6 slashing | _Heavy, Two-Handed_ |
 | **Halberd** | 20 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy, Dismounting_|
-| **Hook Sword** (Solo) | 45 | 2 | 1d6 slashing | _Finesse, Light, Parrying, Special_|
-| **Hook Swords** (Linked) | -  | - | 2d4 slashing | _Finesse, Reach, Two-Handed_<br/>**Special**: If a creature is holding two hook swords, as part of its attack action, the creature can link or unlike the swords. |
+| **Hook Sword (Separate)** | 45 | 2 | 1d6 slashing | _Finesse, Light, Parrying, Special_|
+| **Hook Swords (Linked)** | -  | - | 2d4 slashing | _Finesse, Reach, Two-Handed_<br/>**Special**: If a creature is holding two hook swords, as part of its attack action, the creature can link or unlike the swords. |
 | **Lance** | 5 | 6 | 1d12 piercing | _Heavy, Extended Reach, Couched_<br/>**Special**: While mounted, this has the Dismounting property.|
 | **Longsword** | 15 | 3 | 1d8 slashing | Versatile (1d10) |
 | **Man Catcher** | 6 | 6 | - | _Two-Handed, Heavy, Reach_<br/>**Special**: On a hit, the target is grappled.  When it tries to escape the grapple, it takes 1 piercing damage.|
@@ -54,12 +55,13 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Pike** | 5 | 18 | 1d10 piercing | _Heavy, Extended Reach, Inner Range: 5 ft_|
 | **Rapier** | 25 | 2 | 1d8 piercing | _Finesse_ |
 | **Shortsword** | 10 | 2 | 1d6 slashing or piercing | _Finesse, Light_ |
-| **Studded** **Gauntlets** | 1 | 1/2 | 1d4 bludgeoning or piercing | _Handy, Light_|
+| **Studded Gauntlets** | 1 | 1/2 | 1d4 bludgeoning or piercing | _Handy, Light_|
 | **Trident** | 5 | 2 | 1d6 piercing | _Thrown (20/60), Versatile (1d8)_ |
 | **War Pick** | 5 | 2 | 1d8 piercing | - |
 | **Warhammer** | 15 | 2 | 1d8 bludgeoning | Versatile (1d10)
 | **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_|
 | **War Scythe** | 5 | 6 | 1d6 slashing | _Finesse, Heavy, Reach, Two-Handed_|
+| **Whip** | 2 | 3 | 1d4 slashing | _Finesse, Reach_ |
 
 ## Ranged Weapons
 
@@ -67,8 +69,8 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 
 | **Name** | **Price** (gp) | **Weight** (lbs) | **Damage** | **Properties** |
 |:---------|:--------------:|:----------------:|:----------:|:---------------|
-| **Crossbow** (Light) | 25 | 5 | 1d8 piercing | _Ammunition (80/320), Loading, Two-Handed_ |
 | **Dart** | 0.05 | 0.25 | 1d4 piercing | _Finesse, Thrown (20/60)_ |
+| **Light Crossbow** | 25 | 5 | 1d8 piercing | _Ammunition (80/320), Loading, Two-Handed_ |
 | **Shortbow** | 25 | 2 | 1d6 piercing | _Ammunition (80/320), Two-Handed_ |
 | **Sling** | 0.1 | 0.01 | 1d4 bludgeoning | _Ammunition (30/120)_ |
 
@@ -77,7 +79,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Name** | **Price** (gp) | **Weight** (lbs) | **Damage** | **Properties** |
 |:---------|:--------------:|:----------------:|:----------:|:---------------|
 | **Blowgun** | 10 | 1 | 1 piercing | _Ammunition (25/100), Loading_ |
-| **Crossbow** (Hand) | 75 | 3 | 1d6 piercing | _Ammunition (30/120), Light, Loading_ |
-| **Crossbow** (Heavy) | 50 | 18 | 1d10 piercing | _Ammunition (100/400), Heavy, Loading, Two-Handed_ |
+| **Hand Crossbow** | 75 | 3 | 1d6 piercing | _Ammunition (30/120), Light, Loading_ |
+| **Heavy Crossbow** | 50 | 18 | 1d10 piercing | _Ammunition (100/400), Heavy, Loading, Two-Handed_ |
 | **Longbow** | 50 | 2 | 1d8 piercing | _Ammunition (150/600), Heavy, Two-Handed_ |
 | **Net** | 1 | 3 | 0 | _Thrown (5/15)_<br/>**Special**: A Large or smaller creature hit by a net is Restrained until it is freed. A net has no Effect on Creatures that are formless, or Creatures that are Huge or larger. A creature can use its Action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, Ending the Effect and destroying the net. When you use an Action, bonus Action, or Reaction to Attack with a net, you can make only one Attack regardless of the number of attacks you can normally make. |

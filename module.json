@@ -42,6 +42,14 @@
         "entity": "Item"
       },
       {
+        "name": "weapons",
+        "label": "OwlMarble Weapons",
+        "system": "dnd5e",
+        "module": "owlmarble-magic",
+        "path": "packs/weapons.db",
+        "entity": "Item"
+      },
+      {
         "name": "rules",
         "label": "OwlMarble Rules",
         "system": "dnd5e",
