@@ -209,7 +209,9 @@ module.exports = class Parser {
         }
         return 0;
     }
+    // #endregion
 
+    // #region Parsing
     /**
      * Checks if the current line starts with some number of #'s.
      * @param {string} line 
@@ -249,6 +251,103 @@ module.exports = class Parser {
             return 0;
         }
         return parseInt(result.groups.depth.length);
+    }
+
+    /**
+     * Generates the damage object.
+     * @param {string} description 
+     * @returns {{parts: [[string]], versatile: string}}
+     */
+    getDamage (description) {
+        description = description.toLowerCase()
+            .replaceAll('plus', '+')
+            .replaceAll('minus', '-')
+            .replaceAll(/\d+ (?:action|bonus action|minute|hour|day|year|reaction|round|week)/g, () => '');
+        const upcastTag = '<strong>higher levels</strong>';
+        const upcastIndex = description.indexOf(upcastTag);
+        const baseDesc = upcastIndex > -1 ? description.substr(0, upcastIndex) : description;
+        const parts = [];
+
+        // Normally, people write damage like "deal 8d6 fire damage" or "deal 1d8 plus your spellcasting ability modifier".
+        const damageRegex = /(\d+(d\d+)?) ?(\+|-)?(\W*?(\d+|(?:your spellcasting ability )?(modifier)))?[^\.]*?(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)s?\W/g;
+        
+        // but sometimes, things are written the opposite way
+        const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-)?([^\.]*?(\d+|modifier))?/g;
+        const invertedDamageRegex = /(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder).*?(\d+(d\d+))(.*?(\+|-).*?(\d+|modifier))?/g;
+
+        const lines = baseDesc.split(/<p>|<td>|<li>|<h3>|<h4>|<h5>|<br>|<br\/>/);
+        lines.forEach((line) => {
+            const damageMatches = line.matchAll(damageRegex);
+            for (const match of damageMatches) {
+                // const full = match[0];
+                const dice = match[1];
+                // const dieSize = match[2];
+                let op = match[3];
+                // const longTag = match[4];
+                const shifter = match[6] === 'modifier' ? '@mod' : match[5];
+                let element = match[7];
+    
+                if (element === 'heal') {
+                    element = 'healing';
+                } else if (element === 'temporary hit point') {
+                    element = 'temphp';
+                }
+    
+                // Ignore wordings like "5-foot radius".
+                if (op && !shifter) {
+                    continue;
+                }
+    
+                const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
+                parts.push([
+                    damageLine,
+                    element
+                ]);
+            }
+            const healingMatches = line.matchAll(invertedHealingRegex);
+            for (const match of healingMatches) {
+                // const full = match[0];
+                // const operation = match[1];
+                const dice = match[2];
+                // const dieSize = match[3];
+                let op = match[4];
+                // const longTag = match[5];
+                const shifter = match[6] === 'modifier' ? '@mod' : match[6];
+    
+                const healLine = op ? `${dice} ${op} ${shifter}` : dice;
+                parts.push([
+                    healLine,
+                    'healing'
+                ]);
+            }
+        });
+        // If we still haven't found anything, try inverting the order.
+        if (parts.length === 0) {
+            const invertedDamageMatches = baseDesc.matchAll(invertedDamageRegex);
+            for (const match of invertedDamageMatches) {
+                const element = match[1];
+                const dice = match[2];
+                let op = match[5];
+                const shifter = match[6] === 'modifier' ? '@mod' : match[6];
+    
+                // Ignore wordings like "5-foot radius".
+                if (op && !shifter) {
+                    continue;
+                }
+    
+                const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
+
+                parts.push([
+                    damageLine,
+                    element
+                ]);
+            }
+        }
+        return {
+            parts,
+            versatile: '',
+            value: ''
+        };
     }
     //#endregion
 

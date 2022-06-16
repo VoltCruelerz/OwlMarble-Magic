@@ -2,6 +2,7 @@ const SpellParser = require('./src/spellParser.js');
 const test = require('./tests/tests.js');
 const FeatParser = require('./src/featParser.js');
 const ClassParser = require('./src/classParser.js');
+const WeaponParser = require('./src/weaponParser.js');
 const JournalParser = require('./src/journalParser.js');
 const thickWall = '======================================';
 const thinWall = '--------------------------------------';
@@ -33,6 +34,11 @@ blockStart('Classes');
 const classParser = new ClassParser();
 classParser.run(omm);
 blockStop('Class');
+
+blockStart('Weapons');
+const weaponParser = new WeaponParser();
+weaponParser.run();
+blockStop('Weapons');
 
 blockStart('Journals');
 const journalParser = new JournalParser();

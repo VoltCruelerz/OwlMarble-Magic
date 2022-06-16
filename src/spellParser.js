@@ -1,16 +1,15 @@
 const fs = require('fs');
-const seedrandom = require('seedrandom');
+const Parser = require('./Parser');
 const { detailedDiff } = require('deep-object-diff');
 const overrides = require('./parseOverrides');
-const thickWall = '======================================';
-const thinWall = '--------------------------------------';
 
 /**
  * Sets up a spell parser for OwlMarble Magic.
  * @class
  */
-module.exports = class SpellParser {
+module.exports = class SpellParser extends Parser {
     constructor () {
+        super();
         this.timeRegex = /(-?\d+) (action|bonus action|minute|hour|day|year|reaction|round|week)s?(, (.*))?/;
         this.healingRegex = /heal|((restore|regain).*hit points?)/;
     }
@@ -42,7 +41,7 @@ module.exports = class SpellParser {
      * @returns {{*}} A dictionary containing spell and creature names to the github permalink.
      */
     indexSpellsAndMonsters () {
-        console.log(thinWall + '\nIndexing files...');
+        console.log(this.thinWall + '\nIndexing files...');
         const indices = {};
         const github = 'https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells';
 
@@ -118,7 +117,7 @@ module.exports = class SpellParser {
      * Reads all input files and parses them.
      */
     readAndParseInputFiles () {
-        console.log(thinWall + '\nReading input files...');
+        console.log(this.thinWall + '\nReading input files...');
         const dirName = 'spells/levels/';
         const fileNames =fs.readdirSync(dirName);
         const allSpells = [];
@@ -139,7 +138,7 @@ module.exports = class SpellParser {
      * @returns 
      */
     readSpellDB (path) {
-        console.log(thinWall + '\nReading db file: ' + path);
+        console.log(this.thinWall + '\nReading db file: ' + path);
         const contents = fs.readFileSync(path, { encoding: 'utf-8', flag: 'r' });
         const lines = contents.split('\n');
         const dbSpells = lines.filter((line) => line).map((line) => JSON.parse(line));
@@ -151,7 +150,7 @@ module.exports = class SpellParser {
      * @returns [{}]
      */
     readAndParseImportedSpells () {
-        console.log(thinWall + '\nReading imported files...');
+        console.log(this.thinWall + '\nReading imported files...');
         const dirName = 'import/';
         const fileNames =fs.readdirSync(dirName);
         fileNames.sort();
@@ -603,34 +602,6 @@ module.exports = class SpellParser {
     //#endregion
 
     //#region Config Field Generators
-    //#region UUID
-    /**
-     * Generates a UUID from a PRNG seeded on the spell's name.
-     * @param {string} seed The seed for the RNG.
-     * @returns {string} The UUID.
-     */
-    generateUUID (seed) {
-        const rng = seedrandom(seed);
-        const options = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        const chars = [];
-        const uuidLength = 16;
-        for (let i = 0; i < uuidLength; i++) {
-            chars.push(options.charAt(this.getRandomInt(options.length, rng)));
-        }
-        return chars.join('');
-    }
-
-    /**
-     * Generates a random int from 0 (inclusive) to the max (exclusive).
-     * @param {number} max The number of faces on the die.
-     * @param {{*}} rng The random number generator.
-     * @returns {number} a random number.
-     */
-    getRandomInt (max, rng) {
-        return Math.floor(rng() * max);
-    }
-    //#endregion
-
     /**
      * Gets the activation object.
      * @param {string} castTime 
@@ -923,103 +894,6 @@ module.exports = class SpellParser {
         } else {
             return 'util';
         }
-    }
-
-    /**
-     * Generates the damage object.
-     * @param {string} description 
-     * @returns {{parts: [[string]], versatile: string}}
-     */
-    getDamage (description) {
-        description = description.toLowerCase()
-            .replaceAll('plus', '+')
-            .replaceAll('minus', '-')
-            .replaceAll(/\d+ (?:action|bonus action|minute|hour|day|year|reaction|round|week)/g, () => '');
-        const upcastTag = '<strong>higher levels</strong>';
-        const upcastIndex = description.indexOf(upcastTag);
-        const baseDesc = upcastIndex > -1 ? description.substr(0, upcastIndex) : description;
-        const parts = [];
-
-        // Normally, people write damage like "deal 8d6 fire damage" or "deal 1d8 plus your spellcasting ability modifier".
-        const damageRegex = /(\d+(d\d+)?) ?(\+|-)?(\W*?(\d+|(?:your spellcasting ability )?(modifier)))?[^\.]*?(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder|heal|temporary hit point)s?\W/g;
-        
-        // but sometimes, things are written the opposite way
-        const invertedHealingRegex = /(heal|regain|restore|hit point maximum).{1,50}?(\d+(d\d+)?) ?(\+|-)?([^\.]*?(\d+|modifier))?/g;
-        const invertedDamageRegex = /(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder).*?(\d+(d\d+))(.*?(\+|-).*?(\d+|modifier))?/g;
-
-        const lines = baseDesc.split(/<p>|<td>|<li>|<h3>|<h4>|<h5>|<br>|<br\/>/);
-        lines.forEach((line) => {
-            const damageMatches = line.matchAll(damageRegex);
-            for (const match of damageMatches) {
-                // const full = match[0];
-                const dice = match[1];
-                // const dieSize = match[2];
-                let op = match[3];
-                // const longTag = match[4];
-                const shifter = match[6] === 'modifier' ? '@mod' : match[5];
-                let element = match[7];
-    
-                if (element === 'heal') {
-                    element = 'healing';
-                } else if (element === 'temporary hit point') {
-                    element = 'temphp';
-                }
-    
-                // Ignore wordings like "5-foot radius".
-                if (op && !shifter) {
-                    continue;
-                }
-    
-                const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
-                parts.push([
-                    damageLine,
-                    element
-                ]);
-            }
-            const healingMatches = line.matchAll(invertedHealingRegex);
-            for (const match of healingMatches) {
-                // const full = match[0];
-                // const operation = match[1];
-                const dice = match[2];
-                // const dieSize = match[3];
-                let op = match[4];
-                // const longTag = match[5];
-                const shifter = match[6] === 'modifier' ? '@mod' : match[6];
-    
-                const healLine = op ? `${dice} ${op} ${shifter}` : dice;
-                parts.push([
-                    healLine,
-                    'healing'
-                ]);
-            }
-        });
-        // If we still haven't found anything, try inverting the order.
-        if (parts.length === 0) {
-            const invertedDamageMatches = baseDesc.matchAll(invertedDamageRegex);
-            for (const match of invertedDamageMatches) {
-                const element = match[1];
-                const dice = match[2];
-                let op = match[5];
-                const shifter = match[6] === 'modifier' ? '@mod' : match[6];
-    
-                // Ignore wordings like "5-foot radius".
-                if (op && !shifter) {
-                    continue;
-                }
-    
-                const damageLine = op ? `${dice} ${op} ${shifter}` : dice;
-
-                parts.push([
-                    damageLine,
-                    element
-                ]);
-            }
-        }
-        return {
-            parts,
-            versatile: '',
-            value: ''
-        };
     }
 
     /**
@@ -1402,7 +1276,7 @@ module.exports = class SpellParser {
                 this.overrideSpell(importedSpell);
                 parsed.push(importedSpell);
             } catch (e) {
-                console.error(thinWall + '=========\nFailure on ' + spell.name);
+                console.error(this.thinWall + '=========\nFailure on ' + spell.name);
                 throw e;
             }
         }
@@ -1667,7 +1541,7 @@ module.exports = class SpellParser {
      * @param {{*}} indices
      */
     exportSpellLists (spells, indices) {
-        const wall = (thinWall + '');
+        const wall = (this.thinWall + '');
         console.log(wall + '\nExporting Class Spell Lists...');
         const classes = Object.keys(spells.reduce((acc, spell) => {
             spell.data.classes.forEach((casterClass) => {
@@ -1840,7 +1714,7 @@ module.exports = class SpellParser {
      * @param {[{*}]} newSpells 
      */
     logDiff (oldSpells, newSpells) {
-        const wall = (thinWall + '');
+        const wall = (this.thinWall + '');
         console.log(wall + '\nChecking for diffs...');
 
         // Ignore the export timestamps
@@ -1941,7 +1815,7 @@ module.exports = class SpellParser {
         this.exportCompendiumBrowser(allSpells, 'E:/Foundry VTT/Data/modules/compendium-browser/spell-classes.json');
 
         // Export all to current foundry install.
-        console.log(thinWall + '\nExporting spells to foundry install...');
+        console.log(this.thinWall + '\nExporting spells to foundry install...');
         this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db');
 
         // Log differences to spells.
