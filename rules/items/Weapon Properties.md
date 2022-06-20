@@ -4,13 +4,17 @@
 
 You can use a weapon that has the Ammunition property to make a ranged Attack only if you have Ammunition to fire from the weapon. Each time you Attack with the weapon, you expend one piece of Ammunition. Drawing the Ammunition from a Quiver, case, or other container is part of the Attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended Ammunition by taking a minute to Search the battlefield. If you use a weapon that has the Ammunition property to make a melee Attack, you treat the weapon as an Improvised Weapon. A sling must be loaded to deal any damage when used in this way.
 
+## Amphibious [New]
+
+When used underwater, this weapon does not have disadvantage on attack rolls, and if it has the _Ammunition_ or _Thrown_ properties, it does not automatically miss beyond its normal range.
+
 ## Couched [New]
 
 If you are not mounted, this weapon also has the Two-Handed property.
 
 ## Dismounting [New]
 
-When an attack is made against a mounted combatant with this weapon, on a hit, the target must make a Dexterity saving throw equal to half the damage dealt or be dismounted, landing prone within 5 feet of the mount.
+When an attack is made against a mounted combatant with this weapon, on a hit, you the target must make a Dexterity saving throw equal to half the damage dealt or be dismounted, landing prone within 5 feet of the mount.
 
 ## Extended Reach [New]
 
@@ -63,3 +67,7 @@ This weapon requires two hands when you Attack with it.
 ## Versatile
 
 This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee Attack.
+
+## Vigorous [New]
+
+Instead of using your Dexterity modifier for the damage roll of this weapon, you use your Strength modifier.

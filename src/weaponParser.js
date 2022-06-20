@@ -15,10 +15,10 @@ module.exports = class WeaponParser extends Parser {
     getRange (propStr) {
         const result = /(?:Ammunition|Thrown) \((?<short>\d+)\/(?<long>\d+)\)/.exec(propStr);
         let value = result?.groups.short;
-        let long = result?.groups.long;
+        let long = result?.groups.long || null;
         if (!value) {
             value = 5;
-            value = propStr.includes('Reach') ? 10 : null;
+            value = propStr.includes('Reach') ? 10 : value;
             value = propStr.includes('Extended Reach') ? 15 : value;
         }
         return {
@@ -34,30 +34,26 @@ module.exports = class WeaponParser extends Parser {
      * @returns 
      */
     getProperties (propStr) {
-        const groups = propStr.replaceAll('_', '').split('<br/>');
-        const properties = groups[0].split(', ');
-        if (groups.length > 1) {
-            properties.push('Special');
-        }
+        const properties = propStr.split('<h4>');
 
         return {
-            ada: properties.find((p) => p === 'Adamantine'),
-            amm: properties.find((p) => p.startsWith('Ammunition')),
-            fin: properties.find((p) => p === 'Finesse'),
-            fir: properties.find((p) => p === 'Firearm'),
-            foc: properties.find((p) => p === 'Focus'),
-            hvy: properties.find((p) => p === 'Heavy'),
-            lgt: properties.find((p) => p === 'Light'),
-            lod: properties.find((p) => p === 'Loading'),
-            mgc: properties.find((p) => p === 'Magical'),
-            rch: properties.find((p) => p === 'Reach'),
-            rel: properties.find((p) => p === 'Reload'),
-            ret: properties.find((p) => p === 'Returning'),
-            sil: properties.find((p) => p === 'Silvered'),
-            spc: properties.find((p) => p === 'Special'),
-            thr: properties.find((p) => p.startsWith('Thrown')),
-            two: properties.find((p) => p === 'Two-Handed'),
-            ver: properties.find((p) => p === 'Versatile')
+            ada: !!properties.find((p) => p.startsWith('Adamantine')),
+            amm: !!properties.find((p) => p.startsWith('Ammunition')),
+            fin: !!properties.find((p) => p.startsWith('Finesse')),
+            fir: !!properties.find((p) => p.startsWith('Firearm')),
+            foc: !!properties.find((p) => p.startsWith('Focus')),
+            hvy: !!properties.find((p) => p.startsWith('Heavy')),
+            lgt: !!properties.find((p) => p.startsWith('Light')),
+            lod: !!properties.find((p) => p.startsWith('Loading')),
+            mgc: !!properties.find((p) => p.startsWith('Magical')),
+            rch: !!properties.find((p) => p.startsWith('Reach')),
+            rel: !!properties.find((p) => p.startsWith('Reload')),
+            ret: !!properties.find((p) => p.startsWith('Returning')),
+            sil: !!properties.find((p) => p.startsWith('Silvered')),
+            spc: propStr.includes('<strong>Special</strong>:'),
+            thr: !!properties.find((p) => p.startsWith('Thrown')),
+            two: !!properties.find((p) => p.startsWith('Two-Handed')),
+            ver: !!properties.find((p) => p.startsWith('Versatile'))
         };
     }
 
@@ -69,7 +65,10 @@ module.exports = class WeaponParser extends Parser {
     getWeaponImage(weaponName) {
         // This is ugly, but the file names are all over the place, and not even in the same folder.
         switch (weaponName) {
+            // Improvised
             case 'Improvised Weapon': return 'modules/taring-kyburn/icons/items/inventory/stake.jpg';
+            case 'Unarmed Strike': return 'modules/taring-kyburn/icons/items/equipment/Gloves/Gloves_01.png';
+            // Simple Melee
             case 'Club': return 'icons/weapons/clubs/club-baton-blue.webp';
             case 'Dagger': return 'icons/weapons/daggers/dagger-jeweled-purple.webp';
             case 'Greatclub': return 'icons/weapons/clubs/club-heavy-barbed-black.webp';
@@ -80,6 +79,7 @@ module.exports = class WeaponParser extends Parser {
             case 'Quarterstaff': return 'icons/weapons/staves/staff-simple.webp';
             case 'Sickle': return 'icons/weapons/sickles/sickle-curved.webp';
             case 'Spear': return 'icons/weapons/polearms/spear-flared-blue.webp';
+            // Martial Melee
             case 'Battleaxe': return 'icons/weapons/axes/axe-double-simple-brown.webp';
             case 'Billhook': return 'icons/weapons/polearms/spear-hooked-spike.webp';
             case 'Claws': return 'icons/weapons/fist/claw-leather-black.webp';
@@ -92,47 +92,53 @@ module.exports = class WeaponParser extends Parser {
             case 'Hook Swords (Linked)': return 'modules/taring-kyburn/icons/magic%20items/Hook%20Swords.webp';
             case 'Lance': return 'modules/taring-kyburn/icons/items/weapons/spears/Spear_27.png';
             case 'Longsword': return 'icons/weapons/swords/greatsword-crossguard-steel.webp';
-            case 'Man Catcher': return 'icons/weapons/polearms/spear-ornate-gold.webp';
+            case 'Man Catcher': return 'modules/taring-kyburn/icons/items/weapons/man-catcher.webp';
             case 'Maul': return 'icons/weapons/maces/mace-round-studded.webp';
             case 'Morningstar': return 'icons/weapons/maces/mace-round-spiked-black.webp';
             case 'Pike': return 'icons/weapons/polearms/pike-flared-brown.webp';
             case 'Rapier': return 'modules/taring-kyburn/icons/items/weapons/swords/Sword_v2_36.png';
+            case 'Scimitar': return 'modules/taring-kyburn/icons/items/weapons/swords/Sword_47%20(2).png';
             case 'Shortsword': return 'icons/weapons/swords/sword-guard-bronze.webp';
+            case 'Spearsword': return 'modules/taring-kyburn/icons/items/weapons/spears/Spear_14.png';
             case 'Studded Gauntlets': return 'icons/equipment/hand/gauntlet-armored-leather-brown.webp';
             case 'Trident': return 'icons/weapons/polearms/trident-silver-blue.webp';
             case 'War Pick': return 'icons/weapons/hammers/hammer-war-spiked.webp';
             case 'Warhammer': return 'icons/weapons/hammers/hammer-war-rounding.webp';
             case 'Voulge': return 'modules/taring-kyburn/icons/items/weapons/spears/Spear_v2_09.png';
-            case 'War Scythe': return 'modules/taring-kyburn/icons/items/weapons/scythes/Scythe_03.png';
+            case 'War Scythe': return 'modules/taring-kyburn/icons/items/weapons/spears/War%20Scythe.png';
+            // Simple Ranged
             case 'Light Crossbow': return 'icons/weapons/crossbows/crossbow-slotted.webp';
-            case 'Dart': return 'icons/weapons/ammunition/arrow-broadhead.webp';
             case 'Shortbow': return 'icons/weapons/bows/shortbow-recurve.webp';
             case 'Sling': return 'modules/taring-kyburn/icons/items/inventory/textiles/Tailoring_52_bandages.png';
             case 'Blowgun': return 'modules/taring-kyburn/icons/items/weapons/staff.png';
+            // Martial Ranged
             case 'Hand Crossbow': return 'icons/weapons/crossbows/crossbow-simple-red.webp';
             case 'Heavy Crossbow': return 'icons/weapons/crossbows/crossbow-blue.webp';
             case 'Longbow': return 'modules/taring-kyburn/icons/items/weapons/bows/Bow_08.png';
+            case 'Warbow': return 'modules/taring-kyburn/icons/items/weapons/bows/Bow_12.png';
             case 'Net': return 'icons/tools/fishing/net-simple-tan.webp';
             case 'Whip': return 'icons/weapons/misc/whip-red-yellow.webp';
-            default:
-                console.log('No image set for ' + weaponName);
-                return 'modules/owlmarble-magic/icons/items/weapons/';
+            // Unhandled Error
+            default: throw new Error('No image set for ' + weaponName);
         }
     }
 
     /**
      * Generates the description string for the weapon based on its properties.
-     * @param {} propStr 
-     * @param {*} propDict 
+     * @param {string} damageStr - The damage string
+     * @param {string} propStr - The property string to parse
+     * @param {{*}} propDict - The dictionary of properties
+     * @param {string} altStr - The Alternatives list 
+     * @param {{}} range - The range object
      * @returns 
      */
-    getDescription (propStr, propDict) {
+    getDescription (damageStr, propStr, propDict, altStr, range) {
         const groups = propStr.replaceAll('_', '').split('<br/>');
         const properties = groups[0].split(', ');
         const isSpecial = groups.length > 1;
         
         const propRegex = /(?<prop>Adamantine|Ammunition|Couched|Dismounting|Extended Reach|Finesse|Firearm|Focus|Handy|Heavy|Inner Range|Light|Loading|Magical|Parrying|Reach|Reload|Returning|silvered|Special|Thrown|Two-Handed|Versatile)( \((?<short>\d+)\/(?<long>\d+)\))?/;
-        let propDescriptions = properties.map((p) => {
+        const lines = properties.map((p) => {
             const propName = propRegex.exec(p)?.groups.prop.trim();
             if (propName && propName !== 'Special') {
                 const propertyContent = propDict[propName].content;
@@ -141,9 +147,22 @@ module.exports = class WeaponParser extends Parser {
             return '';
         });
         if (isSpecial) {
-            propDescriptions.splice(0, 0, this.paragraphify(this.boldify(groups[1])));
+            lines.splice(0, 0, this.paragraphify(this.boldify(groups[1])));
         }
-        return propDescriptions.join('');
+        
+        const isRanged = !!range.long;
+        const rangeStr = isRanged ? `${range.value}/${range.long}` : range.value;
+        const startingLine = this.paragraphify(
+            `<em><b>${isRanged ? 'Ranged' : 'Melee'} Weapon Attack.</b></em> `
+            + `<em>${isRanged ? 'Range' : 'Reach'}</em>: ${rangeStr} feet. `
+            + `<em>Hit:</em> ${damageStr}.`
+        );
+
+        lines.splice(0, 0, startingLine);
+        if (altStr) {
+            lines.push('<br/>' + this.tagify('blockquote', '<b>Alternatives</b>: ' + altStr));
+        }
+        return lines.join('');
     }
 
     /**
@@ -205,17 +224,20 @@ module.exports = class WeaponParser extends Parser {
                 .map((weaponLine) => {
                     const terms = weaponLine.split('|').map((w) => w.trim());
                     const name = /\*\*(?<name>.*?)\*\*/.exec(terms[1]).groups.name;
-                    const price = parseFloat(terms[2]);
-                    const weight = parseFloat(terms[3]);
-                    const damage = this.getDamage(' ' + terms[4] + ' ');// The parser is designed for the middle of text blocks, so wrap it.
+                    const price = parseFloat(terms[2]) || 0;
+                    const weight = parseFloat(terms[3]) || 0;
+                    const damageStr = terms[4];
+                    const damage = this.getDamage(' ' + damageStr + ' ');// The parser is designed for the middle of text blocks, so wrap it.
+                    const propStr = terms[5];
+                    const altStr = terms[6] === '-' ? '' : terms[6];
                     if (damage.parts.length > 0) {
                         damage.parts[0][0] = damage.parts[0][0] + ' + @mod';// Always add the mod.
                     }
-                    damage.versatile = /Versatile \((?<versatileDamage>.*)\)/.exec(terms[5])?.groups.versatileDamage || '';
+                    damage.versatile = /Versatile \((?<versatileDamage>.*)\)/.exec(propStr)?.groups.versatileDamage || '';
 
-                    const description = this.getDescription(terms[5], propDict);
+                    const range = this.getRange(propStr);
+                    const description = this.getDescription(damageStr, propStr, propDict, altStr, range);
                     const properties = this.getProperties(description);
-                    const range = this.getRange(terms[5]);
 
                     let actionType = type.includes('Melee') ? 'mwak' : 'rwak';
                     let weaponType = (type.includes('Simple') ? 'simple' : 'martial')
