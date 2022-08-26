@@ -22,7 +22,7 @@ When you hit with a simple weapon, the attack deals an additional 1d10 damage of
 
 **Classes**: Fighter, Paladin
 
-You gain one additional reaction per turn that can only be used for attacks of opportunity.
+You gain one additional reaction per turn that can only be used for attacks of opportunity, but you cannot have two reactions trigger on the same event.
 
 ## Probing Strikes [New]
 

@@ -479,6 +479,24 @@ _Requirement: Ability to cast a cantrip._
 - During the first round of combat, you can cast cantrips as a bonus action.  If you do so, you cannot cast a leveled spell with your action.
 - During the first round of combat, if you are targeted by an attack, you can cast a cantrip targeting the attacker as a reaction.
 
+## Spellscribe [New]
+
+You have developed a special affinity for transcribing magic, granting you the following benefits:
+
+- You gain the ability to read and write spells within spell books, allowing you to transcribe spells you know and read the spells written by another, though you gain no special ability to cast those spells yourself.
+- When you transcribe a spell you know into a spellbook, you require only half as much valuable materials and time as normal, using the rules below.
+- When you enchant a spell scroll or other runic enchantment, you have advantage on the final check to create the item.
+
+> ### Scribing a Spell
+>
+> **Copying a Spell into the Book**. When you find a wizard spell of 1st level or higher, you can add it to a spellbook if you can spare the time to decipher and copy it.
+>
+> Copying a spell into a spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it.
+>
+> For each level of the spell, the process takes 1 hour and costs 25gp. The cost represent the fine inks you need to record it.
+>
+> **Copying from a Spell Scroll**. A spell on a spell scroll can be copied just as spells in spellbooks can be copied. When you copy a spell from a spell scroll, you must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.
+
 ## Spellslinger [New]
 
 _Requirement: Must be able to cast a spell._

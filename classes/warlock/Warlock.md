@@ -150,7 +150,7 @@ When you reach 9th level, the form is as if the summoning was cast with a 2nd le
 
 You gain an additional familiar that must take the form of a CR 0 creature that meets the criteria for your familiars.  You may select this Invocation more than once.  Should you do so, previous familiars granted by this Invocation may have a CR as high as half the maximum CR you can select for your familiar (minimum ¼).  The total CR of all your familiars must be no higher than your Charisma modifier.
 
-###### Chain Vitality [New]
+##### Chain Vitality [New]
 
 By expending a Pact Magic spell slot as an action, you may restore one of your familiars to full health and summon it if it is not actively summoned.
 

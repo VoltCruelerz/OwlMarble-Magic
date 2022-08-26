@@ -43,7 +43,7 @@ module.exports = class SpellParser extends Parser {
     indexSpellsAndMonsters () {
         console.log(this.thinWall + '\nIndexing files...');
         const indices = {};
-        const github = 'https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/spells';
+        const github = 'https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/';
 
         // Load all the spells.
         const spellNameTag = '## ';
@@ -60,7 +60,7 @@ module.exports = class SpellParser extends Parser {
                     .replaceAll(' ','-')
                     .replaceAll('\'','')
                     .toLowerCase();
-                indices[spellName] = `${github}/levels/${fileName}#${linkableName}`;
+                indices[spellName] = `${github}/spells/levels/${fileName}#${linkableName}`;
             });
         });
 
@@ -73,7 +73,7 @@ module.exports = class SpellParser extends Parser {
             .map((monsterNameLine) => monsterNameLine.match(monsterNameRegex)[1]);
         monsterNames.forEach((monsterName) => {
             const linkableName = monsterName.replaceAll(' ', '-').toLowerCase();
-            indices[monsterName] = `${github}/Monster%20Blocks.md#${linkableName}`;
+            indices[monsterName] = `${github}/monsters/Monster%20Blocks.md#${linkableName}`;
         });
 
         return indices;
