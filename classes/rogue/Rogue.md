@@ -4,7 +4,7 @@
 
 ### Sneak Attack [Updated]
 
-Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once on each of your turns, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. When you hit with an attack, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon, and once you have used this feature, you cannot use it again until the start of your next turn.
 
 You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.
 
@@ -48,4 +48,4 @@ Additionally, if you take the _Disengage_ Cunning Action, select an enemy within
 
 #### Commanding Presence [New]
 
-Starting at 9th level, as a bonus action, you can issue an order to an ally to attack an enemy of your choice within 30 feet of you.  Your ally can then choose to use their reaction to immediately make one attack against the target.  If the attack hits, the attack deals bonus damage equal to your Intelligence or Charisma modifier (your choice).  If the ally has the Sneak Attack feature, they may not use it as part of this attack.
+Starting at 9th level, as a bonus action, you can issue an order to an ally to attack an enemy of your choice within 30 feet of you.  Your ally can then choose to use their reaction to immediately make one attack against the target.  If the attack hits, the attack deals bonus damage equal to your Intelligence or Charisma modifier (your choice).
