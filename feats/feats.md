@@ -257,6 +257,8 @@ You gain the following benefits:
 
 ## Heart Piercer [New]
 
+_Requirement: Level 20_
+
 After strenuous training, you have mastered finding chinks in the armor of your foes, allowing you to strike critical organs.  You gain the following benefits:
 
 - Your critical hit range with finesse, ranged, and thrown weapons is increased by 2.
