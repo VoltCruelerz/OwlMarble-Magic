@@ -153,6 +153,8 @@ Starting at 4th level, you can use your reaction to reduce any falling damage yo
 
 Beginning at 5th level, when you take the Attack action, you can expend ki points to make more attacks. For every 3 ki points you expend in this way, you can make one additional attack as part of the action.
 
+When you would gain this feature, if you already have the Extra Attack feature from another class, you can replace this with a Feat.
+
 > #### Maximum Attack Rate
 >
 > The levels when the maximum number of attacks a monk can make on a turn (when employing **Extra Attack** and **Flurry of Blows** to their fullest extent) changes are shown in the table below.

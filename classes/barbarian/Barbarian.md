@@ -1,5 +1,12 @@
 # Barbarian
 
+
+## Extra Attack [Updated]
+
+Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+
+When you would gain this feature, if you already have the Extra Attack feature from another class, you can replace this with a Feat.
+
 ## Rage Dice [New]
 
 _Optional Feature_

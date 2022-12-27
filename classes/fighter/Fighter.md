@@ -6,6 +6,8 @@ Beginning at 5th level, you can attack twice, instead of once, when you take the
 
 The number of attacks increases to three when you reach 11th level in this class and four when you reach 17th level.
 
+When you would gain this feature, if you already have the Extra Attack feature from another class, you can replace this with a Feat.
+
 ## Indomitable [Updated]
 
 Beginning at 9th level, you can reroll a saving throw that you fail.  Once you succeed on a saving throw using this feature, you can’t use it again until you finish a long rest.
