@@ -136,6 +136,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Greater Restoration](https://www.dndbeyond.com/spells/greater-restoration) - V/S/M$X - (PHB - 246)
 - [Skill Empowerment](https://www.dndbeyond.com/spells/skill-empowerment) - V/S [C] - (XGE - 165)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
+- [Wall of Light](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-light) - V/S/M [C] - (OMM - 5)
 - [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 
 ## Bard
@@ -761,6 +762,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Transmute Rock](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#transmute-rock) - V/S/M - (OMM - 5)
 - [Tree Stride](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#tree-stride) - V/S [C] - (OMM - 5)
 - [Twilight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#twilight) - V/S/M [C] - (OMM - 5)
+- [Wall of Light](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-light) - V/S/M [C] - (OMM - 5)
 - [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Wrath of Nature](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wrath-of-nature) - V/S [C] - (OMM - 5)
 
@@ -1260,7 +1262,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Telekinesis](https://www.dndbeyond.com/spells/telekinesis) - V/S [C] - (PHB - 280)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
-- [Wall of Light](https://www.dndbeyond.com/spells/wall-of-light) - V/S/M [C] - (XGE - 170)
+- [Wall of Light](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-light) - V/S/M [C] - (OMM - 5)
 - [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Zenith's Hellstream](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#zeniths-hellstream) - V/S/M [C] - (OMM - 5)
 
@@ -1516,7 +1518,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Synaptic Static](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#synaptic-static) - V/S - (OMM - 5)
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
-- [Wall of Light](https://www.dndbeyond.com/spells/wall-of-light) - V/S/M [C] - (XGE - 170)
 
 ### Level 6 - _Warlock_
 
@@ -1951,7 +1952,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Transmute Rock](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#transmute-rock) - V/S/M - (OMM - 5)
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
 - [Wall of Force](https://www.dndbeyond.com/spells/wall-of-force) - V/S/M [C] - (PHB - 285)
-- [Wall of Light](https://www.dndbeyond.com/spells/wall-of-light) - V/S/M [C] - (XGE - 170)
+- [Wall of Light](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-light) - V/S/M [C] - (OMM - 5)
 - [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Zenith's Hellstream](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#zeniths-hellstream) - V/S/M [C] - (OMM - 5)
 
