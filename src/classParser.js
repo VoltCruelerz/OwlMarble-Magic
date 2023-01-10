@@ -150,7 +150,7 @@ module.exports = class ClassPraser extends Parser {
                     _id: this.generateUUID(`${featureName} - ${classFileName} (OwlMarble Magic - Features)`),
                     name: featureName,
                     type: 'feat',
-                    img: 'modules/owlmarble-magic/icons/classes/' + classFileName + '.svg',
+                    img: 'modules/owlmarble-magic/icons/classes/' + classFileName + (classFileName !== 'Psion' ? '.svg' : '.png'),
                     data: {
                         description: {
                             value: `<div>${featureString}</div>`,
