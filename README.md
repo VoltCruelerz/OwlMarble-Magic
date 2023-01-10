@@ -37,6 +37,7 @@ See dedicated [page](./feats/feats.md).
 - [Druid](./classes/druid/Druid.md)
 - [Fighter](./classes/fighter/Fighter.md)
 - [Monk](./classes/monk/Monk.md)
+- [Psion](./classes/psion/Psion.md)
 - [Ranger](./classes/ranger/Ranger.md)
 - [Rogue](./classes/rogue/Rogue.md)
 - [Sorcerer](./classes/sorcerer/Sorcerer.md)
