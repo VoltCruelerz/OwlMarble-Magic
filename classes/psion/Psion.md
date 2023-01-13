@@ -6,20 +6,20 @@ _Original Source: [KibblesTasty](https://drive.google.com/file/d/1YDQi5Gz5yWfVKf
 
 ### Rampaging Power [Updated]
 
-Starting at 3rd level, you gain a pool of d2 rampage dice with a single die in the pool. Once on each of your turns when you make a damage roll, you can roll all your rampage dice and add the total to the damage roll. At the start of each of your turns in initiative, if you used your rampage dice during your last turn, the number of rampage dice you have in your pool doubles. If you did not, your number of rampage dice in the pool resets to 1.
+Starting at 3rd level, you gain a pool of d4 rampage dice with a single die in the pool. Once on each of your turns when you make a damage roll, you can roll all your rampage dice and add the total to the damage roll. At the start of each of your turns in initiative, if you used your rampage dice during your last turn, the number of rampage dice you have in your pool doubles. If you did not, your number of rampage dice in the pool resets to 1.
 
 When you use your rampage dice, you also take an equivalent amount to the damage rolled as force damage, but you can ignore the damage from a number of dice equal to your Intelligence modifier.
 
-> For example, if your modifier is +3 and you are in the 4th stage, your target will take 8d2 damage while you will only take 5d2.
+> For example, if your modifier is +3 and you are in the 4th stage, your target will take 8d4 damage while you will only take 5d4.
 
-When you reach 5th level in this class, the rampage dice become d4's. When you reach 11th level, they grows to d6's, and at 17th level, they grow to d8's.
+When you reach 5th level in this class, the rampage dice become d6's. When you reach 11th level, they grows to d8's, and at 17th level, they grow to d10's.
 
-| Tier | Stage 1 | Stage 2 | Stage 3 | Stage 4 | Stage 5 |
-|:----:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| 1    | 1d2=1.5 | 2d2=3   | 4d2=6   | 8d2=12  | 16d2=24 |
-| 2    | 1d4=2.5 | 2d4=5   | 4d4=10  | 8d4=20  | 16d4=40 |
-| 3    | 1d6=3.5 | 2d6=7   | 4d6=14  | 8d6=28  | 16d6=52 |
-| 4    | 1d8=4.5 | 2d8=9   | 4d8=18  | 8d8=36  | 16d8=72 |
+| Tier | Stage 1  | Stage 2 | Stage 3 | Stage 4 | Stage 5  |
+|:----:|:--------:|:-------:|:-------:|:-------:|:--------:|
+| 1    | 1d4=2.5  | 2d4=5   | 4d4=10  | 8d4=20  | 16d4=40  |
+| 2    | 1d6=3.5  | 2d6=7   | 4d6=14  | 8d6=28  | 16d6=52  |
+| 3    | 1d8=4.5  | 2d8=9   | 4d8=18  | 8d8=36  | 16d8=72  |
+| 4    | 1d10=5.5 | 2d10=10 | 4d10=20 | 8d10=40 | 16d10=80 |
 
 ### Uncontrollable Mind [Updated]
 
