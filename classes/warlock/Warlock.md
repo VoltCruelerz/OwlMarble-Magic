@@ -10,6 +10,32 @@ When you become a warlock, you can choose to become an intelligence-based warloc
 
 Starting at 5th level, when you cast a damaging cantrip with a grade higher than 1 with a spell attack or that compels a saving throw, you can split the spell’s magic.  Instead of casting the spell at your normal grade, you can rapidly cast it at grade 1 a number of times equal to the grade you normally cast it at.  These castings can share targets, but targets cannot be affected by the secondary effects of the spell more than once.
 
+### Mystic Gift [New]
+
+_Replaces Mystic Arcanum_
+
+At 11th level, and again at levels 13, 15, and 17, your patron bestow gifts upon you. At each of these levels, choose one of the following options:
+
+- Mystic Boon
+- Mystic Arcanum
+
+#### Mystic Boon
+
+You gain another pact boon as well as an eldritch invocation that has that boon as a prerequisite.
+
+#### Mystic Arcanum
+
+You learn a magical secret called an arcanum. Choose a spell on the Warlock list of a level no higher than shown in the below table.
+
+| Warlock Level | Spell Level |
+|:-:|:-:|
+| 11 | 6 |
+| 13 | 7 |
+| 15 | 8 |
+| 17 | 9 |
+
+You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.
+
 ## Pact Boons
 
 ### Pact of the Blade [Updated]
@@ -166,14 +192,6 @@ When you are magically healed and your familiar is within 30 feet of you, your F
 
 #### Pact of the Flesh
 
-##### Innate Weapons [New]
-
-You can use a bonus action to grow a natural weapon from part of your body, which you are proficient with and can use to make melee weapon attacks.  It lasts until you use a bonus action to dismiss it.
-
-Each time you create a natural weapon, you determine its appearance, such as claws or horns, and select an appropriate physical damage type.  On a hit, it deals 1d10 + your Strength modifier, and you can push the target up to 10 feet away from you.
-
-When you cast a spell that requires a melee weapon, such as Green-Flame Blade, you can use a weapon you created with this ability instead of the weapon required by the spell.
-
 ##### Eldritch Endurance [New]
 
 You are able to complete a long rest in half the normal time, and must only be unconscious for half of that.  When you complete a long rest, you lose two levels of exhaustion instead of one.
@@ -181,6 +199,14 @@ You are able to complete a long rest in half the normal time, and must only be u
 ##### Eldritch Regeneration [New]
 
 When you cast a spell of first level or higher, you regain hit points equal to the level of the spell.
+
+##### Innate Weapons [New]
+
+You can use a bonus action to grow a natural weapon from part of your body, which you are proficient with and can use to make melee weapon attacks.  It lasts until you use a bonus action to dismiss it.
+
+Each time you create a natural weapon, you determine its appearance, such as claws or horns, and select an appropriate physical damage type.  On a hit, it deals 1d10 + your Strength modifier, and you can push the target up to 10 feet away from you.
+
+When you cast a spell that requires a melee weapon, such as Green-Flame Blade, you can use a weapon you created with this ability instead of the weapon required by the spell.
 
 ##### Resilient Form [New]
 
@@ -238,6 +264,78 @@ At the end of this time, you learn one piece of information of your choice about
 - Usual Behaviors
 
 **Source:** [u/Ascended_Bebop](https://www.reddit.com/r/UnearthedArcana/comments/v4dhfj/additional_warlock_invocations_tap_into_forbidden/)
+
+#### Ritual Magic [New]
+
+Your Book of Shadows gains a new chapter holding two Warlock spells of your choice that have the ritual tag. The spells must be of a level you can cast. If you come across a ritual spell in written form (such as a spell scroll), you can add it to your Book of Shadows. Doing so takes 2 hours and 50gp per level of the spell in analysis and precious inks.
+
+##### Stenography [New]
+
+As an action, you can order your book of shadows to begin recording a conversation. For the next hour or until you end the process as a bonus action, the book transcribes all words spoken within 50 feet of it with each speaker's words appearing in a different color of ink.
+
+Once you have recorded a conversation in this way, you may not do so again until you finish a short or long rest.
+
+#### Expanded Repertoire [New]
+
+_Prerequisite: 5th level_
+
+Your maximum known spells increases by 2.
+
+#### Ritual Wards [New]
+
+_Prerequisite: 5th level_
+
+You can cast the spell _Magic Circle_ once using a spell slot without expending any valuable components. Once you have done so, you cannot do so again until you complete a short or long rest.
+
+#### Query the Shadows [New]
+
+_Prerequisite: 9th level_
+
+You can cast _Divination_ once without using a spell slot. Once you have done so, you cannot cast it again in this way until you complete a short or long rest.
+
+#### Traveler of Hidden Pathways [New]
+
+_Prerequisite: 9th level_
+
+You learn the spell _Teleportation Circle_. It does not count against the number of spells you know, and you can cast it without expending a spell slot. Once you have cast the spell in this way, you cannot do so again until you complete a long rest.
+
+#### Forgotten Knowledge [New]
+
+_Prerequisite: 12th level_
+
+You cast the spell _Borrowed Knowledge_ once without expending a spell slot. Once you have done so, you cannot do so again until you complete a short or long rest.
+
+##### High Rituals [New]
+
+_Prerequisite: 12th level_
+
+By expending gold equal to 10 times the spell's level, you can cast any pact magic spell you know as a ritual.
+
+##### Enduring Magic [New]
+
+_Prerequisite: 15th level_
+
+When you cast a spell as a ritual or that spell is a conjuration spell requiring concentration, its duration is doubled.
+
+##### Layered Defenses [New]
+
+_Prerequisite: 15th level_
+
+You can cast the spell _Guards and Wards_ once without expending a spell slot. Once you have done so, you cannot cast it in this way again until you finish a long rest.
+
+##### Name of the Ages [New]
+
+_Prerequisite: 18th level_
+
+You can cast the spell _Sacred Name_ at will without expending a spell slot, provided you target your own name.
+
+##### Grand Rituals [New]
+
+_Prerequisite: 18th level_
+
+Your Book of Shadows gains a new chapter containing instructions for rituals for five spells of your choice. These spells must be from the same school of magic, but they do not need to be from the Warlock spell list or have the ritual tag.
+
+By using your Book of Shadows, you can cast any of these spells as a ritual. Casting a spell in this way requires expending valuable resources with a gold value equal to 100 times the spell's level, and the ritual takes a number of hours equal to twice the spell's level.
 
 ### Cantrip Invocations
 
