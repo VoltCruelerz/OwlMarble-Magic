@@ -186,7 +186,7 @@ When you cast a spell of first level or higher, you regain hit points equal to t
 
 You become immune to poison and disease.  Additionally, when you complete a long rest, if you are missing any body parts, they grow back.  If you had been blinded or deafened, you regain these faculties.
 
-###### Steel Skin [New]
+##### Steel Skin [New]
 
 If you would take damage less than your proficiency bonus, you instead take no damage.  This applies after resistances.
 
