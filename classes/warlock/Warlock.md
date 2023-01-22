@@ -2,13 +2,19 @@
 
 ## General features
 
+----
+
 ### Flexible Deals [New]
 
 When you become a warlock, you can choose to become an intelligence-based warlock instead of a charisma-based warlock.  If you do, any time a class feature references your charisma, use your intelligence instead.
 
+----
+
 ### Split Magic [New]
 
 Starting at 5th level, when you cast a damaging cantrip with a grade higher than 1 with a spell attack or that compels a saving throw, you can split the spell’s magic.  Instead of casting the spell at your normal grade, you can rapidly cast it at grade 1 a number of times equal to the grade you normally cast it at.  These castings can share targets, but targets cannot be affected by the secondary effects of the spell more than once.
+
+----
 
 ### Mystic Gift [New]
 
@@ -36,9 +42,17 @@ You learn a magical secret called an arcanum. Choose a spell on the Warlock list
 
 You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.
 
+----
+
 ## Pact Boons
 
+If your pact boon is an item, it counts as a spellcasting focus for your warlock spells.
+
+----
+
 ### Pact of the Blade [Updated]
+
+----
 
 When you accept this pact boon, you gain proficiency in medium armor and shields.
 
@@ -50,7 +64,11 @@ You can transform one magic weapon into your pact weapon by performing a special
 
 If you later surrender this pact boon through the Eldritch Versatility feature, you lose proficiency in medium armor and shields if you have no other source for them.
 
+----
+
 ### Pact of the Flesh [New]
+
+----
 
 Inspired by u/NotTheSmooze’s Pact of the Skin.
 
@@ -64,19 +82,24 @@ If you have any missing body parts or diseases, they are restored or cured.
 
 The new body may reflect the nature of your patron.
 
-- The Archfey: your appearance might change to reflect a particular season such as Summer or Winter, or you might come to possess unearthly beauty and grace or take on the wrinkled, sagging flesh of a hag.
-- The Celestial: Your eyes might glow with a golden light.
-- The Fiend: Your skin might turn red or leathery, or you might grow a tail or horns.  Your teeth might sharpen, and your skin might be unusually warm or cold to the touch.
-- The Genie: Your body might resemble the elemental nature of your patron, similar to that of a Genasi.
-- The Great Old One: You might lose color in your eyes, hair, or skin.  You might never blink again.
-- The Librarian: Your skin might take on a paper-white appearance with text scrawled across it.
-- The Raven Queen: Your skin might turn gray or whenever you enter bright light your bones might be faintly visible beneath your skin.
+- **The Archfey**: your appearance might change to reflect a particular season such as Summer or Winter, or you might come to possess unearthly beauty and grace or take on the wrinkled, sagging flesh of a hag.
+- **The Celestial**: Your eyes might glow with a golden light.
+- **The Fiend**: Your skin might turn red or leathery, or you might grow a tail or horns.  Your teeth might sharpen, and your skin might be unusually warm or cold to the touch.
+- **The Genie**: Your body might resemble the elemental nature of your patron, similar to that of a Genasi.
+- **The Great Old One**: You might lose color in your eyes, hair, or skin.  You might never blink again.
+- **The Raven Queen**: Your skin might turn gray or whenever you enter bright light your bones might be faintly visible beneath your skin.
 
 If you later surrender this pact boon through the Eldritch Versatility feature, you revert to your original body.
 
+----
+
 ## Patrons
 
+----
+
 ### The Genie
+
+----
 
 #### Archmage [New Genie Subtype]
 
@@ -106,13 +129,49 @@ In addition, as a bonus action, you can give yourself a flying speed of 30 feet 
 
 ## Eldritch Invocations
 
+----
+
+> The invocations in this document are organized in the following way:
+>
+> 1. Invocation Type
+> 2. Level Prerequisite
+> 3. Alphabetical
+
 ### General Invocations
+
+----
+
+#### Fiendish Vigor [Updated]
+
+You can cast _False Life_ on yourself at will without expending a spell slot or material components. The level of the spell is equal to your warlock spell slot level.
 
 #### Shrouded Spells [New]
 
 When you cast a spell with a saving throw, you can cause any number of the affected creatures to automatically succeed on the saving throw.
 
+#### Eyes of the Hells [New]
+
+_Prerequisite: Level 5_
+
+You can innately cast the spell _Immolating Gaze_ once without using a spell slot. Once you have done so, you may not do so again until you finish a short or long rest. The level of the spell is equal to the level of your warlock spell slots.
+
+#### Dreadful Word [Updated]
+
+_Prerequisite: Level 7_
+
+You know the spell _Confusion_ and can cast it once without expending a warlock spell slot. Once you have done so, you cannot do so again until you finish a short or long rest.
+
+#### Otherworldly Leap [Updated]
+
+_Prerequisite: Level 7_
+
+You can innately cast _Jump_ on yourself at will.
+
+----
+
 ### Pact Boon Invocations
+
+----
 
 #### Pact of the Blade
 
@@ -154,6 +213,8 @@ When you summon your pact weapon, you can cause a suit of armor that cannot be r
 
 The armor disappears when your pact weapon is dismissed.
 
+----
+
 #### Pact of the Chain
 
 ##### Superior Familiar [New]
@@ -190,6 +251,8 @@ Alternatively, you can expend a pact magic slot as an action to instantly perfor
 
 When you are magically healed and your familiar is within 30 feet of you, your Familiar regenerates half the hit points you do and you can cast spells with a range of Self through the familiar, but when your familiar is destroyed, you receive Psychic damage equal to half its maximum hit points.
 
+----
+
 #### Pact of the Flesh
 
 ##### Eldritch Endurance [New]
@@ -218,37 +281,105 @@ If you would take damage less than your proficiency bonus, you instead take no d
 
 ##### Fluid Form [New]
 
-_Prerequisite: 5th level_
+_Prerequisite: Level 5_
 
 You can choose to soften your body, allowing you to pass through openings as small as 1 inch without squeezing.
 
+##### Grand Revelation [New]
+
+_Prerequisite: Level 5_
+
+You can cast the spell _Enlarge/Reduce_ once without expending a spell slot. Once you have done so, you cannot do so again until you finish a long rest.
+
 ##### Unstoppable Heart [New]
 
-_Prerequisite: 7th level_
+_Prerequisite: Level 7_
 
 You can cast Death Ward on yourself once without expending a spell slot.  You can’t do so again until you finish a long rest.
 
 ##### Malleable Flesh [New]
 
-_Prerequisite: 15th level_
+_Prerequisite: Level 15_
 
 When you complete a long rest, you can select an entirely new body from your patron, with the same restrictions as your original body you received from this pact boon.
 
 ##### Endless Vitality [New]
 
-_Prerequisite: 18th level_
+_Prerequisite: Level 18_
 
 At the start of each of your turns, unless you have taken fire or acid damage since the end of your last turn, you regain hit points equal to your Constitution modifier.  If your body had been obliterated, such as by the Disintegrate spell, your body reforms standing up with one hit point.  Once you have reformed your body in this way, you cannot do so again until you complete a long rest.
 
+----
+
 #### Pact of the Talisman
+
+----
+
+#### Bestowed Expedience [New]
+
+The wearer of your talisman's speed is increased by 5 times half your proficiency bonus (rounded down).
+
+#### Blessing of the Talisman [New]
+
+When the wearer of your talisman misses an attack roll, they can add a d4 to the roll, potentially turning the miss into a hit. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.
+
+If you also have the _Protection of the Talisman_ invocation, these invocations use the same shared pool of usages.
 
 ##### Talisman of Manifold Forms [New]
 
-As an action while your talisman is within 30 feet of you, you can transform it into an object of your choosing. The talisman takes the form of a piece of adventuring gear, set of artisan's tools, weapon, or musical instrument. The resulting form's gold value cannot exceed 20 times your proficiency bonus.
+As an action while your talisman is within 30 feet of you, you can transform it into one of the following forms:
+
+- an article of clothing
+- a piece of adventuring gear
+- a set of artisan's tools
+- a weapon
+- a musical instrument
+- its true form
+- armor with which the wearer is proficient
+
+The resulting form's gold value cannot exceed 20 times your proficiency bonus. If there is not enough space for its new form, it fails to transform.
 
 **Inspiration:** [u/Ascended_Bebop](https://www.reddit.com/r/UnearthedArcana/comments/v4dhfj/additional_warlock_invocations_tap_into_forbidden/)
 
+#### Voice of the Talisman [New]
+
+When the wearer of your talisman speaks, you can hear anything they say, provided you are on the same plane of existence.
+
+#### Eldritch Reach [New]
+
+_Prerequisite: Level 5_
+
+You can cast spells with a range of Touch on the wearer of your talisman, provided you are within 60 feet and can see them.
+
+#### Cloaked Icon [New]
+
+_Prerequisite: Level 7_
+
+As an action, you can make your talisman invisible. You must concentrate on this, as if on a spell.
+
+#### Dire Shield [New]
+
+_Prerequisite: Level 7_
+
+When a creature wearing your talisman would be struck with a critical hit, you can use your reaction to turn it into a normal hit.
+
+#### Ears of the Talisman [New]
+
+_Prerequisite: Level 9_
+
+You can hear through your talisman as if you were in its space.
+
+#### Arcane Nexus [New]
+
+_Prerequisite: Level 15_
+
+When you cast a spell with a range of Self, it also affects the wearer of your talisman.
+
+----
+
 #### Pact of the Tome
+
+----
 
 ##### Eldritch Bestiary [New]
 
@@ -277,67 +408,71 @@ Once you have recorded a conversation in this way, you may not do so again until
 
 #### Expanded Repertoire [New]
 
-_Prerequisite: 5th level_
+_Prerequisite: Level 5_
 
 Your maximum known spells increases by 2.
 
 #### Ritual Wards [New]
 
-_Prerequisite: 5th level_
+_Prerequisite: Level 5_
 
 You can cast the spell _Magic Circle_ once using a spell slot without expending any valuable components. Once you have done so, you cannot do so again until you complete a short or long rest.
 
 #### Query the Shadows [New]
 
-_Prerequisite: 9th level_
+_Prerequisite: Level 9_
 
 You can cast _Divination_ once without using a spell slot. Once you have done so, you cannot cast it again in this way until you complete a short or long rest.
 
 #### Traveler of Hidden Pathways [New]
 
-_Prerequisite: 9th level_
+_Prerequisite: Level 9_
 
 You learn the spell _Teleportation Circle_. It does not count against the number of spells you know, and you can cast it without expending a spell slot. Once you have cast the spell in this way, you cannot do so again until you complete a long rest.
 
 #### Forgotten Knowledge [New]
 
-_Prerequisite: 12th level_
+_Prerequisite: Level 12_
 
 You cast the spell _Borrowed Knowledge_ once without expending a spell slot. Once you have done so, you cannot do so again until you complete a short or long rest.
 
 ##### High Rituals [New]
 
-_Prerequisite: 12th level_
+_Prerequisite: Level 12_
 
 By expending gold equal to 10 times the spell's level, you can cast any pact magic spell you know as a ritual.
 
 ##### Enduring Magic [New]
 
-_Prerequisite: 15th level_
+_Prerequisite: Level 15_
 
 When you cast a spell as a ritual or that spell is a conjuration spell requiring concentration, its duration is doubled.
 
 ##### Layered Defenses [New]
 
-_Prerequisite: 15th level_
+_Prerequisite: Level 15_
 
 You can cast the spell _Guards and Wards_ once without expending a spell slot. Once you have done so, you cannot cast it in this way again until you finish a long rest.
 
 ##### Name of the Ages [New]
 
-_Prerequisite: 18th level_
+_Prerequisite: Level 15_
 
 You can cast the spell _Sacred Name_ at will without expending a spell slot, provided you target your own name.
 
 ##### Grand Rituals [New]
 
-_Prerequisite: 18th level_
+_Prerequisite: Level 15_
 
 Your Book of Shadows gains a new chapter containing instructions for rituals for five spells of your choice. These spells must be from the same school of magic, but they do not need to be from the Warlock spell list or have the ritual tag.
 
 By using your Book of Shadows, you can cast any of these spells as a ritual. Casting a spell in this way requires expending valuable resources with a gold value equal to 100 times the spell's level, and the ritual takes a number of hours equal to twice the spell's level.
 
+----
+
 ### Cantrip Invocations
+
+----
 
 #### General
 
@@ -353,6 +488,8 @@ When you gain this eldritch invocation, select a damaging warlock cantrip with a
 
 When you cast a cantrip with a range greater than 5 feet, its range is doubled.
 
+----
+
 #### Booming Blade
 
 ##### Thunderous Shield [New]
@@ -362,6 +499,8 @@ When you deal damage with the Booming Blade cantrip, you gain a number of tempor
 ##### Detecting Tremors [New]
 
 When you attack a creature with Booming Blade, you gain Tremorsense out to 30 feet until the start of your next turn.
+
+----
 
 #### Chill Touch
 
@@ -376,6 +515,8 @@ When you damage a creature with Chill Touch, it, and all creatures of your choic
 ##### Unsettling Contact [New]
 
 When you hit a target with Chill Touch, it has disadvantage on its attack rolls against you for the duration of the spell, even if it isn’t undead.
+
+----
 
 #### Create Bonfire
 
@@ -397,11 +538,15 @@ When you cast Create Bonfire, you can choose to have the spell deal radiant dama
 
 The side length of the square created by your Create Bonfire spell can be up to 5 times the spell’s grade.
 
+----
+
 #### Eldritch Blast
 
 ##### Eldritch Claws [New]
 
 When casting Eldritch Blast, you can elect to cast it as a melee spell attack instead of a ranged spell attack.
+
+----
 
 #### Friends
 
@@ -412,6 +557,8 @@ The duration your Friends cantrip is increased by a number of minutes equal to y
 ##### Benefit of the Doubt [New]
 
 When the duration of your Friends cantrip expires, you may make a Deception or Persuasion check against your own Spell Save DC to prevent the creature from becoming hostile to you.
+
+----
 
 #### Frostbite
 
@@ -431,6 +578,8 @@ When you deal damage with your Frostbite cantrip, the creature has disadvantage 
 
 When a creature fails its saving throw against your Frostbite spell, it has disadvantage on all attacks it makes before the end of your next turn.
 
+----
+
 #### Green-Flame Blade
 
 ##### Distant Sparks [New]
@@ -440,6 +589,8 @@ When you hit with the attack from the Green-Flame Blade cantrip, the second targ
 ##### Signal Fires [New]
 
 When you deal damage to a creature with the Green-Flame Blade cantrip, attacks against that creature have an additional 1d4 to hit until the end of your next turn.
+
+----
 
 #### Infestation
 
@@ -463,6 +614,8 @@ After a creature finishes its movement from your Infestation spell, it must succ
 
 When you cast the Infestation spell, you can choose to deal piercing or slashing damage instead of poison damage.
 
+----
+
 #### Lightning Lure
 
 ##### Disarming Lash [New]
@@ -477,11 +630,15 @@ After you dislocate a creature with the Lightning Lure cantrip, you can choose f
 
 When you cast the Lightning Lure spell, instead of yourself, you can choose to have the lightning energy emerge from another creature within range.  If the target fails its saving throw, it is instead pulled toward that creature.
 
+----
+
 #### Mage Hand
 
 ##### Helping Hands [New]
 
 When you cast Mage Hand, you create two spectral hands instead of one that you can move independently as a single action.  If the two hands are within 5 feet of each other, you can use them together to activate a magic item or lift an object weighing up to 20 pounds.
+
+----
 
 #### Mind Sliver
 
@@ -498,6 +655,8 @@ Additionally, if a creature hidden from you fails its saving throw against the s
 
 When a creature maintaining concentration fails its saving throw against your Mind Sliver spell, the DC of the concentration check it must make is your spell save DC.
 
+----
+
 #### Poison Spray
 
 ##### Acrid Expulsion [New]
@@ -512,6 +671,8 @@ When a creature fails its save against Poison Spray, it is Poisoned until the en
 
 When you cast Poison Spray, you may choose to deal acid damage instead of poison.
 
+----
+
 #### Sword Burst
 
 ##### Parrying Swarm [New]
@@ -525,6 +686,8 @@ When you cast Sword Burst, you can choose to increase its range to 10 feet.
 ##### Whirling Dervish [New]
 
 When you damage a creature with Sword Burst, your speed increases by 5 until the end of the current turn.
+
+----
 
 #### Thunderclap
 

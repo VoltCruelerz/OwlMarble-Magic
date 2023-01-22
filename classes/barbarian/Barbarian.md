@@ -7,6 +7,10 @@ Starting at 5th level, you can attack twice, instead of once, whenever you take 
 
 When you would gain this feature, if you already have the Extra Attack feature from another class, you can replace this with a Feat.
 
+## Mighty Arm [New]
+
+Starting at 9th level, while you are raging, you only need to hold a two-handed melee weapon in one hand to attack with it.
+
 ## Rage Dice [New]
 
 _Optional Feature_
