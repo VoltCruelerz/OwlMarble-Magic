@@ -25,7 +25,7 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ### Actions
 >
-> ***Scratch.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `1` piercing or slashing damage.
+> ***Scratch.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `1` piercing,  slashing, or poison damage, chosen when you assume the form.
 
 ```
 ```

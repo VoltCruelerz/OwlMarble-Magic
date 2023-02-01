@@ -1,5 +1,7 @@
 # OwlMarble Magic
 
+> 5E Compatible
+
 Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew rules into FoundryVTT to function as the single source of truth.
 
 ## Packs
@@ -88,3 +90,7 @@ See dedicated [page](./rules/Rules.md)
 ### Known Issues
 
 See [test.log](./tests/test.log) to see any automatically detected issues.
+
+## Sources
+
+This work includes material taken from the [SRD 5.1](https://www.dndbeyond.com/attachments/39j2li89/SRD5.1-CCBY4.0_License_live%20links.pdf), which is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
