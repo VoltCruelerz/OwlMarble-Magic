@@ -44,8 +44,6 @@ Starting at 13th level, when you score a critical hit, you add another die of da
 
 Starting at 3rd level, you can use the Help action as a Bonus Action.  Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be up to 30 feet away from you.  Additionally, instead of providing advantage on the first attack they make on their turn against the creature, they gain advantage on all attacks against the creature that they make as part of their first attack action on their next turn.
 
-Additionally, if you take the _Disengage_ Cunning Action, select an enemy within 5 feet of you and an ally within 30 feet. Until the start of your next turn, that ally has advantage on attacks against the specified enemy.
-
 #### Commanding Presence [New]
 
-Starting at 9th level, as a bonus action, you can issue an order to an ally to attack an enemy of your choice within 30 feet of you.  Your ally can then choose to use their reaction to immediately make one attack against the target.  If the attack hits, the attack deals bonus damage equal to your Intelligence or Charisma modifier (your choice).
+Starting at 9th level, while helping an ally with your Master of Tactics feature, your ally's critical hit range increases by one foiurth your Rogue level, rounded down.

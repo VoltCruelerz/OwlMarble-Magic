@@ -440,7 +440,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Level 3 - _Cleric_
 
 - [Animate Dead](https://www.dndbeyond.com/spells/animate-dead) - V/S/M - (PHB - 212)
-- [Aura of Vitality](https://www.dndbeyond.com/spells/aura-of-vitality) - V [C] - (PHB - 216)
 - [Beacon of Hope](https://www.dndbeyond.com/spells/beacon-of-hope) - V/S [C] - (PHB - 217)
 - [Bestow Curse](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#bestow-curse) - V/S [C] - (OMM - 3)
 - [Bind](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#bind) - V/S/M$X - (OMM - 3)
@@ -671,7 +670,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Level 3 - _Druid_
 
 - [Acid Rain](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#acid-rain) - V/S/M - (OMM - 3)
-- [Aura of Vitality](https://www.dndbeyond.com/spells/aura-of-vitality) - V [C] - (PHB - 216)
 - [Bind](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#bind) - V/S/M$X - (OMM - 3)
 - [Call Lightning](https://www.dndbeyond.com/spells/call-lightning) - V/S [C] - (PHB - 220)
 - [Conjure Animals](https://www.dndbeyond.com/spells/conjure-animals) - V/S [C] - (PHB - 225)
@@ -882,7 +880,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 3 - _Paladin_
 
-- [Aura of Vitality](https://www.dndbeyond.com/spells/aura-of-vitality) - V [C] - (PHB - 216)
+- [Aura of Vitality](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#aura-of-vitality) - V [C] - (OMM - 3)
 - [Blinding Smite](https://www.dndbeyond.com/spells/blinding-smite) - V [C] - (PHB - 219)
 - [Create Food and Water](https://www.dndbeyond.com/spells/create-food-and-water) - V/S - (PHB - 229)
 - [Crusader's Mantle](https://www.dndbeyond.com/spells/crusader's-mantle) - V [C] - (PHB - 230)
