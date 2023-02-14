@@ -1,5 +1,10 @@
 # OwlMarble Magic Feats
 
+> **TODO**: The following feats are to be considered for future changes.
+>
+> - Charger
+> - Skulker
+
 ## Ancestral Radiance [New]
 
 _Requirement: Aasimar_
@@ -255,6 +260,14 @@ You gain the following benefits:
 - When you are prone, you may jump back to your feet without expending movement and neutralize the effects of Unsteady.
 - Attacks you make while prone are not made with disadvantage.
 
+## Healer [Updated]
+
+You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:
+
+- When you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point.
+- As an action, you can spend one use of a healer's kit to tend to a creature and restore 2d4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest.
+- When you heal another creature and consume either a spell slot or a charge from a healer's kit, the creature is healed for an additional amount equal to your proficiency bonus.
+
 ## Heart Piercer [New]
 
 _Requirement: Level 20_
@@ -314,6 +327,15 @@ Your mastery in moving in light armor grants you the following benefits:
 - You have advantage on Dexterity (Acrobatics) checks to escape grapples while wearing Light Armor.
 - If a creature misses you with a melee attack and you are wearing light armor, you can use your reaction to move 5 feet away without provoking an attack of opportunity.
 
+## Linguist [Updated]
+
+You have studied languages, communication, and codes extensively, gaining the following benefits:
+
+- You increase your Intelligence by 1, to a maximum of 20.
+- You learn three languages of your choice.
+- You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it.
+- Over the course of an hour of engaging with a creature that knows at least one language, you can learn to communicate with them, even if you do not share a language with them. This communication is limited, and cannot communicate words longer than 5 letters that are not proper nouns.
+
 ## Magically Armored [KeoniKoa]
 
 You’ve become incredibly adept at protecting yourself with magical forces.  When a spell cast by an ally modifies your armor class, grants you resistance to a damage type, or grants you temporary hit points, you have the following benefits:
@@ -358,6 +380,13 @@ The inexorable nature of Mechanus has been embedded within you, granting you the
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
 - You learn the _Zone of Truth_ spell and one 1st level spell of your choice.  The 1st level spell must be from the abjuration or divination school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+
+## Professional [New]
+
+You have honed the skills necessary for a skilled trade. You gain the following benefits:
+
+- You increase your proficiency tier with two skills, tools or vehicles by one tier. You may select them in any combination.
+- If you have the requisite equipment and market will bear it, you can spend 8 hours plying your trade, allowing you to earn a number of gold pieces equal to your proficiency bonus times the tier of your proficiency in the relevant tool.
 
 ## Psionic Adept [Updated from KibblesTasty]
 
@@ -437,6 +466,14 @@ Your skill with runecraft has increased by leaps and bounds once again, making y
 ## Savage Attacker [Updated]
 
 Once per turn when you roll damage for a melee weapon attack, you can reroll the damage and use either total.
+
+## Savant [New]
+
+Your skills and prowess are famous, giving you outsized influence in social situations.
+
+- Increase one ability score of your choice by 1, to a maximum of 20.
+- Choose a skill based on that ability score that you are proficient in. You gain expertise in it.
+- When you make a Persuasion, Intimidation, or Deception check, you may choose to use the ability score increased by this feat instead of Charisma.
 
 ## Shield Master [Updated by KibblesTasty]
 

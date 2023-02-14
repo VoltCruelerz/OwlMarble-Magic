@@ -512,6 +512,10 @@ When you damage a creature with Chill Touch, you immediately regain one expended
 
 When you damage a creature with Chill Touch, it, and all creatures of your choice within 5 feet of it, cannot regain hit points until the start of your next turn.
 
+##### Raven's Touch [New]
+
+The damage dealt by this spell ignores resistance and immunity.
+
 ##### Unsettling Contact [New]
 
 When you hit a target with Chill Touch, it has disadvantage on its attack rolls against you for the duration of the spell, even if it isn’t undead.
@@ -530,9 +534,13 @@ _Prerequisite: Level 9_
 
 When you cast Create Bonfire, the fire sheds bright light in a 30 foot radius and dim light fro 30 feet beyond.  This light is Daylight.
 
-##### Purifying Flames [New]
+##### Purifying Blaze [New]
 
 When you cast Create Bonfire, you can choose to have the spell deal radiant damage instead of fire damage.
+
+##### Self-Sufficient Fire [New]
+
+The spell does not require concentration, but you may have no more instances active than your Charisma bonus.
 
 ##### Tower of Flame [New]
 
@@ -657,6 +665,14 @@ When a creature maintaining concentration fails its saving throw against your Mi
 
 ----
 
+#### Minor Figment
+
+##### Stable Figments [New]
+
+You may have twice as many simultaneous effects active at once.
+
+----
+
 #### Poison Spray
 
 ##### Acrid Expulsion [New]
@@ -670,6 +686,10 @@ When a creature fails its save against Poison Spray, it is Poisoned until the en
 ##### Kiss of Jubilex [New]
 
 When you cast Poison Spray, you may choose to deal acid damage instead of poison.
+
+##### Remote Gyser [New]
+
+When you cast Poison Spray, you may choose to have the spell originate at a point you can see within 30 feet.
 
 ----
 
