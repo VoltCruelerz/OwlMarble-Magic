@@ -47,7 +47,7 @@ You can accomplish mythical feats of physical prowess. You gain the following be
   - Take the dash action as a bonus action.
   - Ignore the effects of exhaustion until the beginning of your next turn.
 
-## Battlewise [New]
+## Battlewise [BoneDealer]
 
 Your experience on the battlefield has hardened you and granted you tactical instinct.
 
@@ -140,6 +140,15 @@ Your exposure to the fluid nature of Limbo has altered you, granting you the fol
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
 - You learn the _Alter Self_ spell and one 1st level spell of your choice.  The 1st level spell must be from the illusion or transmutation school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
 
+## Charger [Updated]
+
+You are always the first one to charge into danger, clearing the path for your allies. You gain the following benefits:
+
+- You gain a +5 bonus to your initiative rolls.
+- On your first turn in an encounter, you gain a bonus to your speed equal to your base speed. This bonus speed may only be used to move directly toward an enemy.
+- If you use this bonus, you grant the same bonus to all allies with a lower initiative roll than you this round. An ally that is granted this bonus may only use the additional movement speed to move directly toward you or an enemy.
+- A creature cannot benefit from the speed increase granted by this feat if its current speed is 0.
+
 ## Combat Reflexes [KeoniKoa]
 
 Your fighting experience has allowed you to react more swiftly to enemies in moments of weakness.  You gain the following benefits:
@@ -183,6 +192,16 @@ You are hardy and resilient, and you gain the following benefits:
 - Increase your Constitution by 1, to a maximum of 20.
 - When you roll a Hit Die to recover hit points, the minimum number of hit points you recover is equal to twice your Constitution modifier.
 - Whenever you regain hit points, you gain additional hit points equal to half your proficiency bonus (rounded down).
+
+## Elemental Adept [Update]
+
+_Requirement: must have the Spellcasting feature_
+
+When you gain this feat, choose a damage type.
+
+Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can reroll any 1s, but you must keep the new rolls.
+
+You can select this feat multiple times. Each time you do so, you must choose a different damage type.
 
 ## Enduring Mana [New]
 
@@ -406,6 +425,14 @@ _Requirement: Aasimar_
 - The range of your darkvision increases by 60 feet.
 - You can see 10 feet into magical darkness.
 
+## Renowned [New]
+
+Your skills and prowess are famous, giving you outsized influence in social situations.
+
+- Increase one ability score of your choice by 1, to a maximum of 20.
+- Choose a skill based on that ability score that you are proficient in. You gain expertise in it.
+- When you make a Persuasion, Intimidation, or Deception check, you may choose to use the ability score increased by this feat instead of Charisma.
+
 ## Rune Carver Apprentice [UA-GO-Updated]
 
 You've begun studying the art of runecraft, which allows you to temporarily mark objects to imbue them with magic.
@@ -466,14 +493,6 @@ Your skill with runecraft has increased by leaps and bounds once again, making y
 ## Savage Attacker [Updated]
 
 Once per turn when you roll damage for a melee weapon attack, you can reroll the damage and use either total.
-
-## Savant [New]
-
-Your skills and prowess are famous, giving you outsized influence in social situations.
-
-- Increase one ability score of your choice by 1, to a maximum of 20.
-- Choose a skill based on that ability score that you are proficient in. You gain expertise in it.
-- When you make a Persuasion, Intimidation, or Deception check, you may choose to use the ability score increased by this feat instead of Charisma.
 
 ## Shield Master [Updated by KibblesTasty]
 
