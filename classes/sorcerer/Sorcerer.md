@@ -320,7 +320,7 @@ When you make an attack roll for a spell and miss, you can spend 2 mana points t
 
 Your innate magic comes from the untameable chaos and fury of the Abyss.  You might have a demonic ancestor or endured a ritual performed by a demonic cult that granted you a sliver of their dark lord’s power.  Perhaps you once fell through a portal to that dread realm, or maybe it was even a willing voyage.  Whatever the cause, this magic within you hungers for release in whatever way it can achieve.
 
-#### Contact Magic
+#### Contact Magic [New]
 
 Starting when you choose this Sorcerous Origin at 1st level, your Sorcerer spells have their ranges reduced to 5 feet unless the range is already Touch or Self or the spell causes you to make a melee spell attack.  If the spell causes you to make a ranged spell attack, it instead becomes a melee spell attack.
 
@@ -328,33 +328,36 @@ When you cast a damaging Sorcerer spell in which you make a melee spell attack, 
 
 If you cast a cantrip that causes you to make a melee spell attack that can affect only one creature and has multiple damage dice, you can split the spell’s magic.  Make a number of attacks equal to the number of dice of the cantrip.  On a hit, the target suffers damage of the spell’s type equal to a single damage die, as well as any secondary effects of the spell.  The attacks can target the same or different creatures.
 
-#### Abyssal Shroud
+#### Abyssal Shroud [New]
 
-Starting at 1st level, When you damage a creature with a melee spell attack from a Sorcerer spell, your magic siphons away some of the target’s vitality, and you gain a number of temporary hit points equal to your Charisma modifier (minimum 1) plus the spell’s level (cantrips count as 0).  These temporary hit points last until the beginning of your next turn.
+Starting at 1st level, When you damage a creature with a melee attack from a Sorcerer spell you cast, your magic siphons away some of the target’s vitality, and you gain a number of temporary hit points equal to your Charisma modifier (minimum 1) plus the spell’s level (cantrips count as 0).  These temporary hit points last until the beginning of your next turn.
 
 Additionally, if you are forced to make a saving throw against your own spell, you succeed on the saving throw automatically.
-
-#### Unnatural Movement
-
-Starting at 6th level, your body begins to acclimate to the churning energies within, allowing you to channel them into bursts of speed.  As a bonus action, you can take the Dash action.  Attacks of opportunity against you during this bonus action’s movement have disadvantage.  You can use this bonus action a number of times equal to your Charisma modifier (minimum 1).  You regain all uses of this feature on a short or long rest.
 
 > **Contact Magic** plus **Abyssal Shroud** means Abyssal Sorcerer spells can behave very differently from their defaults.  Here are a few examples:
 >
 > - **Shocking Grasp:** would deal bonus damage from your Charisma modifier and would grant you temporary hit points.  At higher levels, this could deal 1d8+CHA to multiple creatures and remove all their reactions.
 > - **Fire Bolt:** would attack as a melee spell attack with a range of five feet, adding your Charisma modifier to the damage and granting temporary hit points.  Again, at higher levels, this could target multiple creatures.
+> - **Green-Flame Blade:** GFB would not gain bonus damage from your Charisma modifier, but it _would_ recharge your shroud.
 > - **Fireball:** rather than having a range of 150 feet, the range would drop to 5 feet, but the radius would remain unchanged, causing the caster to include themselves in the blast.
 > - **Lightning Bolt:** because Lightning Bolt already has a range of self, its behavior would be entirely unchanged.
+> - **Animate Objects:** the conjured objects are creatures, meaning their attacks are not yours, so this spell does not benefit from _Abyssal Shroud_.
+> - **Spectral Horde:** the illusions are not creatures, meaning their attacks _are_ yours, so this spell _does_ recharge _Abyssal Shroud_.
 > - **Blade of Disaster:** the blade would appear beside you, but because you are making a melee spell attack through it, it would deal bonus damage from your Charisma modifier and would grant you temporary hit points.
 >
 > You may wish to work with your DM to rename particular spells to reflect the point-blank nature of your spellcasting.  For instance, _Fire Bolt_ might become _Fire Claw_.
 
-#### Cloak of Chaos
+#### Unnatural Movement [New]
+
+Starting at 6th level, your body begins to acclimate to the churning energies within, allowing you to channel them into bursts of speed.  As a bonus action, you can take the Dash action.  Attacks of opportunity against you during this bonus action’s movement have disadvantage.  You can use this bonus action a number of times equal to your Charisma modifier (minimum 1).  You regain all uses of this feature on a short or long rest.
+
+#### Cloak of Chaos [New]
 
 Starting at 14th level, your body has nearly mastered the power within it, granting immunity to the effects of your own spells unless you wish to be affected.
 
 Additionally, your agility improves to make you all but untouchable when you’re on the move.  When you use your Unnatural Movement feature, you become untargetable by attacks of opportunity until the end of your current turn.
 
-#### Hunger of the Abyss
+#### Hunger of the Abyss [New]
 
 At 18th level, you have mastered the power within you, granting you access to a nearly limitless well of vitality.  When you cast a Sorcerer spell and it first damages a creature, you can expend a number of hit dice up to the level of the spell.  For each hit die expended in this way, you regain hit points equal to the size of the die.
 
@@ -376,11 +379,11 @@ Drawing on the power within your soul, you can develop the skills necessary to c
 | 4th         | _Summon Aberration_, _Summon Elemental_ |
 | 6th         | _Summon Fiend_                          |
 
-#### Summoned Servant
+#### Summoned Servant [New]
 
 When you choose this sorcerous origin at 1st level, you learn the spell _Summon Servant_.  It does not count against the number of spells you know.  When you increase in level, you cannot exchange this spell for another.
 
-#### Enhanced Creations
+#### Enhanced Creations [New]
 
 When you create a creature from one of the spells in the Summoning Spells table, select one of the following ways to enhance it:
 
@@ -391,7 +394,7 @@ When you create a creature from one of the spells in the Summoning Spells table,
 
 Starting when you reach 6th level, you can select two options at once instead of one.
 
-#### Flash Creations
+#### Flash Creations [New]
 
 Starting at 6th level, as a bonus action, you can spend 2 mana points to create a translucent barrier of magical force at an unoccupied point you can see within 60 feet that lasts until the end of your next turn.
 
@@ -399,11 +402,11 @@ The barrier takes the form of a plane of magical force 5 feet by 5 feet and is o
 
 It resists motion, but for every 1000 pounds of force applied to it it moves 5 feet per round.  As an action, a creature can make a Strength check against your spell save DC to either reorient it or move it 5 feet.
 
-#### Shielded Summons
+#### Shielded Summons [New]
 
 Beginning at 14th level, your ability to instantly create barriers has grown to the point that you can use it to defend your allies.  After damage has been rolled and declared for an effect targeting a creature you summoned, but before the damage is applied, you can use your reaction to expend any number of mana points to shield your summoned creature.  For each mana point expended, the damage the summoned creature would receive is reduced by 10.
 
-#### Twin Summons
+#### Twin Summons [New]
 
 Once you reach 18th level, when you cast one of the spells from the Summoning Spells table, in place of applying a metamagic, you can expend additional mana points equal to the level of the spell to summon two creatures from the spell instead of one.  The two creatures can be the same archetype or different archetypes.  The two creatures appear at unoccupied target positions of your choice that you can see within range.
 
