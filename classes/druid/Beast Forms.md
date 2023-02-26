@@ -107,7 +107,7 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > - **Armor Class** 14 + PB (natural armor)
 > - **Hit Points** 5x your Druid level in temporary hit points
-> - **Speed** 50 walk
+> - **Speed** 50 walk or swim
 >
 > ___
 > |  STR  |  DEX  |

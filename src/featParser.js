@@ -18,10 +18,16 @@ module.exports = class FeatParser extends Parser {
         }, {});
 
         // Read Feats
-        const featsRaw = fs.readFileSync('feats/feats.md', { encoding: 'utf-8', flag: 'r' })
+        const basicFeatsRaw = fs.readFileSync('feats/feats.md', { encoding: 'utf-8', flag: 'r' })
             .split('\r\n## ')
             .filter((p, i) => i > 0);// Trim title line.
-        console.log('Found ' + featsRaw.length + ' feats');
+        console.log('Found ' + basicFeatsRaw.length + ' feats');
+        const epicFeatsRaw = fs.readFileSync('feats/Epic Boons.md', { encoding: 'utf-8', flag: 'r' })
+            .split('\r\n## ')
+            .filter((p, i) => i > 0);// Trim title line.
+        console.log('Found ' + epicFeatsRaw.length + ' epic boons');
+
+        const featsRaw = [...basicFeatsRaw, ...epicFeatsRaw];
 
         let feats = featsRaw.map((raw) => {
             const featRawLines = raw.split('\r\n').filter((line) => line.length > 0);

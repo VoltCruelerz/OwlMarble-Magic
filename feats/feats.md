@@ -1,9 +1,6 @@
 # OwlMarble Magic Feats
 
-> **TODO**: The following feats are to be considered for future changes.
->
-> - Charger
-> - Skulker
+> **Note:** epic boons are found in their own [document](../feats/Epic%20Boons.md).
 
 ## Ancestral Radiance [New]
 
@@ -286,15 +283,6 @@ You are an able physician, allowing you to mend wounds quickly and get your alli
 - When you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point.
 - As an action, you can spend one use of a healer's kit to tend to a creature and restore 2d4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest.
 - When you heal another creature and consume either a spell slot or a charge from a healer's kit, the creature is healed for an additional amount equal to your proficiency bonus.
-
-## Heart Piercer [New]
-
-_Requirement: Level 20_
-
-After strenuous training, you have mastered finding chinks in the armor of your foes, allowing you to strike critical organs.  You gain the following benefits:
-
-- Your critical hit range with finesse, ranged, and thrown weapons is increased by 2.
-- Your bonus to hit with those weapons is increased by 1.
 
 ## Heavily Armored [Updated]
 
