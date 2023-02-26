@@ -30,6 +30,37 @@ Whenever multiple options are provided, you select an option when you change int
 ```
 ```
 
+> ## Mount
+>
+> *Medium or Large, Huge (L11), or Gargantuan (L17) beast*
+> ___
+>
+> - **Armor Class** 10 + PB (natural armor)
+> - **Hit Points** 2x your Druid level in temporary hit points
+> - **Speed** 40 walk, 30 climb, 40 swim (L4), or 30 walk and 60 fly (L8)
+>
+> ___
+> |  STR  |  DEX  |
+> |:-----:|:-----:|
+> |16 (+3)|10 (+0)|
+> ___
+>
+> - **Condition Immunities** exhaustion
+> - **Senses** darkvision 60 ft.
+>
+> ### Traits
+>
+> ***Swift.*** Your speed is increased by 5 times half your druid level.
+>
+> ***Powerful Build.*** You count as a Large creature for the purpose of calculating your carrying capacity. At level 11, you instead count as a Huge creature, and at level 17, you count as Gargantuan.
+>
+> ### Actions
+>
+> ***Hooves or Talons.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d4 + wis` bludgeoning or slashing damage.
+
+```
+```
+
 > ## Hunter
 >
 > *Small or Medium beast*

@@ -95,6 +95,7 @@ While you are transformed, the following rules apply:
 - You can't cast spells, and your ability to take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell that you've already cast, as in the case of _Call Lightning_.
 - You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so.
 - You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Equipment that is not magically enchanted for it doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form. If an item is cursed, the DM decides what becomes of it in your new form.
+- If you have a condition that your new form is immune to, the condition is suppressed while you are in your new form.
 
 **Source:** [Treantmonk](https://www.youtube.com/watch?v=RSjJ25RDUV4)
 
@@ -102,7 +103,7 @@ While you are transformed, the following rules apply:
 
 | Druid Level |                                                                                                  New Forms Available                                                                                                   |
 | :---------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|     2nd     | [Scout](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#scout), [Hunter](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#hunter) |
+|     2nd     | [Scout](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#scout), [Mount](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#mount), [Hunter](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#hunter) |
 |     4th     |                                                     [Stalker](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#stalker)                                                      |
 |     8th     |                                                       [Titan](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#titan)                                                        |
 
