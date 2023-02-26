@@ -117,7 +117,7 @@ Starting at 18th level, whenever you roll Initiative, you regain one use of your
 
 ### Epic Boon [New]
 
-You gain the following benefits:
+At 20th level, you gain the following benefits:
 
 - **Ability Score Increase**: choose one of your ability scores. That score increases by 2, to a maximum of 30.
 - **Epic Boon Feat**: you gain the epic boon feat of _Spell Recall_, or another of your choice.
