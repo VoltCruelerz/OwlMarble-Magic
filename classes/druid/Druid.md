@@ -85,17 +85,17 @@ Starting at 1st level, you gain the _Shapechanger_ creature type, and you can us
 
 Your druid level determines the types of beasts you can transform into, as shown in the Beast Forms table (below), with higher levels increasing the options available to you.
 
-You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.
+You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a Bonus Action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.
 
 While you are transformed, the following rules apply:
 
-- Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. If you would make a Constitution check or save, use your Wisdom check or save instead.
+- Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, voice, and Intelligence, Wisdom, and Charisma scores. If you would make a Constitution check or save, use your Wisdom check or save instead.
 - When you transform, you gain temporary hit points based on the form and your druid level.
-- You can speak with your own voice, regardless of your form.
 - You can't cast spells, and your ability to take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell that you've already cast, as in the case of _Call Lightning_.
-- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so.
+- You retain the benefit of any features from your class and can use them if the new form is physically capable of doing so.
 - You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Equipment that is not magically enchanted for it doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form. If an item is cursed, the DM decides what becomes of it in your new form.
 - If you have a condition that your new form is immune to, the condition is suppressed while you are in your new form.
+- When you shift to a Wild Shape form or back to your true form, you are safely shunted to the nearest available space within 5 feet. If there is no available nearby space, you and whatever impediment is preventing you from expanding both take the lesser of your hit points as bludgeoning damage.
 
 **Source:** [Treantmonk](https://www.youtube.com/watch?v=RSjJ25RDUV4)
 
@@ -132,7 +132,7 @@ As a member of this circle, your magic is influenced by the biome where you were
 
 #### Primal Channel: Circle's Avatar [New]
 
-As a bonus action, you can expend a use of your Primal Channel ability to gain temporary hit points equal to half your druid level plus traits related to your chosen environment, detailed below. These benefits last for one hour or until you are incapacitated.
+As a Bonus Action, you can expend a use of your Primal Channel ability to gain temporary hit points equal to half your druid level plus traits related to your chosen environment, detailed below. These benefits last for one hour or until you are incapacitated.
 
 | Environment   | Benefits                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -263,13 +263,27 @@ Starting at 14th level, you can always speak to plants and animals as if by the 
 
 #### Circle Forms [Updated]
 
-The rites of your circle grant you the ability to transform into more dangerous animal forms.  Starting at 2nd level, when you make an attack with your wild shaped form, you deal an extra die of damage on the attack (already included in the [Elemental](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#elemental) template).
+The rites of your circle grant you the ability to transform into more dangerous animal forms.  Starting at 2nd level, you can use your Wild Shape ability as a Bonus Action, and while you are Wild Shaped, you can use a Bonus Action to make an Unarmed Strike.
 
-#### Elemental Wild Shape [Updated]
+#### Elemental Wild Shape [Update]
 
-At 10th level, you can expend both uses of Wild Shape at the same time to transform into an Air, Earth, Fire, or Water elemental, using the [Elemental](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#elemental) template.
+At 6th level, when you use your Wild Shape feature, you can choose to expend a second charge of your Primal Channel feature to empower your form with elemental energy. Select one of the following elements: Acid, Cold, Fire, Lightning, or Poison. Until your Wild Shape expires, you have resistance to the chosen element, and your Bestial Strike attacks can deal that damage type instead of the normal options.
 
-#### Thousand Forms
+#### Elemental Strike [New]
+
+Starting at 10th level, you become one with the elements when you use your Elemental Wild Shape, and you gain the following benefits for the duration:
+
+- You are immune to the chosen damage type.
+- Your melee weapon attacks deal an additional 1d10 of the chosen element.
+- You are immune to the Exhaustion, Paralyzed, Petrified, and Poisoned conditions.
+
+#### Thousand Forms [Updated]
+
+At 14th level, you have learned to use your lunar magic to alter your form freely. When you use your Wild Shape ability, you no longer choose between the variants of a given form, acquiring all movement types and abilities for that form simultaneously.
+
+Additionally, for the duration of Wild Shape, you can use a Bonus Action to shift back to your true form or back into your animal form without expending further charges. Shifting in this way does not refresh the temporary hit points granted by Wild Shape.
+
+Finally, you know and can cast _Alter Self_ at will without expending a spell slot.
 
 ### Circle of Spores
 

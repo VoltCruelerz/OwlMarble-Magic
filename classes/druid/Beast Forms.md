@@ -4,7 +4,7 @@ Whenever multiple options are provided, you select an option when you change int
 
 > ## Scout
 >
-> *Tiny beast*
+> *Small or Tiny (L8) beast*
 > ___
 >
 > - **Armor Class** 12 + PB (natural armor)
@@ -25,7 +25,7 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ### Actions
 >
-> ***Scratch.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `1` piercing,  slashing, or poison damage, chosen when you assume the form.
+> ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `1` piercing, slashing, or poison damage, chosen when you assume the form.
 
 ```
 ```
@@ -56,7 +56,7 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ### Actions
 >
-> ***Hooves or Talons.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d4 + wis` bludgeoning or slashing damage.
+> ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d4 + wis` bludgeoning, piercing, or slashing damage.
 
 ```
 ```
@@ -88,9 +88,9 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ### Actions
 >
-> ***Multiattack.*** The druid makes 2 maul attacks (L5), 3 maul attacks (L11), or 4 maul attacks (L17).
+> ***Multiattack.*** The druid makes 2 Bestial Strike attacks (L11) or 3 Bestial Strike attacks (L17)
 >
-> ***Maul.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d6 + wis` piercing or slashing damage.
+> ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d6 + wis` piercing or slashing damage.
 
 ```
 ```
@@ -120,9 +120,9 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ### Actions
 >
-> ***Multiattack.*** The druid makes 2 Bite attacks (L5), 3 bite attacks (L11), or 4 bite attacks (L17).
+> ***Multiattack.*** The druid makes 2 Bestial Strike attacks (L11) or 3 Bestial Strike attacks (L17)
 >
-> ***Bite.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit* `1d8 + wis` piercing damage plus `1d8` poison damage.
+> ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit* `1d8 + wis` piercing or slashing damage plus `1d8` poison damage.
 >
 > ***Restrain (Recharge 5-6).*** *Ranged weapon Attack:* Your spell attack modifier to hit, reach 30/60ft., one creature. *Hit:* the target is restrained. As an action, the target may attempt to make a Strength check against your spell save DC, breaking free on a success.
 >
@@ -150,45 +150,10 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ### Traits
 >
-> ***Charge.*** If the druid moves at least 20 feet straight toward a target, it may immediately make a Gore or Stomp attack against any creature the druid moved through as part of this movement. On a hit, the target must succeed on a Strength saving throw against your spell save DC or be knocked prone.
+> ***Charge.*** If the druid moves at least 20 feet straight toward a target, it may immediately make a Bestial Strike attack against any creature the druid moved through as part of this movement. On a hit, the target must succeed on a Strength saving throw against your spell save DC or be knocked prone.
 >
 > ### Actions
 >
-> ***Multiattack.*** The druid makes 2 gore or stomp attacks, 3 gore or stomp attacks (L11), or 4 gore or stomp attacks (L17).
+> ***Multiattack.*** The druid makes 2 Bestial Strike attacks (L11) or 3 Bestial Strike attacks (L17).
 >
-> ***Gore or Stomp.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d10 + wis` piercing or bludgeoning damage. You may then use your bonus action to make a grapple attempt if the target is no larger than this form.
-
-```
-```
-
-> ## Elemental
->
-> *Large elemental*
-> ___
->
-> - **Armor Class** 14 + PB (natural armor)
-> - **Hit Points** 8x your Druid level in temporary hit points
-> - **Speed** 40 walk; 40 burrow (Earth only), fly (hover) (Air only); 40 swim (Water only)
->
-> ___
-> |  STR  |  DEX  |
-> |:-----:|:-----:|
-> |18  (+4)|15 (+2)|
-> ___
->
-> - **Condition Immunities** exhaustion, paralyzed, petrified, poisoned, unconscious
-> - **Resistances** acid (Water only), lightning and thunder (Air only), nonmagical physical
-> - **Immunities** poison, fire (Fire only)
-> - **Senses** darkvision 60 ft.
->
-> ### Traits
->
-> ***Amorphous Form (Air, Fire, or Water only).*** The druid can move through a space as narrow as 1 inch wide without squeezing.
->
-> ***Earth Glid (Earth only).*** The druid can burrow through nonmagical, unworked earth and stone. While doing so, the Druid doesn't disturb the material that it moves through.
->
-> ### Actions
->
-> ***Multiattack.*** The druid makes 2 slam attacks, 3 slam attacks (L11), or 4 slam attacks (L17).
->
-> ***Slam.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d10 + wis` bludgeoning (Air, Earth, and Water only) or fire (Fire only) damage.
+> ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d10 + wis` bludgeoning, piercing, or slashing damage. You may then use your bonus action to make a grapple attempt if the target is no larger than this form.
