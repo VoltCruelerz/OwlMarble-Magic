@@ -86,6 +86,8 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ***Pack Tactics.*** If the form has no swim or fly speed, the druid has advantage on an attack roll against a creature if at least one of the druid's allies is within 5 feet of the creature and the ally isn't incapacitated.
 >
+> ***Dire Strikes.*** Your critical hit range is increased by 3.
+>
 > ### Actions
 >
 > ***Multiattack.*** The druid makes 2 Bestial Strike attacks (L11) or 3 Bestial Strike attacks (L17)
@@ -118,11 +120,15 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ***Keen Vision.*** If the form has a fly speed, it has advantage on perception checks involving sight.
 >
+> ***Ambush Predator.*** When you are not surprised, you have advantage on Initiative rolls.
+>
 > ### Actions
 >
-> ***Multiattack.*** The druid makes 2 Bestial Strike attacks (L11) or 3 Bestial Strike attacks (L17)
+> ***Multiattack.*** The druid makes 2 Bestial Strike attacks (L11) or 3 Bestial Strike attacks (L17).
 >
 > ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit* `1d8 + wis` piercing or slashing damage plus `1d8` poison damage.
+>
+> ### Bonus Actions
 >
 > ***Restrain (Recharge 5-6).*** *Ranged weapon Attack:* Your spell attack modifier to hit, reach 30/60ft., one creature. *Hit:* the target is restrained. As an action, the target may attempt to make a Strength check against your spell save DC, breaking free on a success.
 >
@@ -137,7 +143,7 @@ Whenever multiple options are provided, you select an option when you change int
 > ___
 >
 > - **Armor Class** 14 + PB (natural armor)
-> - **Hit Points** 5x your Druid level in temporary hit points
+> - **Hit Points** 8x your Druid level in temporary hit points
 > - **Speed** 50 walk or swim
 >
 > ___
@@ -150,7 +156,7 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ### Traits
 >
-> ***Charge.*** If the druid moves at least 20 feet straight toward a target, it may immediately make a Bestial Strike attack against any creature the druid moved through as part of this movement. On a hit, the target must succeed on a Strength saving throw against your spell save DC or be knocked prone.
+> ***Charge.*** If the druid moves at least 20 feet straight toward a target, it may immediately use a Bonus Action to make a Bestial Strike attack against any one creature the druid moved through as part of this movement. On a hit, the target must succeed on a Strength saving throw against your spell save DC or be knocked prone.
 >
 > ### Actions
 >
