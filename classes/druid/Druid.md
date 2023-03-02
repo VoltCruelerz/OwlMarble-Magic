@@ -6,19 +6,19 @@
 | 2     | +2  | Druid Circle                                                           | 2              | 2        | 3   | -   | -   | -   | -   | -   | -   | -   | -   | -    |
 | 3     | +2  | -                                                                      | 2              | 2        | 4   | 2   | -   | -   | -   | -   | -   | -   | -   | -    |
 | 4     | +2  | Feat, Cantrip Versatility, Wild Shape Improvement (Options)            | 2              | 3        | 4   | 3   | -   | -   | -   | -   | -   | -   | -   | -    |
-| 5     | +3  | Wild Shape Improvement (Multiattack 1)                                 | 3              | 3        | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   | -    |
+| 5     | +3  | -                                | 3              | 3        | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   | -    |
 | 6     | +3  | Druid Circle Feature                                                   | 3              | 3        | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   | -    |
 | 7     | +3  | -                                                                      | 3              | 3        | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   | -    |
 | 8     | +3  | Feat, Wild Shape Improvement (Options)                                 | 3              | 3        | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   | -    |
 | 9     | +4  | -                                                                      | 4              | 3        | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   | -    |
 | 10    | +4  | Druid Circle Feature                                                   | 4              | 4        | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   | -    |
-| 11    | +4  | Wild Shape Improvement (Multiattack 2, Huge Titan)                     | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   | -    |
+| 11    | +4  | Wild Shape Improvement (Multiattack 1, Huge Titan)                     | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   | -    |
 | 12    | +4  | Feat                                                                   | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   | -    |
 | 13    | +5  | -                                                                      | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   | -    |
 | 14    | +5  | Druid Circle Feature                                                   | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   | -    |
 | 15    | +5  | -                                                                      | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   | -    |
 | 16    | +5  | Feat                                                                   | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   | -    |
-| 17    | +6  | Beast Spells, Wild Shape Improvement (Multiattack 3, Gargantuan Titan) | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   | -    |
+| 17    | +6  | Beast Spells, Wild Shape Improvement (Multiattack 2, Gargantuan Titan) | 4              | 4        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   | -    |
 | 18    | +6  | Archdruid                                                              | 4              | 4        | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   | -    |
 | 19    | +6  | Feat                                                                   | 4              | 4        | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -    |
 | 20    | +6  | Epic Boon                                                              | 4              | 4        | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   | 1    |
