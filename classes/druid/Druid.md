@@ -101,11 +101,11 @@ While you are transformed, the following rules apply:
 
 #### Beast Forms
 
-| Druid Level |                                                                                                  New Forms Available                                                                                                   |
-| :---------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Druid Level |                                                                                                                                                        New Forms Available                                                                                                                                                        |
+| :---------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |     2nd     | [Scout](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#scout), [Mount](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#mount), [Hunter](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#hunter) |
-|     4th     |                                                     [Stalker](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#stalker)                                                      |
-|     8th     |                                                       [Titan](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#titan)                                                        |
+|     4th     |                                                                                                           [Stalker](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#stalker)                                                                                                           |
+|     8th     |                                                                                                             [Titan](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#titan)                                                                                                             |
 
 ### Beast Spells [Updated]
 
@@ -122,7 +122,12 @@ At 20th level, you gain the following benefits:
 - **Ability Score Increase**: choose one of your ability scores. That score increases by 2, to a maximum of 30.
 - **Epic Boon Feat**: you gain the epic boon feat of _Spell Recall_, or another of your choice.
 
+```
+```
+
 ## Druid Circles
+
+___
 
 ### Circle of the Earth [Updated]
 
@@ -259,11 +264,42 @@ Additionally, you are immune to poison and disease.
 
 Starting at 14th level, you can always speak to plants and animals as if by the spells _Speak with Plants_ and _Speak with Animals_, and you can maintain concentration on two Druid spells simultaneously. If you make a concentration check, roll independently for each spell.
 
+___
+
 ### Circle of the Moon
 
 #### Circle Forms [Updated]
 
-The rites of your circle grant you the ability to transform into more dangerous animal forms.  Starting at 2nd level, you can use your Wild Shape ability as a Bonus Action, and while you are Wild Shaped, you can use a Bonus Action to make an Unarmed Strike.
+The rites of your circle shift the magic within you and grant you the ability to transform into more dangerous animal forms.  Starting at 2nd level, you can use your Wild Shape ability as a Bonus Action, and while you are Wild Shaped, you can use a Bonus Action to make an Unarmed Strike. Additionally, your spell slot progression changes to match the following table.
+
+| Level | 1st | 2nd | 3rd | 4th | 5th |
+| :---- | :-: | :-: | :-: | :-: | :-: |
+| 2nd   |  2  |  -  |  -  |  -  |  -  |
+| 3rd   |  3  |  -  |  -  |  -  |  -  |
+| 4th   |  3  |  -  |  -  |  -  |  -  |
+| 5th   |  4  |  2  |  -  |  -  |  -  |
+| 6th   |  4  |  2  |  -  |  -  |  -  |
+| 7th   |  4  |  3  |  -  |  -  |  -  |
+| 8th   |  4  |  3  |  -  |  -  |  -  |
+| 9th   |  4  |  3  |  2  |  -  |  -  |
+| 10th  |  4  |  3  |  2  |  -  |  -  |
+| 11th  |  4  |  3  |  3  |  -  |  -  |
+| 12th  |  4  |  3  |  3  |  -  |  -  |
+| 13th  |  4  |  3  |  3  |  1  |  -  |
+| 14th  |  4  |  3  |  3  |  1  |  -  |
+| 15th  |  4  |  3  |  3  |  2  |  -  |
+| 16th  |  4  |  3  |  3  |  2  |  -  |
+| 17th  |  4  |  3  |  3  |  3  |  1  |
+| 18th  |  4  |  3  |  3  |  3  |  1  |
+| 19th  |  4  |  3  |  3  |  3  |  2  |
+| 20th  |  4  |  3  |  3  |  3  |  2  |
+
+#### Primal Surge [New]
+
+Starting at 2nd level, you can push your magic into your strikes. When you hit with an attack, you can expend a spell slot to either harm your foe or sustain yourself.
+
+- **Harm**: The strike deals an additional 1d8 damage of the attack's type per level of the slot.
+- **Heal**: You heal for 1d8 per level of the slot.
 
 #### Elemental Wild Shape [Update]
 
@@ -281,9 +317,11 @@ Starting at 10th level, you become one with the elements when you use your Eleme
 
 At 14th level, you have learned to use your lunar magic to alter your form freely. When you use your Wild Shape ability, you no longer choose between the variants of a given form, acquiring all movement types and abilities for that form simultaneously.
 
-Additionally, for the duration of Wild Shape, you can use a Bonus Action to shift back to your true form or back into your animal form without expending further charges. Shifting in this way does not refresh the temporary hit points granted by Wild Shape.
+Additionally, for the duration of Wild Shape, you can use a Bonus Action to shift back to your true form or back into your animal form without expending further charges. Shifting in this way does not refresh the temporary hit points granted by Wild Shape, merely restoring them to what they were before you returned to your true form. Nevertheless, when you heal with your Primal Surge ability, excess healing becomes temporary hit points, to the maximum granted by your beast form.
 
 Finally, you know and can cast _Alter Self_ at will without expending a spell slot.
+
+___
 
 ### Circle of Spores
 
