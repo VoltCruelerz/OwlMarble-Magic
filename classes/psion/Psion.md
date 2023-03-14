@@ -28,3 +28,17 @@ Starting at 10th level, the strength of your rampaging mind is such that attempt
 ### Unstoppable Rampage [Updated]
 
 Starting at 14th level, when an attack reduces you to 0 hit points, you can roll a any number of rampage dice from your pool and add your Constitution modifier. Each rampage die from your pool you roll in this way consumes 1 Psi Point. If the total rolled exceeds the excess damage you took, you are instead reduced to 1 hit point.
+
+## Psionic Talents [Updated]
+
+### Tantrum [New]
+
+_Prerequisite: Unleashed Mind Psion_
+
+Your anger boils just beneath the surface. When you roll initiative, you can instantly increase your rampage stage to 2. Additionally, if you take damage while in stage 1 or 2, you advance 1 stage.
+
+### Stable Rifts [New]
+
+_Prerequisite: 11th level Psion_
+
+When you use your _Phase Rift_ power, you can choose to spend a psi point and leave behind a stable portal 5 feet in diameter that lasts until the end of your next turn. During this time, creatures that move to the mouth of the portal are safely deposited at the nearest unoccupied space near the exit.

@@ -67,7 +67,7 @@ Whenever multiple options are provided, you select an option when you change int
 > ___
 >
 > - **Armor Class** 13 + PB (natural armor)
-> - **Hit Points** 5x your Druid level in temporary hit points
+> - **Hit Points** 4x your Druid level in temporary hit points
 > - **Speed** 40 walk; 30 climb, 30 swim (L4), or 30 fly (L8)
 >
 > ___
@@ -86,7 +86,7 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ***Pack Tactics.*** If the form has no swim or fly speed, the druid has advantage on an attack roll against a creature if at least one of the druid's allies is within 5 feet of the creature and the ally isn't incapacitated.
 >
-> ***Dire Strikes.*** Your critical hit range is increased by 3.
+> ***Dire Strikes.*** Your critical hit range is increased by 1.
 >
 > ### Actions
 >
@@ -162,4 +162,4 @@ Whenever multiple options are provided, you select an option when you change int
 >
 > ***Multiattack.*** The druid makes 2 Bestial Strike attacks (L11) or 3 Bestial Strike attacks (L17).
 >
-> ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d10 + wis` bludgeoning, piercing, or slashing damage. You may then use your bonus action to make a grapple attempt if the target is no larger than this form.
+> ***Bestial Strike.*** *Melee Weapon Attack:* Your spell attack modifier to hit, reach 5ft., one target. *Hit:* `2d8 + wis` bludgeoning, piercing, or slashing damage. You may then use your bonus action to make a grapple attempt if the target is no larger than this form.
