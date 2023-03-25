@@ -270,7 +270,7 @@ ___
 
 #### Circle Forms [Updated]
 
-The rites of your circle shift the magic within you and grant you the ability to transform into more dangerous animal forms.  Starting at 2nd level, you can use your Wild Shape ability as a Bonus Action, and while you are Wild Shaped, you can use a Bonus Action to make an Unarmed Strike.
+The rites of your circle shift the magic within you and grant you the ability to transform into more dangerous animal forms.  Starting at 2nd level, you can use your Wild Shape ability as a Bonus Action, and while you are Wild Shaped, you can use a Bonus Action to Shove or Grapple a creature.
 
 Additionally, your maximum hit points increase by 2, and increase by an additional 1 whenever you gain another Druid level, and your spell slot progression changes to match the following table.
 

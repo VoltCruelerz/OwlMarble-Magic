@@ -10,7 +10,7 @@ You regain the use of your Radiant Soul, Radiant Consumption, or Necrotic Shroud
 
 ## Arcane Accuracy [New]
 
-Your extensive practice with your spells has led to unparalleled accuracy.  When you make a ranged spell attack, you have a +2 bonus to your attack rolls.
+Your extensive practice with your spells has led to unparalleled accuracy. When you make a ranged spell attack, you have a +2 bonus to your attack rolls.
 
 ## Arrow Master [New]
 
@@ -19,14 +19,14 @@ _Requirement: Dexterity or Strength score of 15 or higher, Level 4_
 Your mastery with ranged weapons is legendary. You gain the following benefits:
 
 - When you take the attack action on your turn and fire or throw a projectile, you may make one additional attack with disadvantage.
-- You can attempt to intercept an opponent’s projectile with your own.  When an opponent fires a Tiny nonmagical projectile that passes through the range of your weapon, you may make an attack roll against it as a reaction.  The projectile has an AC of 25.  On a hit, their attack misses, and your reaction is restored.
+- You can attempt to intercept an opponent’s projectile with your own. When an opponent fires a Tiny nonmagical projectile that passes through the range of your weapon, you may make an attack roll against it as a reaction. The projectile has an AC of 25. On a hit, their attack misses, and your reaction is restored.
 
 ## Astral-Touched [New]
 
-Your exposure to magic from the plane of thought has changed you, allowing you to manifest your will upon the world.  You gain the following benefits:
+Your exposure to magic from the plane of thought has changed you, allowing you to manifest your will upon the world. You gain the following benefits:
 
 - You gain one point in Intelligence, Wisdom, or Charisma, to a maximum of 20.
-- You learn the _Vortex Warp_ spell and one 1st level spell of your choice.  The 1st level spell must be from the conjuration or transmutation school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Vortex Warp_ spell and one 1st level spell of your choice. The 1st level spell must be from the conjuration or transmutation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Athlete [KibblesTasty]
 
@@ -86,10 +86,10 @@ Select an ability score. You gain one point in that ability (to a maximum of 20)
 
 _Requirement: Proficiency in Shields_
 
-You’ve mastered the technique of blocking incoming blows with your shield and counter attacking while they are vulnerable.  You gain the following benefits:
+You’ve mastered the technique of blocking incoming blows with your shield and counter attacking while they are vulnerable. You gain the following benefits:
 
 - Increase your Strength or Constitution by 1, to a maximum of 20.
-- When a creature attacks you with a melee attack and misses, you can use your reaction to make an attack against them with your shield.  The damage die for your shield is a d4, and you are considered proficient with it.
+- When a creature attacks you with a melee attack and misses, you can use your reaction to make an attack against them with your shield. The damage die for your shield is a d4, and you are considered proficient with it.
 - When you take the Dodge action, your shield adds +4 to your AC instead of +2.
 
 ## Bodyguard [KibblesTasty]
@@ -124,18 +124,18 @@ Something is _off_ about you, unnerving those around you. You gain the following
 
 _Requirement: Half-Orc or Orc_
 
-You have the makings of a great chief, and your allies revere your strength and leadership.  You gain the following benefits:
+You have the makings of a great chief, and your allies revere your strength and leadership. You gain the following benefits:
 
 - Increase your Strength or Charisma by 1, to a maximum of 20.
 - You gain proficiency in one of the following skills of your choice: Deception, Intimidation, or Persuasion.
-- As a bonus action, you can give a command to an ally to reposition itself more favorably.  That ally can then use its reaction to move up to its speed.
+- As a bonus action, you can give a command to an ally to reposition itself more favorably. That ally can then use its reaction to move up to its speed.
 
 ## Chaos-Touched [New]
 
 Your exposure to the fluid nature of Limbo has altered you, granting you the following benefits:
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
-- You learn the _Alter Self_ spell and one 1st level spell of your choice.  The 1st level spell must be from the illusion or transmutation school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Alter Self_ spell and one 1st level spell of your choice. The 1st level spell must be from the illusion or transmutation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Charger [Updated]
 
@@ -148,10 +148,10 @@ You are always the first one to charge into danger, clearing the path for your a
 
 ## Combat Reflexes [KeoniKoa]
 
-Your fighting experience has allowed you to react more swiftly to enemies in moments of weakness.  You gain the following benefits:
+Your fighting experience has allowed you to react more swiftly to enemies in moments of weakness. You gain the following benefits:
 
 - Increase your Strength or Dexterity by 1, to a maximum of 20.
-- When a creature within 5 feet of you picks an item up off the ground, finishes getting up from prone, or critically misses an attack, you can use your reaction to make an attack of opportunity against the creature.  The attack occurs immediately before the miss, the creature stands up, or they retrieve an item.
+- When a creature within 5 feet of you picks an item up off the ground, finishes getting up from prone, or critically misses an attack, you can use your reaction to make an attack of opportunity against the creature. The attack occurs immediately before the miss, the creature stands up, or they retrieve an item.
 
 ## Dagger Mastery [KeoniKoa]
 
@@ -170,17 +170,17 @@ You can take the _Aim_ action as a bonus action.
 
 ## Eldritch-Touched [New]
 
-You have been exposed to the warped reality of the Far Realm and survived, granting you more insight into the minds of others.  You gain the following benefits:
+You have been exposed to the warped reality of the Far Realm and survived, granting you more insight into the minds of others. You gain the following benefits:
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
-- You learn the _Detect Thoughts_ spell and one 1st level spell of your choice.  The 1st level spell must be from the conjuration or enchantment school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Detect Thoughts_ spell and one 1st level spell of your choice. The 1st level spell must be from the conjuration or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Diehard [New]
 
 Some people go down easy. You? Not so much. You gain the following benefits:
 
 - You gain a +2 bonus on death saving throws.
-- When you are reduced to 0 hit points by an effect that does not instantly kill you at 0 hit points, you can immediately move half your speed and make a single weapon attack before falling unconscious.  Movement due to this feature does not provoke opportunity attacks. You can do this once per long rest.
+- When you are reduced to 0 hit points by an effect that does not instantly kill you at 0 hit points, you can immediately move half your speed and make a single weapon attack before falling unconscious. Movement due to this feature does not provoke opportunity attacks. You can do this once per long rest.
 
 ## Durable [Updated by KeoniKoa]
 
@@ -196,7 +196,7 @@ _Requirement: must have the Spellcasting feature_
 
 When you gain this feat, choose a damage type.
 
-Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can reroll any 1s, but you must keep the new rolls.
+Your spells, psionic powers, and ki-fueled abilities ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can reroll any 1s, but you must keep the new rolls.
 
 You can select this feat multiple times. Each time you do so, you must choose a different damage type.
 
@@ -204,7 +204,7 @@ You can select this feat multiple times. Each time you do so, you must choose a 
 
 _Requirement: must have a Level 2 spell slot from the Spellcasting feature_
 
-You gain one additional spell slot for your next-to-highest spell slot level.  When you gain new spell slot levels in the future, the extra slot granted by this feat moves up to the new next-highest level.
+You gain one additional spell slot for your next-to-highest spell slot level. When you gain new spell slot levels in the future, the extra slot granted by this feat moves up to the new next-highest level.
 
 ## Envoy of the Deep [New]
 
@@ -221,7 +221,7 @@ You are a representative of the underfolk, arrived on the surface world to charm
 You have been inundated with magic from the lower planes, granting you the following benefits:
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
-- You learn the _Darkness_ spell and one 1st level spell of your choice.  The 1st level spell must be from the evocation or necromancy school of magic and cannot restore hit points.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Darkness_ spell and one 1st level spell of your choice. The 1st level spell must be from the evocation or necromancy school of magic and cannot restore hit points. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Flesh Shaper [New]
 
@@ -246,7 +246,7 @@ Once you have used this action, you cannot do so again until you finish a long r
 
 You’ve manifested some power of the giants, granting you the following benefits:
 
-- When you make a ranged weapon attack with a thrown weapon, you can channel the runes of the giants to enlarge the weapon mid-flight.  On a hit, the attack deals two additional dice of the weapon’s type.  Hit or miss, the weapon then reverts to its normal size.  You can use this ability a number of times equal to your proficiency bonus and regain all uses on a long rest.
+- When you make a ranged weapon attack with a thrown weapon, you can channel the runes of the giants to enlarge the weapon mid-flight. On a hit, the attack deals two additional dice of the weapon’s type. Hit or miss, the weapon then reverts to its normal size. You can use this ability a number of times equal to your proficiency bonus and regain all uses on a long rest.
 - When you make a ranged attack using a thrown weapon, the weapon’s range is doubled.
 - You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, as well as determining what creatures you can grapple or shove.
 
@@ -255,17 +255,17 @@ You’ve manifested some power of the giants, granting you the following benefit
 Your exposure to divine magic has changed you, granting you the following benefits:
 
 - You gain one point in Intelligence, Wisdom, or Charisma, to a maximum of 20.
-- You learn the _Lesser Restoration_ spell and one 1st level spell of your choice.  The 1st level spell must be from the Cleric spell list and the evocation or abjuration school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Lesser Restoration_ spell and one 1st level spell of your choice. The 1st level spell must be from the Cleric spell list and the evocation or abjuration school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Grappler [Updated]
 
 You gain the following benefits:
 
-- You gain one point in Strength, to a maximum of 20.  
-- When you are grappling a creature, your melee weapon attacks do not receive disadvantage against the other creature.  
+- You gain one point in Strength, to a maximum of 20. 
+- When you are grappling a creature, your melee weapon attacks do not receive disadvantage against the other creature. 
 - Attempts to grapple a creature while you are prone do not have disadvantage.
 - As an action when another creature has grappled you, you may make a grapple check to reverse the grapple, making you the grappler and the other creature the grappled creature.
-- As an action while you have grappled a creature, you can make an additional grapple check against it to attempt to pin it.  On a success, both you and the target are restrained, but the pinned creature gains no advantage from you being restrained in this way.
+- As an action while you have grappled a creature, you can make an additional grapple check against it to attempt to pin it. On a success, both you and the target are restrained, but the pinned creature gains no advantage from you being restrained in this way.
 - Finally, creatures one size class larger than you do not automatically escape grapples.
 
 ## Ground Fighter [New]
@@ -305,14 +305,14 @@ Your maximum Sorcery Points increases by an amount equal to your proficiency bon
 _Requirement: Human, Half-Elf, or Half-Orc_
 
 - Increase your Constitution by 1, to a maximum of 20.
-- You have advantage on saving throws that prevent Exhaustion and you suffer the effects of exhaustion one level lower than the number of levels of exhaustion you have.  You only die if you reach 7 levels of exhaustion.
+- You have advantage on saving throws that prevent Exhaustion and you suffer the effects of exhaustion one level lower than the number of levels of exhaustion you have. You only die if you reach 7 levels of exhaustion.
 - If you make a contested ability check and tie, it goes in your favor, unless the opposing party also has this feat, in which case the tie resolves normally, maintaining the status quo.
 
 ## Inner Power [KibblesTasty]
 
 _Requirement: Ki or Psi points._
 
-You learn to support your body’s function as you cycle your inner power through it.  Your maximum psi or ki points (your choice) increase by 1.
+You learn to support your body’s function as you cycle your inner power through it. Your maximum psi or ki points (your choice) increase by 1.
 
 At the end of a turn on which you used one or more psi or ki points, ignoring those from Psionic Mastery, you heal for the number of ki or psi points expended.
 
@@ -321,7 +321,7 @@ At the end of a turn on which you used one or more psi or ki points, ignoring th
 _Requirement: must be able to prepare spells_
 
 - Your Intelligence, Wisdom, or Charisma increases by 1, to a maximum of 20.
-- Select a class in which you are able to prepare spells.  The maximum number of spells you are able to prepare for that class increases by your proficiency bonus.
+- Select a class in which you are able to prepare spells. The maximum number of spells you are able to prepare for that class increases by your proficiency bonus.
 - You recall everything you have seen or heard within the last 30 days.
 
 ## Light Armor Mastery [KeoniKoa]
@@ -345,7 +345,7 @@ You have studied languages, communication, and codes extensively, gaining the fo
 
 ## Magically Armored [KeoniKoa]
 
-You’ve become incredibly adept at protecting yourself with magical forces.  When a spell cast by an ally modifies your armor class, grants you resistance to a damage type, or grants you temporary hit points, you have the following benefits:
+You’ve become incredibly adept at protecting yourself with magical forces. When a spell cast by an ally modifies your armor class, grants you resistance to a damage type, or grants you temporary hit points, you have the following benefits:
 
 - You gain resistance to force damage.
 - You are immune to the magic missile spell.
@@ -386,7 +386,7 @@ You've learned to embrace your mechanical origins, and are now more construct th
 The inexorable nature of Mechanus has been embedded within you, granting you the following benefits:
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
-- You learn the _Zone of Truth_ spell and one 1st level spell of your choice.  The 1st level spell must be from the abjuration or divination school of magic.  You can cast each of these spells without expending a spell slot.  Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest.  You can also cast these spells using spell slots you have of the appropriate level.  The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Zone of Truth_ spell and one 1st level spell of your choice. The 1st level spell must be from the abjuration or divination school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Professional [New]
 
@@ -402,7 +402,7 @@ You have honed the skills necessary for a skilled trade. You gain the following 
 
 ## Psionic Prodigy [New]
 
-- You gain one psionic talent.  If it has a requirement of any kind, you may only select it if you are a psion and meet the requirements.
+- You gain one psionic talent. If it has a requirement of any kind, you may only select it if you are a psion and meet the requirements.
 - You gain 1 psi point, which you recover after a short or long rest.
 
 ## Radiant Vision [New]
@@ -484,7 +484,7 @@ Once per turn when you roll damage for a melee weapon attack, you can reroll the
 
 ## Shield Master [Updated by KibblesTasty]
 
-You use shields not just for protection but also for offense.  You gain the following benefits while you are wielding a shield:
+You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:
 
 - When you have a shield equipped, you can use your shield as a bonus action to make an improvised weapon attack or try to shove a creature within 5 feet.
 - If you aren’t incapacitated, you can add your shield’s AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.
@@ -494,13 +494,13 @@ You use shields not just for protection but also for offense.  You gain the foll
 
 - Increase one ability score of your choice by 1, to a maximum of 20.
 - You gain proficiency in one skill or tool of your choice.
-- You select one tool and one skill with the same underlying ability score.  Your proficiency for those increases by one level (None -> Proficient -> Expertise -> Mastery -> Supremacy)
+- You select one tool and one skill with the same underlying ability score. Your proficiency for those increases by one level (None -> Proficient -> Expertise -> Mastery -> Supremacy)
 
 ## Skirmisher [New]
 
-You have mastered the art of striking your foes in momentary engagements and have learned how to stay hidden when things do not go as planned.  You gain the following benefits:
+You have mastered the art of striking your foes in momentary engagements and have learned how to stay hidden when things do not go as planned. You gain the following benefits:
 
-- The first time on your turn you move 15 feet or more toward a creature and then hit it with a melee weapon attack, the weapon’s damage for that attack is increased by a number of d4’s equal to your proficiency bonus minus 1.  For example, if your proficiency bonus is 2, roll 1d4.
+- The first time on your turn you move 15 feet or more toward a creature and then hit it with a melee weapon attack, the weapon’s damage for that attack is increased by a number of d4’s equal to your proficiency bonus minus 1. For example, if your proficiency bonus is 2, roll 1d4.
 - When you are hidden from a creature and miss with a melee weapon attack, making the attack does not reveal your position.
 
 ## Sniper [KeoniKoa]
@@ -524,7 +524,7 @@ Your practice balancing swordplay and spellcraft has given you insight on how yo
 
 _Requirement: Ability to cast a cantrip._
 
-- During the first round of combat, you can cast cantrips as a bonus action.  If you do so, you cannot cast a leveled spell with your action.
+- During the first round of combat, you can cast cantrips as a bonus action. If you do so, you cannot cast a leveled spell with your action.
 - During the first round of combat, if you are targeted by an attack, you can cast a cantrip targeting the attacker as a reaction.
 
 ## Spellscribe [New]
@@ -550,8 +550,8 @@ You have developed a special affinity for transcribing magic, granting you the f
 _Requirement: Must be able to cast a spell._
 
 - Being within 5 feet of a creature does not impose disadvantage on your ranged spell attack rolls.
-- When you cast a spell attack cantrip with a grade higher than 1, you may split the power of the spell into a number of separate attacks equal to the grade of the cantrip.  The split spell functions as if cast at grade 1 on each target.  If the spell has any secondary effects at grade 1, they apply to all targets.
-- Before you make a ranged spell attack, you can take a -5 penalty to hit.  If you do so and then hit, the target receives an additional 10 damage of the spell’s type.  You may do this no more than once per turn.
+- When you cast a spell attack cantrip with a grade higher than 1, you may split the power of the spell into a number of separate attacks equal to the grade of the cantrip. The split spell functions as if cast at grade 1 on each target. If the spell has any secondary effects at grade 1, they apply to all targets.
+- Before you make a ranged spell attack, you can take a -5 penalty to hit. If you do so and then hit, the target receives an additional 10 damage of the spell’s type. You may do this no more than once per turn.
 
 ## Sun Hunter [New]
 
@@ -577,11 +577,11 @@ You move like the wind, striking faster than your foes can see. You gain the fol
 
 _Requirement: Tabaxi_
 
-Your desire for knowledge often lands you in dire situations, though you gain satisfaction even from near-death experiences.  You gain the following benefits:
+Your desire for knowledge often lands you in dire situations, though you gain satisfaction even from near-death experiences. You gain the following benefits:
 
 - Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
 - You gain proficiency in one of the following skills: Arcana, History, Insight, Investigation, Nature, or Religion.
-- You have advantage on death saving throws, and when you make a death saving throw in combat, your mind enters a tranquil space between life and death.  There, you find yourself alone with a deity appropriate to your character, and you may ask it a single question.  It can only answer “Yes,” “No,” or “Unknown,” but it does answer truthfully.
+- You have advantage on death saving throws, and when you make a death saving throw in combat, your mind enters a tranquil space between life and death. There, you find yourself alone with a deity appropriate to your character, and you may ask it a single question. It can only answer “Yes,” “No,” or “Unknown,” but it does answer truthfully.
 
 ## Tandem Tactician [UA]
 
@@ -594,9 +594,9 @@ Your presence in a scrap elevates your comrades. You gain the following benefits
 
 _Requirement: Changeling_
 
-You have learned to mimic the ancestral traits of the creatures you impersonate.  After you use your shapechanger feature to imitate a humanoid species, you can spend an hour furthering this transformation.  During this time, you must remain within 90 feet of a creature of that species.  This process of enhancing your transformation requires your concentration, as if on a spell.
+You have learned to mimic the ancestral traits of the creatures you impersonate. After you use your shapechanger feature to imitate a humanoid species, you can spend an hour furthering this transformation. During this time, you must remain within 90 feet of a creature of that species. This process of enhancing your transformation requires your concentration, as if on a spell.
 
-When the enhanced transformation completes, you gain one of the copied creature’s racial features of your choice other than ability score increases, age, or alignment.  If the feature has multiple configuration options, your selection is the same as the copied creature.  If the feature has level requirements, you must fulfill them to benefit from the feature.
+When the enhanced transformation completes, you gain one of the copied creature’s racial features of your choice other than ability score increases, age, or alignment. If the feature has multiple configuration options, your selection is the same as the copied creature. If the feature has level requirements, you must fulfill them to benefit from the feature.
 
 You retain the copied racial trait until you use your shapechanger feature again, you revert to your true form, or you begin another enhanced transformation.
 
@@ -604,13 +604,13 @@ You retain the copied racial trait until you use your shapechanger feature again
 
 _Requirement: Warforged_
 
-Your frame has been updated to fulfill a particular function.  You gain the following benefits:
+Your frame has been updated to fulfill a particular function. You gain the following benefits:
 
 - Increase one ability score of your choice by 1, to a maximum of 20.
 - Choose one of the following upgrades:
-  - **Crafter**: You gain proficiency with one tool of your choice.  Additionally, choose one tool you are proficient with.  This tool is integrated into your body, and you have expertise in it.  You must have at least one free hand to use the integrated tool.
-  - **Juggernaut**: You may double your Strength bonus when you make a Strength-based attack roll, ability check, or saving throw.  Once you have done so, you cannot do so again until you complete a short or long rest.  Additionally, you count as one size class larger when determining your carrying capacity.
-  - **Skirmisher**: Your walking speed increases by 5 feet.  Additionally, as a bonus action, you can take the Disengage action.  Once you have used this bonus action a number of times equal to your proficiency bonus, you cannot do so again until you complete a long rest.
+  - **Crafter**: You gain proficiency with one tool of your choice. Additionally, choose one tool you are proficient with. This tool is integrated into your body, and you have expertise in it. You must have at least one free hand to use the integrated tool.
+  - **Juggernaut**: You may double your Strength bonus when you make a Strength-based attack roll, ability check, or saving throw. Once you have done so, you cannot do so again until you complete a short or long rest. Additionally, you count as one size class larger when determining your carrying capacity.
+  - **Skirmisher**: Your walking speed increases by 5 feet. Additionally, as a bonus action, you can take the Disengage action. Once you have used this bonus action a number of times equal to your proficiency bonus, you cannot do so again until you complete a long rest.
 
 ## Versatile Weapon Master [New]
 
@@ -623,7 +623,7 @@ You have mastered the use of versatile weapons and gain the following the benefi
 
 ## Weapon Expert [Updated]
 
-Your expertise with weapons is legendary.  You can select this feat more than once, but you cannot select the same benefit for the same weapon twice.
+Your expertise with weapons is legendary. You can select this feat more than once, but you cannot select the same benefit for the same weapon twice.
 
 - Increase your Strength or Dexterity by 1, to a maximum of 20.
 - For four different weapons types, such as hand crossbows or longswords, select one of the following:

@@ -3,27 +3,27 @@
 ## Tireless Monk [Updated]
 
 | Level | Proficiency Bonus | Features                                                   | Ki Points | Unarmored Movement | Techniques Known |
-|:-----:|:-----------------:|:-----------------------------------------------------------|:---------:|:------------------:|:----------------:|
-|  1st  | +2                | Unarmored Defense, Martial Arts                            | ---       | ---                | ---              |
-|  2nd  | +2                | Step of the Wind, Ki, Dedicated Weapon, Unarmored Movement | 1         | +10ft.             | 1             |
-|  3rd  | +2                | Deflect Missiles, Monastic Tradition, Ki-Fueled Attack     | 2         | +10ft.             | 1             |
-|  4th  | +2                | Ability Score Improvement, Slow Fall                       | 2         | +10ft.             | 2             |
-|  5th  | +3                | Extra Attack                                               | 3         | +10ft.             | 2             |
-|  6th  | +3                | Ki-Empowered Strikes, Monastic Tradition Feature           | 3         | +15ft.             | 3             |
-|  7th  | +3                | Evasion, Stillness of Mind                                 | 4         | +15ft.             | 3             |
-|  8th  | +3                | Ability Score Improvement                                  | 4         | +15ft.             | 3             |
-|  9th  | +4                | Unarmored Movement Improvement                             | 5         | +15ft.             | 4             |
-| 10th  | +4                | Purity of Body                                             | 5         | +20ft.             | 4             |
-| 11th  | +4                | Monastic Tradition Feature                                 | 6         | +20ft.             | 4             |
-| 12th  | +4                | Ability Score Improvement                                  | 6         | +20ft.             | 4             |
-| 13th  | +5                | Tongue of the Sun and Moon                                 | 7         | +20ft.             | 5             |
-| 14th  | +5                | Diamond Soul                                               | 7         | +25ft.             | 5             |
-| 15th  | +5                | Timeless Body                                              | 8         | +25ft.             | 5             |
-| 16th  | +5                | Ability Score Improvement                                  | 8         | +25ft.             | 5             |
-| 17th  | +6                | Monastic Tradition Feature                                 | 9         | +25ft.             | 6             |
-| 18th  | +6                | Empty Body                                                 | 9         | +30ft.             | 6             |
-| 19th  | +6                | Absility Score Improvement                                 | 10        | +30ft.             | 6             |
-| 20th  | +6                | Perfect Self                                               | 10        | +30ft.             | 6             |
+| :---: | :---------------: | :--------------------------------------------------------- | :-------: | :----------------: | :--------------: |
+|  1st  |        +2         | Unarmored Defense, Martial Arts                            |    ---    |        ---         |       ---        |
+|  2nd  |        +2         | Step of the Wind, Ki, Dedicated Weapon, Unarmored Movement |     1     |       +10ft.       |        1         |
+|  3rd  |        +2         | Deflect Missiles, Monastic Tradition, Ki-Fueled Attack     |     2     |       +10ft.       |        1         |
+|  4th  |        +2         | Ability Score Improvement, Slow Fall                       |     2     |       +10ft.       |        2         |
+|  5th  |        +3         | Extra Attack                                               |     3     |       +10ft.       |        2         |
+|  6th  |        +3         | Ki-Empowered Strikes, Monastic Tradition Feature           |     3     |       +15ft.       |        3         |
+|  7th  |        +3         | Evasion, Stillness of Mind                                 |     4     |       +15ft.       |        3         |
+|  8th  |        +3         | Ability Score Improvement                                  |     4     |       +15ft.       |        3         |
+|  9th  |        +4         | Unarmored Movement Improvement                             |     5     |       +15ft.       |        4         |
+| 10th  |        +4         | Purity of Body                                             |     5     |       +20ft.       |        4         |
+| 11th  |        +4         | Monastic Tradition Feature                                 |     6     |       +20ft.       |        4         |
+| 12th  |        +4         | Ability Score Improvement                                  |     6     |       +20ft.       |        4         |
+| 13th  |        +5         | Tongue of the Sun and Moon                                 |     7     |       +20ft.       |        5         |
+| 14th  |        +5         | Diamond Soul                                               |     7     |       +25ft.       |        5         |
+| 15th  |        +5         | Timeless Body                                              |     8     |       +25ft.       |        5         |
+| 16th  |        +5         | Ability Score Improvement                                  |     8     |       +25ft.       |        5         |
+| 17th  |        +6         | Monastic Tradition Feature                                 |     9     |       +25ft.       |        6         |
+| 18th  |        +6         | Empty Body                                                 |     9     |       +30ft.       |        6         |
+| 19th  |        +6         | Absility Score Improvement                                 |    10     |       +30ft.       |        6         |
+| 20th  |        +6         | Perfect Self                                               |    10     |       +30ft.       |        6         |
 
 ## Part 1 - Monk Revisions
 
@@ -62,14 +62,14 @@ Beginning at 1st level, while you are wearing no armor and not wielding a shield
 
 ### Martial Arts [Updated]
 
-Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortsowrds and any simple melee weapons that don't have the two-handed or heavy property.
+Your practice of martial arts gives you mastery of combat styles that use Unarmed Strikes and monk weapons, which are shortsowrds and any simple melee weapons that don't have the two-handed or heavy property.
 
 You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield.
 
-- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons, for your jump distance, and for Athletics checks.
-- You can roll a d4 in place of your normal damage die of your unarmed strike.
+- You can use Dexterity instead of Strength for the attack and damage rolls of your Unarmed Strikes and monk weapons, for your jump distance, and for Athletics checks.
+- You can roll a d4 in place of your normal damage die of your Unarmed Strike.
 
-- When you take the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.
+- When you take the Attack action with an Unarmed Strike or a monk weapon on your turn, you can make one Unarmed Strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an Unarmed Strike as a bonus action, assuming you haven't already taken a bonus action this turn.
 
 ### Step of the Wind [Updated]
 
@@ -91,7 +91,7 @@ Some of your ki features with a duration require you to channel ki. Channeled ef
 
 #### Flurry of Blows
 
-Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.
+Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two Unarmed Strikes as a bonus action.
 
 #### Patient Defense
 
@@ -123,7 +123,7 @@ At 9th level, you gain the ability to move along vertical surfaces and across li
 
 ### Ki-Fueled Attack [TCOE]
 
-Starting at 3rd level, if you spend 1 or more ki points as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action on that turn.
+Starting at 3rd level, if you spend 1 or more ki points as part of your action on your turn, you can make one attack with an Unarmed Strike or a monk weapon as a bonus action on that turn.
 
 ### Deflect Missiles [Updated]
 
@@ -169,7 +169,7 @@ When you would gain this feature, if you already have the Extra Attack feature f
 
 ### Ki-Empowered Strikes
 
-Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+Starting at 6th level, your Unarmed Strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
 
 ### Evasion
 
@@ -219,19 +219,19 @@ Any time you would make an ability check or saving throw with Strength, Dexterit
 
 #### Block Healing
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend any number of ki points. If the target would heal before the start of your next turn, its healing is reduced by 10 times the number of ki points spent, to a minimum of 0. This reduction is applied to each instance of healing the target receives for the duration.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend any number of ki points. If the target would heal before the start of your next turn, its healing is reduced by 10 times the number of ki points spent, to a minimum of 0. This reduction is applied to each instance of healing the target receives for the duration.
 
 #### Deny Reactions
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point to prevent the target from reacting quickly. Until the end of your next turn, the target cannot take reactions.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point to prevent the target from reacting quickly. Until the end of your next turn, the target cannot take reactions.
 
 #### Disarm
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point to attempt to disarm the target. The target must succeed on a Strength saving throw or drop one item of your choice.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point to attempt to disarm the target. The target must succeed on a Strength saving throw or drop one item of your choice.
 
 #### Discombobulate
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point to attempt to disrupt the target's ability to attack. The target must make a Wisdom saving throw.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point to attempt to disrupt the target's ability to attack. The target must make a Wisdom saving throw.
 
 On a failure, if the target can make multiple attacks on its turn through the Extra Attack or Multiattack feature, the number of attacks it can make on its next turn is reduced by 1. If the target does not possess either of those features, it instead has disadvantage on the first attack it makes on its next turn. A creature cannot suffer from this effect more than once at a given time.
 
@@ -243,25 +243,25 @@ When you make a Radiant Sun Bolt attack, you can expend a ki point to increase i
 
 #### Goad
 
-When you hit with an unarmed strike or a melee monk weapon on your turn, you can expend 1 ki point to goad the target into attacking you.
+When you hit with an Unarmed Strike or a melee monk weapon on your turn, you can expend 1 ki point to goad the target into attacking you.
 
 The target must make a Wisdom saving throw or have disadvantage on attack rolls against creatures other than you until the start of your next turn. This technique ends early if you attack or harm another creature or if a creature other than you harms the target.
 
 #### Lunging Strike
 
-When you make an attack with an unarmed strike or a melee monk weapon on your turn, you can expend 1 ki point to increase the reach of the attack by 5 feet.
+When you make an attack with an Unarmed Strike or a melee monk weapon on your turn, you can expend 1 ki point to increase the reach of the attack by 5 feet.
 
 #### Pacify
 
-When you hit with an unarmed strike on your turn, you can expend any number of ki points to attempt to put the creature to sleep, and you can choose to have the attack deal no damage. If the creature has fewer hit points than 5 times the number of ki points expended, it falls asleep for 1 hour, until it takes damage, or until a creature uses its action to shake it awake.
+When you hit with an Unarmed Strike on your turn, you can expend any number of ki points to attempt to put the creature to sleep, and you can choose to have the attack deal no damage. If the creature has fewer hit points than 5 times the number of ki points expended, it falls asleep for 1 hour, until it takes damage, or until a creature uses its action to shake it awake.
 
 #### Plant Delusion
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point to create a phantom image or sound in the target creature's mind, as if by the *Minor Illusion* spell. The delusion lasts until the start of your next turn.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point to create a phantom image or sound in the target creature's mind, as if by the *Minor Illusion* spell. The delusion lasts until the start of your next turn.
 
 #### Probing Strike
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend up to 8 ki points. For each point spent, you learn one of the following traits of your choice about the target creature:
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend up to 8 ki points. For each point spent, you learn one of the following traits of your choice about the target creature:
 
 - damage immunities
 - damage resistances
@@ -274,19 +274,19 @@ When you hit with an unarmed strike or a monk weapon on your turn, you can expen
 
 #### Shove
 
-When you hit with an unarmed strike or a monk weapon on your turn, if the target is Large or smaller, you can expend 1 or more ki points to move the target. It must succeed on a Strength saving throw or move 5 feet in a direction of your choice for each ki point expended.
+When you hit with an Unarmed Strike or a monk weapon on your turn, if the target is Large or smaller, you can expend 1 or more ki points to move the target. It must succeed on a Strength saving throw or move 5 feet in a direction of your choice for each ki point expended.
 
 #### Silencing Strike
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point to attempt to silence the target. It must succeed on a Constitution saving throw or be unable to form words or the verbal components of spells until the start of your next turn.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point to attempt to silence the target. It must succeed on a Constitution saving throw or be unable to form words or the verbal components of spells until the start of your next turn.
 
 #### Sweep the Leg
 
-When you hit with an unarmed strike or a monk weapon on your turn, if the target is Large or smaller, you can expend 1 ki point to trip the target. It must succeed on a Dexterity saving throw or fall prone.
+When you hit with an Unarmed Strike or a monk weapon on your turn, if the target is Large or smaller, you can expend 1 ki point to trip the target. It must succeed on a Dexterity saving throw or fall prone.
 
 #### Tracking Strike
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point to leave a mystical trace on the target. For the next hour, you know the direction to the creature and your distance from it.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point to leave a mystical trace on the target. For the next hour, you know the direction to the creature and your distance from it.
 
 ### Level 5 Techniques
 
@@ -294,67 +294,67 @@ When you hit with an unarmed strike or a monk weapon on your turn, you can expen
 
 _Prerequisite: Way of the Drunken Master_
 
-When you miss with an unarmed strike or a monk weapon, you can expend 2 ki points to reroll the attack.
+When you miss with an Unarmed Strike or a monk weapon, you can expend 2 ki points to reroll the attack.
 
 #### Focused Aim
 
-When you miss with an unarmed strike or a monk weapon, you can expend any number of ki points, increasing the attack roll by 2 for each point expended, potentially turning a miss into a hit.
-
-#### Sabotage Defenses
-
-When you hit with an unarmed strike or monk weapon on your turn, you can expend 2 ki points to flood the target creature's body, causing it to be more susceptible to hostile magic. Until the end of your next turn, when the target makes a saving throw against a spell, it must roll a d4 and subtract that from the result.
-
-#### Stunning Strike
-
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 2 ki points to attempt to stun the target. It must succeed on a Constitution saving throw or be stunned until the end of your next turn.
+When you miss with an Unarmed Strike or a monk weapon, you can expend any number of ki points, increasing the attack roll by 2 for each point expended, potentially turning a miss into a hit.
 
 #### Instant Counter
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point. If the target makes a melee weapon attack before the end of your next turn while within your reach, you can use your reaction to make an unarmed strike or attack with a monk weapon against it. This reaction attack can be enhanced by a Technique, and is made after the target hits or misses.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point. If the target makes a melee weapon attack before the end of your next turn while within your reach, you can use your reaction to make an Unarmed Strike or attack with a monk weapon against it. This reaction attack can be enhanced by a Technique, and is made before the target hits or misses.
+
+#### Sabotage Defenses
+
+When you hit with an Unarmed Strike or monk weapon on your turn, you can expend 2 ki points to flood the target creature's body, causing it to be more susceptible to hostile magic. Until the end of your next turn, when the target makes a saving throw against a spell, it must roll a d4 and subtract that from the result.
 
 #### Siphon Vitality
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 2 ki points to siphon some of the target's life force. You gain temporary hit points equal to the damage dealt.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 2 ki points to siphon some of the target's life force. You gain temporary hit points equal to the damage dealt.
+
+#### Stunning Strike
+
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 2 ki points to attempt to stun the target. It must succeed on a Constitution saving throw or be stunned until the end of your next turn.
 
 ### Level 7 Techniques
 
 #### Strike the Soul
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 1 ki point to change the attack's damage type to necrotic, radiant, or psychic.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 1 ki point to change the attack's damage type to necrotic, radiant, or psychic.
 
 #### Vanishing Strike
 
-You learn to strike with such speed that your enemy momentarily loses track of your position. When you hit with an unarmed strike or a melee monk weapon on your turn, you can expend 1 ki point. If you then immediately move 15 feet or more, you become hidden from the target until the end of your turn or you hit the target again.
+You learn to strike with such speed that your enemy momentarily loses track of your position. When you hit with an Unarmed Strike or a melee monk weapon on your turn, you can expend 1 ki point. If you then immediately move 15 feet or more, you become hidden from the target until the end of your turn or you hit the target again.
 
 #### Vital Strike
 
 _Prerequisite: Way of the Open Hand_
 
-Before you make an unarmed strike, you can choose to take a -5 penalty to the attack roll. If the attack hits, you can expend 1 ki point to add +10 to the attack's damage.
+Before you make an Unarmed Strike, you can choose to take a -5 penalty to the attack roll. If the attack hits, you can expend 1 ki point to add +10 to the attack's damage.
 
 ### Level 9 Techniques
 
 #### Mark for Death
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 3 ki points to render the target more vulnerable to attacks. Until the start of your next turn, whenever the target takes damage from an unarmed strike or weapon attack, the attack's damage is increased by 1d4. This effect does not stack.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 3 ki points to render the target more vulnerable to attacks. Until the start of your next turn, whenever the target takes damage from an Unarmed Strike or weapon attack, the attack's damage is increased by 1d4. This effect does not stack.
 
 ### Level 11 Techniques
 
 #### Blindside
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 4 ki points to strike with blinding speed. The target takes additional damage equal to your initiative roll, and your initiative becomes 0 starting at the beginning of the next round.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 4 ki points to strike with blinding speed. The target takes additional damage equal to your initiative roll, and your initiative becomes 0 starting at the beginning of the next round.
 
 ### Level 15 Techniques
 
 #### Expose the Soul
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend 4 ki points to attempt to eject a creature's soul. It must succeed on Charisma saving throw or be paralyzed. At the end of each of its turns, it can repeat this saving throw, ending the effect on itself on a success.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend 4 ki points to attempt to eject a creature's soul. It must succeed on Charisma saving throw or be paralyzed. At the end of each of its turns, it can repeat this saving throw, ending the effect on itself on a success.
 
 Maintaining the disconnect between a creature's body and soul is mentally taxing and requires your concentration, as if on a spell. You can maintain this disconnect on multiple creatures at once, but if your concentration is broken, it is broken for all applications of this ability.
 
 #### Killing Stroke
 
-When you hit with an unarmed strike or a monk weapon on your turn, you can expend any number of ki points. If the target has fewer hit points than the number of ki points expended multiplied by 10, it must succeed on a Constitution saving throw or die.
+When you hit with an Unarmed Strike or a monk weapon on your turn, you can expend any number of ki points. If the target has fewer hit points than the number of ki points expended multiplied by 10, it must succeed on a Constitution saving throw or die.
 
 ## Part 3 - Monastic Traditions
 
@@ -362,15 +362,15 @@ When you hit with an unarmed strike or a monk weapon on your turn, you can expen
 
 ### Draconic Disciple [Updated]
 
-Starting at 3rd level, you can channel draconic power to magnify your presence and imbue your unarmed strikes with the essence of a dragon's breath. You gain the following benefits:
+Starting at 3rd level, you can channel draconic power to magnify your presence and imbue your Unarmed Strikes with the essence of a dragon's breath. You gain the following benefits:
 
 - ***Draconic Presence:*** If you fail a Charisma (Intimidation) or Charisma (Persuasion) check, you can use your reaction to reroll the check, as you tap into the mighty presence of dragons. Once this feature turns a failure into a success, you can't use it again until you finish a long rest.
-- ***Draconic Strike:*** When you damage a target with an unarmed strike, you can change the damage type to acid, cold, fire, lightning, or poison.
+- ***Draconic Strike:*** When you damage a target with an Unarmed Strike, you can change the damage type to acid, cold, fire, lightning, or poison.
 - ***Tongue of Dragons:*** You learn to speak, read, and write Draconic or one other language of your choice.
 
 ### Breath of the Dragon [Updated]
 
-Starting at 3rd level, you can channel destructive waves of energy, like those created by the dragons you emulate. When you make an unarmed strike or an attack with a monk weapon, you can expend 2 ki points to instead release a burst of draconic energy in either a 30-foot line 5 feet wide or a 20-foot cone.
+Starting at 3rd level, you can channel destructive waves of energy, like those created by the dragons you emulate. When you make an Unarmed Strike or an attack with a monk weapon, you can expend 2 ki points to instead release a burst of draconic energy in either a 30-foot line 5 feet wide or a 20-foot cone.
 
 Select a damage type: acid, cold, fire, lightning, or poison.
 
@@ -412,9 +412,9 @@ For 10 minutes, these spectral arms hover near your shouldes or surround your ar
 While they persist, the arms grant the following benefits:
 
 - You can use your Wisdom modifier in place of your Strength modifier when making Strength checks or saving throws.
-- You can use the spectral arms to make unarmed strikes.
+- You can use the spectral arms to make Unarmed Strikes.
 - Unarmed strikes with them on your turn have a reach of 10 feet.
-- Unarmed strikes can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force.
+- Unarmed strikes can deal force damage.
 
 ### Visage of the Astral Self [Updated]
 
@@ -422,7 +422,7 @@ Starting at 6th level, you can summon the visage of your astral self. As a bonus
 
 The visage covers your face like a helmet or mask, and you determine its appearance. While it persists, you gain the following benefits:
 
-- ***Astral Sight:*** You can see normally in darkness, both magical and nonmagical to a distance of 120 feet.
+- ***Astral Sight:*** You can see normally in darkness, both magical and nonmagical to a distance of 120 feet, and you innately see the chinks in enemy armor. When you make an Unarmed Strike, you can add your Wisdom modifier to the attack roll.
 - ***Wisdom of the Spirit:*** You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
 - ***Word of the Spirit:*** When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively, you can amplify your voice so all creatures within 600 feet can hear you.
 
@@ -433,7 +433,7 @@ Beginning at 11th level, when you have both your astral arms and visage summoned
 While it persists, you gain the following benefits:
 
 - ***Deflect Energy:*** When you take acid, cold, fire, force, lightning, or thunder damage, you can use your reaction to deflect it. When you do so, the damage you take is reduced by 1d10 + your Wisdom modifier (minimum reduction of 1).
-- ***Empowered Arms:*** Your *Arms of the Astral Self* deal an extra d4 of damage on a hit.
+- ***Empowered Arms:*** Your _Arms of the Astral Self_ deal an extra d4 of damage when summoned and on a hit.
 
 ### Awakened Astral Self [Updated]
 
@@ -442,7 +442,7 @@ Finally at 17th level, your connection to your astral self is complete, allowing
 While the astral self is awakened, you gain the following benefits:
 
 - ***Armor of the Spirit:*** You gain a +2 bonus to your Armor Class.
-- ***Astral Barrage:*** When you use your Extra Attack feature, you need only spend 2 ki points per additional attack instead of 3.
+- ***Astral Barrage:*** When you use your Extra Attack feature, you need only spend 2 ki points per additional attack instead of 3, and your Unarmed Strikes and the initial summoning of your astral arms deals an extra 2d4 damage instead.
 
 ## Drunken Master
 
@@ -467,7 +467,7 @@ Starting at 11th level, you always seem to get a lucky bounce at the right momen
 
 ### Intoxicated Frenzy [Updated]
 
-Finally at 17th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your *Flurry of Blows*, you can make up to 3 additional unarmed strikes (for a total of 5 unarmed strikes from *Flurry of Blows*), provided that each unarmed strike targets a different creature.
+Finally at 17th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your *Flurry of Blows*, you can make up to 3 additional Unarmed Strikes (for a total of 5 Unarmed Strikes from *Flurry of Blows*), provided that each Unarmed Strike targets a different creature.
 
 ## Four Elements
 
@@ -482,37 +482,49 @@ You know the *Elemental Attunement* discipline and one other of your choice. You
 Once you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided the spell has an enhanced effect at higher levels. The spell's level increases by 1 for each additional ki point spent. The maximum number of ki points you can spend to cast a spell is determined by your monk level.
 
 | Monk Level | Maximum Ki Points for a Spell |
-|:----------:|:-----------------------------:|
-| 5th-8th    | 3 |
-| 9th-12th   | 4 |
-| 13th-16th  | 5 |
-| 17th-20th  | 6 |
+| :--------: | :---------------------------: |
+|  5th       |               2               |
+|  6th-8th   |               3               |
+|  9th-12th  |               4               |
+| 13th-16th  |               5               |
+| 17th-20th  |               6               |
 
 ### Elemental Disciplines [Updated]
 
 The elemental disciplines are presented in alphabetical order. If a discipline requires a level (shown in parentheses), you must meet that requirement before you can choose it.
 
-- ***Breath of Winter (17):*** You can spend 6 ki points to cast *Cone of Cold*.
-- ***Clench of the North Wind (6)***: You can spend 3 ki points to cast *Hold Person*.
+#### 3rd Level Disciplines [Updated]
+
 - ***Elemental Attunement***: You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects:
   - Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.
   - Instantaneously light or snuff out a candle, a torch, or a small campfire.
   - Chill or warm up to 1 pound of nonliving material for up to 1 hour.
   - Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.
-- ***Eternal Mountain Defense (17)***: You can channel 5 ki points to cast *Stoneskin*, targeting yourself.
-- ***Fangs of the Fire Snake:*** When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with unarmed strikes increases by 10 feet until the end of your turn. A hit with such an attack deals fire damage instead of bludgeoning, and if you spend 1 ki point on a hit with such an attack, it deals an additional 1d10 fire damage.
-- ***Fist of Four Thunders:*** You can spend 2 ki points to cast *Thunderwave.*
-- ***Flames of the Phoenix (11):*** You can spend 4 ki points to cast *Fireball*.
-- ***Gong of the Summit (6):*** You can spend 3 ki points to cast *Shatter.*
-- ***Mist Stance (11):*** You can spend 4 ki points to cast *Gaseous Form*.
-- ***Ride the Wind (11):*** You can spend 4 ki points to cast *Fly*, targeting yourself.
-- ***River of Hungry Flame (17):*** You can spend 5 ki points to cast *Wall of Fire*.
-- ***Rush of Gale Spirits:*** You can spend 2 ki points to cast Gust of Wind.
+- ***Fangs of the Fire Snake:*** When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with Unarmed Strikes increases by 10 feet until the end of your turn. A hit with such an attack deals fire damage instead of bludgeoning, and if you spend 1 ki point on a hit with such an attack, it deals an additional 1d10 fire damage.
+- ***Fist of Four Thunders:*** You can spend 2 ki points to cast _Thunderwave_.
+- ***Rush of Gale Spirits:*** You can spend 2 ki points to cast _Gust of Wind_.
 - ***Shape the Flowing River:*** As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high. raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area.
-- ***Shield of the Skies (6):*** You can spend 3 ki points to cast *Warding Wind*.
-- ***Sweeping Cinder Strike:*** You can spend 2 ki points to cast *Burning Hands*.
-- ***Unbroken Air:*** You can create a blast of compressed air that strikes light a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failure, it takes 3d10 bludgeoning damage, plus 1d10 for each additional ki point you spent, up to your maximum, and you can either knock it prone, pull it up to 25 feet closer to you, or push it up to 25 feet away from you. On a successful save, the creature takes half as much damage and suffers no further effects.
-- ***Wave of Rolling Earth (17):*** You can spend 6 ki points to cast Wall of Stone.
+- ***Sweeping Cinder Strike:*** You can spend 2 ki points to cast _Burning Hands_.
+- ***Unbroken Air:*** You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failure, it takes 3d10 bludgeoning damage, plus 1d10 for each additional ki point you spent, up to your maximum, and you can either knock it prone, pull it up to 25 feet closer to you, or push it up to 25 feet away from you. On a successful save, the creature takes half as much damage and suffers no further effects.
+
+#### 6th Level Disciplines [Updated]
+
+- ***Clench of the North Wind***: You can spend 3 ki points to cast _Hold Person_.
+- ***Gong of the Summit:*** You can spend 3 ki points to cast _Shatter_.
+- ***Shield of the Skies:*** You can spend 3 ki points to cast _Warding Wind_.
+
+#### 11th Level Disciplines [Updated]
+
+- ***Flames of the Phoenix:*** You can spend 4 ki points to cast _Fireball_.
+- ***Mist Stance:*** You can spend 4 ki points to cast _Gaseous Form_.
+- ***Ride the Wind:*** You can spend 4 ki points to cast _Fly_, targeting yourself.
+
+#### 17th Level Disciplines [Updated]
+
+- ***Breath of Winter:*** You can spend 6 ki points to cast _Cone of Cold_.
+- ***Eternal Mountain Defense:*** You can channel 5 ki points to cast _Stoneskin_, targeting yourself.
+- ***River of Hungry Flame:*** You can spend 5 ki points to cast _Wall of Fire_.
+- ***Wave of Rolling Earth:*** You can spend 6 ki points to cast _Wall of Stone_.
 
 ## Kensei
 
@@ -534,7 +546,7 @@ When you reach 6th, 11th, and 17th level in this class, you can choose another t
 
 ##### Agile Parry [Updated]
 
-If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself  if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn while the weapon remains in your hand and you aren't incapacitated.
+If you make an Unarmed Strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself  if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn while the weapon remains in your hand and you aren't incapacitated.
 
 ##### One with the Blade [Updated]
 
@@ -589,13 +601,13 @@ Starting at 17th level, your touch can channel the energy of death into a creatu
 
 Your mystical touch can mend wounds. As an action, you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier.
 
-When you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.
+When you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without spending a ki point for the healing.
 
 You can use this feature a number of times equal to your proficiency bonus, and you regain all uses on a short or long rest.
 
 #### Hand of Harm [Updated]
 
-You use your ki to inflict wounds. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra necrotic damage equal to 1d4 + your Wisdom modifier.
+You use your ki to inflict wounds. When you hit a creature with an Unarmed Strike, you can spend 1 ki point to deal extra necrotic damage equal to 1d4 + your Wisdom modifier.
 
 #### Physician's Touch [Updated]
 
@@ -607,9 +619,9 @@ When you use Hand of Harm on a creature, you can subject that creature to the po
 
 #### Flurry of Healing and Harm [Updated]
 
-Beginning at 11th level, you can now mete out a flurry of comfort and hurt. When you use Flurry of Blows, you can now replace each of the unarmed strikes with a use of your Hand of Healing, without spending ki points for the healing.
+Beginning at 11th level, you can now mete out a flurry of comfort and hurt. When you use Flurry of Blows, you can now replace each of the Unarmed Strikes with a use of your Hand of Healing, without spending ki points for the healing.
 
-In addition, when you make an unarmed strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.
+In addition, when you make an Unarmed Strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.
 
 #### Hand of Ultimate Mercy [Updated]
 
@@ -623,6 +635,8 @@ Once you use this feature, you can't use it again until you finish a long rest.
 
 Your maximum number of known Techniques increases by 1, and whenever you hit a creature with one of the attacks granted by your Flurry of Blows and apply a Technique to it, the Technique costs 1 less.
 
+Additionally, the die size of your Unarmed Strikes increases to a d6.
+
 #### Wholeness of Body [Updated]
 
 At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.
@@ -633,7 +647,7 @@ Beginning at 11th level, you can enter a special meditation that surrounds you w
 
 #### Quivering Palm [Updated]
 
-Starting at 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
+Starting at 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an Unarmed Strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
 
 You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.
 
@@ -641,9 +655,9 @@ You can have only one creature under the effect of this feature at a time. You c
 
 #### Shadow Arts [Updated]
 
-You can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast any of the following spells: *Darkness, Darkvision, Pass without Trace, Silence.* When cast in this way, you do not need material components. Once you have cast one of these spells, you cannot cast the same spell again until you finish a short or long rest.
+You can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast any of the following spells: _Darkness_, _Darkvision_, _Pass without Trace_, and _Silence_. When cast in this way, you do not need material components. Once you have cast one of these spells, you cannot cast the same spell again until you finish a short or long rest.
 
-Additionally, you gain the *Minor Illusion* cantrip if you don't already have it.
+Additionally, you gain the _Minor Illusion_ cantrip if you don't already have it.
 
 #### Shadow Step [Updated]
 
@@ -663,11 +677,11 @@ At 17th level, you can exploit a creature's momentary distraction when it is hit
 
 Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.
 
-You gain a new attack option that you can use with the Attack action. The special attack is a ranged spell attack with a range of 60 feet. You are proficient with it, and you add your Wisdom modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d8.
+You gain a new attack option that you can use with the Attack action or you use _Ki-Fueled Strike_. This special attack is a ranged spell attack with a range of 60 feet. You are proficient with it, and you add your Wisdom modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d8.
 
 When you take the Attack action on your turn and use this special attack as part of it, you can spend 1 ki point to make the special attack twice as a bonus action. When you gain the Extra Attack feature, this special attack can be used for any of the attacks you make as part of the Attack action.
 
-When you make this special attack, you can apply a Technique you know, as if it were an unarmed strike.
+When you make this special attack, you can apply a Technique you know, as if it were an Unarmed Strike.
 
 #### Searing Arc Strike [Updated]
 

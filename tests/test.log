@@ -1,0 +1,32 @@
+===================================================
+ERROR REPORT - 4 ERRORS ACROSS 2/320 SRD SPELLS
+===================================================
+===================================================
+- Wall of Force: 3/11
+---------------------------------------------------
+    "Wall of Force": {
+        "actionType": "save",
+        "save": {"ability":"con","dc":0,"scaling":"spell"},
+        "scaling": {"mode":"level","formula":"1d10"}
+    }
+---------------------------------------------------
+L - [1/3] - actionType
+| L - SRD: "util"
+| L - OMM: "save"
+L - [2/3] - save
+| L - SRD: {"ability":"","dc":null,"value":"","scaling":"spell"}
+| L - OMM: {"ability":"con","dc":0,"scaling":"spell"}
+L - [3/3] - scaling
+  L - SRD: {"mode":"none","formula":""}
+  L - OMM: {"mode":"level","formula":"1d10"}
+
+===================================================
+- Fire Storm: 1/11
+---------------------------------------------------
+    "Fire Storm": {
+        "scaling": {"mode":"level","formula":"1d10"}
+    }
+---------------------------------------------------
+L - [1/1] - scaling
+  L - SRD: {"mode":"none","formula":""}
+  L - OMM: {"mode":"level","formula":"1d10"}

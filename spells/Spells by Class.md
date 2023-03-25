@@ -535,7 +535,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Conjure Celestial](https://www.dndbeyond.com/spells/conjure-celestial) - V/S [C] - (PHB - 225)
 - [Divine Word](https://www.dndbeyond.com/spells/divine-word) - V - (PHB - 234)
 - [Etherealness](https://www.dndbeyond.com/spells/etherealness) - V/S - (PHB - 238)
-- [Fire Storm](https://www.dndbeyond.com/spells/fire-storm) - V/S - (PHB - 242)
+- [Fire Storm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#fire-storm) - V/S - (OMM - 7)
 - [Godspeed](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#godspeed) - V/S - (OMM - 7)
 - [Plane Shift](https://www.dndbeyond.com/spells/plane-shift) - V/S/M$ - (PHB - 266)
 - [Regenerate](https://www.dndbeyond.com/spells/regenerate) - V/S/M - (PHB - 271)
@@ -793,7 +793,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Draconic Transformation](https://www.dndbeyond.com/spells/draconic-transformation) - V/S/M$ [C] - (FTD - 19)
 - [Expel Anathema](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#expel-anathema) - V - (OMM - 7)
-- [Fire Storm](https://www.dndbeyond.com/spells/fire-storm) - V/S - (PHB - 242)
+- [Fire Storm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#fire-storm) - V/S - (OMM - 7)
 - [Mirage Arcane](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#mirage-arcane) - V/S - (OMM - 7)
 - [Plane Shift](https://www.dndbeyond.com/spells/plane-shift) - V/S/M$ - (PHB - 266)
 - [Regenerate](https://www.dndbeyond.com/spells/regenerate) - V/S/M - (PHB - 271)
@@ -1300,6 +1300,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 7 - _Sorcerer_
 
+- [Avalanche](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#avalanche) - V/S - (OMM - 7)
 - [Blood to Water](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#blood-to-water) - V/S - (OMM - 7)
 - [Crown of Stars](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#crown-of-stars) - V/S - (OMM - 7)
 - [Delayed Blast Fireball](https://www.dndbeyond.com/spells/delayed-blast-fireball) - V/S/M [C] - (PHB - 230)
@@ -1307,7 +1308,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Dream of the Blue Veil](https://www.dndbeyond.com/spells/dream-of-the-blue-veil) - V/S/M - (TCE - 106)
 - [Etherealness](https://www.dndbeyond.com/spells/etherealness) - V/S - (PHB - 238)
 - [Finger of Death](https://www.dndbeyond.com/spells/finger-of-death) - V/S - (PHB - 241)
-- [Fire Storm](https://www.dndbeyond.com/spells/fire-storm) - V/S - (PHB - 242)
+- [Fire Storm](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#fire-storm) - V/S - (OMM - 7)
 - [Plane Shift](https://www.dndbeyond.com/spells/plane-shift) - V/S/M$ - (PHB - 266)
 - [Power Word Pain](https://www.dndbeyond.com/spells/power-word-pain) - V - (XGE - 163)
 - [Prismatic Spray](https://www.dndbeyond.com/spells/prismatic-spray) - V/S - (PHB - 267)
@@ -1340,6 +1341,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Blade of Disaster](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#blade-of-disaster) - V/S [C] - (OMM - 9)
 - [Cloaked Legion](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#cloaked-legion) - V/S/M$ [C] - (OMM - 9)
 - [Crackling Doom](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#crackling-doom) - V/S/M - (OMM - 9)
+- [Cryoseism](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#cryoseism) - V/S/M$ - (OMM - 9)
 - [Disjunction](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#disjunction) - V/S/M [C] - (OMM - 9)
 - [False Identity](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#false-identity) - V/S/M [C] - (OMM - 9)
 - [Gate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#gate) - V/S/M$ [C] - (OMM - 9)
@@ -1959,7 +1961,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Teleportation Circle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#teleportation-circle) - V/S/M$X - (OMM - 5)
 - [Transmute Rock](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#transmute-rock) - V/S/M - (OMM - 5)
 - [Vertigo](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#vertigo) - V/S [C] - (OMM - 5)
-- [Wall of Force](https://www.dndbeyond.com/spells/wall-of-force) - V/S/M [C] - (PHB - 285)
+- [Wall of Force](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-force) - V/S/M [C] - (OMM - 5)
 - [Wall of Light](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-light) - V/S/M [C] - (OMM - 5)
 - [Wall of Stone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#wall-of-stone) - V/S/M [C] - (OMM - 5)
 - [Zenith's Hellstream](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#zeniths-hellstream) - V/S/M [C] - (OMM - 5)
@@ -2008,6 +2010,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 7 - _Wizard_
 
+- [Avalanche](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#avalanche) - V/S - (OMM - 7)
 - [Blood to Water](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#blood-to-water) - V/S - (OMM - 7)
 - [Create Magen](https://www.dndbeyond.com/spells/create-magen) - V/S/M$X - (IDRotF - 318)
 - [Crown of Stars](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/07.md#crown-of-stars) - V/S - (OMM - 7)
@@ -2070,6 +2073,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Blade of Disaster](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#blade-of-disaster) - V/S [C] - (OMM - 9)
 - [Cloaked Legion](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#cloaked-legion) - V/S/M$ [C] - (OMM - 9)
 - [Crackling Doom](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#crackling-doom) - V/S/M - (OMM - 9)
+- [Cryoseism](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#cryoseism) - V/S/M$ - (OMM - 9)
 - [Disjunction](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#disjunction) - V/S/M [C] - (OMM - 9)
 - [False Identity](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#false-identity) - V/S/M [C] - (OMM - 9)
 - [Foresight](https://www.dndbeyond.com/spells/foresight) - V/S/M - (PHB - 244)
