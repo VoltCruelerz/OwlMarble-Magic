@@ -222,6 +222,9 @@
     "Fire Shield": {
         "damage": {"parts":[["2d8","fire"],["2d8","cold"]],"versatile":"","value":""}
     },
+    "Fire Storm": {
+        "scaling": {"mode":"level","formula":"1d10"}
+    },
     "Flame Strike": {
         "materials": {"value":"pinch of sulfur","consumed":false,"cost":0,"supply":0}
     },
@@ -399,6 +402,12 @@
     "Misty Step": {
         "target": {"value":null,"units":"","type":"self"},
         "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
+    },
+    "Moonbeam": {
+        "target": {"value":20,"units":"ft","type":"cylinder"},
+        "save": {"ability":"str","dc":0,"scaling":"spell"},
+        "materials": {"value":"a several seeds from any moonseed plant","consumed":false,"cost":0,"supply":0},
+        "scaling": {"mode":"level","formula":"1d4"}
     },
     "Passwall": {
         "target": {"value":1,"units":"","type":"creature"}
@@ -598,6 +607,9 @@
     },
     "Wall of Force": {
         "target": {"value":10,"units":"ft","type":"wall"},
+        "actionType": "save",
+        "save": {"ability":"con","dc":0,"scaling":"spell"},
+        "scaling": {"mode":"level","formula":"1d10"},
         "materials": {"value":"a pinch of powder made by crushing a clear gemstone","consumed":false,"cost":0,"supply":0}
     },
     "Wall of Ice": {
