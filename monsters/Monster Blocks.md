@@ -42,7 +42,7 @@ The following covers assorted NPC stat blocks for creatures references in spells
 
 > ## Animated Object
 >
->*Tiny|Small|Medium|large|Huge construct, unaligned*
+>*Tiny|Small|Medium|Large|Huge construct, unaligned*
 > ___
 >
 > - **Armor Class** 18/17/16/14/12
@@ -155,6 +155,7 @@ The following covers assorted NPC stat blocks for creatures references in spells
 ```
 
 > ## Servant Spirit
+>
 >*Tiny celestial, fey, or fiend; unaligned*
 >
 > - **Armor Class** 11
@@ -177,6 +178,43 @@ The following covers assorted NPC stat blocks for creatures references in spells
 > ***Keen Senses.*** The spirit has advantage on Wisdom (Perception) checks that rely on hearing (**all forms**), sight (**celestial only**), and smell (**fiend only**).
 >
 > ***Amphibious.*** The spirit can breathe both water and air. (**fey only**)
+
+```
+```
+
+> ## Sorcerer's Statue
+>
+>*Your size class, your alignment*
+> ___
+>
+> - **Armor Class** Your spell save DC
+> - **Hit Points** 300
+> - **Speed** 30ft.
+>
+> ___
+> |STR|DEX|CON|
+> |:---:|:---:|:---:|
+> | 20 (+5) | 10 (+0) | 20 (+5) |
+> ___
+>
+> - **Damage Immunities** poison, psychic, physical damage from nonmagical weapons that are not adamantine
+> - **Condition Immunities** poisoned, charmed, exhaustion, frightened
+> - **Senses** darkvision 60 feet, magesight 30 feet
+> - **Languages** your languages, telepathy to you 1 mile
+>
+> ### Traits
+>
+> ***Resilient.*** For each hour of inactivity, the statue regains 1 hit point.
+>
+> ***Facsimile.*** The statue inherits the mental ability scores and saving throws of its creator.
+>
+> ### Actions
+>
+> ***Multiattack.*** The statue makes two slam attacks and can use its Imbued Spell ability.
+>
+> ***Slam.*** *Melee Weapon Attack:* your spell attack modifier to hit, range 5 ft., one target.  *Hit:* 4d4+5 force damage.
+>
+> ***Imbued Spell.*** The statue casts its imbued spell.
 
 ```
 ```

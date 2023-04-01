@@ -81,7 +81,7 @@ Starting at 2nd level, your training allows you to harness the mystic energy of 
 
 You can spend these points to fuel various ki features. You begin by knowing *Flurry of Blows*, *Patient Defense*, and a Technique. You learn more ki features when you gain levels in this class.
 
-When you spend a ki point, it is unavailable until the start of your next turn.
+When you spend a ki point, it is unavailable until the start of your next turn. If you do not use a ki point while in combat, you can briefly store the excess magic in your soul. You may store no more than twice your normal amount of ki in this way, and any stored ki is lost when combat ends.
 
 Some of your ki features compel a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:
 
