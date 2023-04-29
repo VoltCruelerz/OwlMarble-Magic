@@ -223,7 +223,7 @@ The temporary hit points provided by different uses of this metamagic do not sta
 
 ### Heightened Spell [SRD]
 
-When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 mana points to give the creature disadvantage on its saving throws against the spell.
+When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 mana points to give the creature disadvantage on its first saving throw against the spell.
 
 ### Helping Spell [New]
 
