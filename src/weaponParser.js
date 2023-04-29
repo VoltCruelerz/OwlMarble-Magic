@@ -118,6 +118,9 @@ module.exports = class WeaponParser extends Parser {
             case 'Warbow': return 'modules/taring-kyburn/icons/items/weapons/bows/Bow_12.png';
             case 'Net': return 'icons/tools/fishing/net-simple-tan.webp';
             case 'Whip': return 'icons/weapons/misc/whip-red-yellow.webp';
+            case 'Dart': return 'modules/taring-kyburn/icons/items/weapons/ammo/dart.png';
+            case 'Musket': return 'modules/taring-kyburn/icons/items/weapons/guns/Gun_v2_13.png';
+            case 'Pistol': return 'modules/taring-kyburn/icons/items/weapons/guns/Gun_v2_01.png';
             // Unhandled Error
             default: throw new Error('No image set for ' + weaponName);
         }

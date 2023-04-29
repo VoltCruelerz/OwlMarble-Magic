@@ -1068,6 +1068,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Shadowstaff](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#shadowstaff) - S [C] - (OMM - 0)
 - [Shape Water](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#shape-water) - S - (OMM - 0)
 - [Shocking Grasp](https://www.dndbeyond.com/spells/shocking-grasp) - V/S - (PHB - 275)
+- [Sorcerous Burst](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#sorcerous-burst) - V/S - (OMM - 0)
 - [Stun Bolt](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#stun-bolt) - V/S/M - (OMM - 0)
 - [Sword Burst](https://www.dndbeyond.com/spells/sword-burst) - V - (TCE - 115)
 - [Thunderclap](https://www.dndbeyond.com/spells/thunderclap) - S - (XGE - 168)
@@ -1210,6 +1211,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 4 - _Sorcerer_
 
+- [Arcane Eruption](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/04.md#arcane-eruption) - V/S - (OMM - 4)
 - [Augmenting Wall](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/04.md#augmenting-wall) - V/S [C] - (OMM - 4)
 - [Azdregath's Creeping Concoction](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/04.md#azdregaths-creeping-concoction) - V/S [C] - (OMM - 4)
 - [Banishment](https://www.dndbeyond.com/spells/banishment) - V/S/M [C] - (PHB - 217)

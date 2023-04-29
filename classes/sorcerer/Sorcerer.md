@@ -179,7 +179,7 @@ When you cast a spell that includes an attack roll, you may spend 2 mana points 
 
 ### Careful Spell [SRD]
 
-When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force.  To do so, you spend 1 mana point and choose a number of those creatures up to your Charisma modifier (minimum of 1 creature).  A chosen creature automatically succeeds on its saving throw against the spell.
+When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force.  To do so, you spend 1 mana point and choose a number of those creatures up to your Charisma modifier (minimum of 1 creature).  A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage.
 
 ### Disrupting Spell [New]
 
@@ -187,7 +187,7 @@ When you cast a spell, by expending 2 mana points, you can compel all affected c
 
 ### Distant Spell [SRD]
 
-When you cast a spell that has a range of 5 feet or greater, you can spend 1 mana point to double the range of the spell.
+When you cast a spell that has a range of 5 feet or greater, you can spend 1 mana point to increase the range of the spell by 30 times your sorcerer level.
 
 When you cast a spell that has a range of Touch, you can spend 1 mana point to make the range of the spell 30 feet.
 
@@ -207,7 +207,7 @@ You can use Empowered Spell even if you have already used a different Metamagic 
 
 ### Extended Spell [SRD]
 
-When you cast a spell that has a duration of 1 minute or longer, you can spend 1 mana point to double its duration, up to a maximum of 24 hours.
+When you cast a spell, you can spend 1 mana point to give yourself advantage on concentration checks to maintain the spell. If the spell that has a duration of 1 minute or longer, you double its duration, to a maximum of 24 hours.
 
 ### Gruesome Spell [New]
 
@@ -223,7 +223,7 @@ The temporary hit points provided by different uses of this metamagic do not sta
 
 ### Heightened Spell [SRD]
 
-When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 mana points to give the creature disadvantage on its first saving throw against the spell.
+When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 mana points to give the creature disadvantage on its saving throws against the spell.
 
 ### Helping Spell [New]
 
@@ -240,6 +240,8 @@ When you cast a damaging spell that targets only one creature, you may spend 3 m
 ### Quickened Spell [SRD]
 
 When you cast a spell that has a casting time of 1 action, you can spend 2 mana points to change the casting time to 1 bonus action for this casting.
+
+You can’t modify a spell in this way if you’ve already cast a spell of 1st level or higher on the current turn, nor can you cast a spell of 1st level or higher spell on this turn after modifying a spell in this way.
 
 ### Reinforcing Spell [New]
 
@@ -292,7 +294,7 @@ When you cast a line spell, you may spend a mana point to add a single bend alon
 
 ### Subtle Spell [SRD]
 
-When you cast a spell, you can spend 1 mana point to cast it without any somatic or verbal components.
+When you cast a spell, you can spend 1 mana point to cast it without any somatic or verbal components, as well as any material components that do not have a gold cost.
 
 ### Swarming Spell [New]
 

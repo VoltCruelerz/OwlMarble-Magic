@@ -145,6 +145,12 @@ In addition, as a bonus action, you can give yourself a flying speed of 30 feet 
 
 You can cast _False Life_ on yourself at will without expending a spell slot or material components. The level of the spell is equal to your warlock spell slot level.
 
+#### Hexer [Updated]
+
+You know and can cast the spell _Hex_ without expending a spell slot. Once you have done so, you cannot do so again until you complete a Short or Long Rest.
+
+When you cast the spell _Hex_, its range increases to 600 feet, and you can target a creature by name, even if you cannot see it.
+
 #### Shrouded Spells [New]
 
 When you cast a spell with a saving throw, you can cause any number of the affected creatures to automatically succeed on the saving throw.
