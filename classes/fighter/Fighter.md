@@ -67,6 +67,8 @@ Starting at 17th level, when you’re in great peril, you can tap into a deep we
 
 When you make an attack with a weapon that has two Masteries, you can apply both effects to the target, and you choose the order of application when you make the attack.
 
+------------
+
 ## Subclasses
 
 ### Echo Knight

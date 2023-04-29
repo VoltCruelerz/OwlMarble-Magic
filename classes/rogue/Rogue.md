@@ -1,8 +1,29 @@
 # Rogue
 
-## General Changes
+| Level | PB  | Class Features                         | Sneak Attack |
+| :---: | :-: | :------------------------------------- | :----------: |
+|  1st  | +2  | Expertise, Sneak Attack, Thieves' Cant |     1d6      |
+|  2nd  | +2  | Cunning Action                         |     1d6      |
+|  3rd  | +2  | Roguish Archetype                      |     2d6      |
+|  4th  | +2  | Feat                                   |     2d6      |
+|  5th  | +3  | Uncanny Dodge, Tuck and Roll           |     3d6      |
+|  6th  | +3  | Expertise                              |     3d6      |
+|  7th  | +3  | Evasion                                |     4d6      |
+|  8th  | +3  | Feat                                   |     4d6      |
+|  9th  | +4  | Archetype Feature                      |     5d6      |
+| 10th  | +4  | Feat                                   |     5d6      |
+| 11th  | +4  | Reliable Talent 1                      |     6d6      |
+| 12th  | +4  | Feat                                   |     6d6      |
+| 13th  | +5  | Archetype Feature                      |     7d6      |
+| 14th  | +5  | Subtle Strikes, Blindsense             |     7d6      |
+| 15th  | +5  | Reliabale Talen 2, Slippery Mind       |     8d6      |
+| 16th  | +5  | Feat                                   |     8d6      |
+| 17th  | +6  | Archetype Feature, Stroke of Luck      |     9d6      |
+| 18th  | +6  | Elusive                                |     9d6      |
+| 19th  | +6  | Feat                                   |     10d6     |
+| 20th  | +6  | Epic Boon                              |     10d6     |
 
-### Sneak Attack [Updated]
+## Sneak Attack [Updated]
 
 Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. When you hit with an attack, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon, and once you have used this feature, you cannot use it again until the start of your next turn.
 
@@ -10,23 +31,37 @@ You don't need advantage on the attack roll if another enemy of the target is wi
 
 The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.
 
-### Doubled Up [New]
+## Doubled Up [New]
 
 When you engage in [two-weapon fighting](../../rules/combat/Two-Weapon%20Fighting.md) with light melee weapons, you add your proficiency bonus to the attack rolls.
 
-### Cunning Action [Updated]
+## Cunning Action [Updated]
 
 Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Aim, Blind, Dash, Disengage, or Hide action.
 
-### Tuck and Roll [New]
+## Tuck and Roll [New]
 
 When you reach 5th level, when you take fall damage, you can use your reaction to instead take half damage. If you are still reduced to 0 hit points, you remain unconscious but stabilize.
 
-### Reliable Talent [Updated]
+## Reliable Talent [Updated]
 
 By 11th level, you have refined your skills until they approach perfection.  Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.  Additionally, you can treat a Sneak Attack die roll of a 2 or lower as a 3.
 
-## Subclass Changes
+When you reach 15th level, an ally within five feet of you making a check you are proficient in can also treat a d20 roll of 9 or lower as a 10.
+
+## Subtle Strikes [Updated]
+
+By 14th level, you know how to exploit a target's distractions. When a creature within your reach gets up from prone or picks up an item, it provokes an attack of opportunity from you.
+
+## Stroke of Luck [Updated]
+
+At 17th level, you have an uncanny knack for succeeding when you need to. After making an attack roll, ability check, or saving throw, before the roll resolves, you may choose to change the d20's result to a natural 20.
+
+Once you have used this feature, you cannot use it again until you complete a Short or Long Rest unless you take a level of Exhaustion.
+
+------------
+
+## Subclasses
 
 ### Assassin
 
@@ -46,4 +81,11 @@ Starting at 3rd level, you can use the Help action as a Bonus Action.  Additiona
 
 #### Commanding Presence [New]
 
-Starting at 9th level, while helping an ally with your Master of Tactics feature, your ally's critical hit range increases by one foiurth your Rogue level, rounded down.
+Starting at 9th level, while helping an ally with your Master of Tactics feature, your ally's critical hit range increases by one fourth your Rogue level, rounded down.
+
+| Level | Bonus |
+| :---: | :---: |
+|   9   |   2   |
+|  12   |   3   |
+|  16   |   4   |
+|  20   |   5   |
