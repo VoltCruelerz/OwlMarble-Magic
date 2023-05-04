@@ -34,7 +34,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Javelin** | 0.5 | 2 | 1d6 piercing | _Thrown (30/120), Amphibious_ | - | Slow |
 | **Light Hammer** | 2 | 2 | 1d4 bludgeoning | _Light, Thrown (20/60)_ | - | Nick |
 | **Mace** | 5 | 4 | 1d6 bludgeoning | - | - | Sap |
-| **Quarterstaff** | 0.2 | 4 | 1d6 bludgeoning | Versatile (1d8) | - | Flex |
+| **Quarterstaff** | 0.2 | 4 | 1d6 bludgeoning | Versatile (1d8) | - | Flex  |
 | **Sickle** | 1 | 2 | 1d4 slashing | _Light_ | Shovel, Pitchfork | Nick |
 | **Spear** | 1 | 3 | 1d6 piercing | _Thrown (20/60), Versatile (1d8), Amphibious_ | - | Flex |
 
@@ -50,7 +50,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Greataxe** | 30 | 7 | 1d12 slashing | _Heavy, Two-Handed_ | - | Cleave |
 | **Greatsword** | 50 | 6 | 2d6 slashing | _Heavy, Two-Handed_ | Flamberge | Cleave |
 | **Halberd** | 20 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy, Dismounting_| - | Cleave |
-| **Hook Sword (Separate)** | 45 | 2 | 1d6 slashing | _Finesse, Light, Parrying, Special_| - | Graze |
+| **Hook Sword (Separate)** | 45 | 2 | 1d6 slashing | _Finesse, Light, Parrying, Special_| - | Nick |
 | **Hook Swords (Linked)** | -  | - | 2d4 slashing | _Finesse, Reach, Two-Handed_<br/>**Special**: If a creature is holding two hook swords, as part of its attack action, the creature can link or unlike the swords. | - | Topple |
 | **Lance** | 5 | 6 | 1d12 piercing | _Heavy, Extended Reach, Couched_<br/>**Special**: While mounted, this has the Dismounting property.| - | Topple |
 | **Longsword** | 15 | 3 | 1d8 slashing | _Versatile (1d10)_ | Bastard Sword, Messer | Flex |
