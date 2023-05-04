@@ -14,12 +14,12 @@
 | 10th  | +4  | Path Feature                             |   4   |     +3      |       4        |
 | 11th  | +4  | Indomitable Might, Fast Movement 2       |   4   |     +3      |       4        |
 | 12th  | +4  | Feat                                     |   5   |     +3      |       4        |
-| 13th  | +5  | Overwhelming Critical 2                  |   5   |     +3      |       4        |
+| 13th  | +5  | Persistent Rage, Overwhelming Critical 2 |   5   |     +3      |       4        |
 | 14th  | +5  | Path Feature                             |   5   |     +3      |       4        |
-| 15th  | +5  | Persistent Rage, Perfect Physique        |   5   |     +3      |       4        |
+| 15th  | +5  | Perfect Physique, Relentless Rage        |   5   |     +3      |       4        |
 | 16th  | +5  | Feat                                     |   5   |     +4      |       4        |
 | 17th  | +6  | Primal Champion, Fast Movement 3         |   6   |     +4      |       4        |
-| 18th  | +6  | Rage Resurgence, Overwhelming Critical 3 |   6   |     +4      |       4        |
+| 18th  | +6  | Simmering Rage, Overwhelming Critical 3  |   6   |     +4      |       4        |
 | 19th  | +6  | Feat                                     |   6   |     +4      |       4        |
 | 20th  | +6  | Epic Boon                                |   6   |     +4      |       4        |
 
@@ -30,6 +30,23 @@ Your training with weapons allows you to use the Mastery property of two kinds o
 Whenever you finish a Long Rest, you can practice weapon drills and change the kinds of melee weapons you chose.
 
 When you reach certain levels in this class, you gain the ability to use the Mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian table.
+
+## Rage [Updated]
+
+In battle, you fight with primal ferocity. On your turn you are not wearing heavy armor, you can enter a rage as a bonus action.
+
+While raging, you gain the following benefits:
+
+- You have advantage on Strength checks and Strength saving throws.
+- When you make an unarmed strike or weapon attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.
+- You have resistance to bludgeoning, piercing, and slashing damage.
+- If you are able to cast spells, you can't cast them or concentrate on them while raging.
+
+While raging, you cannot don heavy armor.
+
+Your rage lasts for 10 minutes. It ends early if you are incapacitated or at the end of your turn if you haven't taken damage, attacked a creature, or compelled a saving throw since the start of your last turn.
+
+If your rage would otherwise end early, you can use a Bonus Action to maintain it for another round. You can also end your Rage early as a Bonus Action.
 
 ## Primal Knowledge [New]
 
@@ -63,14 +80,52 @@ This bonus increases to 2 at level 13th level, and 3 at 18th level.
 
 Starting at 11th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total, and you have advantage on saving throws to resist Exhaustion.
 
+## Persistent Rage [Updated]
+
+Starting at 13th level, you no longer need to use a Bonus Action to maintain your rage, and you do not lose your Rage if you are Incapacitated.
+
 ## Perfect Physique [New]
 
 Starting at 15th level, your long and high jump distance is equal to your walking speed, you count as one size larger for the purpose of determining your carrying capacity, and your range with thrown weapons is doubled.
+
+## Relentless Rage [Updated]
+
+Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.
+
+Each time you use this feature after the first, the DC increases by 5. When you finish a Short Rest or Long Rest, the DC resets to 10
 
 ## Primal Champion [Updated]
 
 Starting at 17th level, you embody the power of the wilds. Your Strength and Constitution increase by 4, to a maximum of 24.
 
-## Rage Resurgence [New]
+## Simmering Rage [New]
 
-Starting at 18th level, whenever you roll initiative, you regain one expended use of your Rage.
+Starting at 18th level, whenever you roll initiative, you may choose to immediately Rage. When you do so, you do not consume a charge of your Rage.
+
+## Subclasses
+
+### Berserker [Updated]
+
+#### Frenzy [UA]
+
+You can go into a frenzy in battle. If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack.
+
+To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
+
+#### Mindless Rage [UA]
+
+Starting at 6th level, you have immunity to the Charmed and Frightened conditions while your Rage is active.
+
+If you are Charmed or Frightened when you enter your Rage, that condition ends on you.
+
+#### Retaliation [UA]
+
+Starting at 10th level, when you take damage from a creature that is within 5 feet of you, you can use your Reaction to make one melee attack against that  creature, using a weapon or an Unarmed Strike.
+
+#### Intimidating Presence [UA]
+
+Starting at 14th level, as an action, you can strike terror into others with your menacing presence, as you swell with primal power. When you do so, each creature of your choice within 30 feet of you—or 60 feet of you if your Rage is active—must make a Wisdom saving throw (DC equal to `8 + your proficiency bonus + your Strength modifier`), provided the creature isn’t behind Total Cover.
+
+On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature’s turns, the creature repeats the saving throw, ending the effect on itself on a successful save.
+
+Once you use this feature, you can’t use it again until you finish a Long Rest. If you’ve run out of uses of this feature, you can expend a use of your Rage, choosing not to activate the Rage and activating Intimidating Presence instead.

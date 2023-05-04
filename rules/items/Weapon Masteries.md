@@ -4,11 +4,17 @@ Each weapon now has a Mastery property, as shown in the weapon tables. That prop
 
 If a game feature lets you replace a weapon’s Mastery property with another one, that weapon must meet any prerequisite specified  or the new property.
 
+## Lunge [New]
+
+_Prerequisite: Versatile or Finesse_
+
+When you make an attack with this weapon on your turn, you can expend 5 feet of movement to increase the reach of the attack by 5 feet.
+
 ## Cleave [UA]
 
 Prerequisite: Melee Weapon, Heavy Property
 
-If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.
+If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.
 
 ## Flex [Updated]
 

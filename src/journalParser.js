@@ -24,7 +24,7 @@ module.exports = class RuleParser extends Parser {
         inputFolders.forEach((folder) => {
             markdownPaths = markdownPaths.concat(this.getAllMarkdown(folder));
         });
-        console.log('Markdown Paths: ' + markdownPaths.length);
+        console.log('Journal Markdown Paths: ' + markdownPaths.length);
 
         // Actually parse.
         let journalFiles = markdownPaths.map((path) => {
