@@ -53,9 +53,9 @@ By 11th level, you have refined your skills until they approach perfection.  Whe
 
 When you reach 15th level, an ally within 5 feet of you that you can see making a check you are proficient in can also treat a d20 roll of 9 or lower as a 10.
 
-## Subtle Strikes - 14 [Updated]
+## Windows of Vulnerability - 14 [Updated]
 
-By 14th level, you know how to exploit a target's distractions. When a creature within your reach gets up from prone or picks up an item, it provokes an attack of opportunity from you, and you can apply Sneak Attack to the attack, provided you do not have disadvantage.
+By 14th level, you know how to exploit a target's distractions. When a creature within your reach gets up from prone or picks up an item from the ground, it provokes an attack of opportunity from you, and you can apply Sneak Attack to the attack, provided you do not have disadvantage.
 
 ## Stroke of Luck - 17 [Updated]
 
@@ -85,7 +85,7 @@ Starting at 17th level, you become a master of instant death. When you attack an
 
 #### Eye for Weakness - 17
 
-At 17th level, you learn to exploit a creature's weaknesses by carefully studying its tactics and movement. When  your Insightful Fighting feature is applied to a creature, you learn its Creature Type, Immunities, Resistances, and Vulnerabilities.
+At 17th level, you learn to exploit a creature's weaknesses by carefully studying its tactics and movement. When your Insightful Fighting feature is applied to a creature, you learn its Creature Type, Immunities, Resistances, and Vulnerabilities.
 
 Additionally, your Sneak Attack damage against that creature increases by a number of d6s equal to your Intelligence modifier while the feature is applied.
 

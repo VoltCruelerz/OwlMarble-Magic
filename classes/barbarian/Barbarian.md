@@ -8,7 +8,7 @@
 |  4th  | +2  | Feat                                     |   3   |     +2      |       3        |
 |  5th  | +3  | Extra Attack, Fast Movement 1            |   4   |     +2      |       3        |
 |  6th  | +3  | Path Feature                             |   4   |     +2      |       3        |
-|  7th  | +3  | Feral Instinct                           |   4   |     +2      |       3        |
+|  7th  | +3  | Feral Instinct, Instinctive Pounce       |   4   |     +2      |       3        |
 |  8th  | +3  | Feat                                     |   4   |     +2      |       3        |
 |  9th  | +4  | Overwhelming Critical 1                  |   4   |     +3      |       3        |
 | 10th  | +4  | Path Feature                             |   4   |     +3      |       4        |
@@ -69,6 +69,10 @@ When you reach 11th level, this increases to 20 feet, and again to 30 at level 1
 ## Feral Instinct - 7 [Updated]
 
 Starting at 7th level, your instincts are so honed that you have advantage on Initiative rolls and Dexterity saving throws.
+
+## Instinctive Pounce - 7 [TCOE]
+
+As part of the bonus action you use to enter your rage, you can move up to half your speed.
 
 ## Overwhelming Critical - 9 [Updated]
 

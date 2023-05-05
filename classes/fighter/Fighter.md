@@ -15,8 +15,8 @@
 | 11th  | +4  | Extra Attack 2, Power Attack                |      4      |       5        |
 | 12th  | +4  | Feat                                        |      4      |       5        |
 | 13th  | +5  | Weapon Adept, Indomitable 2                 |      4      |       5        |
-| 14th  | +5  | Feat                                        |      4      |       5        |
-| 15th  | +5  | Action Surge 2                              |      4      |       5        |
+| 14th  | +5  | Archetype Feature                           |      4      |       5        |
+| 15th  | +5  | Feat, Action Surge 2                        |      4      |       5        |
 | 16th  | +5  | Feat                                        |      4      |       5        |
 | 17th  | +6  | Extra Attack 3, Unconquerable               |      4      |       5        |
 | 18th  | +6  | Archetype Feature                           |      4      |       5        |
@@ -45,7 +45,7 @@ This property change applies only for you, not for others.
 
 ## Indomitable - 9 [Updated]
 
-Beginning at 9th level, you can reroll a saving throw that you fail.  Until you complete a long rest, if you use this ability again and you succeed on the saving throw, you take a level of Exhaustion.
+Beginning at 9th level, you can reroll a saving throw that you fail.  If you succeed, until you complete a long rest, if you use this ability again and you succeed on that saving throw, you take a level of Exhaustion.
 
 Starting at 13th level, you can succeed on two saving throws using this feature between long rests without exhaustion.
 
@@ -61,7 +61,7 @@ You make this decision before the attack hits or misses. For example, you could 
 
 ## Unconquerable - 17 [Updated]
 
-Starting at 17th level, when you’re in great peril, you can tap into a deep well of resilience within yourself. When you use your Indomitable feature, you can also use your Second Wind feature, which heals you before any effects from the saving throw.
+Starting at 17th level, when you’re in great peril, you can tap into a deep well of resilience within yourself. When you use your Indomitable feature, you automatically succeed on the saving throw.
 
 ## Perfected Form - 19 [New]
 
@@ -74,3 +74,41 @@ When you make an attack with a weapon that has two Masteries, you can apply both
 ### Echo Knight
 
 The echo counts for flanking.
+
+### Champion
+
+#### Adaptable Warrior - 3 [New]
+
+You’ve studied your friends and foes alike and learned that victory relies on adaptability. Whenever you finish a Long Rest, you can gain proficiency in one skill from those available to this class at 1st level, as you remind yourself of past lessons. This proficiency lasts  until the end of your next Long Rest.
+
+Additionally, you can add half your proficiency bonus to any Strength, Dexterity, or Constitution check you are not proficient in.
+
+#### Improved Critical - 3 [Unchanged]
+
+Your critical critical success range for attacks and Death Saving Throws increase by 1. This bonus increases at higher levels.
+
+| Fighter Level | Bonus | Minimum Critical Roll |
+| :-----------: | :---: | :-------------------: |
+|       3       |   1   |          19           |
+|       7       |   2   |          18           |
+|      10       |   3   |          17           |
+|      14       |   4   |          16           |
+
+#### Additional Fighting Style - 7 [New]
+
+You gain another Fighting Style of your choice.
+
+#### Heroic Warrior - 6 [New]
+
+Once per Encounter, you can give yourself a charge of Heroic Inspiration if you don't already have a charge, and your jump distance increases by a number of feet equal to your Strength modifier.
+
+#### Reputation - 10 [New]
+
+When you would make an ability check using Charisma, you can choose to instead make the check using Strength or Dexterity and people that do not have opposed alignments to yours will be willing to shelter you for the night, provided there is no danger to them.
+
+#### Survivor - 14 [Updated]
+
+You attain the pinnacle of resilience in battle, granting you the following benefits:
+
+- **Defy Death**: You have advantage on Death Saving Throws.
+- **Heroic Rally**: At the start of each of your turns where you have at least 1 hit point, you regain Hit Points equal to 5 + your Constitution modifier, up to half your maximum.
