@@ -48,57 +48,57 @@ Your rage lasts for 10 minutes. It ends early if you are incapacitated or at the
 
 If your rage would otherwise end early, you can use a Bonus Action to maintain it for another round. You can also end your Rage early as a Bonus Action.
 
-## Primal Knowledge [New]
+## Primal Knowledge - 2 [New]
 
 Starting at 2nd level, you gain proficiency in another skill of your choice from the list of skills available to Barbarians at 1st level.
 
 In addition, when you make an Acrobatics, Intimidation, Perception, Stealth, or Survival check while raging, you can choose to channel primal power and make it as a Strength check instead of the normal ability score.
 
-## Extra Attack [Updated]
+## Extra Attack - 5 [Updated]
 
 Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
 When you would gain this feature, if you already have the Extra Attack feature from another class, you can replace this with a Feat.
 
-## Fast Movement [Updated]
+## Fast Movement - 5 [Updated]
 
 Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.
 
 When you reach 11th level, this increases to 20 feet, and again to 30 at level 17.
 
-## Feral Instinct [Updated]
+## Feral Instinct - 7 [Updated]
 
 Starting at 7th level, your instincts are so honed that you have advantage on Initiative rolls and Dexterity saving throws.
 
-## Overwhelming Critical [Updated]
+## Overwhelming Critical - 9 [Updated]
 
 Starting at 9th level, your critical hit range increases by 1, and the number of dice you add on a critical hit increases by the same amount.
 
 This bonus increases to 2 at level 13th level, and 3 at 18th level.
 
-## Indomitable Might [Updated]
+## Indomitable Might - 11 [Updated]
 
 Starting at 11th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total, and you have advantage on saving throws to resist Exhaustion.
 
-## Persistent Rage [Updated]
+## Persistent Rage - 13 [Updated]
 
 Starting at 13th level, you no longer need to use a Bonus Action to maintain your rage, and you do not lose your Rage if you are Incapacitated.
 
-## Perfect Physique [New]
+## Perfect Physique - 15 [New]
 
 Starting at 15th level, your long and high jump distance is equal to your walking speed, you count as one size larger for the purpose of determining your carrying capacity, and your range with thrown weapons is doubled.
 
-## Relentless Rage [Updated]
+## Relentless Rage - 15 [Updated]
 
 Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.
 
 Each time you use this feature after the first, the DC increases by 5. When you finish a Short Rest or Long Rest, the DC resets to 10
 
-## Primal Champion [Updated]
+## Primal Champion - 17 [Updated]
 
 Starting at 17th level, you embody the power of the wilds. Your Strength and Constitution increase by 4, to a maximum of 24.
 
-## Simmering Rage [New]
+## Simmering Rage - 18 [New]
 
 Starting at 18th level, whenever you roll initiative, you may choose to immediately Rage. When you do so, you do not consume a charge of your Rage.
 
@@ -112,17 +112,17 @@ You can go into a frenzy in battle. If you use Reckless Attack while your Rage i
 
 To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
 
-#### Mindless Rage [UA]
+#### Mindless Rage - 6 [UA]
 
 Starting at 6th level, you have immunity to the Charmed and Frightened conditions while your Rage is active.
 
 If you are Charmed or Frightened when you enter your Rage, that condition ends on you.
 
-#### Retaliation [UA]
+#### Retaliation - 10 [UA]
 
 Starting at 10th level, when you take damage from a creature that is within 5 feet of you, you can use your Reaction to make one melee attack against that  creature, using a weapon or an Unarmed Strike.
 
-#### Intimidating Presence [UA]
+#### Intimidating Presence - 14 [UA]
 
 Starting at 14th level, as an action, you can strike terror into others with your menacing presence, as you swell with primal power. When you do so, each creature of your choice within 30 feet of you—or 60 feet of you if your Rage is active—must make a Wisdom saving throw (DC equal to `8 + your proficiency bonus + your Strength modifier`), provided the creature isn’t behind Total Cover.
 

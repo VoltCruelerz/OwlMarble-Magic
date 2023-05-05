@@ -29,7 +29,7 @@ Your training with weapons allows you to use the Mastery property of three kinds
 
 When you reach certain Fighter levels, you gain the ability to use the Mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter table.
 
-## Extra Attack [Updated]
+## Extra Attack - 5 [Updated]
 
 Beginning at 5th level, you can attack twice, instead of once, when you take the attack action on your turn.
 
@@ -37,33 +37,33 @@ The number of attacks increases to three when you reach 11th level in this class
 
 When you would gain this feature, if you already have the Extra Attack feature from another class, you can replace this with a Feat.
 
-## Weapon Expert [Updated]
+## Weapon Expert - 7 [Updated]
 
 Starting at 7th level, you have honed your use of weapons to an art. Whenever you finish a Short or Long Rest, you can choose one of the kinds of Mastery weapons you’re using and replace its Mastery property with another Mastery property. The chosen kind of weapon must qualify for the new property. For example, you could replace the Longsword’s _Flex_ property with the _Push_ property.
 
 This property change applies only for you, not for others.
 
-## Indomitable [Updated]
+## Indomitable - 9 [Updated]
 
 Beginning at 9th level, you can reroll a saving throw that you fail.  Until you complete a long rest, if you use this ability again and you succeed on the saving throw, you take a level of Exhaustion.
 
 Starting at 13th level, you can succeed on two saving throws using this feature between long rests without exhaustion.
 
-## Power Attack [New]
+## Power Attack - 11 [New]
 
 Starting at 11th level, when you make an attack roll with a weapon, you can choose to take a -5 penalty to hit. If you then hit with the attack, the target takes additional damage of the weapon's type equal to your Fighter level.
 
-## Weapon Adept [Updated]
+## Weapon Adept - 13 [Updated]
 
 Starting at 13th level, you are a true master of weapons. When you use your Weapon Expert feature on a kind of weapon, you can give that kind of weapon two properties rather than one, but you then use only one property at a time; whenever you make an attack roll against a target with that kind of weapon, you decide which of the two properties applies to that attack.
 
 You make this decision before the attack hits or misses. For example, you could apply the Push and Topple properties to Longswords, and whenever you hit a target with a Longsword, you decide which of those properties to use against the target.
 
-## Unconquerable [Updated]
+## Unconquerable - 17 [Updated]
 
 Starting at 17th level, when you’re in great peril, you can tap into a deep well of resilience within yourself. When you use your Indomitable feature, you can also use your Second Wind feature, which heals you before any effects from the saving throw.
 
-## Perfected Form [New]
+## Perfected Form - 19 [New]
 
 When you make an attack with a weapon that has two Masteries, you can apply both effects to the target, and you choose the order of application when you make the attack.
 

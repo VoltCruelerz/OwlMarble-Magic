@@ -10,9 +10,9 @@ _Prerequisite: Versatile or Finesse_
 
 When you make an attack with this weapon on your turn, you can expend 5 feet of movement to increase the reach of the attack by 5 feet.
 
-## Cleave [UA]
+## Cleave [Updated]
 
-Prerequisite: Melee Weapon, Heavy Property
+_Prerequisite: Melee Weapon, Heavy Property_
 
 If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.
 
@@ -20,7 +20,7 @@ If you hit a creature with a melee attack using this weapon, you can make an att
 
 _Prerequisite: Versatile Property_
 
-If you wield the weapon in one hand, you gain a +1 bonus to hit. If you wield it in 2, you gain a +2 bonus to damage.
+When this weapon is wielded with two hands, it loses its normal Mastery in exchange for the provided Mastery.
 
 ## Graze [UA]
 
@@ -56,10 +56,22 @@ If you hit a creature with this weapon and deal damage to the creature, you can 
 
 _Prerequisite: Heavy, Reach, or Versatile Property_
 
-If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw with a DC equal to 8 + your Proficiency Bonus + the ability modifier you used to make the attack roll. On a failed save, the creature has  the Prone condition.
+If you attack a creature with this weapon and exceed its armor class by 5 or more, the target is knocked prone.
+
+## Tumble [New]
+
+_Prerequisite: Not Heavy_
+
+Immediately after you hit a creature with an attack with this weapon, you can use your movement to move through the creature's space, but you cannot end this movement in the creature's space unless it is at least two size classes larger or smaller than you.
 
 ## Vex [UA]
 
 _Prerequisite: Ammunition, Finesse, or Light Property_
 
 If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that  reature before the end of your next turn.
+
+## Yoink [New]
+
+_Prerequisite: Reach_
+
+When you make an attack, you can choose to forego the damage of the attack to instead make a Disarm check against the target.

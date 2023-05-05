@@ -18,7 +18,7 @@ module.exports = class ClassPraser extends Parser {
             return acc;
         }, {});
         const trackedTitleRegex = /((?:#+) (?:.*?) \[(?:\w+)])/;
-        const trackedTitleRegexGetName = /((?:#+) (?<name>.*?) \[(?:\w+)])/;
+        const trackedTitleRegexGetName = /((?:#+) (?<name>.*?)(?: - )?(?<level>\d+)? ?\[(?:\w+)])/;
 
         // Read Classes
         const classFolder = 'classes';
@@ -71,7 +71,9 @@ module.exports = class ClassPraser extends Parser {
             // Process features.
             rawFeatures.forEach((rawFeatureLines) => {
                 // Parse name
-                const featureName = trackedTitleRegexGetName.exec(rawFeatureLines[0]).groups.name;
+                const groups = trackedTitleRegexGetName.exec(rawFeatureLines[0]).groups;
+                const featureName = groups.name;
+                const prereq = groups.level ? classFileName + ' ' + groups.level : classFileName;
 
                 // Parse depth for the offset.
                 // For example, if the header is ###, and it has a subheading ####, that should be ultimately rendered as h1, not h4.
@@ -206,7 +208,7 @@ module.exports = class ClassPraser extends Parser {
                             dc: null,
                             scaling: 'spell'
                         },
-                        requirements: classFileName,
+                        requirements: prereq,
                         recharge: {
                             value: 0,
                             charged: false

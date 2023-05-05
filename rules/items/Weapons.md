@@ -34,16 +34,16 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Javelin** | 0.5 | 2 | 1d6 piercing | _Thrown (30/120), Amphibious_ | - | Slow |
 | **Light Hammer** | 2 | 2 | 1d4 bludgeoning | _Light, Thrown (20/60)_ | - | Nick |
 | **Mace** | 5 | 4 | 1d6 bludgeoning | - | - | Sap |
-| **Quarterstaff** | 0.2 | 4 | 1d6 bludgeoning | Versatile (1d8) | - | Flex  |
-| **Sickle** | 1 | 2 | 1d4 slashing | _Light_ | Shovel, Pitchfork | Nick |
-| **Spear** | 1 | 3 | 1d6 piercing | _Thrown (20/60), Versatile (1d8), Amphibious_ | - | Flex |
+| **Quarterstaff** | 0.2 | 4 | 1d6 bludgeoning | Versatile (1d8) | - | Lunge, Flex (Tumble)  |
+| **Sickle** | 1 | 2 | 1d4 slashing | _Light_ | Shovel, Hoe | Nick |
+| **Spear** | 1 | 3 | 1d6 piercing | _Thrown (20/60), Versatile (1d8), Amphibious_ | - | Lunge, Flex (Vex) |
 
 ### Martial Melee Weapons
 
 | **Name** | **Price** (gp) | **Weight** (lbs) | **Damage** | **Properties** | **Alternatives** | **Mastery** |
 |:---------|:--------------:|:----------------:|:----------:|:---------------|:-----------------|:------------|
-| **Battleaxe** | 10 | 4 | 1d8 slashing | _Versatile (1d10)_ | - | Topple |
-| **Billhook** | 6 | 6 | 1d8 slashing or piercing | _Two-Handed, Reach, Dismounting_| - | Topple |
+| **Battleaxe** | 10 | 4 | 1d8 slashing | _Versatile (1d10)_ | - | Topple, Flex (Cleave) |
+| **Billhook** | 6 | 6 | 1d8 slashing or piercing | _Two-Handed, Reach, Dismounting_ | - | Yoink |
 | **Claws** | 2 | 1/2 | 1d4 slashing | _Finesse, Handy, Light_| - | Nick |
 | **Flail** | 10 | 2 | 1d8 bludgeoning | - | - | Sap |
 | **Glaive** | 20 | 6 | 1d10 slashing | _Heavy, Reach, Two-Handed_ | - | Graze |
@@ -51,24 +51,24 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Greatsword** | 50 | 6 | 2d6 slashing | _Heavy, Two-Handed_ | Flamberge | Cleave |
 | **Halberd** | 20 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy, Dismounting_| - | Cleave |
 | **Hook Sword (Separate)** | 45 | 2 | 1d6 slashing | _Finesse, Light, Parrying, Special_| - | Nick |
-| **Hook Swords (Linked)** | -  | - | 2d4 slashing | _Finesse, Reach, Two-Handed_<br/>**Special**: If a creature is holding two hook swords, as part of its attack action, the creature can link or unlike the swords. | - | Topple |
+| **Hook Swords (Linked)** | -  | - | 2d4 slashing | _Finesse, Two-Handed_<br/>**Special**: If a creature is holding two hook swords, as part of its attack action, the creature can link or unlike the swords. | - | Lunge |
 | **Lance** | 5 | 6 | 1d12 piercing | _Heavy, Extended Reach, Couched_<br/>**Special**: While mounted, this has the Dismounting property.| - | Topple |
-| **Longsword** | 15 | 3 | 1d8 slashing | _Versatile (1d10)_ | Bastard Sword, Messer | Flex |
-| **Man Catcher** | 6 | 6 | - | _Two-Handed, Heavy, Reach_<br/>**Special**: On a hit, the target is grappled.  When it tries to escape the grapple, it takes 1 piercing damage.| - | Topple |
+| **Longsword** | 15 | 3 | 1d8 slashing | _Versatile (1d10)_ | Bastard Sword, Messer | Lunge, Flex (Cleave) |
+| **Man Catcher** | 6 | 6 | - | _Two-Handed, Heavy, Reach_<br/>**Special**: On a hit, the target is grappled.  When it tries to escape the grapple, it takes 1 piercing damage.| - | Push |
 | **Maul** | 10 | 10 | 2d6 bludgeoning | _Heavy, Two-Handed_ | - | Topple |
 | **Morningstar** | 15 | 4 | 1d8 piercing | - | - | Sap |
 | **Pike** | 5 | 18 | 1d10 piercing | _Heavy, Extended Reach, Inner Range: 5 ft_ | - | Push |
-| **Rapier** | 25 | 2 | 1d8 piercing | _Finesse_ | Estoc, Foil | Vex |
+| **Rapier** | 25 | 2 | 1d8 piercing | _Finesse_ | Estoc, Foil | Lunge |
 | **Scimitar** | 25 | 3 | 1d6 piercing | _Finesse, Light_ | Katana, Saber | Nick |
 | **Shortsword** | 10 | 2 | 1d6 slashing or piercing | _Finesse, Light, Amphibious_ | Khopesh | Vex |
 | **Spearsword** | 1 | 3 | 1d8 piercing or slashing | _Thrown (10/30)_ | Yklwa | Graze |
 | **Studded Gauntlets** | 1 | 1/2 | 1d4 bludgeoning or piercing | _Handy, Light_| Brass Knuckles | Graze |
-| **Trident** | 5 | 2 | 1d8 piercing | _Thrown (20/60), Versatile (1d10), Amphibious_ | - | Slow |
-| **War Pick** | 5 | 2 | 1d8 piercing | Versatile (1d10) | - | Flex |
-| **Warhammer** | 15 | 2 | 1d8 bludgeoning | Versatile (1d10) | - | Flex |
-| **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_| Topple |
-| **War Scythe** | 5 | 6 | 1d6 slashing | _Finesse, Heavy, Reach, Two-Handed_| Slow |
-| **Whip** | 2 | 3 | 1d4 slashing | _Finesse, Reach_ | - | Slow |
+| **Trident** | 5 | 2 | 1d8 piercing | _Thrown (20/60), Versatile (1d10), Amphibious_ | Pitchfork | Lunge, Flex (Slow) |
+| **War Pick** | 5 | 2 | 1d8 piercing | Versatile (1d10) | - | Sap, Flex (Vex) |
+| **Warhammer** | 15 | 2 | 1d8 bludgeoning | Versatile (1d10) | - | Graze, Flex (Slow) |
+| **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_| - | Topple |
+| **War Scythe** | 5 | 6 | 1d6 slashing | _Finesse, Heavy, Reach, Two-Handed_| - | Tumble |
+| **Whip** | 2 | 3 | 1d4 slashing | _Finesse, Reach_ | - | Yoink |
 
 ## Ranged Weapons
 
@@ -91,4 +91,4 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Longbow** | 50 | 2 | 1d8 piercing | _Ammunition (150/600), Heavy, Two-Handed_ | Compound Bow | Slow |
 | **Warbow**  | 100 | 3 | 2d6 piercing | _Ammunition (150/600), Heavy, Two-Handed, Vigorous_<br/>**Special**: This weapon can only be used by a Medium or larger creature with a Strength of 18 or higher. | - | Slow |
 | **Musket** | 500 | 10 | 1d12 piercing | _Ammunition (40/120), Loading, Two-Handed_ | - | Slow |
-| **Pistol** | 250 | 3 | 1d10 piercing | _Ammunition (30/90), Loading_ | - Vex |
+| **Pistol** | 250 | 3 | 1d10 piercing | _Ammunition (30/90), Loading_ | - | Vex |

@@ -107,15 +107,15 @@ While you are transformed, the following rules apply:
 |     4th     |                                                                                                           [Stalker](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#stalker)                                                                                                           |
 |     8th     |                                                                                                             [Titan](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/classes/druid/Beast%20Forms.md#titan)                                                                                                             |
 
-### Beast Spells [Updated]
+### Beast Spells - 17 [Updated]
 
 Beginning at 17th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren't able to provide material components.
 
-### Archdruid [Updated]
+### Archdruid - 18 [Updated]
 
 Starting at 18th level, whenever you roll Initiative, you regain one use of your Primal Channel ability. In addition, the primal magic that suffuses you causes you to age more slowly. For every 10 years you would age, you instead age only 1.
 
-### Epic Boon [New]
+### Epic Boon - 20 [New]
 
 At 20th level, you gain the following benefits:
 
@@ -248,19 +248,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 > | 7th         | _Wall of Fire_, _Widogast's Web of Fire_ |
 > | 9th         | _Cloudkill_, _Sky Burst_ |
 
-#### Land's Stride [Updated]
+#### Land's Stride - 6 [Updated]
 
 Starting at 6th level, moving through difficult terrain costs you no extra movement. You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
 If you make a saving throw to avoid being grappled or restrained by a plant or to escape such a condition, you have advantage on the roll.
 
-#### Nature's Ward [Updated]
+#### Nature's Ward - 10 [Updated]
 
 Starting at 10th level, when you cast a spell that impedes movement, restrains creatures, or creates a plant that deals damage with thorns, spines, or similar, your allies are immune to these effects.
 
 Additionally, you are immune to poison and disease.
 
-#### Symbiotic Guardian [New]
+#### Symbiotic Guardian - 14 [New]
 
 Starting at 14th level, you can always speak to plants and animals as if by the spells _Speak with Plants_ and _Speak with Animals_, and you can maintain concentration on two Druid spells simultaneously. If you make a concentration check, roll independently for each spell.
 
@@ -296,18 +296,18 @@ Additionally, your maximum hit points increase by 2, and increase by an addition
 | 19th  |  4  |  3  |  3  |  3  |  2  |
 | 20th  |  4  |  3  |  3  |  3  |  2  |
 
-#### Primal Surge [New]
+#### Primal Surge - 2 [New]
 
 Starting at 2nd level, you can push your magic into your strikes. When you hit with an attack, you can expend a spell slot to either harm your foe or sustain yourself.
 
 - **Harm**: The strike deals an additional 1d8 damage of the attack's type per level of the slot.
 - **Heal**: You heal for 1d8 per level of the slot.
 
-#### Elemental Wild Shape [Update]
+#### Elemental Wild Shape - 6 [Update]
 
 At 6th level, when you use your Wild Shape feature, you can choose to expend a second charge of your Primal Channel feature to empower your form with elemental energy. Select one of the following elements: Acid, Cold, Fire, Lightning, or Poison. Until your Wild Shape expires, you have resistance to the chosen element, and your Bestial Strike attacks can deal that damage type instead of the normal options.
 
-#### Elemental Strike [New]
+#### Elemental Strike - 10 [New]
 
 Starting at 10th level, you become one with the elements when you use your Elemental Wild Shape, and you gain the following benefits for the duration:
 
@@ -315,11 +315,11 @@ Starting at 10th level, you become one with the elements when you use your Eleme
 - Your melee weapon attacks deal an additional 1d10 of the chosen element.
 - You are immune to the Exhaustion, Paralyzed, Petrified, and Poisoned conditions.
 
-#### Thousand Forms [Updated]
+#### Thousand Forms - 14 [Updated]
 
 At 14th level, you have learned to use your lunar magic to alter your form freely. When you use your Wild Shape ability, you no longer choose between the variants of a given form, acquiring all movement types and abilities for that form simultaneously.
-
 Additionally, for the duration of Wild Shape, you can use a Bonus Action to shift back to your true form or back into your animal form without expending further charges. Shifting in this way does not refresh the temporary hit points granted by Wild Shape, merely restoring them to what they were before you returned to your true form. Nevertheless, when you heal with your Primal Surge ability, excess healing becomes temporary hit points, to the maximum granted by your beast form.
+
 
 Finally, you know and can cast _Alter Self_ at will without expending a spell slot.
 
@@ -327,11 +327,11 @@ ___
 
 ### Circle of Spores
 
-#### Halo of Spores [Updated]
+#### Halo of Spores - 2 [Updated]
 
 Starting at 2nd level, you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 2d6 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th level, 3d6 at 10th level, and 4d6 at 14th level.
 
-#### Primal Channel: Symbiotic Entity [Updated]
+#### Primal Channel: Symbiotic Entity - 2 [Updated]
 
 At 2nd level, you gain the ability to channel magic into your spores. As an action, you can expend a use of your Primal Channel feature to awaken those spores, and you gain 4 temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits:
 
