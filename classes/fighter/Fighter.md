@@ -79,7 +79,7 @@ The echo counts for flanking.
 
 #### Adaptable Warrior - 3 [New]
 
-You’ve studied your friends and foes alike and learned that victory relies on adaptability. Whenever you finish a Long Rest, you can gain proficiency in one skill from those available to this class at 1st level, as you remind yourself of past lessons. This proficiency lasts  until the end of your next Long Rest.
+You’ve studied your friends and foes alike and learned that victory relies on adaptability. Whenever you finish a Long Rest, you can gain proficiency in one skill from those available to this class at 1st level, as you remind yourself of past lessons. This proficiency lasts until the end of your next Long Rest.
 
 Additionally, you can add half your proficiency bonus to any Strength, Dexterity, or Constitution check you are not proficient in.
 

@@ -28,6 +28,12 @@
     - Unconquerable (New L17): Indomitable grants LRs
     - Extra Attack 3 (Shift): L20 -> L17
     - Perfected Form (New L18): apply both Masteries on a weapon at the same time
+    - Champion (Buff)
+        - Adaptable Warrior (Buff Shift): swap proficiencies, reliable STR/DEX/CON
+        - Improved Critical (Buff Scales): scales at 7, 10, and 14. Applies to death saves.
+        - Additional Fighting Style (Shift): L10 -> L3
+        - Reputation (New L10): use STR/DEX for CHA
+        - Survivor (Buffed): advantage on death saves alongside classic regeneration
 - **Rogue** (Buffs)
     - Doubled Up (Reword): now technically uses _Nick_ Mastery
     - Ready for Anything (New L2): proficient in Initiative
@@ -46,7 +52,7 @@
 - Sorcerer (Buffs)
     - Metamagic
         - Careful (Buff): allies take no damage on a save
-        - Distant (Usual Buff): `range += level * 30`
+        - Distant (Buff): `range += level * 30`
         - Extended (Buff): advantage on Concentration checks
         - Heightened (Buff): cost 3 -> 2
         - Subtle (Buff): ignore free material components
