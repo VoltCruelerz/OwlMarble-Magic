@@ -8,7 +8,11 @@ If a game feature lets you replace a weapon’s Mastery property with another on
 
 _Prerequisite: Melee Weapon, Heavy Property_
 
-If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.
+If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative.
+
+If the target of the original attack was of a larger size class than you, you can choose to make the second attack against the same creature.
+
+You can make this extra attack only once per turn.
 
 ## Flex [Updated]
 

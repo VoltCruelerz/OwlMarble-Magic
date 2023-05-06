@@ -5,6 +5,10 @@
 ### Classes
 
 - **Barbarian** (Major Buffs)
+    - Summary
+        - More durability
+        - More damage
+        - More utility
     - Rage (Buff): rage lasts for 10 minutes, persist with BA
     - Mastery (New L1): see Mastery section below
     - Primal Knowledge (New L2): new proficiency and rage stealth
@@ -19,10 +23,13 @@
     - Simmering Rage (New L18): free autorage on initiative roll
     - Berserker (Major Buffs): see UA
 - **Fighter** (Major Buffs)
+    - Summary
+        - More damage (doubled for some weaker builds)
+        - More durability (legendary resistances)
     - Mastery (New L1): see Mastery section below
     - Weapon Expert (New L7): swap Mastery of weapons
     - Indomitable (Buff): only consumes uses if success, can use after uses for exhaustion
-    - Power Attack (New L11): -5 to hit for +level damage
+    - Power Attack (New L11): -5 to hit for +level/2 damage
     - Weapon Adept (New L13): apply second Mastery to weapon
     - Action Surge 2 (Shift): L17 -> L15
     - Unconquerable (New L17): Indomitable grants LRs
@@ -35,6 +42,9 @@
         - Reputation (New L10): use STR/DEX for CHA
         - Survivor (Buffed): advantage on death saves alongside classic regeneration
 - **Rogue** (Buffs)
+    - Summary
+        - Better T3/4 Utility
+        - Better Capstones
     - Doubled Up (Reword): now technically uses _Nick_ Mastery
     - Ready for Anything (New L2): proficient in Initiative
     - Windows of Vulnerability (New L14): enemies provoke OAs when getting up from prone or picking up items
@@ -76,6 +86,16 @@
 - Tumble: move through enemy's space after attack
 - Vex: after hit, further hits have advantage
 - Yoink: steal enemy items from reach instead of attacking
+
+### Feats
+
+- Great Weapon Master
+    - removed power attaack (added to L11 fighter)
+    - added +1 STR
+- Sharpshooter
+    - removed power attack (added to L11 fighter)
+    - added +1 DEX
+- Weapon Expert: grants Mastery access
 
 ## 1.1.0 - Class Features
 

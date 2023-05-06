@@ -261,12 +261,20 @@ Your exposure to divine magic has changed you, granting you the following benefi
 
 You gain the following benefits:
 
-- You gain one point in Strength, to a maximum of 20. 
+- You gain one point in Strength, to a maximum of 20.
 - When you are grappling a creature, your melee weapon attacks do not receive disadvantage against the other creature. 
 - Attempts to grapple a creature while you are prone do not have disadvantage.
 - As an action when another creature has grappled you, you may make a grapple check to reverse the grapple, making you the grappler and the other creature the grappled creature.
 - As an action while you have grappled a creature, you can make an additional grapple check against it to attempt to pin it. On a success, both you and the target are restrained, but the pinned creature gains no advantage from you being restrained in this way.
 - Finally, creatures one size class larger than you do not automatically escape grapples.
+
+## Great Weapon Master [Updated]
+
+You've learned to use the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:
+
+- Increase your Strength by 1, to a maximum of 20.
+- Immediately after you score a critical hit with a melee weapon or reduce an enemy to 0 hit points with one, you can make another attack with the same weapon as a Bonus Action.
+- When you hit a creature with a Heavy weapon as part of the Attack Action on your turn, you can cause the target to take additional damage equal to your proficiency bonus. You may deal this damage no more than once per turn.
 
 ## Ground Fighter [New]
 
@@ -482,6 +490,15 @@ Your skill with runecraft has increased by leaps and bounds once again, making y
 
 Once per turn when you roll damage for a melee weapon attack, you can reroll the damage and use either total.
 
+## Sharpshooter [Updated]
+
+You can make shots that others find impossible, granting you the following benefits:
+
+- Increase your Dexterity by 1, to a maximum of 20.
+- Your ranged attacks ignore partial cover.
+- Being within 5 feet of an enemy doesn't impose disadvantage on your ranged attacks.
+- Attacking at long range doesn't impose disadvantage on your ranged attacks.
+
 ## Shield Master [Updated by KibblesTasty]
 
 You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:
@@ -628,6 +645,7 @@ Your expertise with weapons is legendary. You can select this feat more than onc
 - Increase your Strength or Dexterity by 1, to a maximum of 20.
 - For four different weapons types, such as hand crossbows or longswords, select one of the following:
   - Gain proficiency in that weapon type
+  - You gain access to its Mastery.
   - If the weapon is ranged, double its ranges.
   - If the weapon has reach, increase its reach by 5.
   - If the weapon has the heavy property, you ignore it.

@@ -51,7 +51,7 @@ Starting at 13th level, you can succeed on two saving throws using this feature 
 
 ## Power Attack - 11 [New]
 
-Starting at 11th level, when you make an attack roll with a weapon, you can choose to take a -5 penalty to hit. If you then hit with the attack, the target takes additional damage of the weapon's type equal to your Fighter level.
+Starting at 11th level, when you make an attack roll with a weapon, you can choose to take a -5 penalty to hit. If you then hit with the attack, the target takes additional damage of the weapon's type equal to half your Fighter level.
 
 ## Weapon Adept - 13 [Updated]
 
