@@ -64,9 +64,9 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Spearsword** | 1 | 3 | 1d8 piercing or slashing | _Thrown (10/30)_ | Yklwa | Graze |
 | **Studded Gauntlets** | 1 | 1/2 | 1d4 bludgeoning or piercing | _Handy, Light_| Brass Knuckles | Graze |
 | **Trident** | 5 | 2 | 1d8 piercing | _Thrown (20/60), Versatile (1d10), Amphibious_ | Pitchfork | Lunge, Flex (Slow) |
-| **War Pick** | 5 | 2 | 1d8 piercing | Versatile (1d10) | - | Sap, Flex (Vex) |
+| **War Pick** | 5 | 2 | 1d8 piercing | Versatile (1d10) | - | Sap, Flex (Deadly) |
 | **Warhammer** | 15 | 2 | 1d8 bludgeoning | Versatile (1d10) | - | Graze, Flex (Slow) |
-| **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_| - | Topple |
+| **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_| - | Push |
 | **War Scythe** | 5 | 6 | 1d6 slashing | _Finesse, Heavy, Reach, Two-Handed_| - | Tumble |
 | **Whip** | 2 | 3 | 1d4 slashing | _Finesse, Reach_ | - | Yoink |
 
@@ -91,4 +91,4 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Longbow** | 50 | 2 | 1d8 piercing | _Ammunition (150/600), Heavy, Two-Handed_ | Compound Bow | Slow |
 | **Warbow**  | 100 | 3 | 2d6 piercing | _Ammunition (150/600), Heavy, Two-Handed, Vigorous_<br/>**Special**: This weapon can only be used by a Medium or larger creature with a Strength of 18 or higher. | - | Slow |
 | **Musket** | 500 | 10 | 1d12 piercing | _Ammunition (40/120), Loading, Two-Handed_ | - | Slow |
-| **Pistol** | 250 | 3 | 1d10 piercing | _Ammunition (30/90), Loading_ | - | Vex |
+| **Pistol** | 250 | 3 | 1d10 piercing | _Ammunition (30/90), Loading_ | - | Deadly |

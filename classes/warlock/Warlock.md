@@ -149,7 +149,7 @@ You can cast _False Life_ on yourself at will without expending a spell slot or 
 
 You know and can cast the spell _Hex_ without expending a spell slot. Once you have done so, you cannot do so again until you complete a Short or Long Rest.
 
-When you cast the spell _Hex_, its range increases to 600 feet, and you can target a creature by name, even if you cannot see it.
+When you cast the spell _Hex_, the target also has disadvantage on saving throws against the chosen ability.
 
 #### Shrouded Spells [New]
 

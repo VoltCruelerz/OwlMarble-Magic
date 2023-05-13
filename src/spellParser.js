@@ -1,4 +1,5 @@
 const fs = require('fs');
+const chalk = require('chalk');
 const Parser = require('./Parser');
 const { detailedDiff } = require('deep-object-diff');
 const overrides = require('./parseOverrides');
@@ -19,7 +20,8 @@ module.exports = class SpellParser extends Parser {
      * @param {{*}} spell 
      */
     overrideSpell (spell) {
-        const softWall = '------------------------------------------------';
+        const softWall = chalk.gray('─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ');
+              
         // Handle manual override substitutions.
         if (overrides[spell.name]) {
             const overData = overrides[spell.name];
@@ -41,7 +43,7 @@ module.exports = class SpellParser extends Parser {
      * @returns {{*}} A dictionary containing spell and creature names to the github permalink.
      */
     indexSpellsAndMonsters () {
-        console.log(this.thinWall + '\nIndexing files...');
+        console.log('Indexing spells and monsters...');
         const indices = {};
         const github = 'https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/';
 
@@ -435,7 +437,7 @@ module.exports = class SpellParser extends Parser {
         const count = (line.match(/\*\*/g) || []).length;
         if (count % 2 != 0) {
             // We have an odd number, so don't even try to format this.  It would just get weird.
-            console.log('Weird line found during boldification: ' + line);
+            console.log(chalk.yellow('Weird line found during boldification: ' + line));
             return line;
         }
         while (line.includes('**')) {
@@ -459,7 +461,7 @@ module.exports = class SpellParser extends Parser {
         const count = (line.match(/_/g) || []).length;
         if (count % 2 !== 0) {
             // We have an odd number, so don't even try to format this.  It would just get weird.
-            console.log('Weird line found during italicization: ' + line);
+            console.log(chalk.yellow('Weird line found during italicization: ' + line));
             return line;
         }
         while (line.includes('_')) {
@@ -482,7 +484,7 @@ module.exports = class SpellParser extends Parser {
         const count = (line.match(/`/g) || []).length;
         if (count % 2 != 0) {
             // We have an odd number, so don't even try to format this.  It would just get weird.
-            console.log('Weird line found during preformatted code parsing: ' + line);
+            console.log(chalk.yellow('Weird line found during preformatted code parsing: ' + line));
             return line;
         }
         while (line.includes('`')) {

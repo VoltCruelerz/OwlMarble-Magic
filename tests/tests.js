@@ -187,8 +187,8 @@ const damageHandler = (expected, actual) => {
  * @param {[{*}]} srd
  */
 module.exports = (omm, srd) => {
-    const wall = '===================================================';
-    const thinWall = '---------------------------------------------------';
+    const wall = '═════════════════════════════════════════════════════';
+    const thinWall = '─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ';
     const tab = '    ';
 
     const srdLookup = srd.reduce((acc, spell) => {

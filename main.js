@@ -4,18 +4,20 @@ const FeatParser = require('./src/featParser.js');
 const ClassParser = require('./src/classParser.js');
 const WeaponParser = require('./src/weaponParser.js');
 const JournalParser = require('./src/journalParser.js');
-const thickWall = '======================================';
-const thinWall = '--------------------------------------';
+const chalk = require('chalk');
+const thickWall =           '══════════════════════════════════════════';
+const thinWall = chalk.gray('──────────────────────────────────────────');
 
 const blockStart = (name) => {
-    console.log(`\n${thickWall}\nParsing ${name}...\n${thinWall}`);
+    const content = chalk.blue(`Parsing ${name}...`);
+    console.log(`${thickWall}\n${content}\n${thinWall}`);
 };
 
-const blockStop = (name) => {
-    console.log(`${thinWall}\n${name} Parsing Done.\n${thickWall}`);
+const blockStop = () => {
+    console.log(thickWall);
 };
 
-console.log(thickWall + '\n' + thickWall + '\nBEGIN PROCESSING');
+console.log(thickWall + '\n' + chalk.bold(chalk.green('BEGIN PROCESSING')));
 
 blockStart('Spells');
 const spellParser = new SpellParser();
@@ -23,22 +25,18 @@ const { omm, srd } = spellParser.run();
 console.log(thinWall + '\nRunning Tests...');
 test(omm, srd);
 console.log(thinWall + '\nTests Done.');
-blockStop('Spell');
 
 blockStart('Feats');
 const featParser = new FeatParser();
 featParser.run(omm);
-blockStop('Feat');
 
 blockStart('Classes');
 const classParser = new ClassParser();
 classParser.run(omm);
-blockStop('Class');
 
 blockStart('Weapons');
 const weaponParser = new WeaponParser();
 weaponParser.run();
-blockStop('Weapons');
 
 blockStart('Journals');
 const journalParser = new JournalParser();
@@ -57,6 +55,5 @@ journalParser.run(
         './setting/'
     ],
     'journals');
-blockStop('Journal');
 
-console.log('\n' + thickWall + '\nPROCESSING COMPLETE AT: ' + (new Date()).toString() + '\n' + thickWall);
+console.log(`\n${thickWall}\n${chalk.bold(chalk.green('PROCESSING COMPLETE'))} at ${chalk.gray((new Date()).toString())}\n${thickWall}`);

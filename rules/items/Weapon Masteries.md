@@ -14,6 +14,12 @@ If the target of the original attack was of a larger size class than you, you ca
 
 You can make this extra attack only once per turn.
 
+## Deadly [New]
+
+_Prerequisite: Piercing Damage_
+
+When you critically hit with this weapon, you add two maximized dice to the damage instead of one.
+
 ## Flex [Updated]
 
 _Prerequisite: Versatile Property_
@@ -28,7 +34,7 @@ If your attack roll with this weapon misses a creature, you can deal damage to t
 
 ## Lunge [New]
 
-_Prerequisite: Versatile or Finesse_
+_Prerequisite: Versatile Property or Finesse Property_
 
 When you make an attack with this weapon on your turn, you can expend 5 feet of movement to increase the reach of the attack by 5 feet.
 
@@ -40,13 +46,13 @@ If you engage in two weapon fighting with this weapon, you add your proficiency 
 
 ## Push [UA]
 
-_Prerequisite: Heavy, Two-Handed, or Versatile Property_
+_Prerequisite: Heavy Property, Two-Handed Property, or Versatile Property_
 
 If you hit a creature with this weapon, you can push the creature up to 10 feet away from you if it is no more than one size larger than you.
 
 ## Sap [UA]
 
-_Prerequisite: No Other Properties_
+_Prerequisite: No Properties_
 
 If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.
 
@@ -58,24 +64,24 @@ If you hit a creature with this weapon and deal damage to the creature, you can 
 
 ## Topple [UA]
 
-_Prerequisite: Heavy, Reach, or Versatile Property_
+_Prerequisite: Heavy Property, Reach Property, or Versatile Property_
 
 If you attack a creature with this weapon and exceed its armor class by 5 or more, the target is knocked prone.
 
 ## Tumble [New]
 
-_Prerequisite: Not Heavy_
+_Prerequisite: Not Heavy Property_
 
 Immediately after you hit a creature with an attack with this weapon, you can use your movement to move through the creature's space, but you cannot end this movement in the creature's space unless it is at least two size classes larger or smaller than you.
 
 ## Vex [UA]
 
-_Prerequisite: Ammunition, Finesse, or Light Property_
+_Prerequisite: Ammunition Property, Finesse Property, or Light Property_
 
 If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that  reature before the end of your next turn.
 
 ## Yoink [New]
 
-_Prerequisite: Reach_
+_Prerequisite: Reach Property_
 
 When you make an attack, you can choose to forego the damage of the attack to instead make a Disarm check against the target.

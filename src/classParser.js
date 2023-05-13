@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Parser = require('./parser');
-
+const chalk = require('chalk');
 
 /**
  * Sets up a feat parser for OwlMarble Magic.
@@ -230,7 +230,7 @@ module.exports = class ClassPraser extends Parser {
                 acc[feature.name] = feature;
             } else {
                 const existing = acc[feature.name];
-                console.log(`- Disambiguating Name Collision for "${feature.name}" between ${existing.data.requirements} and ${feature.data.requirements}`);
+                console.log(chalk.yellow(`- Disambiguating Name Collision for "${feature.name}" between ${existing.data.requirements} and ${feature.data.requirements}`));
                 // Check that we haven't already updated the other one.
                 if (feature.name === existing.name) {
                     // Update the existing feature.
