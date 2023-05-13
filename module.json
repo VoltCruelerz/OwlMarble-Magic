@@ -2,7 +2,7 @@
     "name": "owlmarble-magic",
     "title": "OwlMarble Magic",
     "description": "Contains the content from OwlMarble Magic",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "author": "@voltcruelerz",
     "systems": ["dnd5e"],
     "scripts": [],

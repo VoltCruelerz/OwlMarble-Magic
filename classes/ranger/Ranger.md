@@ -6,7 +6,7 @@ Gloomstalkers are immune to both Darkvision and Infravision and gain their Darkv
 
 ## General Changes
 
-### Unerring Accuracy [Updated]
+### Unerring Accuracy - 2 [Updated]
 
 Starting at 2nd level, after you make a weapon attack roll, you can use your reaction to learn the target's armor class. Then, as part of this reaction, you can expend a spell slot to enhance the attack. For each level of the spell slot expended, you receive a +1 bonus to hit and a +1 bonus to critical hit range. These bonuses can turn a normal hit into a critical hit or a miss into a hit.
 
@@ -14,7 +14,7 @@ Starting at 2nd level, after you make a weapon attack roll, you can use your rea
 
 ### Gloom Stalker
 
-#### Umbral Sight [Updated]
+#### Umbral Sight - 3 [Updated]
 
 At 3rd level, you gain infravision out to a range of 60 feet. If you already have infravision from your race, your infravision range increases by 30 feet. If you already have darkvision from your race, your infravision range is equal to 30 plus your race's darkvision range.
 

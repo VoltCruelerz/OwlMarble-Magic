@@ -63,7 +63,7 @@ Spells of 6th level and higher are particularly taxing to cast.  When you create
 | 8th        | 11              |
 | 9th        | 13              |
 
-## Font of Mana
+## Font of Mana - 2 [New]
 
 At 2nd level, you gain additional uses for your mana points that do not require casting a spell.
 
@@ -75,13 +75,13 @@ As an action, you can touch one nonmagical weapon and spend 2 mana points to imb
 
 As an action, you can spend any number of mana points up to your sorcerer level to roll a d4 for each point expended.  You gain a number of temporary hit points equal to the total rolled that last until the end of your next long rest.
 
-## Flexible Magic
+## Flexible Magic - 3 [Updated]
 
 At 3rd level, you gain the ability to twist magic to suit your needs.  You gain two Metamagic options, detailed at the end of this document.  You gain another Metamagic option of your choice at 10th level, and a final one at 17th level.  When you gain a level in Sorcerer, you can replace any or all of your Metamagic selections with new ones except for your origin Metamagics, detailed below.
 
 You can only use one metamagic option on a spell unless otherwise noted.
 
-### Origin Metamagic
+### Origin Metamagic - 3 [New]
 
 Starting at 3rd level, in addition to your Metamagic selections, your sorcerous origin lends itself to twisting your spells in certain ways.  The metamagics in the corresponding table below are known automatically by you starting at the prescribed levels and cannot be traded when you increase your sorcerer level.  They do not count against your number of metamagics known.  If you already have a metamagic when it becomes known to you through your origin, your known metamagic is freed and you may select another.
 
@@ -157,7 +157,7 @@ Starting at 3rd level, in addition to your Metamagic selections, your sorcerous 
 | 10th | Twinned Spell |
 | 17th | Annihilating Spell |
 
-## Metasorcery
+## Metasorcery - 20 [New]
 
 At 20th level, you regain 4 expended mana points when you finish a short rest.  Additionally, the mana point price of the first metamagic you apply to a spell is reduced by 1.
 
@@ -179,7 +179,7 @@ When you cast a spell that includes an attack roll, you may spend 2 mana points 
 
 ### Careful Spell [SRD]
 
-When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force.  To do so, you spend 1 mana point and choose a number of those creatures up to your Charisma modifier (minimum of 1 creature).  A chosen creature automatically succeeds on its saving throw against the spell.
+When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force.  To do so, you spend 1 mana point and choose a number of those creatures up to your Charisma modifier (minimum of 1 creature).  A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage.
 
 ### Disrupting Spell [New]
 
@@ -187,7 +187,7 @@ When you cast a spell, by expending 2 mana points, you can compel all affected c
 
 ### Distant Spell [SRD]
 
-When you cast a spell that has a range of 5 feet or greater, you can spend 1 mana point to double the range of the spell.
+When you cast a spell that has a range of 5 feet or greater, you can spend 1 mana point to increase the range of the spell by 30 times your sorcerer level.
 
 When you cast a spell that has a range of Touch, you can spend 1 mana point to make the range of the spell 30 feet.
 
@@ -207,7 +207,7 @@ You can use Empowered Spell even if you have already used a different Metamagic 
 
 ### Extended Spell [SRD]
 
-When you cast a spell that has a duration of 1 minute or longer, you can spend 1 mana point to double its duration, up to a maximum of 24 hours.
+When you cast a spell, you can spend 1 mana point to give yourself advantage on concentration checks to maintain the spell. If the spell that has a duration of 1 minute or longer, you double its duration, to a maximum of 24 hours.
 
 ### Gruesome Spell [New]
 
@@ -223,7 +223,7 @@ The temporary hit points provided by different uses of this metamagic do not sta
 
 ### Heightened Spell [SRD]
 
-When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 mana points to give the creature disadvantage on its first saving throw against the spell.
+When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 2 mana points to give the creature disadvantage on its first saving throw against the spell.
 
 ### Helping Spell [New]
 
@@ -240,6 +240,8 @@ When you cast a damaging spell that targets only one creature, you may spend 3 m
 ### Quickened Spell [SRD]
 
 When you cast a spell that has a casting time of 1 action, you can spend 2 mana points to change the casting time to 1 bonus action for this casting.
+
+You can’t modify a spell in this way if you’ve already cast a spell of 1st level or higher on the current turn, nor can you cast a spell of 1st level or higher spell on this turn after modifying a spell in this way.
 
 ### Reinforcing Spell [New]
 
@@ -292,7 +294,7 @@ When you cast a line spell, you may spend a mana point to add a single bend alon
 
 ### Subtle Spell [SRD]
 
-When you cast a spell, you can spend 1 mana point to cast it without any somatic or verbal components.
+When you cast a spell, you can spend 1 mana point to cast it without any somatic or verbal components, as well as any material components that do not have a gold cost.
 
 ### Swarming Spell [New]
 
@@ -347,17 +349,17 @@ Additionally, if you are forced to make a saving throw against your own spell, y
 >
 > You may wish to work with your DM to rename particular spells to reflect the point-blank nature of your spellcasting.  For instance, _Fire Bolt_ might become _Fire Claw_.
 
-#### Unnatural Movement [New]
+#### Unnatural Movement - 6 [New]
 
 Starting at 6th level, your body begins to acclimate to the churning energies within, allowing you to channel them into bursts of speed.  As a bonus action, you can take the Dash action.  Attacks of opportunity against you during this bonus action’s movement have disadvantage.  You can use this bonus action a number of times equal to your Charisma modifier (minimum 1).  You regain all uses of this feature on a short or long rest.
 
-#### Cloak of Chaos [New]
+#### Cloak of Chaos - 14 [New]
 
 Starting at 14th level, your body has nearly mastered the power within it, granting immunity to the effects of your own spells unless you wish to be affected.
 
 Additionally, your agility improves to make you all but untouchable when you’re on the move.  When you use your Unnatural Movement feature, you become untargetable by attacks of opportunity until the end of your current turn.
 
-#### Hunger of the Abyss [New]
+#### Hunger of the Abyss - 18 [New]
 
 At 18th level, you have mastered the power within you, granting you access to a nearly limitless well of vitality.  When you cast a Sorcerer spell and it first damages a creature, you can expend a number of hit dice up to the level of the spell.  For each hit die expended in this way, you regain hit points equal to the size of the die.
 
@@ -394,7 +396,7 @@ When you create a creature from one of the spells in the Summoning Spells table,
 
 Starting when you reach 6th level, you can select two options at once instead of one.
 
-#### Flash Creations [New]
+#### Flash Creations - 6 [New]
 
 Starting at 6th level, as a bonus action, you can spend 2 mana points to create a translucent barrier of magical force at an unoccupied point you can see within 60 feet that lasts until the end of your next turn.
 
@@ -402,11 +404,11 @@ The barrier takes the form of a plane of magical force 5 feet by 5 feet and is o
 
 It resists motion, but for every 1000 pounds of force applied to it it moves 5 feet per round.  As an action, a creature can make a Strength check against your spell save DC to either reorient it or move it 5 feet.
 
-#### Shielded Summons [New]
+#### Shielded Summons - 14 [New]
 
 Beginning at 14th level, your ability to instantly create barriers has grown to the point that you can use it to defend your allies.  After damage has been rolled and declared for an effect targeting a creature you summoned, but before the damage is applied, you can use your reaction to expend any number of mana points to shield your summoned creature.  For each mana point expended, the damage the summoned creature would receive is reduced by 10.
 
-#### Twin Summons [New]
+#### Twin Summons - 18 [New]
 
 Once you reach 18th level, when you cast one of the spells from the Summoning Spells table, in place of applying a metamagic, you can expend additional mana points equal to the level of the spell to summon two creatures from the spell instead of one.  The two creatures can be the same archetype or different archetypes.  The two creatures appear at unoccupied target positions of your choice that you can see within range.
 

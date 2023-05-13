@@ -1,11 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 const seedrandom = require('seedrandom');
+const chalk = require('chalk');
 
 module.exports = class Parser {
     constructor () {
-        this.thickWall = '======================================';
-        this.thinWall = '--------------------------------------';
+        this.thickWall = chalk.gray('══════════════════════════════════════════');
+        this.thinWall =  chalk.gray('─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ');
     }
 
     //#region Formatting
@@ -31,7 +32,7 @@ module.exports = class Parser {
         const count = (line.match(/\*\*/g) || []).length;
         if (count % 2 != 0) {
             // We have an odd number, so don't even try to format this.  It would just get weird.
-            console.log('Weird line found during boldification: ' + line);
+            console.log(chalk.yellow('Weird line found during boldification: ' + line));
             return line;
         }
         while (line.includes('**')) {
@@ -66,7 +67,7 @@ module.exports = class Parser {
         }
         if (count % 2 !== 0) {
             // We have an odd number, so don't even try to format this.  It would just get weird.
-            console.log(`${filename}[${lineNumber}]: Weird line will be ignored by italilink: ${line}`);
+            console.log(chalk.yellow(`${filename}[${lineNumber}]: Weird line will be ignored by italilink: ${line}`));
             return line;
         }
         return line.replaceAll(/_(.*?)_/gm, (match, g1) => {

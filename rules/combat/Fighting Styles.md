@@ -30,6 +30,14 @@ You gain one additional reaction per turn that can only be used for attacks of o
 
 With you make an attack with a weapon on your turn that does not have the _Heavy_ property, you can choose to increase the attack's reach by 5 feet.
 
+## Protection [Updated]
+
+**Classes**: Fighter, Paladin
+
+If you are wielding a shield when a creature you can see attacks an ally within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.
+
+Additionally, when you make your first attack on each of your turns, you can choose to don or doff a shield as part of that attack, as well as shift your grip if you are holding a weapon with the _Versatile_ property.
+
 ## Rapid Reload [New]
 
 **Classes**: Fighter, Ranger

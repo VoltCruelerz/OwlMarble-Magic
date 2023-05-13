@@ -71,11 +71,11 @@ You gain the following benefits while you are unarmed or wielding only monk weap
 
 - When you take the Attack action with an Unarmed Strike or a monk weapon on your turn, you can make one Unarmed Strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an Unarmed Strike as a bonus action, assuming you haven't already taken a bonus action this turn.
 
-### Step of the Wind [Updated]
+### Step of the Wind - 2 [Updated]
 
 Starting at 2nd level, you can take the *Disengage* or *Dash* action as a bonus action on your turn. If you do, your jump distance is doubled for the turn.
 
-### Ki [Updated]
+### Ki - 2 [Updated]
 
 Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points, determined by your Monk level and shown in the Ki Points column of the Monk table.
 
@@ -105,7 +105,7 @@ You learn 1 Technique from the below list and learn additional Techniques at hig
 
 See **Part 2** for the list of Techniques.
 
-### Dedicated Weapon [Updated]
+### Dedicated Weapon - 2 [Updated]
 
 Starting at 2nd level, you train yourself to use a variety of weapons as monk weapons, not just simple melee weapons and shortswords. Whenever you finish a short or long rest, you can touch one weapon, focus your ki on it, and then count that weapon as a monk weapon until you use this feature again.
 
@@ -115,17 +115,17 @@ The chosen weapon must meet these criteria:
 - You must be proficient with it
 - It must lack the heavy and special properties
 
-### Unarmored Movement
+### Unarmored Movement - 2 [Unchanged]
 
 Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain Monk levels, as shown in the Monk table.
 
 At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.
 
-### Ki-Fueled Attack [TCOE]
+### Ki-Fueled Attack - 3 [TCOE]
 
 Starting at 3rd level, if you spend 1 or more ki points as part of your action on your turn, you can make one attack with an Unarmed Strike or a monk weapon as a bonus action on that turn.
 
-### Deflect Missiles [Updated]
+### Deflect Missiles - 3 [Updated]
 
 Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your Monk level.
 
@@ -145,11 +145,11 @@ When you reach 4th level, you can increase one ability score of your choice by 2
 
 You gain additional ability score improvements at higher levels, as shown in the Monk table.
 
-### Slow Fall
+### Slow Fall - 4 [Unchanged]
 
 Starting at 4th level, you can use your reaction to reduce any falling damage you take by an amount equal to 5 times your Monk level.
 
-### Extra Attack [Updated]
+### Extra Attack - 5 [Updated]
 
 Beginning at 5th level, when you take the Attack action, you can expend ki points to make more attacks. For every 3 ki points you expend in this way, you can make one additional attack as part of the action.
 
@@ -167,33 +167,33 @@ When you would gain this feature, if you already have the Extra Attack feature f
 > | 13    | 7          | 5                 |
 > | 19    | 10         | 6                 |
 
-### Ki-Empowered Strikes
+### Ki-Empowered Strikes - 6 [Updated]
 
 Starting at 6th level, your Unarmed Strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
 
-### Evasion
+### Evasion - 7 [Unchanged]
 
 At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or the *Fireball* spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to only take half damage, you instead take no damage if you succeed on the saving throw, and only take half damage if you fail.
 
-### Stillness of Mind [Updated]
+### Stillness of Mind - 7 [Updated]
 
 At 7th level, you gain advantage on saving throws to resist being frightened or charmed.
 
-### Purity of Body
+### Purity of Body - 10 [Unchanged]
 
 At 10th level, your mastery of the ki flowing through you makes you immune to poison and disease.
 
-### Tongue of the Sun and Moon
+### Tongue of the Sun and Moon - 13 [Unchanged]
 
 Starting at 13th level, you can learn to touch the ki in the minds of others. You understand all spoken languages, and when you speak, you can choose to be understood by all creatures that understand at least one language.
 
-### Diamond Soul [Updated]
+### Diamond Soul - 14 [Updated]
 
 Beginning at 14th level, your mastery over ki grants you proficiency in all saving throws.
 
 Additionally, whenever you make a saving throw and fail, you can spend reroll it and take the second result. Once you have used this reroll to succeed on a saving throw, you can't do so again until you finish a short or long rest.
 
-### Timeless Body [Updated]
+### Timeless Body - 15 [Updated]
 
 At 15th level, your ki sustains you even when nature fails. You gain the following benefits:
 
@@ -201,13 +201,13 @@ At 15th level, your ki sustains you even when nature fails. You gain the followi
 - You suffer none of the frailty of old age.
 - You can't be aged magically.
 
-### Empty Body [Updated]
+### Empty Body - 18 [Updated]
 
 Beginning at 18th level, you can use your bonus action to channel 4 ki points to become invisible for 10 minutes. During that time, you have resistance to all damage except force.
 
 Additionally, you can cast the *Astral Projection* spell without needing material components. When you do so, you can't take other creatures with you. Once you have cast this spell in this way, you can't do so again until you finish a short or long rest.
 
-### Perfect Self [Updated]
+### Perfect Self - 20 [Updated]
 
 At 20th level, your mastery over your physical form is complete.
 
@@ -360,7 +360,7 @@ When you hit with an Unarmed Strike or a monk weapon on your turn, you can expen
 
 ## Ascendant Dragon
 
-### Draconic Disciple [Updated]
+### Draconic Disciple - 3 [Updated]
 
 Starting at 3rd level, you can channel draconic power to magnify your presence and imbue your Unarmed Strikes with the essence of a dragon's breath. You gain the following benefits:
 
@@ -368,7 +368,7 @@ Starting at 3rd level, you can channel draconic power to magnify your presence a
 - ***Draconic Strike:*** When you damage a target with an Unarmed Strike, you can change the damage type to acid, cold, fire, lightning, or poison.
 - ***Tongue of Dragons:*** You learn to speak, read, and write Draconic or one other language of your choice.
 
-### Breath of the Dragon [Updated]
+### Breath of the Dragon - 3 [Updated]
 
 Starting at 3rd level, you can channel destructive waves of energy, like those created by the dragons you emulate. When you make an Unarmed Strike or an attack with a monk weapon, you can expend 2 ki points to instead release a burst of draconic energy in either a 30-foot line 5 feet wide or a 20-foot cone.
 
@@ -378,13 +378,13 @@ Each creature inside the area must succeed on a Dexterity saving throw against y
 
 When your reach 11th level in this class, the damage increases to 3d6.
 
-### Wings Unfurled [Updated]
+### Wings Unfurled - 6 [Updated]
 
 Starting at 6th level, when you use *Step of the Wind*, you can unfurl spectral draconic wings from your back that last until the end of your turn. While the wings exist, you have a flying speed equal to your walking speed.
 
 You can use this feature a number of times equal to your proficiency bonus, and regain all uses when you complete long rest.
 
-### Aspect of the Wyrm [Updated]
+### Aspect of the Wyrm - 11 [Updated]
 
 Beginning at 11th level, the power of your draconic spirit now radiates from you, warding your allies or inspiring terror in your enemies. As a bonus action, you can create an aura of draconic power that radiates 10 feet from you for 1 minute. For the duration, you gain one of the following effects of your choice:
 
@@ -393,7 +393,7 @@ Beginning at 11th level, the power of your draconic spirit now radiates from you
 
 Once you create this aura, you can't create it again until you finish a long rest unless you expend 3 ki to recover the use of this feature.
 
-### Ascendant Aspect [Updated]
+### Ascendant Aspect - 17 [Updated]
 
 Finally at 17th level, your draconic spirit reaches its peak. You gain the following benefits:
 
@@ -403,7 +403,7 @@ Finally at 17th level, your draconic spirit reaches its peak. You gain the follo
 
 ## Astral Self
 
-### Arms of the Astral Self [Updated]
+### Arms of the Astral Self - 3 [Updated]
 
 Starting at 3rd level, your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take 2d4 force damage.
 
@@ -416,7 +416,7 @@ While they persist, the arms grant the following benefits:
 - Unarmed strikes with them on your turn have a reach of 10 feet.
 - Unarmed strikes can deal force damage.
 
-### Visage of the Astral Self [Updated]
+### Visage of the Astral Self - 6 [Updated]
 
 Starting at 6th level, you can summon the visage of your astral self. As a bonus action, or as part of the bonus action you take to active the *Arms of the Astral Self*, you can spend 1 ki point to summon the visage for 10 minutes. it vanishes early if you are incapacitated or die.
 
@@ -426,7 +426,7 @@ The visage covers your face like a helmet or mask, and you determine its appeara
 - ***Wisdom of the Spirit:*** You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
 - ***Word of the Spirit:*** When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively, you can amplify your voice so all creatures within 600 feet can hear you.
 
-### Body of the Astral Self [Updated]
+### Body of the Astral Self - 11 [Updated]
 
 Beginning at 11th level, when you have both your astral arms and visage summoned, you can cause the body of your astral self to appear as well (no action required). It covers your body like a suit of armor, connecting to the arms and visage. You determine its appearance.
 
@@ -435,7 +435,7 @@ While it persists, you gain the following benefits:
 - ***Deflect Energy:*** When you take acid, cold, fire, force, lightning, or thunder damage, you can use your reaction to deflect it. When you do so, the damage you take is reduced by 1d10 + your Wisdom modifier (minimum reduction of 1).
 - ***Empowered Arms:*** Your _Arms of the Astral Self_ deal an extra d4 of damage when summoned and on a hit.
 
-### Awakened Astral Self [Updated]
+### Awakened Astral Self - 17 [Updated]
 
 Finally at 17th level, your connection to your astral self is complete, allowing you to unleash its full potential. As a bonus action, you can channel 2 ki points to summon the arms, visage, and body and awaken it for 10 minutes. This awakening ends early if you are incapacitated or die.
 
@@ -446,26 +446,26 @@ While the astral self is awakened, you gain the following benefits:
 
 ## Drunken Master
 
-### Bonus Proficiencies [Updated]
+### Bonus Proficiencies - 3 [Updated]
 
 When you choose this tradition at 3rd level, you gain proficiency in the Performance skill if you don't already have it as your martial arts mixes combat training with the precision of a dancer and the antics of a jester. You also gain proficiency with brewer's supplies if you don't already have it.
 
-### Drunken Technique [Updated]
+### Drunken Technique - 3 [Updated]
 
 At 3rd level, you learn how to twist and turn quickly as part of your *Flurry of Blows*. Whenever you use *Flurry of Blows*, you gain the benefit of the *Disengage* action, and your walking speed increases by 10 feet until the end of your current turn.
 
-### Tipsy Sway [Updated]
+### Tipsy Sway - 6 [Updated]
 
 Starting at 6th level, you can move in sudden, swaying ways. You gain the following benefits:
 
 - ***Leap to your Feet:*** When you're prone, you can stand up by spending only 5 feet of movement, instead of half your speed.
 - ***Redirect Attack:*** When a creature misses you with a melee attack roll, you can use your reaction to cause that attack to hit one creature of  your choice, other than the attacker, that you can see within 5 feet of you. You can redirect attacks a number of times equal to your proficiency bonus, and you regain all uses of this feature on a short or long rest.
 
-### Drunkard's Luck [Updated]
+### Drunkard's Luck - 11 [Updated]
 
 Starting at 11th level, you always seem to get a lucky bounce at the right moment. When you make an ability check, attack roll, or saving throw and disadvantage on the roll, you can spend 1 ki point to cancel the disadvantage for that roll.
 
-### Intoxicated Frenzy [Updated]
+### Intoxicated Frenzy - 17 [Updated]
 
 Finally at 17th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your *Flurry of Blows*, you can make up to 3 additional Unarmed Strikes (for a total of 5 Unarmed Strikes from *Flurry of Blows*), provided that each Unarmed Strike targets a different creature.
 
@@ -493,7 +493,7 @@ Once you reach 5th level in this class, you can spend additional ki points to in
 
 The elemental disciplines are presented in alphabetical order. If a discipline requires a level (shown in parentheses), you must meet that requirement before you can choose it.
 
-#### 3rd Level Disciplines [Updated]
+#### 3rd Level Disciplines - 3 [Updated]
 
 - ***Elemental Attunement***: You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects:
   - Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.
@@ -507,19 +507,19 @@ The elemental disciplines are presented in alphabetical order. If a discipline r
 - ***Sweeping Cinder Strike:*** You can spend 2 ki points to cast _Burning Hands_.
 - ***Unbroken Air:*** You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failure, it takes 3d10 bludgeoning damage, plus 1d10 for each additional ki point you spent, up to your maximum, and you can either knock it prone, pull it up to 25 feet closer to you, or push it up to 25 feet away from you. On a successful save, the creature takes half as much damage and suffers no further effects.
 
-#### 6th Level Disciplines [Updated]
+#### 6th Level Disciplines - 6 [Updated]
 
 - ***Clench of the North Wind***: You can spend 3 ki points to cast _Hold Person_.
 - ***Gong of the Summit:*** You can spend 3 ki points to cast _Shatter_.
 - ***Shield of the Skies:*** You can spend 3 ki points to cast _Warding Wind_.
 
-#### 11th Level Disciplines [Updated]
+#### 11th Level Disciplines - 11 [Updated]
 
 - ***Flames of the Phoenix:*** You can spend 4 ki points to cast _Fireball_.
 - ***Mist Stance:*** You can spend 4 ki points to cast _Gaseous Form_.
 - ***Ride the Wind:*** You can spend 4 ki points to cast _Fly_, targeting yourself.
 
-#### 17th Level Disciplines [Updated]
+#### 17th Level Disciplines - 17 [Updated]
 
 - ***Breath of Winter:*** You can spend 6 ki points to cast _Cone of Cold_.
 - ***Eternal Mountain Defense:*** You can channel 5 ki points to cast _Stoneskin_, targeting yourself.
@@ -532,7 +532,7 @@ The elemental disciplines are presented in alphabetical order. If a discipline r
 
 When you choose this tradition at 3rd level, your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits:
 
-#### Kensei Weapons [Updated]
+#### Kensei Weapons - 3 [Updated]
 
 Choose two types of weapons to be your kensei weapons: one melee weapon and one ranged weapon. Each of these weapons can be any simple or martial weapon that lacks the heavy and special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don't already have it. Weapons of the chosen types also count as monk weapons for you.
 
@@ -556,48 +556,48 @@ You can use a bonus action on your turn to make your attacks with your kensei we
 
 You gain proficiency with one of the following of your choice: calligrapher's supplies or painter's supplies.
 
-#### Magic Kensei Weapons [Updated]
+#### Magic Kensei Weapons - 6 [Updated]
 
 Starting at 6th level, you extend your ki into your kensei weapons. Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
 
-#### Sharpen the Blade [Updated]
+#### Sharpen the Blade - 11 [Updated]
 
 Starting at 11th level, you gain the ability to further augment your kensei weapons with ki. As a bonus action, you can spend up to 3 ki points to grant one kensei weapon you touch a bonus to attack and damage rolls when you attack with it. The bonus equals the number of point spent. The bonus lasts for 1 minute or until you use this feature again.
 
 If applied to a magical weapon that already possesses a bonus to attack or damage rolls, this adds to the weapon's innate bonus.
 
-#### Unerring Accuracy
+#### Unerring Accuracy - 17 [Updated]
 
 Finally at 17th level, your mastery of weapons grants you extraordinary accuracy. If you miss with an attack roll using a monk weapon on your turn, you can reroll it. Once you have used this feature on a turn, you can't use it again unless you spend 1 ki point.
 
 ### Long Death
 
-#### Touch of Death [Updated]
+#### Touch of Death - 3 [Updated]
 
 When you choose this tradition at 3rd level, your study of death allows you to extract vitality from another creature as it nears its demise. When a creature within 5 feet of you is reduced to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + your Monk level (minimum 1 temporary hit point).
 
-#### Hour of Reaping [Updated]
+#### Hour of Reaping - 6 [Updated]
 
 At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by the shadow of death. When you take this action, each creature within 30 feet of you that can see you must succeed on a Wisdom saving throw or be frightened of you. A creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.
 
-#### Mastery of Death [Updated]
+#### Mastery of Death - 11 [Updated]
 
 Beginning at 11th level, you use your familiarity with death to escape its grasp. When you are reduced to 0 hit points, choose to (no action required) to have 1 hit point instead. Once you have used this feature, you can't use it again until you finish a short or long rest.
 
 If you reduce a creature with a CR or level no lower than half your level (rounded down) to 0 hit points, you instantly regain the use of this feature.
 
-#### Touch of the Long Death [Updated]
+#### Touch of the Long Death - 17 [Updated]
 
 Starting at 17th level, your touch can channel the energy of death into a creature. As an action, you touch one creature within 5 feet of you, and you expend any number of ki points. The target must make a Constitution saving throw, and it takes 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one.
 
 ### Mercy
 
-#### Implements of Mercy [Updated]
+#### Implements of Mercy - 3 [Updated]
 
 - You gain proficiency with Insight and Medicine skills, and you gain proficiency with the Herbalism kit.
 - You also gain a special mask, which you often wear when using the features of this class. You determine its appearance.
 
-#### Hand of Healing [Updated]
+#### Hand of Healing - 3 [Updated]
 
 Your mystical touch can mend wounds. As an action, you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier.
 
@@ -605,11 +605,11 @@ When you use your Flurry of Blows, you can replace one of the Unarmed Strikes wi
 
 You can use this feature a number of times equal to your proficiency bonus, and you regain all uses on a short or long rest.
 
-#### Hand of Harm [Updated]
+#### Hand of Harm - 3 [Updated]
 
 You use your ki to inflict wounds. When you hit a creature with an Unarmed Strike, you can spend 1 ki point to deal extra necrotic damage equal to 1d4 + your Wisdom modifier.
 
-#### Physician's Touch [Updated]
+#### Physician's Touch - 6 [Updated]
 
 Starting at 6th level, you can administer even greater cures with a touch, and if you feel it's necessary, you can use your knowledge to cause harm.
 
@@ -617,13 +617,13 @@ When you use Hand of Healing on a creature, you can also end one disease or one 
 
 When you use Hand of Harm on a creature, you can subject that creature to the poisoned condition until the end of your next turn.
 
-#### Flurry of Healing and Harm [Updated]
+#### Flurry of Healing and Harm - 11 [Updated]
 
 Beginning at 11th level, you can now mete out a flurry of comfort and hurt. When you use Flurry of Blows, you can now replace each of the Unarmed Strikes with a use of your Hand of Healing, without spending ki points for the healing.
 
 In addition, when you make an Unarmed Strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.
 
-#### Hand of Ultimate Mercy [Updated]
+#### Hand of Ultimate Mercy - 17 [Updated]
 
 Finally, at 17th level, your mastery of life energy opens the door to the ultimate mercy. As an action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 ki points. The creature then returns to life, regaining a number of hit points equal to 4d10 + your Wisdom modifier. If the creature died while subject to any of the following conditions, it revives with them removed: blinded, deafened, paralyzed, poisoned, and stunned.
 
@@ -631,21 +631,21 @@ Once you use this feature, you can't use it again until you finish a long rest.
 
 ### Open Hand
 
-#### Open Hand Technique [Updated]
+#### Open Hand Technique - 3 [Updated]
 
 Your maximum number of known Techniques increases by 1, and whenever you hit a creature with one of the attacks granted by your Flurry of Blows and apply a Technique to it, the Technique costs 1 less.
 
 Additionally, the die size of your Unarmed Strikes increases to a d6.
 
-#### Wholeness of Body [Updated]
+#### Wholeness of Body - 6 [Updated]
 
 At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.
 
-#### Tranquility [Updated]
+#### Tranquility - 11 [Updated]
 
 Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.
 
-#### Quivering Palm [Updated]
+#### Quivering Palm - 17 [Updated]
 
 Starting at 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an Unarmed Strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
 
@@ -653,27 +653,27 @@ You can have only one creature under the effect of this feature at a time. You c
 
 ### Shadow
 
-#### Shadow Arts [Updated]
+#### Shadow Arts - 3 [Updated]
 
 You can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast any of the following spells: _Darkness_, _Darkvision_, _Pass without Trace_, and _Silence_. When cast in this way, you do not need material components. Once you have cast one of these spells, you cannot cast the same spell again until you finish a short or long rest.
 
 Additionally, you gain the _Minor Illusion_ cantrip if you don't already have it.
 
-#### Shadow Step [Updated]
+#### Shadow Step - 6 [Updated]
 
 You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.
 
-#### Cloak of Shadows [Updated]
+#### Cloak of Shadows - 11 [Updated]
 
 By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.
 
-#### Opportunist [Updated]
+#### Opportunist - 17 [Updated]
 
 At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature.
 
 ### Sun Soul
 
-#### Radiant Sun Bolt [Updated]
+#### Radiant Sun Bolt - 3 [Updated]
 
 Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.
 
@@ -683,13 +683,13 @@ When you take the Attack action on your turn and use this special attack as part
 
 When you make this special attack, you can apply a Technique you know, as if it were an Unarmed Strike.
 
-#### Searing Arc Strike [Updated]
+#### Searing Arc Strike - 6 [Updated]
 
 At 6th level, you gain the ability to channel your ki into searing waves of energy. Immediately after you take the Attack action on your turn, you can spend 1 ki point to cast the burning hands spell as a bonus action.
 
 You can spend additional ki points to cast burning hands as a higher-level spell. Each additional ki point you spend increases the spell's level by 1.
 
-#### Searing Sunburst [Updated]
+#### Searing Sunburst - 11 [Updated]
 
 At 11th level, you gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you magically create an orb and hurl it at a point you choose within 150 feet, where it erupts into a sphere of radiant light for a brief but deadly instant.
 
@@ -697,7 +697,7 @@ Each creature in that 20-foot-radius sphere must succeed on a Constitution savin
 
 You can increase the sphere's damage by spending ki points. Each point you spend increases the damage by 1d6.
 
-#### Sun Shield [Updated]
+#### Sun Shield - 17 [Updated]
 
 At 17th level, you become wreathed in a luminous, magical aura. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. You can extinguish or restore the light as a bonus action.
 
