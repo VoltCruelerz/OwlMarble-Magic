@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1
+
+- Rogue: Reliable Talent + Scaling Sneak Attack Fix
+- PWK/PWH Buffs
+- Fix gritty use of several feats
+
 ## 1.2.0 - Mastery UA
 
 ### Classes
