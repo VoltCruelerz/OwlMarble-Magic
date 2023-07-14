@@ -240,7 +240,7 @@ Your soul has become malleable from interaction with many magical items, allowin
 _Requirement: must have Psi Points_
 
 As an action, you focus your mind and regain a number of psi points equal to your proficiency bonus.
-Once you have used this action, you cannot do so again until you finish a long rest.
+Once you have used this action, you cannot do so again until you finish a short rest.
 
 ## Gift of the Giants [Pixel_Engine]
 
@@ -353,7 +353,7 @@ You have studied languages, communication, and codes extensively, gaining the fo
 
 ## Magically Armored [KeoniKoa]
 
-You’ve become incredibly adept at protecting yourself with magical forces. When a spell cast by an ally modifies your armor class, grants you resistance to a damage type, or grants you temporary hit points, you have the following benefits:
+You’ve become incredibly adept at protecting yourself with magical forces. When a spell cast by an ally modifies your armor class, grants you resistance to a damage type, increases your maximum hit points, or grants you temporary hit points, you have the following benefits:
 
 - You gain resistance to force damage.
 - You are immune to the magic missile spell.
@@ -460,7 +460,7 @@ Whenever you finish a long rest, you can mark one nonmagical object with a rune 
 
 ## Rune Carver Journeyman [UA-GO-Updated]
 
-_Requirement: Rune Carver Apprentice_
+_Requirement: Rune Carver Apprentice or at least level 8_
 
 Your skill with runecraft has increased by leaps and bounds. Instead of just one rune, you are now able to mark a number of runes equal to your proficiency bonus.
 
@@ -468,7 +468,7 @@ If an item is marked multiple times with the same rune, when you cast the spell 
 
 ## Rune Carver Master [UA-GO-Updated]
 
-_Requirement: Rune Carver Master_
+_Requirement: Rune Carver Master or at least level 12_
 
 Your skill with runecraft has increased by leaps and bounds once again, making you a master of the ancient practice. The list of runes you know increases.
 

@@ -70,7 +70,7 @@ You can likewise render magical items temporarily mundane in this way.
 
 ## Reliable Talent - 11 [Updated]
 
-By 11th level, you have refined your skills until they approach perfection.  Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.  Additionally, you can treat a Sneak Attack die roll of a 2 or lower as a 3.
+By 11th level, you have refined your skills until they approach perfection.  Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.  Additionally, you can treat a Sneak Attack die roll less than half the size of the die as half the size of the die.
 
 When you reach 15th level, an ally within 5 feet of you that you can see making a check you are proficient in can also treat a d20 roll of 9 or lower as a 10.
 
@@ -90,6 +90,13 @@ Once you have used this feature, you cannot use it again until you complete a Sh
 
 ### Assassin
 
+#### Assassinate - 3 [Updated]
+
+Starting at 3rd level, you are adept at getting the drop on a target, granting you the following benefits:
+
+- **Initiative**: You have advantage on Initiative rolls.
+- **Surprising Strikes**: On your first round in combat, you have advantage on attacks against creatures that have not taken a turn yet.
+
 #### Isolation - 3 [New]
 
 Starting at 3rd level, if a creature does not have an ally within 5 feet of it, you can use your Sneak Attack against it as long as you do not have disadvantage.
@@ -100,7 +107,7 @@ Starting at 13th level, when you score a critical hit, you add another die of da
 
 #### Death Strike - 17 [Updated]
 
-Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is Incapacitated or Surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature.
+Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is Incapacitated or you hit with your Sneak Attack in the first round of combat, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature.
 
 ### Inquisitive
 
