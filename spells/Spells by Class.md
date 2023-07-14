@@ -354,7 +354,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [False Identity](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#false-identity) - V/S/M [C] - (OMM - 9)
 - [Foresight](https://www.dndbeyond.com/spells/foresight) - V/S/M - (PHB - 244)
 - [Mass Polymorph](https://www.dndbeyond.com/spells/mass-polymorph) - V/S/M [C] - (XGE - 160)
-- [Power Word Heal](https://www.dndbeyond.com/spells/power-word-heal) - V/S - (PHB - 266)
+- [Power Word Heal](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#power-word-heal) - V - (OMM - 9)
 - [Power Word Kill](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#power-word-kill) - V - (OMM - 9)
 - [Prismatic Wall](https://www.dndbeyond.com/spells/prismatic-wall) - V/S - (PHB - 267)
 - [Psychic Scream](https://www.dndbeyond.com/spells/psychic-scream) - S - (XGE - 163)
@@ -563,7 +563,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Immortal Army](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#immortal-army) - V/S/M$ - (OMM - 9)
 - [Judgment](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#judgment) - V/S/M$ - (OMM - 9)
 - [Mass Heal](https://www.dndbeyond.com/spells/mass-heal) - V/S - (PHB - 258)
-- [Power Word Heal](https://www.dndbeyond.com/spells/power-word-heal) - V/S - (PHB - 266)
+- [Power Word Heal](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/09.md#power-word-heal) - V - (OMM - 9)
 - [True Resurrection](https://www.dndbeyond.com/spells/true-resurrection) - V/S/M$X - (PHB - 284)
 
 ### Level 10 - _Cleric_
