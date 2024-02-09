@@ -73,7 +73,7 @@ Oil can be applied to a melee weapon or piece of ammunition as a Bonus Action. O
 
 Once consumed, the consumer can immediately reroll the saving throw for any single ongoing negative effect on it caused by a disease, poison, or curse.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action.
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action.
 
 #### Tonic - 3 [New]
 
@@ -81,7 +81,7 @@ Once consumed, the consumer regenerates 1 hit point at the start of each of its 
 
 A creature that has benefited from a tonic since its last Long Rest must expend a Hit Die to benefit from another.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action
 
 ### Greater Solutions - 7 [New]
 
@@ -113,7 +113,7 @@ Oil can be applied to a melee weapon or piece of ammunition as a Bonus Action. O
 
 Once consumed, the consumer can immediately reroll the saving throw for any single ongoing negative effect on it caused by a disease, poison, or curse. The reroll has advantage.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action.
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action.
 
 #### Greater Tonic - 7 [New]
 
@@ -123,7 +123,7 @@ Once consumed, the consumer regenerates 2 hit points at the start of each of its
 
 A creature that has benefited from a tonic since its last Long Rest must expend a Hit Die to benefit from another.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action.
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action.
 
 ### Reagent Networks - 7 [New]
 
@@ -174,7 +174,7 @@ Once consumed, the consumer can immediately reroll the saving throw for any sing
 
 If consumed by a creature under the influence of a delayed deleterious effect such as _Doom_ or Slaad gestation, the remaining duration is doubled instead.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action.
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action.
 
 #### Superior Tonic - 11 [New]
 
@@ -184,7 +184,7 @@ Once consumed, the consumer regenerates 2 hit points at the start of each of its
 
 A creature that has benefited from a tonic since its last Long Rest must expend a Hit Die to benefit from another.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action.
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action.
 
 ### Supreme Solutions - 15 [New]
 
@@ -222,7 +222,7 @@ Once consumed, the consumer takes a level of exhaustion and can immediately rero
 
 If consumed by a creature under the influence of a delayed deleterious effect such as _Doom_ or Slaad gestation, the remaining duration is doubled instead.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action.
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action.
 
 #### Supreme Tonic - 15 [New]
 
@@ -234,4 +234,4 @@ If the consumer is reduced to 0 hit points, the regeneration effects of the solu
 
 A creature that has benefited from a tonic since its last Long Rest must expend a Hit Die to benefit from another.
 
-> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be force-fed a solution by the administering creature's Action.
+> **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action.
