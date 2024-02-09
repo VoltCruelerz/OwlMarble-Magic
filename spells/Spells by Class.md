@@ -775,6 +775,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Bones of the Earth](https://www.dndbeyond.com/spells/bones-of-the-earth) - V/S - (XGE - 150)
 - [Conjure Fey](https://www.dndbeyond.com/spells/conjure-fey) - V/S [C] - (PHB - 226)
 - [Druid Grove](https://www.dndbeyond.com/spells/druid-grove) - V/S/M - (XGE - 154)
+- [Earthen Execution](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/06.md#earthen-execution) - V/S/M [C] - (OMM - 6)
 - [Find the Path](https://www.dndbeyond.com/spells/find-the-path) - V/S/M$ [C] - (PHB - 240)
 - [Flash Flood](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/06.md#flash-flood) - V/S/M [C] - (OMM - 6)
 - [Flesh to Stone](https://www.dndbeyond.com/spells/flesh-to-stone) - V/S/M [C] - (PHB - 243)
@@ -1461,6 +1462,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Spider Climb](https://www.dndbeyond.com/spells/spider-climb) - V/S/M [C] - (PHB - 277)
 - [Suggestion](https://www.dndbeyond.com/spells/suggestion) - V/M [C] - (PHB - 279)
 - [Summon Ancestral Spirit](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#summon-ancestral-spirit) - V/S/M$ [C] - (OMM - 2)
+- [Wall of Doom](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#wall-of-doom) - V/S/M [C] - (OMM - 2)
 - [Withering Gaze](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#withering-gaze) - V - (OMM - 2)
 
 ### Level 3 - _Warlock_
@@ -1789,6 +1791,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Tasha's Mind Whip](https://www.dndbeyond.com/spells/tasha's-mind-whip) - V - (TCE - 115)
 - [Vortex Warp](https://www.dndbeyond.com/spells/vortex-warp) - V/S - (SCC - 38)
 - [Vylja's Airbolt](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#vyljas-airbolt) - V/S/M - (OMM - 2)
+- [Wall of Doom](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#wall-of-doom) - V/S/M [C] - (OMM - 2)
 - [Warding Wind](https://www.dndbeyond.com/spells/warding-wind) - V [C] - (XGE - 170)
 - [Web](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#web) - V/S/M [C] - (OMM - 2)
 - [Whirlpool Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#whirlpool-blade) - V/S - (OMM - 2)
@@ -1995,6 +1998,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Distort Life](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/06.md#distort-life) - V/S/M$X - (OMM - 6)
 - [Dragon's Sight](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/06.md#dragons-sight) - V/S/M$ [R] - (OMM - 6)
 - [Drawmij's Instant Summons](https://www.dndbeyond.com/spells/drawmij's-instant-summons) - V/S/M$ [R] - (PHB - 235)
+- [Earthen Execution](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/06.md#earthen-execution) - V/S/M [C] - (OMM - 6)
 - [Eyebite](https://www.dndbeyond.com/spells/eyebite) - V/S [C] - (PHB - 238)
 - [Fizban's Platinum Shield](https://www.dndbeyond.com/spells/fizban's-platinum-shield) - V/S/M$ [C] - (FTD - 20)
 - [Flash Flood](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/06.md#flash-flood) - V/S/M [C] - (OMM - 6)

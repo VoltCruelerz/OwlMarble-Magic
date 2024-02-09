@@ -25,7 +25,7 @@
 
 ## Weapon Mastery [New]
 
-Your training with weapons allows you to use the Mastery property of two kinds of Simple or Martial melee weapons of your choice,  such as Greataxes and Handaxes.
+Your training with weapons allows you to use the Mastery property of two kinds of Simple or Martial melee weapons of your choice, such as Greataxes and Handaxes.
 
 Whenever you finish a Long Rest, you can practice weapon drills and change the kinds of melee weapons you chose.
 
