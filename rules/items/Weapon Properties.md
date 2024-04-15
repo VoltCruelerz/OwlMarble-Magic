@@ -56,6 +56,10 @@ A weapon that can be used to make a ranged Attack has a range in parentheses aft
 
 This weapon adds 5 feet to your reach when you Attack with it, as well as when determining your reach for Opportunity Attacks with it.
 
+## Reload
+
+This weapon can be used a number of times equal to the parenthetical value before it must be reloaded using either an Action or a Bonus Action.
+
 ## Thrown
 
 You can throw this weapon to make a ranged Attack. If this weapon is a melee weapon, you use the same ability modifier for that Attack roll and damage roll that you would use for a melee Attack with the weapon. For example, if you throw a _Handaxe_, you use your Strength, but if you throw a _Dagger_, you can use either your Strength or your Dexterity, since the _Dagger_ has the _Finesse_ property.

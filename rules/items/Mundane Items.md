@@ -33,7 +33,7 @@ These rules are for describing assorted items and equipment that is nonmagical.
 |    **Stone**    |   17   |   4    |   -    |            -             |             -              |          -          |
 |   **Bronze**    |   18   |   3    |   -    |            -             |             -              |          -          |
 |    **Steel**    |   19   |   5    |   -    |            -             |             -              |          -          |
-|   **Mithral**   |   21   |   5    |   -    |            -             |             -              |          -          |
+|   **Mithril**   |   21   |   5    |   -    |            -             |             -              |          -          |
 | **Adamantine**  |   23   |   -    |   10   |            -             |             -              |          -          |
 | **Orichalcum**  |   25   |   -    |   15   |            -             |             -              |          -          |
 

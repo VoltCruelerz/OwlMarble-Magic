@@ -48,6 +48,12 @@ Your rage lasts for 10 minutes. It ends early if you are incapacitated or at the
 
 If your rage would otherwise end early, you can use a Bonus Action to maintain it for another round. You can also end your Rage early as a Bonus Action.
 
+## Reckless Attack - 2 [Updated]
+
+Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make an attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.
+
+When you miss with an attack on your turn and are not yet attacking recklessly, you can use your reaction to reroll the die and begin attacking recklessly until the start of your next turn.
+
 ## Primal Knowledge - 2 [New]
 
 Starting at 2nd level, you gain proficiency in another skill of your choice from the list of skills available to Barbarians at 1st level.

@@ -34,13 +34,13 @@ At 3rd level, you gain infravision out to a range of 60 feet. If you already hav
 
 You are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision or infravision to see you in that darkness.
 
-## Monster Hunter [New]
+## Slayer [New]
 
 ### Monster Lore 3 [New]
 
 At 3rd level, you gain the Monster Lore skill and proficiency in it. This skill is derivative of the Intelligence ability.
 
-Additionally, when you can choose to use your Intelligence score in place of your Wisdom modifier for your Ranger features.
+Additionally, you can choose to use your Intelligence score in place of your Wisdom modifier for your Ranger features.
 
 ### Harvest the Fallen - 3 [New]
 
@@ -67,7 +67,7 @@ A creature can repeat the saving throw at the end of each of its turns, ending t
 
 #### Oil - 3 [New]
 
-Oil can be applied to a melee weapon or piece of ammunition as a Bonus Action. Once applied, for one minute, it increases the weapon or ammunition's damage by 2d4 and causes the weapon to count as magical for the purpose of overcoming resistances.
+Oil can be applied to a melee weapon or 10 pieces of ammunition as a Bonus Action. Once applied, for one minute, it increases the weapon or ammunition's damage by 2d4 and causes the weapon to count as magical for the purpose of overcoming resistances.
 
 #### Remedy - 3 [New]
 

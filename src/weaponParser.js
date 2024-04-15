@@ -230,8 +230,9 @@ module.exports = class WeaponParser extends Parser {
             case 'Dart': return 'modules/taring-kyburn/icons/items/weapons/ammo/dart.png';
             case 'Musket': return 'modules/taring-kyburn/icons/items/weapons/guns/Gun_v2_13.png';
             case 'Pistol': return 'modules/taring-kyburn/icons/items/weapons/guns/Gun_v2_01.png';
+            case 'Flintlock Pistol': return 'modules/taring-kyburn/icons/items/weapons/guns/Gun_v2_01.png';
             // Unhandled Error
-            default: throw new Error('No image set for ' + weaponName);
+            default: throw new Error('No image set for "' + weaponName + '". Please set one in the giant switch-case block above.');
         }
     }
 
@@ -256,6 +257,9 @@ module.exports = class WeaponParser extends Parser {
         const lines = properties.map((p) => {
             const propName = propRegex.exec(p)?.groups.prop.trim();
             if (propName && propName !== 'Special') {
+                if (!propDict[propName]) {
+                    throw new Error('Prop "' + propName + '" was not found in "Weapon Properties.md"');
+                }
                 const propertyContent = propDict[propName].content;
                 return `${this.tagify('h4', this.boldify(p))}${propertyContent}`;
             }

@@ -108,9 +108,12 @@ Items in a bag of holding do not give off spell flux.
 - **Faeleaf**: dense, flexible plant matter grown by the Seely Court
   - **Armor**: Heavy armor made from this material allows a wearer to add their Dexterity modifier to their AC (max 2)
   - **Price**: x2.
-- **Mithral**: weighs a third as much as steel
+- **Mithril**: weighs a third as much as steel
   - **Armor**: no strength requirement, can be treated as one class down for proficiencies
-  - **Weapons**: heavy trait is lost and normal weapons become light.  If a weapon could increase its damage die by using two hands, that is now its standard die.  Using two hands has no benefit.
+  - **Weapons**
+    - functionally _Silvered_
+    - heavy weapons lose the heavy trait
+    - normal weapons become light and gain finesse
   - **Price**: x2
   - Only comes as Masterwork (x6 to cost in practice)
 - **Adamantine**: metal that cannot be shattered

@@ -59,7 +59,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Morningstar** | 15 | 4 | 1d8 piercing | - | - | Sap |
 | **Pike** | 5 | 18 | 1d10 piercing | _Heavy, Extended Reach, Inner Range: 5 ft_ | - | Push |
 | **Rapier** | 25 | 2 | 1d8 piercing | _Finesse_ | Estoc, Foil | Lunge |
-| **Scimitar** | 25 | 3 | 1d6 piercing | _Finesse, Light_ | Katana, Saber | Nick |
+| **Scimitar** | 25 | 3 | 1d6 slashing | _Finesse, Light_ | Katana, Saber | Nick |
 | **Shortsword** | 10 | 2 | 1d6 slashing or piercing | _Finesse, Light, Amphibious_ | Khopesh | Vex |
 | **Spearsword** | 1 | 3 | 1d8 piercing or slashing | _Thrown (10/30)_ | Yklwa | Graze |
 | **Studded Gauntlets** | 1 | 1/2 | 1d4 bludgeoning or piercing | _Handy, Light_| Brass Knuckles | Graze |
@@ -67,7 +67,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **War Pick** | 5 | 2 | 1d8 piercing | Versatile (1d10) | - | Sap, Flex (Deadly) |
 | **Warhammer** | 15 | 2 | 1d8 bludgeoning | Versatile (1d10) | - | Graze, Flex (Slow) |
 | **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_| - | Push |
-| **War Scythe** | 5 | 6 | 1d6 slashing | _Finesse, Heavy, Reach, Two-Handed_| - | Tumble |
+| **War Scythe** | 5 | 6 | 1d6 slashing | _Finesse, Heavy, Reach, Two-Handed_| - | Graze |
 | **Whip** | 2 | 3 | 1d4 slashing | _Finesse, Reach_ | - | Yoink |
 
 ## Ranged Weapons
@@ -90,5 +90,5 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Heavy Crossbow** | 50 | 18 | 1d10 piercing | _Ammunition (100/400), Heavy, Loading, Two-Handed, Amphibious_ | Arbalest | Push |
 | **Longbow** | 50 | 2 | 1d8 piercing | _Ammunition (150/600), Heavy, Two-Handed_ | Compound Bow | Slow |
 | **Warbow**  | 100 | 3 | 2d6 piercing | _Ammunition (150/600), Heavy, Two-Handed, Vigorous_<br/>**Special**: This weapon can only be used by a Medium or larger creature with a Strength of 18 or higher. | - | Slow |
-| **Musket** | 500 | 10 | 1d12 piercing | _Ammunition (40/120), Loading, Two-Handed_ | - | Slow |
-| **Pistol** | 250 | 3 | 1d10 piercing | _Ammunition (30/90), Loading_ | - | Deadly |
+| **Musket** | 100 | 10 | 1d12 piercing | _Ammunition (100/400), Reload (1), Two-Handed_ | - | Slow |
+| **Flintlock Pistol** | 50 | 3 | 1d8 piercing | _Ammunition (60/240), Reload (1)_ | - | Deadly |
