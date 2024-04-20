@@ -151,7 +151,7 @@ module.exports = class ClassPraser extends Parser {
                 const id = this.generateUUID(`${featureName} - ${classFileName} (OwlMarble Magic - Features)`);
                 features.push({
                     _id: id,
-                    _key: '!journal!' + id,
+                    _key: '!items!' + id,
                     name: featureName,
                     type: 'feat',
                     img: 'modules/owlmarble-magic/icons/classes/' + classFileName + (classFileName !== 'Psion' ? '.svg' : '.png'),

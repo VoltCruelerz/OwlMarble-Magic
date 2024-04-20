@@ -433,7 +433,7 @@ module.exports = class Parser {
 
             await attempt('fvtt package workon "owlmarble-magic"');
             
-            await attempt(`fvtt package unpack "${compendium}"`);
+            //await attempt(`fvtt package unpack "${compendium}"`);
             
             // Purge old versions
             const exportDir = `${dataPath}/Data/modules/owlmarble-magic/packs/${compendium}/_source`;
