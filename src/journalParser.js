@@ -133,6 +133,6 @@ module.exports = class RuleParser extends Parser {
             `output/owlmagic-srd/${outputName}.db`,
             `E:/Foundry VTT/Data/modules/owlmarble-magic/packs/${outputName}.db`
         ]);
-        await this.exportDb(journalFiles, 'journals');
+        return await this.exportDb(journalFiles, 'journals');
     }
 };

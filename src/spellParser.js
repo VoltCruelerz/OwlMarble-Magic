@@ -173,6 +173,7 @@ module.exports = class SpellParser extends Parser {
      * @param {[{}]} newSpells
      * @param {string} path
      * @param {boolean} shouldExport 
+     * @returns {boolean} didExport
      */
     async printSpells (oldSpells, newSpells, path, shouldExport) {
         console.log('Printing to: ' + path);
@@ -225,8 +226,9 @@ module.exports = class SpellParser extends Parser {
 
         // Export.
         if (shouldExport) {
-            await this.exportDb(newSpells, 'spells');
+            return await this.exportDb(newSpells, 'spells');
         }
+        return false;
     }
 
     /**
@@ -1835,11 +1837,11 @@ module.exports = class SpellParser extends Parser {
 
         // Export all to current foundry install.
         console.log(this.thinWall + '\nExporting spells to foundry install...');
-        this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db', true);
+        const exportSuccess = this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db', true);
 
         // Log differences to spells.
         this.logDiff(oldSpells, allSpells);
 
-        return { omm: allSpells, srd };
+        return { omm: allSpells, srd, exportSuccess };
     }
 };

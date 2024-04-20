@@ -492,8 +492,6 @@ module.exports = class WeaponParser extends Parser {
             'output/owlmagic-srd/weapons.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/weapons.db',
         ]);
-        await this.exportDb(weapons, 'weapons');
-
-        return weapons;
+        return await this.exportDb(weapons, 'weapons');
     }
 };

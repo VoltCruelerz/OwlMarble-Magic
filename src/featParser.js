@@ -186,8 +186,6 @@ module.exports = class FeatParser extends Parser {
             'output/owlmagic-srd/feats.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/feats.db',
         ]);
-        await this.exportDb(feats, 'feats');
-
-        return feats;
+        return await this.exportDb(feats, 'feats');
     }
 };
