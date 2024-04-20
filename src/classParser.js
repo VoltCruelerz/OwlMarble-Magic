@@ -12,7 +12,7 @@ module.exports = class ClassPraser extends Parser {
      * @param {[{}]} spells 
      * @returns 
      */
-    run (spells) {
+    async run (spells) {
         const spellDict = spells.reduce((acc, spell) => {
             acc[spell.name] = spell;
             return acc;
@@ -148,8 +148,10 @@ module.exports = class ClassPraser extends Parser {
                     .join('')// Merge lines.
                     .replaceAll('</blockquote><blockquote>', '');// Merge adjacent block quotes.
 
+                const id = this.generateUUID(`${featureName} - ${classFileName} (OwlMarble Magic - Features)`);
                 features.push({
-                    _id: this.generateUUID(`${featureName} - ${classFileName} (OwlMarble Magic - Features)`),
+                    _id: id,
+                    _key: '!journal!' + id,
                     name: featureName,
                     type: 'feat',
                     img: 'modules/owlmarble-magic/icons/classes/' + classFileName + (classFileName !== 'Psion' ? '.svg' : '.png'),
@@ -251,6 +253,7 @@ module.exports = class ClassPraser extends Parser {
             'output/owlmagic-srd/features.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/features.db'
         ]);
+        await this.exportDb(features, 'features');
 
         return features;
     }

@@ -169,10 +169,12 @@ module.exports = class SpellParser extends Parser {
 
     /**
      * Prints the spells to the output folder in a db file.
-     * @param {[{}]} spells
+     * @param {[{}]} oldSpells
+     * @param {[{}]} newSpells
      * @param {string} path
+     * @param {boolean} shouldExport 
      */
-    printSpells (oldSpells, newSpells, path) {
+    async printSpells (oldSpells, newSpells, path, shouldExport) {
         console.log('Printing to: ' + path);
 
         // Build dictionary.
@@ -220,6 +222,11 @@ module.exports = class SpellParser extends Parser {
         const spellLines = newSpells.map((spell) => JSON.stringify(spell));
         const db = spellLines.join('\n') + '\n';
         fs.writeFileSync(path, db);
+
+        // Export.
+        if (shouldExport) {
+            await this.exportDb(newSpells, 'spells');
+        }
     }
 
     /**
@@ -291,8 +298,10 @@ module.exports = class SpellParser extends Parser {
             const description = this.parseDescription(lines.splice(7));
 
             // Build the config.
+            const id = this.generateUUID(name + ' (OwlMarble Magic)');
             const spell = {
-                _id: this.generateUUID(name + ' (OwlMarble Magic)'),
+                _id: id,
+                _key: '!items!' + id,
                 name,
                 permission: {
                     default: 0
@@ -1216,8 +1225,10 @@ module.exports = class SpellParser extends Parser {
                 const description = this.parseImportedEntries(spell.entries) + this.parseImportedEntries(spell.entriesHigherLevel).replace('<strong>At Higher Levels</strong>', '<strong>Higher Levels</strong>');
                 const importedRange = this.getImportedRange(spell);
                 const range = this.getRange(importedRange);
+                const id = this.generateUUID(spell.name + ' (Imported)');
                 const importedSpell = {
-                    _id: this.generateUUID(spell.name + ' (Imported)'),
+                    _id: id,
+                    _key: '!items!' + id, 
                     name: spell.name,
                     permission: {
                         default: 0
@@ -1542,7 +1553,7 @@ module.exports = class SpellParser extends Parser {
      * @param {[{*}]} spells 
      * @param {{*}} indices
      */
-    exportSpellLists (spells, indices) {
+    async exportSpellLists (spells, indices) {
         const wall = (this.thinWall + '');
         console.log(wall + '\nExporting Class Spell Lists...');
         const classes = Object.keys(spells.reduce((acc, spell) => {
@@ -1619,6 +1630,7 @@ module.exports = class SpellParser extends Parser {
         fs.writeFileSync('spells/Spells by Class.md', output);
 
         // Export standalone HTML files and add to collective Journal DB.
+        const dbRows = [];
         const dbLines = [];
         classes.forEach((clazz) => {
             const htmlLines = [
@@ -1649,8 +1661,10 @@ module.exports = class SpellParser extends Parser {
             fs.writeFileSync(path, htmlLines.join('\r\n'));
             
             // Add to db.
-            dbLines.push(JSON.stringify({
-                _id: this.generateUUID(),
+            const id = this.generateUUID();
+            const row = {
+                _id: id,
+                _key: '!journal!' + id,
                 name: clazz,
                 permission: {
                     default: 2
@@ -1658,10 +1672,13 @@ module.exports = class SpellParser extends Parser {
                 folder: '',
                 flags: {},
                 content: contentLines.join('').replace('\r\n', '')
-            }));
+            };
+            dbRows.push(row);
+            dbLines.push(JSON.stringify(row));
         });
         fs.writeFileSync('spells/class-lists/lists.db', dbLines.join('\n'));
         fs.writeFileSync('E:/Foundry VTT/Data/modules/owlmarble-magic/packs/lists.db', dbLines.join('\n'));
+        await this.exportDb(dbRows, 'lists');
     }
 
     /**
@@ -1791,25 +1808,25 @@ module.exports = class SpellParser extends Parser {
 
         // Homebrew Only
         const homebrew = this.readAndParseInputFiles();
-        this.printSpells(this.readSpellDB('output/owlmagic-only/spells.db'), homebrew, 'output/owlmagic-only/spells.db');
+        this.printSpells(this.readSpellDB('output/owlmagic-only/spells.db'), homebrew, 'output/owlmagic-only/spells.db', false);
 
         // SRD + Homebrew
         const srd = this.readSpellDB('srd/srd.db');
         srd.forEach((srdSpell) => { srdSpell.img = this.getImage(this.decodeSchool(srdSpell.data.school)); });
-        this.printSpells(this.readSpellDB('output/owlmagic-srd/spells.db'), this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db');
+        this.printSpells(this.readSpellDB('output/owlmagic-srd/spells.db'), this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db', false);
 
         // Publishable
-        this.printSpells(this.readSpellDB('packs/spells.db'), this.mergeSpellLists(srd, homebrew), 'packs/spells.db');
+        this.printSpells(this.readSpellDB('packs/spells.db'), this.mergeSpellLists(srd, homebrew), 'packs/spells.db', false);
 
         // Imported only
         const imported = this.readAndParseImportedSpells();
         this.sortSpellList(imported);
-        this.printSpells(this.readSpellDB('output/imported/spells.db'), imported, 'output/imported/spells.db');
+        this.printSpells(this.readSpellDB('output/imported/spells.db'), imported, 'output/imported/spells.db', false);
 
         // Homebrew + Imported
         const allSpells = this.mergeSpellLists(imported, homebrew);
         const oldSpells = this.readSpellDB('output/all/spells.db');
-        this.printSpells(oldSpells, allSpells, 'output/all/spells.db');
+        this.printSpells(oldSpells, allSpells, 'output/all/spells.db', false);
 
         // Export the spell lists for all included classes.
         this.exportSpellLists(allSpells, indices);
@@ -1818,7 +1835,7 @@ module.exports = class SpellParser extends Parser {
 
         // Export all to current foundry install.
         console.log(this.thinWall + '\nExporting spells to foundry install...');
-        this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db');
+        this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db', true);
 
         // Log differences to spells.
         this.logDiff(oldSpells, allSpells);

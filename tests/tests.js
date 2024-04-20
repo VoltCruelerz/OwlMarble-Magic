@@ -1,5 +1,6 @@
 const assert = require('assert/strict');
 const fs = require('fs');
+const chalk = require('chalk');
 const approvedErrors = require('./approvedErrors.json');
 
 //#region Handlers
@@ -185,6 +186,7 @@ const damageHandler = (expected, actual) => {
  * Run tests.
  * @param {[{*}]} omm
  * @param {[{*}]} srd
+ * @returns {boolean} TRUE = pass, FALSE = failed
  */
 module.exports = (omm, srd) => {
     const wall = '═════════════════════════════════════════════════════';
@@ -272,7 +274,7 @@ module.exports = (omm, srd) => {
     const lines = [];
     const header = `${wall}\nERROR REPORT - ${totalErrors} ERRORS ACROSS ${errorReport.length}/${srd.length} SRD SPELLS\n${wall}`;
     if (errorReport.length > 0) {
-        console.log(header);
+        console.log(chalk.red(header));
         lines.push(header);
         errorReport.forEach((line) => {
             lines.push(`${wall}\n- ${line.spell}: ${line.errors.length}/${verbatimFields.length}\n${thinWall}`);
@@ -300,4 +302,5 @@ module.exports = (omm, srd) => {
 
     const content = lines.join('\n');
     fs.writeFileSync('tests/test.log', content);
+    return !errorReport.length;
 };

@@ -11,7 +11,7 @@ module.exports = class FeatParser extends Parser {
      * @param {[{}]} spells 
      * @returns 
      */
-    run (spells) {
+    async run (spells) {
         const spellDict = spells.reduce((acc, spell) => {
             acc[spell.name] = spell;
             return acc;
@@ -96,9 +96,10 @@ module.exports = class FeatParser extends Parser {
                 }
             }
             const featStr = featLines.join('');
-
+            const id = this.generateUUID(featName + ' (OwlMarble Magic)');
             return {
-                _id: this.generateUUID(featName + ' (OwlMarble Magic)'),
+                _id: id,
+                _key: '!items!' + id,
                 name: featName,
                 type: 'feat',
                 img: 'icons/svg/upgrade.svg',
@@ -185,6 +186,7 @@ module.exports = class FeatParser extends Parser {
             'output/owlmagic-srd/feats.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/feats.db',
         ]);
+        await this.exportDb(feats, 'feats');
 
         return feats;
     }

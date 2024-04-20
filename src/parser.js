@@ -1,3 +1,5 @@
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
 const fs = require('fs');
 const path = require('path');
 const seedrandom = require('seedrandom');
@@ -381,10 +383,16 @@ module.exports = class Parser {
     //#endregion
 
     //#region I/O
+    async isRunning () {
+        const cmd = 'tasklist /fo csv';
+        const { stdout } = await exec(cmd);
+        return stdout.toLowerCase().includes('foundry virtual tabletop.exe');
+    }
+
     /**
      * Prints the json objects to a Foundry db.
      * @param {[{}]} items
-     * @param {string[]} path
+     * @param {string[]} paths
      */
     printDb (items, paths) {
         console.log(`Printing to ${paths.length} files`);
@@ -393,6 +401,61 @@ module.exports = class Parser {
             const db = lines.join('\n') + '\n';
             fs.writeFileSync(path, db);
         });
+    }
+
+    /**
+     * Prints the json objects to a Level db.
+     * @param {[{}]} entries
+     * @param {string} compendium
+     * @param {boolean} TRUE if exported, FALSE if not.
+     */
+    async exportDb (entries, compendium) {
+        console.log(`Exporting to to ${compendium}`);
+        if (await this.isRunning()) {
+            console.warn(chalk.yellow(`[WARNING] - Foundry is currently running, so export to "${compendium}" will not occur.`));
+            return false;
+        }
+
+        const attempt = async (cmd) => {
+            const result = await exec(cmd);
+            if (result.stderr.length > 0) throw new Error(`Export Command Failed:\n$ ${cmd}\n` + result.stderr);
+            return result.stdout;
+        };
+
+        const sanitize = (str) => {
+            str = str.replace(/\W/g, '_');
+            return str;
+        };
+
+        try {
+            await attempt('fvtt configure');
+            const dataPath = (await attempt('fvtt configure get dataPath')).split('\n')[0];
+
+            await attempt('fvtt package workon "owlmarble-magic"');
+            
+            await attempt(`fvtt package unpack "${compendium}"`);
+            
+            // Purge old versions
+            const exportDir = `${dataPath}/Data/modules/owlmarble-magic/packs/${compendium}/_source`;
+            const oldFiles = fs.readdirSync(exportDir);
+            oldFiles.forEach(oldFile => fs.unlinkSync(exportDir + '/' + oldFile));
+
+            entries.forEach(entry => {
+                const path = `${exportDir}/${sanitize(entry.name)}_${entry._id}.json`;
+                // console.log(chalk.gray(`- Exporting to "${path}"`));
+                const data = JSON.stringify(entry, null, 4);
+                fs.writeFileSync(path, data, 'utf8');
+            });
+            
+            const pack = await exec(`fvtt package pack "${compendium}"`);
+            if (pack.stderr.length > 0) throw new Error(pack.stderr);
+        }
+        catch (err) {
+            console.error(chalk.bgRed(`Failed to Export "${compendium}"`));
+            console.error(chalk.red(err));
+            return false;
+        }
+        return true;
     }
 
     /**

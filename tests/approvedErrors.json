@@ -263,7 +263,9 @@
     },
     "Goodberry": {
         "target": {"value":1,"units":"","type":"creature"},
-        "materials": {"value":"a sprig of mistletoe","consumed":false,"cost":0,"supply":0}
+        "materials": {"value":"a sprig of mistletoe","consumed":false,"cost":0,"supply":0},
+        "duration": {"value":24,"units":"hour"},
+        "scaling": {"mode":"level","formula":""}
     },
     "Guardian of Faith": {
         "target": {"value":1,"units":"","type":"creature"},

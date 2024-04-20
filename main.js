@@ -17,43 +17,50 @@ const blockStop = () => {
     console.log(thickWall);
 };
 
-console.log(thickWall + '\n' + chalk.bold(chalk.green('BEGIN PROCESSING')));
+const main = async () => {
+    console.log(thickWall + '\n' + chalk.bold(chalk.green('BEGIN PROCESSING')));
+    
+    blockStart('Spells');
+    const spellParser = new SpellParser();
+    const { omm, srd } = await spellParser.run();
+    console.log(thinWall + '\nRunning Tests...');
+    const passed = test(omm, srd);
+    console.log(thinWall + '\nTests Done.');
+    
+    blockStart('Feats');
+    const featParser = new FeatParser();
+    await featParser.run(omm);
+    
+    blockStart('Classes');
+    const classParser = new ClassParser();
+    await classParser.run(omm);
+    
+    blockStart('Weapons');
+    const weaponParser = new WeaponParser();
+    await weaponParser.run();
+    
+    blockStart('Journals');
+    const journalParser = new JournalParser();
+    await journalParser.run(
+        omm,
+        [
+            './rules/',
+            './classes/',
+            './monsters/',
+            './spells/'
+        ],
+        'rules');
+    await journalParser.run(
+        omm,
+        [
+            './setting/'
+        ],
+        'journals');
+    
+    const message = passed
+        ? chalk.green('PROCESSING COMPLETE')
+        : chalk.yellow('PROCESSING COMPLETE WITH TEST ERRORS');
+    console.log(`\n${thickWall}\n${chalk.bold(message)} at ${chalk.gray((new Date()).toString())}\n${thickWall}`);
+};
 
-blockStart('Spells');
-const spellParser = new SpellParser();
-const { omm, srd } = spellParser.run();
-console.log(thinWall + '\nRunning Tests...');
-test(omm, srd);
-console.log(thinWall + '\nTests Done.');
-
-blockStart('Feats');
-const featParser = new FeatParser();
-featParser.run(omm);
-
-blockStart('Classes');
-const classParser = new ClassParser();
-classParser.run(omm);
-
-blockStart('Weapons');
-const weaponParser = new WeaponParser();
-weaponParser.run();
-
-blockStart('Journals');
-const journalParser = new JournalParser();
-journalParser.run(
-    omm,
-    [
-        './rules/',
-        './classes/',
-        './monsters/',
-        './spells/'
-    ],
-    'rules');
-journalParser.run(
-    omm,
-    [
-        './setting/'
-    ],
-    'journals');
-
-console.log(`\n${thickWall}\n${chalk.bold(chalk.green('PROCESSING COMPLETE'))} at ${chalk.gray((new Date()).toString())}\n${thickWall}`);
+main();

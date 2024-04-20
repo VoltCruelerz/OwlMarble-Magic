@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0
+
+- Export to LevelDB for Foundry v11+
+- Paladin: allow ranged smites
+- Goodberry explicit nerf
+
 ## 1.2.1
 
 - Rogue: Reliable Talent + Scaling Sneak Attack Fix

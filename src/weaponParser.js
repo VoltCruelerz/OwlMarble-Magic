@@ -298,7 +298,7 @@ module.exports = class WeaponParser extends Parser {
      * @param {[{}]} spells 
      * @returns 
      */
-    run () {
+    async run () {
         // Parse Weapon Properties
         const propPath = './rules/items/Weapon Properties.md';
         const propText = fs.readFileSync(propPath, { encoding: 'utf-8', flag: 'r'});
@@ -321,8 +321,10 @@ module.exports = class WeaponParser extends Parser {
                     this.boldify(this.italilink(line, propName, i, {})),
                     propPath));
             });
+            const id = this.generateUUID(`${propName} (OwlMarble Magic - Properties)`);
             return {
-                _id: this.generateUUID(`${propName} (OwlMarble Magic - Properties)`),
+                _id: id,
+                _key: '!journal!' + id,
                 name: propName,
                 permission: {
                     default: 2
@@ -384,8 +386,10 @@ module.exports = class WeaponParser extends Parser {
                     let weaponType = (type.includes('Simple') ? 'simple' : 'martial')
                         + (type.includes('Melee') ? 'M' : 'R');
 
+                    const id = this.generateUUID(`${name} (OwlMarble Magic - Weapons)`);
                     return {
-                        _id: this.generateUUID(`${name} (OwlMarble Magic - Weapons)`),
+                        _id: id,
+                        _key: '!items!' + id,
                         name: name,
                         type: 'weapon',
                         img: this.getWeaponImage(name),
@@ -488,6 +492,7 @@ module.exports = class WeaponParser extends Parser {
             'output/owlmagic-srd/weapons.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/weapons.db',
         ]);
+        await this.exportDb(weapons, 'weapons');
 
         return weapons;
     }

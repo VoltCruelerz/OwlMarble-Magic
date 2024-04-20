@@ -13,7 +13,7 @@ module.exports = class RuleParser extends Parser {
      * @param {string[]} outputPaths
      * @returns 
      */
-    run (spells, inputFolders, outputName) {
+    async run (spells, inputFolders, outputName) {
         const spellDict = spells.reduce((acc, spell) => {
             acc[spell.name] = spell;
             return acc;
@@ -104,8 +104,10 @@ module.exports = class RuleParser extends Parser {
                 .join('')// Merge lines.
                 .replaceAll('</blockquote><blockquote>', '');// Merge adjacent block quotes.
 
+            const id = this.generateUUID(`${path} (OwlMarble Magic - Rules)`);
             return {
-                _id: this.generateUUID(`${path} (OwlMarble Magic - Rules)`),
+                _id: id,
+                _key: '!journal!' + id,
                 name: soloName,
                 permission: {
                     default: 2
@@ -131,5 +133,6 @@ module.exports = class RuleParser extends Parser {
             `output/owlmagic-srd/${outputName}.db`,
             `E:/Foundry VTT/Data/modules/owlmarble-magic/packs/${outputName}.db`
         ]);
+        await this.exportDb(journalFiles, 'journals');
     }
 };

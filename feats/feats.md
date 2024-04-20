@@ -130,6 +130,34 @@ You have the makings of a great chief, and your allies revere your strength and 
 - You gain proficiency in one of the following skills of your choice: Deception, Intimidation, or Persuasion.
 - As a bonus action, you can give a command to an ally to reposition itself more favorably. That ally can then use its reaction to move up to its speed.
 
+## Camp Cook [New]
+
+_Requirement: Proficiency in Cook's Utensils_
+
+Your knowledge of natural ingredients and traditional cooking techniques allows you to create meals that provide various benefits to your companions even when food is scarce. You gain the following benefits:
+
+Increase your Constitution or Wisdom score by 1, to a maximum of 20.
+
+Over the course of 3 hours, you can prepare a feast for up to six creatures (including yourself) using your cook's utensils and ingredients you've gathered.
+
+Roll a d4. Consult the table below to see how many benefits your meal can provide.
+
+1. The meal provides nourishment for the day, but no other effects.
+2. The meal provides nourishment for the day and you may choose one of the below benefits.
+3. The meal provides nourishment for the day and you may choose two of the below benefits.
+4. The meal provides nourishment for the day and you may choose three of the below benefits.
+
+### Benefits
+
+- **Fortifying**: Each creature that consumes the meal gains temporary hit points equal to 1d6 + your proficiency bonus.
+- **Energizing**: Each creature that consumes the meal gains a +5 foot bonus to their speed for the next 24 hours.
+- **Bolstering**: Each creature that consumes the meal gains a +1 bonus to their AC for the next 24 hours.
+- **Lucky**: Each creature that consumes the meal gains a 1d4 that they can apply to one skill check within the next 24 hours.
+- **Nourishing**: Select a saving throw. Each creature that consumes the meal gains advantage on that saving throw for 24 hours.
+- **Filling**: Each creature that consumes the meal can take one portion of leftovers which can only be used to eat the next day. The leftovers have lost their luster and do not provide any additional beneficial effects, only nourishment.
+
+Once you create this feast, you cannot do so again until you finish a long rest.
+
 ## Chaos-Touched [New]
 
 Your exposure to the fluid nature of Limbo has altered you, granting you the following benefits:

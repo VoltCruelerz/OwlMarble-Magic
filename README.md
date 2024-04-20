@@ -2,7 +2,7 @@
 
 > 5E Compatible
 
-Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew rules into FoundryVTT to function as the single source of truth.
+Made on behalf of, and in collaboration with, [u/TheOwlMarble](https://www.reddit.com/user/TheOwlMarble) to ease the import of their homebrew rules into FoundryVTT [v11+](https://www.reddit.com/r/FoundryVTT/comments/17swx98/foundry_leveldb/) to function as the single source of truth.
 
 ## Packs
 
@@ -39,6 +39,7 @@ See dedicated [page](./feats/feats.md).
 - [Druid](./classes/druid/Druid.md)
 - [Fighter](./classes/fighter/Fighter.md)
 - [Monk](./classes/monk/Monk.md)
+- [Paladin](./classes/paladin/Paladin.md)
 - [Psion](./classes/psion/Psion.md)
 - [Ranger](./classes/ranger/Ranger.md)
 - [Rogue](./classes/rogue/Rogue.md)
