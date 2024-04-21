@@ -2,11 +2,22 @@
 
 ## Paladin Features
 
-### Divine Smite - 2 [Updated]
+### Paladin's Smite - 2 [New]
 
-When you hit a creature with a weapon attack, you can expend one spell slot to increase the weapon's damage with supplemental radiant damage.
+_replaces Divine Smite_
 
-- If the attack was ranged, the extra damage is equal to a number of d6s equal to 1 + the spell's level, to a maximum of 5.
-- If the attack was ranged, the extra damage is equal to a number of d8s equal to 1 + the spell's level, to a maximum of 5.
+You have mastered smiting your targets with divine energy. Select a number of the below Smite spells equal to your Charisma modifier to always have prepared, not counting against your number of prepared spells. You can change your selection every time you complete a long rest.
 
-An additional die is applied if the target is undead or a fiend, to a maximum of 6.
+In addition you may cast a Smite spell using this feature once at the level of your highest level spell slot. Once you have done so, you must complete a Long Rest before you can do so again.
+
+#### Smite Spells
+
+| Paladin Level | Spells |
+|:--------------|:-------|
+| 2nd | _Divine Smite_, _Searing Smite_, _Thunderous Smite_, _Wrathful Smite_ |
+| 5th | _Shining Smite_ |
+| 9th | _Blinding Smite_ |
+| 13th | _Staggering Smite_ |
+| 17th | _Banishing Smite_ |
+
+> **Note**: All of these spells are Bonus Actions, so they can coincide with gish spells such as _Radiant Mark_.

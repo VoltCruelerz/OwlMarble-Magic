@@ -18,8 +18,9 @@ module.exports = class SpellParser extends Parser {
     /**
      * If the spell has overriden fields in `parseOverrides.json`, replace them here.  If the override is outdated, warn the user.
      * @param {{*}} spell 
+     * @param {string} src 
      */
-    overrideSpell (spell) {
+    overrideSpell (spell, src) {
         const softWall = chalk.gray('─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ');
               
         // Handle manual override substitutions.
@@ -29,8 +30,9 @@ module.exports = class SpellParser extends Parser {
             const fields = Object.keys(overData);
             fields.forEach((field) => {
                 const overField = overData[field];
-                if (JSON.stringify(overField.old) !== JSON.stringify(spellData[field])) {
-                    console.error(`${softWall}\nWARNING - Outdated Override for ${spell.name}'s ${field}\n- Expected: ${JSON.stringify(overField.old)}\n-    Found: ${JSON.stringify(spellData[field])}\n${softWall}`);
+                const targetField = JSON.stringify(overField[src.toLowerCase()] || overField.old);
+                if (targetField !== JSON.stringify(spellData[field])) {
+                    console.warn(chalk.yellow(`${softWall}\nWARNING - Outdated Override for ${src} L${spell.data.level} ${spell.name}'s ${field}\n- Expected: ${targetField}\n-    Found: ${JSON.stringify(spellData[field])}\n${softWall}`));
                 }
                 spellData[field] = overField.new;
             });
@@ -283,6 +285,9 @@ module.exports = class SpellParser extends Parser {
         const name = lines[0];
         try {
             let oldName = undefined;
+            if (lines[1].includes('_Replaces ')) {
+                throw new Error(chalk.red(name + ' should have had "_replaces", not "_Replaces"'));
+            }
             const replacementMatch = lines[1].match(/_replaces (.*?)_/);
             if (replacementMatch) {
                 oldName = replacementMatch[1];
@@ -361,7 +366,7 @@ module.exports = class SpellParser extends Parser {
                 spell.oldName = oldName;
             }
 
-            this.overrideSpell(spell);
+            this.overrideSpell(spell, 'OMM');
 
             return spell;
         } catch (e) {
@@ -1288,7 +1293,7 @@ module.exports = class SpellParser extends Parser {
                         'owlmarble-magic': {}
                     }
                 };                
-                this.overrideSpell(importedSpell);
+                this.overrideSpell(importedSpell, spell.source);
                 parsed.push(importedSpell);
             } catch (e) {
                 console.error(this.thinWall + '=========\nFailure on ' + spell.name);

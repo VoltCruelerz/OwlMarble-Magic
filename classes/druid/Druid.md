@@ -131,7 +131,7 @@ ___
 
 ### Circle of the Earth [Updated]
 
-_Replaces Circle of the Land_
+_replaces Circle of the Land_
 
 As a member of this circle, your magic is influenced by the biome where you were initiated into the circle's mysterious rites. Select one of the following environments: Arctic, Coast, Desert, Forest, Grassland, Mountain, Ocean, Swamp, Underdark, or Volcano.
 

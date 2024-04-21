@@ -18,7 +18,7 @@ Starting at 5th level, when you cast a damaging cantrip with a grade higher than
 
 ### Mystic Gift [New]
 
-_Replaces Mystic Arcanum_
+_replaces Mystic Arcanum_
 
 At 11th level, and again at levels 13, 15, and 17, your patron bestow gifts upon you. At each of these levels, choose one of the following options:
 

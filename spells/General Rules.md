@@ -39,3 +39,12 @@ A translocation effect is any effect that instantaneously (or at least instantan
 - A revealed Figment or Glamor does not dissipate, become faint, sound hollow, or otherwise degrade unless otherwise specified in the spell.
 - If a creature has Truesight, the creature automatically knows if there is an illusion in its field of view and can perceive both the illusion and anything hidden by it.  It behaves as if it has already succeeded on the investigation check.
 - A Figment or Glamor may be reinforced by shadow material from the Shadowfell and so become semi-real.  Such an illusion becomes known as a Shadow and holds up to physical inspection, taking on all properties of the emulated object or creature, but remains totally controlled by its creator.  Shadows cannot be used as spell components.  If a shadow is reduced to zero hit points, it dissipatess.
+
+## Strike Attack
+
+The following are all strikes:
+
+- A melee weapon attack
+- A ranged weapon attack
+- A thrown weapon attack
+- An unarmed strike attack

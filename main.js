@@ -80,6 +80,8 @@ const main = async () => {
                 const cmd = `${path}/Foundry Virtual Tabletop.exe`;
                 console.log('Executing ' + cmd);
                 spawn(cmd, ['&'], { detached: true }).unref();
+                console.log('OMM Parser will exit on its own shortly...');
+                setTimeout(() => process.exit(), 10000);
             }
         });
     }

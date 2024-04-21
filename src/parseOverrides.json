@@ -1,14 +1,34 @@
 {
-    "Cure Wounds": {
+    "Banishing Smite": {
         "damage": {
-            "old": {"parts":[["1d8","healing"]],"versatile":"","value":""},
-            "new": {"parts":[["1d8 + @mod","healing"]],"versatile":""}
+            "phb": {"parts":[["5d10","force"]],"versatile":"","value":""},
+            "omm": {"parts":[["5d10","force"],["5d8","force"]],"versatile":"","value":""},
+            "new": {"parts":[["5d10[melee]","force"],["5d8[ranged]","force"]],"versatile":""}
+        }
+    },
+    "Blinding Smite": {
+        "damage": {
+            "phb": {"parts":[["3d8","radiant"]],"versatile":"","value":""},
+            "omm": {"parts":[["3d8","radiant"],["3d6","radiant"]],"versatile":"","value":""},
+            "new": {"parts":[["3d8[melee]","radiant"],["3d6[ranged]","radiant"]],"versatile":""}
         }
     },
     "Chaos Bolt": {
         "damage": {
             "old": {"parts":[],"versatile":"","value":""},
             "new": {"parts":[["2d8 + 1d6",""]],"versatile":""}
+        }
+    },
+    "Cure Wounds": {
+        "damage": {
+            "old": {"parts":[["1d8","healing"]],"versatile":"","value":""},
+            "new": {"parts":[["1d8 + @mod","healing"]],"versatile":""}
+        }
+    },
+    "Divine Smite": {
+        "damage": {
+            "old": {"parts":[["2d8","radiant"],["2d6","radiant"]],"versatile":"","value":""},
+            "new": {"parts":[["2d8[melee]","radiant"],["2d6[ranged]","radiant"]],"versatile":""}
         }
     },
     "Endless Sword": {
@@ -59,6 +79,19 @@
         "damage": {
             "old": {"parts":[["2d8","healing"]],"versatile":"","value":""},
             "new": {"parts":[["2d8 + @mod","healing"]],"versatile":""}
+        }
+    },
+    "Searing Smite": {
+        "damage": {
+            "phb": {"parts":[["1d6","fire"],["1d6","fire"]],"versatile":"","value":""},
+            "omm": {"parts":[["1d6","fire"],["1d4","fire"]],"versatile":"","value":""},
+            "new": {"parts":[["1d6[melee]","fire"],["1d4[ranged]","fire"]],"versatile":""}
+        }
+    },
+    "Shining Smite": {
+        "damage": {
+            "old": {"parts":[["2d6","radiant"],["2d4","radiant"]],"versatile":"","value":""},
+            "new": {"parts":[["2d6[melee]","radiant"],["2d4[ranged]","radiant"]],"versatile":"","value":""}
         }
     },
     "Sleep": {

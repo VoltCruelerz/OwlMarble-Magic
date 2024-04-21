@@ -13,10 +13,11 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Anchor](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#anchor) - V/S/M [C] - (OMM - 0)
 - [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
-- [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
+- [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) - S/M - (OMM - 0)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#control-flames) - S - (OMM - 0)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) - V/S [C] - (XGE - 152)
 - [Fire Bolt](https://www.dndbeyond.com/spells/fire-bolt) - V/S - (PHB - 242)
+- [Frigid Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#frigid-blade) - S/M - (OMM - 0)
 - [Frostbite](https://www.dndbeyond.com/spells/frostbite) - V/S - (XGE - 156)
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/green-flame-blade) - S/M$ - (TCE - 107)
 - [Hold Portal](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#hold-portal) - V - (OMM - 0)
@@ -468,7 +469,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Sending](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#sending) - V/S/M - (OMM - 3)
 - [Speak with Dead](https://www.dndbeyond.com/spells/speak-with-dead) - V/S/M - (PHB - 277)
 - [Spectacular Mane](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#spectacular-mane) - V/S/M$ - (OMM - 3)
-- [Spirit Guardians](https://www.dndbeyond.com/spells/spirit-guardians) - V/S/M [C] - (PHB - 278)
+- [Spirit Guardians](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#spirit-guardians) - V/S/M [C] - (OMM - 3)
 - [Spirit Shroud](https://www.dndbeyond.com/spells/spirit-shroud) - V/S [C] - (TCE - 108)
 - [Springstone](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#springstone) - V/S/M$ [R] - (OMM - 3)
 - [Teleport Object](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#teleport-object) - V/S/M$X - (OMM - 3)
@@ -845,6 +846,9 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Cantrip - _Paladin_
 
+- [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
+- [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) - S/M - (OMM - 0)
+- [Frigid Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#frigid-blade) - S/M - (OMM - 0)
 - [Radiant Mark](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#radiant-mark) - V/S - (OMM - 0)
 - [Thaumaturgy](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#thaumaturgy) - V - (OMM - 0)
 
@@ -859,20 +863,20 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Detect Evil and Good](https://www.dndbeyond.com/spells/detect-evil-and-good) - V/S [C] - (PHB - 231)
 - [Detect Poison and Disease](https://www.dndbeyond.com/spells/detect-poison-and-disease) - V/S/M [R] [C] - (PHB - 231)
 - [Divine Favor](https://www.dndbeyond.com/spells/divine-favor) - V/S [C] - (PHB - 234)
+- [Divine Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#divine-smite) - V - (OMM - 1)
 - [Heroism](https://www.dndbeyond.com/spells/heroism) - V/S [C] - (PHB - 250)
 - [Protection from Evil and Good](https://www.dndbeyond.com/spells/protection-from-evil-and-good) - V/S/M [C] - (PHB - 270)
 - [Purify Food and Drink](https://www.dndbeyond.com/spells/purify-food-and-drink) - V/S [R] - (PHB - 270)
-- [Searing Smite](https://www.dndbeyond.com/spells/searing-smite) - V [C] - (PHB - 274)
+- [Searing Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#searing-smite) - V - (OMM - 1)
 - [Shield of Faith](https://www.dndbeyond.com/spells/shield-of-faith) - V/S/M [C] - (PHB - 275)
-- [Thunderous Smite](https://www.dndbeyond.com/spells/thunderous-smite) - V [C] - (PHB - 282)
-- [Wrathful Smite](https://www.dndbeyond.com/spells/wrathful-smite) - V [C] - (PHB - 289)
+- [Thunderous Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#thunderous-smite) - V - (OMM - 1)
+- [Wrathful Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#wrathful-smite) - V - (OMM - 1)
 
 ### Level 2 - _Paladin_
 
 - [Adamantine Weapon](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#adamantine-weapon) - V/S/M [C] - (OMM - 2)
 - [Aid](https://www.dndbeyond.com/spells/aid) - V/S/M - (PHB - 211)
 - [Ancestral Blessing](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#ancestral-blessing) - V/S/M - (OMM - 2)
-- [Branding Smite](https://www.dndbeyond.com/spells/branding-smite) - V [C] - (PHB - 219)
 - [Find Steed](https://www.dndbeyond.com/spells/find-steed) - V/S - (PHB - 240)
 - [Gentle Repose](https://www.dndbeyond.com/spells/gentle-repose) - V/S/M [R] - (PHB - 245)
 - [Lesser Restoration](https://www.dndbeyond.com/spells/lesser-restoration) - V/S - (PHB - 255)
@@ -880,6 +884,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Magic Weapon](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#magic-weapon) - V/S - (OMM - 2)
 - [Prayer of Healing](https://www.dndbeyond.com/spells/prayer-of-healing) - V - (PHB - 267)
 - [Protection from Poison](https://www.dndbeyond.com/spells/protection-from-poison) - V/S - (PHB - 270)
+- [Shining Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#shining-smite) - V [C] - (OMM - 2)
 - [Summon Ancestral Spirit](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/02.md#summon-ancestral-spirit) - V/S/M$ [C] - (OMM - 2)
 - [Warding Bond](https://www.dndbeyond.com/spells/warding-bond) - V/S/M$ - (PHB - 287)
 - [Zone of Truth](https://www.dndbeyond.com/spells/zone-of-truth) - V/S - (PHB - 289)
@@ -887,7 +892,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 ### Level 3 - _Paladin_
 
 - [Aura of Vitality](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#aura-of-vitality) - V [C] - (OMM - 3)
-- [Blinding Smite](https://www.dndbeyond.com/spells/blinding-smite) - V [C] - (PHB - 219)
+- [Blinding Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#blinding-smite) - V - (OMM - 3)
 - [Create Food and Water](https://www.dndbeyond.com/spells/create-food-and-water) - V/S - (PHB - 229)
 - [Crusader's Mantle](https://www.dndbeyond.com/spells/crusader's-mantle) - V [C] - (PHB - 230)
 - [Daylight](https://www.dndbeyond.com/spells/daylight) - V/S - (PHB - 230)
@@ -896,6 +901,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Remove Curse](https://www.dndbeyond.com/spells/remove-curse) - V/S - (PHB - 271)
 - [Revivify](https://www.dndbeyond.com/spells/revivify) - V/S/M$X - (PHB - 272)
 - [Spectacular Mane](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#spectacular-mane) - V/S/M$ - (OMM - 3)
+- [Spirit Guardians](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#spirit-guardians) - V/S/M [C] - (OMM - 3)
 - [Spirit Shroud](https://www.dndbeyond.com/spells/spirit-shroud) - V/S [C] - (TCE - 108)
 
 ### Level 4 - _Paladin_
@@ -907,12 +913,12 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Find Greater Steed](https://www.dndbeyond.com/spells/find-greater-steed) - V/S - (XGE - 156)
 - [Isabelle's Steelmantle](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/04.md#isabelles-steelmantle) - V - (OMM - 4)
 - [Locate Creature](https://www.dndbeyond.com/spells/locate-creature) - V/S/M [C] - (PHB - 256)
-- [Staggering Smite](https://www.dndbeyond.com/spells/staggering-smite) - V [C] - (PHB - 278)
+- [Staggering Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/04.md#staggering-smite) - V - (OMM - 4)
 - [Storm Spear](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/04.md#storm-spear) - V/S/M - (OMM - 4)
 
 ### Level 5 - _Paladin_
 
-- [Banishing Smite](https://www.dndbeyond.com/spells/banishing-smite) - V [C] - (PHB - 216)
+- [Banishing Smite](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/05.md#banishing-smite) - V - (OMM - 5)
 - [Circle of Power](https://www.dndbeyond.com/spells/circle-of-power) - V [C] - (PHB - 221)
 - [Destructive Wave](https://www.dndbeyond.com/spells/destructive-wave) - V - (PHB - 231)
 - [Dispel Evil and Good](https://www.dndbeyond.com/spells/dispel-evil-and-good) - V/S/M [C] - (PHB - 233)
@@ -948,6 +954,10 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ## Ranger
 
+### Cantrip - _Ranger_
+
+- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade) - V/S/M - (OMM - 0)
+
 ### Level 1 - _Ranger_
 
 - [Absorb Elements](https://www.dndbeyond.com/spells/absorb-elements) - S - (XGE - 150)
@@ -964,7 +974,6 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Hunter's Mark](https://www.dndbeyond.com/spells/hunter's-mark) - V [C] - (PHB - 251)
 - [Jump](https://www.dndbeyond.com/spells/jump) - V/S/M - (PHB - 254)
 - [Longstrider](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#longstrider) - V/S/M - (OMM - 1)
-- [Searing Smite](https://www.dndbeyond.com/spells/searing-smite) - V [C] - (PHB - 274)
 - [Snare](https://www.dndbeyond.com/spells/snare) - S/M - (XGE - 165)
 - [Speak with Animals](https://www.dndbeyond.com/spells/speak-with-animals) - V/S [R] - (PHB - 277)
 - [Warp Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#warp-strike) - S - (OMM - 1)
@@ -1042,13 +1051,14 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Acid Splash](https://www.dndbeyond.com/spells/acid-splash) - V/S - (PHB - 211)
 - [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
-- [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
+- [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) - S/M - (OMM - 0)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) - V/S - (PHB - 221)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#control-flames) - S - (OMM - 0)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) - V/S [C] - (XGE - 152)
 - [Dancing Lights](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#dancing-lights) - V/S/M [C] - (OMM - 0)
 - [Fire Bolt](https://www.dndbeyond.com/spells/fire-bolt) - V/S - (PHB - 242)
 - [Friends](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#friends) - S/M [C] - (OMM - 0)
+- [Frigid Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#frigid-blade) - S/M - (OMM - 0)
 - [Frostbite](https://www.dndbeyond.com/spells/frostbite) - V/S - (XGE - 156)
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/green-flame-blade) - S/M$ - (TCE - 107)
 - [Gust](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#gust) - V/S - (OMM - 0)
@@ -1387,11 +1397,12 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blacksteel) - S/M - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
-- [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
+- [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) - S/M - (OMM - 0)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) - V/S - (PHB - 221)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) - V/S [C] - (XGE - 152)
 - [Eldritch Blast](https://www.dndbeyond.com/spells/eldritch-blast) - V/S - (PHB - 237)
 - [Friends](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#friends) - S/M [C] - (OMM - 0)
+- [Frigid Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#frigid-blade) - S/M - (OMM - 0)
 - [Frostbite](https://www.dndbeyond.com/spells/frostbite) - V/S - (XGE - 156)
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/green-flame-blade) - S/M$ - (TCE - 107)
 - [Infestation](https://www.dndbeyond.com/spells/infestation) - V/S/M - (XGE - 158)
@@ -1623,13 +1634,14 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Backlash Dervish](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#backlash-dervish) - V/S/M - (OMM - 0)
 - [Befoul](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#befoul) - V - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blade-ward) - V/S - (OMM - 0)
-- [Booming Blade](https://www.dndbeyond.com/spells/booming-blade) - S/M$ - (TCE - 106)
+- [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) - S/M - (OMM - 0)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) - V/S - (PHB - 221)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#control-flames) - S - (OMM - 0)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) - V/S [C] - (XGE - 152)
 - [Dancing Lights](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#dancing-lights) - V/S/M [C] - (OMM - 0)
 - [Fire Bolt](https://www.dndbeyond.com/spells/fire-bolt) - V/S - (PHB - 242)
 - [Friends](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#friends) - S/M [C] - (OMM - 0)
+- [Frigid Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#frigid-blade) - S/M - (OMM - 0)
 - [Frostbite](https://www.dndbeyond.com/spells/frostbite) - V/S - (XGE - 156)
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/green-flame-blade) - S/M$ - (TCE - 107)
 - [Gust](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#gust) - V/S - (OMM - 0)
