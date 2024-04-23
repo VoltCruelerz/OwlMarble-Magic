@@ -1,5 +1,19 @@
 # Fighting Styles
 
+## Blessed Warrior [New]
+
+**Classes**: Paladin
+
+You learn two cantrips of your choice that are among the Blessed Cantrips listed below. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.
+
+### Blessed Cantrips
+
+- All cleric cantrips
+- _Green Flame Blade_
+- _Booming Blade_
+- _Frigid Blade_
+- _Backlash Dervish_
+
 ## Equestrian [New]
 
 **Classes**: Fighter, Ranger

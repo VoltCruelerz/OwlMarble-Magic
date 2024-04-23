@@ -13,7 +13,7 @@ module.exports = class RuleParser extends Parser {
      * @param {string[]} outputPaths
      * @returns 
      */
-    async run (spells, inputFolders, outputName) {
+    async run (spells, inputFolders, outputName, dataPath) {
         const spellDict = spells.reduce((acc, spell) => {
             acc[spell.name] = spell;
             return acc;
@@ -133,6 +133,6 @@ module.exports = class RuleParser extends Parser {
             `output/owlmagic-srd/${outputName}.db`,
             `E:/Foundry VTT/Data/modules/owlmarble-magic/packs/${outputName}.db`
         ]);
-        return await this.exportDb(journalFiles, 'journals');
+        return await this.exportDb(journalFiles, 'journals', dataPath);
     }
 };

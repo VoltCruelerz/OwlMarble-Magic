@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const seedrandom = require('seedrandom');
 const chalk = require('chalk');
+const ProgressBar = require('./ProgressBar');
 
 module.exports = class Parser {
     constructor () {
@@ -383,10 +384,28 @@ module.exports = class Parser {
     //#endregion
 
     //#region I/O
-    async isRunning () {
+    /**
+     * Gets Foundry's Process ID, or -1 if not found.
+     * @returns {Promise<number>} -1 or a PID
+     */
+    static async getFoundryPID() {
         const cmd = 'tasklist /fo csv';
         const { stdout } = await exec(cmd);
-        return stdout.toLowerCase().includes('foundry virtual tabletop.exe');
+        const stripQuotes = (str) => str.substr(1, str.length - 2);
+        const rows = stdout.toLowerCase().split('\n').map(row => row.split(',').map(stripQuotes));
+        for (let i = 0; i < rows.length; i++) {
+            const row = rows[i];
+            if (row[0] === 'foundry virtual tabletop.exe') {
+                return row[1];
+            }
+        }
+        return -1;
+    }
+
+    static async attempt (cmd) {
+        const result = await exec(cmd);
+        if (result.stderr.length > 0) throw new Error(`Export Command Failed:\n$ ${cmd}\n` + result.stderr);
+        return result.stdout;
     }
 
     /**
@@ -395,62 +414,53 @@ module.exports = class Parser {
      * @param {string[]} paths
      */
     printDb (items, paths) {
-        console.log(`Printing to ${paths.length} files`);
-        paths.forEach((path) => {
+        console.log(`Printing to ${paths.length} .db files`);
+        const pgb = new ProgressBar(40);
+        pgb.str('.db');
+        paths.forEach((path, i) => {
+            pgb.set(i / paths.length);
             const lines = items.map((item) => JSON.stringify(item));
             const db = lines.join('\n') + '\n';
             fs.writeFileSync(path, db);
         });
+        pgb.set(1);
     }
 
     /**
      * Prints the json objects to a Level db.
-     * @param {[{}]} entries
-     * @param {string} compendium
-     * @param {boolean} TRUE if exported, FALSE if not.
+     * @param {[{}]} entries - the rows to export
+     * @param {string} compendium - the name of the compendium folder
+     * @param {string} dataPath - the directory where the foundry Data folder is
+     * @param {Promise<boolean>} - TRUE if exported, FALSE if not.
      */
-    async exportDb (entries, compendium) {
-        console.log(`Exporting to to ${compendium}`);
-        if (await this.isRunning()) {
+    async exportDb (entries, compendium, dataPath) {
+        console.log(`Exporting ${entries.length} rows to LevelDB "${compendium}"`);
+        if (await Parser.getFoundryPID() > -1) {
             console.warn(chalk.yellow(`[WARNING] - Foundry is currently running, so export to "${compendium}" will not occur.`));
             return false;
         }
-
-        const attempt = async (cmd) => {
-            const result = await exec(cmd);
-            if (result.stderr.length > 0) throw new Error(`Export Command Failed:\n$ ${cmd}\n` + result.stderr);
-            return result.stdout;
-        };
 
         const sanitize = (str) => {
             str = str.replace(/\W/g, '_');
             return str;
         };
 
+        const pgb = new ProgressBar(40);
+        pgb.str(compendium);
         try {
-            await attempt('fvtt configure');
-            const dataPath = (await attempt('fvtt configure get dataPath')).split('\n')[0];
-
-            await attempt('fvtt package workon "owlmarble-magic"');
-            
-            await attempt(`fvtt package unpack "${compendium}"`);
-            
-            // Purge old versions
             const exportDir = `${dataPath}/Data/modules/owlmarble-magic/packs/${compendium}/_source`;
-            const oldFiles = fs.readdirSync(exportDir);
-            oldFiles.forEach(oldFile => fs.unlinkSync(exportDir + '/' + oldFile));
-
-            entries.forEach(entry => {
+            entries.forEach((entry, i) => {
+                pgb.set(i / entries.length);
                 const path = `${exportDir}/${sanitize(entry.name)}_${entry._id}.json`;
-                // console.log(chalk.gray(`- Exporting to "${path}"`));
-                const data = JSON.stringify(entry, null, 4);
-                fs.writeFileSync(path, data, 'utf8');
+                fs.writeFileSync(path, JSON.stringify(entry), 'utf8');
             });
             
             const pack = await exec(`fvtt package pack "${compendium}"`);
             if (pack.stderr.length > 0) throw new Error(pack.stderr);
+            pgb.set(1);
         }
         catch (err) {
+            pgb.set(1);
             console.error(chalk.bgRed(`Failed to Export "${compendium}"`));
             console.error(chalk.red(err));
             return false;

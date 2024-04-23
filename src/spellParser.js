@@ -174,10 +174,10 @@ module.exports = class SpellParser extends Parser {
      * @param {[{}]} oldSpells
      * @param {[{}]} newSpells
      * @param {string} path
-     * @param {boolean} shouldExport 
-     * @returns {boolean} didExport
+     * @param {string} exportDir 
+     * @returns {Promise<boolean>} didExport
      */
-    async printSpells (oldSpells, newSpells, path, shouldExport) {
+    async printSpells (oldSpells, newSpells, path, exportDir) {
         console.log('Printing to: ' + path);
 
         // Build dictionary.
@@ -227,8 +227,8 @@ module.exports = class SpellParser extends Parser {
         fs.writeFileSync(path, db);
 
         // Export.
-        if (shouldExport) {
-            return await this.exportDb(newSpells, 'spells');
+        if (exportDir !== '') {
+            return await this.exportDb(newSpells, 'spells', exportDir);
         }
         return false;
     }
@@ -476,8 +476,13 @@ module.exports = class SpellParser extends Parser {
     italicize (line) {
         const count = (line.match(/_/g) || []).length;
         if (count % 2 !== 0) {
-            // We have an odd number, so don't even try to format this.  It would just get weird.
-            console.log(chalk.yellow('Weird line found during italicization: ' + line));
+            // We have an odd number, so don't even try to format this. It would just get weird.
+            const knownWeirdLines = [
+                '<p><strong>Source</strong>: [Empyreal Worlds](https://www.reddit.com/r/DnDHomebrew/comments/p47mrf/dark_dilemma_a_9thlevel_warlock_spells_doom_your/)</p>'
+            ];
+            if (!knownWeirdLines.includes(line)) {
+                console.log(chalk.yellow('Weird line found during italicization: ' + line));
+            }
             return line;
         }
         while (line.includes('_')) {
@@ -1559,8 +1564,9 @@ module.exports = class SpellParser extends Parser {
      * Exports the spell lists for each class.
      * @param {[{*}]} spells 
      * @param {{*}} indices
+     * @param {Promise<string>} dataPath 
      */
-    async exportSpellLists (spells, indices) {
+    async exportSpellLists (spells, indices, dataPath) {
         const wall = (this.thinWall + '');
         console.log(wall + '\nExporting Class Spell Lists...');
         const classes = Object.keys(spells.reduce((acc, spell) => {
@@ -1685,7 +1691,7 @@ module.exports = class SpellParser extends Parser {
         });
         fs.writeFileSync('spells/class-lists/lists.db', dbLines.join('\n'));
         fs.writeFileSync('E:/Foundry VTT/Data/modules/owlmarble-magic/packs/lists.db', dbLines.join('\n'));
-        await this.exportDb(dbRows, 'lists');
+        await this.exportDb(dbRows, 'lists', dataPath);
     }
 
     /**
@@ -1806,43 +1812,44 @@ module.exports = class SpellParser extends Parser {
 
     /**
      * Parse.
-     * @returns {omm: [{*}], srd: [{*}]}
+     * @param {string} dataPath export data path
+     * @returns {Promise<{omm: [{}]; srd: [{}]}>}
      */
-    run () {
+    async run (dataPath) {
         // Index the spells and synchronize any links.
         const indices = this.indexSpellsAndMonsters();
         this.updateReferences(indices);
 
         // Homebrew Only
         const homebrew = this.readAndParseInputFiles();
-        this.printSpells(this.readSpellDB('output/owlmagic-only/spells.db'), homebrew, 'output/owlmagic-only/spells.db', false);
+        await this.printSpells(this.readSpellDB('output/owlmagic-only/spells.db'), homebrew, 'output/owlmagic-only/spells.db', '');
 
         // SRD + Homebrew
         const srd = this.readSpellDB('srd/srd.db');
         srd.forEach((srdSpell) => { srdSpell.img = this.getImage(this.decodeSchool(srdSpell.data.school)); });
-        this.printSpells(this.readSpellDB('output/owlmagic-srd/spells.db'), this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db', false);
+        await this.printSpells(this.readSpellDB('output/owlmagic-srd/spells.db'), this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db', '');
 
         // Publishable
-        this.printSpells(this.readSpellDB('packs/spells.db'), this.mergeSpellLists(srd, homebrew), 'packs/spells.db', false);
+        await this.printSpells(this.readSpellDB('packs/spells.db'), this.mergeSpellLists(srd, homebrew), 'packs/spells.db', '');
 
         // Imported only
         const imported = this.readAndParseImportedSpells();
         this.sortSpellList(imported);
-        this.printSpells(this.readSpellDB('output/imported/spells.db'), imported, 'output/imported/spells.db', false);
+        await this.printSpells(this.readSpellDB('output/imported/spells.db'), imported, 'output/imported/spells.db', '');
 
         // Homebrew + Imported
         const allSpells = this.mergeSpellLists(imported, homebrew);
         const oldSpells = this.readSpellDB('output/all/spells.db');
-        this.printSpells(oldSpells, allSpells, 'output/all/spells.db', false);
+        await this.printSpells(oldSpells, allSpells, 'output/all/spells.db', '');
 
         // Export the spell lists for all included classes.
-        this.exportSpellLists(allSpells, indices);
+        await this.exportSpellLists(allSpells, indices, dataPath);
         this.exportCompendiumBrowser(allSpells, 'output/spell-classes.json');
         this.exportCompendiumBrowser(allSpells, 'E:/Foundry VTT/Data/modules/compendium-browser/spell-classes.json');
 
         // Export all to current foundry install.
         console.log(this.thinWall + '\nExporting spells to foundry install...');
-        const exportSuccess = this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db', true);
+        const exportSuccess = await this.printSpells(oldSpells, allSpells, 'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/spells.db', dataPath);
 
         // Log differences to spells.
         this.logDiff(oldSpells, allSpells);

@@ -298,7 +298,7 @@ module.exports = class WeaponParser extends Parser {
      * @param {[{}]} spells 
      * @returns 
      */
-    async run () {
+    async run (dataPath) {
         // Parse Weapon Properties
         const propPath = './rules/items/Weapon Properties.md';
         const propText = fs.readFileSync(propPath, { encoding: 'utf-8', flag: 'r'});
@@ -492,6 +492,6 @@ module.exports = class WeaponParser extends Parser {
             'output/owlmagic-srd/weapons.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/weapons.db',
         ]);
-        return await this.exportDb(weapons, 'weapons');
+        return await this.exportDb(weapons, 'weapons', dataPath);
     }
 };

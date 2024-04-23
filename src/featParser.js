@@ -11,7 +11,7 @@ module.exports = class FeatParser extends Parser {
      * @param {[{}]} spells 
      * @returns 
      */
-    async run (spells) {
+    async run (spells, dataPath) {
         const spellDict = spells.reduce((acc, spell) => {
             acc[spell.name] = spell;
             return acc;
@@ -186,6 +186,6 @@ module.exports = class FeatParser extends Parser {
             'output/owlmagic-srd/feats.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/feats.db',
         ]);
-        return await this.exportDb(feats, 'feats');
+        return await this.exportDb(feats, 'feats', dataPath);
     }
 };

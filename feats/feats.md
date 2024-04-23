@@ -379,6 +379,12 @@ You have studied languages, communication, and codes extensively, gaining the fo
 - You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it.
 - Over the course of an hour of engaging with a creature that knows at least one language, you can learn to communicate with them, even if you do not share a language with them. This communication is limited, and cannot communicate words longer than 5 letters that are not proper nouns.
 
+## Magic Initiate [Updated]
+
+You learn two cantrips of your choice and a 1st-level spell from a class's spell list. Using this feat, you can cast the spell once, but you must finish a long rest before you can cast it in this way again.
+
+Your spellcasting ability for these spells reflects the class selected, which you increase by 1, to a maximum of 20.
+
 ## Magically Armored [KeoniKoa]
 
 You’ve become incredibly adept at protecting yourself with magical forces. When a spell cast by an ally modifies your armor class, grants you resistance to a damage type, increases your maximum hit points, or grants you temporary hit points, you have the following benefits:
