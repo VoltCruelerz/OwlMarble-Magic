@@ -123,7 +123,7 @@ Parser.getFoundryPID()
                     setTimeout(main, 1000);
                 },
                 main,
-                'y', 10000);
+                'n', 10000);
         } else {
             main();
         }

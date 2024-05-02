@@ -12,12 +12,12 @@ In addition you may cast a Smite spell using this feature once at the level of y
 
 #### Smite Spells
 
-| Paladin Level | Spells |
-|:--------------|:-------|
-| 2nd | _Divine Smite_, _Searing Smite_, _Thunderous Smite_, _Wrathful Smite_ |
-| 5th | _Shining Smite_ |
-| 9th | _Blinding Smite_ |
-| 13th | _Staggering Smite_ |
-| 17th | _Banishing Smite_ |
+| Paladin Level | Spell Level | Spells |
+|:--------------|:-------|:------|
+| 2nd | 1st | _Divine Smite_, _Searing Smite_, _Thunderous Smite_, _Wrathful Smite_ |
+| 5th | 2nd | _Shining Smite_, _Ensnaring Smite_ |
+| 9th | 3rd | _Blinding Smite_, _Fulgurous Smite_ |
+| 13th | 4th | _Staggering Smite_, _Profane Smite_ |
+| 17th | 5th | _Banishing Smite_, _Pestilent Smite_ |
 
 > **Note**: All of these spells are Bonus Actions, so they can coincide with gish spells such as _Radiant Mark_.

@@ -2,7 +2,7 @@
 
 ## Wilderness Resting
 
-When the party travels through the wilderness and must make camp daily to rest, they can run into challenges resting properly.  When the party would finish a long rest, the PCs perform a group survival check with a DC detailed below.  On a success, they long rest as normal.  On a failure, the party benefits from a short rest only, although provided they slept or tranced a sufficient amount, they do not take a level of exhaustion that would ordinarily be imposed for not completing a long rest.
+When the party travels through the wilderness and must make camp daily to rest, they can run into challenges resting properly.  When the party would finish a long rest, the PCs perform a group survival check with a DC detailed below, based on the number of man hours the spend securing their camp.  On a success, they short rest as normal.  On a failure, the party benefits from a sleep only.
 
 `DC = zoneHostility - floor(manHours/partySize)`
 

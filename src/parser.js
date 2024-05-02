@@ -414,9 +414,8 @@ module.exports = class Parser {
      * @param {string[]} paths
      */
     printDb (items, paths) {
-        console.log(`Printing to ${paths.length} .db files`);
         const pgb = new ProgressBar(40);
-        pgb.str('.db');
+        pgb.str('json db');
         paths.forEach((path, i) => {
             pgb.set(i / paths.length);
             const lines = items.map((item) => JSON.stringify(item));
@@ -434,7 +433,6 @@ module.exports = class Parser {
      * @param {Promise<boolean>} - TRUE if exported, FALSE if not.
      */
     async exportDb (entries, compendium, dataPath) {
-        console.log(`Exporting ${entries.length} rows to LevelDB "${compendium}"`);
         if (await Parser.getFoundryPID() > -1) {
             console.warn(chalk.yellow(`[WARNING] - Foundry is currently running, so export to "${compendium}" will not occur.`));
             return false;
@@ -446,7 +444,7 @@ module.exports = class Parser {
         };
 
         const pgb = new ProgressBar(40);
-        pgb.str(compendium);
+        pgb.str('level db');
         try {
             const exportDir = `${dataPath}/Data/modules/owlmarble-magic/packs/${compendium}/_source`;
             entries.forEach((entry, i) => {

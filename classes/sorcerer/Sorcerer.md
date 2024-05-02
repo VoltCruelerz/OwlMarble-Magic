@@ -2,28 +2,28 @@
 
 ## Class Table
 
-| Level | Proficiency Bonus | Features       | Cantrips Known | Spells Known | Mana Points | Maximum Mana Slot |
-|:---:|:---:|:-------------------------------|:-:|:--:|:-:|:-:|
-| 1st | +2 | Spellcasting, Sorcerous Origin  | 4 | 2  | 4   | 1st |
-| 2nd | +2 | Font of Mana                    | 4 | 3  | 8   | 1st |
-| 3rd | +2 | Flexible Magic                  | 4 | 4  | 17  | 2nd |
-| 4th | +2 | Ability Score Improvement       | 5 | 5  | 21  | 2nd |
-| 5th | +3 | —                               | 5 | 6  | 32  | 3rd |
-| 6th | +3 | Sorcerous Origin feature        | 5 | 7  | 38  | 3rd |
-| 7th | +3 | —                               | 5 | 8  | 45  | 4th |
-| 8th | +3 | Ability Score Improvement       | 5 | 9  | 52  | 4th |
-| 9th | +4 | —                               | 5 | 10 | 66  | 5th |
-| 10th | +4 | Flexible Magic                 | 6 | 11 | 74  | 5th |
-| 11th | +4 | —                              | 6 | 12 | 84  | 6th |
-| 12th | +4 | Ability Score Improvement      | 6 | 12 | 85  | 6th |
-| 13th | +5 | —                              | 6 | 13 | 96  | 7th |
-| 14th | +5 | Sorcerous Origin feature       | 6 | 13 | 97  | 7th |
-| 15th | +5 | —                              | 6 | 14 | 109 | 8th |
-| 16th | +5 | Ability Score Improvement      | 6 | 14 | 110 | 8th |
-| 17th | +6 | —                              | 6 | 15 | 124 | 9th |
-| 18th | +6 | Sorcerous Origin feature       | 6 | 15 | 132 | 9th |
-| 19th | +6 | Ability Score Improvement      | 6 | 15 | 142 | 9th |
-| 20th | +6 | Metasorcery                    | 6 | 15 | 153 | 9th |
+| Level | Proficiency Bonus | Features                       | Cantrips Known | Spells Known | Mana Points | Maximum Mana Slot |
+| :---: | :---------------: | :----------------------------- | :------------: | :----------: | :---------: | :---------------: |
+|  1st  |        +2         | Spellcasting, Sorcerous Origin |       4        |      2       |      4      |        1st        |
+|  2nd  |        +2         | Font of Mana                   |       4        |      3       |      8      |        1st        |
+|  3rd  |        +2         | Flexible Magic                 |       4        |      4       |     17      |        2nd        |
+|  4th  |        +2         | Ability Score Improvement      |       5        |      5       |     21      |        2nd        |
+|  5th  |        +3         | —                              |       5        |      6       |     32      |        3rd        |
+|  6th  |        +3         | Sorcerous Origin feature       |       5        |      7       |     38      |        3rd        |
+|  7th  |        +3         | —                              |       5        |      8       |     45      |        4th        |
+|  8th  |        +3         | Ability Score Improvement      |       5        |      9       |     52      |        4th        |
+|  9th  |        +4         | —                              |       5        |      10      |     66      |        5th        |
+| 10th  |        +4         | Flexible Magic                 |       6        |      11      |     74      |        5th        |
+| 11th  |        +4         | —                              |       6        |      12      |     84      |        6th        |
+| 12th  |        +4         | Ability Score Improvement      |       6        |      12      |     85      |        6th        |
+| 13th  |        +5         | —                              |       6        |      13      |     96      |        7th        |
+| 14th  |        +5         | Sorcerous Origin feature       |       6        |      13      |     97      |        7th        |
+| 15th  |        +5         | —                              |       6        |      14      |     109     |        8th        |
+| 16th  |        +5         | Ability Score Improvement      |       6        |      14      |     110     |        8th        |
+| 17th  |        +6         | —                              |       6        |      15      |     124     |        9th        |
+| 18th  |        +6         | Sorcerous Origin feature       |       6        |      15      |     132     |        9th        |
+| 19th  |        +6         | Ability Score Improvement      |       6        |      15      |     142     |        9th        |
+| 20th  |        +6         | Metasorcery                    |       6        |      15      |     153     |        9th        |
 
 > Eagle-eyed observers may notice that the mana points provided in this table is equal to the default Sorcerer’s number of sorcery points plus the number of Spell Points granted by the Spell Points variant feature from the DMG.  Likewise, maximum mana slot level is also derived from the Spell Points system.
 
@@ -52,16 +52,16 @@ When you wish to cast a spell of 1st level or higher, you expend mana points to 
 Spells of 6th level and higher are particularly taxing to cast.  When you create a spell slot of 6th level or higher, you may not create another slot of that level until you complete a long rest.
 
 | Slot Level | Mana Point Cost |
-|:----------:|:---------------:|
-| 1st        | 2               |
-| 2nd        | 3               |
-| 3rd        | 5               |
-| 4th        | 6               |
-| 5th        | 7               |
-| 6th        | 9               |
-| 7th        | 10              |
-| 8th        | 11              |
-| 9th        | 13              |
+| :--------: | :-------------: |
+|    1st     |        2        |
+|    2nd     |        3        |
+|    3rd     |        5        |
+|    4th     |        6        |
+|    5th     |        7        |
+|    6th     |        9        |
+|    7th     |       10        |
+|    8th     |       11        |
+|    9th     |       13        |
 
 ## Font of Mana - 2 [New]
 
@@ -87,75 +87,75 @@ Starting at 3rd level, in addition to your Metamagic selections, your sorcerous 
 
 #### Aberrant Mind
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Distracting Spell |
-| 10th | Gruesome Spell |
-| 17th | Repulsive Spell |
+| Sorcerer Level |     Metamagic     |
+| :------------: | :---------------: |
+|      3rd       | Distracting Spell |
+|      10th      |  Gruesome Spell   |
+|      17th      |  Repulsive Spell  |
 
 #### Abyssal Bloodline
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Distant Spell |
-| 10th | Careful Spell |
-| 17th | Gruesome Spell |
+| Sorcerer Level |   Metamagic    |
+| :------------: | :------------: |
+|      3rd       | Distant Spell  |
+|      10th      | Careful Spell  |
+|      17th      | Gruesome Spell |
 
 #### Astral Magic
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Extended Spell |
-| 10th | Distant Spell |
-| 17th | Subtle Spell |
+| Sorcerer Level |   Metamagic    |
+| :------------: | :------------: |
+|      3rd       | Extended Spell |
+|      10th      | Distant Spell  |
+|      17th      |  Subtle Spell  |
 
 #### Clockwork Soul
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Scanning Spell |
-| 10th | Quickened Spell |
-| 17th | Shielding Spell |
+| Sorcerer Level |    Metamagic    |
+| :------------: | :-------------: |
+|      3rd       | Scanning Spell  |
+|      10th      | Quickened Spell |
+|      17th      | Shielding Spell |
 
 #### Divine Soul
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Helping Spell |
-| 10th | Healing Spell |
-| 17th | Scourging Spell |
+| Sorcerer Level |    Metamagic    |
+| :------------: | :-------------: |
+|      3rd       |  Helping Spell  |
+|      10th      |  Healing Spell  |
+|      17th      | Scourging Spell |
 
 #### Draconic Bloodline
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Penetrating Spell |
-| 10th | Empowered Spell |
-| 17th | Swarming Spell |
+| Sorcerer Level |     Metamagic     |
+| :------------: | :---------------: |
+|      3rd       | Penetrating Spell |
+|      10th      |  Empowered Spell  |
+|      17th      |  Swarming Spell   |
 
 #### Shadow Magic
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Obscuring Spell |
-| 10th | Subtle Spell |
-| 17th | Harvesting Spell |
+| Sorcerer Level |    Metamagic     |
+| :------------: | :--------------: |
+|      3rd       | Obscuring Spell  |
+|      10th      |   Subtle Spell   |
+|      17th      | Harvesting Spell |
 
 #### Storm Sorcery
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Rupturing Spell |
-| 10th | Blinding Spell |
-| 17th | Scarring Spell |
+| Sorcerer Level |    Metamagic    |
+| :------------: | :-------------: |
+|      3rd       | Rupturing Spell |
+|      10th      | Blinding Spell  |
+|      17th      | Scarring Spell  |
 
 #### Wild Magic
 
-| Sorcerer Level | Metamagic |
-|:--------------:|:---------:|
-| 3rd | Disrupting Spell |
-| 10th | Twinned Spell |
-| 17th | Annihilating Spell |
+| Sorcerer Level |     Metamagic      |
+| :------------: | :----------------: |
+|      3rd       |  Disrupting Spell  |
+|      10th      |   Twinned Spell    |
+|      17th      | Annihilating Spell |
 
 ## Metasorcery - 20 [New]
 
@@ -374,12 +374,12 @@ Drawing on the power within your soul, you can develop the skills necessary to c
 ##### Summon Spells Table
 
 | Spell Level | Spells                                  |
-|:-----------:|:----------------------------------------|
-| 1st         | _Summon Servant_                        |
-| 2nd         | _Summon Beast_                          |
-| 3rd         | _Summon Shadowspawn_, _Summon Undead_   |
-| 4th         | _Summon Aberration_, _Summon Elemental_ |
-| 6th         | _Summon Fiend_                          |
+| :---------: | :-------------------------------------- |
+|     1st     | _Summon Servant_                        |
+|     2nd     | _Summon Beast_                          |
+|     3rd     | _Summon Shadowspawn_, _Summon Undead_   |
+|     4th     | _Summon Aberration_, _Summon Elemental_ |
+|     6th     | _Summon Fiend_                          |
 
 #### Summoned Servant [New]
 
@@ -412,7 +412,33 @@ Beginning at 14th level, your ability to instantly create barriers has grown to 
 
 Once you reach 18th level, when you cast one of the spells from the Summoning Spells table, in place of applying a metamagic, you can expend additional mana points equal to the level of the spell to summon two creatures from the spell instead of one.  The two creatures can be the same archetype or different archetypes.  The two creatures appear at unoccupied target positions of your choice that you can see within range.
 
-### Shadow Magic Updates
+### Geomancy [New]
+
+> _lorem ipsum flavor text_
+
+#### Dynamic Cover [New]
+
+When you select this sorcerous origin, you learn the _Mold Earth_ spell, which does not count against your number of cantrips known.
+
+Additionally, you can cast _Mold Earth_ as a Bonus Action a number of times equal to half your Sorcerer level, rounded down, to a minimum of 1. You regain all uses on a Short Rest.
+
+#### Earthblessed Steps [New]
+
+You are not slowed by difficult terrain caused by nonmagical unworked earth, sand, or stone.
+
+#### Instant Barricade - 6 [New]
+
+At the end of an ally's turn, you can use your reaction and a Sorcery Point to cast _Mold Earth_, targeting a point within range that is within 5 feet of the ally whose turn just finished.
+
+#### Mass Mold Earth - 14 [New]
+
+When you cast the _Mold Earth_ spell on your turn, you can spend a number of Sorcery Points up to your Charisma modifier to target a number of additional locations equal to the number of points spent.
+
+#### Tectonic Shift - 18 [New]
+
+As an action, select a point on the ground within 120 feet that is nonmagical earth or stone. The ground within a 20-foot radius shifts in the drection of your choice, moving up to 60 feet. Creatures, plants, and objects in the path smaller than the effect are safely shunted to the side. If you attempt to move through a permanent structure, the effect ends.
+
+### Shadow Magic
 
 #### Eyes of the Dark [Updated]
 
@@ -420,7 +446,7 @@ Starting at 1st level, you have Darkvision with a range of 120 feet.
 
 When you reach 3rd level in this class, you gain the ability to see through magical darkness you create.
 
-### Wild Magic Updates
+### Wild Magic
 
 #### Tides of Chaos [Updated]
 
