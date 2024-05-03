@@ -1,6 +1,6 @@
 const fs = require('fs');
 const chalk = require('chalk');
-const Parser = require('./Parser');
+const Parser = require('./parser');
 const { detailedDiff } = require('deep-object-diff');
 const overrides = require('./parseOverrides');
 
@@ -26,13 +26,17 @@ module.exports = class SpellParser extends Parser {
         // Handle manual override substitutions.
         if (overrides[spell.name]) {
             const overData = overrides[spell.name];
-            const spellData = spell.data;
+            if (!overData)
+                throw new Error('Unrecognized overData for spell ' + spell.name + ':\n' + chalk.yellow(JSON.stringify(overData, null, 4)));
+            const spellData = spell.system;
+            if (!spellData)
+                throw new Error('Unrecognized spellData for spell ' + spell.name + ':\n' + chalk.yellow(JSON.stringify(spellData, null, 4)));
             const fields = Object.keys(overData);
             fields.forEach((field) => {
                 const overField = overData[field];
                 const targetField = JSON.stringify(overField[src.toLowerCase()] || overField.old);
                 if (targetField !== JSON.stringify(spellData[field])) {
-                    console.warn(chalk.yellow(`${softWall}\nWARNING - Outdated Override for ${src} L${spell.data.level} ${spell.name}'s ${field}\n- Expected: ${targetField}\n-    Found: ${JSON.stringify(spellData[field])}\n${softWall}`));
+                    console.warn(chalk.yellow(`${softWall}\nWARNING - Outdated Override for ${src} L${spell.system.level} ${spell.name}'s ${field}\n- Expected: ${targetField}\n-    Found: ${JSON.stringify(spellData[field])}\n${softWall}`));
                 }
                 spellData[field] = overField.new;
             });
@@ -243,7 +247,7 @@ module.exports = class SpellParser extends Parser {
         const ownership = {};
         spells.forEach((spell) => {
             const name = spell.name.toLowerCase().replaceAll(/\W/g,'');
-            ownership[name] = spell.data.classes.join(',').toLowerCase();
+            ownership[name] = spell.system.classes.join(',').toLowerCase();
         });
 
         const ordered = Object.keys(ownership).sort().reduce(
@@ -272,16 +276,16 @@ module.exports = class SpellParser extends Parser {
             .map((spellText) => spellText.split('\n').filter((line) => line));
         return spellTexts
             .filter((text, index) => index > 0)
-            .map((text) => this.parseSpellText(text, level));
+            .map((text) => this.parseHomebrewSpellText(text, level));
     }
 
     /**
-     * Parses the lines that make up a single spell.
+     * Parses the lines that make up a single homebrew spell.
      * @param {[string]} lines The lines of the spell.  May include whitespace and underscore lines.
      * @param {number} level The spell level.
      * @returns {{}}
      */
-    parseSpellText (lines, level) {
+    parseHomebrewSpellText (lines, level) {
         const name = lines[0];
         try {
             let oldName = undefined;
@@ -310,18 +314,16 @@ module.exports = class SpellParser extends Parser {
                 _id: id,
                 _key: '!items!' + id,
                 name,
-                permission: {
-                    default: 0
-                },
                 type: 'spell',
                 img: this.getImage(school),
-                data: {
+                system: {
                     description: {
                         value: description,
-                        chat: '',
-                        unidentified: ''
+                        chat: ''
                     },
-                    source: 'OMM - ' + level,
+                    source: {
+                        custom: 'OMM - ' + level
+                    },
                     activation: this.getActivation(castTime),
                     duration: this.getDuration(duration),
                     target: this.getTarget(range, description),
@@ -329,25 +331,43 @@ module.exports = class SpellParser extends Parser {
                     uses: {
                         value: 0,
                         max: 0,
-                        per: ''
+                        per: null,
+                        recovery: '',
+                        prompt: true
                     },
                     ability: '',
                     actionType: this.getActionType(description),
                     attackBonus: 0,
                     chatFlavor: '',
-                    critical: null,
+                    critical: {
+                        threshold: null,
+                        damage: ''
+                    },
                     damage: this.getDamage(description),
                     formula: '',
                     save: this.getSave(level, description),
                     level,
                     school: this.getSchoolCode(school),
-                    components: this.getComponents(castTime, duration, components),
+                    properties: this.getComponents(castTime, duration, components),
                     materials: this.getMaterials(components),
                     preparation: {
                         mode: 'prepared',
                         prepared: false
                     },
                     scaling: this.getScaling(level, description),
+                    attack: {
+                        bonus: '',
+                        flat: false
+                    },
+                    cover: null,
+                    crewed: false,
+                    consume: {
+                        type: '',
+                        target: null,
+                        amount: null,
+                        scale: false
+                    },
+                    summons: null,
                     classes: classes
                 },
                 effects: [],
@@ -356,10 +376,18 @@ module.exports = class SpellParser extends Parser {
                     exportSource: {
                         world: 'none',
                         system: 'dnd5e',
-                        coreVersion: '0.8.8',
-                        systemVersion: '1.3.6'
+                        coreVersion: '11.315',
+                        systemVersion: '3.1.2'
                     },
                     'owlmarble-magic': {}
+                },
+                _stats: {
+                    systemId: 'dnd5e',
+                    systemVersion: '3.1.2',
+                    coreVersion: '11.315',
+                    createdTime: 0,
+                    modifiedTime: 0,
+                    lastModifiedBy: 'gxIfijvGnRnAJg5u'
                 }
             };
             if (oldName) {
@@ -668,17 +696,17 @@ module.exports = class SpellParser extends Parser {
             };
         } else if (duration === 'instantaneous') {
             return {
-                value: null,
+                value: '',
                 units: 'inst'
             };
         } else if (duration === 'permanent' || duration === 'until dispelled') {
             return {
-                value: null,
+                value: '',
                 units: 'perm'
             };
         } else if (duration === 'special') {
             return {
-                value: null,
+                value: '',
                 units: 'spec'
             };
         } else {
@@ -752,7 +780,9 @@ module.exports = class SpellParser extends Parser {
         return {
             value: val,
             units: units,
-            type: shape
+            type: shape,
+            width: null,
+            prompt: true
         };
     }
 
@@ -1050,16 +1080,30 @@ module.exports = class SpellParser extends Parser {
 
     /**
      * Decodes the activation object into html.
-     * @param {{value: string, vocal: boolean, somatic: boolean, material: boolean, ritual: boolean, concentration: boolean}} components 
+     * @param {{value: string, vocal: boolean, somatic: boolean, material: boolean, ritual: boolean, concentration: boolean}|[string]} components 
      * @param {{value: string, consumed: boolean, cost: number, supply: number}} materials
      * @returns {string}
      */
     decodeComponents (components, materials) {
-        const compTerms = [
-            components.vocal ? 'V' : '',
-            components.somatic ? 'S' : '',
-            components.material ? 'M' : ''
-        ].filter((comp) => comp).join(', ');
+        let terms = [];
+        if (typeof components !== Array) {
+            // Use legacy parsing
+            terms = [
+                components.vocal ? 'V' : '',
+                components.somatic ? 'S' : '',
+                components.material ? 'M' : ''
+            ];
+    
+        } else {
+            // Use Foundry v11 parsing
+            terms = [
+                components.includes('vocal') ? 'V' : '',
+                components.includes('somatic') ? 'S' : '',
+                components.includes('material') ? 'M' : ''
+            ];
+        }
+
+        const compTerms = terms.filter((comp) => comp).join(', ');
         return materials.value ? compTerms + ' (' + materials.value + ')' : compTerms;
     }
 
@@ -1108,14 +1152,13 @@ module.exports = class SpellParser extends Parser {
         const openIndex = components.indexOf('(');
         const componentTerms = (openIndex > -1 ? components.substr(0, openIndex) : components).split(', ').map((term) => term.trim());
 
-        return {
-            value: '',
-            vocal: componentTerms.includes('v'),
-            somatic: componentTerms.includes('s'),
-            material: componentTerms.includes('m'),
-            ritual: isRitual,
-            concentration: isConc
-        };
+        const retVal = [];
+        if (componentTerms.includes('v')) retVal.push('vocal');
+        if (componentTerms.includes('s')) retVal.push('somatic');
+        if (componentTerms.includes('m')) retVal.push('material');
+        if (isConc) retVal.push('concentration');
+        if (isRitual) retVal.push('ritual');
+        return retVal;
     }
 
     /**
@@ -1247,7 +1290,7 @@ module.exports = class SpellParser extends Parser {
                     },
                     type: 'spell',
                     img: this.getImage(school),
-                    data: {
+                    system: {
                         description: {
                             value: description,
                             chat: '',
@@ -1277,7 +1320,7 @@ module.exports = class SpellParser extends Parser {
                         save: this.getSave(spell.level, description),
                         level: spell.level,
                         school: this.getSchoolCode(school),
-                        components: this.getImportedComponents(spell),
+                        properties: this.getImportedComponents(spell),
                         materials: this.getImportedMaterials(spell),
                         preparation: {
                             mode: 'prepared',
@@ -1485,14 +1528,13 @@ module.exports = class SpellParser extends Parser {
     getImportedComponents (spell) {
         const isRitual = spell.meta?.ritual;
         const isConcentration = !!spell.duration[0].concentration;
-        return {
-            value: '',
-            vocal: !!spell.components.v,
-            somatic: !!spell.components.s,
-            material: !!spell.components.m,
-            ritual: !!isRitual,
-            concentration: isConcentration
-        };
+        const retVal = [];
+        if (spell.components.v) retVal.push('vocal');
+        if (spell.components.s) retVal.push('somatic');
+        if (spell.components.m) retVal.push('material');
+        if (isRitual) retVal.push('ritual');
+        if (isConcentration) retVal.push('concentration');
+        return retVal;
     }
 
     /**
@@ -1557,7 +1599,7 @@ module.exports = class SpellParser extends Parser {
      */
     sortSpellList (spells) {
         spells.sort((a, b) => (a.name > b.name) ? 1 : -1);
-        spells.sort((a, b) => (a.data.level >= b.data.level) ? 1 : -1);
+        spells.sort((a, b) => (a.system.level >= b.system.level) ? 1 : -1);
     }
 
     /**
@@ -1570,7 +1612,7 @@ module.exports = class SpellParser extends Parser {
         const wall = (this.thinWall + '');
         console.log(wall + '\nExporting Class Spell Lists...');
         const classes = Object.keys(spells.reduce((acc, spell) => {
-            spell.data.classes.forEach((casterClass) => {
+            spell.system.classes.forEach((casterClass) => {
                 acc[casterClass] = true;
             });
             return acc;
@@ -1593,7 +1635,7 @@ module.exports = class SpellParser extends Parser {
             outputLines.push('');
             for (let i = 0; i <= 10; i++) {
                 const level = i === 0 ? 'Cantrip' : `Level ${i}`;
-                const currentSpells = spells.filter((spell) => spell.data.classes.includes(clazz) && spell.data.level === i);
+                const currentSpells = spells.filter((spell) => spell.system.classes.includes(clazz) && spell.system.level === i);
                 if (currentSpells.length === 0) {
                     continue;
                 }
@@ -1602,17 +1644,17 @@ module.exports = class SpellParser extends Parser {
                 currentSpells.forEach((spell) => {
                     const tags = [];
                     const components = [];
-                    if (spell.data.components.vocal) {
+                    if (spell.system.properties.vocal) {
                         components.push('V');
                     }
-                    if (spell.data.components.somatic) {
+                    if (spell.system.properties.somatic) {
                         components.push('S');
                     }
-                    if (spell.data.components.material) {
+                    if (spell.system.properties.material) {
                         let materialTerm = 'M';
-                        if (spell.data.materials.cost) {
+                        if (spell.system.materials.cost) {
                             materialTerm += '$';
-                            if (spell.data.materials.consumed) {
+                            if (spell.system.materials.consumed) {
                                 materialTerm += 'X';
                             }
                         }
@@ -1620,10 +1662,10 @@ module.exports = class SpellParser extends Parser {
                     }
                     tags.push(components.join('/'));
 
-                    if (spell.data.components.ritual) {
+                    if (spell.system.properties.ritual) {
                         tags.push('[R]');
                     }
-                    if (spell.data.components.concentration) {
+                    if (spell.system.properties.concentration) {
                         tags.push('[C]');
                     }
 
@@ -1633,7 +1675,7 @@ module.exports = class SpellParser extends Parser {
                     const link = indices[spell.name]
                         ? `[${spell.name}](${indices[spell.name]})`
                         : `[${spell.name}](${dndbeyond + spell.name.toLowerCase().replaceAll(' ','-')})`;
-                    outputLines.push(`- ${link}${tagString}(${spell.data.source})`);
+                    outputLines.push(`- ${link}${tagString}(${spell.system.source.custom})`);
                 });
                 outputLines.push('');
             }
@@ -1656,7 +1698,7 @@ module.exports = class SpellParser extends Parser {
             for (let i = 0; i <= 10; i++) {
                 contentLines.push(this.tagify('h2', i === 0 ? 'Cantrip' : `Level ${i}`));
                 const currentSpells = spells
-                    .filter((spell) => spell.data.classes.includes(clazz) && spell.data.level === i)
+                    .filter((spell) => spell.system.classes.includes(clazz) && spell.system.level === i)
                     .map((spell) => htmlSpells[spell.name]);
 
                 currentSpells.forEach((htmlSpell) => {
@@ -1701,17 +1743,17 @@ module.exports = class SpellParser extends Parser {
      */
     htmlify (spell) {
         const keyTraitLines = [
-            this.tagify('li', this.tagify('strong', 'School: ') + this.decodeSchool(spell.data.school)),
-            this.tagify('li', this.tagify('strong', 'Casting Time: ') + this.decodeCasting(spell.data.activation, spell.data.components.ritual)),
-            this.tagify('li', this.tagify('strong', 'Range: ') + this.decodeRange(spell.data.range)),
-            this.tagify('li', this.tagify('strong', 'Components: ') + this.decodeComponents(spell.data.components, spell.data.materials)),
-            this.tagify('li', this.tagify('strong', 'Duration: ') + this.decodeDuration(spell.data.duration, spell.data.components.concentration)),
+            this.tagify('li', this.tagify('strong', 'School: ') + this.decodeSchool(spell.system.school)),
+            this.tagify('li', this.tagify('strong', 'Casting Time: ') + this.decodeCasting(spell.system.activation, spell.system.properties.ritual)),
+            this.tagify('li', this.tagify('strong', 'Range: ') + this.decodeRange(spell.system.range)),
+            this.tagify('li', this.tagify('strong', 'Components: ') + this.decodeComponents(spell.system.properties, spell.system.materials)),
+            this.tagify('li', this.tagify('strong', 'Duration: ') + this.decodeDuration(spell.system.duration, spell.system.properties.concentration)),
         ];
 
         const lines = [
             this.tagify('h3', spell.name),
             this.tagify('ul', keyTraitLines.join('\r\n')),
-            spell.data.description.value
+            spell.system.description.value
         ];
 
         const result = lines.join('\r\n');
@@ -1810,6 +1852,39 @@ module.exports = class SpellParser extends Parser {
     }
     //#endregion
 
+    //#region Version Migration
+    /**
+     * Migrates all SRD spells to the latest version
+     * @param {[{}]} spells 
+     */
+    migrateTo_11_315(spells) {
+        spells.forEach(spell => {
+            // Data is out, system is in.
+            const data = spell.data;
+            delete spell.data;
+            spell.system = data;
+
+            // Source wrapper
+            spell.system.source = {
+                custom: spell.system.source
+            };
+
+            // Components
+            const components = spell.system.components;
+            delete spell.system.components;
+            const compArr = [];
+            if (components.vocal) compArr.push('vocal');
+            if (components.somatic) compArr.push('somatic');
+            if (components.material) compArr.push('material');
+            if (components.ritual) compArr.push('concentration');
+            if (components.concentration) compArr.push('ritual');
+            spell.system.properties = compArr;
+        });
+        return spells;
+    }
+
+    //#endregion
+
     /**
      * Parse.
      * @param {string} dataPath export data path
@@ -1825,8 +1900,8 @@ module.exports = class SpellParser extends Parser {
         await this.printSpells(this.readSpellDB('output/owlmagic-only/spells.db'), homebrew, 'output/owlmagic-only/spells.db', '');
 
         // SRD + Homebrew
-        const srd = this.readSpellDB('srd/srd.db');
-        srd.forEach((srdSpell) => { srdSpell.img = this.getImage(this.decodeSchool(srdSpell.data.school)); });
+        const srd = this.migrateTo_11_315(this.readSpellDB('srd/srd.db'));
+        srd.forEach((srdSpell) => { srdSpell.img = this.getImage(this.decodeSchool(srdSpell.system.school)); });
         await this.printSpells(this.readSpellDB('output/owlmagic-srd/spells.db'), this.mergeSpellLists(srd, homebrew), 'output/owlmagic-srd/spells.db', '');
 
         // Publishable

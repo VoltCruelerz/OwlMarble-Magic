@@ -220,8 +220,8 @@ module.exports = (omm, srd) => {
         if (!srdSpell) {
             return;
         }
-        const srdData = srdSpell.data;
-        const ommData = ommSpell.data;
+        const srdData = srdSpell.system;
+        const ommData = ommSpell.system;
 
         verbatimFields.forEach((field) => {
             const expected = approvedErrors[ommSpell.name] && approvedErrors[ommSpell.name][field] 

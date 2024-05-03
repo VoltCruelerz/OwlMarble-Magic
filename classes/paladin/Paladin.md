@@ -21,3 +21,15 @@ In addition you may cast a Smite spell using this feature once at the level of y
 | 17th | 5th | _Banishing Smite_, _Pestilent Smite_ |
 
 > **Note**: All of these spells are Bonus Actions, so they can coincide with gish spells such as _Radiant Mark_.
+
+### Oath of the Watchers
+
+#### Watchers Oath Spells
+
+| Paladin Level | Spells |
+|:-------------:|:----------|
+| 3rd | _Absorb Elements_, _Detect Evil and Good_ |
+| 5th | _Materialize_, _Mountaimore's Tether_ |
+| 9th | _Protection from Energy_, _Remove Curse_ |
+| 13th | _Aura of Purity_, _Banishment_ |
+| 17th | _Hold Monster_, _Dispel Evil and Good_ |

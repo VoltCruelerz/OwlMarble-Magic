@@ -404,7 +404,12 @@ module.exports = class Parser {
 
     static async attempt (cmd) {
         const result = await exec(cmd);
-        if (result.stderr.length > 0) throw new Error(`Export Command Failed:\n$ ${cmd}\n` + result.stderr);
+        if (result.stderr.length > 0) {
+            if (result.stderr.startsWith('Debugger attached'))
+                console.warn(chalk.bgYellow(`DEBUG BLOCKED EXEC: "${cmd}"`));
+            else
+                throw new Error(`Export Command Failed:\n$ ${cmd}\n` + result.stderr);
+        }
         return result.stdout;
     }
 
@@ -445,6 +450,7 @@ module.exports = class Parser {
 
         const pgb = new ProgressBar(40);
         pgb.str('level db');
+        const cmd = `fvtt package pack "${compendium}"`;
         try {
             const exportDir = `${dataPath}/Data/modules/owlmarble-magic/packs/${compendium}/_source`;
             entries.forEach((entry, i) => {
@@ -453,12 +459,16 @@ module.exports = class Parser {
                 fs.writeFileSync(path, JSON.stringify(entry), 'utf8');
             });
             
-            const pack = await exec(`fvtt package pack "${compendium}"`);
+            const pack = await exec(cmd);
             if (pack.stderr.length > 0) throw new Error(pack.stderr);
             pgb.set(1);
         }
         catch (err) {
             pgb.set(1);
+            if (err.message.includes('Debugger attached')) {
+                console.warn(chalk.bgYellow(`DEBUG BLOCKED EXEC: "${cmd}"`));
+                return false;
+            }
             console.error(chalk.bgRed(`Failed to Export "${compendium}"`));
             console.error(chalk.red(err));
             return false;
