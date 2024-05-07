@@ -242,8 +242,8 @@ module.exports = class SpellParser extends Parser {
      * @param {[{}]} spells
      * @param {string} path
      */
-    exportCompendiumBrowser (spells, path) {
-        console.log('Exporting Compendium Browser Ownership to: ' + path);
+    exportSpellListsJson (spells, path) {
+        console.log('Exporting Ownership to: ' + path);
         const ownership = {};
         spells.forEach((spell) => {
             const name = spell.name.toLowerCase().replaceAll(/\W/g,'');
@@ -258,6 +258,28 @@ module.exports = class SpellParser extends Parser {
             {}
         );
         fs.writeFileSync(path, JSON.stringify(ordered, null, 2));
+    }
+
+    /**
+     * Prints the spells' class ownership for the Compendium Browser module.
+     * @param {[{}]} spells
+     */
+    exportCompendiumBrowser (spells) {
+        console.log('Exporting to Compendium Browser');
+        const startTarget = 'let list = {';
+        const stopTarget = '};';
+
+        const payload = spells
+            .sort((a,b) => a.name > b.name)
+            .map((spell, i) => {
+                const name = spell.name.toLowerCase().replaceAll(/\W/g,'');
+                const users = spell.system.classes.join(',').toLowerCase();
+                const isLast = i === spells.length - 1;
+                const comma = isLast ? '' : ',';
+                return `${name}: "${users}"${comma}`;
+            });
+
+        Parser.setCompendiumBetweenTargets(startTarget, stopTarget, payload);
     }
     //#endregion
 
@@ -1919,8 +1941,8 @@ module.exports = class SpellParser extends Parser {
 
         // Export the spell lists for all included classes.
         await this.exportSpellLists(allSpells, indices, dataPath);
-        this.exportCompendiumBrowser(allSpells, 'output/spell-classes.json');
-        this.exportCompendiumBrowser(allSpells, 'E:/Foundry VTT/Data/modules/compendium-browser/spell-classes.json');
+        this.exportSpellListsJson(allSpells, 'output/spell-classes.json');
+        this.exportCompendiumBrowser(allSpells);
 
         // Export all to current foundry install.
         console.log(this.thinWall + '\nExporting spells to foundry install...');

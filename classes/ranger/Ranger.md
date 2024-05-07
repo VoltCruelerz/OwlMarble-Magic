@@ -44,9 +44,9 @@ Additionally, you can choose to use your Intelligence score in place of your Wis
 
 ### Harvest the Fallen - 3 [New]
 
-At 3rd level, you may attempt to harvest the valuable materials from a slain creature. To do so, you may spend 10 minutes to make a Monster Lore check with DC equal to [10 + CR/2] where CR is the creature’s Challenge Rating.
+At 3rd level, you may attempt to harvest the valuable materials from a slain creature. To do so, you may spend 10 minutes to make a Monster Lore check with DC equal to [10 + CR/2] where CR is the creature’s Challenge Rating. Success or failure, you cannot gather further components from the same corpse.
 
-- On a success, you acquire an alchemical from the creature, and you cannot gather further components from the same creature. This component is highly volatile and loses its potency quickly. As such, it must be used in Alchemy within 1 hour of gathering.
+- On a success, you acquire an alchemical from the creature. This component is highly volatile and loses its potency quickly. As such, it must be used in Alchemy within 1 hour of gathering.
 - On a failure, the alchemical component spoils or is otherwise unsalvageable.
 
 ### Alchemical Solutions - 3 [New]

@@ -78,7 +78,7 @@ Immediately after you hit a creature with an attack with this weapon, you can us
 
 _Prerequisite: Ammunition Property, Finesse Property, or Light Property_
 
-If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that  reature before the end of your next turn.
+If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that reature before the end of your next turn.
 
 ## Yoink [New]
 

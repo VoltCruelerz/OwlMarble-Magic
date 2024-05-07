@@ -383,6 +383,56 @@ module.exports = class Parser {
     }
     //#endregion
 
+    //#region Compendium Browser
+    /**
+     * 
+     * @param {string} startTarget 
+     * @param {string} stopTarget 
+     * @param {[string]} injectionLines 
+     */
+    static setCompendiumBetweenTargets(startTarget, stopTarget, injectionLines) {
+        const src = fs.readFileSync('E:\\Foundry VTT\\Data\\modules\\compendium-browser\\module\\compendium-browser.js', 'utf8')
+            .split('\n');
+        let startLine = -1;
+        let stopLine = -1;
+        let indentation = '';
+        for (let i = 0; i < src.length; i++) {
+            const line = src[i].trim();
+            if (line === startTarget) {
+                startLine = i;
+                indentation = src[i].substring(0, src[i].indexOf(line)) + '    ';
+                break;
+            }
+        }
+        for (let i = startLine + 1; i < src.length; i++) {
+            const line = src[i].trim();
+            if (line === stopTarget) {
+                stopLine = i;
+                break;
+            }
+        }
+
+        // Copy to output
+        const output = [];
+        for (let i = 0; i <= startLine; i++) output.push(src[i]);
+        injectionLines.forEach(inj => output.push(indentation + inj));
+        for (let i = stopLine; i < src.length; i++) output.push(src[i]);
+
+        fs.writeFileSync('E:\\Foundry VTT\\Data\\modules\\compendium-browser\\module\\compendium-browser.js', output.join('\n'), 'utf8');
+    }
+
+    // /**
+    //  * 
+    //  * @param {{any: [string]}} classMappings 
+    //  */
+    // static setCompendiumSubclasses(classMappings) {
+    //     const startTarget = 'static subClasses = {';
+    //     const stopTarget = '};';
+    //     const payload = [];
+    //     Parser.setCompendiumBetweenTargets(startTarget, stopTarget, payload);
+    // }
+    //#endregion
+
     //#region I/O
     /**
      * Gets Foundry's Process ID, or -1 if not found.
