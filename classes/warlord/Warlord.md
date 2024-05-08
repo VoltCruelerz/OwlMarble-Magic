@@ -50,11 +50,17 @@ At the start of each of your turns, select a Battle Formation to apply to your a
 - **Conquer**: allies have a +1 bonus to hit.
 - **Defend**: allies have a +1 bonus to AC.
 
+### (Prototype) Demoralizing Strike - 11 [New]
+
+> **Note**: this isn't _bad_, but it's clunky, and it somewhat breaks the theming of a battlefield commander.
+
+Starting at 11th level, when a creature dies while afflicted with _Rallying Mark_ or _Tactical Insight_, the first time you hit on your following turn, the attack deals additional Psychic damage equal to 2 rolls of your _Leadership Die_.
+
 ### (Prototype) Tactical Strike - 11 [Updated]
 
 > **Note**: 1d6 extra isn't a ton, but it isn't nothing either.
 
-Starting at 11th level, when you succeed on a _Tactical Insight_ check against a creature, the next time you or a friendly creature deal damage against it before the start of your next turn it is increased by 3d6 damage.
+Starting at 11th level, when you succeed on a _Tactical Insight_ check against a creature, the next time you or a friendly creature deal damage against it before the start of your next turn, the damage to the creature is increased by 2 rolls of your _Leadership Die_.
 
 ### (Prototype) Dynamic Tools - 11 [New]
 
