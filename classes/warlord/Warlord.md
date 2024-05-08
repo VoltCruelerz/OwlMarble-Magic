@@ -59,11 +59,9 @@ You gain the following _Leadership Dice_ features:
 
 ### (Prototype) Tactical Strike - 11 [Updated]
 
-> **Note**: 1d6 extra isn't a ton, but it isn't nothing either.
+Starting at 11th level, when you succeed on a _Tactical Insight_ check against a creature, the next time you or a friendly creature deals damage to it before the start of your next turn, the damage to the creature is increased by 2 rolls of your _Leadership Die_.
 
-Starting at 11th level, when you succeed on a _Tactical Insight_ check against a creature, the next time you or a friendly creature deal damage to it before the start of your next turn, the damage to the creature is increased by 2 rolls of your _Leadership Die_.
-
-### (Prototype) Dynamic Tools - 11 [New]
+### (Prototype) Swift Analysis - 11 [New]
 
 You have a second Bonus Action, which may be used at any point on your turn, including between the Strikes of the Attack Action.
 
@@ -94,7 +92,11 @@ When Initiative is rolled and you are not Surprised, select a number of 5-foot s
 
 These squares become difficult terrain. The DM should incorporate minor changes to the scene's description that would cause the difficult terrain spotted by the Tactician, as if it had always been there. For example, if a square was directly inside a door, the DM might narrate that the entryway was muddy from a storm earlier in the day.
 
-### (Prototype) Demoralizing Strike - 11 [New]
+### (Musing) Commander's Strike - 11 [New]
+
+You can use the Push, Sap, Slow, and Topple _Masteries_ on any weapon you are proficient with that supports them, but you may only utilize one per weapon type. You can change what Mastery a weapon type benefits from when you complete a Long Rest.
+
+### (Musing) Demoralizing Strike - 11 [New]
 
 > **Note**: this isn't _bad_, but it's clunky, and it somewhat breaks the theming of a battlefield commander. I'd rather there be some other buff on-assist.
 
