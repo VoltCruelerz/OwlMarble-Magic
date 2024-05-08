@@ -69,8 +69,18 @@ You have a second Bonus Action, which may only be used immediately before your A
 
 ## Musings
 
-- Tactician feels like it should have more types battlefield control. Smokescreens, difficult terrain, and the like.
-    - the issue is how to make this happen on a muggle...
+- Tactician feels like it should have more types battlefield control, but the issue is how to make this happen on a muggle...
+    - obscurement
+        - smokescreens
+        - night operations
+        - adverse weather
+    - difficult terrain
+    - cover
+    - hide action
+    - traps
+    - flanking
+    - high ground
+    - camouflage
 - traps are cool and thematic, but PCs are offensive, not defensive
     - if they can be hot-deployed, that's more of a gadget, and we're steering into Artificer/Thief territory
     - maybe if they had something to goad enemies into attacking?
@@ -81,6 +91,14 @@ You have a second Bonus Action, which may only be used immediately before your A
 ### (Musing) Plot the Course - 1 [New]
 
 When an ally within 60 feet of you moves, you can use your reaction to increase their speed by 5 feet this turn, during which time they are not slowed by _Difficult Terrain_.
+
+### (Musing) Mercenary Negotiations - 1 [New]
+
+When recruiting Hirelings for combat, you can negotiate half the normal rate.
+
+### (Musing) Covering Fire - 7 [New]
+
+When you make a ranged weapon attack at an enemy within 60 feet of you, an ally of your choice within the same range can use their Reaction to move up to half their speed and take the Hide action.
 
 ### (Musing) Survey the Terrain - 7 [New]
 
