@@ -63,7 +63,7 @@ Starting at 11th level, when you succeed on a _Tactical Insight_ check against a
 
 ### (Prototype) Swift Analysis - 11 [New]
 
-You have a second Bonus Action, which may be used at any point on your turn, including between the Strikes of the Attack Action.
+You have a second Bonus Action, which may only be used immediately before your Action, immediately after your Action, or between the Strikes of your Attack Action.
 
 -----
 
@@ -117,3 +117,7 @@ At the start of each of your turns, select a Battle Formation to apply to your a
 > **Note**: This is mostly a ribbon in practice. I'd love something that punches through fog clouds, but that's pretty much automatically magical, and this is a muggle (sub)class.
 
 You are adept at monitoring the battlefield even when it becomes difficult. You no longer suffer disadvantage on Wisdom (Perception) checks due to _Light Obscurement_.
+
+### (Musing) Continued Cover - 15 [New]
+
+When a willing creature that can see or hear you within 60 feet of you loses the benefit of cover due to an enemy moving around it, you can use your Reaction to move the creature up to half its speed so that it remains in cover.
