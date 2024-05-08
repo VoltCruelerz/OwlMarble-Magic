@@ -52,7 +52,7 @@ At the start of each of your turns, select a Battle Formation to apply to your a
 
 ### (Prototype) Demoralizing Strike - 11 [New]
 
-> **Note**: this isn't _bad_, but it's clunky, and it somewhat breaks the theming of a battlefield commander.
+> **Note**: this isn't _bad_, but it's clunky, and it somewhat breaks the theming of a battlefield commander. I'd rather there be some other buff on-assist.
 
 Starting at 11th level, when a creature dies while afflicted with _Rallying Mark_ or _Tactical Insight_, the first time you hit on your following turn, the attack deals additional Psychic damage equal to 2 rolls of your _Leadership Die_.
 
