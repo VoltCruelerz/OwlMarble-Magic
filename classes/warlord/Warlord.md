@@ -2,7 +2,7 @@
 
 ## Warlord Features
 
-### Weapon Mastery - 9 [New]
+### (Prototype) Weapon Mastery - 9 [New]
 
 > **Note**: while fine for most subclasses, this feels a bit thematically weird on a Tactician, even if the masteries of any weapon a Tactician will actually use _will_ give crowd control.
 
