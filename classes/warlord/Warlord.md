@@ -41,9 +41,9 @@ When you take this Presence at 1st level, your _Leadership Dice_ progression cha
 |       19        |    28     |   d10    |       8        |
 |       20        |    30     |   d10    |       8        |
 
-### Tactical Flexibility - 3 [Updated]
+### Tactical Flexibility - 3 [Removed]
 
-You can use your Action for _Rallying Mark_, _Helpful Word_, or _Urgent Orders_.
+> **Note**: We already play with the Bonus Action Conversion rule, so this feature is entirely redundant.
 
 ### Tactical Insight - 3 [Updated]
 
