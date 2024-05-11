@@ -14,7 +14,7 @@ You gain access to the _Weapon Mastery_ property of 2 types of weapons (such as 
 
 ### Tactician's Leadership - 1 [New]
 
-> **Note**: While Rallying Mark is far and away the best use of LD, as shown in V1 (below), even if I doubled it, it only becomes very strong, not gamebreaking. That introduces issues with devaluing all other uses for LD though. This change doubles the number of dice but devalues each individual die, making them more granular.
+> **Note**: While Rallying Mark is far and away the best use of stock LD even if I doubled the dice, Rallying Mark only becomes very strong, not gamebreaking. That said, if I were to do so, it introduces issues with devaluing all other uses for LD by comparison. The below change change increases pool size by 50% and per-turn limit by 100% but devalues each individual die, making them more granular.
 
 When you take this Presence at 1st level, your _Leadership Dice_ progression changes, as shown in the table below.
 
