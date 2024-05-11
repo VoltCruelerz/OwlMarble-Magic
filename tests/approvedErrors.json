@@ -518,7 +518,7 @@
     },
     "Shining Smite": {
         "activation": {"type":"bonus","cost":1,"condition":"which you take immediately after hitting with a strike."},
-        "damage": {"parts":[["2d6[melee]","radiant"],["2d4[ranged]","radiant"]],"versatile":"","value":""},
+        "damage": {"parts":[["3d4[melee]","radiant"],["2d4[ranged]","radiant"]],"versatile":"","value":""},
         "scaling": {"mode":"level","formula":"1d4"}
     },
     "Simulacrum": {

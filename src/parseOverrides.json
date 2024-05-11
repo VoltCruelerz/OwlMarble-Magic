@@ -90,8 +90,8 @@
     },
     "Shining Smite": {
         "damage": {
-            "old": {"parts":[["2d6","radiant"],["2d4","radiant"]],"versatile":"","value":""},
-            "new": {"parts":[["2d6[melee]","radiant"],["2d4[ranged]","radiant"]],"versatile":"","value":""}
+            "old": {"parts":[["2d4","radiant"]],"versatile":"","value":""},
+            "new": {"parts":[["3d4[melee]","radiant"],["2d4[ranged]","radiant"]],"versatile":"","value":""}
         }
     },
     "Sleep": {
