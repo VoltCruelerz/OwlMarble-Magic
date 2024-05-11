@@ -12,58 +12,77 @@ You gain access to the _Weapon Mastery_ property of 2 types of weapons (such as 
 
 ## Subclass - Tactician
 
-### (Prototype) Tactical Flexibility - 3 [Updated]
+### Tactician's Leadership - 1 [New]
 
-> **Note**: this risks flooding the party with temps, but does help Tactician scale autonomously so it doesn't need to donate as many attacks.
+> **Note**: While Rallying Mark is far and away the best use of LD, as shown in V1 (below), even if I doubled it, it only becomes very strong, not gamebreaking. That introduces issues with devaluing all other uses for LD though. This change doubles the number of dice but devalues each individual die, making them more granular.
 
-You can use your Action for _Rallying Mark_, _Helpful Word_, or _Urgent Orders_. When you do so, their effects are enhanced.
+When you take this Presence at 1st level, your _Leadership Dice_ progression changes, as shown in the table below.
 
-- **Greater Rallying Mark**: As an Action, you can expend a number of _Leadership Dice_ (up to your per turn limit) to rally your allies to attack a hostile creature within 60 feet of you. The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add twice as many _Leadership Dice_ as were expended to the damage roll, and the attacking creature regains the same number of hit points.
-- **Greater Urgent Orders**: As an Action, you can expend a number of _Leadership Dice_ (up to your per turn limit) to guide your allies in expeditious action. Target an allied creature within 60 feet of you that can see or hear you. Roll twice for each leadership dice expended; the target gains temporary hit points equal to the sum that persist until your nest Short or Long Rest. The target can then immediately use its Reaction to move up to its movement speed without provoking Opportunity Attacks.
-- **Greater Helpful Word**: As an Action, you can spend a _Leadership Die_ to take the Help action, adding its roll to the Helped activity. When you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 60 feet of you, rather than within 5 feet of you, if your ally can see or hear you.
-    - **Greater Expert Instructions**: Starting at 9th level, when a creature benefits from your Help action, it may roll the _Leadership Die_ twice instead of once and add the sum.
+| Tactician Level | Pool Size | Die Size | Per-Turn Limit |
+| :-------------: | :-------: | :------: | :------------: |
+|        1        |     -     |    -     |       -        |
+|        2        |   **3**   |  **d4**  |       1        |
+|        3        |     4     |    d4    |     **2**      |
+|        4        |     6     |    d4    |     **3**      |
+|        5        |     7     |    d4    |       3        |
+|        6        |     9     |    d4    |     **4**      |
+|        7        |    10     |    d4    |       4        |
+|        8        |    12     |    d4    |       4        |
+|        9        |    13     |  **d6**  |     **5**      |
+|       10        |    15     |    d6    |       5        |
+|       11        |    16     |    d6    |       5        |
+|       12        |    18     |    d6    |     **6**      |
+|       13        |    19     |  **d8**  |       6        |
+|       14        |    21     |    d8    |       6        |
+|       15        |    22     |    d8    |     **7**      |
+|       16        |    24     |    d8    |       7        |
+|       17        |    25     | **d10**  |       7        |
+|       18        |    27     |   d10    |     **8**      |
+|       19        |    28     |   d10    |       8        |
+|       20        |    30     |   d10    |       8        |
 
-> **Greater Rallying Mark**
->
-> | Tactician Level | Expend Cap | Roll Cap | Die Size | Damage Value | Swing Value |
-> |:---------------:|:----------:|:---------:|:-------:|:------------:|:-----------:|
-> | 2               | 1          | 1         | d6      | 3.5          |   7         |
-> | 3               | 1          | 2         | d6      | 7            |  14         |
-> | 6               | 2          | 4         | d6      | 14           |  28         |
-> | 9               | 2          | 4         | d8      | 18           |  36         |
-> | 11              | 3          | 6         | d8      | 27           |  54         |
-> | 13              | 3          | 6         | d10     | 33           |  66         |
-> | 17              | 4          | 8         | d12     | 52           | 104         |
->
-> -----
-> -----
->
-> **Greater Urgent Orders**
->
-> | Tactician Level | Expend Cap | Roll Cap | Die Size | Temps Granted |
-> |:---------------:|:----------:|:---------:|:-------:|:-------------:|
-> | 2               | 1          | 1         | d6      | 3.5           |
-> | 3               | 1          | 2         | d6      | 7             |
-> | 6               | 2          | 4         | d6      | 14            |
-> | 9               | 2          | 4         | d8      | 18            |
-> | 11              | 3          | 6         | d8      | 27            |
-> | 13              | 3          | 6         | d10     | 33            |
-> | 17              | 4          | 8         | d12     | 52            |
+### Tactical Flexibility - 3 [Updated]
 
-### (Prototype) Scapegoat - 11 [New]
+You can use your Action for _Rallying Mark_, _Helpful Word_, or _Urgent Orders_.
+
+### Tactical Insight - 3 [Updated]
+
+Starting at 3rd level, you can tactically assess a creature's options. As a Bonus Action, make an Intelligence (Investigation) check contested by a Charisma (Deception) check against any creature you can see within 60 feet.
+
+On a success, you can see through their tactics, granting one of the following effects:
+
+- **Determine Attack**: You can cause them to have disadvantage on their next attack against a creature that can see or hear you.
+- **Predict Movement**: You deduce where they are planning to move on their next turn, giving your allies more time to react to it, making them second-guess their path. Their speed is reduced by 10 until the end of their next turn.
+- **Outwit Response**: You can find their openings, negating their ability to use their reaction until the end of their next turn.
+- **Expose Weakness**: You can use _Helpful Word_ to grant advantage against that target as part of the bonus action without expending a Leadership Die. If you do expend a die, add it to the d20 roll.
+
+If a creature of sufficient threat (`CR >= 1/8`) is reduced to 0 hit points while afflicted by _Determine Attack_, _Predict Movement_, or _Outwit Response_, you regain one expended _Leadership Die_.
+
+### Expanded Tactics - 11 [New]
 
 You gain the following _Leadership Dice_ features:
 
 - **Scapegoat**: As a Bonus Action expend a _Leadership Die_ and select a willing creature and an enemy, both of which must be within 60 feet of you. The enemy must succeed on a Wisdom saving throw or have disadvantage on attacks against creatures other than the target until the end of its next turn.
-- **Greater Scapegoat**: As an Action expend a _Leadership Die_ and select a willing creature and an enemy, both of which must be within 60 feet of you. The enemy must succeed on a Wisdom saving throw or have disadvantage on attacks against creatures other than the target until the end of its next turn. The first time the target enemy damages a creature during that window, roll the expended die and reduce the damage a target receives by the roll.
+- **Covering Fire**: When you make a ranged attack at an enemy within 60 feet of you, you can use a _Leadership Die_ to allow an ally of your choice within the same range can use their Reaction to move up to half their speed and take the Hide action.
 
-### (Prototype) Tactical Strike - 11 [Updated]
+### Tactical Strike - 11 [Updated]
 
-Starting at 11th level, when you succeed on a _Tactical Insight_ check against a creature, the next time you or a friendly creature deals damage to it before the start of your next turn, the damage to the creature is increased by 2 rolls of your _Leadership Die_.
+Starting at 11th level, when you make an attack with a weapon with which you are proficient, you can expend a _Leadership Die_ apply the _Slow_, _Push_, or _Isolate_ mastery to your weapon. You can apply these masteries even if the weapon does not meet the mastery's prerequisite. If you already benefit from a mastery from the weapon, you do not benefit from it for this attack.
 
-### (Prototype) Swift Analysis - 11 [New]
+If the attack hits, roll the expended die and add it to the weapon's damage.
 
-You have a second Bonus Action, which may only be used immediately before your Action, immediately after your Action, or between the Strikes of your Attack Action.
+### Swift Analysis - 15 [New]
+
+> **Note**: at higher levels, this becomes essential in keeping you leadership dice up.
+
+You have a second Bonus Action.
+
+### (Prototype) Spellbane Tactics - 15 [New]
+
+You gain the following _Leadership Dice_ features:
+
+- **Elemental Compensation**: Over the course of 10 minutes, you can spend 2 _Leadership Dice_ to equip a creature you touch with scavengered gear to grant them resistance to one of the following elements for 8 hours: Fire, Cold, Acid, Poison, Lightning, Radiant, or Necrotic.
+- **Spell Interdiction**: When an ally is within 5 feet of an enemy that is casting a spell, you can spend any number (up to your per turn limit) of _Leadership Dice_ to order the ally to attack the caster. If the number of dice exceeds the level of the spell, the spell fails.
 
 -----
 
@@ -74,13 +93,18 @@ You have a second Bonus Action, which may only be used immediately before your A
         - smokescreens
         - night operations
         - adverse weather
-    - difficult terrain
-    - cover
-    - hide action
-    - traps
-    - flanking
-    - high ground
+    - difficult terrain/bypassing it
+    - cover/attacking enemies with cover
     - camouflage
+    - hide action/popping stealthed enemies
+    - traps/noticing traps
+    - flanking/surviving despite being flanked
+    - high ground/assault vs high ground
+    - flip the script
+    - opportunity attacks/avoiding OAs
+    - support battle magic (range?)
+    - muck with initiative
+    - held actions
 - traps are cool and thematic, but PCs are offensive, not defensive
     - if they can be hot-deployed, that's more of a gadget, and we're steering into Artificer/Thief territory
     - maybe if they had something to goad enemies into attacking?

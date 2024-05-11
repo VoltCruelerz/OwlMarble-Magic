@@ -34,7 +34,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Javelin** | 0.5 | 2 | 1d6 piercing | _Thrown (30/120), Amphibious_ | - | Slow |
 | **Light Hammer** | 2 | 2 | 1d4 bludgeoning | _Light, Thrown (20/60)_ | - | Nick |
 | **Mace** | 5 | 4 | 1d6 bludgeoning | - | - | Sap |
-| **Quarterstaff** | 0.2 | 4 | 1d6 bludgeoning | Versatile (1d8) | - | Lunge, Flex (Tumble)  |
+| **Quarterstaff** | 0.2 | 4 | 1d6 bludgeoning | Versatile (1d8) | - | Isolate, Flex (Tumble)  |
 | **Sickle** | 1 | 2 | 1d4 slashing | _Light_ | Shovel, Hoe | Nick |
 | **Spear** | 1 | 3 | 1d6 piercing | _Thrown (20/60), Versatile (1d8), Amphibious_ | - | Lunge, Flex (Vex) |
 
@@ -43,13 +43,13 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Name** | **Price** (gp) | **Weight** (lbs) | **Damage** | **Properties** | **Alternatives** | **Mastery** |
 |:---------|:--------------:|:----------------:|:----------:|:---------------|:-----------------|:------------|
 | **Battleaxe** | 10 | 4 | 1d8 slashing | _Versatile (1d10)_ | - | Topple, Flex (Cleave) |
-| **Billhook** | 6 | 6 | 1d8 slashing or piercing | _Two-Handed, Reach, Dismounting_ | - | Yoink |
+| **Billhook** | 6 | 6 | 1d8 slashing or piercing | _Two-Handed, Reach, Dismounting_ | - | Vex |
 | **Claws** | 2 | 1/2 | 1d4 slashing | _Finesse, Handy, Light_| - | Nick |
 | **Flail** | 10 | 2 | 1d8 bludgeoning | - | - | Sap |
 | **Glaive** | 20 | 6 | 1d10 slashing | _Heavy, Reach, Two-Handed_ | - | Graze |
 | **Greataxe** | 30 | 7 | 1d12 slashing | _Heavy, Two-Handed_ | - | Cleave |
 | **Greatsword** | 50 | 6 | 2d6 slashing | _Heavy, Two-Handed_ | Flamberge | Cleave |
-| **Halberd** | 20 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy, Dismounting_| - | Cleave |
+| **Halberd** | 20 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy, Dismounting_| - | Isolate |
 | **Hook Sword (Separate)** | 45 | 2 | 1d6 slashing | _Finesse, Light, Parrying, Special_| - | Nick |
 | **Hook Swords (Linked)** | -  | - | 2d4 slashing | _Finesse, Two-Handed_<br/>**Special**: If a creature is holding two hook swords, as part of its attack action, the creature can link or unlike the swords. | - | Lunge |
 | **Lance** | 5 | 6 | 1d12 piercing | _Heavy, Extended Reach, Couched_<br/>**Special**: While mounted, this has the Dismounting property.| - | Topple |
@@ -68,7 +68,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Warhammer** | 15 | 2 | 1d8 bludgeoning | Versatile (1d10) | - | Graze, Flex (Slow) |
 | **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_| - | Push |
 | **War Scythe** | 5 | 6 | 1d6 slashing | _Finesse, Heavy, Reach, Two-Handed_| - | Graze |
-| **Whip** | 2 | 3 | 1d4 slashing | _Finesse, Reach_ | - | Yoink |
+| **Whip** | 2 | 3 | 1d4 slashing | _Finesse, Reach_ | - | Isolate |
 
 ## Ranged Weapons
 

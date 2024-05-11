@@ -32,6 +32,12 @@ _Prerequisite: Melee Weapon, Heavy Property_
 
 If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can’t be  increased in any way, other than  increasing the ability modifier.
 
+## Isolate [New]
+
+_Prerequisite: Melee Weapon, Reach Property_
+
+When you make an attack with this weapon on your turn, you restrict the target's options, preventing it from working in collaboration with its allies. Until the start of your next turn, the target cannot flank or trigger flanking, and it does not count as an adjacent creature for the purpose of abilities such as _Sneak Attack_ and _Pack Tactics_, and it does not trigger disadvantage for ranged attacks.
+
 ## Lunge [New]
 
 _Prerequisite: Versatile Property or Finesse Property_
@@ -79,9 +85,3 @@ Immediately after you hit a creature with an attack with this weapon, you can us
 _Prerequisite: Ammunition Property, Finesse Property, or Light Property_
 
 If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that reature before the end of your next turn.
-
-## Yoink [New]
-
-_Prerequisite: Reach Property_
-
-When you make an attack, you can choose to forego the damage of the attack to instead make a Disarm check against the target.

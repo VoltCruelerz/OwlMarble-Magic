@@ -17,7 +17,7 @@ let params =
         blur:     
         { 
            active: true, 
-           loopDuration: 500, 
+           loopDuration: 5000, 
            animType: "syncCosOscillation", 
            val1: 4, 
            val2: 4.1
@@ -25,7 +25,7 @@ let params =
         rotation:
         {
            active: true,
-           loopDuration: 100,
+           loopDuration: 1000,
            animType: "syncSinOscillation",
            val1: 36,
            val2: 37

@@ -204,11 +204,10 @@ module.exports = (omm, srd) => {
         'duration',
         'target',
         'range',
-        'uses',
         'actionType',
         'damage',
         'save',
-        'components',
+        'properties',
         'materials',
         'scaling'
     ];

@@ -32,7 +32,7 @@ class MasteryPrereq {
         } else if (text === 'Melee Weapon') {
             this.requiresMelee = true;
         } else {
-            throw new Error(chalk.red('Unrecognized Mastery Prereq: ' + text));
+            throw new Error(chalk.red(`Unrecognized Mastery Prereq: ${text}. Did you mean to specify "${text} Property"?`));
         }
     }
 

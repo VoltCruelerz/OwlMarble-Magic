@@ -1496,17 +1496,17 @@ module.exports = class SpellParser extends Parser {
             };
         } else if (dur.type === 'instant') {
             return {
-                value: null,
+                value: '',
                 units: 'inst'
             };
         } else if (dur.type === 'permanent') {
             return {
-                value: null,
+                value: '',
                 units: 'perm'
             };
         } else if (dur.type === 'special') {
             return {
-                value: null,
+                value: '',
                 units: 'spec'
             };
         } else {
@@ -1554,8 +1554,8 @@ module.exports = class SpellParser extends Parser {
         if (spell.components.v) retVal.push('vocal');
         if (spell.components.s) retVal.push('somatic');
         if (spell.components.m) retVal.push('material');
-        if (isRitual) retVal.push('ritual');
         if (isConcentration) retVal.push('concentration');
+        if (isRitual) retVal.push('ritual');
         return retVal;
     }
 
@@ -1898,8 +1898,8 @@ module.exports = class SpellParser extends Parser {
             if (components.vocal) compArr.push('vocal');
             if (components.somatic) compArr.push('somatic');
             if (components.material) compArr.push('material');
-            if (components.ritual) compArr.push('concentration');
-            if (components.concentration) compArr.push('ritual');
+            if (components.concentration) compArr.push('concentration');
+            if (components.ritual) compArr.push('ritual');
             spell.system.properties = compArr;
         });
         return spells;
