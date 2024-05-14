@@ -12,6 +12,17 @@ You gain access to the _Weapon Mastery_ property of 2 types of weapons (such as 
 
 ## Subclass - Tactician
 
+### Defensible Position - 1 [New]
+
+Over the course of 10 minutes, you can fill a number of 5-foot squares equal to twice your Intelligence modifier with difficult terrain. You can also expend any number of _Leadership Dice_ to direct your companions in the construction of greater works, increasing the number of 5-foot squares filled in the same time by the value rolled.
+
+> **Note**: Jivara could process 30 squares an hour.
+
+If you expend twice the effort on a given 5-foot square, you can fill it with one of the following:
+
+- **Barricade**: a barricade is assembled out of nearby materials, which can be bidirectional or monodirectional. If bidirectional, creatures always have half cover from attacks coming from the other side. If monodirectional, only creatures within 10 feet of the rear of it have half cover against attacks coming from the front of it.
+- **Tripwires**: thin tripwires are assembled (detection DC is your passive Deception) throughout the area that emit a noise when triggered. The sound is audible from 60 feet and wakes sleeping creatures within 15 feet.
+
 ### Tactician's Leadership - 1 [New]
 
 > **Note**: While Rallying Mark is far and away the best use of stock LD even if I doubled the dice, Rallying Mark only becomes very strong, not gamebreaking. That said, if I were to do so, it introduces issues with devaluing all other uses for LD by comparison. The below change change increases pool size by 50% and per-turn limit by 100% but devalues each individual die, making them more granular.
@@ -62,8 +73,9 @@ If a creature of sufficient threat (`CR >= 1/8`) is reduced to 0 hit points whil
 
 You gain the following _Leadership Dice_ features:
 
-- **Scapegoat**: As a Bonus Action expend a _Leadership Die_ and select a willing creature and an enemy, both of which must be within 60 feet of you. The enemy must succeed on a Wisdom saving throw or have disadvantage on attacks against creatures other than the target until the end of its next turn.
+- **Scapegoat**: As a Bonus Action, expend a _Leadership Die_ and select a willing creature and an enemy, both of which must be within 60 feet of you. The enemy must succeed on a Wisdom saving throw or have disadvantage on attacks against creatures other than the target until the end of its next turn.
 - **Covering Fire**: When you make a ranged attack at an enemy within 60 feet of you, you can use a _Leadership Die_ to allow an ally of your choice within the same range can use their Reaction to move up to half their speed and take the Hide action.
+- **Chokepoint**: As a Bonus Action, expend a _Leadership Die_ and select two allies within 15 feet of each other. Until the start of your next turn, or until one of the allies moves more than 15 feet from the other, squares within the reach of either ally becomes difficult terrain.
 
 ### Tactical Strike - 11 [Updated]
 
@@ -119,6 +131,17 @@ When an ally within 60 feet of you moves, you can use your reaction to increase 
 ### (Musing) Mercenary Negotiations - 1 [New]
 
 When recruiting Hirelings for combat, you can negotiate half the normal rate.
+
+### (Musing) Defensible Position - 1 [New]
+
+Over the course of 10 minutes, you can fill a number of 5-foot squares equal to twice your Intelligence modifier with difficult terrain. You can also expend any number of _Leadership Dice_ to direct your companions in the construction of greater works, increasing the number of 5-foot squares filled in the same time by the value rolled.
+
+> **Note**: Jivara could process 30 squares an hour.
+
+If you expend twice the effort on a given 5-foot square, you can fill it with one of the following:
+
+- **Barricade**: a barricade is assembled out of nearby materials, which can be bidirectional or monodirectional. If bidirectional, creatures always have half cover from attacks coming from the other side. If monodirectional, only creatures within 10 feet of the rear of it have half cover against attacks coming from the front of it.
+- **Tripwires**: thin tripwires are assembled (detection DC is your passive Deception) throughout the area that emit a noise when triggered. The sound is audible from 60 feet and wakes sleeping creatures within 15 feet.
 
 ### (Musing) Covering Fire - 7 [New]
 
