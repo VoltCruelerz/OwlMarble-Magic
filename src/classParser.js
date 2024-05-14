@@ -149,12 +149,13 @@ module.exports = class ClassPraser extends Parser {
                     .replaceAll('</blockquote><blockquote>', '');// Merge adjacent block quotes.
 
                 const id = this.generateUUID(`${featureName} - ${classFileName} (OwlMarble Magic - Features)`);
+                const imageType = classFileName !== 'Psion' && classFileName !== 'Warlord' ? '.svg' : '.png';
                 features.push({
                     _id: id,
                     _key: '!items!' + id,
                     name: featureName,
                     type: 'feat',
-                    img: 'modules/owlmarble-magic/icons/classes/' + classFileName + (classFileName !== 'Psion' ? '.svg' : '.png'),
+                    img: 'modules/owlmarble-magic/icons/classes/' + classFileName + imageType,
                     data: {
                         description: {
                             value: `<div>${featureString}</div>`,
