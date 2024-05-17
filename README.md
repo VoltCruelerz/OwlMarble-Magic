@@ -45,6 +45,7 @@ See dedicated [page](./feats/feats.md).
 - [Rogue](./classes/rogue/Rogue.md)
 - [Sorcerer](./classes/sorcerer/Sorcerer.md)
 - [Warlock](./classes/warlock/Warlock.md)
+- [Warlord](./classes/warlord/Warlord.md)
 
 ### Rules
 
