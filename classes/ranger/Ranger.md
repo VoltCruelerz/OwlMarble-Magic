@@ -79,7 +79,7 @@ Once consumed, the consumer can immediately reroll the saving throw for any sing
 
 Once consumed, the consumer regenerates 1 hit point at the start of each of its turns for 1 minute after any other effects that take place at the start of the creature's turn. If the creature is reduced to 0 hit points, the effect of this solution ends.
 
-A creature that has benefited from a tonic since its last Long Rest must expend a Hit Die to benefit from another.
+A creature that has benefited from a tonic since its last Long Rest must expend a Hit Die to benefit from another. As you are resistant to the side effects of your own tonics, the number of times you may benefit from them before expending Hit Dice is increased to 1 + your Constitution modifier.
 
 > **Ingestion**: A creature can use a Bonus Action to swallow a solution, or an incapacitated or willing creature can be administered a solution by the administering creature's Action
 
