@@ -1,6 +1,8 @@
 # Setting
 
-- **Time**: The campaign picks up in year 328 of the Epoch of Cities (0 EoC is when campaign 1 ended)
+- **Time**: The campaign picks up in year 332 of the Epoch of Cities
+    - Campaign 1 ended in 0 EoC
+    - Campaign 2 was entirely within 328 EoC
 - **Place**: The campaign is based in the city of Sigil, a torus-shaped floating city in the exact center of the Multiverse on a sub-plane of the Prime Material Plane called The Outlands.  While in the Outlands.
 
 ## Epoch of Cities
@@ -25,7 +27,7 @@ In 45 EoC, Drow forces from Menzoberranzan assaulted the fledgling Orzenel Repub
 
 Centuries later, in 318 EoC, Lolth’s forces again assaulted the surface world, aiming to exterminate the heretics in New Orzenel.  Due to fears of using undead (because of the Fall of Trista), Midnight Magic undertook the task of creating comparable golems to defend the city.
 
-Warforged were the result.  When the war ended in 324, the tens of thousands of warforged were ultimately granted personhood by New Orzenel.  This was echoed in Cordacet, Sigil, Luethia, and Moltobon, but other cities have been more hesitant.  Nonetheless, their precise legal status remains somewhat uncertain.
+Warforged were the result.  When the war ended in 324, the tens of thousands of warforged were ultimately granted personhood by New Orzenel.  This was echoed in Cordacet, Sigil, Luethia, and Moltobon, but other cities have been more hesitant.  Nonetheless, their precise legal status remains somewhat uncertain. In many jurisdictions, including New Orzenel, they are legally a person who happens to own a golem they cannot be parted from.
 
 ## Major City States
 
