@@ -54,10 +54,7 @@ See dedicated [page](./rules/Rules.md)
 
 ### Player-Facing Features
 
-- **Direct Foundry Import**: my previous spell parser read HTML files and converted those to Roll20's format.  When my table made the jump to FoundryVTT, rather than manually parse HTML all over again, I wrote _another_ parser to convert Roll20's format to Foundry's format.  This double-conversion had _many_ shortcomings.
-  - Loss of Formatting
-  - Performance
-  - Desynchronization
+- **Direct Foundry Import**: parses the markdown files for spells and classes and directly injects them into Foundry compendiums.
 - **Hyperlinks**: Spells can now direclty reference other spells and even monsters.
 - **Advanced Lookup**: The [Spells by Class](./spells/Spells%20by%20Class.md) document allows you to navigate to any spell quickly, as well as providing an easily searchable list of all spells for your class.
 - **Improved Performance**: Because not every spell is loaded in its entirety, the display pages are more performant, letting you find the spell you want faster.
