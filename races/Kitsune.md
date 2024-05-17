@@ -28,6 +28,8 @@ You can select either Wisdom, Intelligence, or Charisma as your spellcasting abi
 
 _**Hidden Tails**_. As an Action, you can craft a shadow glamor to hide any number of your tails. You can maintain the illusion indefinitely, but you must Concentrate on it, as if on a spell.
 
+_**Darkvision**_. You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+
 ## Balance
 
 [Detect Balance](https://docs.google.com/spreadsheets/d/1vq1kz6PRAbw5LHy6amH-bNb4OuB8DBXL1RsZROt03Sc/edit#gid=872807765)
