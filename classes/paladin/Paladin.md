@@ -2,6 +2,10 @@
 
 ## Paladin Features
 
+### Weapon Mastery [New]
+
+Your training with weapons allows you to use the Mastery property of two kinds of weapons with which you are proficient, such as Longbows and Longswords.
+
 ### Paladin's Smite - 2 [New]
 
 _replaces Divine Smite_

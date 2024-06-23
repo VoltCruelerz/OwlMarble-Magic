@@ -12,6 +12,13 @@ You regain the use of your Radiant Soul, Radiant Consumption, or Necrotic Shroud
 
 Your extensive practice with your spells has led to unparalleled accuracy. When you make a ranged spell attack, you have a +2 bonus to your attack rolls.
 
+## Adrenaline Rush [New]
+
+After you roll initiative, receive a critical hit, or an ally within 30 feet of you drops to 0 hit points, you gain one of the following benefits until the end of your next turn:
+
+- you gain temporary hit points equal to your level
+- your speed increases by 15 until the end of your next turn
+
 ## Arrow Master [New]
 
 _Requirement: Dexterity or Strength score of 15 or higher, Level 4_
@@ -171,7 +178,7 @@ You are always the first one to charge into danger, clearing the path for your a
 
 - You gain a +5 bonus to your initiative rolls.
 - On your first turn in an encounter, you gain a bonus to your speed equal to your base speed. This bonus speed may only be used to move directly toward an enemy.
-- If you use this bonus, you grant the same bonus to all allies with a lower initiative roll than you this round. An ally that is granted this bonus may only use the additional movement speed to move directly toward you or an enemy.
+- If you use this bonus speed, you grant the same bonus to all allies with a lower initiative roll than you this round. An ally that is granted this bonus may only use the additional movement speed to move directly toward you or an enemy.
 - A creature cannot benefit from the speed increase granted by this feat if its current speed is 0.
 
 ## Combat Reflexes [KeoniKoa]
@@ -196,6 +203,14 @@ You have spent time honing your abilities with small blades to a degree few drea
 
 You can take the _Aim_ action as a bonus action.
 
+## Eldritch Adept [Updated]
+
+Studying occult lore, you learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.
+
+Whenever you gain a level, you can replace the invocation with another one from the warlock class.
+
+Additionally, your spellcasting ability for the invocation is increased by 1, to a maximum of 20.
+
 ## Eldritch-Touched [New]
 
 You have been exposed to the warped reality of the Far Realm and survived, granting you more insight into the minds of others. You gain the following benefits:
@@ -207,8 +222,20 @@ You have been exposed to the warped reality of the Far Realm and survived, grant
 
 Some people go down easy. You? Not so much. You gain the following benefits:
 
-- You gain a +2 bonus on death saving throws.
+- Increase an ability score by 1, to a maximum of 20.
+- You have advantage on Death Saving throws.
 - When you are reduced to 0 hit points by an effect that does not instantly kill you at 0 hit points, you can immediately move half your speed and make a single weapon attack before falling unconscious. Movement due to this feature does not provoke opportunity attacks. You can do this once per long rest.
+
+## Dragon Hide [New]
+
+_Requirement: Dragonborn_
+
+You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:
+
+- Increase your Strength, Constitution, or Charisma by 1, to a maximum of 20.
+- Your natural resistance is upgraded to Immunity.
+- Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.
+- You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike.
 
 ## Durable [Updated by KeoniKoa]
 
@@ -218,7 +245,7 @@ You are hardy and resilient, and you gain the following benefits:
 - When you roll a Hit Die to recover hit points, the minimum number of hit points you recover is equal to twice your Constitution modifier.
 - Whenever you regain hit points, you gain additional hit points equal to half your proficiency bonus (rounded down).
 
-## Elemental Adept [Update]
+## Elemental Adept [Updated]
 
 _Requirement: must have the Spellcasting feature_
 
@@ -251,6 +278,15 @@ You have been inundated with magic from the lower planes, granting you the follo
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
 - You learn the _Darkness_ spell and one 1st level spell of your choice. The 1st level spell must be from the evocation or necromancy school of magic and cannot restore hit points. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
+## Fighting Initiate [Updated]
+
+_Requirement: proficiency with a martial weapon_
+
+Your martial training has helped you develop a particular style of fighting. You gain the following benefits:
+
+- Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.
+- You learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different. Whenever you increase in level, you can replace this feat's fighting style with another one from the fighter class that you don't have.
+
 ## Flesh Shaper [New]
 
 Your abilities and spells that change a creature into another creature (such as Alter Self, Beast Shape, and Polymorph) have their durations doubled.
@@ -269,6 +305,14 @@ _Requirement: must have Psi Points_
 
 As an action, you focus your mind and regain a number of psi points equal to your proficiency bonus.
 Once you have used this action, you cannot do so again until you finish a short rest.
+
+## Gift of the Chromatic Dragon [Updated]
+
+You've manifested some of the power of chromatic dragons, granting you the following benefits:
+
+- Increase an ability score by 1, to a maximum of 20.
+- As a bonus action, you can touch a simple or martial weapon and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra 1d4 damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a long rest.
+- When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
 
 ## Gift of the Giants [Pixel_Engine]
 
@@ -360,6 +404,13 @@ _Requirement: must be able to prepare spells_
 - Select a class in which you are able to prepare spells. The maximum number of spells you are able to prepare for that class increases by your proficiency bonus.
 - You recall everything you have seen or heard within the last 30 days.
 
+## Lightly Armored [Updated]
+
+You have trained to master the use of light armor, gaining the following benefits:
+
+- Increase an ability score by 1, to a maximum of 20.
+- You gain proficiency with Light Armor.
+
 ## Light Armor Mastery [KeoniKoa]
 
 _Requirement: Dexterity Score 13 or higher, proficiency in Light Armor_
@@ -423,6 +474,14 @@ You've learned to embrace your mechanical origins, and are now more construct th
 - Increase your Strength or Dexterity by 1, to a maximum of 20.
 - You gain proficiency in medium armor and shields.
 
+## Orcish Fury [Updated]
+
+_Requirement: Orc or Half-Orc_
+
+- Increase your Strength or Constitution by 1, to a maximum of 20.
+- When you hit with a Strike, you can roll one of the damage dice an additional time and increase the damage by the same amount. Once you have done so, you cannot do so again until you reduce a creature to 0 hit points, critically Strike a creature, or complete a Short or Long Rest.
+- Immediately after you use your Relentless Endurance trait, you can use your reaction to make a Strike.
+
 ## Order-Touched [New]
 
 The inexorable nature of Mechanus has been embedded within you, granting you the following benefits:
@@ -439,11 +498,13 @@ You have honed the skills necessary for a skilled trade. You gain the following 
 
 ## Psionic Adept [Updated from KibblesTasty]
 
+- Your Intelligence increases by 1, to a maximum of 20.
 - You gain one of the psionic disciplines of the Psion class, gaining the attached psionic feature and psionic power, but you do not gain any of the associated spells.
 - You gain 1 psi point, which you recover after a short or long rest.
 
 ## Psionic Prodigy [New]
 
+- Your Intelligence increases by 1, to a maximum of 20.
 - You gain one psionic talent. If it has a requirement of any kind, you may only select it if you are a psion and meet the requirements.
 - You gain 1 psi point, which you recover after a short or long rest.
 
@@ -522,7 +583,8 @@ Your skill with runecraft has increased by leaps and bounds once again, making y
 
 ## Savage Attacker [Updated]
 
-Once per turn when you roll damage for a melee weapon attack, you can reroll the damage and use either total.
+- Increase your Strength, Dexterity, or Charisma by 1, to a maximum of 20.
+- Once per turn when you roll damage for a melee weapon attack, you can reroll the damage and use either total.
 
 ## Sharpshooter [Updated]
 
@@ -624,6 +686,29 @@ You move like the wind, striking faster than your foes can see. You gain the fol
 - If you attack and hit a creature with a melee weapon attack, you can pass through its space until the end of your turn as if it were difficult terrain.
 - When you take the attack action on your turn, you can replace one of your attacks with a rapid burst of movement, moving up to 30 feet along any surface in a straight line. You can move along vertical or horizontal surfaces with this movement, can pass through creatures, and do not provoke attacks of opportunity, but cannot pass through objects or terrain. A creature you move through in this way must make a Dexterity saving throw or take damage equal to 2d6 + your Strength or Dexterity modifier (your choice). The damage's type is that of your weapon. On a success, a creature receives half as much damage.
 
+## Strike of the Giants [Updated]
+
+You have absorbed primeval magic that gives you an echo of the might of giants. When you take this feat, you gian the following benefits:
+
+- Increase your Constitution by 1 (to a maximum of 20)
+- Choose one of the benefits listed below. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose:
+  - **Cloud Strike**: The target takes an extra 1d4 thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become invisible to it until the start of your next turn or until immediately after you make an attack roll or cast a spell.
+  - **Fire Strike**: The target takes an extra 1d10 fire damage.
+  - **Frost Strike**: The target takes an extra 1d6 cold damage. If the target is a creature, it must succeed on a Constitution saving throw, or its speed is reduced to 0 until the start of your next turn.
+  - **Hill Strike**: The target takes an extra 1d6 damage of the weapon's type. If the target is a creature, it must succeed on a Strength saving throw or have the prone condition.
+  - **Stone Strike**: The target takes an extra 1d6 force damage. If the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet from you in a straight line.
+  - **Storm Strike**: The target takes an extra 1d6 lightning damage. If the target is a creature, it must succeed on a Constitution saving throw, or it has disadvantage on attack rolls until the start of your next turn.
+  The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier.
+
+You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+
+## Sword Master [Xenoezen]
+
+The sword is an elegant weapon, and each stroke from your hand is a form of art. You gain the following benefits:
+
+- When you take the Attack action with a greatsword, longsword, rapier, scimitar, or shortsword, you can use a Bonus Action to make a quick melee attack with the weapon, representing a pommel strike, half-swording, or a false edge cut. This attack uses the same ability modifier as the primary attack, and the die is a d4. The Strike can deal piercing, slashing, or bludgeoning damage (your choice).
+- While you are weidling only a greatsword, longsword, rapier, scimitar, or shortsword, other creatures provoke opportunity attacks from you when they miss you with a Strike.
+
 ## Tabaxi Curiosity [Sarguro]
 
 _Requirement: Tabaxi_
@@ -672,7 +757,7 @@ You have mastered the use of versatile weapons and gain the following the benefi
 
 **Note**: See the updated [Versatile](../rules/items/Weapon%20Properties.md#Versatile) rules.
 
-## Weapon Expert [Updated]
+## Weapon Master [Updated]
 
 Your expertise with weapons is legendary. You can select this feat more than once, but you cannot select the same benefit for the same weapon twice.
 
