@@ -61,7 +61,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Rapier** | 25 | 2 | 1d8 piercing | _Finesse_ | Estoc, Foil | Lunge |
 | **Scimitar** | 25 | 3 | 1d6 slashing | _Finesse, Light_ | Katana, Saber | Nick |
 | **Shortsword** | 10 | 2 | 1d6 slashing or piercing | _Finesse, Light, Amphibious_ | Khopesh | Vex |
-| **Spearsword** | 1 | 3 | 1d8 piercing or slashing | _Thrown (10/30)_ | Yklwa | Graze |
+| **Spearsword** | 10 | 3 | 1d8 piercing or slashing | _Thrown (10/30)_ | Yklwa | Graze |
 | **Studded Gauntlets** | 1 | 1/2 | 1d4 bludgeoning or piercing | _Handy, Light_| Brass Knuckles | Graze |
 | **Trident** | 5 | 2 | 1d8 piercing | _Thrown (20/60), Versatile (1d10), Amphibious_ | Pitchfork | Lunge, Flex (Slow) |
 | **War Pick** | 5 | 2 | 1d8 piercing | Versatile (1d10) | - | Sap, Flex (Deadly) |
