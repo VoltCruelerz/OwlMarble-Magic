@@ -140,7 +140,7 @@ Your reflexes and techniques safeguard your allies. You gain the following benef
 You've been exposed to the primordial magic of the Elemental Planes, granting you a measure of control over the natural world around you. You gain the following benefits:
 
 - Increase an ability score of your choice by 1, to a maximum of 20.
-- Whenever you finish a short rest, you can attune yourself to a one of the elemental planes. Depending on your choice, you gain access to an ability you can use your bonus action to activate. You can use this bonus action a number of times equal to your proficiency bonus, and regain all uses when you finish a long rest.
+- Whenever you finish a short rest, you can attune yourself to a one of the elemental planes. Depending on your choice, you gain access to an ability you can use your bonus action to activate. You can use this bonus action once and regain use of it when you finish a Short or Long Rest or take a level of Exhaustion.
   - **Air**: until the end of your turn, you gain a fly speed equal to your walking speed.
   - **Earth**: you cause the ground within 30 feet of you when you use this ability to tremble and become difficult terrain for 1 minute or until use this bonus action again. During that time, you can move across ground that is difficult terrain without spending extra movement.
   - **Fire**: you surround yourself in a cloud of ash and smoke. Until the end of your turn, your movement does not provoke opportunity attacks.
@@ -281,8 +281,6 @@ You are hardy and resilient, and you gain the following benefits:
 
 ## Elemental Adept [Updated]
 
-_Requirement: must have the Spellcasting feature_
-
 When you gain this feat, choose a damage type.
 
 Your spells, psionic powers, and ki-fueled abilities ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can reroll any 1s, but you must keep the new rolls.
@@ -320,6 +318,15 @@ Your martial training has helped you develop a particular style of fighting. You
 
 - Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.
 - You learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different. Whenever you increase in level, you can replace this feat's fighting style with another one from the fighter class that you don't have.
+
+## Firearms Initiate [New]
+
+_Requirement: proficiency with a firearms_
+
+Your firearms training has helped you develop a particular style of fighting. You gain the following benefits:
+
+- Increase your Strength, Dexterity, or Constitution by 1, to a maximum of 20.
+- You learn one Shooting Style option of your choice. If you already have a style, the one you choose must be different. Whenever you increase in level, you can replace this feat's fighting style with another one that you don't have.
 
 ## Flesh Shaper [New]
 
@@ -406,7 +413,7 @@ You are an able physician, allowing you to mend wounds quickly and get your alli
 ## Heavy Armor Master [Updated]
 
 - Increase your strength by 1, to a maximum of 20.
-- While you are wearing heavy armor, physical weapon damage dealt to you is reduced by your proficiency bonus.
+- While you are wearing heavy armor, physical strike damage dealt to you is reduced by your proficiency bonus.
 
 ## High Sorcery [New]
 
@@ -655,7 +662,7 @@ You can make shots that others find impossible, granting you the following benef
 You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:
 
 - When you have a shield equipped, you can use your shield as a bonus action to make an improvised weapon attack or try to shove a creature within 5 feet.
-- If you aren’t incapacitated, you can add your shield’s AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.
+- If you aren’t incapacitated, you can add your shield’s AC bonus to any Dexterity saving throw you make against a spell or other harmful effect.
 - If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed, interposing your shield between yourself and the source of the effect.
 
 ## Skill Expert [Updated]
@@ -767,7 +774,7 @@ You move like the wind, striking faster than your foes can see. You gain the fol
 You have absorbed primeval magic that gives you an echo of the might of giants. When you take this feat, you gian the following benefits:
 
 - Increase your Constitution by 1 (to a maximum of 20)
-- Choose one of the benefits listed below. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose:
+- Choose one of the benefits listed below. When you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose:
   - **Cloud Strike**: The target takes an extra 1d4 thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become invisible to it until the start of your next turn or until immediately after you make an attack roll or cast a spell.
   - **Fire Strike**: The target takes an extra 1d10 fire damage.
   - **Frost Strike**: The target takes an extra 1d6 cold damage. If the target is a creature, it must succeed on a Constitution saving throw, or its speed is reduced to 0 until the start of your next turn.
@@ -776,7 +783,7 @@ You have absorbed primeval magic that gives you an echo of the might of giants. 
   - **Storm Strike**: The target takes an extra 1d6 lightning damage. If the target is a creature, it must succeed on a Constitution saving throw, or it has disadvantage on attack rolls until the start of your next turn.
   The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier.
 
-You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+Once you have used this ability, you cannot do so again until you complete a Short or Long Rest or take a level of Exhaustion.
 
 ## Sword Master [Xenoezen]
 
