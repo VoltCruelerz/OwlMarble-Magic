@@ -1,6 +1,33 @@
 # OwlMarble Magic Feats
 
 > **Note:** epic boons are found in their own [document](../feats/Epic%20Boons.md).
+>
+> **Analysis**: [Treantmonk's Method](https://www.youtube.com/watch?v=QcHZvwmGk9M)
+>
+> - **Ratings**
+>   - S: 57+
+>   - A: 50-56
+>   - B: 43-49
+>   - C: 38-42
+>   - D: 33-37
+>   - F: 32-
+> - **Points**
+>   - 1-9: Ribbon
+>   - 10-19: Decent
+>   - 20-29: Pretty Good
+>   - 30-39: Good
+>   - 40-50: Great
+
+## Adrenaline Rush [New]
+
+When your life is on the line, you are filled with a burst of energy.
+
+When you roll initiative, are hit by a critical hit, or an attack misses your AC by 1, you may choose one of the following benefits. You may only benefit from one of them at a time.
+
+- You gain temporary hit points equal to your level until the end of your next turn
+- Your speed increases by half your speed until the end of your next turn.
+- You have advantage on the first attack roll you make before the end of your next turn.
+- You have advantage on the next ability check you make before the end of your next turn.
 
 ## Ancestral Radiance [New]
 
@@ -203,6 +230,13 @@ You have spent time honing your abilities with small blades to a degree few drea
 
 You can take the _Aim_ action as a bonus action.
 
+## Defensive Duelist [Updated]
+
+You have become especially skilled in deflecting incoming attacks with your weapon, gaining the following benefits while wielding a finesse weapon with which you are proficient and no shield:
+
+- Your AC increases by 1 and your finesse weapon can count as a shield for the purpose of features and effects such as _Shield Master_.
+- When you are hit you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.
+
 ## Eldritch Adept [Updated]
 
 Studying occult lore, you learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.
@@ -243,7 +277,7 @@ You are hardy and resilient, and you gain the following benefits:
 
 - Increase your Constitution by 1, to a maximum of 20.
 - When you roll a Hit Die to recover hit points, the minimum number of hit points you recover is equal to twice your Constitution modifier.
-- Whenever you regain hit points, you gain additional hit points equal to half your proficiency bonus (rounded down).
+- Whenever you regain hit points from an instantaneous effect or resting, you gain additional hit points equal to half your proficiency bonus (rounded down).
 
 ## Elemental Adept [Updated]
 
@@ -430,6 +464,15 @@ You have studied languages, communication, and codes extensively, gaining the fo
 - You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it.
 - Over the course of an hour of engaging with a creature that knows at least one language, you can learn to communicate with them, even if you do not share a language with them. This communication is limited, and cannot communicate words longer than 5 letters that are not proper nouns.
 
+## Mage Slayer [Updated]
+
+You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:
+
+- When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.
+- When a creature within 5 feet of you begins casting a spell, you can use your Reaction to make a melee weapon attack against that creature.
+- After failing a saving throw against a spell cast by a creature within 5 feet of you, you can use your Reaction to reroll the save.
+- When damaged by a spell, you can use your Reaction to gain resistance to the spell's damage. The next time you hit with a Strike before the end of your next turn, you deal additional damage in the spell's element equal to half the spell's level (minimum 1) in rolls of your proficiency die. Once you have used this feature, you cannot do so again until you complete a Short or Long Rest.
+
 ## Magic Initiate [Updated]
 
 You learn two cantrips of your choice and a 1st-level spell from a class's spell list. Using this feat, you can cast the spell once, but you must finish a long rest before you can cast it in this way again.
@@ -515,6 +558,18 @@ _Requirement: Aasimar_
 - Increase your Strength, Constitution, or Charisma by 1, to a maximum of 20.
 - The range of your darkvision increases by 60 feet.
 - You can see 10 feet into magical darkness.
+
+## Rancor Pact [New]
+
+You've made a bargain with a being that's better not spoken of. You gain the following "benefits."
+
+- Your natural life expectancy is decreased by 20%.
+- You only require 2 failed death saves to die, but critical hits and critical failures do not count as 2 failures.
+- When you deal damage on your turn to a threatening creature (CR > 0), you drain the target's vitality.
+  - If the target is bloodied, you heal equal to your proficiency bonus or the damage dealt, whichever is lower.
+  - If the target is not bloodied, you deal bonus necrotic damage equal to your proficiency bonus or the damage dealt, whichever is lower.
+  - If the triggering damage affects multiple creatures, the target of this feat is the creature with the fewest hit points, prioritizing creatures that are bloodied.
+  - The total healing + necrotic damage you apply with this feat on a turn cannot exceed twice your proficiency bonus minus twice your Constitution modifier (minimum 1).
 
 ## Renowned [New]
 
@@ -676,6 +731,27 @@ Some from the deep choose to make _friends_ with the topsiders. You? Not so much
 - You lose the Sunlight Sensitivity trait.
 - You gain proficiency in Athletics, Nature, Stealth, or Survival.
 
+## Stance [New]
+
+When you select this feat or take this feat again, select a stance from the below list. At the start of each of your turns, you can select which of your known Stances, if any, applies until the beginning of your next turn.
+
+If the stance compels a saving throw, the DC is 8 + your Proficiency Bonus + your Strength or Dexterity modifier.
+
+- **Flowing River**
+  - After you attack a creature with a melee Strike, you may immediately make a Tumble check against them. If you succeed, your movement does not provoke opportunity attacks from them this turn.
+  - When you Flank a creature, you have Advantage on the first Strike you make against it this turn. You cannot gain Advantage in this way for the same creature more than once on a turn.
+- **Whispering Wind**
+  - When you move only 5 feet on your turn, you are utterly silent and automatically succeed on auditory stealth checks.
+  - You can feint using your Bonus Action to force a creature within 5 feet of you to waste their reaction.
+  - When you attack a creature within 5 feet of you that does not have its reaction, they must succeed on a Strength saving throw or fall Prone, and your critical hit range is increased by 1.
+- **Furious Inferno**
+  - Your weapon simultaneously benefits from the Cleave Mastery in addition to any others it may possess.
+  - When you make a melee Strike, you can choose to do so furiously. If you do so, the attack's damage is increased by 10, but any melee Strikes against you until the beginning of your next turn deals an additional 5 points of damage.
+- **Enduring Earth**
+  - You have Advantage on checks and saving throws to resist being displaced against your will or knocked Prone.
+  - You cannot be Disarmed against your will, even while incapacitated.
+  - Enemies within 5 feet that miss you or attack a creature other than you provoke opportunity attacks from you.
+
 ## Striker [KibblesTasty]
 
 _Requirement: 4th level_
@@ -770,3 +846,12 @@ Your expertise with weapons is legendary. You can select this feat more than onc
   - If the weapon has the heavy property, you ignore it.
   - You increase the critical hit range of the weapon by 1.
   - Increase the weapon’s die size by 1 tier. (1d4 -> 1d6 -> 1d8 -> 1d10 -> 1d12 -> 2d6 -> 2d8)
+
+## Windcarver [New]
+
+You have learned to shroud your weapon in a sheathe of wind, granting you the following benefits while wielding a weapon that deals Slashing damage:
+
+- When you make a melee attack with the requisite weapon on your turn, you project a cutting wave of wind from the blade, increasing the reach of the attack by 5 times your proficiency bonus. On a hit, the target takes an additional 1d4 Thunder damage.
+    - If the target hasa a fly speed, it is reduced by 30 until the beginning of your next turn. This effect does not stack.
+- You can cast the Mage Hand spell without components, which takes the form of a small whirlwind.
+- When you are attacked with a ranged weapon attack, you can use your Reaction to impose disadvantage on the attack.

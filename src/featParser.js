@@ -18,7 +18,7 @@ module.exports = class FeatParser extends Parser {
         }, {});
 
         // Read Feats
-        const basicFeatsRaw = fs.readFileSync('feats/feats.md', { encoding: 'utf-8', flag: 'r' })
+        const basicFeatsRaw = fs.readFileSync('feats/Feats.md', { encoding: 'utf-8', flag: 'r' })
             .split('\r\n## ')
             .filter((p, i) => i > 0);// Trim title line.
         console.log('Found ' + basicFeatsRaw.length + ' feats');

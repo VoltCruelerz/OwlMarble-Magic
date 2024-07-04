@@ -48,6 +48,8 @@ Your rage lasts for 10 minutes. It ends early if you are incapacitated or at the
 
 If your rage would otherwise end early, you can use a Bonus Action to maintain it for another round. You can also end your Rage early as a Bonus Action.
 
+You regain one use expended use of your Rage on a Short Rest and all on a Long Rest.
+
 ## Reckless Attack - 2 [Updated]
 
 Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make an attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.
@@ -149,3 +151,39 @@ Starting at 14th level, as an action, you can strike terror into others with you
 On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature’s turns, the creature repeats the saving throw, ending the effect on itself on a successful save.
 
 Once you use this feature, you can’t use it again until you finish a Long Rest. If you’ve run out of uses of this feature, you can expend a use of your Rage, choosing not to activate the Rage and activating Intimidating Presence instead.
+
+### Sovereign [New]
+
+#### Stalwart Aura - 3 [New]
+
+Your rage is stern but gentle. You no longer receive any benefit from your Rage Damage while raging. Instead, while raging you exude a Stalwart Aura in a radius of 5 ft around yourself.
+
+When an allied creature other than yourself takes bludgeoning, piercing, or slashing damage while within this feature's radius, the damage is reduced by your Rage damage.
+
+The radius of this ability increases as you reach higher Barbarian levels:
+
+- level 6: 10 feet
+- level 10: 15 feet
+- level 14: 20 feet
+
+#### Strength in Grace - 3 [New]
+
+You may make Acrobatics, Intimidation, and Performance checks with Strength.
+
+#### Deterrence - 6 [New]
+
+When you deal damage with a melee weapon on your turn and are not already wearing a shield, you gain +2 AC and your weapon counts as a shield for the purpose of features and effects until the beginning of your next turn.
+
+#### Unyielding - 10 [New]
+
+While Raging, when you use Deterrance, if your weapon deals supplemental nonphysical damage, you and allies within range of your _Stalwart Aura_ gain Resistance to those damage types.
+
+#### Shield of the People - 10 [New]
+
+Immediately after an ally within your _Stalwart Aura_ takes damage greater than twice your barbarian level, you may use your Reaction to move to their space and safely shunt them to another space of your choice within 5 feet.
+
+Starting at level 14, you can trigger this ability when an ally within range would take sufficient damage. If you do, you take the damage in their stead.
+
+#### As One - 14 [New]
+
+When both you and an ally in your _Stalwart Aura_ make a saving throw for the same effect, they can use your roll in place of their own if it is higher. A given creature may benefit from this no more than once per long rest.
