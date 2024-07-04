@@ -79,7 +79,7 @@ See dedicated [page](./rules/Rules.md)
 
 1. deposit any input files you wish to parse into the relevant folders.
   A. spells: `import/` and `srd/`
-  B. features: `feats/feats.md`
+  B. features: `feats/Feats.md`
   C. classes:  `classes/myclass/Myclass.md`
   D. rules:  `rules/MyRule.md`
 2. run `npm install`
