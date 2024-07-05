@@ -21,7 +21,7 @@ module.exports = class FeatParser extends Parser {
         // Read Feats
         const stock = this.readAndParseImportedFeats();
         const homebrew = this.readHomebrewFeats(spellDict);
-        const merged = this.mergeByName(stock, homebrew);
+        const merged = this.synchronizeDates(this.getDbDict('packs/feats.db'), this.mergeByName(stock, homebrew));
 
         this.printDb(merged, [
             'packs/feats.db',
