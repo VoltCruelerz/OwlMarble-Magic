@@ -20,16 +20,17 @@ module.exports = class FeatParser extends Parser {
 
         // Read Feats
         const stock = this.readAndParseImportedFeats();
-        const feats = this.readHomebrewFeats(spellDict);
+        const homebrew = this.readHomebrewFeats(spellDict);
+        const merged = this.mergeByName(stock, homebrew);
 
-        this.printDb(feats, [
+        this.printDb(merged, [
             'packs/feats.db',
             'output/all/feats.db',
             'output/owlmagic-only/feats.db',
             'output/owlmagic-srd/feats.db',
             'E:/Foundry VTT/Data/modules/owlmarble-magic/packs/feats.db',
         ]);
-        return await this.exportDb(feats, 'feats', dataPath);
+        return await this.exportDb(merged, 'feats', dataPath);
     }
 
     readHomebrewFeats(spellDict) {
@@ -181,7 +182,11 @@ module.exports = class FeatParser extends Parser {
                     cptooltipmode: [
                         'hid',
                         'hid'
-                    ]
+                    ],
+                    type: {
+                        value: 'feat',
+                        subtype: ''
+                    }
                 },
                 effects: [],
                 flags: {
@@ -198,7 +203,7 @@ module.exports = class FeatParser extends Parser {
 
     /**
      * Reads and parses all imported feat files.
-     * @returns [{}]
+     * @returns {[{}]}
      */
     readAndParseImportedFeats () {
         console.log(this.thinWall + '\nReading imported files...');
@@ -307,7 +312,11 @@ module.exports = class FeatParser extends Parser {
                     cptooltipmode: [
                         'hid',
                         'hid'
-                    ]
+                    ],
+                    type: {
+                        value: 'feat',
+                        subtype: ''
+                    }
                 },
                 effects: [],
                 flags: {
@@ -345,5 +354,22 @@ module.exports = class FeatParser extends Parser {
                 return 'PARSE ERROR';
             }
         })?.join('; ') || '';
+    }
+
+    /**
+     * Merges the two existing ones into a single array. B trumps A.
+     * @param {[{name: string}]} a 
+     * @param {[{name: string}]} b 
+     * @return {[{name: string}]} merged
+     */
+    mergeByName(a, b) {
+        const dict = {};
+        a.forEach(el => {
+            dict[el.name] = el;
+        });
+        b.forEach(el => {
+            dict[el.name] = el;
+        });
+        return Object.keys(dict).map(k => dict[k]);
     }
 };

@@ -24,7 +24,7 @@ When your life is on the line, you are filled with a burst of energy.
 
 When you roll initiative, are hit by a critical hit, or an attack misses your AC by 1, you may choose one of the following benefits. You may only benefit from one of them at a time.
 
-- You gain temporary hit points equal to your level until the end of your next turn
+- You gain temporary hit points equal to your level until the end of your next turn.
 - Your speed increases by half your speed until the end of your next turn.
 - You have advantage on the first attack roll you make before the end of your next turn.
 - You have advantage on the next ability check you make before the end of your next turn.
