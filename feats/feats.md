@@ -308,7 +308,7 @@ You are a representative of the underfolk, arrived on the surface world to charm
 You have been inundated with magic from the lower planes, granting you the following benefits:
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
-- You learn the _Darkness_ spell and one 1st level spell of your choice. The 1st level spell must be from the evocation or necromancy school of magic and cannot restore hit points. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Flame Blade_ spell and one 1st level spell of your choice. The 1st level spell must be from the evocation or necromancy school of magic and cannot restore hit points. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Fighting Initiate [Updated]
 
@@ -694,6 +694,7 @@ Your practice balancing swordplay and spellcraft has given you insight on how yo
 - Increase your Wisdom, Intelligence, or Charisma by 1, to a maximum of 20.
 - Over the course of a short rest, you may perform a ritual to forge a magical bond with one weapon in your possession. When you gain this feat, select a mental ability score. When you make attack or damage rolls with the weapon, you can use that mental ability score instead of Strength. You may only have one bound weapon in this way at a time, and the bond ends if you perform the rite on a new weapon.
 - Your bonded weapon functions as a spellcasting focus for you.
+- You learn one cantrip that requires a melee weapon as a component.
 
 ## Spell Quickdraw [New]
 

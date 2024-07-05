@@ -180,7 +180,8 @@
     },
     "Entangle": {
         "actionType": "save",
-        "save": {"ability":"str","dc":0,"scaling":"spell"}
+        "save": {"ability":"str","dc":0,"scaling":"spell"},
+        "scaling": {"mode":"level","formula":""}
     },
     "Etherealness": {
         "target": {"value":null,"units":"","type":"self"}
@@ -345,7 +346,8 @@
         "target": {"value":null,"units":"","type":"self"}
     },
     "Longstrider": {
-        "materials": {"value":"a bone from a cheetah","consumed":false,"cost":0,"supply":0}
+        "materials": {"value":"a bone from a cheetah","consumed":false,"cost":0,"supply":0},
+        "duration": {"value":8,"units":"hour"}
     },
     "Mage Hand": {
         "target": {"value":null,"units":"any","type":"space"},
