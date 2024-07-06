@@ -39,7 +39,7 @@ Your exposure to magic from the plane of thought has changed you, allowing you t
 
 ## Athlete [KibblesTasty]
 
-_Requirement: 4th level_
+_Requirement: level 4_
 
 You can accomplish mythical feats of physical prowess. You gain the following benefits:
 
