@@ -24,7 +24,7 @@ When your life is on the line, you are filled with a burst of energy.
 
 When you roll initiative, are hit by a critical hit, or an attack misses your AC by 1, you may choose one of the following benefits. You may only benefit from one of them at a time.
 
-- You gain temporary hit points equal to your level until the end of your next turn
+- You gain temporary hit points equal to your level until the end of your next turn.
 - Your speed increases by half your speed until the end of your next turn.
 - You have advantage on the first attack roll you make before the end of your next turn.
 - You have advantage on the next ability check you make before the end of your next turn.
@@ -38,13 +38,6 @@ You regain the use of your Radiant Soul, Radiant Consumption, or Necrotic Shroud
 ## Arcane Accuracy [New]
 
 Your extensive practice with your spells has led to unparalleled accuracy. When you make a ranged spell attack, you have a +2 bonus to your attack rolls.
-
-## Adrenaline Rush [New]
-
-After you roll initiative, receive a critical hit, or an ally within 30 feet of you drops to 0 hit points, you gain one of the following benefits until the end of your next turn:
-
-- you gain temporary hit points equal to your level
-- your speed increases by 15 until the end of your next turn
 
 ## Arrow Master [New]
 
@@ -308,7 +301,7 @@ You are a representative of the underfolk, arrived on the surface world to charm
 You have been inundated with magic from the lower planes, granting you the following benefits:
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
-- You learn the _Darkness_ spell and one 1st level spell of your choice. The 1st level spell must be from the evocation or necromancy school of magic and cannot restore hit points. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
+- You learn the _Flame Blade_ spell and one 1st level spell of your choice. The 1st level spell must be from the evocation or necromancy school of magic and cannot restore hit points. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
 
 ## Fighting Initiate [Updated]
 
@@ -412,7 +405,7 @@ You are an able physician, allowing you to mend wounds quickly and get your alli
 
 ## Heavy Armor Master [Updated]
 
-- Increase your strength by 1, to a maximum of 20.
+- Increase your Strength by 1, to a maximum of 20.
 - While you are wearing heavy armor, physical strike damage dealt to you is reduced by your proficiency bonus.
 
 ## High Sorcery [New]
@@ -482,9 +475,10 @@ You have practiced techniques useful in melee combat against spellcasters, gaini
 
 ## Magic Initiate [Updated]
 
-You learn two cantrips of your choice and a 1st-level spell from a class's spell list. Using this feat, you can cast the spell once, but you must finish a long rest before you can cast it in this way again.
+You have begun to dabble in magic, and you gain the following benefits:
 
-Your spellcasting ability for these spells reflects the class selected, which you increase by 1, to a maximum of 20.
+- Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.
+- You learn two cantrips of your choice and a 1st-level spell from a class's spell list. Using this feat, you can cast the spell once, but you must finish a long rest before you can cast it in this way again.
 
 ## Magically Armored [KeoniKoa]
 
@@ -694,6 +688,7 @@ Your practice balancing swordplay and spellcraft has given you insight on how yo
 - Increase your Wisdom, Intelligence, or Charisma by 1, to a maximum of 20.
 - Over the course of a short rest, you may perform a ritual to forge a magical bond with one weapon in your possession. When you gain this feat, select a mental ability score. When you make attack or damage rolls with the weapon, you can use that mental ability score instead of Strength. You may only have one bound weapon in this way at a time, and the bond ends if you perform the rite on a new weapon.
 - Your bonded weapon functions as a spellcasting focus for you.
+- You learn one cantrip that requires a melee weapon as a component.
 
 ## Spell Quickdraw [New]
 
@@ -724,9 +719,9 @@ You have developed a special affinity for transcribing magic, granting you the f
 
 _Requirement: Must be able to cast a spell._
 
+- Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.
 - Being within 5 feet of a creature does not impose disadvantage on your ranged spell attack rolls.
 - When you cast a spell attack cantrip with a grade higher than 1, you may split the power of the spell into a number of separate attacks equal to the grade of the cantrip. The split spell functions as if cast at grade 1 on each target. If the spell has any secondary effects at grade 1, they apply to all targets.
-- Before you make a ranged spell attack, you can take a -5 penalty to hit. If you do so and then hit, the target receives an additional 10 damage of the spell’s type. You may do this no more than once per turn.
 
 ## Sun Hunter [New]
 
