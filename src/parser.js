@@ -461,6 +461,32 @@ module.exports = class Parser {
     capFirst (str) {
         return str.charAt(0).toUpperCase() + str.substr(1);
     }
+
+    /**
+     * ['a','b','c'] => "a, b, or c"
+     * @param {[string]} arr 
+     * @returns {string}
+     */
+    orListString(arr) {
+        if (arr.length === 1) return arr[0];
+        const separator = arr.length > 2 ? ', ' : ' ';
+        return arr
+            .map((el, i) => ((i === arr.length - 1) ? 'or ' + el : el))
+            .join(separator);
+    }
+
+    /**
+     * ['a','b','c'] => "a, b, and c"
+     * @param {[string]} arr 
+     * @returns {string}
+     */
+    andListString(arr) {
+        if (arr.length === 1) return arr[0];
+        const separator = arr.length > 2 ? ', ' : ' ';
+        return arr
+            .map((el, i) => ((i === arr.length - 1) ? 'and ' + el : el))
+            .join(separator);
+    }
     //#endregion
 
     //#region ID

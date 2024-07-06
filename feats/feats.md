@@ -405,7 +405,7 @@ You are an able physician, allowing you to mend wounds quickly and get your alli
 
 ## Heavy Armor Master [Updated]
 
-- Increase your strength by 1, to a maximum of 20.
+- Increase your Strength by 1, to a maximum of 20.
 - While you are wearing heavy armor, physical strike damage dealt to you is reduced by your proficiency bonus.
 
 ## High Sorcery [New]
@@ -475,9 +475,10 @@ You have practiced techniques useful in melee combat against spellcasters, gaini
 
 ## Magic Initiate [Updated]
 
-You learn two cantrips of your choice and a 1st-level spell from a class's spell list. Using this feat, you can cast the spell once, but you must finish a long rest before you can cast it in this way again.
+You have begun to dabble in magic, and you gain the following benefits:
 
-Your spellcasting ability for these spells reflects the class selected, which you increase by 1, to a maximum of 20.
+- Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.
+- You learn two cantrips of your choice and a 1st-level spell from a class's spell list. Using this feat, you can cast the spell once, but you must finish a long rest before you can cast it in this way again.
 
 ## Magically Armored [KeoniKoa]
 
@@ -718,9 +719,9 @@ You have developed a special affinity for transcribing magic, granting you the f
 
 _Requirement: Must be able to cast a spell._
 
+- Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.
 - Being within 5 feet of a creature does not impose disadvantage on your ranged spell attack rolls.
 - When you cast a spell attack cantrip with a grade higher than 1, you may split the power of the spell into a number of separate attacks equal to the grade of the cantrip. The split spell functions as if cast at grade 1 on each target. If the spell has any secondary effects at grade 1, they apply to all targets.
-- Before you make a ranged spell attack, you can take a -5 penalty to hit. If you do so and then hit, the target receives an additional 10 damage of the spell’s type. You may do this no more than once per turn.
 
 ## Sun Hunter [New]
 

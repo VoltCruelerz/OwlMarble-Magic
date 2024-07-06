@@ -22,7 +22,10 @@ module.exports = class FeatParser extends Parser {
         const stock = this.readAndParseImportedFeats();
         const homebrew = this.readHomebrewFeats(spellDict);
         const merged = this.synchronizeDates(this.getDbDict('packs/feats.db'), this.mergeByName(stock, homebrew));
+        merged.sort((a, b) => a.name > b.name);
 
+        // Export
+        this.generateHalfFeatTable(merged);
         this.printDb(merged, [
             'packs/feats.db',
             'output/all/feats.db',
@@ -242,90 +245,119 @@ module.exports = class FeatParser extends Parser {
     parseImportedFile(contents) {
         const feats = contents.feat;
         return feats.map(f => {
-            const id = this.generateUUID(`${f.name} (${f.source})`);
-            return {
-                _id: id,
-                _key: '!items!' + id,
-                name: f.name,
-                type: 'feat',
-                img: 'icons/svg/upgrade.svg',
-                data: {
-                    description: {
-                        value: `<div>${this.parseImportedEntries(f.entries)}</div>`,
-                        chat: '',
-                        unidentified: ''
-                    },
-                    source: f.source,
-                    activation: {
-                        type: '',
-                        cost: 0,
-                        condition: ''
-                    },
-                    duration: {
-                        value: 0,
-                        units: ''
-                    },
-                    target: {
-                        value: 0,
-                        width: null,
-                        units: '',
-                        type: 'Creature'
-                    },
-                    range: {
-                        value: 0,
-                        long: 0,
-                        units: ''
-                    },
-                    uses: {
-                        value: 0,
-                        max: 0,
-                        per: ''
-                    },
-                    consume: {
-                        type: '',
-                        target: '',
-                        amount: null
-                    },
-                    ability: '',
-                    actionType: '',
-                    attackBonus: 0,
-                    chatFlavor: '',
-                    critical: {
-                        threshold: null,
-                        damage: null
-                    },
-                    damage: {
-                        parts: [],
-                        versatile: ''
-                    },
-                    formula: '',
-                    save: {
-                        ability: '',
-                        dc: null,
-                        scaling: 'spell'
-                    },
-                    requirements: this.parseImportedRequirements(f.prerequisite),
-                    recharge: {
-                        value: 0,
-                        charged: false
-                    },
-                    cptooltipmode: [
-                        'hid',
-                        'hid'
-                    ],
-                    type: {
-                        value: 'feat',
-                        subtype: ''
-                    }
-                },
-                effects: [],
-                flags: {
-                    'owlmarble-magic': {
-                        exportTime: (new Date()).toString()
-                    }
+            try {
+                const id = this.generateUUID(`${f.name} (${f.source})`);
+    
+                // For some reason, half-feats have the ASI selection outside entries.
+                if (f.ability?.length) {
+                    const asi = f.ability[0];
+                    const options = [
+                        asi.str || asi.choose?.from?.includes('str') ? 'Strength' : '',
+                        asi.dex || asi.choose?.from?.includes('dex') ? 'Dexterity' : '',
+                        asi.con || asi.choose?.from?.includes('con') ? 'Constitution' : '',
+                        asi.int || asi.choose?.from?.includes('int') ? 'Intelligence' : '',
+                        asi.wis || asi.choose?.from?.includes('wis') ? 'Wisdom' : '',
+                        asi.cha || asi.choose?.from?.includes('cha') ? 'Charisma' : ''
+                    ].filter(opt => opt);
+    
+                    const override = asi.choose?.from?.entry;
+                    const str = options.length < 6
+                        ? `Increase your ${this.orListString(options)} by 1, to a maximum of 20.`
+                        : 'Increase any ability score by 1, to a maximum of 20';
+                    const firstList = f.entries.find(entry => entry.type === 'list');
+                    if (!firstList) throw new Error(chalk.red('First list did not exist for ' + f.name));
+                    firstList.items.unshift(override || str);
                 }
-            };
-        });
+    
+                return {
+                    _id: id,
+                    _key: '!items!' + id,
+                    name: f.name,
+                    type: 'feat',
+                    img: 'icons/svg/upgrade.svg',
+                    data: {
+                        description: {
+                            value: `<div>${this.parseImportedEntries(f.entries)}</div>`,
+                            chat: '',
+                            unidentified: ''
+                        },
+                        source: f.source,
+                        activation: {
+                            type: '',
+                            cost: 0,
+                            condition: ''
+                        },
+                        duration: {
+                            value: 0,
+                            units: ''
+                        },
+                        target: {
+                            value: 0,
+                            width: null,
+                            units: '',
+                            type: 'Creature'
+                        },
+                        range: {
+                            value: 0,
+                            long: 0,
+                            units: ''
+                        },
+                        uses: {
+                            value: 0,
+                            max: 0,
+                            per: ''
+                        },
+                        consume: {
+                            type: '',
+                            target: '',
+                            amount: null
+                        },
+                        ability: '',
+                        actionType: '',
+                        attackBonus: 0,
+                        chatFlavor: '',
+                        critical: {
+                            threshold: null,
+                            damage: null
+                        },
+                        damage: {
+                            parts: [],
+                            versatile: ''
+                        },
+                        formula: '',
+                        save: {
+                            ability: '',
+                            dc: null,
+                            scaling: 'spell'
+                        },
+                        requirements: this.parseImportedRequirements(f.prerequisite),
+                        recharge: {
+                            value: 0,
+                            charged: false
+                        },
+                        cptooltipmode: [
+                            'hid',
+                            'hid'
+                        ],
+                        type: {
+                            value: 'feat',
+                            subtype: ''
+                        }
+                    },
+                    effects: [],
+                    flags: {
+                        'owlmarble-magic': {
+                            exportTime: (new Date()).toString()
+                        }
+                    }
+                };
+            }
+            catch (e) {
+                console.log('Failed to parse imported feat ' + f.name);
+                console.error(e);
+                return null;
+            }
+        }).filter(f => f);
     }
 
     /**
@@ -368,8 +400,62 @@ module.exports = class FeatParser extends Parser {
             dict[el.name] = el;
         });
         b.forEach(el => {
+            if (el.data.source === 'Updated') {
+                el.data.source = `OMM(${dict[el.name].data.source})`;
+            } else if (el.data.source.includes('Updated by')) {
+                const author = el.data.source.split('Updated by ')[1];
+                el.data.source = `${author}(${dict[el.name].data.source})`;
+            } else if (el.data.source.includes('Updated from')) {
+                const author = el.data.source.split('Updated from ')[1];
+                el.data.source = `OMM(${author})`;
+            }
             dict[el.name] = el;
         });
         return Object.keys(dict).map(k => dict[k]);
+    }
+
+    /**
+     * Generates a markdown table of half feats.
+     * @param {[{name: string}]} feats 
+     */
+    generateHalfFeatTable(feats) {
+        const nameLeng = Math.max(...feats.map(f => f.name.length)) + '****'.length;
+        const sourceLeng = Math.max(...feats.map(f => f.data.source.length));
+        const lines = [
+            '# Half Feats',
+            '',
+            `| ${'Feat'.padEnd(nameLeng, ' ')} | ${'Source'.padEnd(sourceLeng, ' ')} | STR | DEX | CON | INT | WIS | CHA |`,
+            `|:${''.padEnd(nameLeng, '-')}-|:${''.padEnd(sourceLeng, '-')}-|:---:|:---:|:---:|:---:|:---:|:---:|`,
+        ];
+        const asiFlag = 'to a maximum of 20';
+
+        let halfFeats = 0;
+        feats.forEach(f => {
+            const text = f.data.description.value;
+            const isHalfFeat = text.includes(asiFlag);
+            if (!isHalfFeat) return;
+
+            const name = `**${f.name}**`.padEnd(nameLeng, ' ');
+            const source = f.data.source.padEnd(sourceLeng, ' ');
+
+            const asiLine = text.split('</li>').find(li => li.includes(asiFlag))?.toLowerCase();
+            if (!asiLine) {
+                console.error(chalk.red('Unable to find ASI line for ' + f.name));
+                return;
+            }
+            const str = asiLine.includes('strength');
+            const dex = asiLine.includes('dexterity');
+            const con = asiLine.includes('constitution');
+            const int = asiLine.includes('intelligence');
+            const wis = asiLine.includes('wisdom');
+            const cha = asiLine.includes('charisma');
+            const any = !str && !dex && !con && !int && !wis && !cha;
+            const gives = (ability) => ability || any ? '  ✓  ' : '     ';
+            lines.push(`| ${name} | ${source} |${gives(str)}|${gives(dex)}|${gives(con)}|${gives(int)}|${gives(wis)}|${gives(cha)}|`);
+            halfFeats++;
+        });
+        lines.push('');
+        console.log(`Found ${halfFeats} half feats`);
+        fs.writeFileSync('./feats/Half Feats.md', lines.join('\n'));
     }
 };
