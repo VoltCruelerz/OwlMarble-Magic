@@ -5,7 +5,7 @@
 | **Aberrant Dragonmark**          | ERLW              |     |     |  ✓  |     |     |     | no other dragonmark |
 | **Actor**                        | PHB               |     |     |     |     |     |  ✓  |  |
 | **Agent of Order**               | SatO              |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | level 4, scion of the outer planes |
-| **Athlete**                      | KibblesTasty      |  ✓  |  ✓  |  ✓  |     |     |     | 4th level |
+| **Athlete**                      | KibblesTasty      |  ✓  |  ✓  |  ✓  |     |     |     | level 4 |
 | **Baleful Scion**                | SatO              |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | level 4, scion of the outer planes |
 | **Chef**                         | TCE               |     |     |  ✓  |     |  ✓  |     |  |
 | **Cohort of Chaos**              | SatO              |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | level 4, scion of the outer planes |
@@ -82,7 +82,7 @@
 | **Dagger Mastery**               | KeoniKoa          |     |  ✓  |     |     |     |     | proficiency in daggers |
 | **Eldritch-Touched**             | OMM               |  ✓  |  ✓  |  ✓  |     |     |     |  |
 | **Diehard**                      | OMM               |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  |
-| **Envoy of the Deep**            | OMM               |     |     |     |  ✓  |  ✓  |  ✓  | must have the sunlight sensitivity trait. |
+| **Envoy of the Deep**            | OMM               |     |     |     |  ✓  |  ✓  |  ✓  | must have the sunlight sensitivity trait |
 | **Fiend-Touched**                | OMM               |  ✓  |  ✓  |  ✓  |     |     |     |  |
 | **Firearms Initiate**            | OMM               |  ✓  |  ✓  |  ✓  |     |     |     | proficiency with a firearms |
 | **Flexible Attunement**          | OMM               |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  |
@@ -97,9 +97,9 @@
 | **Radiant Vision**               | OMM               |  ✓  |     |  ✓  |     |     |  ✓  | aasimar |
 | **Renowned**                     | OMM               |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  |
 | **Sniper**                       | KeoniKoa          |     |  ✓  |     |     |     |     |  |
-| **Spellblade**                   | TellianStormwalde |     |     |     |  ✓  |  ✓  |  ✓  | must be able to cast a spell. |
-| **Spellslinger**                 | OMM               |     |     |     |  ✓  |  ✓  |  ✓  | must be able to cast a spell. |
-| **Sun Hunter**                   | OMM               |  ✓  |  ✓  |     |     |     |     | must have the sunlight sensitivity trait. |
+| **Spellblade**                   | TellianStormwalde |     |     |     |  ✓  |  ✓  |  ✓  | must be able to cast a spell |
+| **Spellslinger**                 | OMM               |     |     |     |  ✓  |  ✓  |  ✓  | must be able to cast a spell |
+| **Sun Hunter**                   | OMM               |  ✓  |  ✓  |     |     |     |     | must have the sunlight sensitivity trait |
 | **Striker**                      | KibblesTasty      |  ✓  |  ✓  |  ✓  |     |     |     | 4th level |
 | **Tabaxi Curiosity**             | Sarguro           |     |     |     |  ✓  |  ✓  |  ✓  | tabaxi |
 | **Upgrade**                      | Sarguro           |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | warforged |
