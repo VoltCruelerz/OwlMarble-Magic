@@ -1,23 +1,5 @@
 # OwlMarble Magic Feats
 
-> **Note:** epic boons are found in their own [document](../feats/Epic%20Boons.md).
->
-> **Analysis**: [Treantmonk's Method](https://www.youtube.com/watch?v=QcHZvwmGk9M)
->
-> - **Ratings**
->   - S: 57+
->   - A: 50-56
->   - B: 43-49
->   - C: 38-42
->   - D: 33-37
->   - F: 32-
-> - **Points**
->   - 1-9: Ribbon
->   - 10-19: Decent
->   - 20-29: Pretty Good
->   - 30-39: Good
->   - 40-50: Great
-
 ## Adrenaline Rush [New]
 
 When your life is on the line, you are filled with a burst of energy.
