@@ -451,7 +451,7 @@ module.exports = class FeatParser extends Parser {
             const cha = asiLine.includes('charisma');
             const any = !str && !dex && !con && !int && !wis && !cha;
             const gives = (ability) => ability || any ? '  ✓  ' : '     ';
-            lines.push(`| ${name} | ${source} |${gives(str)}|${gives(dex)}|${gives(con)}|${gives(int)}|${gives(wis)}|${gives(cha)}| ${f.data.requirements} |`);
+            lines.push(`| ${name} | ${source} |${gives(str)}|${gives(dex)}|${gives(con)}|${gives(int)}|${gives(wis)}|${gives(cha)}| ${f.data.requirements.toLowerCase()} |`);
             halfFeats++;
         });
         lines.push('');
