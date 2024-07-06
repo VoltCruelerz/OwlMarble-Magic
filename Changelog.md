@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.1
+
+- Compendium Browser is now the Single Source of Truth for feats
+- Autogenerates `Half Feats.md`
+
 ## 1.3.0
 
 - Export to LevelDB for Foundry v11+
