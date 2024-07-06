@@ -424,8 +424,8 @@ module.exports = class FeatParser extends Parser {
         const lines = [
             '# Half Feats',
             '',
-            `| ${'Feat'.padEnd(nameLeng, ' ')} | ${'Source'.padEnd(sourceLeng, ' ')} | STR | DEX | CON | INT | WIS | CHA |`,
-            `|:${''.padEnd(nameLeng, '-')}-|:${''.padEnd(sourceLeng, '-')}-|:---:|:---:|:---:|:---:|:---:|:---:|`,
+            `| ${'Feat'.padEnd(nameLeng, ' ')} | ${'Source'.padEnd(sourceLeng, ' ')} | STR | DEX | CON | INT | WIS | CHA | Prereqsuisite |`,
+            `|:${''.padEnd(nameLeng, '-')}-|:${''.padEnd(sourceLeng, '-')}-|:---:|:---:|:---:|:---:|:---:|:---:|:--------------|`,
         ];
         const asiFlag = 'to a maximum of 20';
 
@@ -451,7 +451,7 @@ module.exports = class FeatParser extends Parser {
             const cha = asiLine.includes('charisma');
             const any = !str && !dex && !con && !int && !wis && !cha;
             const gives = (ability) => ability || any ? '  ✓  ' : '     ';
-            lines.push(`| ${name} | ${source} |${gives(str)}|${gives(dex)}|${gives(con)}|${gives(int)}|${gives(wis)}|${gives(cha)}|`);
+            lines.push(`| ${name} | ${source} |${gives(str)}|${gives(dex)}|${gives(con)}|${gives(int)}|${gives(wis)}|${gives(cha)}| ${f.data.requirements} |`);
             halfFeats++;
         });
         lines.push('');
