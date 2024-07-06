@@ -270,7 +270,7 @@ You gain one additional spell slot for your next-to-highest spell slot level. Wh
 
 ## Envoy of the Deep [New]
 
-_Requirement: must have the Sunlight Sensitivity trait._
+_Requirement: must have the Sunlight Sensitivity trait_
 
 You are a representative of the underfolk, arrived on the surface world to charm, impress, and mingle with the overfolk. You gain the following benefits:
 
@@ -406,7 +406,7 @@ _Requirement: Human, Half-Elf, or Half-Orc_
 
 ## Inner Power [KibblesTasty]
 
-_Requirement: Ki or Psi points._
+_Requirement: Ki or Psi points_
 
 You learn to support your body’s function as you cycle your inner power through it. Your maximum psi or ki points (your choice) increase by 1.
 
@@ -663,7 +663,7 @@ You’ve honed your skills with ranged weapons used at long distances and gain t
 
 ## Spellblade [TellianStormwalde]
 
-_Requirement: Must be able to cast a spell._
+_Requirement: Must be able to cast a spell_
 
 Your practice balancing swordplay and spellcraft has given you insight on how you can use your magical abilities to fuel your strikes, granting you the following benefits:
 
@@ -674,7 +674,7 @@ Your practice balancing swordplay and spellcraft has given you insight on how yo
 
 ## Spell Quickdraw [New]
 
-_Requirement: Ability to cast a cantrip._
+_Requirement: Ability to cast a cantrip_
 
 - During the first round of combat, you can cast cantrips as a bonus action. If you do so, you cannot cast a leveled spell with your action.
 - During the first round of combat, if you are targeted by an attack, you can cast a cantrip targeting the attacker as a reaction.
@@ -699,7 +699,7 @@ You have developed a special affinity for transcribing magic, granting you the f
 
 ## Spellslinger [New]
 
-_Requirement: Must be able to cast a spell._
+_Requirement: Must be able to cast a spell_
 
 - Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.
 - Being within 5 feet of a creature does not impose disadvantage on your ranged spell attack rolls.
@@ -707,7 +707,7 @@ _Requirement: Must be able to cast a spell._
 
 ## Sun Hunter [New]
 
-_Requirement: must have the Sunlight Sensitivity trait._
+_Requirement: must have the Sunlight Sensitivity trait_
 
 Some from the deep choose to make _friends_ with the topsiders. You? Not so much. You gain the following benefits:
 
