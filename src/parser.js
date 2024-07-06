@@ -564,7 +564,7 @@ module.exports = class Parser {
         const result = await exec(cmd);
         if (result.stderr.length > 0) {
             if (result.stderr.startsWith('Debugger attached'))
-                console.warn(chalk.bgYellow(`DEBUG BLOCKED EXEC: "${cmd}"`));
+                console.warn(chalk.bgYellow(`⚠ DEBUG BLOCKED EXEC: "${cmd}"`));
             else
                 throw new Error(`Export Command Failed:\n$ ${cmd}\n` + result.stderr);
         }
@@ -624,7 +624,7 @@ module.exports = class Parser {
         catch (err) {
             pgb.set(1);
             if (err.message.includes('Debugger attached')) {
-                console.warn(chalk.bgYellow(`DEBUG BLOCKED EXEC: "${cmd}"`));
+                console.warn(chalk.bgYellow(`⚠ DEBUG BLOCKED EXEC: "${cmd}"`));
                 return false;
             }
             console.error(chalk.bgRed(`Failed to Export "${compendium}"`));

@@ -39,13 +39,6 @@ You regain the use of your Radiant Soul, Radiant Consumption, or Necrotic Shroud
 
 Your extensive practice with your spells has led to unparalleled accuracy. When you make a ranged spell attack, you have a +2 bonus to your attack rolls.
 
-## Adrenaline Rush [New]
-
-After you roll initiative, receive a critical hit, or an ally within 30 feet of you drops to 0 hit points, you gain one of the following benefits until the end of your next turn:
-
-- you gain temporary hit points equal to your level
-- your speed increases by 15 until the end of your next turn
-
 ## Arrow Master [New]
 
 _Requirement: Dexterity or Strength score of 15 or higher, Level 4_
