@@ -237,7 +237,7 @@ Some people go down easy. You? Not so much. You gain the following benefits:
 
 ## Dragon Hide [New]
 
-_Requirement: Dragonborn_
+_Requirement: Dragonborn or Kobold_
 
 You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:
 
@@ -796,7 +796,7 @@ When the enhanced transformation completes, you gain one of the copied creatureâ
 
 You retain the copied racial trait until you use your shapechanger feature again, you revert to your true form, or you begin another enhanced transformation.
 
-## Upgrade [Sarguro]
+## Upgrade [Updated from Sarguro]
 
 _Requirement: Warforged_
 
@@ -807,6 +807,7 @@ Your frame has been updated to fulfill a particular function. You gain the follo
   - **Crafter**: You gain proficiency with one tool of your choice. Additionally, choose one tool you are proficient with. This tool is integrated into your body, and you have expertise in it. You must have at least one free hand to use the integrated tool.
   - **Juggernaut**: You may double your Strength bonus when you make a Strength-based attack roll, ability check, or saving throw. Once you have done so, you cannot do so again until you complete a short or long rest. Additionally, you count as one size class larger when determining your carrying capacity.
   - **Skirmisher**: Your walking speed increases by 5 feet. Additionally, as a bonus action, you can take the Disengage action. Once you have used this bonus action a number of times equal to your proficiency bonus, you cannot do so again until you complete a long rest.
+  - **Hunter**: You gain 60 feet of infravision.
 
 ## Versatile Weapon Master [New]
 

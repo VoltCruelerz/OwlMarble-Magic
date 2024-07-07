@@ -11,7 +11,7 @@
 | **Cohort of Chaos**              | SatO              |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | level 4, scion of the outer planes |
 | **Crusher**                      | TCE               |  ✓  |     |  ✓  |     |     |     |  |
 | **Dragon Fear**                  | XGE               |  ✓  |     |  ✓  |     |     |  ✓  | dragonborn |
-| **Dragon Hide**                  | OMM               |  ✓  |     |  ✓  |     |     |  ✓  | dragonborn |
+| **Dragon Hide**                  | OMM               |  ✓  |     |  ✓  |     |     |  ✓  | dragonborn or kobold |
 | **Durable**                      | KeoniKoa(PHB)     |     |     |  ✓  |     |     |     |  |
 | **Dwarven Fortitude**            | XGE               |     |     |  ✓  |     |     |     | dwarf |
 | **Eldritch Adept**               | OMM(TCE)          |     |     |     |  ✓  |  ✓  |  ✓  |  |
@@ -102,4 +102,4 @@
 | **Sun Hunter**                   | OMM               |  ✓  |  ✓  |     |     |     |     | must have the sunlight sensitivity trait |
 | **Striker**                      | KibblesTasty      |  ✓  |  ✓  |  ✓  |     |     |     | 4th level |
 | **Tabaxi Curiosity**             | Sarguro           |     |     |     |  ✓  |  ✓  |  ✓  | tabaxi |
-| **Upgrade**                      | Sarguro           |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | warforged |
+| **Upgrade**                      | OMM(Sarguro)      |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | warforged |
