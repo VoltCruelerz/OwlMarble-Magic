@@ -1,6 +1,6 @@
 # Half Feats
 
-| Feat                             | Source            | STR | DEX | CON | INT | WIS | CHA | Prereqsuisite |
+| Feat                             | Source            | STR | DEX | CON | INT | WIS | CHA | Prerequisites |
 |:---------------------------------|:------------------|:---:|:---:|:---:|:---:|:---:|:---:|:--------------|
 | **Aberrant Dragonmark**          | ERLW              |     |     |  ✓  |     |     |     | no other dragonmark |
 | **Actor**                        | PHB               |     |     |     |     |     |  ✓  |  |

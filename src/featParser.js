@@ -424,7 +424,7 @@ module.exports = class FeatParser extends Parser {
         const lines = [
             '# Half Feats',
             '',
-            `| ${'Feat'.padEnd(nameLeng, ' ')} | ${'Source'.padEnd(sourceLeng, ' ')} | STR | DEX | CON | INT | WIS | CHA | Prereqsuisite |`,
+            `| ${'Feat'.padEnd(nameLeng, ' ')} | ${'Source'.padEnd(sourceLeng, ' ')} | STR | DEX | CON | INT | WIS | CHA | Prerequisites |`,
             `|:${''.padEnd(nameLeng, '-')}-|:${''.padEnd(sourceLeng, '-')}-|:---:|:---:|:---:|:---:|:---:|:---:|:--------------|`,
         ];
         const asiFlag = 'to a maximum of 20';
