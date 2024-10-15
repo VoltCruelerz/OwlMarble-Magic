@@ -6,6 +6,7 @@
     "chalk": "^4.1.2",
     "deep-object-diff": "^1.1.0",
     "levelup": "^5.1.1",
+    "owlmarble-magic": "file:",
     "seedrandom": "^3.0.5"
   },
   "devDependencies": {

@@ -50,7 +50,7 @@ You can accomplish mythical feats of physical prowess. You gain the following be
   - Double your normal lifting capacity until the end of your turn.
   - Move at a normal speed while carrying or dragging another creature until the end of your turn.
   - Make a free Strength or Dexterity saving throw or ability check to end an ongoing effect that would normally require an action or only occur at the beginning or end of your turn.
-  - Take the dash action as a bonus action.
+  - Take the Dash or Disengage actions as a bonus action.
   - Ignore the effects of exhaustion until the beginning of your next turn.
 
 ## Battlewise [BoneDealer]
@@ -404,6 +404,11 @@ _Requirement: Human, Half-Elf, or Half-Orc_
 - You have advantage on saving throws that prevent Exhaustion and you suffer the effects of exhaustion one level lower than the number of levels of exhaustion you have. You only die if you reach 7 levels of exhaustion.
 - If you make a contested ability check and tie, it goes in your favor, unless the opposing party also has this feat, in which case the tie resolves normally, maintaining the status quo.
 
+## Infectious Optimism [New]
+
+- When you have Disadvantage on an ability check, you gain a +5 bonus to the roll.
+- When an ally within 30 feet of you fails an ability check or saving throw, you can use your Reaction to allow them to reroll the d20 test. Once you have done so, you cannot do so again until you finish a short or long rest.
+
 ## Inner Power [KibblesTasty]
 
 _Requirement: Ki or Psi points_
@@ -514,6 +519,14 @@ The inexorable nature of Mechanus has been embedded within you, granting you the
 
 - You gain one point in Strength, Dexterity, or Constitution, to a maximum of 20.
 - You learn the _Zone of Truth_ spell and one 1st level spell of your choice. The 1st level spell must be from the abjuration or divination school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you cannot cast that spell in this way again until you complete a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability score increased by this feat.
+
+## Prehensile Tail [New]
+
+_Requirement: Naga, Plasmoid, Tabaxi, or Tiefling_
+
+You have mastered the precision use of your tail. Your Dexterity increases by 1, to a maximum of 20.
+
+Your tail has a reach of 5 feet, can lift a number of pounds equal to twice your strength score, and you can use it to perform the following simple tasks: lift, drop, hold, push, or pull and object or creature; open or close a door or container; use a tool; perform the somatic component of a spell; use a magic item; or grapple someone. Your DM might allow other appropriate options.
 
 ## Professional [New]
 

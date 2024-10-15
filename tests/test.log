@@ -1,0 +1,17 @@
+═════════════════════════════════════════════════════
+ERROR REPORT - 2 ERRORS ACROSS 1/320 SRD SPELLS
+═════════════════════════════════════════════════════
+═════════════════════════════════════════════════════
+- Magic Weapon: 2/10
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    "Magic Weapon": {
+        "duration": {"value":8,"units":"hour"},
+        "properties": ["vocal","somatic"]
+    }
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+L - [1/2] - duration
+| L - SRD: {"value":1,"units":"hour"}
+| L - OMM: {"value":8,"units":"hour"}
+L - [2/2] - properties
+  L - SRD: ["vocal","somatic","concentration"]
+  L - OMM: ["vocal","somatic"]

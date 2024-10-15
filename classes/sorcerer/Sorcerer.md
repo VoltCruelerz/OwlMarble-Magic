@@ -438,6 +438,43 @@ When you cast the _Mold Earth_ spell on your turn, you can spend a number of Sor
 
 As an action, select a point on the ground within 120 feet that is nonmagical earth or stone. The ground within a 20-foot radius shifts in the drection of your choice, moving up to 60 feet. Creatures, plants, and objects in the path smaller than the effect are safely shunted to the side. If you attempt to move through a permanent structure, the effect ends.
 
+### Conduit Magic [New]
+
+> _Perhaps you were scouted by an archmage at a young age only to be exploited as a magical battery, your mana circuits were synthetically altered to make them more efficient, or you were blessed with an unusually deep well of power. Regardless of how, you now find yourself able to transfer your magical power to others to support other spellcasters._
+
+#### Magical Conduit [New]
+
+When you notice a spell being cast by a willing creature within 60 feet of you other than yourself, you can use your Reaction to amplify the spell, upcasting it to a higher level. To do so, you must pay the difference in mana cost between the original spell and the resulting level.  You cannot pay more mana points in this way than you would expend to cast a spell of your highest spell slot level.
+
+> For example, to increase a spell from 5th level to 6th, you would need to pay 2 mana points.
+
+Spells amplified by this feature benefit in the following ways, in addition to any standard upcasting benefits of the spell:
+
+- Attempts to _Counterspell_ the amplified spell have disadvantage.
+- When the spell is cast, you can choose to share Concentration with the original caster. If you do so, Concentration is only lost if both of you lose Concentration on it.
+
+**Expanded Synthesis Table**
+
+| Slot Level | Mana Point Cost |
+| :--------: | :-------------: |
+|    10th    |       16        |
+|    11th    |       20        |
+|    12th    |       25        |
+
+#### Shared Metamagic - 6 [New]
+
+When you amplify a spell with _Magical Conduit_, you can apply a _Metamagic_ to it, paying its associated cost. If the cost scales with spell level, you must pay the cost for the elevated level.
+
+#### Networked Knowledge - 14 [New]
+
+You gain the ability to establish long-lasting magical links between souls. Over the course of a Short Rest, you can add any number of willing creatures within 30 feet of you to a shared magical network or refresh the connection of an existing connected creature. If you attempt to connect to more creatures than your Charisma modifier, your oldest connection fizzles.
+
+While the connection lasts, a member can communicate telepathically with the group at large using language, and when a creature is initially connected to the network or its connection is refreshed, the creature can choose to learn a spell from the list of prepared or known spells by any other member of the network. If a member is disconnected from the network, they immediately lose the learned spell, and any spells learned from them are lost by other members of the network.
+
+#### Perfect Conduit - 18 [New]
+
+When you amplify a spell with Magical Conduit, the mana cost is reduced to the difference in spell levels.
+
 ### Shadow Magic
 
 #### Eyes of the Dark [Updated]

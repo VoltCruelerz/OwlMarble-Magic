@@ -92,6 +92,7 @@
 | **Light Armor Mastery**          | KeoniKoa          |     |  ✓  |     |     |     |     | dexterity score 13 or higher, proficiency in light armor |
 | **Mechanical Expert**            | Kingslayer059     |     |     |  ✓  |  ✓  |     |     | warforged |
 | **Order-Touched**                | OMM               |  ✓  |  ✓  |  ✓  |     |     |     |  |
+| **Prehensile Tail**              | OMM               |  ✓  |  ✓  |     |     |     |     | naga, plasmoid, tabaxi, or tiefling |
 | **Psionic Adept**                | OMM(KibblesTasty) |     |     |     |  ✓  |     |     |  |
 | **Psionic Prodigy**              | OMM               |     |     |     |  ✓  |     |     |  |
 | **Radiant Vision**               | OMM               |  ✓  |     |  ✓  |     |     |  ✓  | aasimar |

@@ -51,7 +51,7 @@ At 3rd level, you may attempt to harvest the valuable materials from a slain cre
 
 ### Alchemical Solutions - 3 [New]
 
-Once you have acquired one or more alchemical components, you may spend an additional hour and a spell slot to transform them into the following Alchemical Solutions, which last for 1 week before losing their potency.
+Once you have acquired one or more alchemical components, you may spend an additional hour ~~and a spell slot~~ to transform them into the following Alchemical Solutions, which last for 1 week before losing their potency.
 
 ----
 
@@ -85,13 +85,13 @@ A creature that has benefited from a tonic since its last Long Rest must expend 
 
 ### Greater Solutions - 7 [New]
 
-Once you reach 7th level, you can create enhanced versions of your solutions. To create a Greater Solution, you must use alchemical components from a creature of CR 7 or higher, and the spell slot used must be 2nd level or higher.
+Once you reach 7th level, you can create enhanced versions of your solutions. To create a Greater Solution, you must use alchemical components from a creature of CR 7 or higher~~, and the spell slot used must be 2nd level or higher~~.
 
 ----
 
 #### Greater Ether - 7 [New]
 
-> **Greater Enhancement**: The speed reduction increases to 10 feet and failing creature become reactionless.
+> **Greater Enhancement**: The speed reduction increases to 10 feet and failing creatures become reactionless.
 
 Ether is a volatile liquid that evaporates quickly. A vial or packet containing it can be thrown at a target on the ground. On impact, the Ether disperses immediately. Each creature within a 10-foot radius must succeed on a Constitution saving throw or have its speed reduced by 10 feet and it cannot take Reactions for 1 minute. If a creature was the target of the launched vial and was directly hit, the target suffers a 1d4 penalty to its attack rolls and saving throws for the same duration.
 
