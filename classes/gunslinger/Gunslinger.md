@@ -12,9 +12,11 @@ Some Grit features use a Grit Die, which is determined by your gunslinger level 
 
 You regain 1 expended Grit Point each time you roll a critical strike or reduce the health of a creature of significant threat to 0 (DM's discretion). You regain all expended Grit Points after a short or long rest.
 
-### Deadeye - 7 [Updated]
+### Line 'em Up - 7 [New]
 
-You learn to carefully line up exceptionally lethal shots. When you make a ranged weapon attack using the attack action on your turn, you may choose to forgo one or more of the extra attacks granted by your Extra Attack class feature. For each attack you choose to forgo, your critical hit range increases by 1, and you increase the damage of the attack by 1 roll of your Grit Die. Additionally, if a creature struck by deadeye has to make a Grit saving throw, such as when struck by the Pinning Shot Trickshot, it does so with disadvantage.
+_Replaces Deadeye_
+
+You learn to carefully chain exceptionally lethal shots together. When you expend a Grit die as part of an Attack, your critical hit range increases by 1 until the end of your turn.
 
 ## Subclasses
 
