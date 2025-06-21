@@ -75,6 +75,10 @@ See dedicated [page](./rules/Rules.md)
 
 ## Development
 
+### Prerequisites
+
+- `npm install -g @foundryvtt/foundryvtt-cli`
+
 ### Parser Execution
 
 1. deposit any input files you wish to parse into the relevant folders.

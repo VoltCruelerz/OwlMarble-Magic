@@ -1,77 +1,132 @@
 {
-    "name": "owlmarble-magic",
+    "id": "owlmarble-magic",
     "title": "OwlMarble Magic",
-    "description": "Contains the content from OwlMarble Magic",
+    "description": "Contains the content from OwlMarble Magic.",
     "version": "1.2.0",
-    "author": "@voltcruelerz",
-    "systems": ["dnd5e"],
-    "scripts": [],
+    "authors": [
+        {
+            "name": "@voltcruelerz",
+            "url": "https://github.com/VoltCruelerz/OwlMarble-Magic"
+        }
+    ],
+    "keywords": [
+        "sheets",
+        "automation",
+        "chat",
+        "combat",
+        "content",
+        "dice",
+        "journal",
+        "tools",
+        "omm",
+        "spells"
+    ],
+    "readme": "README.md",
+    "license": "MIT",
+    "bugs": "https://github.com/VoltCruelerz/OwlMarble-Magic/issues",
+    "changelog": "https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/Changelog.md",
+    "url": "https://github.com/VoltCruelerz/OwlMarble-Magic",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "13.999",
+        "maximum": "14.999"
+    },
+    "manifest": "https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/module.json",
+    "download": "https://github.com/VoltCruelerz/OwlMarble-Magic/archive/refs/tags/1.0.0.zip",
     "esmodules": [],
     "styles": [],
     "packs": [
-      {
-        "name": "lists",
-        "label": "Class Spell Lists",
-        "system": "dnd5e",
-        "module": "owlmarble-magic",
-        "path": "packs/lists.db",
-        "entity": "JournalEntry"
-      },
-      {
-        "name": "spells",
-        "label": "OwlMarble Spells",
-        "system": "dnd5e",
-        "module": "owlmarble-magic",
-        "path": "packs/spells.db",
-        "entity": "Item"
-      },
-      {
-        "name": "feats",
-        "label": "OwlMarble Feats",
-        "system": "dnd5e",
-        "module": "owlmarble-magic",
-        "path": "packs/feats.db",
-        "entity": "Item"
-      },
-      {
-        "name": "features",
-        "label": "OwlMarble Class Features",
-        "system": "dnd5e",
-        "module": "owlmarble-magic",
-        "path": "packs/features.db",
-        "entity": "Item"
-      },
-      {
-        "name": "weapons",
-        "label": "OwlMarble Weapons",
-        "system": "dnd5e",
-        "module": "owlmarble-magic",
-        "path": "packs/weapons.db",
-        "entity": "Item"
-      },
-      {
-        "name": "rules",
-        "label": "OwlMarble Rules",
-        "system": "dnd5e",
-        "module": "owlmarble-magic",
-        "path": "packs/rules.db",
-        "entity": "JournalEntry"
-      },
-      {
-        "name": "journals",
-        "label": "OwlMarble Journals",
-        "system": "dnd5e",
-        "module": "owlmarble-magic",
-        "path": "packs/journals.db",
-        "entity": "JournalEntry"
-      }
+        {
+            "name": "lists",
+            "label": "OMM Class Spell Lists",
+            "system": "dnd5e",
+            "module": "owlmarble-magic",
+            "path": "packs/lists",
+            "type": "JournalEntry",
+            "ownership": {
+              "PLAYER": "OBSERVER"
+            }
+        },
+        {
+            "name": "spells",
+            "label": "OMM Spells",
+            "system": "dnd5e",
+            "module": "owlmarble-magic",
+            "path": "packs/spells",
+            "type": "Item",
+            "ownership": {
+              "PLAYER": "OBSERVER"
+            }
+        },
+        {
+            "name": "feats",
+            "label": "OMM Feats",
+            "system": "dnd5e",
+            "module": "owlmarble-magic",
+            "path": "packs/feats",
+            "type": "Item",
+            "ownership": {
+              "PLAYER": "OBSERVER"
+            }
+        },
+        {
+            "name": "features",
+            "label": "OMM Class Features",
+            "system": "dnd5e",
+            "module": "owlmarble-magic",
+            "path": "packs/features",
+            "type": "Item",
+            "ownership": {
+              "PLAYER": "OBSERVER"
+            }
+        },
+        {
+            "name": "weapons",
+            "label": "OMM Weapons",
+            "system": "dnd5e",
+            "module": "owlmarble-magic",
+            "path": "packs/weapons",
+            "type": "Item",
+            "ownership": {
+              "PLAYER": "OBSERVER"
+            }
+        },
+        {
+            "name": "rules",
+            "label": "OMM Rules",
+            "system": "dnd5e",
+            "module": "owlmarble-magic",
+            "path": "packs/rules",
+            "type": "JournalEntry",
+            "ownership": {
+              "PLAYER": "OBSERVER"
+            }
+        },
+        {
+            "name": "journals",
+            "label": "OMM Journals",
+            "system": "dnd5e",
+            "module": "owlmarble-magic",
+            "path": "packs/journals",
+            "type": "JournalEntry",
+            "ownership": {
+              "PLAYER": "OBSERVER"
+            }
+        }
     ],
     "languages": [],
-    "minimumCoreVersion": "0.8.8",
-    "compatibleCoreVersion": "9.269",
-    "socket": true,
-    "url": "https://github.com/VoltCruelerz/OwlMarble-Magic/",
-    "manifest": "https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master/module.json",
-    "download": "https://github.com/VoltCruelerz/OwlMarble-Magic/archive/refs/tags/1.0.0.zip"
-  }
-  
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "3.1.0",
+                    "verified": "4.999.999",
+                    "maximum": "5.0.3"
+                }
+            }
+        ],
+        "requires": []
+    }
+}

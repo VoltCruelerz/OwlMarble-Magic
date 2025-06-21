@@ -365,7 +365,9 @@
     },
     "Magic Weapon": {
         "target": {"value":1,"units":"","type":"object"},
-        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false}
+        "components": {"value":"","vocal":true,"somatic":true,"material":false,"ritual":false,"concentration":false},
+        "duration": {"value":8,"units":"hour"},
+        "properties": ["vocal","somatic"]
     },
     "Mass Heal": {
         "target": {"value":1,"units":"","type":"creature"}

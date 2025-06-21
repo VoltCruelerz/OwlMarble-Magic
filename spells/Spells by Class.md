@@ -946,6 +946,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Level 3 - _Psion_
 
+- [Telekinetic Crush](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#telekinetic-crush) -  - (OMM - 3)
 - [Vortex Blast](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#vortex-blast) -  - (OMM - 3)
 
 ### Level 5 - _Psion_
@@ -973,7 +974,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Ensnaring Strike](https://www.dndbeyond.com/spells/ensnaring-strike) -  - (undefined)
 - [Fog Cloud](https://www.dndbeyond.com/spells/fog-cloud) -  - (undefined)
 - [Goodberry](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#goodberry) -  - (OMM - 1)
-- [Hail of Thorns](https://www.dndbeyond.com/spells/hail-of-thorns) -  - (undefined)
+- [Hail of Thorns](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#hail-of-thorns) -  - (OMM - 1)
 - [Hunter's Mark](https://www.dndbeyond.com/spells/hunter's-mark) -  - (undefined)
 - [Jump](https://www.dndbeyond.com/spells/jump) -  - (undefined)
 - [Longstrider](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/01.md#longstrider) -  - (OMM - 1)
@@ -1215,6 +1216,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Soul Lance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#soul-lance) -  - (OMM - 3)
 - [Stinking Cloud](https://www.dndbeyond.com/spells/stinking-cloud) -  - (undefined)
 - [Synara's Glacial Javelin](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#synaras-glacial-javelin) -  - (OMM - 3)
+- [Telekinetic Crush](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#telekinetic-crush) -  - (OMM - 3)
 - [Thunder Step](https://www.dndbeyond.com/spells/thunder-step) -  - (undefined)
 - [Tidal Wave](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#tidal-wave) -  - (OMM - 3)
 - [Tongues](https://www.dndbeyond.com/spells/tongues) -  - (undefined)
@@ -1418,6 +1420,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade) -  - (OMM - 0)
 - [Prestidigitation](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#prestidigitation) -  - (OMM - 0)
 - [Shadowstaff](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#shadowstaff) -  - (OMM - 0)
+- [Silencing Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#silencing-strike) -  - (OMM - 0)
 - [Sword Burst](https://www.dndbeyond.com/spells/sword-burst) -  - (undefined)
 - [Thunderclap](https://www.dndbeyond.com/spells/thunderclap) -  - (undefined)
 - [Toll the Dead](https://www.dndbeyond.com/spells/toll-the-dead) -  - (undefined)
@@ -1507,6 +1510,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Summon Lesser Demons](https://www.dndbeyond.com/spells/summon-lesser-demons) -  - (undefined)
 - [Summon Shadowspawn](https://www.dndbeyond.com/spells/summon-shadowspawn) -  - (undefined)
 - [Summon Undead](https://www.dndbeyond.com/spells/summon-undead) -  - (undefined)
+- [Telekinetic Crush](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#telekinetic-crush) -  - (OMM - 3)
 - [Thunder Step](https://www.dndbeyond.com/spells/thunder-step) -  - (undefined)
 - [Tongues](https://www.dndbeyond.com/spells/tongues) -  - (undefined)
 - [Vampiric Touch](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/03.md#vampiric-touch) -  - (OMM - 3)
