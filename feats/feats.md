@@ -28,7 +28,7 @@ _Requirement: Dexterity or Strength score of 15 or higher, Level 4_
 Your mastery with ranged weapons is legendary. You gain the following benefits:
 
 - When you take the attack action on your turn and fire or throw a projectile, you may make one additional attack with disadvantage.
-- You can attempt to intercept an opponent’s projectile with your own. When an opponent fires a Tiny nonmagical projectile that passes through the range of your weapon, you may make an attack roll against it as a reaction. The projectile has an AC of 25. On a hit, their attack misses, and your reaction is restored.
+- You can attempt to intercept an opponent’s projectile with your own. When an opponent fires a projectile that passes through the range of your weapon, you may make an attack roll against it as a reaction. The projectile's AC is equal to the attack roll. On a hit, you reduce the projectile's damage by the damage your attack deals.
 
 ## Astral-Touched [New]
 
@@ -327,7 +327,7 @@ Once you have used this action, you cannot do so again until you finish a short 
 You've manifested some of the power of chromatic dragons, granting you the following benefits:
 
 - Increase an ability score by 1, to a maximum of 20.
-- As a bonus action, you can touch a simple or martial weapon and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra 1d4 damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a long rest.
+- As a bonus action, you can touch a simple or martial weapon and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra 1d4 damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a short rest.
 - When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
 
 ## Gift of the Giants [Pixel_Engine]
@@ -672,7 +672,7 @@ You have mastered the art of striking your foes in momentary engagements and hav
 You’ve honed your skills with ranged weapons used at long distances and gain the following benefits:
 
 - Increase your Dexterity by 1, to a maximum of 20.
-- If you willingly drop prone, you do not suffer disadvantage on weapon attacks made with crossbows or firearms from being prone or from targeting a creature in the extended range of your weapon.
+- When you are prone, you do not suffer disadvantage on weapon attacks made with crossbows or firearms from being prone or from targeting a creature in the extended range of your weapon.
 
 ## Spellblade [TellianStormwalde]
 
@@ -732,19 +732,19 @@ Some from the deep choose to make _friends_ with the topsiders. You? Not so much
 
 When you select this feat or take this feat again, select a stance from the below list. At the start of each of your turns, you can select which of your known Stances, if any, applies until the beginning of your next turn.
 
-If the stance compels a saving throw, the DC is 8 + your Proficiency Bonus + your Strength or Dexterity modifier.
+If the stance compels a saving throw, the DC is 8 + your Proficiency Bonus + your Strength or Dexterity modifier (your choice).
 
-- **Flowing River**
+- **Flowing River**: once you learn this stance, your speed increases by 5. While this stance is active, you gain the following benefits:
   - After you attack a creature with a melee Strike, you may immediately make a Tumble check against them. If you succeed, your movement does not provoke opportunity attacks from them this turn.
   - When you Flank a creature, you have Advantage on the first Strike you make against it this turn. You cannot gain Advantage in this way for the same creature more than once on a turn.
-- **Whispering Wind**
+- **Whispering Wind**: once you learn this stance, your initiative increases by 5. While this stance is active, you gain the following benefits:
   - When you move only 5 feet on your turn, you are utterly silent and automatically succeed on auditory stealth checks.
   - You can feint using your Bonus Action to force a creature within 5 feet of you to waste their reaction.
   - When you attack a creature within 5 feet of you that does not have its reaction, they must succeed on a Strength saving throw or fall Prone, and your critical hit range is increased by 1.
-- **Furious Inferno**
+- **Furious Inferno**: once you learn this stance, if you reduce a creature's hit points below your proficiency bonus, you can choose to kill it. While this stance is active, you gain the following benefits:
   - Your weapon simultaneously benefits from the Cleave Mastery in addition to any others it may possess.
   - When you make a melee Strike, you can choose to do so furiously. If you do so, the attack's damage is increased by 10, but any melee Strikes against you until the beginning of your next turn deals an additional 5 points of damage.
-- **Enduring Earth**
+- **Enduring Earth**: once you learn this stance, you ignore nonmagical difficult terrain. While this stance is active, you gain the following benefits:
   - You have Advantage on checks and saving throws to resist being displaced against your will or knocked Prone.
   - You cannot be Disarmed against your will, even while incapacitated.
   - Enemies within 5 feet that miss you or attack a creature other than you provoke opportunity attacks from you.
@@ -850,6 +850,6 @@ Your expertise with weapons is legendary. You can select this feat more than onc
 You have learned to shroud your weapon in a sheathe of wind, granting you the following benefits while wielding a weapon that deals Slashing damage:
 
 - When you make a melee attack with the requisite weapon on your turn, you project a cutting wave of wind from the blade, increasing the reach of the attack by 5 times your proficiency bonus. On a hit, the target takes an additional 1d4 Thunder damage.
-    - If the target hasa a fly speed, it is reduced by 30 until the beginning of your next turn. This effect does not stack.
+    - If the target has a a fly speed, it is reduced by 30 until the beginning of your next turn. This effect does not stack.
 - You can cast the Mage Hand spell without components, which takes the form of a small whirlwind.
 - When you are attacked with a ranged weapon attack, you can use your Reaction to impose disadvantage on the attack.

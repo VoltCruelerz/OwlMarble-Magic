@@ -1,0 +1,24 @@
+═════════════════════════════════════════════════════
+ERROR REPORT - 2 ERRORS ACROSS 2/320 SRD SPELLS
+═════════════════════════════════════════════════════
+═════════════════════════════════════════════════════
+- Cure Wounds: 1/10
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    "Cure Wounds": {
+        "scaling": {"mode":"level","formula":"2d8"}
+    }
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+L - [1/1] - scaling
+  L - SRD: {"mode":"level","formula":"1d8"}
+  L - OMM: {"mode":"level","formula":"2d8"}
+
+═════════════════════════════════════════════════════
+- Thunderwave: 1/10
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    "Thunderwave": {
+        "target": {"value":null,"units":"","type":"self"}
+    }
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+L - [1/1] - target
+  L - SRD: {"value":15,"units":"ft","type":"cube"}
+  L - OMM: {"value":null,"units":"","type":"self"}
