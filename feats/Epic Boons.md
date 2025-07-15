@@ -28,8 +28,8 @@ You cease aging, and you cannot be aged magically. If you are slain, you return 
 
 You gain the following benefits:
 
-- Your speed cannot be reduced by any means, except when an effect that increased your speed ends.
-- You are immune to Exhaustion.
+- Your are immune to effects that would reduce your speed.
+- You are immune to _Exhaustion_, _Grappled_, and _Restrained_.
 - You are immune to the _Slow_ and _Time Stop_ spells, and the rebound of the _Haste_ spell.
 
 ## Invincible [New]

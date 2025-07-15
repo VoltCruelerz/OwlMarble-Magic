@@ -15,6 +15,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Blacksteel](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blacksteel) -  - (OMM - 0)
 - [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) -  - (OMM - 0)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#control-flames) -  - (OMM - 0)
+- [Crackling Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#crackling-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) -  - (undefined)
 - [Fire Bolt](https://www.dndbeyond.com/spells/fire-bolt) -  - (undefined)
 - [Frigid Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#frigid-blade) -  - (OMM - 0)
@@ -31,6 +32,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Prestidigitation](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#prestidigitation) -  - (OMM - 0)
 - [Ray of Frost](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#ray-of-frost) -  - (OMM - 0)
 - [Refrigerate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#refrigerate) -  - (OMM - 0)
+- [Righteous Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#righteous-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Shocking Grasp](https://www.dndbeyond.com/spells/shocking-grasp) -  - (undefined)
 - [Sword Burst](https://www.dndbeyond.com/spells/sword-burst) -  - (undefined)
 - [Thunderclap](https://www.dndbeyond.com/spells/thunderclap) -  - (undefined)
@@ -378,6 +380,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Radiant Mark](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#radiant-mark) -  - (OMM - 0)
 - [Refrigerate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#refrigerate) -  - (OMM - 0)
 - [Resistance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#resistance) -  - (OMM - 0)
+- [Righteous Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#righteous-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Sacred Flame](https://www.dndbeyond.com/spells/sacred-flame) -  - (undefined)
 - [Shadowstaff](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#shadowstaff) -  - (OMM - 0)
 - [Spare the Dying](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#spare-the-dying) -  - (OMM - 0)
@@ -589,7 +592,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mold Earth](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#mold-earth) -  - (OMM - 0)
 - [Origami](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#origami) -  - (OMM - 0)
 - [Poison Spray](https://www.dndbeyond.com/spells/poison-spray) -  - (undefined)
-- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade) -  - (OMM - 0)
+- [Poisoned Blade [Trowk]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade-[trowk]) -  - (OMM - 0)
 - [Primal Savagery](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#primal-savagery) -  - (OMM - 0)
 - [Produce Flame](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#produce-flame) -  - (OMM - 0)
 - [Refrigerate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#refrigerate) -  - (OMM - 0)
@@ -851,6 +854,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) -  - (OMM - 0)
 - [Frigid Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#frigid-blade) -  - (OMM - 0)
 - [Radiant Mark](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#radiant-mark) -  - (OMM - 0)
+- [Righteous Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#righteous-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Thaumaturgy](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#thaumaturgy) -  - (OMM - 0)
 
 ### Level 1 - _Paladin_
@@ -962,7 +966,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 ### Cantrip - _Ranger_
 
-- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade) -  - (OMM - 0)
+- [Poisoned Blade [Trowk]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade-[trowk]) -  - (OMM - 0)
 
 ### Level 1 - _Ranger_
 
@@ -1059,6 +1063,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) -  - (OMM - 0)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) -  - (undefined)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#control-flames) -  - (OMM - 0)
+- [Crackling Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#crackling-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) -  - (undefined)
 - [Dancing Lights](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#dancing-lights) -  - (OMM - 0)
 - [Fire Bolt](https://www.dndbeyond.com/spells/fire-bolt) -  - (undefined)
@@ -1405,6 +1410,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blade-ward) -  - (OMM - 0)
 - [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) -  - (OMM - 0)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) -  - (undefined)
+- [Crackling Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#crackling-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) -  - (undefined)
 - [Eldritch Blast](https://www.dndbeyond.com/spells/eldritch-blast) -  - (undefined)
 - [Friends](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#friends) -  - (OMM - 0)
@@ -1418,7 +1424,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mind Sliver](https://www.dndbeyond.com/spells/mind-sliver) -  - (undefined)
 - [Minor Figment](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#minor-figment) -  - (OMM - 0)
 - [Poison Spray](https://www.dndbeyond.com/spells/poison-spray) -  - (undefined)
-- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade) -  - (OMM - 0)
+- [Poisoned Blade [Trowk]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade-[trowk]) -  - (OMM - 0)
 - [Prestidigitation](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#prestidigitation) -  - (OMM - 0)
 - [Shadowstaff](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#shadowstaff) -  - (OMM - 0)
 - [Silencing Strike](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#silencing-strike) -  - (OMM - 0)
@@ -1645,6 +1651,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Booming Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#booming-blade) -  - (OMM - 0)
 - [Chill Touch](https://www.dndbeyond.com/spells/chill-touch) -  - (undefined)
 - [Control Flames](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#control-flames) -  - (OMM - 0)
+- [Crackling Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#crackling-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) -  - (undefined)
 - [Dancing Lights](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#dancing-lights) -  - (OMM - 0)
 - [Fire Bolt](https://www.dndbeyond.com/spells/fire-bolt) -  - (undefined)
@@ -1665,10 +1672,11 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Mold Earth](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#mold-earth) -  - (OMM - 0)
 - [Origami](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#origami) -  - (OMM - 0)
 - [Poison Spray](https://www.dndbeyond.com/spells/poison-spray) -  - (undefined)
-- [Poisoned Blade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade) -  - (OMM - 0)
+- [Poisoned Blade [Trowk]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#poisoned-blade-[trowk]) -  - (OMM - 0)
 - [Prestidigitation](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#prestidigitation) -  - (OMM - 0)
 - [Ray of Frost](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#ray-of-frost) -  - (OMM - 0)
 - [Refrigerate](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#refrigerate) -  - (OMM - 0)
+- [Righteous Blade [u/SneekinZeekin]](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#righteous-blade-[u/sneekinzeekin]) -  - (OMM - 0)
 - [Shadowstaff](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#shadowstaff) -  - (OMM - 0)
 - [Shape Water](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#shape-water) -  - (OMM - 0)
 - [Shocking Grasp](https://www.dndbeyond.com/spells/shocking-grasp) -  - (undefined)
