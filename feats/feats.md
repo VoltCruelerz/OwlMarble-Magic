@@ -396,6 +396,18 @@ _Requirement: must possess at least one Mana Point_
 
 Your maximum Sorcery Points increases by an amount equal to your proficiency bonus.
 
+## Aurivorax Symbiote [New]
+
+_Requirement: Warforged_
+
+During your fight against the Aurivorax, some of its roots managed to integrate into your core. You experience the following alterations:
+
+- **ASI**: Increase an ability score by 1, to a maximum of 20.
+- **Desecration**: You count as desecreated when detected by _Divine Sense_ and similar magic, and your vines are replaced by the golden vines of the Aurivorax.
+- **Essence of the Broken God**: You know and can cast _Misty Step_ once without expending a spell slot. Once you have done so, you cannot cast it without a spell slot again until you complete a Long Rest.
+- **Abyssal Rift**: When you use _Gathered Swarm_, you can instead choose to open a spatial rift. When you do so, the portal opens at a location of your choice within 30 feet of the hit target. The target must succeed on a Strength saving throw or be pulled into the rift, emerging from it at the start of your next turn and receiving a number of d6's in force damage equal to your Proficiency Bonus. Once you have done so, you cannot do so again until you complete a Short or Long Rest or you receive a level of Exhaustion.
+- **Residuum Addiction**: Your body has become dependent on theomorphic residuum (e.g. ectoplasm, stygian water, emberheart, divine blood, soul coins). When you finish a Short Rest, if you have not consumed at least one ounce of residuum since your previous Short Rest, you must make a DC 10 Wisdom saving throw. On a failure, your alignment switches to Evil until you consume residuum again. Every successive day you go without residuum increases the DC by 1.
+
 ## Human Endurance [New]
 
 _Requirement: Human, Half-Elf, or Half-Orc_
@@ -830,6 +842,16 @@ You have mastered the use of versatile weapons and gain the following the benefi
 - When you make a two-handed attack with a versatile weapon, you gain a +2 bonus to damage.
 
 **Note**: See the updated [Versatile](../rules/items/Weapon%20Properties.md#Versatile) rules.
+
+## Walk it Off [New]
+
+_Prerequisite: Gunslinger_
+
+In moments of desperation or fury, you can push past your normal limits to achieve the impossible.
+
+- **Surge of Resolve**: You can exceed your Grit maximum, but your total Grit resets to your Grit Maximum at the end of your turn.
+- **Adrenaline Rush**: When you succeed on a Saving Throw, you gain 1 Grit point.
+- **Forceful Personality**: You gain proficiency in Charisma saving throws. If you already have proficiency in Charisma saving throws, you instead gain proficiency in Strength saving throws. In addition, when making a Charisma (Deception or Persuasion) check, you may add 1 roll of your Grit Die to the total.
 
 ## Weapon Master [Updated]
 

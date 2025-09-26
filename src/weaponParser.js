@@ -188,6 +188,7 @@ module.exports = class WeaponParser extends Parser {
             case 'Quarterstaff': return 'icons/weapons/staves/staff-simple.webp';
             case 'Sickle': return 'icons/weapons/sickles/sickle-curved.webp';
             case 'Spear': return 'icons/weapons/polearms/spear-flared-blue.webp';
+            case 'Trident': return 'icons/weapons/polearms/trident-silver-blue.webp';
             // Martial Melee
             case 'Battleaxe': return 'icons/weapons/axes/axe-double-simple-brown.webp';
             case 'Billhook': return 'icons/weapons/polearms/spear-hooked-spike.webp';
@@ -204,13 +205,13 @@ module.exports = class WeaponParser extends Parser {
             case 'Man Catcher': return 'modules/taring-kyburn/icons/items/weapons/man-catcher.webp';
             case 'Maul': return 'icons/weapons/maces/mace-round-studded.webp';
             case 'Morningstar': return 'icons/weapons/maces/mace-round-spiked-black.webp';
+            case 'Partisan': return 'icons/items/weapons/spears/Partisan%20Spear.png';
             case 'Pike': return 'icons/weapons/polearms/pike-flared-brown.webp';
             case 'Rapier': return 'modules/taring-kyburn/icons/items/weapons/swords/Sword_v2_36.png';
             case 'Scimitar': return 'modules/taring-kyburn/icons/items/weapons/swords/Sword_47%20(2).png';
             case 'Shortsword': return 'icons/weapons/swords/sword-guard-bronze.webp';
             case 'Spearsword': return 'modules/taring-kyburn/icons/items/weapons/spears/Spear_14.png';
             case 'Studded Gauntlets': return 'icons/equipment/hand/gauntlet-armored-leather-brown.webp';
-            case 'Trident': return 'icons/weapons/polearms/trident-silver-blue.webp';
             case 'War Pick': return 'icons/weapons/hammers/hammer-war-spiked.webp';
             case 'Warhammer': return 'icons/weapons/hammers/hammer-war-rounding.webp';
             case 'Voulge': return 'modules/taring-kyburn/icons/items/weapons/spears/Spear_v2_09.png';

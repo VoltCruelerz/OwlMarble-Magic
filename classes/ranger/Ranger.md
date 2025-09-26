@@ -180,7 +180,7 @@ If consumed by a creature under the influence of a delayed deleterious effect su
 
 > **Superior Enhancement**: The regeneration rate increases to 3 and the creature makes Death Saving Throws with advantage.
 
-Once consumed, the consumer regenerates 2 hit points at the start of each of its turns for 1 minute after any other effects that take place at the start of the creature's turn. Immediately after receiving damage, the creature regains 1 hit point. If the creature is reduced to 0 hit points, the regeneration effect of this solution ends, but the creature gains advantage on its Death Saving Throws until it dies or is stabilized.
+Once consumed, the consumer regenerates 3 hit points at the start of each of its turns for 1 minute after any other effects that take place at the start of the creature's turn. Immediately after receiving damage, the creature regains 1 hit point. If the creature is reduced to 0 hit points, the regeneration effect of this solution ends, but the creature gains advantage on its Death Saving Throws until it dies or is stabilized.
 
 A creature that has benefited from a tonic since its last Long Rest must expend a Hit Die to benefit from another.
 

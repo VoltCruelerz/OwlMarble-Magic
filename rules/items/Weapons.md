@@ -36,7 +36,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Mace** | 5 | 4 | 1d6 bludgeoning | - | - | Sap |
 | **Quarterstaff** | 0.2 | 4 | 1d6 bludgeoning | Versatile (1d8) | - | Isolate, Flex (Tumble)  |
 | **Sickle** | 1 | 2 | 1d4 slashing | _Light_ | Shovel, Hoe | Nick |
-| **Spear** | 1 | 3 | 1d6 piercing | _Thrown (20/60), Versatile (1d8), Amphibious_ | - | Lunge, Flex (Vex) |
+| **Spear** | 1 | 3 | 1d6 piercing | _Thrown (20/60), Versatile (1d8), Amphibious_ | Pitchfork, Trident | Lunge, Flex (Vex) |
 
 ### Martial Melee Weapons
 
@@ -52,7 +52,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Halberd** | 20 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy, Dismounting_| - | Isolate |
 | **Hook Sword (Separate)** | 45 | 2 | 1d6 slashing | _Finesse, Light, Parrying, Special_| - | Nick |
 | **Hook Swords (Linked)** | -  | - | 2d4 slashing | _Finesse, Two-Handed_<br/>**Special**: If a creature is holding two hook swords, as part of its attack action, the creature can link or unlike the swords. | - | Lunge |
-| **Lance** | 5 | 6 | 1d12 piercing | _Heavy, Extended Reach, Couched_<br/>**Special**: While mounted, this has the Dismounting property.| - | Topple |
+| **Lance** | 5 | 6 | 1d12 piercing | _Heavy, Reach, Couched_<br/>**Special**: While mounted, this has the Dismounting property.| - | Topple |
 | **Longsword** | 15 | 3 | 1d8 slashing | _Versatile (1d10)_ | Bastard Sword, Messer | Lunge, Flex (Cleave) |
 | **Man Catcher** | 6 | 6 | - | _Two-Handed, Heavy, Reach_<br/>**Special**: On a hit, the target is grappled.  When it tries to escape the grapple, it takes 1 piercing damage.| - | Push |
 | **Maul** | 10 | 10 | 2d6 bludgeoning | _Heavy, Two-Handed_ | - | Topple |
@@ -63,7 +63,7 @@ An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns
 | **Shortsword** | 10 | 2 | 1d6 slashing or piercing | _Finesse, Light, Amphibious_ | Khopesh | Vex |
 | **Spearsword** | 10 | 3 | 1d8 piercing or slashing | _Thrown (10/30)_ | Yklwa | Graze |
 | **Studded Gauntlets** | 1 | 1/2 | 1d4 bludgeoning or piercing | _Handy, Light_| Brass Knuckles | Graze |
-| **Trident** | 5 | 2 | 1d8 piercing | _Thrown (20/60), Versatile (1d10), Amphibious_ | Pitchfork | Lunge, Flex (Slow) |
+| **Partisan** | 5 | 2 | 1d8 piercing | _Thrown (10/30), Versatile (1d10), Amphibious_ | - | Lunge, Flex (Slow) |
 | **War Pick** | 5 | 2 | 1d8 piercing | Versatile (1d10) | - | Sap, Flex (Deadly) |
 | **Warhammer** | 15 | 2 | 1d8 bludgeoning | Versatile (1d10) | - | Graze, Flex (Slow) |
 | **Voulge** | 10 | 6 | 1d10 slashing or piercing | _Two-Handed, Reach, Heavy_| - | Push |

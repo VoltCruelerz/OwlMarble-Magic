@@ -88,6 +88,7 @@
 | **Flexible Attunement**          | OMM               |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  |
 | **God-Touched**                  | OMM               |     |     |     |  ✓  |  ✓  |  ✓  |  |
 | **Ground Fighter**               | OMM               |     |  ✓  |     |     |     |     |  |
+| **Aurivorax Symbiote**           | OMM               |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  |  ✓  | warforged |
 | **Human Endurance**              | OMM               |     |     |  ✓  |     |     |     | human, half-elf, or half-orc |
 | **Light Armor Mastery**          | KeoniKoa          |     |  ✓  |     |     |     |     | dexterity score 13 or higher, proficiency in light armor |
 | **Mechanical Expert**            | Kingslayer059     |     |     |  ✓  |  ✓  |     |     | warforged |
