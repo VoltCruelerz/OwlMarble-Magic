@@ -42,7 +42,6 @@
 <div class='cover-splotch'></div>
 <div class='cover-footer'>Bring firearms to the battlefield with the Gunslinger class for D&D 5th edition!</div><!-- /1st Page -->
 
-
 <div class='descriptive' style='position:absolute;bottom:0px;right:10px'>
  
 ####
@@ -58,18 +57,18 @@ An elf lays the barrel of her rifle atop a rock, peering through the bushes and 
 
 A dwarf clad in dark leathers pulls a revolver from his hip, unloading a shot into the bandit approaching him. Three others begin to charge at the dwarf, and with lightning reflexes, he fells them all before they have the opportunity to close the distance.
 
-A scarred goliath points his shotgun towards a group of merchants, demanding the surrender of their goods. When one of the merchants charges the goliath, he pulls a dagger from his belt, gutting the hero before unloading his weapon into another.
+A scarred goliath points his shotgun towards a group of merchants, demanding the surrender of their goods. When one of the merchants charges the goliath, he pulls a dagger from his belt, gutting the hero.
 
 Gunslingers make use of quick reflexes and overwhelming firepower to get the upper hand in combat situations. Out of combat gunslingers make excellent scouts and lookouts.
 
 ### Cutting Edge Weaponry
-Gunslingers are skilled at using new and unique technology. They have an intimate understanding of their weaponry and are quick to adapt in changing situations. Their dexterous nature and long ranged firepower allow them to stay on the outskirts of battle while still dishing out devastating damage. Even when in unfavorable situations, a gunslinger always has an extra trick up their sleeve.
+Gunslingers are skilled at using new and unique technology. They have an intimate understanding of their weaponry and are quick to adapt in changing situations. Their dexterous nature and long ranged firepower allow them to stay on the outskirts of battle while still dishing out devastating damage. Even when in unfavourable situations, a gunslinger always has an extra trick up their sleeve.
 
 ### Varied Beginnings
 Gunslingers come from a variety of backgrounds and employ themselves in numerous professions. A gunslinger can be anything from a common bandit to a soldier, or even an intellectual tinkerer. Depending on the technology of the world, gunslingers may be as common as fighters or as rare as dragons themselves. Whatever their background, one thing all gunslingers have in common is their grit in battle and unparalleled finesse with firearms. 
 
 ### Creating a Gunslinger
-When creating a gunslinger, be sure to consider the setting of your campaign. Are firearms common or rare? Is your character perhaps the first to wield firearms in your setting? Does your character have enemies or rivals who covet their (potentially) rare and powerful technology? Are you from a far off land where firearms are much more common, or perhaps from a different plane entirely? Who taught your character to use firearms? And what is your character's relationship with that person like? Consider how these factors may influence the way in which your character interacts with the other player characters, npcs, and the world around them. 
+When creating a gunslinger, be sure to consider the setting of your campaign. Are firearms common or rare? Is your character perhaps the first to wield firearms in your setting? Does your character have enemies or rivals who covert their (potentially) rare and powerful technology? Are you from a far off land where firearms are much more common, or perhaps from a different plane entirely? Who taught your character to use firearms? And what is your character's relationship with that person like? Consider how these factors may influence the way in which your character interacts with the other player characters, npcs, and the world around them. 
 
 #### Quick Build
 You can make a gunslinger quickly by following these suggestions, First, Dexterity should be your highest ability score, followed by Intelligence. Second, choose the faction agent background.
@@ -103,15 +102,15 @@ ___
 | 7th | +3 | Deadeye | 4 | 1d6 | 3rd | 2d10 (4) | 2 |
 | 8th | +3 | Ability Score Improvement | 5 | 1d6 |
 | 9th | +4 | Additional Trickshot | 5 | 1d6 | 3rd | 2d10 (4) | 2 |
-| 10th | +4 | Action Surge  | 6 | 1d6 | 3rd | 2d10 (4) | 2 |
+| 10th | +4 | Adrenaline Rush  | 6 | 1d6 | 3rd | 2d10 (4) | 2 |
 | 11th | +4 | Specialization Feature, Extra Attack (2) | 6 | 1d8 | 3rd | 3d10 (4) | 3 |
 | 12th | +4 | Ability Score Improvement | 7 | 1d8 | 3rd | 3d10 (4) | 3 |
 | 13th | +5 | Eagle Eyes, Additional Trickshot | 7 | 1d8 | 4th | 3d10 (5) | 3 |
-| 14th | +5 | Perfect Accuracy | 8 | 1d8 | 4th | 3d10 (5) | 3 |
-| 15th | +5 | Deadly Trickshots | 8 | 1d8 | 4th | 3d10 (5) | 4 |
+| 14th | +5 | Footwork | 8 | 1d8 | 4th | 3d10 (5) | 3 |
+| 15th | +5 | Perfect Accuracy | 8 | 1d8 | 4th | 3d10 (5) | 4 |
 | 16th | +5 | Ability Score Improvement | 9 | 1d10 | 4th | 3d10 (5) | 4 |
 | 17th | +6 | Specialization Feature, Additional Trickshot | 9 | 1d10 | 5th | 4d10 (6) | 4 |
-| 18th | +6 | Reaper's Sprint | 10 | 1d10 | 5th | 4d10 (6) | 4 |
+| 18th | +6 | Grim Reaper's Sprint | 10 | 1d10 | 5th | 4d10 (6) | 4 |
 | 19th | +6 | Ability Score Improvement | 10 | 1d10 | 5th | 4d10 (6) | 5 |
 | 20th | +6 | Extra Attack (3)  | 10 | 1d10 | 5th | 4d10 (6) | 5 |
 </div>
@@ -146,15 +145,18 @@ All gunslingers have a unique and particular style of shooting. When you take yo
 You only gain benefits from a Shooting Style when using firearms and you cannot benefit from Fighting Styles when using firearms.
 
 #### Akimbo
-You may engage in two weapon fighting while using light firearms. When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
+When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack, so long as at least one of the weapons is a firearm.
 
 #### Big Game Hunter
-On each of your turns, the first attack roll you make is rolled with advantage.
+The first attack you make using a firearm in combat is rolled with advantage. When fighting a single hostile creature, you gain a +2 bonus to ranged attack rolls.
 
 \pagebreakNum
 
-#### Cheap Shot
-When making a ranged weapon attack against a creature that is within 5 feet of at least one friendly creature (including yourself), gain a +2 bonus to damage rolls.
+#### Crowd Control
+The first ranged weapon attack you hit against each unique creature on your turn gains a +2 bonus to damage rolls.
+
+#### Defense
+While you are wearing armor, you gain a +1 bonus to AC.
 
 #### Duelist
 When you are wielding a firearm in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
@@ -162,20 +164,23 @@ When you are wielding a firearm in one hand and no other weapons, you gain a +2 
 #### Evasive
 The bonus you receive from half and three-quarters cover is doubled.
 
+#### Headhunter
+When making a ranged weapon attack against a creature that is not currently engaged in melee combat with any other creatures, you gain a +2 bonus to damage rolls.
+
 #### Marksman
-You gain a +2 bonus to ranged weapon attack rolls.
+You gain a +2 bonus to your ranged attack rolls with firearms.
 
-#### Nimble
-While you are wearing armor, gain a +1 bonus to AC.
+#### Pistol Expert
+You gain a +1 bonus to attack and damage rolls when using firearms with pistol ammunition.
 
-#### Rapid Reloader
-You ignore the Reload property of firearms.
+#### Rifle Expert
+You gain a +1 bonus to attack and damage rolls when using firearms with rifle ammunition.
 
-#### Skeet Shooter
-As a reaction, when a creature within your weapon's range makes a ranged weapon attack, you may attempt to shoot the projectile from the air. You subtract one roll of your Grit Die from the attack roll of the projectile. You must use this reaction before you know the outcome of the roll.
+#### Scoundrel
+When making a ranged weapon attack against a creature that is within melee range of at least one friendly creature other than yourself, you gain +2 bonus to damage rolls.
 
-#### Steady Aim
-When you roll a 1 on a damage die for an attack, you can reroll the die and must use the new roll, even if the new roll is a 1.
+#### Shotgun Expert
+You gain a +1 bonus to attack and damage rolls when using firearms with shotgun ammunition.
 
 ### Expertise
 At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with tinker's tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
@@ -183,11 +188,12 @@ At 1st level, choose two of your skill proficiencies, or one of your skill profi
 ### Grit
 By 2nd level, through your quick reflexes and and skill with firearms, you are able to take a variety of beneficial maneuvers. Your skill is represented by Grit Points. Your gunslinger level determines the number of Grit Points you have, as shown in the Grit Points column of the Gunslinger table. Grit Points are used to perform various class features.
 
-Some Grit features use a Grit Die, which is determined by your gunslinger level as shown in the Grit Die column of the Gunslinger Table. 
-
-You regain 1 expended Grit Point each time you roll a critical strike or reduce the health of a creature of significant threat to 0 (DM's discretion). You regain all expended Grit Points after a short or long rest.
+Some Grit features use a Grit Die, which is determined by your gunslinger level as shown in the Grit Die column of the Gunslinger Table. When dealing damage using a Grit Die, the damage type is always the same as the weapon used during the attack unless otherwise specified. 
 
 \columnbreak
+
+You regain 1 expended Grit Point each time you roll a critical strike or deal a killing blow to a creature of significant threat (DM's discretion). You regain all expended Grit Points after a short or long rest.
+
 
 Some of your grit features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:
 
@@ -212,31 +218,31 @@ You learn one additional trick shot at 5th, 9th, 13th, and 17th level. When you 
 
 **Disarming Shot.** When you make a ranged weapon attack against a creature, you may expend 1 Grit Point and attempt to shoot an object from their hands. On a hit, the target must make a Strength saving throw. On a failed save, it drops 1 object its holding of your choice and the object is pushed 10 feet away.
 
-**Distracting Shot**. When you make a ranged weapon attack against a creature, you may expend 1 Grit Point in an attempt to impede the creature's ability to make attacks. On a hit, the creature must make a Constitution saving throw. On a failed save, the creature has disadvantage on its next attack.
+**Distracting Shot**. When making a ranged weapon attack against a creature, you may expend 1 Grit Point in an attempt to impede the creature's ability to make attacks. On a hit, the creature must make a constitution saving throw. On a failed save, the creature has disadvantage on its next attack.
 
-**Forceful Shot.** When you make a ranged weapon attack against a creature, you may expend 1 Grit Point attempt to force them back. On a hit, the target must succeed on a Strength saving throw or be pushed 10 feet away from you.
+**Forceful Shot.** When you make a ranged weapon attack against a creature, you may expend 1 Grit Point attempt to force them back. On a hit, the target must succeed on a Strength saving throw or be pushed 15 feet away from you.
 
-**Hemorrhaging Shot.** When you make a ranged weapon attack against a creature, you may expend 1 Grit Point in an attempt to cause bleeding. The creature must make a Constitution saving throw. On a failed save, the creature takes damage equal to 1 roll of your Grit Die. The creature repeats it's saving throw at the end of each of it's turns, taking piercing damage equal to 1 roll of your grit die on a fail, or ending the condition on a success.
+**Hemorrhaging Shot.** When you make a ranged weapon attack against a creature, you may expend 1 Grit Point in an attempt to cause bleeding. The creature must make a constitution saving throw. On a failed save, the creature takes damage equal to 1 roll of your Grit Die at the end of each of its turns. The creature may repeat this saving throw at the start of each of its turns after the first.
 
-**Overwatch.** As a reaction, you may expend 1 Grit Point to make a ranged weapon attack against a moving creature within your firearm's normal range.
-
-**Piercing Shot.** When making a ranged weapon attack against a creature, you may expend 1 grit point to attempt to fire through multiple opponents. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment.
+**Lethal Intent.** When making a ranged weapon attack, you expend up to 10 Grit Points to lower the critical strike threshold by 1 per Grit Point spent. If you critically strike using this Trickshot, you refill all uses of Grit Points. This Trickshot cannot be used at the same time as any class features that cause or improve critical strikes.
 
 \pagebreakNum
 
-**Pinning Shot.** When making a ranged weapon attack against a creature, you may expend 1 Grit Point to attempt to pin the creature in place. On a hit, the creature must make a Dexterity saving throw. On a failed save, the creature is unable to move until the end of its next turn.
+**Overwatch.** As a reaction, you may expend 1 Grit Point to make an opportunity attack against a moving creature within your firearm's normal range.
+
+**Piercing Shot.** When making a ranged weapon attack against a creature, you may expend 1 grit point to attempt to fire through multiple opponents. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment.
+
+**Pinning Shot.** When making a ranged weapon attack against a creature, you may expend 1 Grit Point to attempt to pin the creature in place. On a hit, the creature must make a dexterity saving throw. On a failed save, the creature is unable to move until the end of its next turn.
+
+**Shoot Down.** As a reaction, when a creature within your weapon range makes a ranged weapon attack, you expend any number of Grit Points and attempt to shoot the projectile from the air, subtracting a number of rolls of your Grit Die equal to the number of Grit points spent from the attack roll. You must use this reaction before you know the outcome of the roll.
 
 **Winging Shot:** When making a ranged weapon attack against a creature, you may expend 1 Grit Point to attempt to topple them. On a hit, the target must succeed on a Strength saving throw or be knocked prone.
 
-> ##### Optional Rule: Preparing Trickshots
-> As an optional rule, instead of simply knowing Trickshots, a gunslinger may prepare a number of Trickshots equal to the number of Trickshots that the gunslinger would normally know, allowing them to swap Trickshots each time they take a long rest.
-
-
 ### Specializations
-At 3rd level, you choose a specialization that you emulate in the exercise of your gunslinging abilities, all of which are detailed at the end of the class description, your specialization grants you features at the 3rd level and then again at the 6th, 11th, and 17th level.
+At 3rd level, you choose a specialization that you emulate in the exercise of your gunslinging abilies, all of which are detailed at the end of the class description, your specialization grants you features at the 3rd level and then again at the 6th, 11th, and 17th level.
 
 ### Deft Hands 
-By 3rd level, you know your weapons inside and out and are able to maneuver them with unparalleled finesse. You may expend 1 Grit Point to reload a firearm or change weapons without using an action or bonus action during your turn.
+By 3rd level, you know your weapons inside and out and are able to maneuver them with unparalleled finesse. You may expend 1 Grit Point to reload a firearm or change weapons as a free action during your turn.
 
 ### Ability Score Improvement
 When you reach the 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.
@@ -259,48 +265,53 @@ ___
 
 </div>
 
-### Deadeye
-Starting at 7th level, you learn to carefully line up exceptionally lethal shots. When you make a ranged weapon attack using the attack action on your turn, you may choose to forgo one or more of the extra attacks granted by your Extra Attack class feature. For each attack you choose to forgo, you gain a +1 to the attack roll. You also increase the damage of the attack by 1 roll of your Grit Die for each attack forgone. Additionally, if a creature struck by deadeye has to make a Grit saving throw, such as when struck by the Pinning Shot Trickshot, it does so with disadvantage.
-
 \pagebreakNum
 
-### Action Surge
+### Deadeye
+Starting at 7th level, you learn to carefully line up exceptionally lethal shots. When you make a ranged weapon attack using the attack action on your turn, you may choose to forgo one or more of the extra attacks granted by your Extra Attack class feature. For each attack you choose to forgo, you gain a +2 to the attack roll. You also increase the damage of the attack by 1 roll of your Grit Die for each attack forgone. Additionally, if a creature struck by deadeye has to make a Grit saving throw, such as when struck by the Blinding Shot Trickshot, it does so with disadvantage.
+
+### Adrenaline Rush
 Starting at 10th level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
 
-Once you use this feature, you must finish a short or long rest before you can use it again.
+Once you use this features, you must finish a short or long rest before you can use it again.
 
 ### Eagle Eyes
 By 13th level, you have grown proficient in scanning the environment for threats, and have become stalwart is preventing others from obscuring your senses. You have advantage on Wisdom (Perception) checks that rely on sight or sound, as well as advantage on saving throws against effects that would make you blinded or deafened.
 
-### Perfect Accuracy
-By 14th level, your have become an expert at identifying flaws in your opponents' defenses. You bypass resistance to piercing damage from non-magical attacks and treat immunity to piercing damage from nonmagical attacks as resistance. In addition, your weapon attacks score a critical hit on a roll of 19 or 20.
-
 \columnbreak
 
-### Deadly Trickshots
-By 15th level, you have learned to combine multiple trickshots into a single deadly attack. You may apply two trickshots to the same attack, without expending any additional Grit Points beyond the first.
 
-### Reaper's Sprint
-When you reach 18th level, whenever you reduce a creature to 0 hit points, you regain 1 Grit Point.
+### Footwork
+By 14th level, you have become proficient at escaping dangerous situations. During your turn, you may expend 1 Grit Point to take the Disengage action as a bonus action.
+
+### Perfect Accuracy
+By 15th level, your have become an expert at identifying flaws in your opponents' defenses. You bypass resistance to piercing damage and treat immunity to piercing damage as resistance. In addition, your weapon attacks score a critical hit on a roll of 19 or 20
+
+### Grim Reaper's Sprint
+By 18th level, you have learned to thrive in the chaos of battle. Whenever you land the killing blow on a creature, you regain 1 Grit Point.
 
 ## Specializations
 
 As a your prowess with firearms grows, whether due to talent or practice, your begin to develop patterns and manifest new abilities with firearms. At 3rd level, the ways in which you approach gunslinging become more defined as you select a specialization. When you select a specialization, you begin on the path to mastery as you unearth new ways of gunslinging and learn unique and powerful methods of approaching and controlling the battlefield with firearms.
 
-### Specialization: Battlefield Medic
+### Specialization: Combat Medic
 
-Battlefield medics are experts in providing support to their allies. Their primary focus is on healing and utility rather than raw damage. Due to their sharp intellect, Battlefield Medics also gain access to a larger pool of Grit and Trickshots than other gunslingers.
+Combat medics are experts in providing support to their allies. Their primary focus is on healing and utility rather than raw damage. However, their lethality is not to be underestimated. Due to their sharp intellect, Combat Medics also gain access to a larger pool of Grit and Trickshots than other gunslingers.
 
 #### Grit Reservoir
 When you choose this specialization at the 3rd level, you gain a number of Grit Points equal to your Intelligence modifier (minimum of one) in addition to the Grit Points granted by your gunslinger level. These Grit points function the same as those granted by your gunslinger level.
 
-#### Combat Medicine
-When you choose this specialization at the 3rd level, you learn to quickly tend to wounds incurred on the battlefield. As an action, you may expend up to 3 Grit Points to heal a creature you touch for an amount of Grit Dice equal to the number of Grit Points expended + your Intelligence modifier.
+Furthermore, you learn two Trickshots of your choice.
 
-<img src='https://i.pinimg.com/564x/bc/21/6a/bc216a2281cf40dc583b9c4809e2273c.jpg' style='position:absolute; top:515px; left:-75px; width:px' />
+#### Battlefield Triage
+When you choose this specialization at the 3rd level, you learn to quickly tend to wounds incurred on the battlefield. When you use a healer's kit to stabilize a creature, they also regain 1 hit point. Additionally, you gain Expertise in Medicine. If you already have expertise in Medicine or are not proficient in Medicine, you may choose another skill to gain expertise. 
+
+Furthermore, as an action, you may expend up to 3 Grit Points to heal a creature you touch for an amount of Grit Dice equal to the number of Grit Points expended *plus* your Intelligence modifier.
+
+<img src='https://i.pinimg.com/564x/bc/21/6a/bc216a2281cf40dc583b9c4809e2273c.jpg' style='position:absolute; top:475px; left:-75px; width:px' />
 
 <!-- Full page stain -->
-<img src='https://watercolors.giantsoup.com/ee/ee_bottom-left/0002.png' style='position:absolute; top:50px; left:0px; width:816px' />
+<img src='https://watercolors.giantsoup.com/ee/ee_bottom-left/0002.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 <div class='descriptive' style='position:absolute;bottom:0px;right:670px'>
  
@@ -310,36 +321,33 @@ ___
 
 </div>
 
-#### Violent Remedy
-By 6th level, you have learned to combine medicine and gunslinging in a unique way. When you critically strike a creature or when a creature dies within 60 feet of you, you can use your reaction to shoot an empowering tonic at a creature you see, granting one of the following benefits:
-* Heal for a number of hit points equal to 1 roll of your Grit Die.
-* Gain advantage on their next attack.
-* Gain resistance to bludgeoning, piercing, or slashing damage from nonmagical attacks until the end of their next turn.
-
 \pagebreakNum
+
+#### Do No Harm
+By 6th level, you have learned the art of chemical warfare. As a bonus action, you may expend 1 Grit Point to coat your weapon's chamber with toxic substances. Each creature you hit with an attack using the coated weapon before you reload must succeed on a Constitution saving throw or take poison damage equal to 1 roll of your Grit Die and be blinded until the start of its next turn.
+
 
 #### Lifeline
 By the 11th level, you have become efficient at finding the safest and quickest path towards your allies when they are in danger. Your walking speed is increased by 10 feet and you gain a bonus to your AC equal to half your your Intelligence modifier, rounded down (minimum of one).
 
-Furthermore, you learn to pull your allies from danger. As a bonus action, you may expend 1 Grit Point to move a willing creature that you touch up to 5 feet. This movement does not incur attacks of opportunity. 
+#### Violent Remedy
+By 17th level, you have learned to combine medicine and gunslinging in a unique way. Whenever you critically strike a creature or whenever a creature dies within 60 feet of you, you can use your reaction to shoot an empowering tonic at a creature you see, granting one of the following benefits:
+* Heal for a number of hit points equal to 2 rolls of your Grit Die.
+* Gain advantage on attack rolls made until the end of their next turn.
+* Gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks until the end of their next turn.
 
-#### Do No Harm
-By 17th level, when using the Violent Remedy feature, the target creature gains all listed benefits instead of a single benefit of your choice. In addition, when granting a creature other than yourself the benefits of Violent Remedy, you also gain the benefits.
+\columnbreak
 
 ### Specialization: Highwayman
 Gunslingers who choose the Highwayman specialization emphasize skullduggery and intimidation. They shine in close quarters combat and focus on combining a flourish of melee and ranged attacks. They excel at debilitating their foes and striking when they're too weak to retaliate. Highwaymen will do whatever it takes to gain the upper hand, both in and out of in combat.
 
-\columnbreak
-
 #### Close-Quarters Combatant
-You have learned to excel in the brutality of close quarters combat. When you choose this specialization at the 3rd level, you gain proficiency with schimitars and shortswords. You also no longer have disadvantage on ranged attack rolls made when within 5 feet a of hostile creature. Furthermore, you gain the Akimbo Shooting Style. If you already have the Akimbo Shooting Style, you may choose a different Shooting Style. 
+You have learned to excel in the brutality of close quarters combat. When you choose this specialization at the 3rd level, you gain proficiency with schimitars and shortswords. You also no longer have disadvantage on ranged attacks when in melee range of hostile creatures. Furthermore, you gain the Akimbo Shooting Style. If you already have the Akimbo Shooting Style, you may choose a different Shooting Style. 
 
-In addition, when you hit a creature with a melee weapon attack while engaged in two-weapon fighting, you may reload the firearm in your off-hand without using an action or bonus action.
+In addition, when you hit a creature with a melee weapon attack while engaged in two-weapon fighting, you may reload the firearm in your off-hand as a free action.
 
 #### Menacing Presence
 You exude an aura of violence and ferocity. When you choose this specialization at the 3rd level, you have advantage on Charisma (Intimidation) checks and gain expertise in Intimidation. If you already have expertise in Intimidation or are not proficient in Intimidation, you may choose another skill to gain expertise.
-
-Additionally, as an action, you may expend 2 Grit Points to threateningly discharge your firearm into the air. All creatures that can see you within 30 feet must succeed on a Wisdom saving throw against your Grit Save DC or become frightened of you for the next minute. If a creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a Wisdom saving throw against your Grit Save DC. On a successful save, the effect ends for that creature.
 
 <img src='https://pbs.twimg.com/media/DKV63MUVYAE-CHu.jpg' style='position:absolute; top:490px; left:-30px; width:850px' />
 
@@ -356,41 +364,46 @@ ___
 
 \pagebreakNum
 
+Additionally, as an action, you may expend 2 Grit Points to threateningly discharge your firearm into the air. All creatures that can see you within 30 feet must succeed on a Wisdom saving throw or become frightened of you for the next minute. If a creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the effect ends for that creature.
+
+
+
 #### Arrogant Mettle
 Starting at the 6th level, when a creature makes a melee weapon attack against you, you may use your reaction to taunt the creature, imposing disadvantage on melee weapon attacks it makes against you until the end of its turn.
 
-This feature can be used a number of times equal to your Intelligence modifier (a minimum of once). You regain any expended uses when you finish a short or long rest. 
+This feature can be used a number of times equal to your Intelligence modifier (a minimum of once). You regain any expended uses when you finish a long rest. 
 
 #### Gritty Skirmisher
 When you reach the 11th level, your blade and firearm have begun to feel like an extension of one another. You may choose to replace the damage die of any light melee weapon with your Grit Die.
 
-#### Vicious Rampage
-By the 17th level, your mastery of firearms and light melee weapons allows you to maneuver yourself out of situations in which you find yourself surrounded by enemies on all sides. As an action, you may expend 3 Grit Points to may make a melee weapon attack against any number of creatures within 5 feet of you, making a separate attack roll for each target. You then make a ranged weapon attack against any number of creatures within 10 feet of you. You must have ammunition loaded into your firearm for each target, as normal, and you make a separate attack roll for each target. No creature can be targeted by both a melee and ranged attack at the same time when using this feature.
+#### Flash Bomb
+By 17th level you have learned to create and employ devastating flash bombs. As an action, you may expend 6 Grit Points to detonate a flash bomb at your feet. All hostile creatures within 15 feet of you must succeed on a Constitution saving throw or take force damage equal to 2 rolls of your Grit Die and be stunned until the start of your next turn.
 
 \columnbreak
 
 ### Specialization: Infiltrator
-While gunslinger who choose this specialization are skilled combatants in their own right, they prefer to employ charm and guile to reach their goals. These gunslingers thrive in social situations and prefer to avoid direct confrontation. They also excel at stealth and subterfuge. As such, Infiltrators make excellent thieves, assassins, and diplomats.
+While gunslinger who choose this specialization are skilled combatants in their own right, they primarily prefer to employ charm and guile to reach their goals. These gunslingers thrive in social situations and prefer to avoid direct confrontation. They also excel at stealth and subterfuge. As such, Infiltrators make excellent thieves, assassins, and diplomats.
 
 #### Silent Shooting
-Firearms are well known to lack subtly. However, when you choose this Specialization at the 3rd level, whether through mechanical or magical means, you have engineered your firearms to be as silent as a bow and arrow. In addition, when you hit a surprised creature with a ranged weapon attack, the attack gains 2 rolls of your Grit Die as bonus damage.
+Firearms are well known to lack subtly. However, when you choose this Specialization at the 3rd level, whether through mechanical or magical means, you have engineered your firearms to be as silent as a bow and arrow. In addition, when you hit a surprised creature with a ranged weapon attack, the attack gains 1 roll of your Grit Die as bonus damage and automatically critically strikes.
 
-#### Cunning Mannerisms
-Starting at 3rd level, you gain proficiency with forgery kits and thieves tools. In addition, whenever you make a Charisma (Deception or Persuasion) check, you may add 1 roll of your Grit Die to the total.
+#### Elegant Mannerisms
+When you choose this specialization at the 3rd level, whenever you make a Charisma check, you gain a bonus to the check equal to your Intelligence modifier (minimum of +1).
 
-#### Untraceable
-When you reach 6th level, you (and objects you carry) can no longer be detected by divination magic. Additionally, you are able to discern when any creature or object within 100 feet of you is being tracked by divination magic.
+#### Forceful Personality
+By 6th level, have have learned to excel at preventing others from gaining the upper hand in social situations and are able to resist the influence of those who would do you harm. You gain proficiency in Charisma saving throws. If you already have proficiency in Charisma saving throws, you instead gain proficiency in Strength saving throws. 
+
+In addition, when making a Charisma (Deception or Persuasion) check, you may add 1 roll of your Grit Die to the total.
+
+#### Convincing Liar
+Starting at 11th level, as an action, you may expend 1 Grit Point in an attempt to convince up to 3 creatures of your good intentions. Each creature must make a Wisdom saving throw or be Charmed by you for the next hour. If a creature succeeds on the saving throw, it is unaware that you tried to manipulate it, unless you did so egregiously. However, if the creature fails the saving throw, it becomes aware that you manipulated it once the charm fades. 
+
+If you attack the creature or are otherwise hostile towards it, the charm fades. You cannot use this feature against a creature that you are engaged in combat with or against a creature who has successfully resisted Convincing Liar within the last 24 hours.
 
 #### Subterfuge Expert
-While your charming nature helps you bypass most obstacles, some problems require a more direct approach to infiltration. When you reach 11th level, you have learned to imbue your bullets with conjuration and illusion magic. When you hit a non-creature target with a ranged weapon attack from a firearm, you can choose to teleport to the location of the impact up to a maximum of 60 feet away. In addition, you immediately become invisible upon teleportation. The invisibility lasts up to 1 minute and ends early if you attack, cast a spell, or move more than 5 feet. When you make an attack with a firearm while invisible, you increase the damage of the attack by two rolls of your Grit Die.
+While your charming nature helps you bypass most obstacles, some problems require a more direct approach to infiltration. When you reach 17th level, you have learned to imbue your bullets with conjuration and illusion magic. When you hit a non-creature target with a ranged weapon attack from a firearm, you can choose to teleport to the location of the impact up to a maximum of 60 feet away. In addition, you immediately become invisible upon teleportation. The invisibility lasts up to 1 minute and ends early if you attack, cast a spell, or move more than 5 feet. If you make an attack 
 
-This feature can be used a number of times equal to your Intelligence modifier (a minimum of once). You regain any expended uses when you finish a long rest. You may also expend 1 Grit Point to use this feature if you have no uses remaining.
-
-#### Blinding Bullet
-By 17th level you have learned to imbue bullets with necromantic magic. As an action, you may expend 3 Grit Points to to fire a blinding bullet at a target within your firearm's range. All hostile creatures within a 15 foot radius of the impact must succeed on a Constitution saving throw against your Grit Save DC or take force damage equal to 3 rolls of your Grit Die and be blinded until the start of your next turn. 
-
-
-<img src='https://i.pinimg.com/564x/6b/3a/40/6b3a40300f008a38b339e37e01290e26.jpg' style='position:absolute; top:475px; left:-60px; width:500px' />
+<img src='https://i.pinimg.com/564x/6b/3a/40/6b3a40300f008a38b339e37e01290e26.jpg' style='position:absolute; top:460px; left:-60px; width:500px' />
 
 <!-- Full page stain -->
 <img src='https://watercolors.giantsoup.com/ee/ee_bottom-left/0008.png' style='position:absolute; top:0px; left:0px; width:816px' />
@@ -404,6 +417,10 @@ ___
 </div>
 
 \pagebreakNum
+
+while invisible, you increase the damage of the attack by two rolls of your Grit Die.
+
+This feature can be used a number of times equal to your Intelligence modifier (a minimum of once). You regain any expended uses when you finish a long rest. You may also expend 1 Grit Point to use this feature if you have no uses remaining.
 
 ### Specialization: Mystic Gunner
 Mystic Gunners are by far the most magically inclined Gunslinger Specialization. In combat, they combine a devastating array of spells with fierce gunslinging prowess. As such, they are one of the most versatile gunslinger specializations, and have a solution prepared for almost any obstacle.
@@ -441,10 +458,11 @@ When you choose this specialization at the 3rd level, you learn to cast spells a
 
 ***Cantrips.*** You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at the 10th level.
 
+\columnbreak
 
 ***Spell Slots.*** The Mystic Gunner Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 
-\columnbreak
+
 
 For example, if you know the 1st-level spell *shield* and have a 1st-level and a 2nd-level spell slot available, you can cast *shield* using either slot.
 
@@ -492,43 +510,43 @@ ___
 
 \pagebreakNum
 
-#### Mystic Firearm
-When you choose this specialization at 3rd level, your understanding of magic and mysticism allow you to imbue a particular firearm with magic properties. Whenever you finish a long rest, you can touch one firearm. Attacks made with your this firearm are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Additionally, the firearm you chose can be used as a spellcasting focus when casting wizard spells. These benefits last until you finish a long rest.
+#### Elementally Imbued Firearm
+When you choose this specialization at 3rd level, your understanding of magic and mysticism allow you to imbue a particular firearm with magic properties. Whenever you finish a long rest, you can choose one firearm. When you deal damage with that firearm, you can choose to inflict acid, cold, fire, force, lightning, or thunder damage instead of the weapon's normal damage type. Attacks made with this weapon are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Additionally, the firearm you chose can be used as a spellcasting focus when casting wizard spells. This benefit lasts until you finish a long rest.
 
-When you cast a spell of 1st level or higher using your firearm as a focus, you may expend one Grit Point to summon a spectral firearm. Using the spectral firearm, you make a ranged spell attack against a creature within your firearm's normal range. The spectral firearm vanishes after making an attack. The damage of the attack is equal to 2 rolls of your Grit Die + your Intelligence modifier.
+Furthermore, as a bonus action, you may expend 1 Grit Point to learn the damage immunities, damage resistances, and damage vulnerabilities of a creature you can see.
 
 #### Spectral Reload
-Starting at 6th level, you learn to summon a spectral hand to aid you. You learn the Mage Hand cantrip. If you already know the Mage Hand cantrip, you may choose another cantrip to learn from the wizard spell list. Whenever you cast a spell or cantrip, you may briefly summon a spectral hand to reload one of your weapons, allowing you to take the Reload action action without using an action or bonus action.
+Starting at 6th level, you learn to summon a spectral hand to aid you. You learn the Mage Hand cantrip. If you already know the Mage Hand cantrip, you may choose another cantrip to learn from the wizard spell list. Whenever you cast a spell or cantrip, you may briefly summon a spectral hand to reload one of your weapons, allowing you to take the Reload action or bonus action as a free action.
 
 #### Iron Wizardry
-Starting at 11th level, when you use your action to cast a spell or cantrip, you can make one weapon attack as a bonus action.
+Starting at 11th level, when making a ranged weapon attack, may expend 1 Grit Point to use a bonus action to cast a cantrip that would normally cost an action to cast. 
 
 #### Arcane Barrage
-Starting at 17th level, when using your Mystic Firearm feature to summon a spectral firearm after casting a spell of 1st level or higher, you instead summon 2 spectral firearms.
+Whenever you cast a spell using your action, you summon a number of spectral firearms equal to the level of the spell cast. You may make a ranged spell attack against a creature within 120 feet of you for each spectral firearm summoned, using your Intelligence modifier for the attack and damage rolls. The damage is equal to 1 roll of your Grit Die *plus* your Intelligence modifier.
 
 ### Specialization: Operator
 Gunslingers who choose this specialization combine lightning reflexes and careful aiming to act as masters of ranged combat. They rely on their rate of fire and accuracy - their most important attributes - to perform amazing feats with firearms. They excel at dealing with large groups of enemies and single combatants alike. As such, operators shine as relentless killers on the battlefield.
 
-#### Firearm Savant
-When you choose this specialization at the 3rd level, you dedicate yourself to the art of simple gunslinging, without employing any additional tricks or gimmicks. Choose an additional Shooting Style to learn.
+#### Akimbo Expert
+When you choose this specialization at the 3rd level, you become an expert at fighting with one firearm in each hand. You gain the Akimbo Shooting Style. If you already have the Akimbo Shooting Style, you may choose a different Shooting Style.
+
+Additionally, when you take the Reload action or bonus action, you may reload a second firearm that you are holding as a free action.
+
+\columnbreak
 
 #### Quickdraw
-When you choose this specialization at the 3rd level, you become a master of striking your enemies before they can strike you. Immediately after initiative is rolled (and when not surprised), you can use your reaction to make a ranged weapon attack against a creature within your firearm's range.
-
-\columnbreak 
+When you choose this specialization at the 3rd level, you become a master of striking your enemies before they can strike you. Immediately after initiative is rolled (and when not surprised), you can use your reaction to make a ranged weapon attack against a creature within range.
 
 #### Fanfire
-Starting at 6th level, you learn how to efficiently distribute shots amongst your enemies. Whenever you make an attack roll against two or more *different* creatures during your turn, you may add 1 roll of your Grit Die to the damage of each attack after the first. When you make two or more attack rolls against the *same* creature on your turn, you may add 1 roll of your Grit Die to the attack roll of each attack after the first.
+Starting at 6th level, you learn how to efficiently distribute shots amongst your enemies. Whenever you make an attack roll against two or more *different* creatures on the your turn, you may add 1 roll of your Grit Die to the damage of each attack after the first. When you make two or more attack rolls against the *same* creature on your turn, you may add 1 roll of your Grit Die to the attack roll of each attack after the first.
+
 
 #### Trigger Discipline
-Starting at 11th level, as an action you may expend 3 Grit Points to enter a trance of unadulterated focus for the next minute. While in this state, you function as if under the effects of the Haste spell, and must maintain concentration as such.
+Starting at 11th level, when in combat, you may use an action to cast the Haste spell on yourself without material components. When the Haste spell is completed, you do not suffer the negative effects of Haste as you normally would when using the Haste spell. 
 
-#### Double Tap
-By 17th level, you have become a master of following up lethal attacks with even more firepower. When you score a critical strike against a creature, you may perform an additional ranged weapon attack using a Trickshot against a creature within your firearm's range, without expending a Grit Point.
+Once you use this feature you may expend 3 Grit Points to refresh the ability. Otherwise, you can't use it again until you complete a short or long rest.
 
-Furthermore, you may take the Reload action without using an action or bonus action whenever you score a critical strike.
-
-<img src='https://i.pinimg.com/originals/64/ee/20/64ee207a61aeb561513b2dbad6a6ee50.png' style='position:absolute; top:475px; left:340px; width:525px' />
+<img src='https://i.pinimg.com/736x/61/98/ce/6198ce9cd7c3f64706aa29112183cadc.jpg' style='position:absolute; top:450px; left:350px; width:525px' />
 
 <!-- Full page stain -->
 <img src='https://watercolors.giantsoup.com/ee/ee_bottom-right/0003.png' style='position:absolute; top:0px; left:0px; width:816px' />
@@ -537,46 +555,29 @@ Furthermore, you may take the Reload action without using an action or bonus act
  
 ####
 ___
-- **Art by:** Noblified
+- **Art by:** Imachocobo
 
 </div>
 
 \pagebreakNum
 
-### Specialization: Shotgunner
-Gunslingers who choose the Shotgunner specialization emphasize close combat and spreading damage among multiple targets. They excel at maintaining just enough range to stay safe, while still remaining near the front lines of battle.
-
-#### Scattershot
-When you choose this specialization at 3rd level, you learn to control the spread of shotguns in such a way that you can damage multiple creatures with a single attack. When making a ranged weapon attack against a creature while using a firearm with shotgun ammunition, you may expend 1 Grit Point to damage all creatures in a 10-foot cone behind the initial target. The initial target takes the standard damage of your weapon attack, while all additional targets in the 10-foot cone take damage equal to 1 roll of your Grit Die.
-
-#### Implacable
-When you choose this specialization at 3rd level, you learn to better shoot your way through inanimate objects. Attacks you make with firearms deal twice as much damage when attacking objects such as doors, locks, crates, or walls.
-
-#### Mindful Spacing
-By 6th level, firearm weapon attacks you make against creatures within 10 feet of you deal additional damage equal to 1 roll of your Grit Die. In addition, you may use your reaction to subtract 1 roll of your Grit Die from the attack roll of an opportunity attack made against you.
-
-#### Improved Scattershot
-Starting at 11th level, once per turn, you may use the Scattershot feature without expending a Grit Point. Additionally, the damage of your scattershot increases to 2 rolls of your Grit Die and the area of creatures affected increases to a 15-foot cone.
-
-#### Shotgun Surgeon
-Starting at 17th level, once per turn you may use the Scattershot feature without expending a Grit Point.
-
-\pagebreakNum
+#### Double Tap
+By 17th level, you have become a master of following up lethal attacks with even more firepower. When you score a critical strike against a creature, you may perform an additional trickshot attack against a creature within your firearm's range without expending a Grit Point. In addition, you may take the Reload action as a free action whenever you score a critical strike.
 
 ### Specialization: Sniper
 Gunslingers who choose the Sniper specialization excel at at exceptionally long-range combat. They emphasize singular, devastating shots over multiple attacks and provide some of the largest single-target damage of any gunslinger specialization.
 
 
 #### Long-Range Expert
-When you choose this specialization at the 3rd level, you become an expert at devastating foes from long range. You suffer no penalty for making ranged weapon attacks at long range when using firearms. In addition, you excel at securing vantage points. As such, you have advantage on Strength (Athletics) checks made when climbing or jumping.
-
-#### Bullseye
-When you choose this specialization at the 3rd level, you learn to analyze and exploit weak points in your targets. As a bonus action, you may expend 1 Grit Point to mark a creature you see for the next minute. The next attack you hit against a marked creature within the next hour deals additional damage equal to 2 rolls of your Grit Die, consuming the mark.
+When you choose this specialization at the 3rd level, you become an expert at devastating foes from long range. You suffer no penalty for making ranged weapon attacks at long range when using firearms. In addition, you excel at securing vantage points and you have advantage on Strength (Athletics) checks made when climbing or jumping.
 
 \columnbreak
 
+#### Bullseye
+When you choose this specialization at the 3rd level, you learn to learn to analyze and exploit weak points in your targets. As a bonus action, you may expend 1 Grit Point to mark a creature you see for the next minute. The first attack you hit against a marked creature deals additional damage equal to 3 rolls of your Grit Die, consuming the mark.
+
 #### Perspicacious
-By 6th level, you are able to detect even the subtlest movements. You have blindsight up to a range of 5 feet, and may take the Search action as a bonus action.
+By 6th level, you are able to detect even the subtlest movements. You have blindsight up to a range of 15 feet, and may take the Search action as a bonus action.
 
 #### Careful Shooter
 You are a master of patiently lining up the perfect shot. At 11th level, when using the Deadeye class feature, you may add 1 additional Grit Die to the attack's damage per attack forgone.
@@ -588,7 +589,7 @@ Once you use this feature, you cannot do so again until you complete a short or 
 
 
 
-<img src='https://cdnb.artstation.com/p/assets/images/images/021/773/741/large/kenneth-solis-gunman2.jpg?1572899301' style='position:absolute; top:470px; left:0px; width:1000px' />
+<img src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0457c2cf-e505-4735-9c00-9f5dfa4f8e69/dcbxmfd-6ccbe4dc-6a1f-4f29-a81e-2936f3815497.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA0NTdjMmNmLWU1MDUtNDczNS05YzAwLTlmNWRmYTRmOGU2OVwvZGNieG1mZC02Y2NiZTRkYy02YTFmLTRmMjktYTgxZS0yOTM2ZjM4MTU0OTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bVWvmkjXQWEKe9ccugZEy6epE9nfyuw3sZmK7UjYGkY' style='position:absolute; top:470px; left:0px; width:1000px' />
 
 <!-- Full page stain -->
 <img src='https://watercolors.giantsoup.com/ee/ee_bottom/0001.png' style='position:absolute; top:-350px; left:0px; width:816px' />
@@ -597,7 +598,7 @@ Once you use this feature, you cannot do so again until you complete a short or 
  
 ####
 ___
-- **Art by:** Kenneth Solis
+- **Art by:** NikitaNV
 
 </div>
 
@@ -608,43 +609,44 @@ Gunslingers who choose the Tactician Specialization are experts at supporting th
 
 
 #### War Stories
-When you choose this specialization at 3rd level, you learn to inspire your allies through tales of past glory. After completing a short or long rest, you may share an inspiring tale of an event from your past. After listening to your story, you and up to 6 other creatures gain one of the following benefits of your choice for the next 8 hours:
+When you choose this specialization at 3rd level, you learn to inspire your allies through tales of past glory. When taking a short or long rest, you may share an inspiring tale of an event from your past. After listening to your story, you and up to 6 other creatures gain one of the following benefits of your choice for the next 8 hours:
 * A number of temporary hit points equal to 1 roll of your Grit Die + your Intelligence modifier.
 * A bonus to initiative rolls equal to your Intelligence modifier.
-* Immunity to the negative effects of the first 3 levels of exhaustion.
+* Immunity to the negative effects of the first 5 levels of exhaustion.
 
 If you use this feature a second time within the duration, you lose the previously chosen benefit and select a new one.
 
 #### Co-ordinated Firepower
 When you choose this specialization at 3rd level, you learn to better use the tools at the disposal of your allies in combat. When you hit a creature with a weapon attack on your turn, you may use your bonus action to command a friendly creature to make a weapon attack or cast a cantrip against a creature that you can both see within range. The commanded creature chooses which weapon they use in the attack or which cantrip they cast, if they choose to attack or cast at all. 
 
-#### Planned Defense
+#### Planned Attack
 By 6th level, you learn to manipulate the battlefield in your favor.  You may spend 10 minutes to do one of the following:
-* Set up a a 10 foot long, 5 foot wide, and 5 foot tall barricade using nearby materials. Creatures behind the barricade are considered to have 1/2 cover.
+* Set up a 10 foot long barricade. Creatures behind the barricade are considered to have 1/2 cover.
 * Create a 15 foot radius of difficult terrain.
-* Set up a 10 foot long tripwire. Creatures who hit the tripwire must make a Dexterity saving throw against your Grit Save DC or are knocked prone.
+* Set up a 10 foot long tripwire. Creatures who hit the tripwire must make a dexterity saving throw against your Grit Save DC or are knocked prone.
 
 #### Organized Assault
-By 11th level, you are an expert at correctly directing the firepower of your allies. When you hit a creature with a weapon attack, you mark that creature until the start of your next turn. The next attack made or cantrip cast against the marked target by a creature other than yourself adds 1 roll of your Grit Die to the attack roll. This effect does not stack on the same target but may be active on multiple targets at the same time. The mark is consumed the first time a creature makes an attack or casts a cantrip against the marked target, whether the attack hits or misses.
+By 11th level, you are an expert at correctly directing the firepower of your allies. When you hit a creature with a weapon attack, you mark that creature until the start of your next turn. The next attack made or cantrip cast against the marked target by a creature other than yourself adds 1 roll of your Grit Die to the attack or damage roll (your choice). This effect does not stack on the same target but may be active on multiple targets at the same time. The mark is consumed the first time a creature makes an attack or casts a cantrip against the marked target.
 
 \columnbreak
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 #### Tactical Genius
-Starting at 17th level, when an ally makes an attack or casts a cantrip using your co-ordinated firepower feature, if the allied creature must make an attack roll, they do so with advantage. If the enemy creature your ally targets must make a saving throw, they do so with disadvantage.
+Starting at 17th level, you learn to assess the battlefield and issue commands at immense speed. Once per turn, you may expend 3 Grit Points to use your Co-ordinated Firepower feature as a free action. 
+
+If the allied creature you choose must make an attack roll, they do so with advantage. If the enemy creature your ally targets must make a saving throw, they do so with disadvantage. These benefits apply when using Co-ordinated Firepower normally as well.
 
 ### Multiclassing
 **Ability Score Minimum.** As a multiclass character, you must have a minimum Dexterity score of 13 in order to take your first level in gunslinger, or to take a level in another class if you are already a gunslinger.
 
 **Proficiencies Gained.** If gunslinger isn't your initial class, you gain proficiency with the following: light armor, simple weapons, firearms, one skill of your choice from the gunslinger skill list, and tinker's tools.
 
-<img src='https://i.pinimg.com/564x/77/69/ab/7769ab8e9c9c53f42f7fd5f392eb34e6.jpg' style='position:absolute; top:0px; left:350px; width:px' />
+
+<img src='https://i.pinimg.com/564x/77/69/ab/7769ab8e9c9c53f42f7fd5f392eb34e6.jpg' style='position:absolute; top:475px; left:350px; width:px' />
 
 <!-- Full page stain -->
-<img src='https://watercolors.giantsoup.com/ee/ee_top-right/0003.png' style='position:absolute; top:0px; left:50px; width:816px' />
+<img src='https://watercolors.giantsoup.com/ee/ee_bottom-right/0003.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
-<div class='descriptive' style='position:absolute;bottom:990px;right:50px'>
+<div class='descriptive' style='position:absolute;bottom:0px;right:50px'>
  
 ####
 ___
@@ -664,17 +666,15 @@ ___
 | Blunderbuss | 75g | Shotgun | 3d4 piercing | 15/60 | Two-handed, Reload (1) | 
 | Bolt-Action Rifle | 150g | Rifle | 1d10 piercing | 150/600 | Two-Handed, Reload (5) | 
 | Bomb Shooter | 350g | Cannon | 1d4 fire | 30/120 | Explosive, Reload (3) |
-| Double-Barrel Shotgun | 125g | Shotgun | 2d6 piercing | 15/60 | Two-Handed, Reload (2) | 
 | Flintlock Pistol | 50g | Pistol | 1d8 piercing | 60/240 | Light, Reload (1) | 
 | Hand Cannon | 500g | Cannon | 2d6 fire | 30/120 | Two-handed, Heavy, Explosive, Reload (1) |
 | Heavy Revolver | 250g | Pistol | 2d4 piercing | 80/320 | Heavy, Reload (6) |
-| Hunting Shotgun | 300g | Shotgun | 3d4 piercing | 15/60 | Two-handed, Heavy, Reload (5) | 
 | Lever-Action Rifle  | 250g | Rifle | 1d8 piercing | 100/400 | Two-handed, Reload (8) |
-| Longrifle | 300g | Rifle | 2d6 piercing | 200/800 | Two-Handed, Heavy, Loading, Reload (1) |
+| Longrifle | 300g | Rifle | 2d8 piercing | 200/800 | Two-Handed, Heavy, Loading, Reload (1) |
 | Lupara  | 175g | Shotgun | 2d4 piercing | 15/60 | Light, Reload (2) |
 | Musket | 100g | Rifle | 1d12 piercing | 100/400 | Two-Handed, Reload (1) | 
 | Revolver | 200g | Pistol | 1d6 piercing | 80/320 | Light, Reload (6) | 
-
+| Double-Barrel Shotgun | 125g | Shotgun | 2d6 piercing | 15/60 | Two-Handed, Heavy, Reload (2) | 
  
  
  
@@ -725,7 +725,7 @@ ___
 
 </div>
 
-<img src='https://www.creativeuncut.com/gallery-30/art/nos-pet-master-shotgun.jpg' class='cover-image' style="left:150px; width:1000px; top:0px;"  id="conclusion" />
+<img src='https://www.creativeuncut.com/gallery-30/art/nos-pet-master-shotgun.jpg' class='cover-image' style="left:150px; width:800px; top:px;"  id="conclusion" />
  
 
  <style>
@@ -739,7 +739,7 @@ ___
  
  <div class='back-cover-header'>
  
-Gunslinger 4.0
+Gunslinger 2.0
 
 by Jake Hawke
  
@@ -761,7 +761,7 @@ Inspiration:
  
 **Gunslinger Fighter Subclass** by Matthew Mercer
 
-**Gunslinger Class** by Coso (u/Mood-Powerful)
+**Gunslinger Class** by Coso
 
 **Page Stains** by u/flamableconcrete
 

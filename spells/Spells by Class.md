@@ -374,6 +374,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 
 - [Anchor](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#anchor) -  - (OMM - 0)
 - [Blade Ward](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#blade-ward) -  - (OMM - 0)
+- [Grenade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#grenade) -  - (OMM - 0)
 - [Guidance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#guidance) -  - (OMM - 0)
 - [Hold Portal](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#hold-portal) -  - (OMM - 0)
 - [Light](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#light) -  - (OMM - 0)
@@ -584,6 +585,7 @@ Spells names link to the appropriate local file if it was altered by OwlMarble M
 - [Create Bonfire](https://www.dndbeyond.com/spells/create-bonfire) -  - (undefined)
 - [Druidcraft](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#druidcraft) -  - (OMM - 0)
 - [Frostbite](https://www.dndbeyond.com/spells/frostbite) -  - (undefined)
+- [Grenade](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#grenade) -  - (OMM - 0)
 - [Guidance](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#guidance) -  - (OMM - 0)
 - [Gust](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#gust) -  - (OMM - 0)
 - [Herphine's Cloud](https://github.com/VoltCruelerz/OwlMarble-Magic/blob/master//spells/levels/00.md#herphines-cloud) -  - (OMM - 0)

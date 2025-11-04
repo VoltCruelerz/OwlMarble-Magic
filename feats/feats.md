@@ -752,7 +752,7 @@ If the stance compels a saving throw, the DC is 8 + your Proficiency Bonus + you
 - **Whispering Wind**: once you learn this stance, your initiative increases by 5. While this stance is active, you gain the following benefits:
   - When you move only 5 feet on your turn, you are utterly silent and automatically succeed on auditory stealth checks.
   - You can feint using your Bonus Action to force a creature within 5 feet of you to waste their reaction.
-  - When you attack a creature within 5 feet of you that does not have its reaction, they must succeed on a Strength saving throw or fall Prone, and your critical hit range is increased by 1.
+  - When you attack a creature within 5 feet of you that does not have its reaction, they must succeed on a Strength saving throw or fall Prone, and your critical hit range is increased by 1 until the start of your next turn.
 - **Furious Inferno**: once you learn this stance, if you reduce a creature's hit points below your proficiency bonus, you can choose to kill it. While this stance is active, you gain the following benefits:
   - Your weapon simultaneously benefits from the Cleave Mastery in addition to any others it may possess.
   - When you make a melee Strike, you can choose to do so furiously. If you do so, the attack's damage is increased by 10, but any melee Strikes against you until the beginning of your next turn deals an additional 5 points of damage.
