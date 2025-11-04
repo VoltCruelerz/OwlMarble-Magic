@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.2
+
+- Gunslinger updates
+- Grenade
+
 ## 1.3.1
 
 - Compendium Browser is now the Single Source of Truth for feats
